@@ -1,0 +1,33 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "baseUrl": "./",
+    "jsx": "preserve",
+    "paths": {
+      "@assets/*": ["./src/astro/assets/*"],
+      "@layouts/*": ["./src/astro/layouts/*"],
+      "@utils/*": ["src/astro/utils/*"],
+      "@components/*": ["./src/astro/components/*"],
+      "@ui/*": ["./src/astro/components/ui/*"],
+      "@styles/*": ["./src/astro/styles/*"]
+    },
+    "types": [
+      "vite-plugin-pwa/client",
+      "vite-plugin-pwa/info"
+    ],
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ]
+  },
+  "exclude": ["node_modules", "dist", ".obsidian/**"],
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.astro",
+    "node_modules/vite-plugin-pwa/client.d.ts", 
+  ]
+}

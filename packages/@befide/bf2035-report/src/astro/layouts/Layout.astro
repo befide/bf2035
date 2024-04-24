@@ -1,0 +1,38 @@
+---
+import Header from "@components/ui/Header.astro";
+import Base from "./Base.astro";
+import Navigation from "@components/ui/Navigation.astro";
+import Footer from "@components/ui/Footer.astro";
+
+
+export interface Props {
+  lang?: string; 
+}
+
+const { 
+  lang = "de",
+} = Astro.props;
+
+---
+
+<Base lang={lang}>
+  <div id="layout" class="layout">
+      
+    <header id="nav" class="layout__header">
+      <Header />
+    </header>
+<div id="layout__main__wrapper">
+    <main id="main" class="layout__main" data-pagefind-body>
+      <slot />
+    </main>
+  </div>
+
+    <Navigation />
+    <hr class="border-astro-gray-500" />
+    <Footer />
+  </div>
+</Base>
+
+<style is:global>
+  
+</style>

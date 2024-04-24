@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import SectionLayout from "@layouts/Section.astro";
+import PartLayout from "@layouts/Part.astro";
+import { getPath } from "@utils/getSections";
+import Layout from "@layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const sections = await getCollection("sections");
+
+  const paths = sections.map((section) => ({
+    params: { slug: getPath(section) },
+    props: { section },
+  }));
+
+  return paths;
+}
+
+const { section } = Astro.props;
+
+const {
+  title,
+  abstract,
+  pageType,
+  lang
+} = section.data;
+
+---
+<Layout {lang}>
+
+{
+  (pageType === "part" || pageType === "cover") && (
+    <PartLayout section={section} />
+  )
+}
+{
+  !(pageType === "part" || pageType === "cover") && (
+    <SectionLayout section={section} />
+  )
+}
+</Layout>

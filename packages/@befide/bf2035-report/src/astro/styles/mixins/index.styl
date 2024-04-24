@@ -1,0 +1,24 @@
+
+@import 'responsive.styl';
+@import 'border.styl';
+@import 'interaction.styl';
+@import 'typography.styl';
+
+
+$pathicles-span(id = '', $background-color = #e0e0e0)
+  margin-left calc(-5*var(--page__margin__x))
+  padding-top 0
+  padding-right 1rem
+  padding-bottom 0
+  padding-left calc(5*var(--page__margin__x))
+  border 1px solid rgba(white, 0.5)
+  background-color $background-color
+  box-decoration-break clone
+  // box-shadow 0 0 1px 1px rgba(0, 0, 0, 0.1), -2px 0 1px rgba(0, 0, 0, 0.09), -4px 0 2px rgba(0, 0, 0, 0.09), -8px 0 4px rgba(0, 0, 0, 0.09), -16px 0 8px rgba(0, 0, 0, 0.09), -32px 0 16px rgba(0, 0, 0, 0.09)
+  box-shadow 0 0 1px 1px rgba(0, 0, 0, 0.1)
+  text-transform uppercase
+  word-spacing 0.1em
+  letter-spacing 0.05em
+  font-style italic
+  -webkit-print-color-adjust: exact;
+  -webkit-filter: opacity(1);

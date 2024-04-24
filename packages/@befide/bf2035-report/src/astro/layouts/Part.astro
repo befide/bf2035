@@ -1,0 +1,115 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import { getImage } from "astro:assets";
+
+import LinkCard from "@ui/LinkCard.astro";
+import CardGrid from "@ui/CardGrid.astro";
+
+export interface Props {
+  section: CollectionEntry<"sections">;
+}
+
+const { section } = Astro.props;
+
+const {
+  title,
+  sectionNumber,
+  supertitle,
+  subtitle,
+  backgroundImageSrc,
+} = section.data;
+const { Content } = await section.render();
+
+const optimizedBackground =
+  backgroundImageSrc &&
+  (process.env.NODE_ENV === "production"
+    ? await getImage({
+        src: backgroundImageSrc.src,
+        format: "webp",
+        width: 4960,
+        height: 3508,
+      })
+    : backgroundImageSrc);
+---
+
+<div class="bleeding-spread">
+  <div class="spread part">
+    <div
+      class="spread__page left"
+      style={optimizedBackground
+        ? `background-image: url(${optimizedBackground.src})`
+        : ``}
+    >
+      <div class="spread__page-grid debug-overlay">
+        <Content components={{ LinkCard, CardGrid }} />
+      </div>
+    </div>
+    <div
+      class="spread__page right"
+      style={optimizedBackground
+        ? `background-image: url(${optimizedBackground.src})`
+        : ``}
+    >
+      <div class="spread__page-grid debug-overlay">
+        <header class="spread__header" transition:animate="slide">
+          {
+            sectionNumber && (
+              <div class="spread__sectionNumber">
+                <span>{sectionNumber}</span>
+              </div>
+            )
+          }
+
+          {
+            supertitle && (
+              <div class="spread__supertitle">
+                <span>{supertitle}</span>
+              </div>
+            )
+          }
+          {
+            title && (
+              <h1 class="spread__title">
+                <span>{title}</span>
+              </h1>
+            )
+          }
+          {
+            subtitle && (
+              <div class="spread__subtitle">
+                <span>{subtitle}</span>
+              </div>
+            )
+          }
+        </header>
+
+        <Content components={{ LinkCard, CardGrid }} />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style lang="stylus">
+ 
+.spread.cover, .spread.part
+  height 100vh
+  
+  .spread__header
+    grid-area: 2 / 6 / 6 / 13
+    text-align right
+    
+  .spread__sectionNumber
+    display: none !important
+
+  .spread__sectionNumber, .spread__supertitle, .spread__subtitle, .spread__title
+    right 0rem
+
+    span
+      margin-right calc(-10 * var(--page__margin__x) - 1 * var(--bleed))
+      margin-left 0
+      padding-right calc(10 * var(--page__margin__x) - 1 * var(--bleed))
+      padding-left 1rem
+
+
+  </style>

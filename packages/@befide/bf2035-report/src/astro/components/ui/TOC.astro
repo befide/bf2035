@@ -1,0 +1,11 @@
+---
+import TOCItem from "@ui/TOCItem.astro";
+import { getSectionsTreeRoot } from "@utils/getSections";
+
+const root = await getSectionsTreeRoot();
+
+---
+
+<ul class="md">
+  <TOCItem node={root} />
+</ul>

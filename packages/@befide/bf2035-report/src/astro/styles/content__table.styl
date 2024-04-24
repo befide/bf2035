@@ -1,0 +1,66 @@
+@import './mixins/'
+
+table.md
+  width 100%
+  margin-top 2rem
+  margin-bottom 1rem
+  
+  border-collapse collapse
+  background-color white
+
+th.md, td.md
+  line-height 1rem
+  $border-top()
+
+caption
+  padding-right 0.5rem
+  text-align right
+  font-size var(--font-size--body-sm)
+  caption-side: bottom
+
+th.md, td.md
+  padding-right 1rem
+
+th.md
+  text-transform uppercase
+  letter-spacing 0.05em
+  font-weight var(--font-weight--bold)
+  font-size var(--font-size--body-xs)
+
+td.md
+  position relative
+  margin-top -1px
+  background-color rgba(black, 0)
+  font-size var(--font-size--body-sm)
+
+tr.md:nth-child(2n+1) td
+  background-color rgba(black, 0.05)
+
+.table-column--expand
+  width 2rem
+
+td.md.w-25
+  width 25%
+
+td.md.w-50
+  width 50%
+
+td.md.w-75
+  width 759%
+
+td.md.w-99
+  width 99%
+
+td.md.nw
+  white-space nowrap
+
+.aligned--right
+  text-align right
+
+tr.md.hoverable:hover td
+  background-color var(--interaction__color--hover-on)
+  cursor pointer
+
+
+tr.table__tr--group td, .dc-table-group td
+  $table__td--group()

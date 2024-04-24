@@ -1,0 +1,26 @@
+---
+import PartLayout from "./Part.astro"
+import SectionLayout from "./Section.astro"
+
+const { sections } = Astro.props;
+
+---
+
+{
+  sections && (
+    <div class="book-sections">
+      {sections.map((section) => (
+        <section class="book-section">
+          {(section.data.pageType === "part" ||
+            section.data.pageType === "cover") && (
+            <PartLayout section={section} />
+          )}
+          {!(
+            section.data.pageType === "part" ||
+            section.data.pageType === "cover"
+          ) && <SectionLayout section={section} />}
+        </section>
+      ))}
+    </div>
+  )
+}

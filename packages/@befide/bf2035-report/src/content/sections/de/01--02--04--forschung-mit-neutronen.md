@@ -1,0 +1,68 @@
+---
+backgroundImageSrc: "@assets/media/usage.neutron-science.png"
+pageType: spread
+pageClass: spread--default
+pageName: neutron-science
+sectionNumber: A.2.d
+supertitle: Beschleuniger für die
+title__toc: ... für Forschung mit Neutronen
+title: Materieforschung mit Neutronen
+---
+
+<div class="spread--left spread-area--c-1 spread-area--small">
+
+<progress-chart dimension="progress__peak_luminosity" :print="true"/>
+
+<figcaption>
+
+</figcaption>
+
+</div>
+
+<div class="spread--left spread-area--intro spread-area">
+
+Als Sonde zur Materieforschung sind Neutronen komplementär zu Photonen und damit ein weiteres wichtiges Werkzeug, um Einblicke in die Struktur der Materie zu gewinnen und physikalische, chemische und biologische Prozesse zu untersuchen. Wegen ihres magnetischen Moments eignen sich Neutronen besonders zur Untersuchung magnetischer Eigenschaften von Materialien. Da sie an Atomkernen streuen, können sie Informationen über die Position und Bewegung von Atomen liefern. Ihre Empfindlichkeit für leichte Atome prädestiniert sie besonders für biologische Fragestellungen.
+
+Gängige Methoden zur Freisetzung von Neutronen sind bestimmte radioaktive Präparate, die Kernspaltung in Forschungsreaktoren oder Beschleunigertechniken. Bei der so genannten Spallation werden Atomkerne in einem „Target“ mit Protonen hoher Energie beschossen, wobei die Neutronen teilweise direkt entweichen, überwiegend aber von den angeregten Kernen „verdampft“ werden. Beim Beschuss mit Protonen niedriger Energie überwiegen dagegen direkte Prozesse, bei denen z.B. ein Proton ein Neutron aus dem Kern herausschlägt. In jedem Fall ist ein intensiver Protonenstrahl aus einem Beschleuniger erforderlich, um einen hohen Neutronenfluss zu gewährleisten, und das Target muss hohen technischen Anforderungen genügen.
+
+</div>
+
+<div class="hidden">
+
+Da viele ältere Forschungsreaktoren in den letzten Jahrzehnten stillgelegt wurden oder in Zukunft stillgelegt werden und nicht durch neue Anlagen ersetzt werden, ist der Bau von beschleunigerbasierten Neutronenquellen eine dringende Aufgabe.
+'
+
+</div>
+
+<div class="spread--right spread-area--c-1 spread-area--small">
+
+## Gegenwart
+
+Aufgrund des hohen Aufwands existieren weltweit nur wenige Spallationsquellen. In Europa sind dies ISIS in Großbritannien und SINQ in der Schweiz. Zurzeit entsteht unter deutscher Beteiligung in Lund (Schweden) die European Spallation Source (ESS), die mit Abstand die intensivste Neutronenquelle weltweit sein wird. Sie basiert auf einem Linearbeschleuniger für Protonen hoher Energie (2000 Megaelektronenvolt) und einem Target, von dem Strahllinien mit verschiedenen Instrumenten ausgehen, die völlig neue wissenschaftliche Möglichkeiten eröffnen werden.
+
+Dedizierte Neutronenquellen mit Protonenbeschleunigern niedriger Energie, also deutlich unter 100 Megaelektronenvolt, sind kleiner und kostengünstiger als eine Spallationsquelle. Einige wenige Anlagen dieser Art werden bereits erfolgreich betrieben. Der Neutronenfluss solcher Quellen ist geringer als der eines Hochfluss-Forschungsreaktors oder einer Spallationsquelle, erlaubt aber relevante Forschung mit weniger Aufwand und an einer größeren Zahl von Standorten.
+
+</div>
+
+<div class="spread--right spread-area--c-2 spread-area--small">
+
+## Zukunft
+
+Das primäre Ziel der nächsten Jahre wird die erfolgreiche Inbetriebnahme der Spallationsquelle ESS mit einer mittleren Strahlleistung von 6 Megawatt sein. Bei den weniger aufwändigen Neutronenquellen mit niederenergetischen Protonen ist ein breites Spektrum von Anlagen denkbar. Am niederenergetischen Ende stehen Strahlleistungen im Bereich von einigen 10 Kilowatt wie z.B. an der Anlage FRANZ, die an der Universität Frankfurt kurz vor der Fertigstellung steht. Am anderen Ende des Spektrums liegt z.B. die High-Brilliance Neutron Source (HBS), eine Projektskizze des Forschungszentrums Jülich im niedrigen Megawattbereich, die als Prototyp für weitere Anlagen im Leistungsbereich darunter dienen kann. Hier ist vorgesehen, mit einem mittelgroßen Protonenbeschleuniger und hohem Strom gleichzeitig mehrere Targets zu bedienen, von denen jeweils mehrere Strahllinien ausgehen, um pro Experiment einen möglichst hohen Neutronenfluss zu erzielen.
+Eine weitere Anforderung, die beschleunigerbasierte Neutronenquellen im Gegensatz zu Kernreaktoren erfüllen können, ist Flexibilität in der Zeitstruktur des Neutronenstrahls, um energie- und zeitaufgelöste Experimente zu ermöglichen.
+
+## Was die Zukunft bringt
+
+- Kontinuität der Forschung mit Neutronen
+- Verzicht auf ältere Kernreaktoren
+
+- hochintensive Spallationsquellen
+- breites Spektrum an niederenergetischen Neutronenquellen
+- hoher Fluss durch mehrere Strahllinien an komplementären Targets - variable Zeitstruktur
+
+</div>
+
+<div class="spread--right spread-area--references--top spread-area--small">
+
+1. <bib-ref cite-key="garoby_vergara_etal__2018__european"></bib-ref>
+1. <bib-ref cite-key="iaea__2021__compact"></bib-ref>

@@ -1,0 +1,27 @@
+---
+import { getEntry } from "astro:content";
+
+export interface Props {
+  refId: string;
+  locator: string;
+}
+const { refId, locator } = Astro.props;
+
+const reference = await getEntry("references", refId);
+---
+
+{
+  reference && (
+  
+    <input id={reference.slug} type="checkbox"/>
+    <label for={reference.slug} class="bib-ref__citation" set:html={reference.data.rendered.citation} />
+    <span class="bib-ref">
+    <span class="bib-ref__bibliography" set:html={reference.data.rendered.bibliography}></span>
+    <span class="bib-ref__locator" set:html={locator}></span>
+  </span>
+  
+    
+  )
+}
+
+

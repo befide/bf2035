@@ -1,0 +1,69 @@
+---
+import { pwaInfo } from "virtual:pwa-info";
+// import { ViewTransitions } from "astro:transitions";
+
+import { SITE } from "../../config";
+
+import "../styles/index.styl";
+import "@fontsource/barlow-semi-condensed/latin-200.css";
+import "@fontsource/barlow-semi-condensed/latin-400.css";
+import "@fontsource/barlow-semi-condensed/latin-700.css";
+import "@fontsource/barlow-semi-condensed/latin-400-italic.css";
+import "@fontsource/barlow-semi-condensed/latin-700-italic.css";
+
+export interface Props {
+  title?: string;
+  lang?: string; 
+  author?: string;
+  description?: string;
+}
+
+const { 
+  lang = "de",
+  title = SITE.title,
+  author = SITE.author,
+  description = SITE.desc,
+} = Astro.props;
+
+const canonicalURL = Astro.site
+  ? new URL(Astro.url.pathname, Astro.site)
+  : undefined;
+
+
+
+
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {canonicalURL && <link rel="canonical" href={canonicalURL} />}
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.ico" />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="author" content={author} />
+
+    <!-- <ViewTransitions /> -->
+
+    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+    <script src="/src/pwa.ts"></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+  <script>
+    // import { initCollapses } from "@utils/collapse/collapse.js";
+    // initCollapses();
+  </script>
+</html>
+
+<style is:global>
+  
+</style>

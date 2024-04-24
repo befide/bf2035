@@ -1,0 +1,53 @@
+<div class="px-2">
+  <label class="relative inline-flex items-center cursor-pointer">
+    <input
+      type="checkbox"
+      value=""
+      class="sr-only peer"
+      name="toggle__theme"
+      id="toggle__theme"
+    />
+    <div
+      class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+    >
+    </div>
+    <span class="ml-2  text-gray-900 dark:text-gray-300"
+      >hell / dunkel</span
+    >
+  </label>
+</div>
+
+<script>
+  import { updateDocumentSettings, toggleTheme } from "@utils/settingsStore.js";
+
+  updateDocumentSettings.theme();
+  document.addEventListener("astro:after-swap", updateDocumentSettings.theme);
+
+  document
+    .getElementById("toggle__theme")
+    ?.addEventListener("click", toggleTheme);
+
+  document.addEventListener("keyup", function (e) {
+    if (e.ctrlKey && e.code === "KeyT") {
+      document.getElementById("toggle__theme")?.click();
+    }
+  });
+</script>
+
+<style is:global>
+  :global([data-theme="dark"]) {
+    color-scheme: dark;
+  }
+  :global([data-theme="light"]) {
+    color-scheme: light;
+  }
+  .theme-toggle {
+    display: none;
+  }
+  [data-theme="dark"] #toggle__dark {
+    display: none;
+  }
+  [data-theme="light"] #theme-toggle-dark-icon {
+    display: none;
+  }
+</style>

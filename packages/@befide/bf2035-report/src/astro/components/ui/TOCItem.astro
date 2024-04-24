@@ -1,0 +1,81 @@
+---
+import { getPath } from "@utils/getSections";
+import type { SectionTreeNode } from "@utils/getSections";
+
+export type Props = {
+  node: SectionTreeNode;
+};
+
+const { node: tocIten } = Astro.props;
+---
+
+
+<li class={`sitemap-node depth-${tocIten.depth}`}>
+  {
+    (
+      <a href={getPath(tocIten.data)}>
+        <span class="section-number">
+          {tocIten.data && tocIten.data?.data.sectionNumber}
+        </span>
+        <span class="section-title">
+          {tocIten.data && tocIten.data.data.title}
+        </span>
+      </a>
+    )
+  }
+  <ul>
+    {tocIten.children?.map((child) => <Astro.self node={child} />)}
+  </ul>
+</li>
+
+<style lang="stylus" is:global>
+  // ul.md li:before  
+  //   content: " "
+  //   display none;
+  // li a
+  //   padding-left: 6rem;
+  //   // display: inline-block;   
+  //   // position: relative;
+  
+  // .section-number 
+  //   opacity: .5;
+  //   position: absolute;
+  //   left: 0rem;
+  //   width: 5rem;
+  //   text-align: left;
+  //   display block
+  //   background-color: red;
+    
+  
+  
+  // #toc-item__01--mainmatter > ul {
+  //   display: flex;
+  //   gap: 1rem;
+  // }
+  // #toc-item__01--mainmatter > ul > li {
+  //   flex: 1;
+  // }
+
+  // li.depth-0 > a {
+  //   text-transform: uppercase;
+  //   font-weight: var(--font-weight--bold);
+  //   color: red;
+  //   }
+    
+  //  li.depth-1> a {
+  //   text-transform: uppercase;
+  //   font-weight: var(--font-weight--bold);
+  //   }
+  //   li.depth-2> a {
+  //     padding-left: 7rem;
+  //   font-weight: var(--font-weight--bold);
+  //   }
+  // li.depth-3 > a {
+  //   padding-left: 7rem;
+  //   font-weight: 400
+  //   }
+  // li.depth-4 > a {
+  //   padding-left: 8rem;
+  //   font-weight: 200;
+  //   }
+</style>
