@@ -13,12 +13,12 @@ import "@fontsource/barlow-semi-condensed/latin-700-italic.css";
 
 export interface Props {
   title?: string;
-  lang?: string; 
+  lang?: string;
   author?: string;
   description?: string;
 }
 
-const { 
+const {
   lang = "de",
   title = SITE.title,
   author = SITE.author,
@@ -28,10 +28,6 @@ const {
 const canonicalURL = Astro.site
   ? new URL(Astro.url.pathname, Astro.site)
   : undefined;
-
-
-
-
 ---
 
 <!doctype html>
@@ -53,17 +49,10 @@ const canonicalURL = Astro.site
     <!-- <ViewTransitions /> -->
 
     {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
-    <script src="/src/pwa.ts"></script>
+    <script src="./../../pwa.ts"></script>
   </head>
   <body>
     <slot />
   </body>
-  <script>
-    // import { initCollapses } from "@utils/collapse/collapse.js";
-    // initCollapses();
-  </script>
+  <script></script>
 </html>
-
-<style is:global>
-  
-</style>

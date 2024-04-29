@@ -21,25 +21,26 @@ cslItem:
   issued:
     date-parts:
       - - "2015"
-  keyword: ""
+  keyword: "#bf2035/projects/bessy/bessy-vsr"
   language: en
   page: 12898 kb, 220 pages
   publisher: Helmholtz-Zentrum Berlin für Materialien und Energie
   source: DOI.org (Datacite)
-  title: Technical Design Study BESSSY VSR
+  title: Technical Design Study BESSY VSR
   type: report
   URL: >-
     https://www.helmholtz-berlin.de/media/media/angebote/bibliothek/reports/r0001-bessy-vsr-tds.pdf
-tags: []
+tags:
+  - "#bf2035/projects/bessy/bessy-vsr"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="jankowiak_knobloch_etal__2015__technical" class="csl-entry"><span class='author-bib'>Jankowiak, Knobloch, J., Goslawski, P., &#38; Neumann, N.</span>. <span class='date-bib'>(2015)</span>. <span class='title'><i><b><span style="font-style:normal;">Technical Design Study BESSSY VSR</span></b></i></span> (S. 12898 kb, 220 pages) [Technical Design Study]. Helmholtz-Zentrum Berlin für Materialien und Energie. <span class='URL'><a href='https://doi.org/10.5442/R0001'>LINK</a></span></span>
+      <span data-csl-entry-id="jankowiak_knobloch_etal__2015__technical" class="csl-entry"><span class='author-bib'>Jankowiak, Knobloch, J., Goslawski, P., et al.</span>. <span class='date-bib'>(2015)</span>. <span class='title'><i><b><span style="font-style:normal;">Technical Design Study BESSY VSR</span></b></i></span> (S. 12898 kb, 220 pages) [Technical Design Study]. Helmholtz-Zentrum Berlin für Materialien und Energie. <span class='URL'><a href='https://doi.org/10.5442/R0001'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Jankowiak</span> et al.</span></span>,
     2015)
-bibTex: "@techreport{jankowiak_knobloch_etal__2015__technical,\n\tnote = {[Online; accessed 2023-01-31]},\n\tauthor = {Jankowiak, A. and Knobloch, J. and Goslawski, P. and Neumann, N.},\n\tyear = {2015},\n\tpages = {12898 kb, 220 pages},\n\tinstitution = {Helmholtz-Zentrum Berlin f{\\\" u}r Materialien und Energie},\n\ttitle = {Technical {Design} {Study} {BESSSY} {VSR}},\n\ttype = {Technical {Design} {Study}},\n}\n\n"
+bibTex: "@techreport{jankowiak_knobloch_etal__2015__technical,\n\tnote = {[Online; accessed 2023-01-31]},\n\tauthor = {Jankowiak, A. and Knobloch, J. and Goslawski, P. and Neumann, N.},\n\tdoi = {10.5442/R0001},\n\tyear = {2015},\n\tpages = {12898 kb, 220 pages},\n\tinstitution = {Helmholtz-Zentrum Berlin f{\\\" u}r Materialien und Energie},\n\ttitle = {Technical {Design} {Study} {BESSY} {VSR}},\n\ttype = {Technical {Design} {Study}},\n\turl = {https://www.helmholtz-berlin.de/media/media/angebote/bibliothek/reports/r0001-bessy-vsr-tds.pdf},\n}\n\n"
 ---

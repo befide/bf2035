@@ -45,11 +45,11 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="hicks_wouters_etal__2015__bibliometrics" class="csl-entry"><span class='author-bib'>Hicks, Wouters, P., Waltman, L., Rijcke, S. de, &#38; Rafols, I.</span>. <span class='date-bib'>(2015)</span>. <span class='title'><b>Bibliometrics: The Leiden Manifesto for research metrics</b></span>. <i>Nature</i>, <i>520</i>(7548), Art. 7548. <span class='URL'><a href='https://doi.org/10.1038/520429a'>LINK</a></span></span>
+      <span data-csl-entry-id="hicks_wouters_etal__2015__bibliometrics" class="csl-entry"><span class='author-bib'>Hicks, Wouters, P., Waltman, L., et al.</span>. <span class='date-bib'>(2015)</span>. <span class='title'><b>Bibliometrics: The Leiden Manifesto for research metrics</b></span>. <i>Nature</i>, <i>520</i>(7548), Art. 7548. <span class='URL'><a href='https://doi.org/10.1038/520429a'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Hicks</span> et al.</span></span>, 2015)
-bibTex: "@article{hicks_wouters_etal__2015__bibliometrics,\n\tnote = {[Online; accessed 2023-11-19]},\n\tauthor = {Hicks, Diana and Wouters, Paul and Waltman, Ludo and de Rijcke, Sarah and Rafols, Ismael},\n\tjournal = {Nature},\n\tnumber = {7548},\n\tyear = {2015},\n\tmonth = {4},\n\tpages = {429--431},\n\tpublisher = {Nature Publishing Group},\n\ttitle = {Bibliometrics: The {Leiden} {Manifesto} for research metrics},\n\tvolume = {520},\n}\n\n"
+bibTex: "@article{hicks_wouters_etal__2015__bibliometrics,\n\tnote = {[Online; accessed 2023-11-19]},\n\tauthor = {Hicks, Diana and Wouters, Paul and Waltman, Ludo and de Rijcke, Sarah and Rafols, Ismael},\n\tjournal = {Nature},\n\tdoi = {10.1038/520429a},\n\tissn = {1476-4687},\n\tnumber = {7548},\n\tyear = {2015},\n\tmonth = {4},\n\teid = {7548},\n\tpages = {429--431},\n\tpublisher = {Nature Publishing Group},\n\ttitle = {Bibliometrics: The {Leiden} {Manifesto} for research metrics},\n\turl = {https://www.nature.com/articles/520429a},\n\tvolume = {520},\n}\n\n"
 ---

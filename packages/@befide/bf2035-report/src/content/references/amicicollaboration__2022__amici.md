@@ -33,5 +33,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">AMICI Collaboration</span></span>, 2022)
-bibTex: "@techreport{amicicollaboration__2022__amici,\n\tauthor = {{AMICI Collaboration}},\n\tyear = {2022},\n\tmonth = {jan 31},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T10:08:32.700Z},\n\tinstitution = {cnrs},\n\ttitle = {AMICI - {Accelerator} and {Magnet} {Infrastructure} for {Cooperation} and {Innovation}},\n}\n\n"
+bibTex: "@techreport{amicicollaboration__2022__amici,\n\tauthor = {{AMICI Collaboration}},\n\tyear = {2022},\n\tmonth = {jan 31},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T10:08:32.700Z},\n\tinstitution = {cnrs},\n\ttitle = {AMICI - {Accelerator} and {Magnet} {Infrastructure} for {Cooperation} and {Innovation}},\n\turl = {https://amici.ijclab.in2p3.fr/download/Brochure_AMICI.pdf},\n}\n\n"
 ---

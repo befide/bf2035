@@ -45,5 +45,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Yamamoto</span> &#38; <span
     style="font-variant:small-caps;">Yokoya</span></span>, 2015)
-bibTex: "@inbook{yamamoto_yokoya__2015__linear,\n\tauthor = {Yamamoto, Akira and Yokoya, Kaoru},\n\tbooktitle = {Reviews of {Accelerator} {Science} and {Technology}},\n\tyear = {2015},\n\tmonth = {4},\n\tnote = {http://web.archive.org/web/20200304070413/https://www.worldscientific.com/doi/abs/10.1142/9789814651493\\textunderscore{}0006},\n\tpages = {115--136},\n\tpublisher = {WORLD SCIENTIFIC},\n\ttitle = {Linear {Colliders}},\n}\n\n"
+bibTex: "@inbook{yamamoto_yokoya__2015__linear,\n\tauthor = {Yamamoto, Akira and Yokoya, Kaoru},\n\tbooktitle = {Reviews of {Accelerator} {Science} and {Technology}},\n\tisbn = {978-981-4651-48-6 978-981-4651-49-3},\n\tyear = {2015},\n\tmonth = {4},\n\tnote = {http://web.archive.org/web/20200304070413/https://www.worldscientific.com/doi/abs/10.1142/9789814651493\\textunderscore{}0006},\n\tpages = {115--136},\n\tpublisher = {WORLD SCIENTIFIC},\n\ttitle = {Linear {Colliders}},\n\turl = {https://doi.org/10.1142/9789814651493_0006},\n}\n\n"
 ---

@@ -39,5 +39,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Chernyaev</span> &#38; <span
     style="font-variant:small-caps;">Varzar</span></span>, 2014)
-bibTex: "@article{chernyaev_varzar__2014__particle,\n\tnote = {[Online; accessed 2020-05-07]},\n\tauthor = {Chernyaev, A. P. and Varzar, S. M.},\n\tjournal = {Physics of Atomic Nuclei},\n\tnumber = {10},\n\tyear = {2014},\n\tmonth = {10},\n\tpages = {1203--1215},\n\ttitle = {Particle accelerators in modern world},\n\thowpublished = {10.1134/S1063778814100032},\n\tvolume = {77},\n}\n\n"
+bibTex: "@article{chernyaev_varzar__2014__particle,\n\tnote = {[Online; accessed 2020-05-07]},\n\tauthor = {Chernyaev, A. P. and Varzar, S. M.},\n\tjournal = {Physics of Atomic Nuclei},\n\tdoi = {10.1134/S1063778814100032},\n\tissn = {1063-7788, 1562-692X},\n\tnumber = {10},\n\tyear = {2014},\n\tmonth = {10},\n\tpages = {1203--1215},\n\ttitle = {Particle accelerators in modern world},\n\turl = {10.1134/S1063778814100032},\n\thowpublished = {10.1134/S1063778814100032},\n\tvolume = {77},\n}\n\n"
 ---

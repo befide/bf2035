@@ -1,12 +1,12 @@
-import { persistentMap } from "@nanostores/persistent"
+import { persistentMap } from "@nanostores/persistent";
 
-export type SettingsValue = {
-  sidebar: "show" | "hide"
-  theme: "dark" | "light" | "system"
-  fitSpread: "true" | "false"
-  debug: "true" | "false"
-  printPreview: "true" | "false"
-}
+type SettingsValue = {
+  sidebar: "show" | "hide";
+  theme: "dark" | "light" | "system";
+  fitSpread: "true" | "false";
+  debug: "true" | "false";
+  printPreview: "true" | "false";
+};
 
 export const settings = persistentMap<SettingsValue>("settings:", {
   sidebar: "show",
@@ -14,7 +14,7 @@ export const settings = persistentMap<SettingsValue>("settings:", {
   debug: "false",
   fitSpread: "false",
   printPreview: "false",
-})
+});
 
 export const updateDocumentSettings = {
   theme: () => {
@@ -23,57 +23,59 @@ export const updateDocumentSettings = {
         ? window.matchMedia("(prefers-color-scheme: dark)").matches
           ? "dark"
           : "light"
-        : settings.get().theme
+        : settings.get().theme;
   },
   debug: () => {
-    document.documentElement.dataset.debug = settings.get().debug
+    document.documentElement.dataset.debug = settings.get().debug;
     if (document.getElementById("toggle__debug")) {
       (document.getElementById("toggle__debug") as HTMLInputElement).checked =
-        settings.get().debug === "true"
+        settings.get().debug === "true";
     }
   },
   fitSpread: () => {
-    document.documentElement.dataset.fitSpread = settings.get().fitSpread
+    document.documentElement.dataset.fitSpread = settings.get().fitSpread;
     if (document.getElementById("toggle__fit_spread")) {
-      (document.getElementById("toggle__fit_spread") as HTMLInputElement).checked =
-        settings.get().fitSpread === "true"
+      (
+        document.getElementById("toggle__fit_spread") as HTMLInputElement
+      ).checked = settings.get().fitSpread === "true";
     }
   },
   printPreview: () => {
-    document.documentElement.dataset.printPreview = settings.get().printPreview
+    document.documentElement.dataset.printPreview = settings.get().printPreview;
     if (document.getElementById("toggle__print_preview")) {
-      (document.getElementById("toggle__print_preview") as HTMLInputElement).checked =
-        settings.get().printPreview === "true"
+      (
+        document.getElementById("toggle__print_preview") as HTMLInputElement
+      ).checked = settings.get().printPreview === "true";
     }
   },
-}
+};
 
 export const toggleTheme = () => {
   if (settings.get().theme === "system") {
-    settings.setKey("theme", "light")
+    settings.setKey("theme", "light");
   } else {
     settings.setKey(
       "theme",
       settings.get().theme === "light" ? "dark" : "system",
-    )
+    );
   }
-  updateDocumentSettings.theme()
-}
+  updateDocumentSettings.theme();
+};
 export const toggleDebug = () => {
-  settings.setKey("debug", settings.get().debug === "false" ? "true" : "false")
-  updateDocumentSettings.debug()
-}
+  settings.setKey("debug", settings.get().debug === "false" ? "true" : "false");
+  updateDocumentSettings.debug();
+};
 export const toggleFitSpread = () => {
   settings.setKey(
     "fitSpread",
     settings.get().fitSpread === "false" ? "true" : "false",
-  )
-  updateDocumentSettings.fitSpread()
-}
+  );
+  updateDocumentSettings.fitSpread();
+};
 export const togglePrintPreview = () => {
   settings.setKey(
     "printPreview",
     settings.get().printPreview === "false" ? "true" : "false",
-  )
-  updateDocumentSettings.printPreview()
-}
+  );
+  updateDocumentSettings.printPreview();
+};

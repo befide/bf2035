@@ -1,23 +1,17 @@
 ---
-import Svg from "@jasikpark/astro-svg-loader";
-
+// import Svg from "@jasikpark/astro-svg-loader";
 
 export interface Props {
   name: string;
   label: string;
-  
 }
 
-
-const files =  await Astro.glob("./../../../../bf2035-charts/.tmp/*.svg");
+// const files =  await Astro.glob("./../../../../bf2035-charts/.tmp/*.svg");
 
 // const { name } = Astro.props as Props;
 // const { default: innerHTML } = await import(`${FOLDER}${name}`);
 
-
 // console.log(files.map(f => f.default));
-
-
 
 // function getSVG(name: string) {
 //   const filepath = `${FOLDER}${name}.svg`;
@@ -41,19 +35,15 @@ const files =  await Astro.glob("./../../../../bf2035-charts/.tmp/*.svg");
 //   };
 // }
 
-
 // const svgMap = Object.entries(import.meta.glob("./../../../../bf2035-charts/.tmp/*.svg", {
-   
 
 // }))
-
 
 // // const svgMap2 = svgMap.map(([k, v]) => [k.replace("../../../../bf2035-charts/.tmp/", ""), v]);
 
 // const entry = svgMap2["progress-chart.progress__srf_gradient.svg"]
 
 // console.log(svgMap);
-
 ---
 
 <!-- <Svg src={files.src} /> -->

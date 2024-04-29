@@ -1,9 +1,5 @@
 ---
-import projects from "./european-projects.json"
-
-
-
-
+import projects from "./european-projects.json";
 ---
 
 <table class="md">
@@ -28,10 +24,12 @@ import projects from "./european-projects.json"
   </thead>
   <tbody>
     {
-      projects.map((v, i) => (
+      projects.map((v) => (
         <tr class="md">
           <td class="md sm">
-            <div><strong>{v.id}</strong></div>
+            <div>
+              <strong>{v.id}</strong>
+            </div>
             <div>{v.longTitle}</div>
           </td>
           <td class="md aligned--right">
@@ -52,6 +50,7 @@ import projects from "./european-projects.json"
     }
   </tbody>
   <caption class="md">
-    Hochschulen mit Professuren und Lehrveranstaltungen im Bereich Beschleunigerforschung (Stand 2022)
+    Hochschulen mit Professuren und Lehrveranstaltungen im Bereich
+    Beschleunigerforschung (Stand 2022)
   </caption>
 </table>

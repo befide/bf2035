@@ -53,5 +53,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">ALEGRO collaboration</span></span>, 2019)
-bibTex: "@techreport{alegrocollaboration__2019__advanced,\n\tauthor = {{ALEGRO collaboration}},\n\tyear = {2019},\n\tmonth = {jan 30},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T07:32:19.889Z},\n\tpages = {83},\n\tinstitution = {ALEGRO},\n\ttitle = {Towards an {Advanced} {Linear} {International} {Collider}},\n}\n\n"
+bibTex: "@techreport{alegrocollaboration__2019__advanced,\n\tauthor = {{ALEGRO collaboration}},\n\tyear = {2019},\n\tmonth = {jan 30},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T07:32:19.889Z},\n\tpages = {83},\n\tinstitution = {ALEGRO},\n\ttitle = {Towards an {Advanced} {Linear} {International} {Collider}},\n\turl = {http://arxiv.org/abs/1901.10370},\n}\n\n"
 ---

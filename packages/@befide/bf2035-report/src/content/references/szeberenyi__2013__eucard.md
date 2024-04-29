@@ -32,5 +32,5 @@ rendered:
       <span data-csl-entry-id="szeberenyi__2013__eucard" class="csl-entry">Szeberenyi (Hrsg.). <span class='date-bib'>(2013)</span>. <span class='title'><i><b><span style="font-style:normal;">EuCARD. Final Report</span></b></i></span> (S. 115). CERN. <span class='URL'><a href='https://edms.cern.ch/ui/file/1001829/1/EuCARD-Del-D1_4_finalReport_full_v14_final.pdf'>LINK</a></span></span>
     </span>
   citation: (<i>EuCARD. Final Report</i>, 2013)
-bibTex: "@techreport{szeberenyi__2013__eucard,\n\tnote = {[Online; accessed 2024-03-17]},\n\taddress = {Geneva},\n\tyear = {2013},\n\tmonth = {nov 1},\n\tpages = {115},\n\tinstitution = {CERN},\n\ttitle = {EuCARD. {Final} {Report}},\n}\n\n"
+bibTex: "@techreport{szeberenyi__2013__eucard,\n\tnote = {[Online; accessed 2024-03-17]},\n\taddress = {Geneva},\n\tyear = {2013},\n\tmonth = {nov 1},\n\tpages = {115},\n\tinstitution = {CERN},\n\ttitle = {EuCARD. {Final} {Report}},\n\turl = {https://edms.cern.ch/ui/file/1001829/1/EuCARD-Del-D1_4_finalReport_full_v14_final.pdf},\n}\n\n"
 ---

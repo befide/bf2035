@@ -32,5 +32,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Leaps</span></span>, 2022)
-bibTex: "@techreport{leaps__2022__european,\n\tauthor = {{Leaps}},\n\tyear = {2022},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T09:42:52.331Z},\n\ttitle = {The {European} {Strategy} for {Accelerator}-based {Photon} {Science}},\n\thowpublished = {https://leaps-initiative.eu/wp-content/uploads/2022/05/LEAPS-ESAPS-Broschure\\textunderscore{}final-20052022-3.pdf},\n}\n\n"
+bibTex: "@techreport{leaps__2022__european,\n\tauthor = {{Leaps}},\n\tyear = {2022},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T09:42:52.331Z},\n\ttitle = {The {European} {Strategy} for {Accelerator}-based {Photon} {Science}},\n\turl = {https://leaps-initiative.eu/wp-content/uploads/2022/05/LEAPS-ESAPS-Broschure_final-20052022-3.pdf},\n\thowpublished = {https://leaps-initiative.eu/wp-content/uploads/2022/05/LEAPS-ESAPS-Broschure\\textunderscore{}final-20052022-3.pdf},\n}\n\n"
 ---

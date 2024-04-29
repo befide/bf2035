@@ -47,12 +47,12 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="fernandez-tornero_moreno-morcillo_etal__2013__crystal" class="csl-entry"><span class='author-bib'>Fernández-Tornero, Moreno-Morcillo, M., Rashid, U. J., Taylor, N. M. I., Ruiz, F. M., Gruene, T., Legrand, P., Steuerwald, U., &#38; Müller, C. W.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><b>Crystal structure of the 14-subunit RNA polymerase I</b></span>. <i>Nature</i>, <i>502</i>(7473), 644–649. <span class='URL'><a href='https://doi.org/10.1038/nature12636'>LINK</a></span></span>
+      <span data-csl-entry-id="fernandez-tornero_moreno-morcillo_etal__2013__crystal" class="csl-entry"><span class='author-bib'>Fernández-Tornero, Moreno-Morcillo, M., Rashid, U. J., et al.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><b>Crystal structure of the 14-subunit RNA polymerase I</b></span>. <i>Nature</i>, <i>502</i>(7473), 644–649. <span class='URL'><a href='https://doi.org/10.1038/nature12636'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Fernández-Tornero</span> et
     al.</span></span>, 2013)
-bibTex: "@article{Fernandez2013Crystal,\n\tnote = {[Online; accessed 2021-01-21]},\n\tauthor = {Fern{\\' a}ndez-Tornero, Carlos and Moreno-Morcillo, Mar{\\' i}a and Rashid, Umar J. and Taylor, Nicholas M. I. and Ruiz, Federico M. and Gruene, Tim and Legrand, Pierre and Steuerwald, Ulrich and M{\\\" u}ller, Christoph W.},\n\tjournal = {Nature},\n\tnumber = {7473},\n\tyear = {2013},\n\tmonth = {10},\n\tpages = {644--649},\n\ttitle = {Crystal structure of the 14-subunit {RNA} polymerase {I}},\n\thowpublished = {http://www.nature.com/articles/nature12636},\n\tvolume = {502},\n}\n\n"
+bibTex: "@article{Fernandez2013Crystal,\n\tnote = {[Online; accessed 2021-01-21]},\n\tauthor = {Fern{\\' a}ndez-Tornero, Carlos and Moreno-Morcillo, Mar{\\' i}a and Rashid, Umar J. and Taylor, Nicholas M. I. and Ruiz, Federico M. and Gruene, Tim and Legrand, Pierre and Steuerwald, Ulrich and M{\\\" u}ller, Christoph W.},\n\tjournal = {Nature},\n\tdoi = {10.1038/nature12636},\n\tissn = {0028-0836, 1476-4687},\n\tnumber = {7473},\n\tyear = {2013},\n\tmonth = {10},\n\tpages = {644--649},\n\ttitle = {Crystal structure of the 14-subunit {RNA} polymerase {I}},\n\turl = {http://www.nature.com/articles/nature12636},\n\thowpublished = {http://www.nature.com/articles/nature12636},\n\tvolume = {502},\n}\n\n"
 ---

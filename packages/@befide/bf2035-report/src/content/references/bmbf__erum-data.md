@@ -30,5 +30,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Bmbf</span></span>, 2020/2022)
-bibTex: "@techreport{Bmbf2022Aktionsplan,\n\tauthor = {{Bmbf}},\n\tyear = {2022},\n\tinstitution = {BMBF},\n\ttitle = {Aktionsplan {ErUM}-{Data}. {Von} {Big} {Data} zu {Smart} {Data}: Digitalisierung in der naturwissenschaftlichen {Grundlagenforschung}.},\n}\n\n"
+bibTex: "@techreport{Bmbf2022Aktionsplan,\n\tauthor = {{Bmbf}},\n\tyear = {2022},\n\tinstitution = {BMBF},\n\ttitle = {Aktionsplan {ErUM}-{Data}. {Von} {Big} {Data} zu {Smart} {Data}: Digitalisierung in der naturwissenschaftlichen {Grundlagenforschung}.},\n\turl = {https://www.bmbf.de/SharedDocs/Publikationen/de/bmbf/7/31640_Aktionsplan_ErUM-Data.pdf?__blob=publicationFile&v=7},\n}\n\n"
 ---

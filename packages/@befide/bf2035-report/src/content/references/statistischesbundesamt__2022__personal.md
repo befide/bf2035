@@ -37,5 +37,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Statistisches Bundesamt</span></span>,
     2022)
-bibTex: "@techreport{statistischesbundesamt__2022__personal,\n\tnote = {[Online; accessed 2022-04-29]},\n\taddress = {Wiesbaden},\n\tauthor = {{Statistisches Bundesamt}},\n\tseries = {Fachserie 11. {Reihe} 4.4},\n\tyear = {2022},\n\tmonth = {sep 22},\n\tnumber = {2110440207004},\n\tinstitution = {Statistisches Bundesamt},\n\ttitle = {Personal an {Hochschulen} 2021},\n}\n\n"
+bibTex: "@techreport{statistischesbundesamt__2022__personal,\n\tnote = {[Online; accessed 2022-04-29]},\n\taddress = {Wiesbaden},\n\tauthor = {{Statistisches Bundesamt}},\n\tseries = {Fachserie 11. {Reihe} 4.4},\n\tyear = {2022},\n\tmonth = {sep 22},\n\tnumber = {2110440207004},\n\tinstitution = {Statistisches Bundesamt},\n\ttitle = {Personal an {Hochschulen} 2021},\n\turl = {https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bildung-Forschung-Kultur/Hochschulen/Publikationen/Downloads-Hochschulen/personal-hochschulen-2110440207004.pdf?__blob=publicationFile},\n}\n\n"
 ---

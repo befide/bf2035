@@ -40,5 +40,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">I.FAST WP5 Members</span></span>, 2023)
-bibTex: "@article{i_fastwp5members__2023__present,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{I.FAST WP5 Members}},\n\tyear = {2023},\n\tmonth = {jun 1},\n\tpublisher = {[object Object]},\n\ttitle = {Present and future {AI} accelerator applications},\n}\n\n"
+bibTex: "@article{i_fastwp5members__2023__present,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{I.FAST WP5 Members}},\n\tdoi = {10.5281/ZENODO.7994429},\n\tyear = {2023},\n\tmonth = {jun 1},\n\tpublisher = {[object Object]},\n\ttitle = {Present and future {AI} accelerator applications},\n\turl = {https://zenodo.org/record/7994429},\n}\n\n"
 ---

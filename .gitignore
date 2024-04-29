@@ -118,3 +118,7 @@ packages/@befide/bf2035-report/src/_obsidian/section.md
 packages/@befide/bf2035-report/src/_obsidian/term.md
 .DS_Store
 frontmatter.json
+packages/@befide/bf2035-report/knip.json
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/tasks.json

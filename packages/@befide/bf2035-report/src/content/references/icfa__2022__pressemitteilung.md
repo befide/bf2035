@@ -26,5 +26,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Icfa</span></span>, 2022)
-bibTex: "@misc{icfa__2022__pressemitteilung,\n\tauthor = {{Icfa}},\n\tyear = {2022},\n\tmonth = {apr 10},\n\tpublisher = {ICFA},\n\ttitle = {Pressemitteilung: ICFA {Statement} {Regarding} {Higgs} {Factory} {Development} and the {ILC}},\n}\n\n"
+bibTex: "@misc{icfa__2022__pressemitteilung,\n\tauthor = {{Icfa}},\n\tyear = {2022},\n\tmonth = {apr 10},\n\tpublisher = {ICFA},\n\ttitle = {Pressemitteilung: ICFA {Statement} {Regarding} {Higgs} {Factory} {Development} and the {ILC}},\n\turl = {https://icfa.hep.net/wp-content/uploads/ICFA_Statement_April2022_Final.pdf},\n}\n\n"
 ---

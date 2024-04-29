@@ -48,5 +48,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Shiltsev</span></span>, 2015)
-bibTex: "@inproceedings{shiltsev__2015__crystal,\n\tnote = {[Online; accessed 2020-04-27]},\n\taddress = {Vienna},\n\tauthor = {Shiltsev, Vladimir},\n\tyear = {2015},\n\tmonth = {11},\n\ttitle = {Crystal ball: On the future high energy colliders},\n\thowpublished = {https://arxiv.org/pdf/1511.01934.pdf},\n}\n\n"
+bibTex: "@inproceedings{shiltsev__2015__crystal,\n\tnote = {[Online; accessed 2020-04-27]},\n\taddress = {Vienna},\n\tauthor = {Shiltsev, Vladimir},\n\tyear = {2015},\n\tmonth = {11},\n\ttitle = {Crystal ball: On the future high energy colliders},\n\turl = {https://arxiv.org/pdf/1511.01934.pdf},\n\thowpublished = {https://arxiv.org/pdf/1511.01934.pdf},\n}\n\n"
 ---

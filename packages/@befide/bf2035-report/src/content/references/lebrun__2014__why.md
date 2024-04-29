@@ -31,5 +31,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Lebrun</span></span>, 2014)
-bibTex: "@misc{lebrun__2014__why,\n\taddress = {CERN},\n\tauthor = {Lebrun, Philippe},\n\tyear = {2014},\n\tmonth = {oct 9},\n\ttitle = {Why are particle accelerators so inefficient?},\n\thowpublished = {https://indico.cern.ch/event/321880/contributions/1702584/attachments/622090/855967/Talk\\textunderscore{}Accelerator\\textunderscore{}Energy\\textunderscore{}Efficiency\\textunderscore{}141126.pdf},\n}\n\n"
+bibTex: "@misc{lebrun__2014__why,\n\taddress = {CERN},\n\tauthor = {Lebrun, Philippe},\n\tyear = {2014},\n\tmonth = {oct 9},\n\ttitle = {Why are particle accelerators so inefficient?},\n\turl = {https://indico.cern.ch/event/321880/contributions/1702584/attachments/622090/855967/Talk_Accelerator_Energy_Efficiency_141126.pdf},\n\thowpublished = {https://indico.cern.ch/event/321880/contributions/1702584/attachments/622090/855967/Talk\\textunderscore{}Accelerator\\textunderscore{}Energy\\textunderscore{}Efficiency\\textunderscore{}141126.pdf},\n}\n\n"
 ---

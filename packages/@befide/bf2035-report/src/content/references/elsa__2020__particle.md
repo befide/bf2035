@@ -27,5 +27,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Elsa</span></span>, 2020)
-bibTex: "@misc{elsa__2020__particle,\n\tnote = {[Online; accessed 2022-06-19]},\n\tauthor = {{Elsa}},\n\tyear = {2020},\n\ttitle = {Particle {Accelerators} {Around} the {World}},\n\thowpublished = {http://www-elsa.physik.uni-bonn.de/accelerator\\textunderscore{}list.html},\n}\n\n"
+bibTex: "@misc{elsa__2020__particle,\n\tnote = {[Online; accessed 2022-06-19]},\n\tauthor = {{Elsa}},\n\tyear = {2020},\n\ttitle = {Particle {Accelerators} {Around} the {World}},\n\turl = {http://www-elsa.physik.uni-bonn.de/accelerator_list.html},\n\thowpublished = {http://www-elsa.physik.uni-bonn.de/accelerator\\textunderscore{}list.html},\n}\n\n"
 ---

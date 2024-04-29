@@ -33,5 +33,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">CERN Communication Group</span></span>,
     2017)
-bibTex: "@techreport{cerncommunicationgroup__2017__lhc,\n\taddress = {Geneva},\n\tauthor = {{CERN Communication Group}},\n\tyear = {2017},\n\tnumber = {CERN-Brochure-2017-002-Eng},\n\tinstitution = {CERN},\n\ttitle = {LHC guide},\n\ttype = {CERN-{Brochure}},\n}\n\n"
+bibTex: "@techreport{cerncommunicationgroup__2017__lhc,\n\taddress = {Geneva},\n\tauthor = {{CERN Communication Group}},\n\tyear = {2017},\n\tnumber = {CERN-Brochure-2017-002-Eng},\n\tinstitution = {CERN},\n\ttitle = {LHC guide},\n\ttype = {CERN-{Brochure}},\n\turl = {https://cds.cern.ch/record/2255762/files/CERN-Brochure-2017-002-Eng.pdf},\n}\n\n"
 ---

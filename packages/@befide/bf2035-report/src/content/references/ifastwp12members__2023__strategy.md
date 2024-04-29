@@ -43,5 +43,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">IFAST WP12 Members</span></span>, 2023)
-bibTex: "@article{ifastwp12members__2023__strategy,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{IFAST WP12 Members}},\n\tyear = {2023},\n\tmonth = {sep 14},\n\tpublisher = {[object Object]},\n\ttitle = {Strategy for implementing novel societal applications of accelerators},\n}\n\n"
+bibTex: "@article{ifastwp12members__2023__strategy,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{IFAST WP12 Members}},\n\tdoi = {10.5281/ZENODO.8348103},\n\tyear = {2023},\n\tmonth = {sep 14},\n\tpublisher = {[object Object]},\n\ttitle = {Strategy for implementing novel societal applications of accelerators},\n\turl = {https://zenodo.org/record/8348103},\n}\n\n"
 ---

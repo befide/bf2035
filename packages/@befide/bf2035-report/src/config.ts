@@ -8,16 +8,4 @@ export const SITE = {
   articlesPerPage: 10,
   issuesPerPage: 5,
   referencesPerPage: 250,
-}
-
-export const CausalMapNodeCategories = new Map<string, string>([
-  ["cooperation", "Zusammenarbeit"],
-  ["talents", "Talente"],
-  ["official", "Official"],
-  ["frameworks", "Frameworks"],
-  ["adapters", "Adapters"],
-  ["css+ui", "CSS + UI"],
-  ["performance+seo", "Performance + SEO"],
-  ["analytics", "Analytics"],
-  ["accessibility", "Accessibility"],
-])
+};

@@ -30,5 +30,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Secretariat for the Update of the European
     Particle Physics Strategy</span></span>, 2019)
-bibTex: "@techreport{Secretariat2019Supporting,\n\taddress = {Geneva},\n\tauthor = {{Secretariat for the Update of the European Particle Physics Strategy}},\n\tyear = {2019},\n\tmonth = {9},\n\tnumber = {CERN-ESU-005},\n\tinstitution = {CERN},\n\ttitle = {Supporting note for briefing book 2020: Towards an update of the {European} {Strategy} for {Particle} {Physics}},\n}\n\n"
+bibTex: "@techreport{Secretariat2019Supporting,\n\taddress = {Geneva},\n\tauthor = {{Secretariat for the Update of the European Particle Physics Strategy}},\n\tyear = {2019},\n\tmonth = {9},\n\tnumber = {CERN-ESU-005},\n\tinstitution = {CERN},\n\ttitle = {Supporting note for briefing book 2020: Towards an update of the {European} {Strategy} for {Particle} {Physics}},\n\turl = {https://cds.cern.ch/record/2705370},\n}\n\n"
 ---

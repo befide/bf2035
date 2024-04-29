@@ -34,5 +34,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">European Strategy Group</span></span>,
     2020)
-bibTex: "@techreport{europeanstrategygroup__2020__2020,\n\tnote = {[Online; accessed 2022-08-24]},\n\taddress = {Geneva},\n\tauthor = {{European Strategy Group}},\n\tyear = {2020},\n\tnumber = {CERN-ESU-015},\n\tinstitution = {CERN},\n\ttitle = {2020 {Update} of the {European} {Strategy} for {Particle} {Physics} ({Brochure})},\n}\n\n"
+bibTex: "@techreport{europeanstrategygroup__2020__2020,\n\tnote = {[Online; accessed 2022-08-24]},\n\taddress = {Geneva},\n\tauthor = {{European Strategy Group}},\n\tdoi = {10.17181/CERN.JSC6.W89E},\n\tyear = {2020},\n\tnumber = {CERN-ESU-015},\n\tinstitution = {CERN},\n\ttitle = {2020 {Update} of the {European} {Strategy} for {Particle} {Physics} ({Brochure})},\n\turl = {https://cds.cern.ch/record/2721370/files/CERN-ESU-015-2020%20Update%20European%20Strategy.pdf},\n}\n\n"
 ---

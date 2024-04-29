@@ -51,5 +51,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">ARIES WP1 members</span></span>, 2021)
-bibTex: "@techreport{arieswp1members__2021__aries,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{ARIES WP1 members}},\n\tyear = {2021},\n\tmonth = {jul 22},\n\ttitle = {ARIES. {Final} {Report} on {European} {Strategy}},\n\thowpublished = {https://zenodo.org/record/7085311},\n}\n\n"
+bibTex: "@techreport{arieswp1members__2021__aries,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{ARIES WP1 members}},\n\tdoi = {10.5281/zenodo.7085311},\n\tyear = {2021},\n\tmonth = {jul 22},\n\ttitle = {ARIES. {Final} {Report} on {European} {Strategy}},\n\turl = {https://zenodo.org/record/7085311},\n\thowpublished = {https://zenodo.org/record/7085311},\n}\n\n"
 ---

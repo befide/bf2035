@@ -43,5 +43,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">I.FAST WP6 Members</span></span>, 2023)
-bibTex: "@article{i_fastwp6members__2023__report,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{I.FAST WP6 Members}},\n\tyear = {2023},\n\tmonth = {jun 1},\n\tpublisher = {[object Object]},\n\ttitle = {Report on the {Novel} {Accelerator} {Landscape} in {Europe}: Facilities, {Projects} and {Capabilities} at the {Beginning} of the 2020's},\n}\n\n"
+bibTex: "@article{i_fastwp6members__2023__report,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{I.FAST WP6 Members}},\n\tdoi = {10.5281/ZENODO.7994823},\n\tyear = {2023},\n\tmonth = {jun 1},\n\tpublisher = {[object Object]},\n\ttitle = {Report on the {Novel} {Accelerator} {Landscape} in {Europe}: Facilities, {Projects} and {Capabilities} at the {Beginning} of the 2020's},\n\turl = {https://zenodo.org/record/7994823},\n}\n\n"
 ---

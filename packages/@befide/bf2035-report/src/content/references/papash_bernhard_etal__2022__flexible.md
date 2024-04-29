@@ -59,11 +59,11 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="papash_bernhard_etal__2022__flexible" class="csl-entry"><span class='author-bib'>Papash, Bernhard, A., Bründermann, E., El Khechen, D., Härer, B., Müller, A.-S., Ruprecht, R., Schwarz, M., &#38; Schäfer, J.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><b><i>Flexible Features of the Compact Storage Ring in the cSTART Project at Karlsruhe Institute of Technology</i></b></span>. <span class='URL'><a href='https://doi.org/10.5445/IR/1000149546'>LINK</a></span></span>
+      <span data-csl-entry-id="papash_bernhard_etal__2022__flexible" class="csl-entry"><span class='author-bib'>Papash, Bernhard, A., Bründermann, E., et al.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><b><i>Flexible Features of the Compact Storage Ring in the cSTART Project at Karlsruhe Institute of Technology</i></b></span>. <span class='URL'><a href='https://doi.org/10.5445/IR/1000149546'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Papash</span> et al.</span></span>, 2022)
-bibTex: "@article{papash_bernhard_etal__2022__flexible,\n\tnote = {[Online; accessed 2022-08-30]},\n\tauthor = {Papash, A. I. and Bernhard, A. and Br{\\\" u}ndermann, E. and El Khechen, Dima and H{\\\" a}rer, B. and M{\\\" u}ller, A-S. and Ruprecht, R. and Schwarz, M. and Sch{\\\" a}fer, J.},\n\tyear = {2022},\n\tpublisher = {JACoW Publishing},\n\ttitle = {Flexible {Features} of the {Compact} {Storage} {Ring} in the {cSTART} {Project} at {Karlsruhe} {Institute} of {Technology}},\n}\n\n"
+bibTex: "@article{papash_bernhard_etal__2022__flexible,\n\tnote = {[Online; accessed 2022-08-30]},\n\tauthor = {Papash, A. I. and Bernhard, A. and Br{\\\" u}ndermann, E. and El Khechen, Dima and H{\\\" a}rer, B. and M{\\\" u}ller, A-S. and Ruprecht, R. and Schwarz, M. and Sch{\\\" a}fer, J.},\n\tdoi = {10.5445/IR/1000149546},\n\tyear = {2022},\n\tpublisher = {JACoW Publishing},\n\ttitle = {Flexible {Features} of the {Compact} {Storage} {Ring} in the {cSTART} {Project} at {Karlsruhe} {Institute} of {Technology}},\n\turl = {https://publikationen.bibliothek.kit.edu/1000149546},\n}\n\n"
 ---
