@@ -1,0 +1,13 @@
+{
+  "astro": {
+    "entry": [
+      "pwa.ts",
+      "pwa-assets.config.ts",
+      "astro.config.{js,cjs,mjs,ts}",
+      "src/content/config.ts",
+      "src/pages/**/*.{astro,mdx,js,ts}",
+      "src/content/**/*.mdx",
+      "scripts/generate-references-from-zotero-csl.ts"
+    ]
+  }
+}
