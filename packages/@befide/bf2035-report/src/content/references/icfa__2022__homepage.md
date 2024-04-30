@@ -26,5 +26,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Icfa</span></span>, 2022)
-bibTex: "@misc{icfa__2022__homepage,\n\tnote = {[Online; accessed 2022-08-20]},\n\tauthor = {{Icfa}},\n\tyear = {2022},\n\ttitle = {Homepage of the {International} {Committee} for {Future} {Accelerators}},\n\turl = {https://icfa.hep.net/},\n\thowpublished = {https://icfa.hep.net/},\n}\n\n"
+bibTex: "@misc{icfa__2022__homepage,\n\tnote = {[Online; accessed 2022-08-20]},\n\tauthor = {{Icfa}},\n\tyear = {2022},\n\ttitle = {Homepage of the {International} {Committee} for {Future} {Accelerators}},\n\thowpublished = {https://icfa.hep.net/},\n}\n\n"
 ---

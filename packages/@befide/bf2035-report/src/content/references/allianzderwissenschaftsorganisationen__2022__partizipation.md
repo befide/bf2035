@@ -41,5 +41,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Allianz der
     Wissenschaftsorganisationen</span></span>, 2022)
-bibTex: "@techreport{allianzderwissenschaftsorganisationen__2022__partizipation,\n\tauthor = {{Allianz der Wissenschaftsorganisationen}},\n\tyear = {2022},\n\tmonth = {nov 9},\n\tnote = {Last Modified: 2023-06-29T15:09:30},\n\ttitle = {Partizipation in der {Forschung}},\n\ttype = {Positionspapier},\n\turl = {https://www.allianz-der-wissenschaftsorganisationen.de/wp-content/uploads/2022/11/2022-11-09_Allianz_Stellungnahme_Partizipation-1.pdf},\n\thowpublished = {https://www.allianz-der-wissenschaftsorganisationen.de/wp-content/uploads/2022/11/2022-11-09\\textunderscore{}Allianz\\textunderscore{}Stellungnahme\\textunderscore{}Partizipation-1.pdf},\n}\n\n"
+bibTex: "@techreport{allianzderwissenschaftsorganisationen__2022__partizipation,\n\tauthor = {{Allianz der Wissenschaftsorganisationen}},\n\tyear = {2022},\n\tmonth = {nov 9},\n\tnote = {Last Modified: 2023-06-29T15:09:30},\n\ttitle = {Partizipation in der {Forschung}},\n\ttype = {Positionspapier},\n\thowpublished = {https://www.allianz-der-wissenschaftsorganisationen.de/wp-content/uploads/2022/11/2022-11-09\\textunderscore{}Allianz\\textunderscore{}Stellungnahme\\textunderscore{}Partizipation-1.pdf},\n}\n\n"
 ---

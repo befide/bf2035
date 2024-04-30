@@ -36,5 +36,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Editor</span></span>, 2019)
-bibTex: "@article{editor__2019__no,\n\tnote = {[Online; accessed 2020-06-10]},\n\tjournal = {Nature Reviews Physics},\n\tdoi = {10.1038/s42254-019-0052-4},\n\teditor = {{Editor}},\n\tissn = {2522-5820},\n\tnumber = {4},\n\tyear = {2019},\n\tmonth = {4},\n\tpages = {231--231},\n\ttitle = {No final frontier},\n\turl = {http://www.nature.com/articles/s42254-019-0052-4},\n\thowpublished = {http://www.nature.com/articles/s42254-019-0052-4},\n\tvolume = {1},\n}\n\n"
+bibTex: "@article{editor__2019__no,\n\tnote = {[Online; accessed 2020-06-10]},\n\tjournal = {Nature Reviews Physics},\n\teditor = {{Editor}},\n\tnumber = {4},\n\tyear = {2019},\n\tmonth = {4},\n\tpages = {231--231},\n\ttitle = {No final frontier},\n\thowpublished = {http://www.nature.com/articles/s42254-019-0052-4},\n\tvolume = {1},\n}\n\n"
 ---

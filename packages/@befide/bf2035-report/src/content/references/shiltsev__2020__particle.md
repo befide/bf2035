@@ -39,5 +39,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Shiltsev</span></span>, 2020)
-bibTex: "@article{shiltsev__2020__particle,\n\tauthor = {Shiltsev, Vladimir},\n\tjournal = {Physics Today},\n\tdoi = {10.1063/PT.3.4452},\n\tissn = {0031-9228},\n\tnumber = {4},\n\tyear = {2020},\n\tmonth = {apr 1},\n\tnote = {http://web.archive.org/web/20200427073743/https://physicstoday.scitation.org/doi/10.1063/PT.3.4452},\n\tpages = {32--39},\n\ttitle = {Particle beams behind physics discoveries},\n\turl = {10.1063/PT.3.4452},\n\thowpublished = {10.1063/PT.3.4452},\n\tvolume = {73},\n}\n\n"
+bibTex: "@article{shiltsev__2020__particle,\n\tauthor = {Shiltsev, Vladimir},\n\tjournal = {Physics Today},\n\tnumber = {4},\n\tyear = {2020},\n\tmonth = {apr 1},\n\tnote = {http://web.archive.org/web/20200427073743/https://physicstoday.scitation.org/doi/10.1063/PT.3.4452},\n\tpages = {32--39},\n\ttitle = {Particle beams behind physics discoveries},\n\thowpublished = {10.1063/PT.3.4452},\n\tvolume = {73},\n}\n\n"
 ---

@@ -35,5 +35,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Aicheler</span> &#38; <span
     style="font-variant:small-caps;">Toge</span></span>, 2012)
-bibTex: "@techreport{aicheler_toge__2012__multitev,\n\tauthor = {Aicheler, M, Burrows, P, Draper, M, Garvey, T, Lebrun, P, Peach, K, Phinney, N, Schmickler, H, Schulte, D, and Toge, N},\n\tyear = {2012},\n\tmonth = {7},\n\tnote = {DOI 10.5170/CERN-2012-007},\n\tnumber = {CERN-2012-007},\n\ttitle = {Multi-{TeV} {Linear} {Collider} {Based} on {CLIC} {Technology} : CLIC {Conceptual} {Design} {Report}},\n\turl = {https://cds.cern.ch/record/1500095/files/CERN-2012-007.pdf},\n\thowpublished = {https://cds.cern.ch/record/1500095/files/CERN-2012-007.pdf},\n}\n\n"
+bibTex: "@techreport{aicheler_toge__2012__multitev,\n\tauthor = {Aicheler, M, Burrows, P, Draper, M, Garvey, T, Lebrun, P, Peach, K, Phinney, N, Schmickler, H, Schulte, D, and Toge, N},\n\tyear = {2012},\n\tmonth = {7},\n\tnote = {DOI 10.5170/CERN-2012-007},\n\tnumber = {CERN-2012-007},\n\ttitle = {Multi-{TeV} {Linear} {Collider} {Based} on {CLIC} {Technology} : CLIC {Conceptual} {Design} {Report}},\n\thowpublished = {https://cds.cern.ch/record/1500095/files/CERN-2012-007.pdf},\n}\n\n"
 ---

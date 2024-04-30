@@ -61,5 +61,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Beye</span></span>, 2020)
-bibTex: "@techreport{beye__2020__flash2020,\n\tnote = {[Online; accessed 2022-08-10]},\n\taddress = {Hamburg},\n\tauthor = {Beye, Martin},\n\tdoi = {10.3204/PUBDB-2020-00465},\n\tyear = {2020},\n\tpages = {pages 1--126},\n\tinstitution = {DESY},\n\ttitle = {FLASH2020+ : Making {FLASH} brighter, faster and more flexible : Conceptual {Design} {Report}},\n\turl = {https://bib-pubdb1.desy.de/record/434950},\n}\n\n"
+bibTex: "@techreport{beye__2020__flash2020,\n\tnote = {[Online; accessed 2022-08-10]},\n\taddress = {Hamburg},\n\tauthor = {Beye, Martin},\n\tyear = {2020},\n\tpages = {pages 1--126},\n\tinstitution = {DESY},\n\ttitle = {FLASH2020+ : Making {FLASH} brighter, faster and more flexible : Conceptual {Design} {Report}},\n}\n\n"
 ---

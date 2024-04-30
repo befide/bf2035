@@ -32,5 +32,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Europäische Kommission</span></span>, 2005)
-bibTex: "@book{europaischekommission__2005__europaische,\n\taddress = {Luxembourg},\n\teditor = {{Europäische Kommission}},\n\tisbn = {978-92-894-9313-0},\n\tyear = {2005},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T22:09:35.481Z},\n\tpublisher = {Office for Official Publications of the European Communities},\n\ttitle = {Europ{\\\" a}ische {Charta} for {Forscher}: Verhaltenskodex f{\\\" u}r die {Einstellung} von {Forschern}},\n}\n\n"
+bibTex: "@book{europaischekommission__2005__europaische,\n\taddress = {Luxembourg},\n\teditor = {{Europäische Kommission}},\n\tyear = {2005},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T22:09:35.481Z},\n\tpublisher = {Office for Official Publications of the European Communities},\n\ttitle = {Europ{\\\" a}ische {Charta} for {Forscher}: Verhaltenskodex f{\\\" u}r die {Einstellung} von {Forschern}},\n}\n\n"
 ---

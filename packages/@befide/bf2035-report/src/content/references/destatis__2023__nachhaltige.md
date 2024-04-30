@@ -26,5 +26,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Destatis</span></span>, 2023)
-bibTex: "@techreport{destatis__2023__nachhaltige,\n\tauthor = {{Destatis}},\n\tyear = {2023},\n\tmonth = {4},\n\tpages = {180},\n\tinstitution = {Statistisches Bundesamt (Destatis)},\n\ttitle = {Nachhaltige {Entwicklung} in {Deutschland}, {Indikatorenbericht} 2022},\n\turl = {https://dns-indikatoren.de/assets/Publikationen/Indikatorenberichte/2022.pdf},\n}\n\n"
+bibTex: "@techreport{destatis__2023__nachhaltige,\n\tauthor = {{Destatis}},\n\tyear = {2023},\n\tmonth = {4},\n\tpages = {180},\n\tinstitution = {Statistisches Bundesamt (Destatis)},\n\ttitle = {Nachhaltige {Entwicklung} in {Deutschland}, {Indikatorenbericht} 2022},\n}\n\n"
 ---

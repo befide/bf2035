@@ -47,11 +47,11 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="brummer_bohlen_etal__2022__compact" class="csl-entry"><span class='author-bib'>Brümmer, Bohlen, S., Grüner, F., et al.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><b>Compact all-optical precision-tunable narrowband hard Compton X-ray source</b></span>. <i>Scientific Reports</i>, <i>12</i>(1), 16017. <span class='URL'><a href='https://doi.org/10.1038/s41598-022-20283-8'>LINK</a></span></span>
+      <span data-csl-entry-id="brummer_bohlen_etal__2022__compact" class="csl-entry"><span class='author-bib'>Brümmer, Bohlen, S., Grüner, F., Osterhoff, J., &#38; Põder, K.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><b>Compact all-optical precision-tunable narrowband hard Compton X-ray source</b></span>. <i>Scientific Reports</i>, <i>12</i>(1), 16017. <span class='URL'><a href='https://doi.org/10.1038/s41598-022-20283-8'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Brümmer</span> et al.</span></span>, 2022)
-bibTex: "@article{brummer_bohlen_etal__2022__compact,\n\tauthor = {Br{\\\" u}mmer, T. and Bohlen, S. and Gr{\\\" u}ner, F. and Osterhoff, J. and P{\\~ o}der, K.},\n\tjournal = {Scientific Reports},\n\tdoi = {10.1038/s41598-022-20283-8},\n\tissn = {2045-2322},\n\tnumber = {1},\n\tyear = {2022},\n\tmonth = {sep 26},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T10:08:39.662Z},\n\tpages = {16017},\n\ttitle = {Compact all-optical precision-tunable narrowband hard {Compton} {X}-ray source},\n\turl = {https://www.nature.com/articles/s41598-022-20283-8},\n\thowpublished = {https://www.nature.com/articles/s41598-022-20283-8},\n\tvolume = {12},\n}\n\n"
+bibTex: "@article{brummer_bohlen_etal__2022__compact,\n\tauthor = {Br{\\\" u}mmer, T. and Bohlen, S. and Gr{\\\" u}ner, F. and Osterhoff, J. and P{\\~ o}der, K.},\n\tjournal = {Scientific Reports},\n\tnumber = {1},\n\tyear = {2022},\n\tmonth = {sep 26},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T10:08:39.662Z},\n\tpages = {16017},\n\ttitle = {Compact all-optical precision-tunable narrowband hard {Compton} {X}-ray source},\n\thowpublished = {https://www.nature.com/articles/s41598-022-20283-8},\n\tvolume = {12},\n}\n\n"
 ---

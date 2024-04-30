@@ -50,5 +50,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Organisation for Economic Co-operation and
     Development</span></span>, 2014)
-bibTex: "@book{2014Promoting,\n\taddress = {Paris},\n\teditor = {{Organisation for Economic Co-operation and Development}},\n\tisbn = {978-92-64-20745-5},\n\tyear = {2014},\n\tnote = {OCLC: on1062312701},\n\tpublisher = {OECD},\n\ttitle = {Promoting research excellence: new approaches to funding},\n}\n\n"
+bibTex: "@book{2014Promoting,\n\taddress = {Paris},\n\teditor = {{Organisation for Economic Co-operation and Development}},\n\tyear = {2014},\n\tnote = {OCLC: on1062312701},\n\tpublisher = {OECD},\n\ttitle = {Promoting research excellence: new approaches to funding},\n}\n\n"
 ---

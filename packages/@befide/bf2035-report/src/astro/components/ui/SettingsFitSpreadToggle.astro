@@ -16,23 +16,17 @@
 </div>
 
 <script>
-  import {
-    updateDocumentSettings,
-    toggleFitSpread,
-  } from "@utils/settingsStore.js";
+  import { updateDocumentSettings, toggleFitSpread } from "@utils/settingsStore.js";
 
   updateDocumentSettings.fitSpread();
-  document.addEventListener(
-    "astro:after-swap",
-    updateDocumentSettings.fitSpread,
-  );
+  document.addEventListener("astro:after-swap", updateDocumentSettings.fitSpread);
 
   document
     .getElementById("toggle__fit_spread")
     ?.addEventListener("click", toggleFitSpread);
 
   document.addEventListener("keyup", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyF") {
+    if (e.ctrlKey &&  e.shiftKey && e.code === "KeyF") {
       document.getElementById("toggle__fit_spread")?.click();
     }
   });

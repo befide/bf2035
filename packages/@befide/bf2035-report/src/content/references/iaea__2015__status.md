@@ -26,5 +26,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">IAEA</span></span>, 2015)
-bibTex: "@techreport{iaea__2015__status,\n\taddress = {Vienna},\n\tauthor = {{IAEA}},\n\tyear = {2015},\n\tinstitution = {International Atomic Energy Agency},\n\ttitle = {Status of {Accelerator} {Driven} {Systems} {Research} and {Technology} {Development}},\n\ttype = {Status {Report}},\n\turl = {https://www.iaea.org/publications/10870/status-of-accelerator-driven-systems-research-and-technology-development},\n}\n\n"
+bibTex: "@techreport{iaea__2015__status,\n\taddress = {Vienna},\n\tauthor = {{IAEA}},\n\tyear = {2015},\n\tinstitution = {International Atomic Energy Agency},\n\ttitle = {Status of {Accelerator} {Driven} {Systems} {Research} and {Technology} {Development}},\n\ttype = {Status {Report}},\n}\n\n"
 ---

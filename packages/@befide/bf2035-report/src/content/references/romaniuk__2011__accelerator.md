@@ -46,5 +46,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Romaniuk</span></span>, 2011)
-bibTex: "@article{romaniuk__2011__accelerator,\n\tnote = {[Online; accessed 2022-11-16]},\n\tauthor = {Romaniuk, Ryszard},\n\tjournal = {International Journal of Electronics and Telecommunications},\n\tdoi = {10.2478/v10177-011-0057-0},\n\tissn = {0867-6747},\n\tnumber = {3},\n\tyear = {2011},\n\tmonth = {jan 1},\n\ttitle = {Accelerator {Infrastructure} in {Europe} {EuCARD} 2011},\n\turl = {http://journals.pan.pl/dlibra/publication/100987/edition/87005/content},\n\thowpublished = {http://journals.pan.pl/dlibra/publication/100987/edition/87005/content},\n\tvolume = {57},\n}\n\n"
+bibTex: "@article{romaniuk__2011__accelerator,\n\tnote = {[Online; accessed 2022-11-16]},\n\tauthor = {Romaniuk, Ryszard},\n\tjournal = {International Journal of Electronics and Telecommunications},\n\tnumber = {3},\n\tyear = {2011},\n\tmonth = {jan 1},\n\ttitle = {Accelerator {Infrastructure} in {Europe} {EuCARD} 2011},\n\thowpublished = {http://journals.pan.pl/dlibra/publication/100987/edition/87005/content},\n\tvolume = {57},\n}\n\n"
 ---
