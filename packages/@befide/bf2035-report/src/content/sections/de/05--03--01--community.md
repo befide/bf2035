@@ -45,7 +45,7 @@ In the _Proposal for the Helmholtz Research Programme Matter and Technologies. R
 For the topic _Accelerator research and development_, the following full-time equivalents are foreseen for 2021:
 
 | Personnel category           | FTEs |
-| ---------------------------- | ---: |
+|------------------------------|-----:|
 | Scientists                   |  139 |
 | Doctoral students            |   39 |
 | Scientific support personnel |   86 |
@@ -69,7 +69,7 @@ The following staff categories are distinguished in the survey:
   - hauptberuflich
     - Professoren
       - C4 und entspr. Besoldungsgruppen; C3 und entspr. Besoldungsgruppen; C2 und entspr. Besoldungsgruppen -auf Dauer-; C2 und entspr. Besoldungsgruppen -auf Zeit-; W3; W2; Juniorprofessoren; Gastprofessoren (hauptberuflich)
-    - Dozenten und Assistenten
+    - Dozenten und Assistenten  
       - Hochschuldozenten; Universitätsdozenten; Oberassistenten; Oberingenieure; Hochschulassistenten; wissenschaftliche und künstlerische Assistenten; Akademische (Ober)Räte -auf Zeit-
     - Wissenschaftliche und künstlerische Mitarbeiter
       - Akademische Räte, Oberräte und Direktoren; wissenschaftliche und künstlerische Mitarbeiter im Angestelltenverhältnis; akademische Mitarbeiter

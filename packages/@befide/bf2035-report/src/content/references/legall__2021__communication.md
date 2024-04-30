@@ -36,5 +36,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Le Gall</span></span>, 2021)
-bibTex: "@article{legall__2021__communication,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {Le Gall, Antoine},\n\tdoi = {10.5281/ZENODO.5643501},\n\tyear = {2021},\n\tmonth = {oct 28},\n\tpublisher = {[object Object]},\n\ttitle = {Communication {Strategy}},\n\turl = {https://zenodo.org/record/5643501},\n}\n\n"
+bibTex: "@article{legall__2021__communication,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {Le Gall, Antoine},\n\tyear = {2021},\n\tmonth = {oct 28},\n\tpublisher = {[object Object]},\n\ttitle = {Communication {Strategy}},\n}\n\n"
 ---

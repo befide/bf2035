@@ -1,9 +1,9 @@
 ---
-import { getSections } from "@utils/getSections";
-import PartLayout from "./Part.astro";
-import SectionLayout from "./Section.astro";
+import PartLayout from "./Part.astro"
+import SectionLayout from "./Section.astro"
 
-const sections = await getSections();
+const { sections } = Astro.props;
+
 ---
 
 {

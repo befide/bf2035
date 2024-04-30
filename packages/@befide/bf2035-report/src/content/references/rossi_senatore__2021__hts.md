@@ -61,5 +61,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Rossi</span> &#38; <span
     style="font-variant:small-caps;">Senatore</span></span>, 2021)
-bibTex: "@article{rossi_senatore__2021__hts,\n\tauthor = {Rossi, Lucio and Senatore, Carmine},\n\tjournal = {Instruments},\n\tdoi = {10/gpcwzz},\n\tissn = {2410-390X},\n\tnumber = {1},\n\tyear = {2021},\n\tmonth = {feb 23},\n\tnote = {https://web.archive.org/web/20220206093607/https://www.mdpi.com/2410-390X/5/1/8},\n\tpages = {8},\n\ttitle = {HTS {Accelerator} {Magnet} and {Conductor} {Development} in {Europe}},\n\turl = {https://www.mdpi.com/2410-390X/5/1/8},\n\thowpublished = {https://www.mdpi.com/2410-390X/5/1/8},\n\tvolume = {5},\n}\n\n"
+bibTex: "@article{rossi_senatore__2021__hts,\n\tauthor = {Rossi, Lucio and Senatore, Carmine},\n\tjournal = {Instruments},\n\tnumber = {1},\n\tyear = {2021},\n\tmonth = {feb 23},\n\tnote = {https://web.archive.org/web/20220206093607/https://www.mdpi.com/2410-390X/5/1/8},\n\tpages = {8},\n\ttitle = {HTS {Accelerator} {Magnet} and {Conductor} {Development} in {Europe}},\n\thowpublished = {https://www.mdpi.com/2410-390X/5/1/8},\n\tvolume = {5},\n}\n\n"
 ---

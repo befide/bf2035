@@ -6,6 +6,7 @@ import "@citation-js/plugin-bibtex"
 import "@citation-js/plugin-csl"
 import { readFileSync, writeFileSync } from "fs"
 import { join } from "path"
+import { log } from "console"
 
 const templateName = "apa_7th_semantic"
 const template = readFileSync(join(__dirname, templateName + ".csl")).toString()
@@ -22,14 +23,14 @@ const readCSLItems = (fileNames: string[]) =>
   fileNames.flatMap((fileName) => JSON.parse(readFileSync(fileName).toString()))
 
 const generate = ({ globPattern, tagScoper }) => {
+
   const clsItems = readCSLItems(fg.sync(globPattern))
 
   const cite = Cite()
 
-  tagScoper()
-
   const processCitation = (s = "") =>
-    s.replaceAll("[[/]]", "</span>")
+    s
+      .replaceAll("[[/]]", "</span>")
       .replace(/\[\[(.*?)\]\]/gm, "<span class='$1'>")
       // .replace("(", "")
       // .replace(")", "")
@@ -41,7 +42,7 @@ const generate = ({ globPattern, tagScoper }) => {
     return {
       cslItem,
       tags: cslItem.keyword
-        ? cslItem.keyword.split(";").filter((tag) => tag.startsWith("#bf2035/"))
+        ? cslItem.keyword.split(";").filter(tag => tag.startsWith("#bf2035/"))
         : [],
       rendered: {
         bibliography: linkify(
@@ -83,24 +84,29 @@ const generate = ({ globPattern, tagScoper }) => {
 generate({
   globPattern: "**.csl.json",
   tagScoper: (tag: string) => {
-    if (!tag || tag.startsWith("#bf2035"))
+
+    
+
+
+
+    if (tag.startsWith("#bf2035"))
       // return [{ tag: tag, scope: undefined }]
       return tag
 
     return []
 
-    // const split = tag.replace(/^#bf2035\//, "").split("::")
+    const split = tag.replace(/^#bf2035\//, "").split("::")
     return tag
 
     // const issue = split.shift();
 
-    // const tags = []
-    // tags.push({
-    //   scope: "collection." + split.join("/"),
-    // })
+    const tags = []
+    tags.push({
+      "scope": "collection." + split.join("/")
+    })
     // ...split.map((collection) => "topic:" + issue + "/" + collection),
     // );
 
-    // return tags
+    return tags
   },
 })

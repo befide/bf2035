@@ -46,5 +46,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Pfeffer</span> &#38; <span
     style="font-variant:small-caps;">Flegel</span></span>, 2021)
-bibTex: "@techreport{pfeffer_flegel__2021__accelerators,\n\tauthor = {Pfeffer, Inga and Flegel, Ilka},\n\tdoi = {10.3204/PUBDB-2020-04948},\n\tyear = {2021},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-24T18:49:16.025Z},\n\tpages = {pages 77 pages},\n\tinstitution = {Deutsches Elektronen-Synchrotron},\n\ttitle = {Accelerators 2020: Highlights and {Annual} {Report}; {Editorial} {Deadline}: March 1, 2020: Highlights and {Annual} {Report}},\n\ttype = {Annual {Report}},\n\turl = {https://bib-pubdb1.desy.de/record/452995},\n}\n\n"
+bibTex: "@techreport{pfeffer_flegel__2021__accelerators,\n\tauthor = {Pfeffer, Inga and Flegel, Ilka},\n\tyear = {2021},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-24T18:49:16.025Z},\n\tpages = {pages 77 pages},\n\tinstitution = {Deutsches Elektronen-Synchrotron},\n\ttitle = {Accelerators 2020: Highlights and {Annual} {Report}; {Editorial} {Deadline}: March 1, 2020: Highlights and {Annual} {Report}},\n\ttype = {Annual {Report}},\n}\n\n"
 ---

@@ -26,5 +26,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Ecfa</span></span>, 2022)
-bibTex: "@misc{ecfa__2022__homepage,\n\tnote = {[Online; accessed 2022-08-20]},\n\tauthor = {{Ecfa}},\n\tyear = {2022},\n\ttitle = {Homepage of the {European} {Committee} for {Future} {Accelerators}},\n\turl = {https://ecfa.web.cern.ch/},\n\thowpublished = {https://ecfa.web.cern.ch/},\n}\n\n"
+bibTex: "@misc{ecfa__2022__homepage,\n\tnote = {[Online; accessed 2022-08-20]},\n\tauthor = {{Ecfa}},\n\tyear = {2022},\n\ttitle = {Homepage of the {European} {Committee} for {Future} {Accelerators}},\n\thowpublished = {https://ecfa.web.cern.ch/},\n}\n\n"
 ---

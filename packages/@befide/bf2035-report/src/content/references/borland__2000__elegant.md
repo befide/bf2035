@@ -34,5 +34,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Borland</span></span>, 2000)
-bibTex: "@techreport{borland__2000__elegant,\n\tnote = {[Online; accessed 2021-01-01]},\n\tauthor = {Borland, M},\n\tdoi = {10.2172/761286},\n\tyear = {2000},\n\tmonth = {aug 18},\n\tnumber = {LS-287, 761286},\n\tpages = {LS--287, 761286},\n\ttitle = {ELEGANT: A flexible {SDDS}-compliant code for accelerator simulation},\n\turl = {http://www.osti.gov/servlets/purl/761286/},\n\thowpublished = {http://www.osti.gov/servlets/purl/761286/},\n}\n\n"
+bibTex: "@techreport{borland__2000__elegant,\n\tnote = {[Online; accessed 2021-01-01]},\n\tauthor = {Borland, M},\n\tyear = {2000},\n\tmonth = {aug 18},\n\tnumber = {LS-287, 761286},\n\tpages = {LS--287, 761286},\n\ttitle = {ELEGANT: A flexible {SDDS}-compliant code for accelerator simulation},\n\thowpublished = {http://www.osti.gov/servlets/purl/761286/},\n}\n\n"
 ---

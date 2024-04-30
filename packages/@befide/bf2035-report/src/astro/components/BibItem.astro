@@ -26,10 +26,9 @@ const iconDictionary = new Map<string, string>([
   ["motion_picture", "../assets/bib-icons/videoRecording.png"],
 ]);
 
-const collections = [];
-// item.data.tags
-//   ?.filter(({ scope }) => scope === "collection")
-//   .flatMap((t) => t.value.split("/"));
+const collections = item.data.tags
+  ?.filter(({ scope }) => scope === "collection")
+  .flatMap((t) => t.value.split("/"));
 
 const images = import.meta.glob("../assets/bib-icons/**.png", {
   import: "default",

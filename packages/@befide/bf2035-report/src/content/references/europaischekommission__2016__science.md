@@ -31,5 +31,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Europäische Kommission</span></span>, 2016)
-bibTex: "@book{europaischekommission__2016__science,\n\taddress = {Luxembourg},\n\tseries = {Research and {Innovation}},\n\teditor = {{Europäische Kommission}},\n\tisbn = {978-92-79-49557-1 978-92-79-49558-8},\n\tyear = {2016},\n\tpublisher = {Publications Office of the European Union},\n\ttitle = {Science, research and innovation performance of the {EU}: a contribution to the {Open} {Innovation}, {Open} {Science}, {Open} to the {World} agenda},\n}\n\n"
+bibTex: "@book{europaischekommission__2016__science,\n\taddress = {Luxembourg},\n\tseries = {Research and {Innovation}},\n\teditor = {{Europäische Kommission}},\n\tyear = {2016},\n\tpublisher = {Publications Office of the European Union},\n\ttitle = {Science, research and innovation performance of the {EU}: a contribution to the {Open} {Innovation}, {Open} {Science}, {Open} to the {World} agenda},\n}\n\n"
 ---

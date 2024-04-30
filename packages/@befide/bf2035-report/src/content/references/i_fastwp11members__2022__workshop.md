@@ -44,5 +44,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">I.FAST WP11 Members</span></span>, 2022)
-bibTex: "@article{i_fastwp11members__2022__workshop,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{I.FAST WP11 Members}},\n\tdoi = {10.5281/ZENODO.7299846},\n\tyear = {2022},\n\tmonth = {oct 31},\n\tpublisher = {[object Object]},\n\ttitle = {Workshop on energy for sustainable science at research infrastructures, at {ESRF}},\n\turl = {https://zenodo.org/record/7299846},\n}\n\n"
+bibTex: "@article{i_fastwp11members__2022__workshop,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{I.FAST WP11 Members}},\n\tyear = {2022},\n\tmonth = {oct 31},\n\tpublisher = {[object Object]},\n\ttitle = {Workshop on energy for sustainable science at research infrastructures, at {ESRF}},\n}\n\n"
 ---

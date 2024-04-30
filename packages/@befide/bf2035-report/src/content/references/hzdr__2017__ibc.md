@@ -29,5 +29,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Hzdr</span></span>, 2017)
-bibTex: "@misc{hzdr__2017__ibc,\n\tnote = {[Online; accessed 2023-05-06]},\n\tauthor = {{Hzdr}},\n\tyear = {2017},\n\tmonth = {1},\n\tpublisher = {Helmholtz-Zentrum Dresden-Rossendorf (HZDR)},\n\ttitle = {IBC. {Ion} {Beam} {Center},.},\n\turl = {https://www.hzdr.de/db/Cms?pNid=1984&pOid=55676},\n}\n\n"
+bibTex: "@misc{hzdr__2017__ibc,\n\tnote = {[Online; accessed 2023-05-06]},\n\tauthor = {{Hzdr}},\n\tyear = {2017},\n\tmonth = {1},\n\tpublisher = {Helmholtz-Zentrum Dresden-Rossendorf (HZDR)},\n\ttitle = {IBC. {Ion} {Beam} {Center},.},\n}\n\n"
 ---

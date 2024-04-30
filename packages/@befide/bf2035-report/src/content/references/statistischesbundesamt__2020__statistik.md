@@ -32,5 +32,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Statistisches Bundesamt</span></span>,
     2020)
-bibTex: "@techreport{statistischesbundesamt__2020__statistik,\n\taddress = {Wiesbaden},\n\tauthor = {{Statistisches Bundesamt}},\n\tyear = {2020},\n\tmonth = {sep 14},\n\tnumber = {5213501209004},\n\tpages = {63},\n\tinstitution = {Statistisches Bundesamt},\n\ttitle = {Statistik der {Promovierenden} 2020},\n\turl = {https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bildung-Forschung-Kultur/Hochschulen/Publikationen/Downloads-Hochschulen/promovierendenstatistik-5213501207004.pdf?__blob=publicationFile},\n}\n\n"
+bibTex: "@techreport{statistischesbundesamt__2020__statistik,\n\taddress = {Wiesbaden},\n\tauthor = {{Statistisches Bundesamt}},\n\tyear = {2020},\n\tmonth = {sep 14},\n\tnumber = {5213501209004},\n\tpages = {63},\n\tinstitution = {Statistisches Bundesamt},\n\ttitle = {Statistik der {Promovierenden} 2020},\n}\n\n"
 ---

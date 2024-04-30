@@ -1,12 +1,12 @@
-import { defineCollection, reference, z } from "astro:content";
+import { z, defineCollection, reference } from 'astro:content';
 
-const tags = z.array(z.string()).optional();
+const tags = z.array(z.string()).optional()
 
 export const ScopedTag = z.object({
   scope: z.string().optional(),
   value: z.string(),
-});
-export const ScopedTags = z.array(ScopedTag).optional();
+})
+export const ScopedTags = z.array(ScopedTag).optional()
 
 const sectionCollection = defineCollection({
   type: "content",
@@ -36,7 +36,7 @@ const sectionCollection = defineCollection({
         virtual: z.boolean().optional(),
       })
       .strict(),
-});
+})
 
 const causalMapNodeCollection = defineCollection({
   schema: () =>
@@ -64,14 +64,13 @@ const causalMapNodeCollection = defineCollection({
           .optional(),
       })
       .strict(),
-});
+})
 
 const referenceCollection = defineCollection({
   // type: 'data',
   schema: z
     .object({
-      scopedTags: ScopedTags,
-      tags: z.array(z.string()).optional(),
+      tags: ScopedTags,
 
       bibTex: z.string(),
       rendered: z.object({
@@ -244,10 +243,10 @@ const referenceCollection = defineCollection({
       }),
     })
     .strict(),
-});
+})
 
 export const collections = {
   sections: sectionCollection,
   references: referenceCollection,
-  "causal-map-nodes": causalMapNodeCollection,
-};
+  "causal-map-nodes": causalMapNodeCollection
+}

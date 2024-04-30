@@ -58,5 +58,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Doyle</span> et al.</span></span>, 2019)
-bibTex: "@article{doyle_mcdaniel_etal__2019__future,\n\tnote = {[Online; accessed 2021-08-06]},\n\tauthor = {Doyle, Barney L. and McDaniel, Floyd ``Del'' and Hamm, Robert W.},\n\tjournal = {Reviews of Accelerator Science and Technology},\n\tdoi = {10.1142/S1793626819300068},\n\tissn = {1793-6268, 1793-8058},\n\tnumber = {01},\n\tyear = {2019},\n\tmonth = {8},\n\tpages = {93--116},\n\ttitle = {The {Future} of {Industrial} {Accelerators} and {Applications}},\n\turl = {https://www.worldscientific.com/doi/abs/10.1142/S1793626819300068},\n\thowpublished = {https://www.worldscientific.com/doi/abs/10.1142/S1793626819300068},\n\tvolume = {10},\n}\n\n"
+bibTex: "@article{doyle_mcdaniel_etal__2019__future,\n\tnote = {[Online; accessed 2021-08-06]},\n\tauthor = {Doyle, Barney L. and McDaniel, Floyd ``Del'' and Hamm, Robert W.},\n\tjournal = {Reviews of Accelerator Science and Technology},\n\tnumber = {01},\n\tyear = {2019},\n\tmonth = {8},\n\tpages = {93--116},\n\ttitle = {The {Future} of {Industrial} {Accelerators} and {Applications}},\n\thowpublished = {https://www.worldscientific.com/doi/abs/10.1142/S1793626819300068},\n\tvolume = {10},\n}\n\n"
 ---

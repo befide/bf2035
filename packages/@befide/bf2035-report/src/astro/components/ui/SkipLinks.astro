@@ -1,43 +1,36 @@
 ---
-type Props = Record<string, never>;
+type Props = Record<string, never>
 ---
 
 <div class="skip-links">
   <a href="#main">Skip to main content</a>
 </div>
 
-<script type="module" is:inline>
-  // @ts-nocheck
-
+<script type="module">
   // variables
-  const skipLink = document.querySelector(".skip-links a");
+  const skipLink = document.querySelector('.skip-links a')
 
   // execution
-  skipLink.addEventListener("keydown", (event) => {
-    if (!event.target.closest("a")) return;
-    const key = event.key;
+  skipLink.addEventListener('keydown', (event) => {
+    if (!(event.target).closest('a')) return
+    const key = event.key
 
-    if (key !== "Enter") return;
-    event.preventDefault();
-    const target = event.target.getAttribute("href");
+    if (key !== 'Enter') return
+    event.preventDefault()
+    const target = event.target.getAttribute('href')
 
     if (document.querySelector(target)) {
-      const targetElement = document.querySelector(target);
-      targetElement.setAttribute("tabindex", "-1");
-      targetElement.focus();
-    } else if (
-      !document.querySelector(target) &&
-      document.querySelector("h1")
-    ) {
-      const h1 = document.querySelector("h1");
-      h1.setAttribute("tabindex", "-1");
-      h1.focus();
+      const targetElement = document.querySelector(target)
+      targetElement.setAttribute('tabindex', '-1')
+      targetElement.focus()
+    } else if (!document.querySelector(target) && document.querySelector('h1')) {
+      const h1 = document.querySelector('h1')
+      h1.setAttribute('tabindex', '-1')
+      h1.focus()
     } else {
-      console.warn(
-        "SkipLinks are not set, either missing an h1 or main content id on the page.",
-      );
+      console.warn('SkipLinks are not set, either missing an h1 or main content id on the page.')
     }
-  });
+  })
 </script>
 
 <style is:global>
