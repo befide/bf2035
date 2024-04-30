@@ -1,0 +1,33 @@
+---
+import { getReferences } from "@utils/";
+import BibItem from "./BibItem.astro";
+// import { reference } from "astro:content";
+
+export interface Props {
+  title?: string;
+  collection?: string;
+}
+const { collection, title } = Astro.props;
+
+const scopedTag = collection
+  ? { scope: "collection", value: collection }
+  : null;
+
+const references = await getReferences(scopedTag);
+---
+
+{title && <h3 class="md">{title}</h3>}
+<ul class="md bib-list">
+  {
+    references.map((reference) => (
+      <BibItem item={reference} withTags={false} withCollections={false} />
+    ))
+  }
+</ul>
+
+<style lang="stylus" is:global>
+  ul.bib-list {
+    columns: 2;
+  }
+  
+  </style>
