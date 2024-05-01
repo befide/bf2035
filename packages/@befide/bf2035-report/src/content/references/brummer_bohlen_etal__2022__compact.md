@@ -49,7 +49,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="brummer_bohlen_etal__2022__compact" class="csl-entry"><span class='author-bib'>Brümmer, Bohlen, S., Grüner, F., et al.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><b>Compact all-optical precision-tunable narrowband hard Compton X-ray source</b></span>. <i>Scientific Reports</i>, <i>12</i>(1), 16017. <span class='URL'><a href='https://doi.org/10.1038/s41598-022-20283-8'>LINK</a></span></span>
+      <span data-csl-entry-id="brummer_bohlen_etal__2022__compact" class="csl-entry"><span class='author-bib'>Brümmer, Bohlen, S., Grüner, F., Osterhoff, J., &#38; Põder, K.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><b>Compact all-optical precision-tunable narrowband hard Compton X-ray source</b></span>. <i>Scientific Reports</i>, <i>12</i>(1), 16017. <span class='URL'><a href='https://doi.org/10.1038/s41598-022-20283-8'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

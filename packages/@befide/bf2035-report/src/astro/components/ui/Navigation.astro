@@ -1,9 +1,10 @@
 ---
+
 import { getPath, getPrevNext } from "@utils/getSections";
 
 const slug = Astro.params?.slug;
 
-const path = ("/" + slug + "/").replaceAll("//", "/");
+const path = ("/" + slug + "/").replaceAll("//", "/")
 
 const { prev, next } = await getPrevNext(path);
 ---
@@ -39,15 +40,15 @@ const { prev, next } = await getPrevNext(path);
     }
   </nav>
   <script is:inline>
-    document.addEventListener("keydown", function (e) {
-      if (e.ctrlKey && e.key === "n") {
-        document.getElementById("navigation__next")?.click();
-      }
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.ctrlKey && e.shiftKey && e.key === "N") {
-        document.getElementById("navigation__prev")?.click();
-      }
-    });
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.key === "n") {
+      document.getElementById("navigation__next")?.click();
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.shiftKey && e.key === "N") {
+      document.getElementById("navigation__prev")?.click();
+    }
+  });
   </script>
 </footer>

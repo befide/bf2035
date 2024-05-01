@@ -68,7 +68,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="kircher_nghiem_etal__2012__tiara" class="csl-entry"><span class='author-bib'>Kircher, Nghiem, P., Bailey, R., et al.</span>. <span class='date-bib'>(2012)</span>. <span class='title'><i><b><span style="font-style:normal;">TIARA: Education and Training Survey Report: Deliverable 5.1</span></b></i></span> [Status Report]. CERN. <span class='URL'><a href='https://cds.cern.ch/record/1442599'>LINK</a></span></span>
+      <span data-csl-entry-id="kircher_nghiem_etal__2012__tiara" class="csl-entry"><span class='author-bib'>Kircher, Nghiem, P., Bailey, R., Rinolfi, L., Arboli, M. L. M., Falcon, S., Obradors, D., Clerc, C., Mueller, A., Rivkin, L., Appel, S., Boine-Frankenheim, O., Galluccio, F., Vaccaro, V., Malecki, P., Pape Møller, S., Burrows, P., Bradbury, M., Heikkinen, P., … Stapnes, S.</span>. <span class='date-bib'>(2012)</span>. <span class='title'><i><b><span style="font-style:normal;">TIARA: Education and Training Survey Report: Deliverable 5.1</span></b></i></span> [Status Report]. CERN. <span class='URL'><a href='https://cds.cern.ch/record/1442599'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

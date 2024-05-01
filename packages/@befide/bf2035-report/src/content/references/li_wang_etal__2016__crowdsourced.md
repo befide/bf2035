@@ -40,7 +40,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="li_wang_etal__2016__crowdsourced" class="csl-entry"><span class='author-bib'>Li, Wang, J., Zheng, Y., et al.</span>. <span class='date-bib'>(2016)</span>. <span class='title'><b>Crowdsourced Data Management: A Survey</b></span>. <i>IEEE Transactions on Knowledge and Data Engineering</i>, <i>28</i>(9), 2296–2319. <span class='URL'><a href='https://doi.org/10.1109/TKDE.2016.2535242'>LINK</a></span></span>
+      <span data-csl-entry-id="li_wang_etal__2016__crowdsourced" class="csl-entry"><span class='author-bib'>Li, Wang, J., Zheng, Y., &#38; Franklin, M. J.</span>. <span class='date-bib'>(2016)</span>. <span class='title'><b>Crowdsourced Data Management: A Survey</b></span>. <i>IEEE Transactions on Knowledge and Data Engineering</i>, <i>28</i>(9), 2296–2319. <span class='URL'><a href='https://doi.org/10.1109/TKDE.2016.2535242'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

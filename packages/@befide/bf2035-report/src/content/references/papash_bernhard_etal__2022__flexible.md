@@ -59,7 +59,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="papash_bernhard_etal__2022__flexible" class="csl-entry"><span class='author-bib'>Papash, Bernhard, A., Bründermann, E., et al.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><b><i>Flexible Features of the Compact Storage Ring in the cSTART Project at Karlsruhe Institute of Technology</i></b></span>. <span class='URL'><a href='https://doi.org/10.5445/IR/1000149546'>LINK</a></span></span>
+      <span data-csl-entry-id="papash_bernhard_etal__2022__flexible" class="csl-entry"><span class='author-bib'>Papash, Bernhard, A., Bründermann, E., El Khechen, D., Härer, B., Müller, A.-S., Ruprecht, R., Schwarz, M., &#38; Schäfer, J.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><b><i>Flexible Features of the Compact Storage Ring in the cSTART Project at Karlsruhe Institute of Technology</i></b></span>. <span class='URL'><a href='https://doi.org/10.5445/IR/1000149546'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

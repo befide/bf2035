@@ -47,7 +47,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="fernandez-tornero_moreno-morcillo_etal__2013__crystal" class="csl-entry"><span class='author-bib'>Fernández-Tornero, Moreno-Morcillo, M., Rashid, U. J., et al.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><b>Crystal structure of the 14-subunit RNA polymerase I</b></span>. <i>Nature</i>, <i>502</i>(7473), 644–649. <span class='URL'><a href='https://doi.org/10.1038/nature12636'>LINK</a></span></span>
+      <span data-csl-entry-id="fernandez-tornero_moreno-morcillo_etal__2013__crystal" class="csl-entry"><span class='author-bib'>Fernández-Tornero, Moreno-Morcillo, M., Rashid, U. J., Taylor, N. M. I., Ruiz, F. M., Gruene, T., Legrand, P., Steuerwald, U., &#38; Müller, C. W.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><b>Crystal structure of the 14-subunit RNA polymerase I</b></span>. <i>Nature</i>, <i>502</i>(7473), 644–649. <span class='URL'><a href='https://doi.org/10.1038/nature12636'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

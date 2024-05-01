@@ -69,7 +69,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="rota_caselle_etal__2019__kalypso" class="csl-entry"><span class='author-bib'>Rota, Caselle, M., Bründermann, E., et al.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><b>KALYPSO: Linear array detector for high-repetition rate and real-time beam diagnostics</b></span>. <i>Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</i>, <i>936</i>, 10–13. <span class='URL'><a href='https://doi.org/10.1016/j.nima.2018.10.093'>LINK</a></span></span>
+      <span data-csl-entry-id="rota_caselle_etal__2019__kalypso" class="csl-entry"><span class='author-bib'>Rota, Caselle, M., Bründermann, E., Funkner, S., Gerth, Ch., Kehrer, B., Mielczarek, A., Makowski, D., Mozzanica, A., Müller, A.-S., Nasse, M. J., Niehues, G., Patil, M., Schmitt, B., Schönfeldt, P., Steffen, B., &#38; Weber, M.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><b>KALYPSO: Linear array detector for high-repetition rate and real-time beam diagnostics</b></span>. <i>Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</i>, <i>936</i>, 10–13. <span class='URL'><a href='https://doi.org/10.1016/j.nima.2018.10.093'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

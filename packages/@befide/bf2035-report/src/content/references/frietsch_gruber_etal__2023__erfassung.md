@@ -39,7 +39,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="frietsch_gruber_etal__2023__erfassung" class="csl-entry"><span class='author-bib'>Frietsch, Gruber, S., Blind, K., et al.</span>. <span class='date-bib'>(2023)</span>. <span class='title'><i><b><span style="font-style:normal;">Erfassung und Analyse bibliometrischer Indikatoren im Rahmen des Pakt-Monitorings zum Pakt für Forschung und Innovation IV</span></b></i></span> (S. de). Fraunhofer ISI. <span class='URL'><a href='https://www.bmbf.de/SharedDocs/Downloads/de/2022/erfassung-und-analyse-bibliometrischer-indikatoren.pdf?__blob=publicationFile&#38;v=5'>LINK</a></span></span>
+      <span data-csl-entry-id="frietsch_gruber_etal__2023__erfassung" class="csl-entry"><span class='author-bib'>Frietsch, Gruber, S., Blind, K., &#38; Neuhäusle, P.</span>. <span class='date-bib'>(2023)</span>. <span class='title'><i><b><span style="font-style:normal;">Erfassung und Analyse bibliometrischer Indikatoren im Rahmen des Pakt-Monitorings zum Pakt für Forschung und Innovation IV</span></b></i></span> (S. de). Fraunhofer ISI. <span class='URL'><a href='https://www.bmbf.de/SharedDocs/Downloads/de/2022/erfassung-und-analyse-bibliometrischer-indikatoren.pdf?__blob=publicationFile&#38;v=5'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

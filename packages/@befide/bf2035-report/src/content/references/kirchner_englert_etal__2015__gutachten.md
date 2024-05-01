@@ -29,7 +29,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="kirchner_englert_etal__2015__gutachten" class="csl-entry"><span class='author-bib'>Kirchner, Englert, M., Pistner, C., et al.</span>. <span class='date-bib'>(2015)</span>. <span class='title'><i><b><span style="font-style:normal;">Gutachten „Transmutation“</span></b></i></span> (S. 158). Zentrum für Naturwissenschaft und Friedensforschung (ZNF) und Öko-Institut. <span class='URL'><a href='https://www.bundestag.de/resource/blob/400438/f54e3da4bbe76395bce2e40721212379/kmat_48-data.pdf'>LINK</a></span></span>
+      <span data-csl-entry-id="kirchner_englert_etal__2015__gutachten" class="csl-entry"><span class='author-bib'>Kirchner, Englert, M., Pistner, C., Kallenbach-Herbert, B., &#38; Neles, J.</span>. <span class='date-bib'>(2015)</span>. <span class='title'><i><b><span style="font-style:normal;">Gutachten „Transmutation“</span></b></i></span> (S. 158). Zentrum für Naturwissenschaft und Friedensforschung (ZNF) und Öko-Institut. <span class='URL'><a href='https://www.bundestag.de/resource/blob/400438/f54e3da4bbe76395bce2e40721212379/kmat_48-data.pdf'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

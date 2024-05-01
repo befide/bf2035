@@ -253,7 +253,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="CERN-ESU-004" class="csl-entry"><span class='author-bib'>Ellis, Heinemann, B., Blas, J. de, et al.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><i><b><span style="font-style:normal;">Physics briefing book: Input for the european strategy for particle physics update 2020</span></b></i></span> (arXiv:1910.11775). CERN. <span class='URL'><a href='http://cds.cern.ch/record/2691414'>LINK</a></span></span>
+      <span data-csl-entry-id="CERN-ESU-004" class="csl-entry"><span class='author-bib'>Ellis, Heinemann, B., Blas, J. de, Cepeda, M., Grojean, C., Maltoni, F., Nisati, A., Petit, E., Rattazzi, R., Verkerke, W., D’Hondt, J., Redlich, K., Andronic, A., Siklér, F., Armesto, N., Boer, D., Enterria, D. d’, Galatyuk, T., Gehrmann, T., … Forty, R.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><i><b><span style="font-style:normal;">Physics briefing book: Input for the european strategy for particle physics update 2020</span></b></i></span> (arXiv:1910.11775). CERN. <span class='URL'><a href='http://cds.cern.ch/record/2691414'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

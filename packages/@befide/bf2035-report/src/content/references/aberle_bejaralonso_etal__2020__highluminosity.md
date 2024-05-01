@@ -1066,7 +1066,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="aberle_bejaralonso_etal__2020__highluminosity" class="csl-entry"><span class='author-bib'>Aberle, Béjar Alonso, I., Brüning, O., et al.</span>. <span class='date-bib'>(2020)</span>. <span class='title'><i><b><span style="font-style:normal;">High-luminosity large hadron collider (HL-LHC): Technical design report</span></b></i></span> (S. 378). CERN. <span class='URL'><a href='https://doi.org/10.23731/CYRM-2020-0010'>LINK</a></span></span>
+      <span data-csl-entry-id="aberle_bejaralonso_etal__2020__highluminosity" class="csl-entry"><span class='author-bib'>Aberle, Béjar Alonso, I., Brüning, O., Fessia, P., Rossi, L., Tavian, L., Zerlauth, M., Adorisio, C., Adraktas, A., Ady, M., Albertone, J., Alberty, L., Alcaide Leon, M., Alekou, A., Alesini, D., Ferreira, B. A., Lopez, P. A., Ambrosio, G., Andreu Munoz, P., … Zurbano Fernandez, I.</span>. <span class='date-bib'>(2020)</span>. <span class='title'><i><b><span style="font-style:normal;">High-luminosity large hadron collider (HL-LHC): Technical design report</span></b></i></span> (S. 378). CERN. <span class='URL'><a href='https://doi.org/10.23731/CYRM-2020-0010'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

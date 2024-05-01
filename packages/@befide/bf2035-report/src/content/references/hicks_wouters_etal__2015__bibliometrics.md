@@ -45,7 +45,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="hicks_wouters_etal__2015__bibliometrics" class="csl-entry"><span class='author-bib'>Hicks, Wouters, P., Waltman, L., et al.</span>. <span class='date-bib'>(2015)</span>. <span class='title'><b>Bibliometrics: The Leiden Manifesto for research metrics</b></span>. <i>Nature</i>, <i>520</i>(7548), Art. 7548. <span class='URL'><a href='https://doi.org/10.1038/520429a'>LINK</a></span></span>
+      <span data-csl-entry-id="hicks_wouters_etal__2015__bibliometrics" class="csl-entry"><span class='author-bib'>Hicks, Wouters, P., Waltman, L., Rijcke, S. de, &#38; Rafols, I.</span>. <span class='date-bib'>(2015)</span>. <span class='title'><b>Bibliometrics: The Leiden Manifesto for research metrics</b></span>. <i>Nature</i>, <i>520</i>(7548), Art. 7548. <span class='URL'><a href='https://doi.org/10.1038/520429a'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

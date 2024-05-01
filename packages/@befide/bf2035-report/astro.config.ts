@@ -4,13 +4,14 @@ import mdx from "@astrojs/mdx"
 import sitemap from "@astrojs/sitemap"
 
 import AstroPWA from "@vite-pwa/astro"
+import dsv from '@rollup/plugin-dsv'
 
 import rehypeAddClasses from "rehype-add-classes"
 import rehypeCitation from "rehype-citation"
+// import rehypeFigure from "rehype-figure"
 import rehypeRewrite from "rehype-rewrite"
 import rehypeWidont from "rehype-widont"
 import sectionize from "remark-sectionize"
-import remarkGfm from "remark-gfm"
 import spaceCommand from "./src/astro/utils/space-commander.ts"
 
 import { dirname, resolve } from "node:path"
@@ -22,18 +23,11 @@ import pagefind from "astro-pagefind"
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-const site =
-  process.env.NODE_ENV === "production"
-    ? "https://bf2035-report.surge.sh/"
-    : undefined
+const site = (process.env.NODE_ENV === "production") ? "https://bf2035-report.surge.sh/" : undefined
 
 
 export default defineConfig({
   vite: {
-
-    optimizeDeps: {
-      exclude: ["src/.obsidian/plugins/obsidian-map-view/main.js"],
-    },
     css: {
       preprocessorOptions: {
         stylus: {
@@ -41,7 +35,7 @@ export default defineConfig({
         },
       },
     },
-  
+    // plugins: [dsv()],
   },
   output: "static",
   site,
@@ -51,14 +45,49 @@ export default defineConfig({
   //   defaultStrategy: "viewport",
   // },
 
+
   redirects: {
     "/": "/de/00/",
     "/de/": "/de/00/",
+
   },
+  integrations: [
+    mdx({}),
+    pagefind(),
+    sitemap({}),
+
+    AstroPWA({
+      mode: 'development',
+      base: '/',
+      scope: '/',
+      includeAssets: ['favicon.svg'],
+      registerType: 'autoUpdate',
+      manifest: {
+        name: 'Beschleunigerforschung 2035',
+        short_name: 'BF2035',
+        theme_color: '#ffffff',
+        lang: "de"
+      },
+      pwaAssets: {
+        config: true,
+      },
+      workbox: {
+        navigateFallback: '/',
+        globPatterns: ['**/*.{css,js,html,svg,png,ico,txt}'],
+      },
+      devOptions: {
+        enabled: false,
+        navigateFallbackAllowlist: [/^\//],
+      },
+      experimental: {
+        directoryAndTrailingSlashHandler: true,
+      }
+    }),
+  ],
   markdown: {
 
     remarkPlugins: [
-
+      
       sectionize
       //   [smartypants, {
       //     options: {
@@ -69,7 +98,6 @@ export default defineConfig({
 
     ],
     rehypePlugins: [
-      rehypeCitation,
       [rehypeWidont, {}],
       // [rehypeFigure, { className: "md" }],
       [
@@ -89,7 +117,7 @@ export default defineConfig({
       [
         rehypeRewrite,
         {
-          rewrite: (node) => {
+          rewrite: (node: any) => {
             if (node.type === "text") {
               node.value = spaceCommand(node.value)
             }
@@ -98,10 +126,10 @@ export default defineConfig({
       ],
     ],
   },
-
+  
   integrations: [
     mdx({
-
+    
       gfm: true
     }),
     pagefind(),

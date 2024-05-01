@@ -42,7 +42,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="behnke_brau_etal__2013__ilc" class="csl-entry"><span class='author-bib'>Behnke, Brau, J. E., Foster, B., et al.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><i><b><span style="font-style:normal;">The ILC TDR - Volume 1: Executive Summary</span></b></i></span> (Bd. 1). ILC. <span class='URL'><a href='https://inspirehep.net/record/1240093'>LINK</a></span></span>
+      <span data-csl-entry-id="behnke_brau_etal__2013__ilc" class="csl-entry"><span class='author-bib'>Behnke, Brau, J. E., Foster, B., Fuster, J., Harrison, M., Paterson, J. M., Peskin, M., Stanitzki, M., Walker, N., &#38; Yamamoto, H.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><i><b><span style="font-style:normal;">The ILC TDR - Volume 1: Executive Summary</span></b></i></span> (Bd. 1). ILC. <span class='URL'><a href='https://inspirehep.net/record/1240093'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

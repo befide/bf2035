@@ -40,12 +40,20 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
+<<<<<<< HEAD
       <span data-csl-entry-id="nagaitsev_huang_etal__2021__accelerator" class="csl-entry"><span class='author-bib'>Nagaitsev, Huang, Z., Power, J., et al.</span>. <span class='date-bib'>(2021)</span>. <span class='title'><i><b><span style="font-style:normal;">Accelerator and Beam Physics Research Goals and Opportunities</span></b></i></span> (FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291; S. FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291). <span class='URL'><a href='https://doi.org/10.2172/1764152'>LINK</a></span></span>
+=======
+      <span data-csl-entry-id="nagaitsev_huang_etal__2021__accelerator" class="csl-entry"><span class='author-bib'>Nagaitsev, Huang, Z., Power, J., Vay, J., Piot, P., Spentzouris, L., &#38; Rosenzweig, J.</span>. <span class='date-bib'>(2021)</span>. <span class='title'><b><i>Accelerator and Beam Physics Research Goals and Opportunities</i></b></span>. FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291. <span class='URL'><a href='https://doi.org/10.2172/1764152'>LINK</a></span></span>
+>>>>>>> refs/remotes/origin/main
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Nagaitsev</span> et al.</span></span>,
     2021)
+<<<<<<< HEAD
 bibTex: "@techreport{nagaitsev_huang_etal__2021__accelerator,\n\tnote = {[Online; accessed 2024-04-27]},\n\tauthor = {Nagaitsev, S. and Huang, Z. and Power, J. and Vay, J. and Piot, P. and Spentzouris, L. and Rosenzweig, J.},\n\tyear = {2021},\n\tmonth = {jan 1},\n\tnumber = {FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291},\n\tpages = {FERMILAB--FN--1123, 1764152, oai:inspirehep.net:1840291},\n\ttitle = {Accelerator and {Beam} {Physics} {Research} {Goals} and {Opportunities}},\n\thowpublished = {https://www.osti.gov/servlets/purl/1764152/},\n}\n\n"
+=======
+bibTex: "@article{nagaitsev_huang_etal__2021__accelerator,\n\tauthor = {Nagaitsev, S. and Huang, Z. and Power, J. and Vay, J. and Piot, P. and Spentzouris, L. and Rosenzweig, J.},\n\tyear = {2021},\n\tmonth = {jan 1},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T09:45:28.620Z},\n\tpages = {FERMILAB--FN--1123, 1764152, oai:inspirehep.net:1840291},\n\ttitle = {Accelerator and {Beam} {Physics} {Research} {Goals} and {Opportunities}},\n\thowpublished = {https://www.osti.gov/servlets/purl/1764152/},\n}\n\n"
+>>>>>>> refs/remotes/origin/main
 ---

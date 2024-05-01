@@ -2781,7 +2781,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="thefcccollaboration_abada_etal__2019__helhc" class="csl-entry"><span class='author-bib'>the FCC Collaboration, Abada, A., Abbrescia, M., et al.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><b>HE-LHC: The High-Energy Large Hadron Collider</b></span>. <i>The European Physical Journal Special Topics</i>, <i>228</i>(5), 1109–1382. <span class='URL'><a href='https://doi.org/10.1140/epjst/e2019-900088-6'>LINK</a></span></span>
+      <span data-csl-entry-id="thefcccollaboration_abada_etal__2019__helhc" class="csl-entry"><span class='author-bib'>the FCC Collaboration, Abada, A., Abbrescia, M., AbdusSalam, S. S., Abdyukhanov, I., Abelleira Fernandez, J., Abramov, A., Aburaia, M., Acar, A. O., Adzic, P. R., Agrawal, P., Aguilar-Saavedra, J. A., Aguilera-Verdugo, J. J., Aiba, M., Aichinger, I., Aielli, G., Akay, A., Akhundov, A., Aksakal, H., … Zurita, J.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><b>HE-LHC: The High-Energy Large Hadron Collider</b></span>. <i>The European Physical Journal Special Topics</i>, <i>228</i>(5), 1109–1382. <span class='URL'><a href='https://doi.org/10.1140/epjst/e2019-900088-6'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

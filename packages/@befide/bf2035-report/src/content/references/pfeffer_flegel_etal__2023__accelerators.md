@@ -38,7 +38,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="pfeffer_flegel_etal__2023__accelerators" class="csl-entry"><span class='author-bib'>Pfeffer, Flegel, I., Oevermann, C., et al.</span>. <span class='date-bib'>(2023)</span>. <span class='title'><i><b><span style="font-style:normal;">Accelerators 2022: Highlights and Annual Report</span></b></i></span> (S. pages 115) [Annual Report]. DESY. <span class='URL'><a href='https://doi.org/10.3204/PUBDB-2023-06558'>LINK</a></span></span>
+      <span data-csl-entry-id="pfeffer_flegel_etal__2023__accelerators" class="csl-entry"><span class='author-bib'>Pfeffer, Flegel, I., Oevermann, C., &#38; Qelaj, A.</span>. <span class='date-bib'>(2023)</span>. <span class='title'><i><b><span style="font-style:normal;">Accelerators 2022: Highlights and Annual Report</span></b></i></span> (S. pages 115) [Annual Report]. DESY. <span class='URL'><a href='https://doi.org/10.3204/PUBDB-2023-06558'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

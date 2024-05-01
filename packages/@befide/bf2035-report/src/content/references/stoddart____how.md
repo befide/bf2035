@@ -13,7 +13,7 @@ cslItem:
     - family: Stoddart
       given: Charlotte
   DOI: 10.1146/knowable-032822-1
-  keyword: "#history"
+  keyword: "#history;/collections/A. Ausgangslage"
   language: en
   number: "5"
   title: How particle accelerators came to be

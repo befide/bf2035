@@ -37,7 +37,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="philipburrowswpleader_francoiskircher_etal__2013__needs" class="csl-entry"><span class='author-bib'>Philip Burrows (WP leader), François Kircher, Roger Bailey, et al.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><i><b><span style="font-style:normal;">Needs for Accelerator Scientists Report</span></b></i></span> (Status Report TIARA-REP-WP5-2013-005). <span class='URL'><a href='https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf'>LINK</a></span></span>
+      <span data-csl-entry-id="philipburrowswpleader_francoiskircher_etal__2013__needs" class="csl-entry"><span class='author-bib'>Philip Burrows (WP leader), François Kircher, Roger Bailey, M. Luisa Marco Arboli, Catherine Clerc, Alex C. Mueller, Leonid Rivkin, Sabrina Appel, Oliver Boine-Frankenheim, Francesca Galluccio, Vittorio Vaccaro, Piotr Malecki, Søren Pape Møller, Ole Petter Nordahl, Steinar Stapnes, &#38; Burrows, P.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><i><b><span style="font-style:normal;">Needs for Accelerator Scientists Report</span></b></i></span> (Status Report TIARA-REP-WP5-2013-005). <span class='URL'><a href='https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

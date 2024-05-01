@@ -49,7 +49,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="barletta_battaglia_etal__2014__future" class="csl-entry"><span class='author-bib'>Barletta, Battaglia, M., Klute, M., et al.</span>. <span class='date-bib'>(2014)</span>. <span class='title'><b>Future hadron colliders: From physics perspectives to technology R&#38;D</b></span>. <i>Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</i>, <i>764</i>, 352–368. <span class='URL'><a href='https://doi.org/10.1016/j.nima.2014.07.010'>LINK</a></span></span>
+      <span data-csl-entry-id="barletta_battaglia_etal__2014__future" class="csl-entry"><span class='author-bib'>Barletta, Battaglia, M., Klute, M., Mangano, M., Prestemon, S., Rossi, L., &#38; Skands, P.</span>. <span class='date-bib'>(2014)</span>. <span class='title'><b>Future hadron colliders: From physics perspectives to technology R&#38;D</b></span>. <i>Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</i>, <i>764</i>, 352–368. <span class='URL'><a href='https://doi.org/10.1016/j.nima.2014.07.010'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

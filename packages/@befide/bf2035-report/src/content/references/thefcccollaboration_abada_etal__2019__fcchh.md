@@ -2764,7 +2764,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="thefcccollaboration_abada_etal__2019__fcchh" class="csl-entry"><span class='author-bib'>the FCC Collaboration, Abada, A., Abbrescia, M., et al.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><b>FCC-hh: The Hadron Collider: Future Circular Collider Conceptual Design Report Volume 3</b></span>. <i>The European Physical Journal Special Topics</i>, <i>228</i>(4), 755–1107. <span class='URL'><a href='https://doi.org/10.1140/epjst/e2019-900087-0'>LINK</a></span></span>
+      <span data-csl-entry-id="thefcccollaboration_abada_etal__2019__fcchh" class="csl-entry"><span class='author-bib'>the FCC Collaboration, Abada, A., Abbrescia, M., AbdusSalam, S. S., Abdyukhanov, I., Abelleira Fernandez, J., Abramov, A., Aburaia, M., Acar, A. O., Adzic, P. R., Agrawal, P., Aguilar-Saavedra, J. A., Aguilera-Verdugo, J. J., Aiba, M., Aichinger, I., Aielli, G., Akay, A., Akhundov, A., Aksakal, H., … Zurita, J.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><b>FCC-hh: The Hadron Collider: Future Circular Collider Conceptual Design Report Volume 3</b></span>. <i>The European Physical Journal Special Topics</i>, <i>228</i>(4), 755–1107. <span class='URL'><a href='https://doi.org/10.1140/epjst/e2019-900087-0'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

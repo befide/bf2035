@@ -12,8 +12,13 @@ export interface Props {
 
 const { section } = Astro.props;
 
-const { title, sectionNumber, supertitle, subtitle, backgroundImageSrc } =
-  section.data;
+const {
+  title,
+  sectionNumber,
+  supertitle,
+  subtitle,
+  backgroundImageSrc,
+} = section.data;
 const { Content } = await section.render();
 
 const optimizedBackground =
@@ -88,7 +93,7 @@ const optimizedBackground =
 <style lang="stylus">
  
 .spread.cover, .spread.part
-  // height 100vh
+  height 100vh
   
   .spread__header
     grid-area: 2 / 6 / 6 / 13

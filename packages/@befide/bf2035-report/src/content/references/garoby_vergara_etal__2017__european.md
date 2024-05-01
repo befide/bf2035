@@ -179,7 +179,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="garoby_vergara_etal__2017__european" class="csl-entry"><span class='author-bib'>Garoby, Vergara, A., Danared, H., et al.</span>. <span class='date-bib'>(2017)</span>. <span class='title'><b>The European Spallation Source Design</b></span>. <i>Physica Scripta</i>, <i>93</i>(1), 014001. <span class='URL'><a href='https://doi.org/10.1088/1402-4896/aa9bff'>LINK</a></span></span>
+      <span data-csl-entry-id="garoby_vergara_etal__2017__european" class="csl-entry"><span class='author-bib'>Garoby, Vergara, A., Danared, H., Alonso, I., Bargallo, E., Cheymol, B., Darve, C., Eshraqi, M., Hassanzadegan, H., Jansson, A., Kittelmann, I., Levinsen, Y., Lindroos, M., Martins, C., Midttun, Ø., Miyamoto, R., Molloy, S., Phan, D., Ponton, A., … Sordo, F.</span>. <span class='date-bib'>(2017)</span>. <span class='title'><b>The European Spallation Source Design</b></span>. <i>Physica Scripta</i>, <i>93</i>(1), 014001. <span class='URL'><a href='https://doi.org/10.1088/1402-4896/aa9bff'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

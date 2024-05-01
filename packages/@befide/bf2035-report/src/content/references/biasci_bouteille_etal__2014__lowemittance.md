@@ -72,7 +72,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="biasci_bouteille_etal__2014__lowemittance" class="csl-entry"><span class='author-bib'>Biasci, Bouteille, J. F., Carmignani, N., et al.</span>. <span class='date-bib'>(2014)</span>. <span class='title'><b>A Low-Emittance Lattice for the ESRF</b></span>. <i>Synchrotron Radiation News</i>, <i>27</i>(6), 8–12. <span class='URL'><a href='https://doi.org/10.1080/08940886.2014.970931'>LINK</a></span></span>
+      <span data-csl-entry-id="biasci_bouteille_etal__2014__lowemittance" class="csl-entry"><span class='author-bib'>Biasci, Bouteille, J. F., Carmignani, N., Chavanne, J., Coulon, D., Dabin, Y., Ewald, F., Farvacque, L., Goirand, L., Hahn, M., Jacob, J., LeBec, G., Liuzzo, S., Nash, B., Pedroso-Marques, H., Perron, T., Plouviez, E., Raimondi, P., Revol, J. L., … Serrière, V.</span>. <span class='date-bib'>(2014)</span>. <span class='title'><b>A Low-Emittance Lattice for the ESRF</b></span>. <i>Synchrotron Radiation News</i>, <i>27</i>(6), 8–12. <span class='URL'><a href='https://doi.org/10.1080/08940886.2014.970931'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

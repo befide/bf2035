@@ -8,12 +8,15 @@
     "paths": {
       "@assets/*": ["./src/astro/assets/*"],
       "@layouts/*": ["./src/astro/layouts/*"],
-      "@utils/*": ["./src/astro/utils/*"],
+      "@utils/*": ["src/astro/utils/*"],
       "@components/*": ["./src/astro/components/*"],
       "@ui/*": ["./src/astro/components/ui/*"],
       "@styles/*": ["./src/astro/styles/*"]
     },
-    "types": ["vite-plugin-pwa/client", "vite-plugin-pwa/info"],
+    "types": [
+      "vite-plugin-pwa/client",
+      "vite-plugin-pwa/info"
+    ],
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
@@ -25,6 +28,6 @@
     "src/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.astro",
-    "node_modules/vite-plugin-pwa/client.d.ts"
+    "node_modules/vite-plugin-pwa/client.d.ts", 
   ]
 }

@@ -63,7 +63,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="dauria_thompson_etal__2021__conceptual" class="csl-entry"><span class='author-bib'>D’Auria, Thompson, N. (ed. ), Clarke, J. (ed. ), et al.</span>. <span class='date-bib'>(2021)</span>. <span class='title'><i><b><span style="font-style:normal;">Conceptual Design Report of the CompactLight X-ray FEL</span></b></i></span> (2659056; Version v1) [Conceptual Design Report]. INSPIRE. <span class='URL'><a href='https://doi.org/10.5281/ZENODO.6375645'>LINK</a></span></span>
+      <span data-csl-entry-id="dauria_thompson_etal__2021__conceptual" class="csl-entry"><span class='author-bib'>D’Auria, Thompson, N. (ed. ), Clarke, J. (ed. ), Ferrario, M. (ed. ), Wuensch, W. (ed. ), Nguyen, F. (ed. ), Aksoy, A. (ed. ), Rochow, R. (ed. ), Chianchi, A. (ed. ), Latina, A. (ed. ), &#38; Aicheler, M. (ed. )</span>. <span class='date-bib'>(2021)</span>. <span class='title'><i><b><span style="font-style:normal;">Conceptual Design Report of the CompactLight X-ray FEL</span></b></i></span> (2659056; Version v1) [Conceptual Design Report]. INSPIRE. <span class='URL'><a href='https://doi.org/10.5281/ZENODO.6375645'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

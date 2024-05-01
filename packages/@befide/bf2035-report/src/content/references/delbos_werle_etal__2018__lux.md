@@ -62,7 +62,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="delbos_werle_etal__2018__lux" class="csl-entry"><span class='author-bib'>Delbos, Werle, C., Dornmair, I., et al.</span>. <span class='date-bib'>(2018)</span>. <span class='title'><b>Lux – A laser–plasma driven undulator beamline</b></span>. <i>Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</i>, <i>909</i>, 318–322. <span class='URL'><a href='https://doi.org/10.1016/j.nima.2018.01.082'>LINK</a></span></span>
+      <span data-csl-entry-id="delbos_werle_etal__2018__lux" class="csl-entry"><span class='author-bib'>Delbos, Werle, C., Dornmair, I., Eichner, T., Hübner, L., Jalas, S., Jolly, S. W., Kirchen, M., Leroux, V., Messner, P., Schnepp, M., Trunk, M., Walker, P. A., Winkler, P., &#38; Maier, A. R.</span>. <span class='date-bib'>(2018)</span>. <span class='title'><b>Lux – A laser–plasma driven undulator beamline</b></span>. <i>Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</i>, <i>909</i>, 318–322. <span class='URL'><a href='https://doi.org/10.1016/j.nima.2018.01.082'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

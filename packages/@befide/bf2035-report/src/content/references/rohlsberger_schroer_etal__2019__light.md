@@ -44,7 +44,7 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="rohlsberger_schroer_etal__2019__light" class="csl-entry"><span class='author-bib'>Röhlsberger, Schroer, C. G., Wanzenberg, R., et al.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><b>Light Source Upgrades at DESY: PETRA IV and FLASH2020+</b></span>. <i>Synchrotron Radiation News</i>, <i>32</i>(1), 27–31. <span class='URL'><a href='https://doi.org/10.1080/08940886.2019.1559605'>LINK</a></span></span>
+      <span data-csl-entry-id="rohlsberger_schroer_etal__2019__light" class="csl-entry"><span class='author-bib'>Röhlsberger, Schroer, C. G., Wanzenberg, R., Klumpp, S., &#38; Wurth, W.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><b>Light Source Upgrades at DESY: PETRA IV and FLASH2020+</b></span>. <i>Synchrotron Radiation News</i>, <i>32</i>(1), 27–31. <span class='URL'><a href='https://doi.org/10.1080/08940886.2019.1559605'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
