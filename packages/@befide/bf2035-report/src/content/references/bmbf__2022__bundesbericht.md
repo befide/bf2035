@@ -30,5 +30,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Bmbf</span></span>, 2022)
-bibTex: "@techreport{bmbf__2022__bundesbericht,\n\tnote = {[Online; accessed 2023-11-29]},\n\tauthor = {{Bmbf}},\n\tyear = {2022},\n\tinstitution = {BMBF},\n\ttitle = {Bundesbericht  {Forschung} und {Innovation} 2022. {Daten} und {Fakten} zum deutschen {Forschungs}- und {Innovationssystem}},\n\turl = {https://www.datenportal.bmbf.de/portal/de/bufi.html},\n}\n\n"
+bibTex: "@techreport{bmbf__2022__bundesbericht,\n\tnote = {[Online; accessed 2023-11-29]},\n\tauthor = {{Bmbf}},\n\tyear = {2022},\n\tinstitution = {BMBF},\n\ttitle = {Bundesbericht  {Forschung} und {Innovation} 2022. {Daten} und {Fakten} zum deutschen {Forschungs}- und {Innovationssystem}},\n}\n\n"
 ---

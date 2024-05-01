@@ -1,0 +1,50 @@
+---
+import affiliations from "./organisations.json";
+
+export type Organisations = Organisation[];
+
+export interface Organisation {
+  name: string;
+  longTitle: string;
+  shortTitle: string;
+  lng: any;
+  lat: any;
+  description: string;
+  type: string;
+  university: string;
+  "professors (from universities)": string;
+  professorCount: any;
+  scientistCount: any;
+  doctoralStudentCount: any;
+  technicianCount: any;
+  masterStudentCount: string;
+  "Intervention Opportunities": string;
+  professorships: string;
+  "professors copy": string;
+  facilities: string;
+  "professorships 2": string;
+  "professorships 3": string;
+  teaching: string;
+  "teaching copy": string;
+  universityCourses: string;
+  researchGroups: string;
+}
+
+export interface Props {
+  filter: (staff: Organisation) => Boolean;
+}
+
+const { filter } = Astro.props;
+
+const filtedAffiliation = affiliations.filter(filter);
+---
+
+<ol class="md">
+  {
+    filtedAffiliation.map((item) => (
+      <li class="affiliation">
+        <span class="label">{item.shortTitle}</span>
+      </li>
+    ))
+  }
+</ol>

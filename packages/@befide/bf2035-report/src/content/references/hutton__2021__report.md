@@ -10,7 +10,8 @@ cslItem:
       - - "2021"
         - 7
         - 9
-  keyword: "#erlc;#bf2035/projects/berlinpro;#bf2035/user-group/hep"
+  keyword: >-
+    #bf2035/projects/berlinpro;#bf2035/user-group/hep;#bf2035/accelerator-types/erl
   language: en
   source: Zotero
   title: Report from the ERL Roadmap Panel
@@ -18,6 +19,7 @@ cslItem:
 tags:
   - "#bf2035/projects/berlinpro"
   - "#bf2035/user-group/hep"
+  - "#bf2035/accelerator-types/erl"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

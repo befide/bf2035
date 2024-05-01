@@ -1,0 +1,1 @@
+he Circular Energy Recovery Collider (CERC) has a similar footprint as the FCC-ee “High-Energy High-Luminosity e+e- Collider using Energy-Recovery Linacs” Vladimir N Litvinenko, Thomas Roser and Maria Chamizo-Llatas, <https://arxiv.org/abs/1909.04437> • Published luminosity estimate up to 1036 cm-2 s-1

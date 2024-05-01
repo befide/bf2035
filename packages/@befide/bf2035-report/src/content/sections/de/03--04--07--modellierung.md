@@ -9,7 +9,7 @@ pageType: left
 
 <div class="spread--left spread-area--research-agenda-topic">
 
-![](@befide/bf2035-charts/.tmp/agenda.topics.beam-modeling.png)
+![](@befide/bf2035-charts/.tmp/(agenda.topics.beam-modeling..webp)
 
 </div>
 

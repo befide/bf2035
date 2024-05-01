@@ -38,5 +38,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Westphalen</span></span>, 2020)
-bibTex: "@misc{westphalen__2020__konkurrenz,\n\tnote = {[Online; accessed 2023-10-10]},\n\tauthor = {Westphalen, Andreas},\n\tyear = {2020},\n\tmonth = {feb 8},\n\ttitle = {Konkurrenz oder {Kooperation}? {Das} ist die entscheidende {Frage}},\n\turl = {https://www.telepolis.de/features/Konkurrenz-oder-Kooperation-Das-ist-die-entscheidende-Frage-4647091.html},\n\thowpublished = {https://www.telepolis.de/features/Konkurrenz-oder-Kooperation-Das-ist-die-entscheidende-Frage-4647091.html},\n}\n\n"
+bibTex: "@misc{westphalen__2020__konkurrenz,\n\tnote = {[Online; accessed 2023-10-10]},\n\tauthor = {Westphalen, Andreas},\n\tyear = {2020},\n\tmonth = {feb 8},\n\ttitle = {Konkurrenz oder {Kooperation}? {Das} ist die entscheidende {Frage}},\n\thowpublished = {https://www.telepolis.de/features/Konkurrenz-oder-Kooperation-Das-ist-die-entscheidende-Frage-4647091.html},\n}\n\n"
 ---

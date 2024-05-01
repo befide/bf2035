@@ -8,7 +8,6 @@ import AstroPWA from "@vite-pwa/astro"
 import rehypeAddClasses from "rehype-add-classes"
 import rehypeCitation from "rehype-citation"
 import rehypeRewrite from "rehype-rewrite"
-import flexibleContainers from  "remark-flexible-containers"
 import rehypeWidont from "rehype-widont"
 import sectionize from "remark-sectionize"
 import remarkGfm from "remark-gfm"
@@ -28,10 +27,13 @@ const site =
     ? "https://bf2035-report.surge.sh/"
     : undefined
 
-export default defineConfig({
-  
 
+export default defineConfig({
   vite: {
+
+    optimizeDeps: {
+      exclude: ["src/.obsidian/plugins/obsidian-map-view/main.js"],
+    },
     css: {
       preprocessorOptions: {
         stylus: {
@@ -39,11 +41,8 @@ export default defineConfig({
         },
       },
     },
-    // plugins: [dsv()],
+  
   },
-  // image: {
-  //   service: squooshImageService(),
-  // },
   output: "static",
   site,
   // site: "https://bf2035-report.surge.sh/",
@@ -59,7 +58,7 @@ export default defineConfig({
   markdown: {
 
     remarkPlugins: [
-      
+
       sectionize
       //   [smartypants, {
       //     options: {
@@ -99,10 +98,10 @@ export default defineConfig({
       ],
     ],
   },
-  
+
   integrations: [
     mdx({
-    
+
       gfm: true
     }),
     pagefind(),

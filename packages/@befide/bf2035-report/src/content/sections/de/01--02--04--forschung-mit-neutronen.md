@@ -1,5 +1,5 @@
 ---
-backgroundImageSrc: "@assets/media/usage.neutron-science.png"
+backgroundImageSrc: "@assets/media/usage.neutron-science.webp"
 pageType: spread
 pageClass: spread--default
 pageName: neutron-science

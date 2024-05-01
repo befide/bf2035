@@ -1,5 +1,5 @@
 ---
-backgroundImageSrc: "@assets/media/usage.nuclear-physics.png"
+backgroundImageSrc: "@assets/media/usage.nuclear-physics.webp"
 pageType: spread
 pageName: nuclear-physics
 sectionNumber: A.2.b

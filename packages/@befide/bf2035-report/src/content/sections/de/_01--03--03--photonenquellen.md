@@ -1,5 +1,5 @@
 ---
-backgroundImageSrc: "@assets/media/usage.particle-physics.png"
+backgroundImageSrc: "@assets/media/usage.particle-physics.webp"
 pageType: spread
 pageName: particle-physics
 sectionNumber: A.2.c

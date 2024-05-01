@@ -8,7 +8,7 @@ sectionNumber: C.4.e
 
 <div class="spread--right spread-area--research-agenda-topic">
 
-![](@befide/bf2035-charts/.tmp/agenda.topics.materials.png)
+![](@befide/bf2035-charts/.tmp/(agenda.topics.materials..webp)
 
 </div>
 

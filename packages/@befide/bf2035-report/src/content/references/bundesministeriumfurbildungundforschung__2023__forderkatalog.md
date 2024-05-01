@@ -39,5 +39,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Bundesministerium für Bildung und
     Forschung</span></span>, 2008/2023)
-bibTex: "@misc{bundesministeriumfurbildungundforschung__2023__forderkatalog,\n\tnote = {[Online; accessed 2023-01-22]},\n\tauthor = {{Bundesministerium für Bildung und Forschung}},\n\tyear = {2023},\n\tmonth = {jan 22},\n\ttitle = {F{\\\" o}rderkatalog der {Bundesregierung}},\n\turl = {https://foerderportal.bund.de/foekat/jsp/SucheAction.do?actionMode=searchmask},\n\thowpublished = {https://foerderportal.bund.de/foekat/jsp/SucheAction.do?actionMode=searchmask},\n}\n\n"
+bibTex: "@misc{bundesministeriumfurbildungundforschung__2023__forderkatalog,\n\tnote = {[Online; accessed 2023-01-22]},\n\tauthor = {{Bundesministerium für Bildung und Forschung}},\n\tyear = {2023},\n\tmonth = {jan 22},\n\ttitle = {F{\\\" o}rderkatalog der {Bundesregierung}},\n\thowpublished = {https://foerderportal.bund.de/foekat/jsp/SucheAction.do?actionMode=searchmask},\n}\n\n"
 ---

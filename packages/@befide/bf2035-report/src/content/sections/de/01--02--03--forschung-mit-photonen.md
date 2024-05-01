@@ -1,5 +1,5 @@
 ---
-backgroundImageSrc: "@assets/media/usage.photon-science.png"
+backgroundImageSrc: "@assets/media/usage.photon-science.webp"
 pageType: spread
 pageClass: spread--default
 pageName: photon-science

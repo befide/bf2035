@@ -6,7 +6,7 @@ import { getCollection } from "astro:content";
 //   NodeDefinition
 // } from "cytoscape"
 
-import harmonyPalette from "./../components/harmony-palette.json";
+import harmonyPalette from "./../components/domain/harmony-palette.json";
 
 import {
   attribute as _,

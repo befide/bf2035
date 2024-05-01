@@ -21,7 +21,7 @@ cslItem:
   issued:
     date-parts:
       - - "2023"
-  keyword: "#desy;#collection/D./annual repoorts"
+  keyword: "#collection/D./annual repoorts;#bf2035/organisations/desy"
   language: en
   note: |-
     Read_Status: To Read
@@ -33,7 +33,8 @@ cslItem:
   title-short: Accelerators 2022
   type: report
   URL: https://bib-pubdb1.desy.de/record/597326
-tags: []
+tags:
+  - "#bf2035/organisations/desy"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -43,5 +44,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Pfeffer</span> et al.</span></span>, 2023)
-bibTex: "@techreport{pfeffer_flegel_etal__2023__accelerators,\n\tauthor = {Pfeffer, Inga and Flegel, Ilka and Oevermann, Christel and Qelaj, Arlinda},\n\tdoi = {10.3204/PUBDB-2023-06558},\n\tyear = {2023},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-24T18:49:16.026Z},\n\tpages = {pages 115},\n\tinstitution = {DESY},\n\ttitle = {Accelerators 2022: Highlights and {Annual} {Report}},\n\ttype = {Annual {Report}},\n\turl = {https://bib-pubdb1.desy.de/record/597326},\n}\n\n"
+bibTex: "@techreport{pfeffer_flegel_etal__2023__accelerators,\n\tauthor = {Pfeffer, Inga and Flegel, Ilka and Oevermann, Christel and Qelaj, Arlinda},\n\tyear = {2023},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-24T18:49:16.026Z},\n\tpages = {pages 115},\n\tinstitution = {DESY},\n\ttitle = {Accelerators 2022: Highlights and {Annual} {Report}},\n\ttype = {Annual {Report}},\n}\n\n"
 ---

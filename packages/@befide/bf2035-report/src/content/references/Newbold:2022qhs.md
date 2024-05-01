@@ -61,5 +61,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Newbold</span></span>, 2022)
-bibTex: "@article{Newbold2022Introduction,\n\tauthor = {Newbold, D.},\n\tjournal = {CERN Yellow Reports: Monographs},\n\tdoi = {10.23731/CYRM-2022-001.1},\n\tyear = {2022},\n\tmonth = {mar 17},\n\tnote = {0 citations (INSPIRE 2024/3/17)\n0 citations w/o self (INSPIRE 2024/3/17)},\n\tpages = {1--7},\n\ttitle = {Introduction},\n\turl = {https://e-publishing.cern.ch/index.php/CYRM/article/view/1344},\n\thowpublished = {https://e-publishing.cern.ch/index.php/CYRM/article/view/1344},\n\tvolume = {1},\n}\n\n"
+bibTex: "@article{Newbold2022Introduction,\n\tauthor = {Newbold, D.},\n\tjournal = {CERN Yellow Reports: Monographs},\n\tyear = {2022},\n\tmonth = {mar 17},\n\tnote = {0 citations (INSPIRE 2024/3/17)\n0 citations w/o self (INSPIRE 2024/3/17)},\n\tpages = {1--7},\n\ttitle = {Introduction},\n\thowpublished = {https://e-publishing.cern.ch/index.php/CYRM/article/view/1344},\n\tvolume = {1},\n}\n\n"
 ---

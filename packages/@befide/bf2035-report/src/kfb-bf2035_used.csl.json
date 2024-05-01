@@ -1,15 +1,5 @@
 [
   {
-    "id": "____home",
-    "accessed": { "date-parts": [["2024", 4, 27]] },
-    "citation-key": "____home",
-    "keyword": "",
-    "language": "en",
-    "title": "Home | The CERN Accelerator School",
-    "type": "webpage",
-    "URL": "https://cas.web.cern.ch/"
-  },
-  {
     "id": "aberle_bejaralonso_etal__2020__highluminosity",
     "author": [
       { "family": "Aberle", "given": "O." },
@@ -756,7 +746,7 @@
     "volume": "764"
   },
   {
-    "id": "Barletta:2012dym",
+    "id": "barletta_chattopadhyay_etal__2013__educating",
     "abstract": "Accelerator science and technology is inherently an integrative discipline that combines aspects of physics, computational science, electrical and mechanical engineering. As few universities offer full academic programs, the education of accelerator physicists and engineers for the future has primarily relied on a combination of on-the-job training supplemented with intense courses at regional accelerator schools. This paper describes the approaches being used to satisfy the educational interests of a growing number of interested physicists and engineers.",
     "accessed": { "date-parts": [["2024", 3, 22]] },
     "archive": "INSPIRE",
@@ -766,7 +756,7 @@
       { "family": "Chattopadhyay", "given": "Swapan" },
       { "family": "Seryi", "given": "Andrei" }
     ],
-    "citation-key": "Barletta:2012dym",
+    "citation-key": "barletta_chattopadhyay_etal__2013__educating",
     "container-title": "Reviews of Accelerator Science and Technology",
     "container-title-short": "Rev. Accel. Sci. Tech.",
     "DOI": "10.1142/9789814449953_0012",
@@ -783,7 +773,7 @@
     "volume": "5"
   },
   {
-    "id": "Beacham:2021lgt",
+    "id": "beacham_zimmermann__2022__very",
     "abstract": "The long-term prospect of building a hadron collider around the circumference of a great circle of the Moon is sketched. A Circular Collider on the Moon (CCM) of $\\sim$11000 km in circumference could reach a proton-proton center-of-mass collision energy of 14 PeV -- a thousand times higher than the Large Hadron Collider at CERN -- optimistically assuming a dipole magnetic field of 20 T. Several aspects of such a project are presented, including siting, construction, availability of necessary materials on the Moon, and powering, as well as a discussion of future studies and further information needed to determine the more concrete feasibility of each. Machine parameters and vacuum requirements are explored, and an injection scheme is delineated. Other unknowns are set down. Due to the strong interest from multiple organizations in establishing a permanent Moon presence, a CCM could be the (next-to-) next-to-next-generation discovery machine for high-energy particle physics and a natural successor to next-generation machines, such as the proposed Future Circular Collider at CERN or a Super Proton-Proton Collider in China, and other future machines, such as a Collider in the Sea, in the Gulf of Mexico. A CCM would serve as an important stepping stone towards a Planck-scale collider sited in our Solar System.",
     "accessed": { "date-parts": [["2024", 3, 17]] },
     "archive": "INSPIRE",
@@ -792,7 +782,7 @@
       { "family": "Beacham", "given": "James" },
       { "family": "Zimmermann", "given": "Frank" }
     ],
-    "citation-key": "Beacham:2021lgt",
+    "citation-key": "beacham_zimmermann__2022__very",
     "container-title": "New Journal of Physics",
     "container-title-short": "New J. Phys.",
     "DOI": "10.1088/1367-2630/ac4921",
@@ -1004,7 +994,7 @@
       { "family": "Osterho", "given": "Jens" }
     ],
     "citation-key": "bohlen_brummer_etal____plasmed",
-    "keyword": "#plasma-accelerator;#bf2035/accelerator-types/photon-source",
+    "keyword": "#bf2035/accelerator-types/photon-source;#bf2035/research-topics/plasma-acceleration",
     "language": "en",
     "title": "Plasmed X: Compact Tunable X-Ray Source",
     "type": "speech"
@@ -1065,7 +1055,7 @@
     "ISSN": "2045-2322",
     "issue": "1",
     "issued": { "date-parts": [["2022", 9, 26]] },
-    "keyword": "#plasma-accelerator;#bf2035/accelerator-types/photon-source",
+    "keyword": "#bf2035/accelerator-types/photon-source;#bf2035/research-topics/plasma-acceleration",
     "language": "en",
     "note": "Read_Status: To Read\nRead_Status_Date: 2024-03-17T10:08:39.662Z",
     "page": "16017",
@@ -1164,6 +1154,7 @@
     "issued": { "date-parts": [["2022", 3, 17]] },
     "keyword": "#bf2035/user-group/hep",
     "language": "en",
+    "number": "2022-001",
     "page": "1-270",
     "publisher": "CERN",
     "source": "DOI.org (Datacite)",
@@ -1323,6 +1314,18 @@
     "URL": "https://cds.cern.ch/record/2705370"
   },
   {
+    "id": "cernacceleratorschool__2024__home",
+    "accessed": { "date-parts": [["2024", 4, 27]] },
+    "author": [{ "literal": "CERN Accelerator School" }],
+    "citation-key": "cernacceleratorschool__2024__home",
+    "issued": { "date-parts": [["2024"]] },
+    "keyword": "",
+    "language": "en",
+    "title": "Home | The CERN Accelerator School",
+    "type": "webpage",
+    "URL": "https://cas.web.cern.ch/"
+  },
+  {
     "id": "cerncommunicationgroup__2017__lhc",
     "abstract": "This is a collection of facts and figures about the Large Hadron Collider (LHC) in the form of questions and answers. Questions are grouped into sections, and answers are often two-tier, with more details in the second level. Please note that when speaking about particle collisions in the accelerator, the word ‘interaction’ is a synonym of ‘collision’.",
     "author": [{ "literal": "CERN Communication Group" }],
@@ -1474,6 +1477,17 @@
     "URL": "https://dns-indikatoren.de/assets/Publikationen/Indikatorenberichte/2022.pdf"
   },
   {
+    "id": "doeacceleratorbeamphysicsroadmapworkshop__2023__accelerator",
+    "accessed": { "date-parts": [["2024", 3, 22]] },
+    "author": [{ "literal": "DOE Accelerator Beam Physics Roadmap Workshop" }],
+    "citation-key": "doeacceleratorbeamphysicsroadmapworkshop__2023__accelerator",
+    "issued": { "date-parts": [["2023", 2]] },
+    "keyword": "",
+    "title": "Accelerator Beam Physics Research Roadmap",
+    "type": "report",
+    "URL": "https://science.osti.gov/hep/-/media/hep/pdf/2022/ABP_Roadmap_2023_final.pdf"
+  },
+  {
     "id": "dornbusch_heimer__2017__evaluation",
     "author": [
       { "family": "Dornbusch", "given": "Friedrich" },
@@ -1589,7 +1603,7 @@
     "URL": "http://www-elsa.physik.uni-bonn.de/accelerator_list.html"
   },
   {
-    "id": "Emma:2022zdv",
+    "id": "emma_vantilborg_etal__2022__snowmass",
     "abstract": "While the long-term vision of the advanced accelerator community is aimed at addressing the challenges of future collider technology, it is critical that the community takes advantage of the opportunity to make large societal impact through its near-term applications. In turn, enabling robust applications strengthens the quality, control, and reliability of the underlying accelerator infrastructure. The white paper contributions that are solicited here will summarize the near-term applications ideas presented by the advanced accelerator community, assessing their potential impact, discussing scientific and technical readiness of concepts, and providing a timeline for implementation.",
     "archive": "INSPIRE",
     "archive_location": "2054187",
@@ -1610,7 +1624,7 @@
       { "family": "Murokh", "given": "Alex" },
       { "family": "Rosenzweig", "given": "James" }
     ],
-    "citation-key": "Emma:2022zdv",
+    "citation-key": "emma_vantilborg_etal__2022__snowmass",
     "issued": { "date-parts": [["2022"]] },
     "keyword": "",
     "note": "4 citations (INSPIRE 2024/3/22)\n3 citations w/o self (INSPIRE 2024/3/22)",
@@ -2033,7 +2047,7 @@
     "author": [{ "family": "Hutton", "given": "Andrew" }],
     "citation-key": "hutton__2021__report",
     "issued": { "date-parts": [["2021", 7, 9]] },
-    "keyword": "#erlc;#bf2035/projects/berlinpro;#bf2035/user-group/hep",
+    "keyword": "#bf2035/projects/berlinpro;#bf2035/user-group/hep;#bf2035/accelerator-types/erl",
     "language": "en",
     "source": "Zotero",
     "title": "Report from the ERL Roadmap Panel",
@@ -2417,7 +2431,7 @@
   },
   {
     "id": "nagaitsev_huang_etal__2021__accelerator",
-    "accessed": { "date-parts": [["2023", 5, 8]] },
+    "accessed": { "date-parts": [["2024", 4, 27]] },
     "author": [
       { "family": "Nagaitsev", "given": "S." },
       { "family": "Huang", "given": "Z." },
@@ -2430,13 +2444,13 @@
     "citation-key": "nagaitsev_huang_etal__2021__accelerator",
     "DOI": "10.2172/1764152",
     "issued": { "date-parts": [["2021", 1, 1]] },
-    "keyword": "#usa",
+    "keyword": "",
     "language": "en",
-    "note": "Read_Status: To Read\nRead_Status_Date: 2024-03-17T09:45:28.620Z",
+    "number": "FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291",
     "page": "FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291",
     "source": "DOI.org (Crossref)",
     "title": "Accelerator and Beam Physics Research Goals and Opportunities",
-    "type": "article-journal",
+    "type": "report",
     "URL": "https://www.osti.gov/servlets/purl/1764152/"
   },
   {
@@ -2551,7 +2565,7 @@
     "DOI": "10.3204/PUBDB-2022-01876",
     "genre": "Annual Report",
     "issued": { "date-parts": [["2022"]] },
-    "keyword": "#desy;#collection/D./annual repoorts",
+    "keyword": "#collection/D./annual repoorts;#bf2035/organisations/desy",
     "language": "en",
     "note": "Read_Status: To Read\nRead_Status_Date: 2024-03-24T18:49:16.025Z",
     "publisher": "Deutsches Elektronen-Synchrotron",
@@ -2576,7 +2590,7 @@
     "DOI": "10.3204/PUBDB-2020-04948",
     "genre": "Annual Report",
     "issued": { "date-parts": [["2021"]] },
-    "keyword": "#desy;#collection/D./annual repoorts",
+    "keyword": "#collection/D./annual repoorts;#bf2035/organisations/desy",
     "language": "en",
     "note": "Read_Status: To Read\nRead_Status_Date: 2024-03-24T18:49:16.025Z",
     "page": "pages 77 pages",
@@ -2600,7 +2614,7 @@
     "DOI": "10.3204/PUBDB-2023-06558",
     "genre": "Annual Report",
     "issued": { "date-parts": [["2023"]] },
-    "keyword": "#desy;#collection/D./annual repoorts",
+    "keyword": "#collection/D./annual repoorts;#bf2035/organisations/desy",
     "language": "en",
     "note": "Read_Status: To Read\nRead_Status_Date: 2024-03-24T18:49:16.026Z",
     "page": "pages 115",
@@ -2672,7 +2686,7 @@
     "ISSN": "0894-0886, 1931-7344",
     "issue": "1",
     "issued": { "date-parts": [["2019", 1, 2]] },
-    "keyword": "#facility:petra2020+",
+    "keyword": "#bf2035/projects/petra4;#bf2035/facilities/petra4",
     "language": "en",
     "note": "6 citations (Crossref/DOI) [2024-03-19]",
     "page": "27-31",
@@ -8548,9 +8562,9 @@
     "URL": "http://www.accelerators-for-society.org/"
   },
   {
-    "id": "UN.A.70.L.1",
+    "id": "unitednationsgeneralassembly__2015__res",
     "author": [{ "literal": "United Nations, General Assembly" }],
-    "citation-key": "UN.A.70.L.1",
+    "citation-key": "unitednationsgeneralassembly__2015__res",
     "issued": { "date-parts": [["2015", 10, 21]] },
     "keyword": "",
     "language": "en",

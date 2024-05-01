@@ -1,5 +1,5 @@
 ---
-backgroundImageSrc: "@assets/media/usage.nuclear-probes-and-ion-beams.png"
+backgroundImageSrc: "@assets/media/usage.nuclear-probes-and-ion-beams.webp"
 pageType: spread
 pageName: forschung-mit-nuklearen-sonden-und-ionenstrahlen
 sectionNumber: A.2.e

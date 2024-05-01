@@ -18,7 +18,7 @@ cslItem:
   issued:
     date-parts:
       - - "2022"
-  keyword: "#desy;#collection/D./annual repoorts"
+  keyword: "#collection/D./annual repoorts;#bf2035/organisations/desy"
   language: en
   note: |-
     Read_Status: To Read
@@ -29,7 +29,8 @@ cslItem:
   title-short: Accelerators 2021
   type: report
   URL: https://bib-pubdb1.desy.de/record/476767
-tags: []
+tags:
+  - "#bf2035/organisations/desy"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -38,5 +39,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Pfeffer</span></span>, 2022)
-bibTex: "@techreport{pfeffer__2022__accelerators,\n\tauthor = {Pfeffer, Inga},\n\tdoi = {10.3204/PUBDB-2022-01876},\n\tyear = {2022},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-24T18:49:16.025Z},\n\tinstitution = {Deutsches Elektronen-Synchrotron},\n\ttitle = {Accelerators 2021: Highlights and {Annual} {Report}},\n\ttype = {Annual {Report}},\n\turl = {https://bib-pubdb1.desy.de/record/476767},\n}\n\n"
+bibTex: "@techreport{pfeffer__2022__accelerators,\n\tauthor = {Pfeffer, Inga},\n\tyear = {2022},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-24T18:49:16.025Z},\n\tinstitution = {Deutsches Elektronen-Synchrotron},\n\ttitle = {Accelerators 2021: Highlights and {Annual} {Report}},\n\ttype = {Annual {Report}},\n}\n\n"
 ---

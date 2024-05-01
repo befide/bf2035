@@ -1,5 +1,5 @@
 ---
-import { getReferences } from "@utils/";
+import { getReferences } from "@utils/getReferences";
 import BibItem from "./BibItem.astro";
 // import { reference } from "astro:content";
 
@@ -20,7 +20,7 @@ const references = await getReferences(scopedTag);
 <ul class="md bib-list">
   {
     references.map((reference) => (
-      <BibItem item={reference} withTags={false} withCollections={false} />
+      <BibItem citeKey={reference.slug} withTags={false} />
     ))
   }
 </ul>

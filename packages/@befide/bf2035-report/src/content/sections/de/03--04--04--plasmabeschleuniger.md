@@ -8,7 +8,7 @@ pageType: spread
 
 <div class="spread--left spread-area--research-agenda-topic">
 
-![](@befide/bf2035-charts/.tmp/agenda.topics.ultracompact.png)
+![](@befide/bf2035-charts/.tmp/(agenda.topics.ultracompact..webp)
 
 </div>
 

@@ -8,7 +8,7 @@ pageType: right
 
 <div class="spread--right spread-area--research-agenda-topic">
 
-![](@befide/bf2035-charts/.tmp/agenda.topics.measurement-and-control.png)
+![](@befide/bf2035-charts/.tmp/(agenda.topics.measurement-and-control..webp)
 
 #
 

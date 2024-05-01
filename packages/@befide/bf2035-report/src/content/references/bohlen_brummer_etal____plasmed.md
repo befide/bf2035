@@ -21,12 +21,14 @@ cslItem:
     - family: Osterho
       given: Jens
   citation-key: bohlen_brummer_etal____plasmed
-  keyword: "#plasma-accelerator;#bf2035/accelerator-types/photon-source"
+  keyword: >-
+    #bf2035/accelerator-types/photon-source;#bf2035/research-topics/plasma-acceleration
   language: en
   title: "Plasmed X: Compact Tunable X-Ray Source"
   type: speech
 tags:
   - "#bf2035/accelerator-types/photon-source"
+  - "#bf2035/research-topics/plasma-acceleration"
 rendered:
   bibliography: "<span class=\"csl-bib-body\">\n  <span data-csl-entry-id=\"bohlen_brummer_etal____plasmed\" class=\"csl-entry\"><span class='author-bib'>Bohlen, Brümmer, T., Grüner, F., et al.</span>. <span class='date-bib'>(o.\_J.)</span>. <span class='title'><i><b><span style=\"font-style:normal;\">Plasmed X: Compact Tunable X-Ray Source</span></b></i></span>.</span>\n</span>"
   citation: "(<span style=\"font-variant:small-caps;\"><span style=\"font-variant:small-caps;\"><span style=\"font-variant:small-caps;\">Bohlen</span> et al.</span></span>, o.\_J.)"

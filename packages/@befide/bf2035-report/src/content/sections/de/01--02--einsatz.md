@@ -6,7 +6,7 @@ subtitle: in Medizin, Industrie und Wissenschaft
 sectionNumber: A.2
 pageType: spread
 pageName: accelerators-in-use
-backgroundImageSrc: "@assets/media/accelerators-in-use.png"
+backgroundImageSrc: "@assets/media/accelerators-in-use.webp"
 ---
 
 <div class="spread--left spread-area--intro">

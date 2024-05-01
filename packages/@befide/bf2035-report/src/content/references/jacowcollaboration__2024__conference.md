@@ -24,5 +24,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">JACoW Collaboration</span></span>, 2024)
-bibTex: "@misc{jacowcollaboration__2024__conference,\n\tauthor = {{JACoW Collaboration}},\n\tyear = {2024},\n\tmonth = {mar 18},\n\ttitle = {The {Conference} {Proceedings}},\n\turl = {https://www.jacow.org/Main/Proceedings},\n\thowpublished = {https://www.jacow.org/Main/Proceedings},\n}\n\n"
+bibTex: "@misc{jacowcollaboration__2024__conference,\n\tauthor = {{JACoW Collaboration}},\n\tyear = {2024},\n\tmonth = {mar 18},\n\ttitle = {The {Conference} {Proceedings}},\n\thowpublished = {https://www.jacow.org/Main/Proceedings},\n}\n\n"
 ---

@@ -1,5 +1,4 @@
 ---
-import { getCollection } from "astro:content";
 import { getEntry } from "astro:content";
 
 export interface Props {
@@ -8,9 +7,7 @@ export interface Props {
 }
 const { citeKey, locator } = Astro.props;
 
-const refs = await getCollection("references");
 const reference = await getEntry("references", citeKey);
-
 ---
 
 {

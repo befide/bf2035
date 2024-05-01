@@ -35,5 +35,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Oecd</span></span>, 2019)
-bibTex: "@book{oecd__2019__measuring,\n\tnote = {[Online; accessed 2023-11-12]},\n\tauthor = {{Oecd}},\n\tdoi = {10.1787/9789264311992-en},\n\tisbn = {978-92-64-31198-5 978-92-64-31204-3 978-92-64-31199-2 978-92-64-31205-0},\n\tyear = {2019},\n\tmonth = {mar 11},\n\tpublisher = {OECD},\n\ttitle = {Measuring the {Digital} {Transformation}: A {Roadmap} for the {Future}},\n\turl = {https://www.oecd-ilibrary.org/science-and-technology/measuring-the-digital-transformation_9789264311992-en},\n}\n\n"
+bibTex: "@book{oecd__2019__measuring,\n\tnote = {[Online; accessed 2023-11-12]},\n\tauthor = {{Oecd}},\n\tyear = {2019},\n\tmonth = {mar 11},\n\tpublisher = {OECD},\n\ttitle = {Measuring the {Digital} {Transformation}: A {Roadmap} for the {Future}},\n}\n\n"
 ---

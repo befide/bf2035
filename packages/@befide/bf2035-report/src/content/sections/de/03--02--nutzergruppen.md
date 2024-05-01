@@ -38,28 +38,28 @@ Die Forschungsagenda verdeutlicht, für welche beschleunigerbetriebene Forschung
 
 <div class="spread--right spread-area--6-3-12-8">
 
-![Teilchenphysik](@befide/bf2035-charts/.tmp/agenda.facilities.particle-physics.png)
+![Teilchenphysik](@befide/bf2035-charts/.tmp/(agenda.facilities.particle-physics..webp)
 
 </div>
 
 <div class="spread--right spread-area--12-3-18-8">
 
-![Kernphysik](@befide/bf2035-charts/.tmp/agenda.facilities.hadron-physics.png)
+![Kernphysik](@befide/bf2035-charts/.tmp/(agenda.facilities.hadron-physics..webp)
 
 </div>
 
 <div class="spread--right spread-area--6-9-12-12">
 
-![Forschung mit Photonen](@befide/bf2035-charts/.tmp/agenda.facilities.photon-science.png)
+![Forschung mit Photonen](@befide/bf2035-charts/.tmp/(agenda.facilities.photon-science..webp)
 
 </div>
 
 <div class="spread--right spread-area--12-9-18-12">
 
-![Forschung mit Neutronen](@befide/bf2035-charts/.tmp/agenda.facilities.neutron-science.png)
+![Forschung mit Neutronen](@befide/bf2035-charts/.tmp/(agenda.facilities.neutron-science..webp)
 
 </div>
 
 <div class="spread--left spread-area--6-3-18-12">
 
-![Beschleunigerforschung](@befide/bf2035-charts/.tmp/agenda.facilities.accelerator-science.png)
+![Beschleunigerforschung](@befide/bf2035-charts/.tmp/(agenda.facilities.accelerator-science..webp)

@@ -31,7 +31,8 @@ cslItem:
       - - "2022"
         - 9
         - 26
-  keyword: "#plasma-accelerator;#bf2035/accelerator-types/photon-source"
+  keyword: >-
+    #bf2035/accelerator-types/photon-source;#bf2035/research-topics/plasma-acceleration
   language: en
   note: |-
     Read_Status: To Read
@@ -44,6 +45,7 @@ cslItem:
   volume: "12"
 tags:
   - "#bf2035/accelerator-types/photon-source"
+  - "#bf2035/research-topics/plasma-acceleration"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -53,5 +55,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Brümmer</span> et al.</span></span>, 2022)
-bibTex: "@article{brummer_bohlen_etal__2022__compact,\n\tauthor = {Br{\\\" u}mmer, T. and Bohlen, S. and Gr{\\\" u}ner, F. and Osterhoff, J. and P{\\~ o}der, K.},\n\tjournal = {Scientific Reports},\n\tdoi = {10.1038/s41598-022-20283-8},\n\tissn = {2045-2322},\n\tnumber = {1},\n\tyear = {2022},\n\tmonth = {sep 26},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T10:08:39.662Z},\n\tpages = {16017},\n\ttitle = {Compact all-optical precision-tunable narrowband hard {Compton} {X}-ray source},\n\turl = {https://www.nature.com/articles/s41598-022-20283-8},\n\thowpublished = {https://www.nature.com/articles/s41598-022-20283-8},\n\tvolume = {12},\n}\n\n"
+bibTex: "@article{brummer_bohlen_etal__2022__compact,\n\tauthor = {Br{\\\" u}mmer, T. and Bohlen, S. and Gr{\\\" u}ner, F. and Osterhoff, J. and P{\\~ o}der, K.},\n\tjournal = {Scientific Reports},\n\tnumber = {1},\n\tyear = {2022},\n\tmonth = {sep 26},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T10:08:39.662Z},\n\tpages = {16017},\n\ttitle = {Compact all-optical precision-tunable narrowband hard {Compton} {X}-ray source},\n\thowpublished = {https://www.nature.com/articles/s41598-022-20283-8},\n\tvolume = {12},\n}\n\n"
 ---
