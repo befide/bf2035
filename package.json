@@ -5,38 +5,31 @@
   "license": "EUPL-1.2",
   "type": "module",
   "scripts": {
-    "build": "pnpm  --filter @befide/bf2035-report run build",
+    "build": "pnpm --filter @befide/bf2035-report run build",
     "check": "cd packages/@befide/bf2035-report; bun run check",
-    "dev": "pnpm  --filter @befide/bf2035-report run dev",
+    "dev": "pnpm --filter @befide/bf2035-report run dev",
     "knip": "knip",
     "lint": "prettier-package-json --write; pnpm run --parallel -r lint",
-    "lint:prettier": "prettier-package-json --write",
-    "lint2": "npm-run-all --continue-on-error lint:*",
-    "lint2:astro": "astro check",
-    "lint2:eslint": "eslint . --fix --cache --ignore-path .gitignore",
-    "lint2:imports": "organize-imports-cli ./tsconfig.json",
-    "lint2:types": "tsc --noEmit"
+    "lint:imports": "organize-imports-cli ./tsconfig.json",
+    "lint:prettier": "prettier-package-json --write"
   },
   "workspaces": [
     "packages/@befide/bf2035-report"
   ],
   "devDependencies": {
-    "@types/node": "20.11.29",
-    "@typescript-eslint/eslint-plugin": "7.3.1",
-    "@typescript-eslint/parser": "7.3.1",
-    "@typescript-eslint/types": "7.3.1",
-    "bun-types": "1.0.33",
+    "@types/node": "20.12.8",
+    "@typescript-eslint/eslint-plugin": "7.8.0",
+    "@typescript-eslint/parser": "7.8.0",
+    "@typescript-eslint/types": "7.8.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-prettier": "5.1.3",
-    "knip": "5.1.2",
+    "knip": "5.11.0",
     "organize-imports-cli": "0.10.0",
     "prettier": "3.2.5",
     "prettier-package-json": "2.8.0",
-    "prettier-plugin-tailwindcss": "0.5.11",
-    "tiny-glob": "0.2.9",
-    "typescript": "5.3.2",
+    "typescript": "5.4.5",
     "typescript-eslint-parser-for-extra-files": "0.6.0"
   }
 }

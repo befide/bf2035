@@ -4,7 +4,6 @@ import mdx from "@astrojs/mdx"
 import sitemap from "@astrojs/sitemap"
 
 import AstroPWA from "@vite-pwa/astro"
-import dsv from '@rollup/plugin-dsv'
 
 import rehypeAddClasses from "rehype-add-classes"
 import rehypeCitation from "rehype-citation"
@@ -51,39 +50,6 @@ export default defineConfig({
     "/de/": "/de/00/",
 
   },
-  integrations: [
-    mdx({}),
-    pagefind(),
-    sitemap({}),
-
-    AstroPWA({
-      mode: 'development',
-      base: '/',
-      scope: '/',
-      includeAssets: ['favicon.svg'],
-      registerType: 'autoUpdate',
-      manifest: {
-        name: 'Beschleunigerforschung 2035',
-        short_name: 'BF2035',
-        theme_color: '#ffffff',
-        lang: "de"
-      },
-      pwaAssets: {
-        config: true,
-      },
-      workbox: {
-        navigateFallback: '/',
-        globPatterns: ['**/*.{css,js,html,svg,png,ico,txt}'],
-      },
-      devOptions: {
-        enabled: false,
-        navigateFallbackAllowlist: [/^\//],
-      },
-      experimental: {
-        directoryAndTrailingSlashHandler: true,
-      }
-    }),
-  ],
   markdown: {
 
     remarkPlugins: [
