@@ -4,7 +4,7 @@ subtitle: Eine kleine Gemeinschaft mit großem Hebel
 title: Beschleunigerforschung in Deutschland
 sectionNumber: A.1
 pageType: spread
-backgroundImageSrc: "@assets/media/community.png"
+backgroundImageSrc: "@assets/media/community.webp"
 pageClass: spread--default
 pageName: community
 ---
