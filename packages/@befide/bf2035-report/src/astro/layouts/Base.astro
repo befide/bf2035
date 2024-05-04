@@ -30,12 +30,10 @@ const canonicalURL = Astro.site
   : undefined;
 
 
-
-
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html {lang} {title}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -47,8 +45,7 @@ const canonicalURL = Astro.site
     <title>{title}</title>
 
     <meta name="title" content={title} />
-    <meta name="description" content={description} />
-    <meta name="author" content={author} />
+    <meta name="author" content="Kommitee für Beschleunigerphysik" />
 
     <!-- <ViewTransitions /> -->
 
@@ -58,12 +55,5 @@ const canonicalURL = Astro.site
   <body>
     <slot />
   </body>
-  <script>
-    // import { initCollapses } from "@utils/collapse/collapse.js";
-    // initCollapses();
-  </script>
-</html>
 
-<style is:global>
-  
-</style>
+</html>
