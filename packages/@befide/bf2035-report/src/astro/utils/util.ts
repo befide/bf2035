@@ -22,6 +22,3 @@ export const stripLangFromSlug = (slug: CollectionEntry<"sections">["slug"]) =>
 /** Get a page’s lang tag from its slug (e.g. `'en/migrate'` => `'en'`). */
 export const getLangFromSlug = (slug: CollectionEntry<"sections">["slug"]) =>
   slug.split("/")[0]
-  
-
-  

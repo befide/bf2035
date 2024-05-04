@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer class="layout__footer">
-  <p class="copyright-wrapper md">
+  <p class="copyright-wrapper">
     <span>&#169; {currentYear}</span>
     <span class="separator">&nbsp;|&nbsp;</span>
     <span>All rights reserved.</span>
@@ -21,8 +21,12 @@ const currentYear = new Date().getFullYear();
   <SettingsFitSpreadToggle />
 </footer>
 
-<style>
+<style lang="stylus">
   footer {
     display: flex;
+  }
+  .copyright-wrapper {
+    $baselined-typography(body-sm);
+
   }
 </style>

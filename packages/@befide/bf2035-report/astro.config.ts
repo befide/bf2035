@@ -18,12 +18,13 @@ import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "url"
 import pagefind from "astro-pagefind"
 
-
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-const site = (process.env.NODE_ENV === "production") ? "https://bf2035-report.surge.sh/" : undefined
-
+const site =
+  process.env.NODE_ENV === "production"
+    ? "https://bf2035-report.surge.sh/"
+    : undefined
 
 export default defineConfig({
   vite: {
@@ -44,24 +45,19 @@ export default defineConfig({
   //   defaultStrategy: "viewport",
   // },
 
-
   redirects: {
     "/": "/de/00/",
     "/de/": "/de/00/",
-
   },
   markdown: {
-
     remarkPlugins: [
-      
-      sectionize
+      sectionize,
       //   [smartypants, {
       //     options: {
       //       openingQuotes: { double: "»", single: "›" },
       //       closingQuotes: { double: "«", single: "‹" },
       //     }
       //   }],
-
     ],
     rehypePlugins: [
       [rehypeWidont, {}],
@@ -92,11 +88,10 @@ export default defineConfig({
       ],
     ],
   },
-  
+
   integrations: [
     mdx({
-    
-      gfm: true
+      gfm: true,
     }),
     pagefind(),
     sitemap({}),
@@ -123,9 +118,7 @@ export default defineConfig({
       devOptions: {
         enabled: false,
         navigateFallbackAllowlist: [/^\//],
-
       },
     }),
   ],
-
 })

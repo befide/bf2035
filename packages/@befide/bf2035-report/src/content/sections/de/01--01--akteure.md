@@ -85,13 +85,13 @@ Hintergrund verfasst.^05^)
 ## Forschungs&shy;infrastrukturen
 
 <FacilityList
-  filter={({ isBmbfFis, isInGermany }) => isBmbfFis && isInGermany}
+filter={({ isBmbfFis, isInGermany }) => isBmbfFis && isInGermany}
 />
 
 ### außerhalb Deutschlands
 
 <FacilityList
-  filter={({ isBmbfFis, isInGermany }) => isBmbfFis && !isInGermany}
+filter={({ isBmbfFis, isInGermany }) => isBmbfFis && !isInGermany}
 />
 
 </div>

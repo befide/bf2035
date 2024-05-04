@@ -1,4 +1,4 @@
-// @ts-nocheck 
+// @ts-nocheck
 import removeMarkdown from "remove-markdown";
 
 import { renderInline } from "./render";

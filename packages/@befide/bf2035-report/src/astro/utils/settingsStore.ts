@@ -28,22 +28,24 @@ export const updateDocumentSettings = {
   debug: () => {
     document.documentElement.dataset.debug = settings.get().debug
     if (document.getElementById("toggle__debug")) {
-      (document.getElementById("toggle__debug") as HTMLInputElement).checked =
+      ;(document.getElementById("toggle__debug") as HTMLInputElement).checked =
         settings.get().debug === "true"
     }
   },
   fitSpread: () => {
     document.documentElement.dataset.fitSpread = settings.get().fitSpread
     if (document.getElementById("toggle__fit_spread")) {
-      (document.getElementById("toggle__fit_spread") as HTMLInputElement).checked =
-        settings.get().fitSpread === "true"
+      ;(
+        document.getElementById("toggle__fit_spread") as HTMLInputElement
+      ).checked = settings.get().fitSpread === "true"
     }
   },
   printPreview: () => {
     document.documentElement.dataset.printPreview = settings.get().printPreview
     if (document.getElementById("toggle__print_preview")) {
-      (document.getElementById("toggle__print_preview") as HTMLInputElement).checked =
-        settings.get().printPreview === "true"
+      ;(
+        document.getElementById("toggle__print_preview") as HTMLInputElement
+      ).checked = settings.get().printPreview === "true"
     }
   },
 }

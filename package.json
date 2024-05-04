@@ -5,11 +5,10 @@
   "license": "EUPL-1.2",
   "type": "module",
   "scripts": {
-    "build": "pnpm --filter @befide/bf2035-report run build",
-    "check": "cd packages/@befide/bf2035-report; bun run check",
-    "dev": "pnpm --filter @befide/bf2035-report run dev",
+    "build": "bun --filter @befide/bf2035-report build",
+    "dev": "bun --filter @befide/bf2035-report  dev",
     "knip": "knip",
-    "lint": "prettier-package-json --write; pnpm run --parallel -r lint",
+    "lint": "prettier-package-json --write; bun --filter='*' lint",
     "lint:imports": "organize-imports-cli ./tsconfig.json",
     "lint:prettier": "prettier-package-json --write"
   },
