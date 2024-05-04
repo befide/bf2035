@@ -1,114 +1,89 @@
-/* Uncomment this rule to effectively break the stylesheet, thus simulating no-CSS styles. */
-/* .selector { [property: value; } */
 
-.toggle {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  position: relative;
-  
-  cursor: pointer;
-  gap: 1ch;
+label {
+  display flex;
+  margin 0.5em;
+  padding 4px 4px 6px 6px;
+  border 1px solid #005a9c;
+  border-radius 5px;
+  width 15rem;
+  justify-content space-between;
+  align-items center;
+  // background-color: #eeeeee;
 }
 
-
-.toggle__input {
-  position: absolute;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
+label .label {
+  display inline-block;
+  user-select none;
+  flex 1 1 5rem;
+  white-space: nowrap;
+  color: var(--color-text-base)
 }
 
-.toggle__display {
-  --offset: calc(var(--baseline-height--screen) * .25);
-  --diameter: calc(var(--baseline-height--screen) * 1.25);
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-around;
-  box-sizing: content-box;
-  width: calc(var(--diameter) * 2 + var(--offset) * 3);
-  height: calc(var(--diameter) + var(--offset) * 2);
-  border: 0.1em solid rgb(0 0 0 / 0.2);
-  position: relative;
-  border-radius: 100vw;
-  background-color: #fbe4e2;
-  transition: 250ms;
+// label input[role="switch"] {
+// opacity: 0;
+// }
+label input[role='switch'] ~ .state {
+  user-select none;
+  flex 0 0 5rem;
+  display flex;
 }
 
-.toggle__display::before {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: var(--offset);
-  // box-sizing: border-box;
-  width: var(--diameter);
-  height: var(--diameter);
-  border: 0.1em solid rgb(0 0 0 / 0.2);
-  border-radius: 50%;
-  background-color: white;
-  transform: translate(0, -50%);
-  will-change: transform;
-  transition: inherit;
+label input[role='switch'] ~ .state > .switch-container {
+  position relative;
+  top 2px;
+  display inline-block;
+  border 2px solid black;
+  width 3rem;
+  height 1rem;
+  border-radius 11px;
+  flex 40px;
 }
 
-
-.toggle:focus .toggle__display,
-.toggle__input:focus + .toggle__display {
-  outline: 1px dotted #212121;
-  outline: 1px auto -webkit-focus-ring-color;
-  outline-offset: 2px;
+label input[role='switch'] ~ .state > .switch-container > .switch-knob {
+  position relative;
+  top 1px;
+  left 2px;
+  display inline-block;
+  border 2px solid red;
+  border-radius 9px;
+  width 14px;
+  height 14px;
+  background gray;
+  opacity 1;
 }
 
-.toggle:focus,
-.toggle:focus:not(:focus-visible) .toggle__display,
-.toggle__input:focus:not(:focus-visible) + .toggle__display {
-  outline: 0;
+.switch-label {
+  flex 0 0 14rem;
+  display block;
 }
 
-.toggle[aria-pressed="true"] .toggle__display,
-.toggle__input:checked + .toggle__display {
-  background-color: #e3f5eb;
+.state > span.off, .state span.off {
+  width 4rem;
+  display block-inline;
 }
 
-.toggle[aria-pressed="true"] .toggle__display::before,
-.toggle__input:checked + .toggle__display::before {
-  transform: translate(100%, -50%);
+label input[role='switch']:not(:checked) ~ .state span.on {
+  display none;
 }
 
-.toggle[disabled] .toggle__display,
-.toggle__input:disabled + .toggle__display {
-  opacity: 0.6;
-  filter: grayscale(40%);
-  cursor: not-allowed;
+label input[role='switch']:checked ~ .state span.off {
+  display none;
 }
 
-[dir="rtl"] .toggle__display::before {
-  left: auto;
-  right: var(--offset);
+label input[role='switch']:checked ~ .state > .switch-container > .switch-knob {
+  left 20px;
+  border-color green;
+  box-shadow 0px 0px 5px inset #aaaaaa;
 }
 
-[dir="rtl"] .toggle[aria-pressed="true"] + .toggle__display::before,
-[dir="rtl"] .toggle__input:checked + .toggle__display::before {
-  transform: translate(-100%, -50%);
+label.focus, label:hover {
+  padding 2px 2px 4px 4px;
+  border-width 2px;
+  outline none;
+  background-color #def;
+  cursor pointer;
 }
 
-.toggle__icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  color: inherit;
-  fill: currentcolor;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.toggle__icon--cross {
-  color: #e74c3c;
-  font-size: 85%;
-}
-
-.toggle__icon--checkmark {
-  color: #1fb978;
+label.focus span.switch-container, label:hover span.switch-container {
+  background-color white;
 }
