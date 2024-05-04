@@ -9,7 +9,7 @@ cslItem:
   issued:
     date-parts:
       - - "2018"
-  keyword: ""
+  keyword: "#bf2035/topics/excellence"
   language: en
   note: "OCLC: 1112885217"
   publisher: Publications Office
@@ -20,7 +20,8 @@ cslItem:
     the foundations for Europe's future
   title-short: Science, research and innovation performance of the EU, 2018
   type: book
-tags: []
+tags:
+  - "#bf2035/topics/excellence"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

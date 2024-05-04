@@ -9,11 +9,12 @@ cslItem:
       - - "2022"
         - 7
         - 13
-  keyword: ""
+  keyword: "#bf2035/topics/excellence"
   title: Physical Review Search
   type: dataset
   URL: https://journals.aps.org/search/results?journal=prstab&journal=prab
-tags: []
+tags:
+  - "#bf2035/topics/excellence"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

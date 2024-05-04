@@ -10,7 +10,7 @@ cslItem:
       - - "2019"
         - 4
         - 30
-  keyword: "#helmh;#bf2035/topics/teaching"
+  keyword: "#bf2035/topics/teaching"
   language: en
   source: Zotero
   title: Helmholtz Doctoral Guidelines

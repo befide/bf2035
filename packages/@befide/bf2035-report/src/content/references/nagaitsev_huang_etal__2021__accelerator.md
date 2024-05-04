@@ -40,7 +40,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="nagaitsev_huang_etal__2021__accelerator" class="csl-entry"><span class='author-bib'>Nagaitsev, Huang, Z., Power, J., et al.</span>. <span class='date-bib'>(2021)</span>. <span class='title'><i><b><span style="font-style:normal;">Accelerator and Beam Physics Research Goals and Opportunities</span></b></i></span> (FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291; S. FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291). <span class='URL'><a href='https://doi.org/10.2172/1764152'>LINK</a></span></span>
+      <span data-csl-entry-id="nagaitsev_huang_etal__2021__accelerator" class="csl-entry"><span class='author-bib'>Nagaitsev, Huang, Z., Power, J., Vay, J., Piot, P., Spentzouris, L., &#38; Rosenzweig, J.</span>. <span class='date-bib'>(2021)</span>. <span class='title'><i><b><span style="font-style:normal;">Accelerator and Beam Physics Research Goals and Opportunities</span></b></i></span> (FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291; S. FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291). <span class='URL'><a href='https://doi.org/10.2172/1764152'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span

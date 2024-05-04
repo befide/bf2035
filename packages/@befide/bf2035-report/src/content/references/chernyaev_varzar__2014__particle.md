@@ -21,7 +21,7 @@ cslItem:
     date-parts:
       - - "2014"
         - 10
-  keyword: ""
+  keyword: "#bf2035/appliations"
   language: en
   page: 1203-1215
   source: DOI.org (Crossref)
@@ -29,7 +29,8 @@ cslItem:
   type: article-journal
   URL: 10.1134/S1063778814100032
   volume: "77"
-tags: []
+tags:
+  - "#bf2035/appliations"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

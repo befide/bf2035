@@ -9,14 +9,15 @@ cslItem:
       - - "2015"
         - 10
         - 21
-  keyword: ""
+  keyword: "#bf2035/topics/sustainability"
   language: en
   source: Zotero
   title: >-
     A/RES/70/1 Transforming our world: the 2030 Agenda for Sustainable
     Development
   type: document
-tags: []
+tags:
+  - "#bf2035/topics/sustainability"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

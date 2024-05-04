@@ -24,14 +24,15 @@ cslItem:
       - - "2023"
         - 6
         - 1
-  keyword: ""
+  keyword: "#bf2035/topics/digitalisierung"
   language: en
   publisher: "[object Object]"
   source: DOI.org (Datacite)
   title: Present and future AI accelerator applications
   type: article-journal
   URL: https://zenodo.org/record/7994429
-tags: []
+tags:
+  - "#bf2035/topics/digitalisierung"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -7,7 +7,7 @@ cslItem:
   issued:
     date-parts:
       - - "2022"
-  keyword: "#verbundforschung"
+  keyword: "#bf2035/topics/verbundforschung"
   language: en
   original-date:
     date-parts:
@@ -20,7 +20,8 @@ cslItem:
   type: report
   URL: >-
     https://www.bmbf.de/SharedDocs/Publikationen/de/bmbf/7/31440_Aktionsplan_ErUM-Pro.pdf;jsessionid=FBE748A3794008BE93F3A34CBBE24EE9.live472?__blob=publicationFile&v=10
-tags: []
+tags:
+  - "#bf2035/topics/verbundforschung"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

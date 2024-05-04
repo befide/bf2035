@@ -20,7 +20,7 @@ cslItem:
     date-parts:
       - - "2016"
         - 9
-  keyword: ""
+  keyword: "#bf2035/user-group/neutron-science"
   language: en
   page: "12030"
   source: DOI.org (Crossref)
@@ -28,7 +28,8 @@ cslItem:
   type: article-journal
   URL: https://iopscience.iop.org/article/10.1088/1742-6596/746/1/012030
   volume: "746"
-tags: []
+tags:
+  - "#bf2035/user-group/neutron-science"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

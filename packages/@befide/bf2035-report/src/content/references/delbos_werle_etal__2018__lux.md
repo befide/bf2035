@@ -50,7 +50,8 @@ cslItem:
     date-parts:
       - - "2018"
         - 11
-  keyword: ""
+  keyword: >-
+    #bf2035/user-group/photon-science;#bf2035/research-topics/plasma-acceleration
   note: 27 citations (Crossref) [2022-09-26]
   page: 318-322
   source: DOI.org (Crossref)
@@ -58,7 +59,9 @@ cslItem:
   type: article-journal
   URL: https://linkinghub.elsevier.com/retrieve/pii/S0168900218301153
   volume: "909"
-tags: []
+tags:
+  - "#bf2035/user-group/photon-science"
+  - "#bf2035/research-topics/plasma-acceleration"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

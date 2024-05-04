@@ -22,7 +22,7 @@ cslItem:
       - - "2000"
         - 7
         - 1
-  keyword: ""
+  keyword: "#bf2035/user-group/hadron-physics"
   language: en
   note: |-
     913 citations (Semantic Scholar/DOI) [2023-12-12]
@@ -34,7 +34,8 @@ cslItem:
   type: article-journal
   URL: https://link.aps.org/doi/10.1103/RevModPhys.72.733
   volume: "72"
-tags: []
+tags:
+  - "#bf2035/user-group/hadron-physics"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -11,7 +11,7 @@ cslItem:
   issued:
     date-parts:
       - - "2016"
-  keyword: "#collection/D./excellence"
+  keyword: "#bf2035/topics/excellence;#collection/D./excellence"
   language: en
   number-of-pages: "330"
   publisher: Publications Office of the European Union
@@ -22,7 +22,8 @@ cslItem:
     the Open Innovation, Open Science, Open to the World agenda
   title-short: Science, research and innovation performance of the EU
   type: book
-tags: []
+tags:
+  - "#bf2035/topics/excellence"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

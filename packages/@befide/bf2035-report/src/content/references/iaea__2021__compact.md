@@ -11,7 +11,7 @@ cslItem:
   issued:
     date-parts:
       - - "2021"
-  keyword: ""
+  keyword: "#bf2035/user-group/neutron-science"
   language: en
   publisher: INTERNATIONAL ATOMIC ENERGY AGENCY
   publisher-place: Vienna
@@ -19,7 +19,8 @@ cslItem:
   type: book
   URL: >-
     https://www.iaea.org/publications/14948/compact-accelerator-based-neutron-sources
-tags: []
+tags:
+  - "#bf2035/user-group/neutron-science"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

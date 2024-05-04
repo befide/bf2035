@@ -60,7 +60,7 @@ cslItem:
       - - "2014"
         - 11
         - 2
-  keyword: ""
+  keyword: "#bf2035/accelerator-types/dla"
   language: en
   page: 8-12
   source: DOI.org (Crossref)
@@ -68,7 +68,8 @@ cslItem:
   type: article-journal
   URL: http://www.tandfonline.com/doi/abs/10.1080/08940886.2014.970931
   volume: "27"
-tags: []
+tags:
+  - "#bf2035/accelerator-types/dla"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

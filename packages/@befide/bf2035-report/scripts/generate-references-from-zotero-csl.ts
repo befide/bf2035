@@ -23,7 +23,6 @@ const readCSLItems = (fileNames: string[]) =>
   fileNames.flatMap((fileName) => JSON.parse(readFileSync(fileName).toString()))
 
 const generate = ({ globPattern, tagScoper }) => {
-
   const clsItems = readCSLItems(fg.sync(globPattern))
 
   const cite = Cite()
@@ -42,7 +41,7 @@ const generate = ({ globPattern, tagScoper }) => {
     return {
       cslItem,
       tags: cslItem.keyword
-        ? cslItem.keyword.split(";").filter(tag => tag.startsWith("#bf2035/"))
+        ? cslItem.keyword.split(";").filter((tag) => tag.startsWith("#bf2035/"))
         : [],
       rendered: {
         bibliography: linkify(
@@ -84,11 +83,6 @@ const generate = ({ globPattern, tagScoper }) => {
 generate({
   globPattern: "**.csl.json",
   tagScoper: (tag: string) => {
-
-    
-
-
-
     if (tag.startsWith("#bf2035"))
       // return [{ tag: tag, scope: undefined }]
       return tag
@@ -102,7 +96,7 @@ generate({
 
     const tags = []
     tags.push({
-      "scope": "collection." + split.join("/")
+      scope: "collection." + split.join("/"),
     })
     // ...split.map((collection) => "topic:" + issue + "/" + collection),
     // );

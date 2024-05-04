@@ -12,13 +12,14 @@ cslItem:
   issued:
     date-parts:
       - - "2021"
-  keyword: ""
+  keyword: "#bf2035/topics/teaching"
   language: de
   title: >-
     Entwicklung eines interdisziplinären englischsprachigen
     RMU-Masterstudiengangs „Accelerator Science“
   type: document
-tags: []
+tags:
+  - "#bf2035/topics/teaching"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

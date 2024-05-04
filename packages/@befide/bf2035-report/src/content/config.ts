@@ -1,4 +1,4 @@
-import { z, defineCollection, reference } from 'astro:content';
+import { z, defineCollection, reference } from "astro:content"
 
 const tags = z.array(z.string()).optional()
 
@@ -70,7 +70,7 @@ const referenceCollection = defineCollection({
   // type: 'data',
   schema: z
     .object({
-      tags: ScopedTags,
+      tags: z.array(z.string()),
 
       bibTex: z.string(),
       rendered: z.object({
@@ -248,5 +248,5 @@ const referenceCollection = defineCollection({
 export const collections = {
   sections: sectionCollection,
   references: referenceCollection,
-  "causal-map-nodes": causalMapNodeCollection
+  "causal-map-nodes": causalMapNodeCollection,
 }

@@ -26,7 +26,7 @@ cslItem:
   issued:
     date-parts:
       - - "1996"
-  keyword: ""
+  keyword: "#bf2035/accelerator-types/dla"
   language: en
   page: "3"
   source: Zotero
@@ -34,7 +34,8 @@ cslItem:
     A Lattice Design to Reach the Theoretical Minimum Emittance for a Storage
     Ring
   type: article-journal
-tags: []
+tags:
+  - "#bf2035/accelerator-types/dla"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

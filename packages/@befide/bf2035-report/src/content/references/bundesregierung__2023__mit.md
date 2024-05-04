@@ -16,7 +16,7 @@ cslItem:
     date-parts:
       - - "2023"
         - 10
-  keyword: "#source:government"
+  keyword: ""
   language: en
   page: "13"
   publisher: Die Bundesregierung

@@ -10,7 +10,7 @@ cslItem:
   issued:
     date-parts:
       - - "2017"
-  keyword: "#verbundforschung"
+  keyword: "#bf2035/topics/verbundforschung"
   language: en
   page: "62"
   publisher: Fraunhofer
@@ -20,7 +20,8 @@ cslItem:
   type: report
   URL: >-
     https://www.bmbf.de/files/170125_Endbericht_Evaluation_Verbundforschung_NWGF.pdf
-tags: []
+tags:
+  - "#bf2035/topics/verbundforschung"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

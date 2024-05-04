@@ -12,7 +12,7 @@ cslItem:
   issued:
     date-parts:
       - - "2022"
-  keyword: "#innovation;#collection/D./excellence"
+  keyword: "#collection/D./excellence;#bf2035/topics/innovation"
   language: en
   publisher: BMBF
   title: >-
@@ -21,7 +21,8 @@ cslItem:
   title-short: Bundesbericht ­Forschung und ­Innovation 2022.
   type: report
   URL: https://www.datenportal.bmbf.de/portal/de/bufi.html
-tags: []
+tags:
+  - "#bf2035/topics/innovation"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

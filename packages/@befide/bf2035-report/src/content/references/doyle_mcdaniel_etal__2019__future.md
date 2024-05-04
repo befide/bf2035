@@ -40,7 +40,7 @@ cslItem:
     date-parts:
       - - "2019"
         - 8
-  keyword: ""
+  keyword: "#bf2035/appliations/industry"
   language: en
   page: 93-116
   source: DOI.org (Crossref)
@@ -48,7 +48,8 @@ cslItem:
   type: article-journal
   URL: https://www.worldscientific.com/doi/abs/10.1142/S1793626819300068
   volume: "10"
-tags: []
+tags:
+  - "#bf2035/appliations/industry"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

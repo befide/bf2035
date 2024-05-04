@@ -166,7 +166,7 @@ cslItem:
       - - "2017"
         - 12
         - 29
-  keyword: ""
+  keyword: "#bf2035/user-group/neutron-science"
   language: en
   note: 75 citations (Crossref) [2023-01-31]
   page: "014001"
@@ -175,7 +175,8 @@ cslItem:
   type: article-journal
   URL: https://iopscience.iop.org/article/10.1088/1402-4896/aa9bff
   volume: "93"
-tags: []
+tags:
+  - "#bf2035/user-group/neutron-science"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

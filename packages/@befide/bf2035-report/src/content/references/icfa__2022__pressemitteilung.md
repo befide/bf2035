@@ -9,7 +9,7 @@ cslItem:
       - - "2022"
         - 4
         - 10
-  keyword: ""
+  keyword: "#bf2035/user-group/hep;#bf2035/accelerator-types/higgs-factory"
   language: en
   publisher: ICFA
   title: >-
@@ -17,7 +17,9 @@ cslItem:
     ILC
   type: document
   URL: https://icfa.hep.net/wp-content/uploads/ICFA_Statement_April2022_Final.pdf
-tags: []
+tags:
+  - "#bf2035/user-group/hep"
+  - "#bf2035/accelerator-types/higgs-factory"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

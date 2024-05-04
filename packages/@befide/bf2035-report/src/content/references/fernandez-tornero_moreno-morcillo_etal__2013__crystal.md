@@ -35,7 +35,7 @@ cslItem:
     date-parts:
       - - "2013"
         - 10
-  keyword: ""
+  keyword: "#bf2035/user-group/photon-science"
   language: en
   page: 644-649
   source: DOI.org (Crossref)
@@ -43,7 +43,8 @@ cslItem:
   type: article-journal
   URL: http://www.nature.com/articles/nature12636
   volume: "502"
-tags: []
+tags:
+  - "#bf2035/user-group/photon-science"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

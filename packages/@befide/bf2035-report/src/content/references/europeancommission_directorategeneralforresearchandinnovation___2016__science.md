@@ -15,7 +15,7 @@ cslItem:
   issued:
     date-parts:
       - - "2016"
-  keyword: ""
+  keyword: "#bf2035/topics/excellence"
   language: en
   publisher: Publications Office
   publisher-place: LU
@@ -26,7 +26,8 @@ cslItem:
   title-short: Science, research and innovation performance of the EU
   type: book
   URL: https://data.europa.eu/doi/10.2777/427046
-tags: []
+tags:
+  - "#bf2035/topics/excellence"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

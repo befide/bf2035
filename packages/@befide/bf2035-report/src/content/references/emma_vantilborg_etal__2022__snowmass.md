@@ -55,7 +55,7 @@ tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="Emma:2022zdv" class="csl-entry"><span class='author-bib'>Emma, Tilborg, J. van, Albert, F., Labate, L., England, J., Gessner, S., Fiuza, F., Obst-Huebl, L., Zholents, A., Murokh, A., &#38; Rosenzweig, J.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><i><b><span style="font-style:normal;">Snowmass 2021 accelerator frontier white paper: Near term applications driven by advanced accelerator concepts</span></b></i></span> (2054187). INSPIRE. <span class='URL'><a href='https://arxiv.org/abs/2203.09094'>LINK</a></span></span>
+      <span data-csl-entry-id="emma_vantilborg_etal__2022__snowmass" class="csl-entry"><span class='author-bib'>Emma, Tilborg, J. van, Albert, F., Labate, L., England, J., Gessner, S., Fiuza, F., Obst-Huebl, L., Zholents, A., Murokh, A., &#38; Rosenzweig, J.</span>. <span class='date-bib'>(2022)</span>. <span class='title'><i><b><span style="font-style:normal;">Snowmass 2021 accelerator frontier white paper: Near term applications driven by advanced accelerator concepts</span></b></i></span> (2054187). INSPIRE. <span class='URL'><a href='https://arxiv.org/abs/2203.09094'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
