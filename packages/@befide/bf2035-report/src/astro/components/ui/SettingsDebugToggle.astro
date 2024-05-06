@@ -20,7 +20,7 @@
     ?.addEventListener("click", toggleDebug);
 
   document.addEventListener("keyup", function (e) {
-    if (e.ctrlKey && e.code === "KeyD") {
+    if (e.ctrlKey && e.shiftKey && e.code === "KeyD") {
       toggleDebug();
     }
   });

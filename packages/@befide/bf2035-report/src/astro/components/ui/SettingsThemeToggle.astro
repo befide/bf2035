@@ -6,9 +6,7 @@
       <option value="dark">Dark</option>
       <option value="light">Light</option>
     </select>
-    
   </label>
-  
 </div>
 
 <script>
@@ -21,7 +19,13 @@
     .getElementById("toggle__theme")
     ?.addEventListener("change", toggleTheme);
 
-  
+  document.addEventListener("keyup", function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === "KeyT") {
+      const value = toggleTheme();
+      (document.getElementById("toggle__theme") as HTMLInputElement).value =
+        value;
+    }
+  });
 </script>
 
 <style is:global>
