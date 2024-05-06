@@ -13,7 +13,7 @@
     "build:pdf:3:impose": "./node_modules/cpdf-n/bin/cpdf-mac  -pad-before ./.pdf/beschleunigerforschung-2030__$npm_package_version.pdf 1 AND -twoup-stack AND -rotate 90 -o ./.pdf/beschleunigerforschung-2030__$npm_package_version--imposed.pdf",
     "build:pdf:3:impose-images": "gs -sDEVICE=jpeg  -dNOPAUSE  -r150 -sOutputFile=./.pdf/bf2035-%03d.jpg  ./.pdf/beschleunigerforschung-2030__$npm_package_version--imposed.pdf",
     "build:pdf:4:copy2web": "cp ./.pdf/beschleunigerforschung-2030__$npm_package_version--screen.pdf ./src/.vuepress/public/media/beschleunigerforschung-2030__$npm_package_version--screen.pdf",
-    "build:pwa-assets": "pnpm dlx pwa-asset-generator ./media/icons/appicon.svg ./src/.vuepress/public/icons --maskable --maniFest ./src/.vuepress/public/manifest.json --icon-only --favicon --padding 0",
+    "build:pwa-assets": "pwa-assets-generator  --preset='minimal-2023'",
     "build:references": "bun --bun ./scripts/generate-references-from-zotero-csl.ts",
     "dev": "astro dev",
     "lint": "npm-run-all lint:*",
