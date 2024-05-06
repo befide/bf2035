@@ -60,6 +60,7 @@ export const toggleTheme = () => {
     )
   }
   updateDocumentSettings.theme()
+  return settings.get().theme
 }
 export const toggleDebug = () => {
   settings.setKey("debug", settings.get().debug === "false" ? "true" : "false")

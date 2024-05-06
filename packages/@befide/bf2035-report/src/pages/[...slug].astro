@@ -20,13 +20,12 @@ const { section } = Astro.props;
 
 const {
   title,
-  abstract,
   pageType,
   lang
 } = section.data;
 
 ---
-<Layout {lang}>
+<Layout {lang} {title}>
 
 {
   (pageType === "part" || pageType === "cover") && (
