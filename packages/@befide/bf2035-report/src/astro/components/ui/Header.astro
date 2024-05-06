@@ -5,6 +5,8 @@ import SkipNavigation from "./SkipNavigation.astro";
 <SkipNavigation />
 <nav>
   <a id="navigation__home" href="/de/" class="">BF 2035</a>
+  <a id="navigation__book" href="/de/book/" class="">Book</a>
+  
   <input type="checkbox" id="nav-button" />
   <label for="nav-button">&#9776;</label>
   <ul>
@@ -27,8 +29,14 @@ import SkipNavigation from "./SkipNavigation.astro";
 </nav>
 
 <script is:inline>
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.key === "h") {
+ 
+ document.addEventListener("keyup", function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === "KeyB") {
+      document.getElementById("navigation__book")?.click();
+    }
+  });
+  document.addEventListener("keyup", function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === "KeyH") {
       document.getElementById("navigation__home")?.click();
     }
   });
