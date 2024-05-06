@@ -13,7 +13,10 @@
     "lint:prettier": "prettier-package-json --write"
   },
   "workspaces": [
-    "packages/@befide/bf2035-report"
+    "packages/@befide/bf2035-report",
+    "packages/@befide/bf2035-charts",
+    "packages/@befide/bf2035-data",
+    "packages/@befide/bf2035-data-legacy"
   ],
   "devDependencies": {
     "@types/node": "20.12.8",
