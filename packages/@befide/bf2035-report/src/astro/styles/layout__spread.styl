@@ -96,7 +96,7 @@
 
   .spread.cover, .spread.part {
     .spread__header {
-      margin-top $bl(20);
+      margin-top calc(20 * var(--baseline-height))
       text-align right;
     }
 
@@ -108,7 +108,7 @@
       margin-right calc(-1 * var(--page__margin__outside) - 1 * var(--bleed));
       margin-left 0;
       padding-right calc(var(--page__margin__outside) - 1 * var(--bleed));
-      padding-left $bl(0.5);
+      padding-left calc(0.5 * var(--baseline-height))
     }
   }
 
