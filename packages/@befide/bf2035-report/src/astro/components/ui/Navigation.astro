@@ -6,7 +6,7 @@ const slug = Astro.params?.slug;
 
 const path = ("/" + slug + "/").replaceAll("//", "/")
 
-const { prev, next } = await getPrevNext(path);
+const { prev, next, home } = await getPrevNext(path);
 ---
 
 <footer
@@ -16,6 +16,17 @@ const { prev, next } = await getPrevNext(path);
   <div class="flex-1"></div>
 
   <nav class="">
+    {
+      home && (
+        <a
+          id="navigation__home"
+          href={getPath(home)}
+          class=""
+        >
+          Home
+        </a>
+      )
+    }
     {
       prev && (
         <a
@@ -40,12 +51,17 @@ const { prev, next } = await getPrevNext(path);
   </nav>
   <script is:inline>
   document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.key === "n") {
+    if (e.ctrlKey && e.code  === "KeyN") {
       document.getElementById("navigation__next")?.click();
     }
   });
   document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.key === "N") {
+    if (e.ctrlKey && e.shiftKey && e.code === "KeyH") {
+      document.getElementById("navigation__home")?.click();
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === "KeyN") {
       document.getElementById("navigation__prev")?.click();
     }
   });

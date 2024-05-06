@@ -18,13 +18,13 @@ Plasmabasierte Teilchenbeschleuniger versprechen tausendfach höhere Beschleunig
 
 </div>
 
-<div class="spread--left spread-area--c-3 spread-area--small">
+<div class="spread--left spread-area--c-3">
 
 Für die metallische Hülle des Hohlraums stehen zwei grundlegende Optionen zur Auswahl, die beide Vor- und Nachteile haben. Normal leitende Metalle wie Kupfer können bei Raumtemperatur betrieben werden, während supraleitendes Niob auf Temperaturen nahe dem absoluten Nullpunkt abgekühlt werden muss.
 
 </div>
 
-<div class="spread--right spread-area--c-1 spread-area--small">
+<div class="spread--right spread-area--c-1">
 
 ## Teilchen-Plasma-Beschleuniger
 
@@ -36,7 +36,7 @@ Einsatz in der Hochenergiephysik vorbereitet werden.
 
 </div>
 
-<div class="spread--right spread-area--c-1 spread-area--small .hidden">
+<div class="spread--right spread-area--c-1 .hidden">
 
 ## PWFA
 
@@ -47,7 +47,7 @@ Die Demonstration einer einzelnen Stufe soll bis 2028 abgeschlossen sein. Diese 
 
 </div>
 
-<div class="spread--right spread-area--c-2 spread-area--small">
+<div class="spread--right spread-area--c-2">
 
 ## Laserplasmabeschleuniger
 
@@ -59,12 +59,12 @@ Ein Vorteil von LWFA sind die inhärent erzeugten ultrakurzen Elektronenpakete, 
 
 Eine Herausforderung ist die große Energiebreite der Elektronenpakete, die eine Speicherung in konventionellen Ringbeschleunigern erschwert. Hier ist weitere Grundlagenforschung zur Entwicklung von Speicherringen mit hoher Energieakzeptanz notwendig, wie sie bereits im Projekt cSTART durchgeführt wird.
 
-<!--
-Während der Technischen Design Phase von PETRA IV ist ebenfalls Grundlagenforschung für einen LWFA Injektor geplant. -->
+
+Während der Technischen Design Phase von PETRA IV ist ebenfalls Grundlagenforschung für einen LWFA Injektor geplant. 
 
 </div>
 
-<div class="spread--right spread-area--c-3 spread-area--small">
+<div class="spread--right spread-area--c-3">
 
 ## Dielectric
 

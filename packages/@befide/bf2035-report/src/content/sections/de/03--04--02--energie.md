@@ -29,7 +29,7 @@ Beschleunigeranlagen benötigen große Mengen an Energie, um die von der Forschu
 
 </div>
 
-<div class="spread--right spread-area--c-2 spread-area--small">
+<div class="spread--right spread-area--c-2">
 
 Die geplanten und bestehenden Forschungsstandorte verfügen über eine einzigartige Infrastruktur und Expertise, um neue Technologien zu entwickeln, in Kooperation mit der Industrie vom Prototypenstatus zur Anwendungsreife zu bringen und produktiv einzusetzen (Höchstspannungsversorgung, Supraleitung, Kryotechnik: z.B. innovative Energiespeicher).
 
@@ -37,7 +37,7 @@ Der hohe Energiebedarf in Verbindung mit dem Forschungsauftrag ermöglicht es, M
 
 </div>
 
-<div class="spread--left spread-area--c-3 spread-area--small">
+<div class="spread--left spread-area--c-3">
 
 ### Energieeffizienz des LHC
 
@@ -51,7 +51,10 @@ Um dieses Ergebnis zu erreichen, muss der LHC-Beschleuniger allerdings mit 14,8 
 
 </div>
 
-<div class="spread--right spread-area--references--top spread-area--small">
+<div class="spread--right spread-area--references--top">
 
-1. <bib-ref cite-key="cerncommunicationgroup__2017__lhc"></bib-ref>
-2. <bib-ref cite-key="lebrun__2014__why"></bib-ref>
+1. <BibRef citeKey="cerncommunicationgroup__2017__lhc"/>
+2. <BibRef citeKey="lebrun__2014__why"/>
+
+
+</div>

@@ -19,15 +19,15 @@ Mit einem geschätzten Marktvolumen von 5,0 Mrd. USD generierte die Beschleunige
 
 </div>
 
-<div class="spread--left spread-area--references spread-area--small">
+<div class="spread--left spread-area--references">
 
-1. <bib-ref cite-key="doyle_mcdaniel_etal__2019__future"/>
-2. <bib-ref cite-key="eucard2__2017__applications" />
+1. <BibRef citeKey="doyle_mcdaniel_etal__2019__future"/>
+2. <BibRef citeKey="eucard2__2017__applications" />
 3. xxx
 
 </div>
 
-<div class="spread--left spread-area--c-3 spread-area--small">
+<div class="spread--left spread-area--c-3">
 
 ## Ein beschleunigter Markt
 
@@ -37,7 +37,7 @@ Während die Zahl der Beschleuniger für die Wissenschaft in den letzten 50 Jahr
 
 <figure>
 
-<progress-chart dimension="accelerators_in_use__science" :print="true"/>
+<progress-chart dimension="accelerators_in_use__science" />
 
 <caption>
 
@@ -49,7 +49,7 @@ Die Zahl der Beschleuniger für die Wissenschaft ist in den letzten 50 Jahren in
 
 <figure>
 
-<progress-chart dimension="accelerators_in_use__medicine" :print="true"/>
+<progress-chart dimension="accelerators_in_use__medicine" />
 
 <caption>
 
@@ -61,7 +61,7 @@ Die Zahl der medizinisch genutzten Beschleuniger ist in den letzten 50 Jahren au
 
 <figure>
 
-<progress-chart dimension="accelerators_in_use__industry" :print="true"/>
+<progress-chart dimension="accelerators_in_use__industry" />
 
 <caption>
 
@@ -75,7 +75,7 @@ Der Markt für industrielle und medizinische Beschleuniger wurde für 2019 auf f
 
 </div>
 
-<div class="spread--right spread-area--c-1 spread-area--small">
+<div class="spread--right spread-area--c-1">
 
 ## Medizin
 
@@ -87,7 +87,7 @@ Beschleunigte Teilchen bilden zudem eine wichtige Säule im Kampf gegen Krebs. F
 
 </div>
 
-<div class="spread--right spread-area--c-2 spread-area--small">
+<div class="spread--right spread-area--c-2">
 
 ## Industrie
 
@@ -99,7 +99,7 @@ In der Chipindustrie werden beschleunigte Ionen bei der **Halbleiter-Dotierung**
 
 </div>
 
-<div class="spread--right spread-area--c-3  spread-area--small">
+<div class="spread--right spread-area--c-3 ">
 
 ## Wissenschaft
 
@@ -119,14 +119,4 @@ Mit **beschleunigergestützten Massenspektrometern** kann die Isotopenverteilung
 
 <accelerators-in-use-table />
 
-<style lang="stylus" scoped>
-
-spread--table
-  grid-area 13 / 1 / 17 / 13
-  
-  table
-
-    position absolute
-    bottom calc(3* var(--baseline-height))
-
-</style>
+</div>

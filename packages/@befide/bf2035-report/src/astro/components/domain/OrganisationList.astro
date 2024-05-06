@@ -1,0 +1,43 @@
+---
+import organisations from "./organisations.json";
+
+export type Organisations = Organisation[];
+
+export interface Organisation {
+  name: string;
+  title: string;
+  title__short: string;
+  type: string;
+  facilities: string;
+  lng: number | string;
+  lat: number | string;
+  professorships: string;
+  professorCount: number;
+  scientistCount: number | string;
+  doctoralStudentCount: number | string;
+  masterStudentCount: string;
+  technicianCount: number | string;
+  teaching: string;
+  universityCourses: string;
+  researchGroups: string;
+  description: string;
+}
+
+export interface Props {
+  filter: (staff: Organisation) => Boolean;
+}
+
+const { filter } = Astro.props;
+
+const filteredOrganisations = organisations.filter(filter);
+---
+
+<ol class="md">
+  {
+    filteredOrganisations.map((item) => (
+      <li class="affiliation">
+        <span class="label">{item.title__short}</span>
+      </li>
+    ))
+  }
+</ol>

@@ -9,9 +9,8 @@ pageClass: spread--default
 pageName: community
 ---
 
-import { Image } from "astro:assets";
-import AffiliationList from "@components/AffiliationList.astro";
-import FacilityList from "@components/FacilityList.astro";
+import OrganisationList from "@components/domain/OrganisationList.astro";
+import FacilityList from "@components/domain/FacilityList.astro";
 
 import communityMap from "./community-map.png";
 
@@ -26,7 +25,7 @@ In Deutschland sind ca. 500 wissenschaftlich Beschäftigte in der Beschleunigerf
 
 </div>
 
-<div class="spread--left spread-area--c-3 spread-area--small">
+<div class="spread--left spread-area--c-3">
 
 ## Forschen & Entwickeln
 
@@ -44,7 +43,7 @@ Die Ausbildung des Nachwuchses für die Beschleunigerforschung an deutschen Univ
 
 </div>
 
-<div class="spread--right spread-area--community-2 spread-area--small">
+<div class="spread--right spread-area--community-2">
 
 ## Universitäre und außeruniversitäre Anbindung
 
@@ -55,7 +54,7 @@ Verbindungen zu internationalen Forschungszentren wie CERN in Genf, ERSF in Gren
 
 </div>
 
-<div class="spread--right spread-area--community-3 spread-area--small">
+<div class="spread--right spread-area--community-3">
 
 ## Fachliche Anbindung
 
@@ -64,23 +63,23 @@ Hintergrund verfasst.^05^)
 
 </div>
 
-<div class="spread--right spread-area--university spread-area--small">
+<div class="spread--right spread-area--university">
 
 ## Universitäten
 
-<AffiliationList filter={({ type }) => type === "university"} />
+<OrganisationList filter={({ type }) => type === "university"} />
 
 </div>
 
-<div class="spread--right spread-area--non-university spread-area--small">
+<div class="spread--right spread-area--non-university">
 
 ## Außeruniversitäre Einrichtungen
 
-<AffiliationList filter={({ type }) => type !== "university"} />
+<OrganisationList filter={({ type }) => type === "non-university-research-organisation"} />
 
 </div>
 
-<div class="spread--right spread-area--nutzeranlagen spread-area--small">
+<div class="spread--right spread-area--nutzeranlagen">
 
 ## Forschungs&shy;infrastrukturen
 
@@ -96,7 +95,7 @@ filter={({ isBmbfFis, isInGermany }) => isBmbfFis && !isInGermany}
 
 </div>
 
-<div class="spread--right spread-area--testanlagen spread-area--small">
+<div class="spread--right spread-area--testanlagen">
 
 ## Testanlagen
 
@@ -104,13 +103,13 @@ filter={({ isBmbfFis, isInGermany }) => isBmbfFis && !isInGermany}
 
 </div>
 
-<div class="spread--right spread-area--community-map spread-area--small">
+<div class="spread--right spread-area--community-map">
 
-<Image class="md" src={communityMap} alt="A rocketship in space." />
+<img class="md" src={communityMap.src} width="100%" alt="A rocketship in space." />
 
 </div>
 
-<div class="spread--right spread-area--community-5 spread-area--small">
+<div class="spread--right spread-area--community-5">
 
 ## Beschäftigte
 
@@ -119,7 +118,7 @@ beschäftigt.^01^
 
 </div>
 
-<div class="spread--right spread-area--community-6 spread-area--small">
+<div class="spread--right spread-area--community-6">
 
 ## Kleine Gemeinschaft mit großem Hebel
 
@@ -189,21 +188,15 @@ Auf eine promovierte Person in der Beschleunigerforschung kommen etwa 30 Promovi
 
 </div>
 
-<div class="spread--left spread-area--references spread-area--small">
+<div class="spread--left spread-area--references">
 
-1. <bib-ref cite-key="kfb__2022__mitgliederbefragung" />
+1. <BibRef citeKey="kfb__2022__mitgliederbefragung" />
 2. Eigene Erhebung
-3. <bib-ref cite-key="dosch__2019__overview" ></bib-ref>
-4. <bib-ref cite-key="komiteefurbeschleunigerphysik__2014__satzung" />
-5. Eigene Erhebung auf Grundlage der <bib-ref cite-key="kfb__2022__dissertationsdatenbank" />
-6. <bib-ref
-     cite-key="statistischesbundesamt__2020__statistik"
-     locator="Seite 36"
-   />
-7. <bib-ref
-     cite-key="statistischesbundesamt__2020__personal"
-     locator="Seite 288"
-   />
-8. <bib-ref cite-key="erdman__2019__challenges" />
+3. <BibRef citeKey="dosch__2019__overview" />
+4. <BibRef citeKey="komiteefurbeschleunigerphysik__2014__satzung" />
+5. Eigene Erhebung auf Grundlage der <BibRef citeKey="kfb__2022__dissertationsdatenbank" />
+6. <BibRef citeKey="statistischesbundesamt__2020__statistik" locator="Seite 36"/>
+7. <BibRef citeKey="statistischesbundesamt__2020__personal" locator="Seite 288"/>
+8. <BibRef citeKey="erdman__2019__challenges" />
 
 </div>

@@ -30,16 +30,12 @@ import SkipNavigation from "./SkipNavigation.astro";
 
 <script is:inline>
  
- document.addEventListener("keyup", function (e) {
+ document.addEventListener("keydown", function (e) {
     if (e.ctrlKey && e.shiftKey && e.code === "KeyB") {
       document.getElementById("navigation__book")?.click();
     }
   });
-  document.addEventListener("keyup", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyH") {
-      document.getElementById("navigation__home")?.click();
-    }
-  });
+
 </script>
 
 <style>

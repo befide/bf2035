@@ -12,6 +12,14 @@
   background-position left;
 }
 
+.spread__page.left {
+  box-shadow -2px 0 15px gray;
+}
+
+.spread__page.right {
+  box-shadow 2px 0 5px gray;
+}
+
 // [data-print-preview="false"]
 // .spread__page.right
 // display none
@@ -94,24 +102,6 @@
     }
   }
 
-  .spread.cover, .spread.part {
-    .spread__header {
-      margin-top calc(20 * var(--baseline-height))
-      text-align right;
-    }
-
-    .spread__supertitle, .spread__subtitle, .spread__title {
-      right 0;
-    }
-
-    span {
-      margin-right calc(-1 * var(--page__margin__outside) - 1 * var(--bleed));
-      margin-left 0;
-      padding-right calc(var(--page__margin__outside) - 1 * var(--bleed));
-      padding-left calc(0.5 * var(--baseline-height))
-    }
-  }
-
   .spread {
     section h1 {
       display none;
@@ -126,33 +116,7 @@
     }
   }
 
-  // .bib-ref .full-inline
-  // display block !important
-  // 
-  // 
-  // div
-  // display inline
-  // 
-  // .csl-access a
-  // content "Link"
 
-  // section.spread-area--c-10-11--full
-  // grid-area 1 / 10 / 11 / 13
-
-  // section.spread-area--c-1-3--overflow
-  // grid-area 1 / 1 / 13 / 13
-  // 
-  // > section
-  // break-after column
-  // 
-  // h2
-  // margin-bottom $bl(1)
-  // 
-  // span
-  // display inline
-  // margin-left -0.3em
-  // padding 0 0.3em
-  // background-color var(--kfb__yellow)
   .spread-area--stack-at-bottom {
     h2 {
       margin-left calc(12 * var(--baseline-height));

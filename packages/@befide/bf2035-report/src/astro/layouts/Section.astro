@@ -1,10 +1,11 @@
 ---
 import type { CollectionEntry } from "astro:content";
 
-import { getImage } from "astro:assets";
+import { getImage, Image } from "astro:assets";
 
 import LinkCard from "@ui/LinkCard.astro";
 import CardGrid from "@ui/CardGrid.astro";
+import BibRef from "@components/ui/BibRef.astro"
 
 export interface Props {
   section: CollectionEntry<"sections">;
@@ -71,7 +72,7 @@ const optimizedBackground =
               )}
             </header>
 
-            <Content components={{ LinkCard, CardGrid }} />
+            <Content components={{ Image, BibRef, LinkCard, CardGrid }} />
           </div>
         </div>
       )
@@ -109,7 +110,7 @@ const optimizedBackground =
                 )}
               </header>
             )}
-            <Content components={{ LinkCard, CardGrid }} />
+            <Content components={{ Image, BibRef, LinkCard, CardGrid }} />
           </div>
         </div>
       )
