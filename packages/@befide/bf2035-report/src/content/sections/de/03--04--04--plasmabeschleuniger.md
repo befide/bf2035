@@ -59,8 +59,7 @@ Ein Vorteil von LWFA sind die inhärent erzeugten ultrakurzen Elektronenpakete, 
 
 Eine Herausforderung ist die große Energiebreite der Elektronenpakete, die eine Speicherung in konventionellen Ringbeschleunigern erschwert. Hier ist weitere Grundlagenforschung zur Entwicklung von Speicherringen mit hoher Energieakzeptanz notwendig, wie sie bereits im Projekt cSTART durchgeführt wird.
 
-
-Während der Technischen Design Phase von PETRA IV ist ebenfalls Grundlagenforschung für einen LWFA Injektor geplant. 
+Während der Technischen Design Phase von PETRA IV ist ebenfalls Grundlagenforschung für einen LWFA Injektor geplant.
 
 </div>
 

@@ -42,84 +42,84 @@ export const color = (cluster: string, level = 400) => {
 }
 
 // export async function getCausalMapForCytoscape() {
-  // const nodes = await getCollection("causal-map-nodes")
+// const nodes = await getCollection("causal-map-nodes")
 
-  // const clusters = new Set(nodes.map((node) => node.data.cluster))
-  // // console.log(new Array(clusters).sort())
+// const clusters = new Set(nodes.map((node) => node.data.cluster))
+// // console.log(new Array(clusters).sort())
 
-  // const edges_positive = nodes.flatMap((source) => {
-  //   return (source.data.influences_positively || []).map((target) => [
-  //     source.slug,
-  //     target.slug,
-  //   ])
-  // })
-  // const edges_negative = nodes.flatMap((source) => {
-  //   return (source.data.influences_negatively || []).map((target) => [
-  //     source.slug,
-  //     target.slug,
-  //   ])
-  // })
+// const edges_positive = nodes.flatMap((source) => {
+//   return (source.data.influences_positively || []).map((target) => [
+//     source.slug,
+//     target.slug,
+//   ])
+// })
+// const edges_negative = nodes.flatMap((source) => {
+//   return (source.data.influences_negatively || []).map((target) => [
+//     source.slug,
+//     target.slug,
+//   ])
+// })
 
-  // // const links = await Promise.all(nodes
-  // //   .map(async (node) => {
-  // //     return node.data.influences_positively ? [node.slug, await getEntries(node.data.influences_positively)] : [node, []]
-  // //   }))
+// // const links = await Promise.all(nodes
+// //   .map(async (node) => {
+// //     return node.data.influences_positively ? [node.slug, await getEntries(node.data.influences_positively)] : [node, []]
+// //   }))
 
-  // nodes
-  //   .filter((n) => n.data.type === "action")
-  //   .forEach((n, i) => {
-  //     const phi = Math.PI / 2 + (-i * Math.PI) / 10
-  //     const R = 25
-  //     n.data.v3_x = Math.cos(phi) * R
-  //     n.data.v3_y = Math.sin(phi) * R
-  //   })
+// nodes
+//   .filter((n) => n.data.type === "action")
+//   .forEach((n, i) => {
+//     const phi = Math.PI / 2 + (-i * Math.PI) / 10
+//     const R = 25
+//     n.data.v3_x = Math.cos(phi) * R
+//     n.data.v3_y = Math.sin(phi) * R
+//   })
 
-  // const lineHeight = 14
-  // const cytoscapeNodes: NodeDefinition[] = nodes.map((node) => ({
-  //   data: {
-  //     id: node.slug,
-  //     label: (node.data.title_short || node.data.title).replaceAll("  ", "\n"),
-  //     x: node.data.i_x !== undefined ? lineHeight * node.data.i_x : 0,
-  //     y: node.data.i_y !== undefined ? -lineHeight * node.data.i_y : 0,
-  //     type: node.data.type,
-  //     cluster: node.data.cluster,
-  //     // parent: node.data.parent?.slug
-  //   },
-  //   position: {
-  //     x: node.data.i_x !== undefined ? lineHeight * node.data.i_x : 0,
-  //     y: node.data.i_y !== undefined ? -lineHeight * node.data.i_y : 0,
-  //     // x: node.data.v3_x !== undefined ? lineHeight * node.data.v3_x : node.data.i_x !== undefined ? lineHeight * node.data.i_x : 0,
-  //     // y: node.data.v3_y !== undefined ? -lineHeight * node.data.v3_y : node.data.i_y !== undefined ? -lineHeight * node.data.i_y : 0
-  //   },
-  // }))
+// const lineHeight = 14
+// const cytoscapeNodes: NodeDefinition[] = nodes.map((node) => ({
+//   data: {
+//     id: node.slug,
+//     label: (node.data.title_short || node.data.title).replaceAll("  ", "\n"),
+//     x: node.data.i_x !== undefined ? lineHeight * node.data.i_x : 0,
+//     y: node.data.i_y !== undefined ? -lineHeight * node.data.i_y : 0,
+//     type: node.data.type,
+//     cluster: node.data.cluster,
+//     // parent: node.data.parent?.slug
+//   },
+//   position: {
+//     x: node.data.i_x !== undefined ? lineHeight * node.data.i_x : 0,
+//     y: node.data.i_y !== undefined ? -lineHeight * node.data.i_y : 0,
+//     // x: node.data.v3_x !== undefined ? lineHeight * node.data.v3_x : node.data.i_x !== undefined ? lineHeight * node.data.i_x : 0,
+//     // y: node.data.v3_y !== undefined ? -lineHeight * node.data.v3_y : node.data.i_y !== undefined ? -lineHeight * node.data.i_y : 0
+//   },
+// }))
 
-  // const positiveCytoscapeEdges: EdgeDefinition[] = edges_positive.map(
-  //   ([source, target]) => ({
-  //     data: {
-  //       type: "positive",
-  //       source: source as string,
-  //       target: target as string,
-  //     },
-  //   }),
-  // )
-  // const negativeCytoscapeEdges: EdgeDefinition[] = edges_negative.map(
-  //   ([source, target]) => ({
-  //     data: {
-  //       type: "negative",
-  //       source: source as string,
-  //       target: target as string,
-  //     },
-  //   }),
-  // )
+// const positiveCytoscapeEdges: EdgeDefinition[] = edges_positive.map(
+//   ([source, target]) => ({
+//     data: {
+//       type: "positive",
+//       source: source as string,
+//       target: target as string,
+//     },
+//   }),
+// )
+// const negativeCytoscapeEdges: EdgeDefinition[] = edges_negative.map(
+//   ([source, target]) => ({
+//     data: {
+//       type: "negative",
+//       source: source as string,
+//       target: target as string,
+//     },
+//   }),
+// )
 
-  // const causalMap: CytoscapeOptions = {
-  //   elements: {
-  //     nodes: cytoscapeNodes,
-  //     edges: [...positiveCytoscapeEdges, ...negativeCytoscapeEdges],
-  //   },
-  // }
+// const causalMap: CytoscapeOptions = {
+//   elements: {
+//     nodes: cytoscapeNodes,
+//     edges: [...positiveCytoscapeEdges, ...negativeCytoscapeEdges],
+//   },
+// }
 
-  // return causalMap
+// return causalMap
 // }
 
 export async function getCausalMapForGraphviz(useSubgraphs = true) {

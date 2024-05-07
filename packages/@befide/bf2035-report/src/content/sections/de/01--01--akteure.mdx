@@ -75,7 +75,9 @@ Hintergrund verfasst.^05^)
 
 ## Außeruniversitäre Einrichtungen
 
-<OrganisationList filter={({ type }) => type === "non-university-research-organisation"} />
+<OrganisationList
+  filter={({ type }) => type === "non-university-research-organisation"}
+/>
 
 </div>
 
@@ -84,13 +86,13 @@ Hintergrund verfasst.^05^)
 ## Forschungs&shy;infrastrukturen
 
 <FacilityList
-filter={({ isBmbfFis, isInGermany }) => isBmbfFis && isInGermany}
+  filter={({ isBmbfFis, isInGermany }) => isBmbfFis && isInGermany}
 />
 
 ### außerhalb Deutschlands
 
 <FacilityList
-filter={({ isBmbfFis, isInGermany }) => isBmbfFis && !isInGermany}
+  filter={({ isBmbfFis, isInGermany }) => isBmbfFis && !isInGermany}
 />
 
 </div>
@@ -105,7 +107,12 @@ filter={({ isBmbfFis, isInGermany }) => isBmbfFis && !isInGermany}
 
 <div class="spread--right spread-area--community-map">
 
-<img class="md" src={communityMap.src} width="100%" alt="A rocketship in space." />
+<img
+  class="md"
+  src={communityMap.src}
+  width="100%"
+  alt="A rocketship in space."
+/>
 
 </div>
 
@@ -195,8 +202,14 @@ Auf eine promovierte Person in der Beschleunigerforschung kommen etwa 30 Promovi
 3. <BibRef citeKey="dosch__2019__overview" />
 4. <BibRef citeKey="komiteefurbeschleunigerphysik__2014__satzung" />
 5. Eigene Erhebung auf Grundlage der <BibRef citeKey="kfb__2022__dissertationsdatenbank" />
-6. <BibRef citeKey="statistischesbundesamt__2020__statistik" locator="Seite 36"/>
-7. <BibRef citeKey="statistischesbundesamt__2020__personal" locator="Seite 288"/>
+6. <BibRef
+     citeKey="statistischesbundesamt__2020__statistik"
+     locator="Seite 36"
+   />
+7. <BibRef
+     citeKey="statistischesbundesamt__2020__personal"
+     locator="Seite 288"
+   />
 8. <BibRef citeKey="erdman__2019__challenges" />
 
 </div>

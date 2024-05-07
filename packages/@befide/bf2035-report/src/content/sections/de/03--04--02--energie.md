@@ -56,5 +56,4 @@ Um dieses Ergebnis zu erreichen, muss der LHC-Beschleuniger allerdings mit 14,8 
 1. <BibRef citeKey="cerncommunicationgroup__2017__lhc"/>
 2. <BibRef citeKey="lebrun__2014__why"/>
 
-
 </div>
