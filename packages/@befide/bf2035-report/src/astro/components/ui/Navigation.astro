@@ -1,69 +1,55 @@
 ---
-
 import { getPath, getPrevNext } from "@utils/getSections";
 
 const slug = Astro.params?.slug;
 
-const path = ("/" + slug + "/").replaceAll("//", "/")
+const path = ("/" + slug + "/").replaceAll("//", "/");
 
 const { prev, next, home } = await getPrevNext(path);
 ---
 
-<footer
-  
->
+<footer>
   <!-- <Breadcrumbs /> -->
   <div class="flex-1"></div>
 
   <nav class="">
     {
       home && (
-        <a
-          id="navigation__home"
-          href={getPath(home)}
-          class=""
-        >
+        <a id="navigation__home" href={getPath(home)} class="">
           Home
         </a>
       )
     }
     {
       prev && (
-        <a
-          id="navigation__prev"
-          href={getPath(prev)}
-          class=""
-        >
+        <a id="navigation__prev" href={getPath(prev)} class="">
           Zurück
         </a>
       )
     }
     {
       next && (
-        <a
-          id="navigation__next"
-          href={getPath(next)}
-          class="">
+        <a id="navigation__next" href={getPath(next)} class="">
           Vor
         </a>
       )
     }
   </nav>
   <script is:inline>
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.code  === "KeyN") {
-      document.getElementById("navigation__next")?.click();
-    }
-  });
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyH") {
-      document.getElementById("navigation__home")?.click();
-    }
-  });
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyN") {
-      document.getElementById("navigation__prev")?.click();
-    }
-  });
+    document.addEventListener("keydown", function (e) {
+      if (e.ctrlKey && e.code === "KeyN") {
+        document.getElementById("navigation__next")?.click();
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.ctrlKey && e.shiftKey && e.code === "KeyH") {
+        document.getElementById("navigation__home")?.click();
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.ctrlKey && e.shiftKey && e.code === "KeyN") {
+        document.getElementById("navigation__prev")?.click();
+      }
+    });
   </script>
 </footer>
