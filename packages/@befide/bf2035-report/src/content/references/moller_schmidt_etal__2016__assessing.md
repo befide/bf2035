@@ -68,5 +68,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Möller</span> et al.</span></span>, 2016)
-bibTex: "@article{moller_schmidt_etal__2016__assessing,\n\tauthor = {M{\\\" o}ller, Torger and Schmidt, Marion and Hornbostel, Stefan},\n\tjournal = {Scientometrics},\n\tnumber = {3},\n\tyear = {2016},\n\tmonth = {12},\n\tnote = {30 citations (Crossref) [2024-01-04]},\n\tpages = {2217--2239},\n\ttitle = {Assessing the effects of the {German} {Excellence} {Initiative} with bibliometric methods},\n\thowpublished = {http://link.springer.com/10.1007/s11192-016-2090-3},\n\tvolume = {109},\n}\n\n"
+bibTex: "@article{moller_schmidt_etal__2016__assessing,\n\tauthor = {M{\\\" o}ller, Torger and Schmidt, Marion and Hornbostel, Stefan},\n\tjournal = {Scientometrics},\n\tdoi = {10.1007/s11192-016-2090-3},\n\tissn = {0138-9130, 1588-2861},\n\tnumber = {3},\n\tyear = {2016},\n\tmonth = {12},\n\tnote = {30 citations (Crossref) [2024-01-04]},\n\tpages = {2217--2239},\n\ttitle = {Assessing the effects of the {German} {Excellence} {Initiative} with bibliometric methods},\n\turl = {http://link.springer.com/10.1007/s11192-016-2090-3},\n\thowpublished = {http://link.springer.com/10.1007/s11192-016-2090-3},\n\tvolume = {109},\n}\n\n"
 ---

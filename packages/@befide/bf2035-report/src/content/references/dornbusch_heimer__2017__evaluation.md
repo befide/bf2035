@@ -31,5 +31,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Dornbusch</span> &#38; <span
     style="font-variant:small-caps;">Heimer</span></span>, 2017)
-bibTex: "@techreport{dornbusch_heimer__2017__evaluation,\n\tauthor = {Dornbusch, Friedrich and Heimer, Thomas},\n\tyear = {2017},\n\tpages = {62},\n\tinstitution = {Fraunhofer},\n\ttitle = {Evaluation der {Verbundforschung} im {Bereich} der \\quotedblbase{}{Naturwissenschaftlichen} {Grundlagenforschung}``},\n}\n\n"
+bibTex: "@techreport{dornbusch_heimer__2017__evaluation,\n\tauthor = {Dornbusch, Friedrich and Heimer, Thomas},\n\tyear = {2017},\n\tpages = {62},\n\tinstitution = {Fraunhofer},\n\ttitle = {Evaluation der {Verbundforschung} im {Bereich} der \\quotedblbase{}{Naturwissenschaftlichen} {Grundlagenforschung}``},\n\turl = {https://www.bmbf.de/files/170125_Endbericht_Evaluation_Verbundforschung_NWGF.pdf},\n}\n\n"
 ---

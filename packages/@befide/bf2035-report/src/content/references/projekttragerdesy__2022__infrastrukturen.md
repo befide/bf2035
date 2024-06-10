@@ -30,5 +30,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Projektträger DESY</span></span>, 2022)
-bibTex: "@misc{projekttragerdesy__2022__infrastrukturen,\n\tnote = {[Online; accessed 2022-07-16]},\n\tauthor = {{Projektträger DESY}},\n\tyear = {2022},\n\ttitle = {Infrastrukturen zur {Erforschung} von {Universum} und {Materie}},\n\thowpublished = {https://fis-landschaft.de/},\n}\n\n"
+bibTex: "@misc{projekttragerdesy__2022__infrastrukturen,\n\tnote = {[Online; accessed 2022-07-16]},\n\tauthor = {{Projektträger DESY}},\n\tyear = {2022},\n\ttitle = {Infrastrukturen zur {Erforschung} von {Universum} und {Materie}},\n\turl = {https://fis-landschaft.de/},\n\thowpublished = {https://fis-landschaft.de/},\n}\n\n"
 ---

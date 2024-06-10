@@ -14,7 +14,7 @@ cslItem:
       - - "2018"
         - 4
         - 16
-  keyword: "#laufbahnentwicklung"
+  keyword: "#bf2035/topics/teaching;#laufbahnentwicklung"
   language: en
   note: |-
     Read_Status: To Read
@@ -24,7 +24,8 @@ cslItem:
   type: report
   URL: >-
     https://www.helmholtz.de/fileadmin/upload_Karriere/Helmholtz_Postdoc_Guidelines.pdf
-tags: []
+tags:
+  - "#bf2035/topics/teaching"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -34,5 +35,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Helmholtz Working Group Postdoc
     Guidelines</span></span>, 2018)
-bibTex: "@techreport{helmholtzworkinggrouppostdocguidelines__2018__guidelines,\n\tauthor = {{Helmholtz Working Group Postdoc Guidelines}},\n\tyear = {2018},\n\tmonth = {apr 16},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T21:59:54.567Z},\n\tinstitution = {Helmholtz Gemeinschaft},\n\ttitle = {Guidelines for the {Postdoc} {Phase} within the {Helmholtz} {Association}},\n}\n\n"
+bibTex: "@techreport{helmholtzworkinggrouppostdocguidelines__2018__guidelines,\n\tauthor = {{Helmholtz Working Group Postdoc Guidelines}},\n\tyear = {2018},\n\tmonth = {apr 16},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T21:59:54.567Z},\n\tinstitution = {Helmholtz Gemeinschaft},\n\ttitle = {Guidelines for the {Postdoc} {Phase} within the {Helmholtz} {Association}},\n\turl = {https://www.helmholtz.de/fileadmin/upload_Karriere/Helmholtz_Postdoc_Guidelines.pdf},\n}\n\n"
 ---

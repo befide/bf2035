@@ -7,7 +7,7 @@ cslItem:
   issued:
     date-parts:
       - - "2022"
-  keyword: "#bf2035/sections/A.1;#bf2035/topics/verbundforschung"
+  keyword: "#bf2035/sections/A.1;#bf2035/topics/verbundforschung;#bf2035/funding/bmbf"
   language: en
   original-date:
     date-parts:
@@ -23,6 +23,7 @@ cslItem:
 tags:
   - "#bf2035/sections/A.1"
   - "#bf2035/topics/verbundforschung"
+  - "#bf2035/funding/bmbf"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -31,5 +32,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Bmbf</span></span>, 2017/2022)
-bibTex: "@techreport{bmbf__erum,\n\tauthor = {{Bmbf}},\n\tyear = {2022},\n\tinstitution = {BMBF},\n\ttitle = {Erforschung von {Universum} und {Materie} -- {ErUM}. {Rahmenprogramm} des {Bundesministeriums} f{\\\" u}r {Bildung} und {Forschung}},\n}\n\n"
+bibTex: "@techreport{bmbf__erum,\n\tauthor = {{Bmbf}},\n\tyear = {2022},\n\tinstitution = {BMBF},\n\ttitle = {Erforschung von {Universum} und {Materie} -- {ErUM}. {Rahmenprogramm} des {Bundesministeriums} f{\\\" u}r {Bildung} und {Forschung}},\n\turl = {https://www.bmbf.de/SharedDocs/Publikationen/de/bmbf/7/31339_Erforschung_von_Universum_und_Materie.pdf?__blob=publicationFile&v=4},\n}\n\n"
 ---

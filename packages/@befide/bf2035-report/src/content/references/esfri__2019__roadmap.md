@@ -30,5 +30,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Esfri</span></span>, 2019)
-bibTex: "@techreport{esfri__2019__roadmap,\n\tnote = {[Online; accessed 2024-02-23]},\n\tauthor = {{Esfri}},\n\tseries = {Strategy {Report} on {Research} {Infrastructures}},\n\tyear = {2019},\n\tmonth = {sep 25},\n\tinstitution = {ESFRI},\n\ttitle = {Roadmap 2021: Public {Guide}},\n}\n\n"
+bibTex: "@techreport{esfri__2019__roadmap,\n\tnote = {[Online; accessed 2024-02-23]},\n\tauthor = {{Esfri}},\n\tseries = {Strategy {Report} on {Research} {Infrastructures}},\n\tyear = {2019},\n\tmonth = {sep 25},\n\tinstitution = {ESFRI},\n\ttitle = {Roadmap 2021: Public {Guide}},\n\turl = {https://www.esfri.eu/sites/default/files/ESFRI_Roadmap2021_Public_Guide_Public.pdf},\n}\n\n"
 ---

@@ -8,7 +8,7 @@ cslItem:
     date-parts:
       - - "2022"
         - 6
-  keyword: "#collection/D./excellence"
+  keyword: "#collection/D./excellence;#bf2035/funding/bmbf"
   language: en
   source: Zotero
   title: >-
@@ -16,7 +16,8 @@ cslItem:
     innovationspolitische Ziele und Maßnahmen
   type: report
   URL: https://www.datenportal.bmbf.de/portal/de/bufi.html
-tags: []
+tags:
+  - "#bf2035/funding/bmbf"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -26,5 +27,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Bundesministerium für Bildung und Forschung
     (BMBF)</span></span>, 2022)
-bibTex: "@techreport{bundesministeriumfurbildungundforschungbmbf__2022__bundesbericht,\n\tauthor = {{Bundesministerium für Bildung und Forschung (BMBF)}},\n\tyear = {2022},\n\tmonth = {6},\n\ttitle = {Bundesbericht {Forschung} und {Innovation} 2022. {Forschungs}- und innovationspolitische {Ziele} und {Ma}\\ss{}nahmen},\n\thowpublished = {https://www.datenportal.bmbf.de/portal/de/bufi.html},\n}\n\n"
+bibTex: "@techreport{bundesministeriumfurbildungundforschungbmbf__2022__bundesbericht,\n\tauthor = {{Bundesministerium für Bildung und Forschung (BMBF)}},\n\tyear = {2022},\n\tmonth = {6},\n\ttitle = {Bundesbericht {Forschung} und {Innovation} 2022. {Forschungs}- und innovationspolitische {Ziele} und {Ma}\\ss{}nahmen},\n\turl = {https://www.datenportal.bmbf.de/portal/de/bufi.html},\n\thowpublished = {https://www.datenportal.bmbf.de/portal/de/bufi.html},\n}\n\n"
 ---

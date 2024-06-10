@@ -15,7 +15,7 @@ cslItem:
   issued:
     date-parts:
       - - "2017"
-  keyword: bf2035:research-topics:energy-efficiency;#bf2035/projects/lhc
+  keyword: "#bf2035/projects/lhc;#bf2035/research-topics/sustainability"
   number: CERN-Brochure-2017-002-Eng
   publisher: CERN
   publisher-place: Geneva
@@ -24,6 +24,7 @@ cslItem:
   URL: https://cds.cern.ch/record/2255762/files/CERN-Brochure-2017-002-Eng.pdf
 tags:
   - "#bf2035/projects/lhc"
+  - "#bf2035/research-topics/sustainability"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -33,5 +34,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">CERN Communication Group</span></span>,
     2017)
-bibTex: "@techreport{cerncommunicationgroup__2017__lhc,\n\taddress = {Geneva},\n\tauthor = {{CERN Communication Group}},\n\tyear = {2017},\n\tnumber = {CERN-Brochure-2017-002-Eng},\n\tinstitution = {CERN},\n\ttitle = {LHC guide},\n\ttype = {CERN-{Brochure}},\n}\n\n"
+bibTex: "@techreport{cerncommunicationgroup__2017__lhc,\n\taddress = {Geneva},\n\tauthor = {{CERN Communication Group}},\n\tyear = {2017},\n\tnumber = {CERN-Brochure-2017-002-Eng},\n\tinstitution = {CERN},\n\ttitle = {LHC guide},\n\ttype = {CERN-{Brochure}},\n\turl = {https://cds.cern.ch/record/2255762/files/CERN-Brochure-2017-002-Eng.pdf},\n}\n\n"
 ---

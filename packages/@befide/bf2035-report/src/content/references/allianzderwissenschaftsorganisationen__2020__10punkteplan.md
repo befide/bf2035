@@ -29,5 +29,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Allianz der
     Wissenschaftsorganisationen</span></span>, 2020)
-bibTex: "@misc{allianzderwissenschaftsorganisationen__2020__10punkteplan,\n\tnote = {[Online; accessed 2023-07-02]},\n\tauthor = {{Allianz der Wissenschaftsorganisationen}},\n\tyear = {2020},\n\ttitle = {10-{Punkte}-{Plan} zur {Wissenschaftskommunikation}},\n\thowpublished = {https://www.allianz-der-wissenschaftsorganisationen.de/themen-stellungnahmen/10-punkte-plan-zur-wissenschaftskommunikation/},\n}\n\n"
+bibTex: "@misc{allianzderwissenschaftsorganisationen__2020__10punkteplan,\n\tnote = {[Online; accessed 2023-07-02]},\n\tauthor = {{Allianz der Wissenschaftsorganisationen}},\n\tyear = {2020},\n\ttitle = {10-{Punkte}-{Plan} zur {Wissenschaftskommunikation}},\n\turl = {https://www.allianz-der-wissenschaftsorganisationen.de/themen-stellungnahmen/10-punkte-plan-zur-wissenschaftskommunikation/},\n\thowpublished = {https://www.allianz-der-wissenschaftsorganisationen.de/themen-stellungnahmen/10-punkte-plan-zur-wissenschaftskommunikation/},\n}\n\n"
 ---

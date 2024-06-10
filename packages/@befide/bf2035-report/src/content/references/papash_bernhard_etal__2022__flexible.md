@@ -65,5 +65,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Papash</span> et al.</span></span>, 2022)
-bibTex: "@article{papash_bernhard_etal__2022__flexible,\n\tnote = {[Online; accessed 2022-08-30]},\n\tauthor = {Papash, A. I. and Bernhard, A. and Br{\\\" u}ndermann, E. and El Khechen, Dima and H{\\\" a}rer, B. and M{\\\" u}ller, A-S. and Ruprecht, R. and Schwarz, M. and Sch{\\\" a}fer, J.},\n\tyear = {2022},\n\tpublisher = {JACoW Publishing},\n\ttitle = {Flexible {Features} of the {Compact} {Storage} {Ring} in the {cSTART} {Project} at {Karlsruhe} {Institute} of {Technology}},\n}\n\n"
+bibTex: "@article{papash_bernhard_etal__2022__flexible,\n\tnote = {[Online; accessed 2022-08-30]},\n\tauthor = {Papash, A. I. and Bernhard, A. and Br{\\\" u}ndermann, E. and El Khechen, Dima and H{\\\" a}rer, B. and M{\\\" u}ller, A-S. and Ruprecht, R. and Schwarz, M. and Sch{\\\" a}fer, J.},\n\tdoi = {10.5445/IR/1000149546},\n\tyear = {2022},\n\tpublisher = {JACoW Publishing},\n\ttitle = {Flexible {Features} of the {Compact} {Storage} {Ring} in the {cSTART} {Project} at {Karlsruhe} {Institute} of {Technology}},\n\turl = {https://publikationen.bibliothek.kit.edu/1000149546},\n}\n\n"
 ---

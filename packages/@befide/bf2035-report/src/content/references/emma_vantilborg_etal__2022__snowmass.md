@@ -42,7 +42,7 @@ cslItem:
   issued:
     date-parts:
       - - "2022"
-  keyword: ""
+  keyword: "#bf2035/topics/teaching"
   note: |-
     4 citations (INSPIRE 2024/3/22)
     3 citations w/o self (INSPIRE 2024/3/22)
@@ -51,7 +51,8 @@ cslItem:
     driven by advanced accelerator concepts
   type: document
   URL: https://arxiv.org/abs/2203.09094
-tags: []
+tags:
+  - "#bf2035/topics/teaching"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -61,5 +62,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Emma</span> et al.</span></span>, 2022)
-bibTex: "@misc{emma_vantilborg_etal__2022__snowmass,\n\tauthor = {Emma, Claudio and van Tilborg, Jeroen and Albert, F{\\' e}licie and Labate, Luca and England, Joel and Gessner, Spencer and Fiuza, Frederico and Obst-Huebl, Lieselotte and Zholents, Alexander and Murokh, Alex and Rosenzweig, James},\n\tyear = {2022},\n\tnote = {4 citations (INSPIRE 2024/3/22)\n3 citations w/o self (INSPIRE 2024/3/22)},\n\ttitle = {Snowmass 2021 accelerator frontier white paper: Near term applications driven by advanced accelerator concepts},\n\thowpublished = {https://arxiv.org/abs/2203.09094},\n}\n\n"
+bibTex: "@misc{emma_vantilborg_etal__2022__snowmass,\n\tauthor = {Emma, Claudio and van Tilborg, Jeroen and Albert, F{\\' e}licie and Labate, Luca and England, Joel and Gessner, Spencer and Fiuza, Frederico and Obst-Huebl, Lieselotte and Zholents, Alexander and Murokh, Alex and Rosenzweig, James},\n\tyear = {2022},\n\tnote = {4 citations (INSPIRE 2024/3/22)\n3 citations w/o self (INSPIRE 2024/3/22)},\n\ttitle = {Snowmass 2021 accelerator frontier white paper: Near term applications driven by advanced accelerator concepts},\n\turl = {https://arxiv.org/abs/2203.09094},\n\thowpublished = {https://arxiv.org/abs/2203.09094},\n}\n\n"
 ---

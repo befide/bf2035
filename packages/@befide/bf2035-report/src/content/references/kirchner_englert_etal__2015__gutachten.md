@@ -35,5 +35,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Kirchner</span> et al.</span></span>, 2015)
-bibTex: "@techreport{kirchner_englert_etal__2015__gutachten,\n\tauthor = {Kirchner, Gerald and Englert, Matthias and Pistner, Christoph and Kallenbach-Herbert, Beate and Neles, Julia},\n\tyear = {2015},\n\tmonth = {aug 12},\n\tpages = {158},\n\tinstitution = {Zentrum f{\\\" u}r Naturwissenschaft und Friedensforschung (ZNF) und {\\\" O}ko-Institut},\n\ttitle = {Gutachten \"{Transmutation}\"},\n}\n\n"
+bibTex: "@techreport{kirchner_englert_etal__2015__gutachten,\n\tauthor = {Kirchner, Gerald and Englert, Matthias and Pistner, Christoph and Kallenbach-Herbert, Beate and Neles, Julia},\n\tyear = {2015},\n\tmonth = {aug 12},\n\tpages = {158},\n\tinstitution = {Zentrum f{\\\" u}r Naturwissenschaft und Friedensforschung (ZNF) und {\\\" O}ko-Institut},\n\ttitle = {Gutachten \"{Transmutation}\"},\n\turl = {https://www.bundestag.de/resource/blob/400438/f54e3da4bbe76395bce2e40721212379/kmat_48-data.pdf},\n}\n\n"
 ---

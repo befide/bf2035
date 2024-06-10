@@ -33,5 +33,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span style="font-variant:small-caps;">Jan
     Hrušák</span> et al.</span></span>, 2021)
-bibTex: "@techreport{janhrusak_inmaculadafigueroa_etal__2021__roadmap,\n\tnote = {[Online; accessed 2024-02-23]},\n\tauthor = {{Jan Hrušák} and {Inmaculada Figueroa} and {Yannis Ioannidis}},\n\tseries = {Strategy {Report} on {Research} {Infrastructures}},\n\tyear = {2021},\n\tmonth = {11},\n\tpages = {243},\n\tinstitution = {ESFRI},\n\ttitle = {Roadmap 2021. strategy report on research infrastructures},\n}\n\n"
+bibTex: "@techreport{janhrusak_inmaculadafigueroa_etal__2021__roadmap,\n\tnote = {[Online; accessed 2024-02-23]},\n\tauthor = {{Jan Hrušák} and {Inmaculada Figueroa} and {Yannis Ioannidis}},\n\tseries = {Strategy {Report} on {Research} {Infrastructures}},\n\tyear = {2021},\n\tmonth = {11},\n\tpages = {243},\n\tinstitution = {ESFRI},\n\ttitle = {Roadmap 2021. strategy report on research infrastructures},\n\turl = {https://roadmap2021.esfri.eu/media/1295/esfri-roadmap-2021.pdf},\n}\n\n"
 ---

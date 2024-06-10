@@ -27,5 +27,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">DOE Accelerator Beam Physics Roadmap
     Workshop</span></span>, 2023)
-bibTex: "@techreport{doeacceleratorbeamphysicsroadmapworkshop__2023__accelerator,\n\tnote = {[Online; accessed 2024-03-22]},\n\tauthor = {{DOE Accelerator Beam Physics Roadmap Workshop}},\n\tyear = {2023},\n\tmonth = {2},\n\ttitle = {Accelerator {Beam} {Physics} {Research} {Roadmap}},\n\thowpublished = {https://science.osti.gov/hep/-/media/hep/pdf/2022/ABP\\textunderscore{}Roadmap\\textunderscore{}2023\\textunderscore{}final.pdf},\n}\n\n"
+bibTex: "@techreport{doeacceleratorbeamphysicsroadmapworkshop__2023__accelerator,\n\tnote = {[Online; accessed 2024-03-22]},\n\tauthor = {{DOE Accelerator Beam Physics Roadmap Workshop}},\n\tyear = {2023},\n\tmonth = {2},\n\ttitle = {Accelerator {Beam} {Physics} {Research} {Roadmap}},\n\turl = {https://science.osti.gov/hep/-/media/hep/pdf/2022/ABP_Roadmap_2023_final.pdf},\n\thowpublished = {https://science.osti.gov/hep/-/media/hep/pdf/2022/ABP\\textunderscore{}Roadmap\\textunderscore{}2023\\textunderscore{}final.pdf},\n}\n\n"
 ---

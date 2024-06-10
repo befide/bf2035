@@ -14,12 +14,13 @@ cslItem:
     date-parts:
       - - "2020"
         - 2
-  keyword: impact:health
+  keyword: "#bf2035/applications/health"
   language: en
   title: Particle therapy facilities in clinical operation
   type: webpage
   URL: https://www.ptcog.ch/index.php/facilities-in-operation
-tags: []
+tags:
+  - "#bf2035/applications/health"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -29,5 +30,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Particle Therapy Co-Operative
     Group</span></span>, 2020)
-bibTex: "@misc{Particle2020Particle,\n\tnote = {[Online; accessed 2020-02-21]},\n\tauthor = {{Particle Therapy Co-Operative Group}},\n\tyear = {2020},\n\tmonth = {2},\n\ttitle = {Particle therapy facilities in clinical operation},\n\thowpublished = {https://www.ptcog.ch/index.php/facilities-in-operation},\n}\n\n"
+bibTex: "@misc{Particle2020Particle,\n\tnote = {[Online; accessed 2020-02-21]},\n\tauthor = {{Particle Therapy Co-Operative Group}},\n\tyear = {2020},\n\tmonth = {2},\n\ttitle = {Particle therapy facilities in clinical operation},\n\turl = {https://www.ptcog.ch/index.php/facilities-in-operation},\n\thowpublished = {https://www.ptcog.ch/index.php/facilities-in-operation},\n}\n\n"
 ---

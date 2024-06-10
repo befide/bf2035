@@ -37,5 +37,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Bundesregierung</span></span>, 2023)
-bibTex: "@techreport{bundesregierung__2023__mit,\n\tnote = {[Online; accessed 2023-10-18]},\n\taddress = {Berlin},\n\tauthor = {{Bundesregierung}},\n\tyear = {2023},\n\tmonth = {10},\n\tpages = {13},\n\tinstitution = {Die Bundesregierung},\n\ttitle = {Mit {Mut} gemeinsam {Zukunft} gestalten. {Halbzeit} der {Agenda} 2030 f{\\\" u}r nachhaltige {Entwicklung} -- weiter {Fahrt} aufnehmen},\n\ttype = {Beschlusspapier der {Bundesregierung}},\n}\n\n"
+bibTex: "@techreport{bundesregierung__2023__mit,\n\tnote = {[Online; accessed 2023-10-18]},\n\taddress = {Berlin},\n\tauthor = {{Bundesregierung}},\n\tyear = {2023},\n\tmonth = {10},\n\tpages = {13},\n\tinstitution = {Die Bundesregierung},\n\ttitle = {Mit {Mut} gemeinsam {Zukunft} gestalten. {Halbzeit} der {Agenda} 2030 f{\\\" u}r nachhaltige {Entwicklung} -- weiter {Fahrt} aufnehmen},\n\ttype = {Beschlusspapier der {Bundesregierung}},\n\turl = {https://www.bundesregierung.de/resource/blob/975274/2227476/92ec0c68692192aa4e88f970bcb2ff7c/2023-10-04-herbstbeschluss-nachhaltige-entwicklung-data.pdf?download=1},\n}\n\n"
 ---

@@ -25,5 +25,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Komitee für
     Beschleunigerphysik</span></span>, 2014)
-bibTex: "@misc{komiteefurbeschleunigerphysik__2014__satzung,\n\tauthor = {{Komitee für Beschleunigerphysik}},\n\tyear = {2014},\n\tmonth = {apr 1},\n\ttitle = {Satzung des {Komitees} f{\\\" u}r {Beschleunigerphysik} ({Fassung} vom 01. {April} 2014)},\n\thowpublished = {https://www.beschleunigerphysik.de/de/kfb/satzung/},\n}\n\n"
+bibTex: "@misc{komiteefurbeschleunigerphysik__2014__satzung,\n\tauthor = {{Komitee für Beschleunigerphysik}},\n\tyear = {2014},\n\tmonth = {apr 1},\n\ttitle = {Satzung des {Komitees} f{\\\" u}r {Beschleunigerphysik} ({Fassung} vom 01. {April} 2014)},\n\turl = {https://www.beschleunigerphysik.de/de/kfb/satzung/},\n\thowpublished = {https://www.beschleunigerphysik.de/de/kfb/satzung/},\n}\n\n"
 ---

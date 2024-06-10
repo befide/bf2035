@@ -34,5 +34,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Helmholtz</span></span>, 2020)
-bibTex: "@techreport{helmholtz__2020__programmorientierte,\n\tnote = {[Online; accessed 2023-10-13]},\n\tauthor = {{Helmholtz}},\n\tyear = {2020},\n\tmonth = {jun 3},\n\tinstitution = {Helmholtz},\n\ttitle = {Programmorientierte {F}{\\\" o}rderung. {Ergebnisse} der evaluation und neuaufstellung der forschungsprogramme 2021--2027},\n}\n\n"
+bibTex: "@techreport{helmholtz__2020__programmorientierte,\n\tnote = {[Online; accessed 2023-10-13]},\n\tauthor = {{Helmholtz}},\n\tyear = {2020},\n\tmonth = {jun 3},\n\tinstitution = {Helmholtz},\n\ttitle = {Programmorientierte {F}{\\\" o}rderung. {Ergebnisse} der evaluation und neuaufstellung der forschungsprogramme 2021--2027},\n\turl = {https://www.helmholtz.de/fileadmin/user_upload/04_mediathek/epaperStratBeg/epaper-Strategische_Begutachtung/epaper/ausgabe.pdf},\n}\n\n"
 ---

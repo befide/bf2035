@@ -8,7 +8,7 @@ cslItem:
     date-parts:
       - - "2023"
         - 4
-  keyword: "#bf2035/topics/technologietrasnfer"
+  keyword: "#bf2035/topics/technologietrasnfer;#bf2035/funding/bmbf"
   language: en
   publisher: BMBF
   title: Aktionsplan ErUM-Transfer. Innovationen aus der Grundlagenforschung.
@@ -16,6 +16,7 @@ cslItem:
   type: report
 tags:
   - "#bf2035/topics/technologietrasnfer"
+  - "#bf2035/funding/bmbf"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

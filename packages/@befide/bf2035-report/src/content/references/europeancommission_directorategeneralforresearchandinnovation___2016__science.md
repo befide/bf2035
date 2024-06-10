@@ -37,5 +37,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">European Commission. Directorate General
     for Research and Innovation.</span></span>, 2016)
-bibTex: "@book{europeancommission_directorategeneralforresearchandinnovation___2016__science,\n\tnote = {[Online; accessed 2024-03-17]},\n\taddress = {LU},\n\tauthor = {{European Commission. Directorate General for Research and Innovation.}},\n\tyear = {2016},\n\tpublisher = {Publications Office},\n\ttitle = {Science, research and innovation performance of the {EU}: a contribution to the open innovation, open science, open to the world agenda : 2016.},\n}\n\n"
+bibTex: "@book{europeancommission_directorategeneralforresearchandinnovation___2016__science,\n\tnote = {[Online; accessed 2024-03-17]},\n\taddress = {LU},\n\tauthor = {{European Commission. Directorate General for Research and Innovation.}},\n\tyear = {2016},\n\tpublisher = {Publications Office},\n\ttitle = {Science, research and innovation performance of the {EU}: a contribution to the open innovation, open science, open to the world agenda : 2016.},\n\turl = {https://data.europa.eu/doi/10.2777/427046},\n}\n\n"
 ---

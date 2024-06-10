@@ -9,7 +9,7 @@ cslItem:
       - - "2017"
         - 6
   keyword: >-
-    bf2035:impact:science;bf2035:impact:industry;bf2035:impact:security;impact;health;#collection/D./related-strategies
+    bf2035:impact:science;bf2035:impact:industry;bf2035:impact:security;impact;#collection/D./related-strategies;#bf2035/applications/health
   language: en
   publisher: EuCard-2
   title: EuCARD-2. Applications Of Particle Accelerators in Europe
@@ -17,7 +17,8 @@ cslItem:
   type: report
   URL: >-
     http://apae.ific.uv.es/apae/wp-content/uploads/2015/04/EuCARD_Applications-of-Accelerators-2017.pdf
-tags: []
+tags:
+  - "#bf2035/applications/health"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -26,5 +27,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">EuCARD2</span></span>, 2017)
-bibTex: "@techreport{eucard2__2017__eucard2,\n\tauthor = {{EuCARD2}},\n\tyear = {2017},\n\tmonth = {6},\n\tinstitution = {EuCard-2},\n\ttitle = {EuCARD-2. {Applications} {Of} {Particle} {Accelerators} in {Europe}},\n}\n\n"
+bibTex: "@techreport{eucard2__2017__eucard2,\n\tauthor = {{EuCARD2}},\n\tyear = {2017},\n\tmonth = {6},\n\tinstitution = {EuCard-2},\n\ttitle = {EuCARD-2. {Applications} {Of} {Particle} {Accelerators} in {Europe}},\n\turl = {http://apae.ific.uv.es/apae/wp-content/uploads/2015/04/EuCARD_Applications-of-Accelerators-2017.pdf},\n}\n\n"
 ---

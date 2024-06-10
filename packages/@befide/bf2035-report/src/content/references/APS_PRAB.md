@@ -24,5 +24,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">American Physical Society</span></span>,
     2022)
-bibTex: "@misc{APS_PRAB,\n\tauthor = {{American Physical Society}},\n\tyear = {2022},\n\tmonth = {jul 13},\n\ttitle = {Physical {Review} {Search}},\n\thowpublished = {https://journals.aps.org/search/results?journal=prstab&journal=prab},\n}\n\n"
+bibTex: "@misc{APS_PRAB,\n\tauthor = {{American Physical Society}},\n\tyear = {2022},\n\tmonth = {jul 13},\n\ttitle = {Physical {Review} {Search}},\n\turl = {https://journals.aps.org/search/results?journal=prstab&journal=prab},\n\thowpublished = {https://journals.aps.org/search/results?journal=prstab&journal=prab},\n}\n\n"
 ---

@@ -14,7 +14,7 @@ cslItem:
       - - "2020"
         - 6
         - 16
-  keyword: "#bf2035/topics/diversity"
+  keyword: "#bf2035/topics/diversity;#bf2035/topics/teaching"
   language: en
   note: |-
     Read_Status: To Read
@@ -26,6 +26,7 @@ cslItem:
     https://www.helmholtz.de/system/beispieldaten/dokumente/Helmholtz_Guideline_on_Diversity_and_Inclusion.pdf
 tags:
   - "#bf2035/topics/diversity"
+  - "#bf2035/topics/teaching"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -34,5 +35,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Helmholtz</span></span>, 2020)
-bibTex: "@techreport{helmholtz__2020__helmholtz,\n\tauthor = {{Helmholtz}},\n\tyear = {2020},\n\tmonth = {jun 16},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T21:59:43.991Z},\n\tinstitution = {Helmholtz Gemeinschaft},\n\ttitle = {Helmholtz {Guideline} on {Diversity} and {Inclusion}},\n}\n\n"
+bibTex: "@techreport{helmholtz__2020__helmholtz,\n\tauthor = {{Helmholtz}},\n\tyear = {2020},\n\tmonth = {jun 16},\n\tnote = {Read\\textunderscore{}Status: To Read\nRead\\textunderscore{}Status\\textunderscore{}Date: 2024-03-17T21:59:43.991Z},\n\tinstitution = {Helmholtz Gemeinschaft},\n\ttitle = {Helmholtz {Guideline} on {Diversity} and {Inclusion}},\n\turl = {https://www.helmholtz.de/system/beispieldaten/dokumente/Helmholtz_Guideline_on_Diversity_and_Inclusion.pdf},\n}\n\n"
 ---

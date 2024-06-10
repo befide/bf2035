@@ -48,5 +48,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Behnke</span> et al.</span></span>, 2013)
-bibTex: "@book{behnke_brau_etal__2013__ilc,\n\tauthor = {Behnke, Ties and Brau, James E. and Foster, Brian and Fuster, Juan and Harrison, Mike and Paterson, James McEwan and Peskin, Michael and Stanitzki, Marcel and Walker, Nicholas and Yamamoto, Hitoshi},\n\tyear = {2013},\n\tnote = {http://web.archive.org/web/20200302182730/https://inspirehep.net/record/1240093},\n\tpublisher = {ILC},\n\ttitle = {The {ILC} {TDR} - {Volume} 1: Executive {Summary}},\n\tvolume = {1},\n}\n\n"
+bibTex: "@book{behnke_brau_etal__2013__ilc,\n\tauthor = {Behnke, Ties and Brau, James E. and Foster, Brian and Fuster, Juan and Harrison, Mike and Paterson, James McEwan and Peskin, Michael and Stanitzki, Marcel and Walker, Nicholas and Yamamoto, Hitoshi},\n\tyear = {2013},\n\tnote = {http://web.archive.org/web/20200302182730/https://inspirehep.net/record/1240093},\n\tpublisher = {ILC},\n\ttitle = {The {ILC} {TDR} - {Volume} 1: Executive {Summary}},\n\turl = {https://inspirehep.net/record/1240093},\n\tvolume = {1},\n}\n\n"
 ---

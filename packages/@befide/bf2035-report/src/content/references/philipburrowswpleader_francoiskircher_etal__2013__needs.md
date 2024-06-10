@@ -25,7 +25,7 @@ cslItem:
       - - "2013"
         - 2
         - 28
-  keyword: ""
+  keyword: "#bf2035/topics/teaching"
   language: en-US
   note: >-
     https://web.archive.org/web/20220123043700/https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf
@@ -33,7 +33,8 @@ cslItem:
   title: Needs for Accelerator Scientists Report
   type: report
   URL: https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf
-tags: []
+tags:
+  - "#bf2035/topics/teaching"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -44,5 +45,5 @@ rendered:
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Philip Burrows (WP leader)</span> et
     al.</span></span>, 2013)
-bibTex: "@techreport{philipburrowswpleader_francoiskircher_etal__2013__needs,\n\tauthor = {{Philip Burrows (WP leader)} and {François Kircher} and {Roger Bailey} and {M. Luisa Marco Arboli} and {Catherine Clerc} and {Alex C. Mueller} and {Leonid Rivkin} and {Sabrina Appel} and {Oliver Boine-Frankenheim} and {Francesca Galluccio} and {Vittorio Vaccaro} and {Piotr Malecki} and {Søren Pape Møller} and {Ole Petter Nordahl} and {Steinar Stapnes} and {Burrows, P.}},\n\tyear = {2013},\n\tmonth = {feb 28},\n\tnote = {https://web.archive.org/web/20220123043700/https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf},\n\tnumber = {TIARA-REP-WP5-2013-005},\n\ttitle = {Needs for {Accelerator} {Scientists} {Report}},\n\ttype = {Status {Report}},\n\thowpublished = {https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf},\n}\n\n"
+bibTex: "@techreport{philipburrowswpleader_francoiskircher_etal__2013__needs,\n\tauthor = {{Philip Burrows (WP leader)} and {François Kircher} and {Roger Bailey} and {M. Luisa Marco Arboli} and {Catherine Clerc} and {Alex C. Mueller} and {Leonid Rivkin} and {Sabrina Appel} and {Oliver Boine-Frankenheim} and {Francesca Galluccio} and {Vittorio Vaccaro} and {Piotr Malecki} and {Søren Pape Møller} and {Ole Petter Nordahl} and {Steinar Stapnes} and {Burrows, P.}},\n\tyear = {2013},\n\tmonth = {feb 28},\n\tnote = {https://web.archive.org/web/20220123043700/https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf},\n\tnumber = {TIARA-REP-WP5-2013-005},\n\ttitle = {Needs for {Accelerator} {Scientists} {Report}},\n\ttype = {Status {Report}},\n\turl = {https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf},\n\thowpublished = {https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf},\n}\n\n"
 ---

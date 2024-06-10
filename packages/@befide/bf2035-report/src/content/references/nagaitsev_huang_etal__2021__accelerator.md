@@ -47,5 +47,5 @@ rendered:
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Nagaitsev</span> et al.</span></span>,
     2021)
-bibTex: "@techreport{nagaitsev_huang_etal__2021__accelerator,\n\tnote = {[Online; accessed 2024-04-27]},\n\tauthor = {Nagaitsev, S. and Huang, Z. and Power, J. and Vay, J. and Piot, P. and Spentzouris, L. and Rosenzweig, J.},\n\tyear = {2021},\n\tmonth = {jan 1},\n\tnumber = {FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291},\n\tpages = {FERMILAB--FN--1123, 1764152, oai:inspirehep.net:1840291},\n\ttitle = {Accelerator and {Beam} {Physics} {Research} {Goals} and {Opportunities}},\n\thowpublished = {https://www.osti.gov/servlets/purl/1764152/},\n}\n\n"
+bibTex: "@techreport{nagaitsev_huang_etal__2021__accelerator,\n\tnote = {[Online; accessed 2024-04-27]},\n\tauthor = {Nagaitsev, S. and Huang, Z. and Power, J. and Vay, J. and Piot, P. and Spentzouris, L. and Rosenzweig, J.},\n\tdoi = {10.2172/1764152},\n\tyear = {2021},\n\tmonth = {jan 1},\n\tnumber = {FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291},\n\tpages = {FERMILAB--FN--1123, 1764152, oai:inspirehep.net:1840291},\n\ttitle = {Accelerator and {Beam} {Physics} {Research} {Goals} and {Opportunities}},\n\turl = {https://www.osti.gov/servlets/purl/1764152/},\n\thowpublished = {https://www.osti.gov/servlets/purl/1764152/},\n}\n\n"
 ---

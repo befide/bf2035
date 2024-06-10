@@ -28,5 +28,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Erdman</span></span>, 2019)
-bibTex: "@techreport{erdman__2019__challenges,\n\tauthor = {Erdman, Martin},\n\tyear = {2019},\n\tmonth = {apr 29},\n\ttitle = {Challenges and {Opportunities} of {Digital} {Transformation} in {Fundamental} {Research} on {Universe} and {Matter}. {Recommendations} of the {ErUM} {Committees}},\n\thowpublished = {https://www.sni-portal.de/en/files/2019-Strategiepapier\\textunderscore{}ErUM-Data.pdf/at\\textunderscore{}download/file},\n}\n\n"
+bibTex: "@techreport{erdman__2019__challenges,\n\tauthor = {Erdman, Martin},\n\tyear = {2019},\n\tmonth = {apr 29},\n\ttitle = {Challenges and {Opportunities} of {Digital} {Transformation} in {Fundamental} {Research} on {Universe} and {Matter}. {Recommendations} of the {ErUM} {Committees}},\n\turl = {https://www.sni-portal.de/en/files/2019-Strategiepapier_ErUM-Data.pdf/at_download/file},\n\thowpublished = {https://www.sni-portal.de/en/files/2019-Strategiepapier\\textunderscore{}ErUM-Data.pdf/at\\textunderscore{}download/file},\n}\n\n"
 ---

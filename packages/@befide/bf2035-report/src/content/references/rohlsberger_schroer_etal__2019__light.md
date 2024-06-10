@@ -51,5 +51,5 @@ rendered:
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Röhlsberger</span> et al.</span></span>,
     2019)
-bibTex: "@article{rohlsberger_schroer_etal__2019__light,\n\tauthor = {R{\\\" o}hlsberger, R. and Schroer, C. G. and Wanzenberg, R. and Klumpp, S. and Wurth, W.},\n\tjournal = {Synchrotron Radiation News},\n\tnumber = {1},\n\tyear = {2019},\n\tmonth = {jan 2},\n\tnote = {6 citations (Crossref/DOI) [2024-03-19]},\n\tpages = {27--31},\n\ttitle = {Light {Source} {Upgrades} at {DESY}: PETRA {IV} and {FLASH2020}+},\n\thowpublished = {https://www.tandfonline.com/doi/full/10.1080/08940886.2019.1559605},\n\tvolume = {32},\n}\n\n"
+bibTex: "@article{rohlsberger_schroer_etal__2019__light,\n\tauthor = {R{\\\" o}hlsberger, R. and Schroer, C. G. and Wanzenberg, R. and Klumpp, S. and Wurth, W.},\n\tjournal = {Synchrotron Radiation News},\n\tdoi = {10.1080/08940886.2019.1559605},\n\tissn = {0894-0886, 1931-7344},\n\tnumber = {1},\n\tyear = {2019},\n\tmonth = {jan 2},\n\tnote = {6 citations (Crossref/DOI) [2024-03-19]},\n\tpages = {27--31},\n\ttitle = {Light {Source} {Upgrades} at {DESY}: PETRA {IV} and {FLASH2020}+},\n\turl = {https://www.tandfonline.com/doi/full/10.1080/08940886.2019.1559605},\n\thowpublished = {https://www.tandfonline.com/doi/full/10.1080/08940886.2019.1559605},\n\tvolume = {32},\n}\n\n"
 ---

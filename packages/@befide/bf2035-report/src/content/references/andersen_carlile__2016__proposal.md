@@ -39,5 +39,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Andersen</span> &#38; <span
     style="font-variant:small-caps;">Carlile</span></span>, 2016)
-bibTex: "@article{andersen_carlile__2016__proposal,\n\tnote = {[Online; accessed 2022-02-16]},\n\tauthor = {Andersen, K.H. and Carlile, C.J.},\n\tjournal = {Journal of Physics: Conference Series},\n\tyear = {2016},\n\tmonth = {9},\n\tpages = {12030},\n\ttitle = {A {Proposal} for a {Next} {Generation} {European} {Neutron} {Source}},\n\thowpublished = {https://iopscience.iop.org/article/10.1088/1742-6596/746/1/012030},\n\tvolume = {746},\n}\n\n"
+bibTex: "@article{andersen_carlile__2016__proposal,\n\tnote = {[Online; accessed 2022-02-16]},\n\tauthor = {Andersen, K.H. and Carlile, C.J.},\n\tjournal = {Journal of Physics: Conference Series},\n\tdoi = {10/f9sfwh},\n\tissn = {1742-6588, 1742-6596},\n\tyear = {2016},\n\tmonth = {9},\n\tpages = {12030},\n\ttitle = {A {Proposal} for a {Next} {Generation} {European} {Neutron} {Source}},\n\turl = {https://iopscience.iop.org/article/10.1088/1742-6596/746/1/012030},\n\thowpublished = {https://iopscience.iop.org/article/10.1088/1742-6596/746/1/012030},\n\tvolume = {746},\n}\n\n"
 ---

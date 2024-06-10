@@ -55,7 +55,7 @@ cslItem:
   issued:
     date-parts:
       - - "2012"
-  keyword: "#collection/D./related-strategies"
+  keyword: "#bf2035/topics/teaching;#collection/D./related-strategies"
   language: en
   publisher: CERN
   publisher-place: Geneva
@@ -64,7 +64,8 @@ cslItem:
   title-short: Education and Training Survey Report
   type: report
   URL: https://cds.cern.ch/record/1442599
-tags: []
+tags:
+  - "#bf2035/topics/teaching"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
@@ -74,5 +75,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Kircher</span> et al.</span></span>, 2012)
-bibTex: "@techreport{kircher_nghiem_etal__2012__tiara,\n\tnote = {[Online; accessed 2024-03-22]},\n\taddress = {Geneva},\n\tauthor = {Kircher, F. and Nghiem, P. and Bailey, R. and Rinolfi, L. and Arboli, M. Luisa Marco and Falcon, Susana and Obradors, Diego and Clerc, C. and Mueller, A. and Rivkin, L. and Appel, S. and Boine-Frankenheim, O. and Galluccio, F. and Vaccaro, V. and Malecki, P. and Pape M\\o{}ller, S. and Burrows, P. and Bradbury, M. and Heikkinen, P. and Nordahl, O. and Stapnes, S.},\n\tyear = {2012},\n\tinstitution = {CERN},\n\ttitle = {TIARA: Education and {Training} {Survey} {Report}: Deliverable 5.1},\n\ttype = {Status {Report}},\n}\n\n"
+bibTex: "@techreport{kircher_nghiem_etal__2012__tiara,\n\tnote = {[Online; accessed 2024-03-22]},\n\taddress = {Geneva},\n\tauthor = {Kircher, F. and Nghiem, P. and Bailey, R. and Rinolfi, L. and Arboli, M. Luisa Marco and Falcon, Susana and Obradors, Diego and Clerc, C. and Mueller, A. and Rivkin, L. and Appel, S. and Boine-Frankenheim, O. and Galluccio, F. and Vaccaro, V. and Malecki, P. and Pape M\\o{}ller, S. and Burrows, P. and Bradbury, M. and Heikkinen, P. and Nordahl, O. and Stapnes, S.},\n\tyear = {2012},\n\tinstitution = {CERN},\n\ttitle = {TIARA: Education and {Training} {Survey} {Report}: Deliverable 5.1},\n\ttype = {Status {Report}},\n\turl = {https://cds.cern.ch/record/1442599},\n}\n\n"
 ---

@@ -42,5 +42,5 @@ rendered:
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Jankowiak</span> et al.</span></span>,
     2015)
-bibTex: "@techreport{jankowiak_knobloch_etal__2015__technical,\n\tnote = {[Online; accessed 2023-01-31]},\n\tauthor = {Jankowiak, A. and Knobloch, J. and Goslawski, P. and Neumann, N.},\n\tyear = {2015},\n\tpages = {12898 kb, 220 pages},\n\tinstitution = {Helmholtz-Zentrum Berlin f{\\\" u}r Materialien und Energie},\n\ttitle = {Technical {Design} {Study} {BESSY} {VSR}},\n\ttype = {Technical {Design} {Study}},\n}\n\n"
+bibTex: "@techreport{jankowiak_knobloch_etal__2015__technical,\n\tnote = {[Online; accessed 2023-01-31]},\n\tauthor = {Jankowiak, A. and Knobloch, J. and Goslawski, P. and Neumann, N.},\n\tdoi = {10.5442/R0001},\n\tyear = {2015},\n\tpages = {12898 kb, 220 pages},\n\tinstitution = {Helmholtz-Zentrum Berlin f{\\\" u}r Materialien und Energie},\n\ttitle = {Technical {Design} {Study} {BESSY} {VSR}},\n\ttype = {Technical {Design} {Study}},\n\turl = {https://www.helmholtz-berlin.de/media/media/angebote/bibliothek/reports/r0001-bessy-vsr-tds.pdf},\n}\n\n"
 ---

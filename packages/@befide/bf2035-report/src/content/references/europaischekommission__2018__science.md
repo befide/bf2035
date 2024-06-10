@@ -30,5 +30,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Europäische Kommission</span></span>, 2018)
-bibTex: "@book{europaischekommission__2018__science,\n\taddress = {Luxembourg},\n\tauthor = {{Europäische Kommission}},\n\tyear = {2018},\n\tnote = {OCLC: 1112885217},\n\tpublisher = {Publications Office},\n\ttitle = {Science, research and innovation performance of the {EU}, 2018: strengthening the foundations for {Europe}'s future},\n}\n\n"
+bibTex: "@book{europaischekommission__2018__science,\n\taddress = {Luxembourg},\n\tauthor = {{Europäische Kommission}},\n\tisbn = {978-92-79-69745-6},\n\tyear = {2018},\n\tnote = {OCLC: 1112885217},\n\tpublisher = {Publications Office},\n\ttitle = {Science, research and innovation performance of the {EU}, 2018: strengthening the foundations for {Europe}'s future},\n}\n\n"
 ---

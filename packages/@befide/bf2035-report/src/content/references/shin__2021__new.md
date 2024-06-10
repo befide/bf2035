@@ -40,5 +40,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Shin</span></span>, 2021)
-bibTex: "@article{shin__2021__new,\n\tnote = {[Online; accessed 2022-05-14]},\n\tauthor = {Shin, Seunghwan},\n\tjournal = {AAPPS Bulletin},\n\tnumber = {1},\n\tyear = {2021},\n\tmonth = {12},\n\tpages = {21},\n\ttitle = {New era of synchrotron radiation: fourth-generation storage ring},\n\thowpublished = {https://link.springer.com/10.1007/s43673-021-00021-4},\n\tvolume = {31},\n}\n\n"
+bibTex: "@article{shin__2021__new,\n\tnote = {[Online; accessed 2022-05-14]},\n\tauthor = {Shin, Seunghwan},\n\tjournal = {AAPPS Bulletin},\n\tdoi = {10.1007/s43673-021-00021-4},\n\tissn = {2309-4710},\n\tnumber = {1},\n\tyear = {2021},\n\tmonth = {12},\n\tpages = {21},\n\ttitle = {New era of synchrotron radiation: fourth-generation storage ring},\n\turl = {https://link.springer.com/10.1007/s43673-021-00021-4},\n\thowpublished = {https://link.springer.com/10.1007/s43673-021-00021-4},\n\tvolume = {31},\n}\n\n"
 ---

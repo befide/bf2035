@@ -66,5 +66,5 @@ rendered:
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Beacham</span> &#38; <span
     style="font-variant:small-caps;">Zimmermann</span></span>, 2022)
-bibTex: "@article{beacham_zimmermann__2022__very,\n\tauthor = {Beacham, James and Zimmermann, Frank},\n\tjournal = {New Journal of Physics},\n\tnumber = {2},\n\tyear = {2022},\n\tmonth = {feb 22},\n\tnote = {2 citations (Crossref/DOI) [2024-03-17]\n7 citations (INSPIRE 2024/3/17)\n3 citations w/o self (INSPIRE 2024/3/17)},\n\tpages = {23029},\n\ttitle = {A very high energy hadron collider on the {Moon}},\n\thowpublished = {https://iopscience.iop.org/article/10.1088/1367-2630/ac4921},\n\tvolume = {24},\n}\n\n"
+bibTex: "@article{beacham_zimmermann__2022__very,\n\tauthor = {Beacham, James and Zimmermann, Frank},\n\tjournal = {New Journal of Physics},\n\tdoi = {10.1088/1367-2630/ac4921},\n\tissn = {1367-2630},\n\tnumber = {2},\n\tyear = {2022},\n\tmonth = {feb 22},\n\tnote = {2 citations (Crossref/DOI) [2024-03-17]\n7 citations (INSPIRE 2024/3/17)\n3 citations w/o self (INSPIRE 2024/3/17)},\n\tpages = {23029},\n\ttitle = {A very high energy hadron collider on the {Moon}},\n\turl = {https://iopscience.iop.org/article/10.1088/1367-2630/ac4921},\n\thowpublished = {https://iopscience.iop.org/article/10.1088/1367-2630/ac4921},\n\tvolume = {24},\n}\n\n"
 ---

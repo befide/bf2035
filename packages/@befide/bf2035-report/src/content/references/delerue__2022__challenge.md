@@ -42,5 +42,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Delerue</span></span>, 2022)
-bibTex: "@article{delerue__2022__challenge,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{Delerue}},\n\tyear = {2022},\n\tmonth = {jun 10},\n\tpublisher = {[object Object]},\n\ttitle = {Challenge {Based} {Innovation} \"{Accelerators} for the {Environment}\"},\n}\n\n"
+bibTex: "@article{delerue__2022__challenge,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{Delerue}},\n\tdoi = {10.5281/ZENODO.6631759},\n\tyear = {2022},\n\tmonth = {jun 10},\n\tpublisher = {[object Object]},\n\ttitle = {Challenge {Based} {Innovation} \"{Accelerators} for the {Environment}\"},\n\turl = {https://zenodo.org/record/6631759},\n}\n\n"
 ---

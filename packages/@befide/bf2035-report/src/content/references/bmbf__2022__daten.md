@@ -8,13 +8,14 @@ cslItem:
     date-parts:
       - - "2022"
         - 6
-  keyword: ""
+  keyword: "#bf2035/funding/bmbf"
   language: en
   publisher: BMBF
   source: Zotero
   title: Daten und ­Fakten zum deutschen ­Forschungs- und Innovationssystem
   type: report
-tags: []
+tags:
+  - "#bf2035/funding/bmbf"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

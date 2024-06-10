@@ -29,5 +29,5 @@ rendered:
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Iaea</span></span>, 2021)
-bibTex: "@book{iaea__2021__compact,\n\taddress = {Vienna},\n\tauthor = {{Iaea}},\n\tnumber = {1981},\n\tseries = {TECDOC series},\n\tyear = {2021},\n\tpublisher = {INTERNATIONAL ATOMIC ENERGY AGENCY},\n\ttitle = {Compact accelerator based neutron sources},\n}\n\n"
+bibTex: "@book{iaea__2021__compact,\n\taddress = {Vienna},\n\tauthor = {{Iaea}},\n\tnumber = {1981},\n\tseries = {TECDOC series},\n\tisbn = {978-92-0-127022-1},\n\tyear = {2021},\n\tpublisher = {INTERNATIONAL ATOMIC ENERGY AGENCY},\n\ttitle = {Compact accelerator based neutron sources},\n\turl = {https://www.iaea.org/publications/14948/compact-accelerator-based-neutron-sources},\n}\n\n"
 ---
