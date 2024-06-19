@@ -10,8 +10,9 @@ import rehypeCitation from "rehype-citation"
 // import rehypeFigure from "rehype-figure"
 import rehypeRewrite from "rehype-rewrite"
 import rehypeWidont from "rehype-widont"
+import remarkNumberedFootnotes from "remark-numbered-footnote-labels"
 import sectionize from "remark-sectionize"
-import spaceCommand from "./src/astro/utils/space-commander.ts"
+import spaceCommander from "./src/astro/utils/space-commander.ts"
 
 import { dirname, resolve } from "node:path"
 
@@ -35,7 +36,6 @@ export default defineConfig({
         },
       },
     },
-    // plugins: [dsv()],
   },
   output: "static",
   site,
@@ -46,11 +46,11 @@ export default defineConfig({
   // },
 
   redirects: {
-    "/": "/de/00/",
-    "/de/": "/de/00/",
+    "/": "/de/",
   },
   markdown: {
     remarkPlugins: [
+      remarkNumberedFootnotes,
       sectionize,
       //   [smartypants, {
       //     options: {
@@ -81,12 +81,19 @@ export default defineConfig({
         {
           rewrite: (node: any) => {
             if (node.type === "text") {
-              node.value = spaceCommand(node.value)
+              node.value = spaceCommander(node.value)
             }
           },
         },
       ],
     ],
+  },
+  i18n: {
+    defaultLocale: "de",
+    locales: ["de"],
+    routing: {
+      prefixDefaultLocale: true,
+    },
   },
 
   integrations: [
@@ -94,11 +101,12 @@ export default defineConfig({
       gfm: true,
     }),
     pagefind(),
-    sitemap({}),
+    // sitemap({}),
 
     AstroPWA({
       mode: "development",
       base: "/",
+
       scope: "/",
       includeAssets: ["favicon.svg"],
       registerType: "autoUpdate",
@@ -121,4 +129,5 @@ export default defineConfig({
       },
     }),
   ],
+  devToolbar: { enabled: false },
 })
