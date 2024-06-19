@@ -16,6 +16,17 @@ export const settings = persistentMap<SettingsValue>("settings:", {
   printPreview: "false",
 })
 
+function setFitSpreadScale() {
+  const windowSize = { height: window.innerHeight, width: window.innerWidth }
+  const boundingRect = { width: 1588, height: 1123 }
+  const scale = Math.min(
+    (windowSize.height - 100) / boundingRect.height,
+    windowSize.width / boundingRect.width,
+  )
+  console.log({ scale, windowSize, boundingRect })
+  document.documentElement.style.setProperty("--fit-spread-scale", scale + "")
+}
+
 export const updateDocumentSettings = {
   theme: () => {
     document.documentElement.dataset.theme =
@@ -34,6 +45,13 @@ export const updateDocumentSettings = {
   },
   fitSpread: () => {
     document.documentElement.dataset.fitSpread = settings.get().fitSpread
+
+    if (settings.get().fitSpread === "true") {
+      setFitSpreadScale()
+      window.onresize = setFitSpreadScale
+    } else {
+    }
+
     if (document.getElementById("toggle__fit_spread")) {
       ;(
         document.getElementById("toggle__fit_spread") as HTMLInputElement
