@@ -11,13 +11,13 @@ const { sections } = Astro.props;
     <div class="book-sections">
       {sections.map((section) => (
         <section class="book-section">
-          {(section.data.pageType === "part" ||
-            section.data.pageType === "cover") && (
+          {(section.data.sectionType === "part" ||
+            section.data.sectionType === "cover") && (
             <PartLayout section={section} />
           )}
           {!(
-            section.data.pageType === "part" ||
-            section.data.pageType === "cover"
+            section.data.sectionType === "part" ||
+            section.data.sectionType === "cover"
           ) && <SectionLayout section={section} />}
         </section>
       ))}

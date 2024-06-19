@@ -2,16 +2,6 @@
   .spread__page-grid {
     z-index 100;
     position relative;
-    // display grid
-    width 100%;
-    max-height calc(100vh - 10rem);
-    // background-color: green
-    // display grid
-    // grid-column-gap calc(var(--grid__column-gap-in-baselines) * var(--baseline-height))
-    // grid-row-gap calc(var(--grid__row-gap-in-baselines) * var(--baseline-height))
-    // grid-template-columns 100%
-    // grid-template-rows repeat(8, minmax(0, 1fr));
-    // grid-template-rows repeat(8, calc(var(--grid__column-width-in-baselines) * var(--baseline-height)))
   }
 }
 
@@ -78,14 +68,48 @@
   }
 
   .spread-area--intro {
-    grid-area 3 / 1 / 8 / 6;
+    grid-area 3 / 1 / 8 / 7;
   }
 
-  .spread-area--causal-map {
-    grid-area 6 / 6 / 17 / 13;
-    grid-area 1 / 1 / 17 / 13;
+  .spread-area--strategic-starting-point {
+    grid-area 1 / 1 / 17 / 5;
   }
 
+  .spread-area--strategic-starting-point-2 {
+    grid-area 1 / 5 / 17 / 9;
+    padding-top 3rem;
+  }
+
+  .spread-area--strategic-interventions {
+    grid-area 1 / 9 / 13 / 13;
+  }
+
+  .spread-area--strategic-map {
+    grid-area 10 / 9 / 17 / 13;
+    overflow: hidden
+   
+  }
+
+  .spread-area--strategic-aside {
+
+    grid-area 1 / 9 / 17 / 13;
+    padding-top 3rem
+    position: relative
+  }
+
+  .spread-area--strategic-aside::before {
+      position: absolute;
+      content " "
+      display: block
+      width calc(100%+1rem)
+      height calc(100%+1rem)
+      top: -.5rem
+      left: -.5rem
+      z-index: -1
+
+      background-color: rgba(#dddddd, .8);
+
+  }
   .spread-area--full {
     grid-area 3 / 1 / 17 / 13;
   }
@@ -102,6 +126,10 @@
     grid-area 1 / 9 / 9 / 13;
   }
 
+  .spread-area--under-header {
+    grid-area 3 / 1 / 17 / 13;
+  }
+
   .spread-area--c-1-under-header {
     grid-area 3 / 1 / 17 / 5;
   }
@@ -113,14 +141,41 @@
   .spread-area--c-3-under-header {
     grid-area 3 / 9 / 9 / 13;
   }
-}
 
-.spread-area--1-7-9-13 {
-  grid-area 1 / 7 / 9 / 13;
-}
-
-.spread-area--references {
-  grid-area 14 / 1 / 17 / 6;
-  background-color: red
-  
+  .spread-area--1-7-9-13 {
+    grid-area 1 / 7 / 9 / 13;
   }
+
+  .spread--strategic-area section.footnotes {
+    grid-area 9 / 1 / 18 / 7;
+    align-content end;
+  }
+
+  .spread--strategic-area .right section.footnotes {
+    display none;
+  }
+
+  section.footnotes {
+    grid-area 9 / 1 / 18 / 4;
+    align-content end;
+  }
+  
+  .right section.footnotes {
+    display none;
+  }
+
+
+  .spread-area--c-1_2--full {
+    grid-area 1 / 1 / 19 / 7
+  }
+
+  .spread-area--c-2_2--full {
+    grid-area 1 / 7 / 19 / 13
+  }
+
+
+}
+
+.spread-area--hidden {
+  display none;
+}

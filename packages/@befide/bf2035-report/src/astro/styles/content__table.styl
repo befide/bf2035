@@ -14,9 +14,11 @@ th.md, td.md
 
 caption
   padding-right 0.5rem
-  text-align right
+  text-align left
   font-size var(--font-size--body-sm)
   caption-side: bottom
+  color black
+  
 
 th.md, td.md
   padding-right 1rem
@@ -54,7 +56,7 @@ td.md.w-99
 td.md.nw
   white-space nowrap
 
-.aligned--right
+td.right
   text-align right
 
 tr.md.hoverable:hover td
@@ -64,3 +66,7 @@ tr.md.hoverable:hover td
 
 tr.table__tr--group td, .dc-table-group td
   $table__td--group()
+
+
+td.nb 
+  white-space: nowrap

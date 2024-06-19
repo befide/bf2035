@@ -12,7 +12,7 @@ export interface Props {
 
 const { section } = Astro.props;
 
-const { title, sectionNumber, supertitle, subtitle, backgroundImageSrc, pageType } =
+const { title, sectionNumber, supertitle, subtitle, backgroundImageSrc, sectionType } =
   section.data;
 const { Content } = await section.render();
 
@@ -29,9 +29,9 @@ const optimizedBackground =
 ---
 
 <div class="bleeding-spread">
-  <div class={"spread " + pageType}>
+  <div class={"spread " + sectionType}>
     {
-      (pageType === "spread" || pageType === "left") && (
+      (sectionType === "spread" || sectionType === "left") && (
         <div
           class="spread__page left"
           style={
@@ -71,7 +71,7 @@ const optimizedBackground =
       )
     }
     {
-      (pageType === "spread" || pageType === "right") && (
+      (sectionType === "spread" || sectionType === "right") && (
         <div
           class="spread__page right"
           style={
@@ -81,7 +81,7 @@ const optimizedBackground =
           }
         >
           <div class="spread__page-grid debug-overlay">
-            {pageType === "right" && (
+            {sectionType === "right" && (
               <header class="spread__header">
                 {sectionNumber && (
                   <div class="spread__sectionNumber">

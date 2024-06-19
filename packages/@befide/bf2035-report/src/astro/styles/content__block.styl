@@ -18,9 +18,10 @@ p.md {
 }
 
 h1.md, h2.md {
-  $baselined-typography(body-lg);
+  $baselined-typography(body-xl);
   text-transform: uppercase;
   font-weight: var(--font-weight--bold);
+
 }
 
 h3.md {
@@ -56,7 +57,7 @@ ul.md, ol.md {
   }
 }
 
-ul.md.small, ol.md.small {
+ul.md.small, ol.md.small, .footnotes ol.md {
   $baselined-typography(body-sm);
   position: relative;
   margin-left: 1rem;
@@ -131,14 +132,10 @@ ol.md {
     font-variant: small-caps;
     opacity: 0.8;
   }
+  li li:before {
+      left: calc(-2 * var(--baseline-height));
+  }
 }
-figcaption {
-
-}
-//figcaption p.md, .caption {
-//
-//  $baselined-typography(body-sm);
-//}
 
 .small {
   $baselined-typography(body-sm);
@@ -179,9 +176,7 @@ figcaption {
   background-color: rgba(white, 0.8);
 }
 
-figure {
-  margin: 0.5rem 0;
-  padding: 1rem
+figure.md {
   
   padding-bottom: 1rem;
 
@@ -189,22 +184,19 @@ figure {
     margin: 1rem 0;
   }
 
-  overflow: scroll;
+  overflow: hidden;
   max-width: calc(100vw - 1 * var(--padding__x));
   // background-image linear-gradient(0, #f0f0f0 48.08%, #ccc 48.08%, #ccc 50%, #f0f0f0 50%, #f0f0f0 98.08%, #ccc 98.08%, #ccc 100%)
   // background-size 100% 1rem
-  background-color: #eee;
+  // background-color: #eee;
 
   > p {
     $baselined-typography(body-sm);
   }
 
   figcaption {
-    p {
-      font-weight: var(--font-weight--bold);
-      $baselined-typography(body-md);
-      text-transform: uppercase;
-    }
+    $baselined-typography(body-sm);
+
   }
 
   img {
@@ -244,6 +236,7 @@ cite {
   
   h2.md
     $baselined-typography(body-lg)
+
   h3.md
     $baselined-typography(body-lg)
   p.md
