@@ -1,0 +1,75 @@
+figure.progress-chart {
+  font-family 'Barlow Condensed';
+  position relative;
+  width 100%;
+  height 11rem;
+  display flex;
+  flex-direction column;
+  margin-bottom 1rem;
+  
+ 
+  svg {
+    flex 0 0 7rem;
+    
+  }
+
+  figcaption {
+  
+    flex 3rem;
+  }
+
+ 
+
+  g.title text {
+    font-size var(--font-size--body-sm);
+    font-weight var(--font-weight--bold);
+    text-transform uppercase;
+    font-style italic;
+    letter-spacing 0.02em;
+    fill: blackM;
+  }
+
+  g.unit text {
+    font-size var(--font-size--body-sm);
+  }
+
+  .data-point {
+    fill-opacity 0.8;
+    fill black;
+  }
+
+  .data-point-bg {
+    fill-opacity 0.8;
+    fill white;
+  }
+
+  .curve {
+    path {
+      stroke #009900;
+      fill transparent;
+      stroke-linecap round;
+    }
+  }
+
+  .tick line {
+    stroke #666666;
+    stroke-width 0.5px;
+    stroke-dasharray 1 1;
+    opacity 1;
+  }
+
+  g.x-axis .tick line {
+    stroke-dasharray 0;
+  }
+
+  .tick.primary line {
+    stroke-width 0.25px;
+  }
+
+  .tick text {
+    font-family 'Barlow Condensed';
+    font-size 8px;
+    font-variant-numeric tabular-nums;
+    fill #666666;
+  }
+}

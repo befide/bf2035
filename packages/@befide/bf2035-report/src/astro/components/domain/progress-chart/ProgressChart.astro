@@ -1,0 +1,245 @@
+---
+// import Svg from "@jasikpark/astro-svg-loader";
+import { JSDOM } from "jsdom";
+import { rollup } from "d3-array";
+import { axisBottom, axisRight } from "d3-axis";
+
+import { format, formatLocale } from "d3-format";
+import { scaleLinear, scaleLog } from "d3-scale";
+import { select } from "d3-selection";
+import { curveCardinal, line } from "d3-shape";
+
+import chartMetas from "./ProgressChart.config.js";
+
+export interface ProgressChart {
+  baselineHeight?: number;
+  widthInGridUnits?: number;
+  heightInGridUnits?: number;
+  dimension?: string;
+}
+
+export type Data = Datum[];
+
+export interface Datum {
+  year: number;
+  value: number;
+  value_sum?: number;
+}
+
+function gridUnits2BaselineCount(gridUnits: number) {
+  return gridUnits * 3 + gridUnits - 1;
+}
+
+const {
+  baselineHeight = 14,
+  widthInGridUnits = 4,
+  heightInGridUnits = 2,
+  dimension = "nuclideDiscoveriesPerYear",
+} = Astro.props;
+
+const chartMeta = chartMetas[dimension];
+
+if (!chartMeta) throw new Error("undefined dimension: " + dimension);
+
+const locale = formatLocale({
+  decimal: ",",
+  thousands: ".",
+  grouping: [3],
+  currency: ["", "\u00A0€"],
+  minus: "\u2212",
+  percent: "\u202F%",
+});
+
+const height = gridUnits2BaselineCount(heightInGridUnits + 0) * baselineHeight;
+
+const width = gridUnits2BaselineCount(widthInGridUnits + 0) * baselineHeight;
+
+const t0 = 1925;
+const t1 = 2025;
+
+const x = scaleLinear().domain([t0, t1]).range([0, width]);
+
+const y =
+  chartMeta.scale === "linear"
+    ? scaleLinear()
+        .domain(chartMeta.yDomain)
+        .range([height - 1 * baselineHeight, baselineHeight * 1])
+    : scaleLog()
+        .domain([10 ** chartMeta.y0, 10 ** (chartMeta.y0 + chartMeta.yFactor)])
+        .range([height - 1 * baselineHeight, baselineHeight * 1]);
+
+function logFormat(d: number) {
+  const x = Math.log(d) / Math.log(10) + 1e-6;
+  return Math.abs(x - Math.floor(x)) < 0.1
+    ? ((chartMeta && chartMeta.numberFormat) || locale.format(",.0f"))(d)
+    : "";
+}
+function cumulativeByYear(input: any): Data {
+  let runningCount = 0;
+  return input.map(({ year, value }) => {
+    runningCount += +value;
+    // Return a new datum for this date with the cumulative tally instead of that day's count.
+    return {
+      year,
+      value: +value,
+      value_sum: runningCount,
+    };
+  });
+}
+
+const data = cumulativeByYear(chartMeta.data);
+
+const xAxis = (g: any) =>
+  g
+    .attr("transform", `translate(0,${height - baselineHeight})`)
+    .call(
+      axisBottom(x)
+        .tickValues([1920, 1940, 1960, 1980, 2000, 2020])
+        .tickSize(0)
+        .tickFormat(format(".0f"))
+    )
+    .call((g: any) => g.selectAll(".domain").remove());
+
+const yAxis =
+  chartMeta.scale === "linear"
+    ? (g: any) => {
+        g.attr("transform", "translate(0,0)")
+          .call(
+            axisRight(y)
+              .tickSize(width)
+              .ticks(5)
+              .tickFormat(
+                (chartMeta && chartMeta.numberFormat) || format(",.0f")
+              )
+          )
+          .call((g) => g.selectAll(".domain").remove())
+          .call((g) => {
+            g.selectAll(".tick text").attr("x", 0).attr("dy", 0);
+          });
+
+        g.selectAll(".tick:last-child text").text("");
+        g.selectAll(".tick:nth-last-child(2) text").text("");
+      }
+    : (g: any) =>
+        g
+          // .attr("transform", `translate(0,0)`)
+          .call(axisRight(y).tickSize(width).tickFormat(logFormat))
+          .call((g) => g.selectAll(".domain").remove())
+          .call((g) => {
+            g.selectAll(".tick text").attr("x", 0).attr("dy", 0);
+
+            // g.selectAll('.tick text').each(function (e, i) {
+            //   const textElement = select(this.parentNode).select('text')
+
+            //   const text = textElement.text()
+            // })
+
+            if (chartMeta.yFactor >= 10) {
+              g.selectAll(".tick:last-child text").text("");
+              g.selectAll(".tick:nth-last-child(2) text").text("");
+              g.selectAll(".tick:nth-last-child(3) text").text("");
+            }
+          });
+
+const curve = line()
+  .x((d) => x(d[0]))
+  .y((d) => y(d[1]))
+  .curve(chartMeta.curveGenerator || curveCardinal.tension(1))(
+  data.map(({ year, value }) => [year, value])
+);
+
+const { document } = new JSDOM().window;
+const svg = select(document.body).append("svg");
+
+svg
+  .attr("xmlns", "http://www.w3.org/2000/svg")
+  .attr("width", width)
+  .attr("height", height)
+  .attr("viewBox", [0, 0, width, height].join(" "));
+
+
+
+const title = svg
+  .append("g")
+  .attr("class", "title")
+  .attr("text-anchor", "start")
+  .attr("transform", `translate(0,${1 * baselineHeight})`)
+  .append("text");
+
+title
+  .append("tspan")
+  .attr("class", "quantity-name-qualifier")
+  .text(chartMeta.quantityNameQualifier);
+title
+  .append("tspan")
+  .attr("class", "quantity-name")
+  .text(chartMeta.quantityName);
+
+svg
+  .append("g")
+  .attr("class", "unit")
+  .attr("text-anchor", "start")
+  .attr("transform", `translate(0,${2 * baselineHeight})`)
+  .append("text")
+  .attr("class", "quantity-name")
+  .text(chartMeta.unit);
+
+svg.append("g").attr("class", "x-axis").call(xAxis);
+svg.append("g").attr("class", "y-axis").call(yAxis);
+const dataPoints = svg.append("g").attr("class", "data-points");
+
+!chartMeta.cumulate &&
+  dataPoints
+    .selectAll(".data-point")
+    .data(data)
+    .join("circle")
+    .classed("data-point", true)
+    .attr("cx", (d) => x(d.year))
+    .attr("cy", (d) => y(d.value))
+    .attr("r", 1);
+
+chartMeta.cumulate &&
+  dataPoints
+    .selectAll(".data-point-rect")
+    .data(data)
+    .join("rect")
+    .classed("data-point-rect", true)
+    .attr("x", ({ year }) => x(year) - 0.5)
+    .attr("y", ({ value }) => y(value))
+    .attr("height", ({ value }) => -y(value) + y(0))
+    .attr("width", 1);
+
+svg
+  .append("g")
+  .attr("class", "curve")
+  .append("path")
+  // .attr("stroke-width", (_, i) => 4 * i)
+  // .attr("stroke-opacity", (_, i) => 1 - i / 4)
+  .attr(
+    "d",
+    line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]))
+      .curve(chartMeta.curveGenerator || curveCardinal.tension(1))(
+      data.map(({ year, value, value_sum }) =>
+        chartMeta.cumulate ? [year, value_sum] : [year, value]
+      )
+    )
+  );
+---
+
+<figure class="progress-chart md">
+  <Fragment set:html={document.body.innerHTML} />
+
+  <figcaption class="md">
+    <slot />
+  </figcaption>
+</figure>
+
+<style lang="stylus" is:global> 
+@import "./progress-chart"
+
+svg {
+  background-color rgba(white, .9);
+}
+</style>
