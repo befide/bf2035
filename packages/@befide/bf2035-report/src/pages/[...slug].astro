@@ -18,23 +18,18 @@ export async function getStaticPaths() {
 
 const { section } = Astro.props;
 
-const {
-  title,
-  sectionType,
-  lang
-} = section.data;
-
+const { title, sectionType, lang } = section.data;
 ---
-<Layout {lang} {title}>
 
-{
-  (sectionType === "part" || sectionType === "cover") && (
-    <PartLayout section={section} />
-  )
-}
-{
-  !(sectionType === "part" || sectionType === "cover") && (
-    <SectionLayout section={section} />
-  )
-}
+<Layout {lang} {title}>
+  {
+    (sectionType === "part" || sectionType === "cover") && (
+      <PartLayout section={section} />
+    )
+  }
+  {
+    !(sectionType === "part" || sectionType === "cover") && (
+      <SectionLayout section={section} />
+    )
+  }
 </Layout>
