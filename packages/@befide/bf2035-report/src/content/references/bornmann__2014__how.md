@@ -20,7 +20,7 @@ cslItem:
       - - "2014"
         - 4
         - 1
-  keyword: "#collection/D./excellence"
+  keyword: "#bf2035/topics/excellence"
   language: en
   page: 166-173
   source: DOI.org (Crossref)
@@ -31,7 +31,8 @@ cslItem:
   type: article-journal
   URL: https://academic.oup.com/rev/article-lookup/doi/10.1093/reseval/rvu002
   volume: "23"
-tags: []
+tags:
+  - "#bf2035/topics/excellence"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

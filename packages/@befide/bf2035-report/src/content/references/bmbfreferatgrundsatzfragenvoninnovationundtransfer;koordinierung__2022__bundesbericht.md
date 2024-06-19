@@ -16,8 +16,7 @@ cslItem:
   issued:
     date-parts:
       - - "2022"
-  keyword: >-
-    #bf2035/topics/innovation;#bf2035/funding/bmbf;#bf2035/sections/D./excellence
+  keyword: "#bf2035/topics/innovation;#bf2035/funding/bmbf"
   language: en
   publisher: BMBF
   title: >-
@@ -29,7 +28,6 @@ cslItem:
 tags:
   - "#bf2035/topics/innovation"
   - "#bf2035/funding/bmbf"
-  - "#bf2035/sections/D./excellence"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

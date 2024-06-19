@@ -47,7 +47,7 @@ cslItem:
     date-parts:
       - - "2016"
         - 12
-  keyword: "#collection/D./excellence"
+  keyword: "#bf2035/topics/excellence"
   language: en
   note: 30 citations (Crossref) [2024-01-04]
   page: 2217-2239
@@ -58,7 +58,8 @@ cslItem:
   type: article-journal
   URL: http://link.springer.com/10.1007/s11192-016-2090-3
   volume: "109"
-tags: []
+tags:
+  - "#bf2035/topics/excellence"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

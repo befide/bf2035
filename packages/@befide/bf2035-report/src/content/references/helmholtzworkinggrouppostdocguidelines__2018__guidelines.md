@@ -14,7 +14,7 @@ cslItem:
       - - "2018"
         - 4
         - 16
-  keyword: "#bf2035/topics/teaching;#laufbahnentwicklung"
+  keyword: "#laufbahnentwicklung;#bf2035/topics/teaching"
   language: en
   note: |-
     Read_Status: To Read

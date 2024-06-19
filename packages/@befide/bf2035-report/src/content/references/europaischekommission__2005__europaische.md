@@ -9,7 +9,7 @@ cslItem:
   issued:
     date-parts:
       - - "2005"
-  keyword: "#bf2035/topics/teaching;#laufbahnentwicklung;#werte"
+  keyword: "#werte;#laufbahnentwicklung;#bf2035/topics/teaching"
   language: en
   note: |-
     Read_Status: To Read

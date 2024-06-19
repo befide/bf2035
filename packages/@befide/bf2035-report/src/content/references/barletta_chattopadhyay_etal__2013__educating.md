@@ -13,8 +13,8 @@ cslItem:
   accessed:
     date-parts:
       - - "2024"
-        - 3
-        - 22
+        - 6
+        - 4
   archive: INSPIRE
   archive_location: "1122264"
   author:
@@ -25,35 +25,37 @@ cslItem:
     - family: Seryi
       given: Andrei
   citation-key: barletta_chattopadhyay_etal__2013__educating
+  container-author:
+    - family: Chao
+      given: Alexander W
+    - family: Chou
+      given: Weiren
   container-title: Reviews of Accelerator Science and Technology
-  container-title-short: Rev. Accel. Sci. Tech.
   DOI: 10.1142/9789814449953_0012
-  ISSN: 1793-6268, 1793-8058
+  ISBN: 978-981-4449-94-6 978-981-4449-95-3
   issued:
     date-parts:
       - - "2013"
+        - 4
   keyword: "#bf2035/topics/teaching"
   language: en
-  note: |-
-    3 citations (Crossref/DOI) [2024-03-22]
-    4 citations (INSPIRE 2024/3/22)
-    4 citations w/o self (INSPIRE 2024/3/22)
-  page: 311-331
+  page: 313-331
+  publisher: WORLD SCIENTIFIC
   source: DOI.org (Crossref)
   title: Educating and Training Accelerator Scientists and Technologists for Tomorrow
-  type: article-journal
-  URL: https://www.worldscientific.com/doi/abs/10.1142/S1793626812300125
+  type: chapter
+  URL: http://www.worldscientific.com/doi/abs/10.1142/9789814449953_0012
   volume: "5"
 tags:
   - "#bf2035/topics/teaching"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="barletta_chattopadhyay_etal__2013__educating" class="csl-entry"><span class='author-bib'>Barletta, Chattopadhyay, S., &#38; Seryi, A.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><b>Educating and Training Accelerator Scientists and Technologists for Tomorrow</b></span>. <i>Reviews of Accelerator Science and Technology</i>, <i>5</i>, 311–331. INSPIRE. <span class='URL'><a href='https://doi.org/10.1142/9789814449953_0012'>LINK</a></span></span>
+      <span data-csl-entry-id="barletta_chattopadhyay_etal__2013__educating" class="csl-entry"><span class='author-bib'>Barletta, Chattopadhyay, S., &#38; Seryi, A.</span>. <span class='date-bib'>(2013)</span>. <span class='title'><b>Educating and Training Accelerator Scientists and Technologists for Tomorrow</b></span>. In Chao &#38; W. Chou, <i>Reviews of Accelerator Science and Technology</i> (1122264; Bd. 5, S. 313–331). WORLD SCIENTIFIC; INSPIRE. <span class='URL'><a href='https://doi.org/10.1142/9789814449953_0012'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Barletta</span> et al.</span></span>, 2013)
-bibTex: "@article{barletta_chattopadhyay_etal__2013__educating,\n\tauthor = {Barletta, William and Chattopadhyay, Swapan and Seryi, Andrei},\n\tjournal = {Reviews of Accelerator Science and Technology},\n\tdoi = {10.1142/9789814449953_0012},\n\tissn = {1793-6268, 1793-8058},\n\tyear = {2013},\n\tnote = {3 citations (Crossref/DOI) [2024-03-22]\n4 citations (INSPIRE 2024/3/22)\n4 citations w/o self (INSPIRE 2024/3/22)},\n\tpages = {311--331},\n\ttitle = {Educating and {Training} {Accelerator} {Scientists} and {Technologists} for {Tomorrow}},\n\turl = {https://www.worldscientific.com/doi/abs/10.1142/S1793626812300125},\n\thowpublished = {https://www.worldscientific.com/doi/abs/10.1142/S1793626812300125},\n\tvolume = {5},\n}\n\n"
+bibTex: "@inbook{barletta_chattopadhyay_etal__2013__educating,\n\tnote = {[Online; accessed 2024-06-04]},\n\tauthor = {Barletta, William and Chattopadhyay, Swapan and Seryi, Andrei},\n\tbooktitle = {Reviews of {Accelerator} {Science} and {Technology}},\n\tdoi = {10.1142/9789814449953_0012},\n\tisbn = {978-981-4449-94-6 978-981-4449-95-3},\n\tyear = {2013},\n\tmonth = {4},\n\tpages = {313--331},\n\tpublisher = {WORLD SCIENTIFIC},\n\ttitle = {Educating and {Training} {Accelerator} {Scientists} and {Technologists} for {Tomorrow}},\n\turl = {http://www.worldscientific.com/doi/abs/10.1142/9789814449953_0012},\n\tvolume = {5},\n}\n\n"
 ---

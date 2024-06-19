@@ -17,12 +17,13 @@ cslItem:
   issued:
     date-parts:
       - - "2024"
-  keyword: ""
+  keyword: "#bf2035/topics/teaching"
   language: en
   title: Joint Universities Accelerator School
   type: webpage
   URL: https://www.esi-archamps.eu/juas-presentation/
-tags: []
+tags:
+  - "#bf2035/topics/teaching"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

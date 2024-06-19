@@ -1,5 +1,29 @@
 [
   {
+    "id": "____linear",
+    "abstract": "The linear particle accelerators market size was valued at USD 2.8 billion in 2023 and is anticipated to showcase growth at 5.9% CAGR from 2024 and 2032 driven by growing demand for radiotherapy treatments.",
+    "accessed": { "date-parts": [["2024", 6, 6]] },
+    "citation-key": "____linear",
+    "container-title": "Global Market Insights Inc.",
+    "keyword": "",
+    "language": "en",
+    "title": "Linear Particle Accelerators Market Size & Share Report, 2032",
+    "type": "webpage",
+    "URL": "https://www.gminsights.com/industry-analysis/linear-particle-accelerators-market"
+  },
+  {
+    "id": "____research",
+    "abstract": "According to a recent report by Market.us, the Global Linear Particle Accelerators Market size is expected to be worth around USD 4.8 Billion by 2033 from USD 2.7 Billion in 2023, growing at a CAGR of 5.7% during the forecast period from 2024 to 2033.An Increase in Demand and Opportunities for th...",
+    "accessed": { "date-parts": [["2024", 6, 6]] },
+    "citation-key": "____research",
+    "container-title": "PharmiWeb.com",
+    "keyword": "",
+    "language": "en",
+    "title": "Research Predicts Surge in Global Linear Particle Accelerators Market, Reaching USD 4.8 Billion by 2",
+    "type": "webpage",
+    "URL": "https://www.pharmiweb.com/press-release/2024-03-20/research-predicts-surge-in-global-linear-particle-accelerators-market-reaching-usd-48-billion-by-2"
+  },
+  {
     "id": "aberle_bejaralonso_etal__2020__highluminosity",
     "author": [
       { "family": "Aberle", "given": "O." },
@@ -665,6 +689,19 @@
     "URL": "https://journals.aps.org/search/results?journal=prstab&journal=prab"
   },
   {
+    "id": "aries__2022__aries",
+    "accessed": { "date-parts": [["2024", 5, 22]] },
+    "author": [{ "literal": "ARIES" }],
+    "citation-key": "aries__2022__aries",
+    "issued": { "date-parts": [["2022"]] },
+    "keyword": "#bf2035/topics/teaching",
+    "language": "en",
+    "title": "ARIES MOOC",
+    "title-short": "ARIES MOOC. An online course about particle accelerators | Massive Online Open Course on Accelerator Science and Technologie",
+    "type": "webpage",
+    "URL": "http://mooc.particle-accelerators.eu/"
+  },
+  {
     "id": "arieswp1members__2021__aries",
     "abstract": "Research and innovation in particle accelerator science and technology is key to the progress of strategic scientific fields where Europe holds a leadership position. Moreover, accelerators are increasingly being used in health care and industry, where the availability of new accelerator technologies can improve our life quality and generate economic growth. After several decades of European prominence, in the present critical moment for the evolution of particle accelerators the increasing pressure from Asia and new far-sighted US initiatives are putting at risk the European role in this crucial scientific and technological field. After giving an overview of its main challenges and of the present instruments to coordinate and support particle accelerator research and innovation in Europe, this report presents some conclusions from the Working Groups active within the ARIES project on how to enhance industry involvement, showing as a successful example the preparation of the new I.FAST project.<br> Finally, the report presents some guidelines and a roadmap identified within ARIES towards creating a sustainable ecosystem for particle accelerator research and innovation in Europe, capable of preserving the European leading position in accelerator-based scientific fields and its related advantages for high-technology European industry and for the whole European society.",
     "accessed": { "date-parts": [["2024", 3, 17]] },
@@ -672,7 +709,7 @@
     "citation-key": "arieswp1members__2021__aries",
     "DOI": "10.5281/zenodo.7085311",
     "issued": { "date-parts": [["2021", 7, 22]] },
-    "keyword": "#bf2035/funding/europe/horizon2020;#collection/D./related-strategies",
+    "keyword": "#collection/D./related-strategies;#bf2035/funding/eu/horizon2020",
     "language": "en",
     "source": "DOI.org (Datacite)",
     "title": "ARIES. Final Report on European Strategy",
@@ -694,7 +731,7 @@
     "type": "article-journal"
   },
   {
-    "id": "bai_barletta_etal____strategies",
+    "id": "bai_barletta_etal__2022__strategies",
     "abstract": "We summarize the community-based consensus for improvements concerning education, public outreach, and inclusion in Accelerator Science and Engineering that will enhance the workforce in the USA. The improvements identified reflect the product of discussions held within the 2021-2022 Snowmass community planning process by topical group AF1: Beam Physics and Accelerator Education within the Accelerator Frontier. Although the Snowmass process centers on high-energy physics, this document outlines required improvements for the entire U.S. accelerator science and engineering enterprise because education of those entering and in the field, outreach to the public, and inclusion are inextricably linked.",
     "author": [
       { "family": "Bai", "given": "M" },
@@ -707,8 +744,9 @@
       { "family": "Holzbauer", "given": "J" },
       { "family": "Huang", "given": "Z" }
     ],
-    "citation-key": "bai_barletta_etal____strategies",
+    "citation-key": "bai_barletta_etal__2022__strategies",
     "genre": "White Paper",
+    "issued": { "date-parts": [["2022"]] },
     "keyword": "#bf2035/topics/teaching;#bf2035/topics/participation",
     "language": "en",
     "note": "Read_Status: To Read\nRead_Status_Date: 2024-03-17T09:40:27.438Z",
@@ -748,7 +786,7 @@
   {
     "id": "barletta_chattopadhyay_etal__2013__educating",
     "abstract": "Accelerator science and technology is inherently an integrative discipline that combines aspects of physics, computational science, electrical and mechanical engineering. As few universities offer full academic programs, the education of accelerator physicists and engineers for the future has primarily relied on a combination of on-the-job training supplemented with intense courses at regional accelerator schools. This paper describes the approaches being used to satisfy the educational interests of a growing number of interested physicists and engineers.",
-    "accessed": { "date-parts": [["2024", 3, 22]] },
+    "accessed": { "date-parts": [["2024", 6, 4]] },
     "archive": "INSPIRE",
     "archive_location": "1122264",
     "author": [
@@ -757,19 +795,22 @@
       { "family": "Seryi", "given": "Andrei" }
     ],
     "citation-key": "barletta_chattopadhyay_etal__2013__educating",
+    "container-author": [
+      { "family": "Chao", "given": "Alexander W" },
+      { "family": "Chou", "given": "Weiren" }
+    ],
     "container-title": "Reviews of Accelerator Science and Technology",
-    "container-title-short": "Rev. Accel. Sci. Tech.",
     "DOI": "10.1142/9789814449953_0012",
-    "ISSN": "1793-6268, 1793-8058",
-    "issued": { "date-parts": [["2013"]] },
+    "ISBN": "978-981-4449-94-6 978-981-4449-95-3",
+    "issued": { "date-parts": [["2013", 4]] },
     "keyword": "#bf2035/topics/teaching",
     "language": "en",
-    "note": "3 citations (Crossref/DOI) [2024-03-22]\n4 citations (INSPIRE 2024/3/22)\n4 citations w/o self (INSPIRE 2024/3/22)",
-    "page": "311-331",
+    "page": "313-331",
+    "publisher": "WORLD SCIENTIFIC",
     "source": "DOI.org (Crossref)",
     "title": "Educating and Training Accelerator Scientists and Technologists for Tomorrow",
-    "type": "article-journal",
-    "URL": "https://www.worldscientific.com/doi/abs/10.1142/S1793626812300125",
+    "type": "chapter",
+    "URL": "http://www.worldscientific.com/doi/abs/10.1142/9789814449953_0012",
     "volume": "5"
   },
   {
@@ -901,25 +942,23 @@
     "volume": "27"
   },
   {
-    "id": "bmbf__2022__bundesbericht",
-    "accessed": { "date-parts": [["2023", 11, 29]] },
-    "author": [{ "literal": "Bmbf" }],
-    "citation-key": "bmbf__2022__bundesbericht",
-    "issued": { "date-parts": [["2022"]] },
-    "keyword": "#collection/D./excellence;#bf2035/topics/innovation",
+    "id": "bilfingernoell____insertion",
+    "accessed": { "date-parts": [["2023", 1, 23]] },
+    "author": [{ "literal": "Bilfinger Noell" }],
+    "citation-key": "bilfingernoell____insertion",
+    "keyword": "",
     "language": "en",
-    "publisher": "BMBF",
-    "title": "Bundesbericht ­ Forschung und ­Innovation 2022. Daten und Fakten zum deutschen Forschungs- und Innovationssystem",
-    "title-short": "Bundesbericht ­Forschung und ­Innovation 2022.",
-    "type": "report",
-    "URL": "https://www.datenportal.bmbf.de/portal/de/bufi.html"
+    "publisher": "Bilfinger Noell Gmbh",
+    "title": "Insertion devices",
+    "type": "document",
+    "URL": "https://www.noell.bilfinger.com/fileadmin/power_bng/SCU/Insertion_Devices.pdf"
   },
   {
     "id": "bmbf__2022__daten",
     "author": [{ "literal": "Bmbf" }],
     "citation-key": "bmbf__2022__daten",
     "issued": { "date-parts": [["2022", 6]] },
-    "keyword": "",
+    "keyword": "#bf2035/funding/bmbf",
     "language": "en",
     "publisher": "BMBF",
     "source": "Zotero",
@@ -931,7 +970,7 @@
     "author": [{ "literal": "Bmbf" }],
     "citation-key": "bmbf__erum",
     "issued": { "date-parts": [["2022"]] },
-    "keyword": "#bf2035/sections/A.1;#bf2035/topics/verbundforschung",
+    "keyword": "#bf2035/sections/A.1;#bf2035/topics/verbundforschung;#bf2035/funding/bmbf",
     "language": "en",
     "original-date": { "date-parts": [["2017"]] },
     "publisher": "BMBF",
@@ -945,7 +984,7 @@
     "author": [{ "literal": "Bmbf" }],
     "citation-key": "bmbf__erum-data",
     "issued": { "date-parts": [["2022"]] },
-    "keyword": "#bf2035/topics/digitalisierung",
+    "keyword": "#bf2035/topics/digitalisierung;#bf2035/funding/bmbf;#bf2035/issues/funders/digitalization",
     "language": "en",
     "original-date": { "date-parts": [["2020"]] },
     "publisher": "BMBF",
@@ -959,7 +998,7 @@
     "author": [{ "literal": "Bmbf" }],
     "citation-key": "bmbf__erum-pro",
     "issued": { "date-parts": [["2022"]] },
-    "keyword": "#bf2035/topics/verbundforschung",
+    "keyword": "#bf2035/topics/verbundforschung;#bf2035/funding/bmbf",
     "language": "en",
     "original-date": { "date-parts": [["2018"]] },
     "publisher": "BMBF",
@@ -973,12 +1012,30 @@
     "author": [{ "literal": "Bmbf" }],
     "citation-key": "bmbf__erum-transfer",
     "issued": { "date-parts": [["2023", 4]] },
-    "keyword": "#bf2035/topics/technologietrasnfer",
+    "keyword": "#bf2035/topics/technologietrasnfer;#bf2035/funding/bmbf",
     "language": "en",
     "publisher": "BMBF",
     "title": "Aktionsplan ErUM-Transfer. Innovationen aus der Grundlagenforschung.",
     "title-short": "Aktionsplan ErUM-Transfer.",
     "type": "report"
+  },
+  {
+    "id": "bmbfreferatgrundsatzfragenvoninnovationundtransfer;koordinierung__2022__bundesbericht",
+    "accessed": { "date-parts": [["2023", 11, 29]] },
+    "author": [
+      {
+        "literal": "Bmbf (Referat Grundsatzfragen von Innovation und Transfer; Koordinierung)"
+      }
+    ],
+    "citation-key": "bmbfreferatgrundsatzfragenvoninnovationundtransfer;koordinierung__2022__bundesbericht",
+    "issued": { "date-parts": [["2022"]] },
+    "keyword": "#bf2035/topics/innovation;#bf2035/funding/bmbf",
+    "language": "en",
+    "publisher": "BMBF",
+    "title": "Bundesbericht ­Forschung und ­Innovation 2022. Daten und Fakten zum deutschen Forschungs- und Innovationssystem",
+    "title-short": "Bundesbericht ­Forschung und ­Innovation 2022.",
+    "type": "report",
+    "URL": "https://www.datenportal.bmbf.de/portal/de/bufi.html"
   },
   {
     "id": "bohlen_brummer_etal____plasmed",
@@ -1027,7 +1084,7 @@
     "ISSN": "0958-2029, 1471-5449",
     "issue": "2",
     "issued": { "date-parts": [["2014", 4, 1]] },
-    "keyword": "#collection/D./excellence",
+    "keyword": "#bf2035/topics/excellence",
     "language": "en",
     "page": "166-173",
     "source": "DOI.org (Crossref)",
@@ -1036,6 +1093,28 @@
     "type": "article-journal",
     "URL": "https://academic.oup.com/rev/article-lookup/doi/10.1093/reseval/rvu002",
     "volume": "23"
+  },
+  {
+    "id": "bornmann__2016__promotion",
+    "abstract": "Under the Excellence Initiative, a number of Clusters of Excellence in Germany have been supported since 2006 and 2007—including each a limited number of cooperating institutions. The aim of the present study is to investigate whether support for Clusters of Excellence since 2006 and 2007 is reflected in bibliometric network data. For this purpose, a comparison is made between network data in the period before support started (2003–2005) and in the period after support started (2009–2011). For these two periods, a co-authorship network is generated (based on the funded institutions). This is based on publications which are among the 1 % most frequently cited publications in their respective fields and publication year and which have at least one author from Germany. As the results show, the outcomes this yields for life sciences and natural sciences differ from each other. Whereas natural sciences display an effect of establishment of Clusters of Excellence on the bibliometric networks, this was not true of life sciences. After establishment of the Clusters of Excellence, the network in natural sciences not only contained more institutions of a Cluster of Excellence, but these institutions were distributed across fewer bibliometric clusters in the network than before establishment. In other words the structure of the Clusters of Excellence was better reflected in the network.",
+    "accessed": { "date-parts": [["2024", 6, 12]] },
+    "author": [{ "family": "Bornmann", "given": "Lutz" }],
+    "citation-key": "bornmann__2016__promotion",
+    "container-title": "Scientometrics",
+    "container-title-short": "Scientometrics",
+    "DOI": "10.1007/s11192-016-1925-2",
+    "ISSN": "0138-9130",
+    "issued": { "date-parts": [["2016"]] },
+    "keyword": "#bf2035/topics/excellence",
+    "page": "1041-1061",
+    "PMCID": "PMC4865529",
+    "PMID": "27239077",
+    "source": "PubMed Central",
+    "title": "Is the promotion of research reflected in bibliometric data? A network analysis of highly cited papers on the Clusters of Excellence supported under the Excellence Initiative in Germany",
+    "title-short": "Is the promotion of research reflected in bibliometric data?",
+    "type": "article-journal",
+    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4865529/",
+    "volume": "107"
   },
   {
     "id": "brummer_bohlen_etal__2022__compact",
@@ -1085,7 +1164,7 @@
     ],
     "citation-key": "bundesministeriumfurbildungundforschungbmbf__2022__bundesbericht",
     "issued": { "date-parts": [["2022", 6]] },
-    "keyword": "#collection/D./excellence",
+    "keyword": "#bf2035/topics/innovation;#bf2035/funding/bmbf",
     "language": "en",
     "source": "Zotero",
     "title": "Bundesbericht Forschung und Innovation 2022. Forschungs- und innovationspolitische Ziele und Maßnahmen",
@@ -1124,6 +1203,37 @@
     "URL": "https://www.bundesregierung.de/resource/blob/975274/2227476/92ec0c68692192aa4e88f970bcb2ff7c/2023-10-04-herbstbeschluss-nachhaltige-entwicklung-data.pdf?download=1"
   },
   {
+    "id": "burrows_kircher_etal__2013__needs",
+    "author": [
+      { "family": "Burrows", "given": "Philip" },
+      { "family": "Kircher", "given": "François" },
+      { "family": "Bailey", "given": "Roger" },
+      { "literal": "M. Luisa Marco Arboli" },
+      { "literal": "Catherine Clerc" },
+      { "literal": "Alex C. Mueller" },
+      { "literal": "Leonid Rivkin" },
+      { "literal": "Sabrina Appel" },
+      { "literal": "Oliver Boine-Frankenheim" },
+      { "literal": "Francesca Galluccio" },
+      { "literal": "Vittorio Vaccaro" },
+      { "literal": "Piotr Malecki" },
+      { "literal": "Søren Pape Møller" },
+      { "literal": "Ole Petter Nordahl" },
+      { "literal": "Steinar Stapnes" },
+      { "literal": "Burrows, P." }
+    ],
+    "citation-key": "burrows_kircher_etal__2013__needs",
+    "genre": "Status Report",
+    "issued": { "date-parts": [["2013", 2, 28]] },
+    "keyword": "#bf2035/topics/teaching",
+    "language": "en-US",
+    "note": "https://web.archive.org/web/20220123043700/https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf",
+    "number": "TIARA-REP-WP5-2013-005",
+    "title": "Needs for Accelerator Scientists Report",
+    "type": "report",
+    "URL": "https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf"
+  },
+  {
     "id": "butz_witthuhn_etal__2003__erforschung",
     "citation-key": "butz_witthuhn_etal__2003__erforschung",
     "collection-editor": [
@@ -1140,6 +1250,18 @@
     "title": "Erforschung kondensierter Materie mit nuklearen Sonden und Ionenstrahlen an Großforschungsanlagen in Deutschland: Status und Perspektiven",
     "title-short": "Erforschung kondensierter Materie mit nuklearen Sonden und Ionenstrahlen an Großforschungsanlagen in Deutschland",
     "type": "report"
+  },
+  {
+    "id": "cern__2023__cern",
+    "accessed": { "date-parts": [["2024", 5, 29]] },
+    "author": [{ "literal": "CERN" }],
+    "citation-key": "cern__2023__cern",
+    "issued": { "date-parts": [["2023"]] },
+    "keyword": "#bf2035/topics/teaching",
+    "language": "en",
+    "title": "CERN Summer Student Programme 2024",
+    "type": "webpage",
+    "URL": "https://www.smartrecruiters.com/CERN/743999941597816-cern-summer-student-programme-2024-member-and-non-member-state-"
   },
   {
     "id": "CERN-2022-001",
@@ -1314,14 +1436,15 @@
     "URL": "https://cds.cern.ch/record/2705370"
   },
   {
-    "id": "cernacceleratorschool__2024__home",
+    "id": "cernacceleratorschool__2024__cern",
     "accessed": { "date-parts": [["2024", 4, 27]] },
     "author": [{ "literal": "CERN Accelerator School" }],
-    "citation-key": "cernacceleratorschool__2024__home",
+    "citation-key": "cernacceleratorschool__2024__cern",
+    "genre": "Homepage",
     "issued": { "date-parts": [["2024"]] },
-    "keyword": "",
+    "keyword": "#bf2035/topics/teaching",
     "language": "en",
-    "title": "Home | The CERN Accelerator School",
+    "title": "CERN Accelerator School",
     "type": "webpage",
     "URL": "https://cas.web.cern.ch/"
   },
@@ -1333,7 +1456,7 @@
     "event-place": "Geneva",
     "genre": "CERN-Brochure",
     "issued": { "date-parts": [["2017"]] },
-    "keyword": "bf2035:research-topics:energy-efficiency;#bf2035/projects/lhc",
+    "keyword": "#bf2035/projects/lhc;#bf2035/research-topics/sustainability",
     "number": "CERN-Brochure-2017-002-Eng",
     "publisher": "CERN",
     "publisher-place": "Geneva",
@@ -1355,7 +1478,7 @@
     "ISSN": "1063-7788, 1562-692X",
     "issue": "10",
     "issued": { "date-parts": [["2014", 10]] },
-    "keyword": "#bf2035/appliations",
+    "keyword": "#bf2035/applications",
     "language": "en",
     "page": "1203-1215",
     "source": "DOI.org (Crossref)",
@@ -1363,6 +1486,31 @@
     "type": "article-journal",
     "URL": "10.1134/S1063778814100032",
     "volume": "77"
+  },
+  {
+    "id": "colby_len__2017__roadmap",
+    "accessed": { "date-parts": [["2024", 6, 4]] },
+    "author": [
+      { "family": "Colby", "given": "Eric R." },
+      { "family": "Len", "given": "L. K." }
+    ],
+    "citation-key": "colby_len__2017__roadmap",
+    "container-author": [
+      { "family": "Chao", "given": "Alexander W" },
+      { "family": "Chou", "given": "Weiren" }
+    ],
+    "container-title": "Reviews of Accelerator Science and Technology",
+    "DOI": "10.1142/9789813209589_0001",
+    "ISBN": "978-981-320-957-2 978-981-320-958-9",
+    "issued": { "date-parts": [["2017", 4]] },
+    "keyword": "",
+    "language": "en",
+    "page": "1-18",
+    "publisher": "WORLD SCIENTIFIC",
+    "source": "DOI.org (Crossref)",
+    "title": "Roadmap to the Future",
+    "type": "chapter",
+    "URL": "http://www.worldscientific.com/doi/abs/10.1142/9789813209589_0001"
   },
   {
     "id": "dauria_thompson_etal__2021__conceptual",
@@ -1477,6 +1625,19 @@
     "URL": "https://dns-indikatoren.de/assets/Publikationen/Indikatorenberichte/2022.pdf"
   },
   {
+    "id": "desy__2024__desy",
+    "accessed": { "date-parts": [["2024", 5, 29]] },
+    "author": [{ "literal": "DESY" }],
+    "citation-key": "desy__2024__desy",
+    "genre": "Homepage",
+    "issued": { "date-parts": [["2024"]] },
+    "keyword": "#bf2035/topics/teaching",
+    "language": "en",
+    "title": "DESY International Summer Student Program 2024",
+    "type": "webpage",
+    "URL": "https://summerstudents.desy.de"
+  },
+  {
     "id": "doeacceleratorbeamphysicsroadmapworkshop__2023__accelerator",
     "accessed": { "date-parts": [["2024", 3, 22]] },
     "author": [{ "literal": "DOE Accelerator Beam Physics Roadmap Workshop" }],
@@ -1532,7 +1693,7 @@
     "ISSN": "1793-6268, 1793-8058",
     "issue": "01",
     "issued": { "date-parts": [["2019", 8]] },
-    "keyword": "#bf2035/appliations/industry",
+    "keyword": "#bf2035/applications/industry",
     "language": "en",
     "page": "93-116",
     "source": "DOI.org (Crossref)",
@@ -1626,7 +1787,7 @@
     ],
     "citation-key": "emma_vantilborg_etal__2022__snowmass",
     "issued": { "date-parts": [["2022"]] },
-    "keyword": "",
+    "keyword": "#bf2035/topics/teaching",
     "note": "4 citations (INSPIRE 2024/3/22)\n3 citations w/o self (INSPIRE 2024/3/22)",
     "title": "Snowmass 2021 accelerator frontier white paper: Near term applications driven by advanced accelerator concepts",
     "type": "document",
@@ -1643,8 +1804,21 @@
     "issued": { "date-parts": [["2021"]] },
     "keyword": "#bf2035/topics/teaching",
     "language": "de",
-    "title": "Entwicklung eines interdisziplinären englischsprachigen RMU-Masterstudiengangs „Accelerator Science“",
+    "publisher": "unpublished",
+    "title": "Entwicklung eines interdisziplinären englischsprachigen RMU-Masterstudiengangs \"Accelerator Science\"",
     "type": "document"
+  },
+  {
+    "id": "epg-ag__2016__statutes",
+    "accessed": { "date-parts": [["2024", 6, 4]] },
+    "author": [{ "literal": "EPG-AG" }],
+    "citation-key": "epg-ag__2016__statutes",
+    "issued": { "date-parts": [["2016", 3]] },
+    "keyword": "",
+    "language": "en",
+    "title": "Statutes of the European Physical Society Accelerator Group (eps-Ag)",
+    "type": "legislation",
+    "URL": "https://www.eps-ag.org/wp-content/uploads/2021/05/EPS-AG-Statutes-Rules_27032016_voted.pdf"
   },
   {
     "id": "erdman__2019__challenges",
@@ -1671,11 +1845,40 @@
     "URL": "https://www.esfri.eu/sites/default/files/ESFRI_Roadmap2021_Public_Guide_Public.pdf"
   },
   {
+    "id": "esiarchamps__2024__joint",
+    "abstract": "JUAS is an international graduate school designed for highly motivated scientists and engineers currently studying to complete a Master’s degree or preparing a doctoral thesis.",
+    "accessed": { "date-parts": [["2024", 6, 2]] },
+    "author": [{ "literal": "ESI Archamps" }],
+    "citation-key": "esiarchamps__2024__joint",
+    "container-title": "ESI Archamps",
+    "issued": { "date-parts": [["2024"]] },
+    "keyword": "#bf2035/topics/teaching",
+    "language": "en",
+    "title": "Joint Universities Accelerator School",
+    "type": "webpage",
+    "URL": "https://www.esi-archamps.eu/juas-presentation/"
+  },
+  {
+    "id": "ethelmendez__2012__evaluating",
+    "accessed": { "date-parts": [["2024", 6, 11]] },
+    "author": [{ "literal": "Ethel Méndez" }],
+    "citation-key": "ethelmendez__2012__evaluating",
+    "event-place": "CA",
+    "issued": { "date-parts": [["2012"]] },
+    "keyword": "#bf2035/topics/excellence",
+    "language": "en",
+    "publisher": "International Development Research Centre",
+    "publisher-place": "CA",
+    "title": "Evaluating Research Excellence: Main Debates",
+    "type": "report",
+    "URL": "https://idrc-crdi.ca/sites/default/files/2021-04/Brief-Final-English.pdf"
+  },
+  {
     "id": "eucard2__2017__eucard2",
     "author": [{ "literal": "EuCARD2" }],
     "citation-key": "eucard2__2017__eucard2",
     "issued": { "date-parts": [["2017", 6]] },
-    "keyword": "bf2035:impact:science;bf2035:impact:industry;bf2035:impact:security;impact;health;#collection/D./related-strategies",
+    "keyword": "bf2035:impact:science;bf2035:impact:industry;bf2035:impact:security;impact;#collection/D./related-strategies;#bf2035/applications/health",
     "language": "en",
     "publisher": "EuCard-2",
     "title": "EuCARD-2. Applications Of Particle Accelerators in Europe",
@@ -1690,7 +1893,7 @@
     "event-place": "Luxembourg",
     "ISBN": "978-92-894-9313-0",
     "issued": { "date-parts": [["2005"]] },
-    "keyword": "#werte;#laufbahnentwicklung",
+    "keyword": "#werte;#laufbahnentwicklung;#bf2035/topics/teaching",
     "language": "en",
     "note": "Read_Status: To Read\nRead_Status_Date: 2024-03-17T22:09:35.481Z",
     "number-of-pages": "64",
@@ -1756,6 +1959,17 @@
     "title-short": "Science, research and innovation performance of the EU",
     "type": "book",
     "URL": "https://data.europa.eu/doi/10.2777/427046"
+  },
+  {
+    "id": "europeansolarcommunity____esg",
+    "accessed": { "date-parts": [["2024", 6, 1]] },
+    "author": [{ "literal": "European Solar Community" }],
+    "citation-key": "europeansolarcommunity____esg",
+    "keyword": "",
+    "language": "en",
+    "title": "ESG Census",
+    "type": "webpage",
+    "URL": "https://www.est-east.eu/european-solar-physics-community"
   },
   {
     "id": "europeanstrategygroup__2020__2020",
@@ -1934,12 +2148,123 @@
     "volume": "93"
   },
   {
+    "id": "grest____european",
+    "accessed": { "date-parts": [["2024", 6, 13]] },
+    "author": [{ "literal": "GREST" }],
+    "citation-key": "grest____european",
+    "keyword": "",
+    "language": "en",
+    "publisher": "GREST",
+    "title": "European Solar Physics Community: Demographics & Research Interests",
+    "type": "report",
+    "URL": "https://www.est-east.eu/images/imagenesweb/solar/files/SolarCommunity-compressed.pdf"
+  },
+  {
+    "id": "gsi-fair_hgs-hire____international",
+    "accessed": { "date-parts": [["2024", 5, 29]] },
+    "author": [{ "literal": "GSI-FAIR" }, { "literal": "HGS-HIRe" }],
+    "citation-key": "gsi-fair_hgs-hire____international",
+    "keyword": "#bf2035/topics/teaching",
+    "language": "en",
+    "title": "International Summer Student Program at GSI-FAIR",
+    "type": "webpage",
+    "URL": "https://theory.gsi.de/stud-pro/"
+  },
+  {
+    "id": "gsihelmholtzzentrumfurschwerionenforschung_fair__2021__gsifair",
+    "accessed": { "date-parts": [["2024", 6, 4]] },
+    "author": [
+      { "literal": "GSI Helmholtzzentrum für Schwerionenforschung" },
+      { "literal": "FAIR" }
+    ],
+    "citation-key": "gsihelmholtzzentrumfurschwerionenforschung_fair__2021__gsifair",
+    "DOI": "10.15120/GSI-2022-00454",
+    "issued": { "date-parts": [["2021"]] },
+    "keyword": "",
+    "language": "en",
+    "page": "pages 165 p.",
+    "publisher": "GSI Helmholtzzentrum fuer Schwerionenforschung, GSI, Darmstadt",
+    "source": "DOI.org (Datacite)",
+    "title": "GSI-FAIR Scientific Report 2021",
+    "type": "report",
+    "URL": "https://repository.gsi.de/record/246255"
+  },
+  {
+    "id": "gsihelmholtzzentrumfurschwerionenforschung_fair__2023__gsifair",
+    "accessed": { "date-parts": [["2024", 6, 4]] },
+    "author": [
+      { "literal": "GSI Helmholtzzentrum für Schwerionenforschung" },
+      { "literal": "FAIR" }
+    ],
+    "citation-key": "gsihelmholtzzentrumfurschwerionenforschung_fair__2023__gsifair",
+    "DOI": "10.15120/GSI-2023-00462",
+    "issued": { "date-parts": [["2023"]] },
+    "keyword": "",
+    "language": "en",
+    "page": "pages 181 p.",
+    "publisher": "GSI Helmholtzzentrum fuer Schwerionenforschung, GSI, Darmstadt",
+    "source": "DOI.org (Datacite)",
+    "title": "GSI-FAIR Scientific Report 2022",
+    "type": "report",
+    "URL": "https://repository.gsi.de/record/338123"
+  },
+  {
+    "id": "gsihelmholtzzentrumfurschwerionenforschung_fair__2024__gsifair",
+    "accessed": { "date-parts": [["2024", 6, 4]] },
+    "author": [
+      { "literal": "GSI Helmholtzzentrum für Schwerionenforschung" },
+      { "literal": "FAIR" }
+    ],
+    "citation-key": "gsihelmholtzzentrumfurschwerionenforschung_fair__2024__gsifair",
+    "DOI": "10.15120/GSI-2024-00500",
+    "issued": { "date-parts": [["2024"]] },
+    "keyword": "",
+    "language": "en",
+    "page": "pages 184 p.",
+    "publisher": "GSI Helmholtzzentrum fuer Schwerionenforschung, GSI, Darmstadt",
+    "source": "DOI.org (Datacite)",
+    "title": "GSI-FAIR Scientific Report 2023",
+    "type": "report",
+    "URL": "https://repository.gsi.de/record/349887"
+  },
+  {
+    "id": "h_a_abderrahim_d_debruyn_etal__2019__myrrha",
+    "accessed": { "date-parts": [["2024", 6, 13]] },
+    "author": [
+      { "literal": "H.A. Abderrahim" },
+      { "literal": "D. De Bruyn" },
+      { "literal": "Marc Dierckx" },
+      { "literal": "Rafael Fernandez" },
+      { "literal": "Lucia Popescu" },
+      { "literal": "Marc Schyns" },
+      { "literal": "Alexey Stankovskiy" },
+      { "literal": "G. van den Eynde" },
+      { "literal": "Dirk Vandeplassche" }
+    ],
+    "citation-key": "h_a_abderrahim_d_debruyn_etal__2019__myrrha",
+    "container-title": "Izvestiya Wysshikh Uchebnykh Zawedeniy, Yadernaya Energetika",
+    "container-title-short": "YadEn",
+    "DOI": "10.26583/npe.2019.2.03",
+    "ISSN": "02043327",
+    "issue": "2",
+    "issued": { "date-parts": [["2019", 6]] },
+    "keyword": "#bf2035/facilities/myrrha;#bf2035/topics/transmutation",
+    "language": "en",
+    "page": "29-42",
+    "source": "DOI.org (Crossref)",
+    "title": "Myrrha accelerator driven system programme: recent progress and perspectives",
+    "title-short": "Myrrha accelerator driven system programme",
+    "type": "article-journal",
+    "URL": "https://nuclear-power-engineering.ru/en/article/2019/02/03/",
+    "volume": "2019"
+  },
+  {
     "id": "helmholtz__2020__helmholtz",
     "accessed": { "date-parts": [["2024", 1, 31]] },
     "author": [{ "literal": "Helmholtz" }],
     "citation-key": "helmholtz__2020__helmholtz",
     "issued": { "date-parts": [["2020", 6, 16]] },
-    "keyword": "#bf2035/topics/diversity",
+    "keyword": "#bf2035/topics/diversity;#bf2035/topics/teaching",
     "language": "en",
     "note": "Read_Status: To Read\nRead_Status_Date: 2024-03-17T21:59:43.991Z",
     "publisher": "Helmholtz Gemeinschaft",
@@ -1981,7 +2306,7 @@
     "author": [{ "literal": "Helmholtz Working Group Postdoc Guidelines" }],
     "citation-key": "helmholtzworkinggrouppostdocguidelines__2018__guidelines",
     "issued": { "date-parts": [["2018", 4, 16]] },
-    "keyword": "#laufbahnentwicklung",
+    "keyword": "#laufbahnentwicklung;#bf2035/topics/teaching",
     "language": "en",
     "note": "Read_Status: To Read\nRead_Status_Date: 2024-03-17T21:59:54.567Z",
     "publisher": "Helmholtz Gemeinschaft",
@@ -2043,6 +2368,47 @@
     "volume": "72"
   },
   {
+    "id": "hornbostel_moller__2015__exzellenzinitiative",
+    "author": [
+      { "family": "Hornbostel", "given": "Stefan" },
+      { "family": "Möller", "given": "Torger" }
+    ],
+    "citation-key": "hornbostel_moller__2015__exzellenzinitiative",
+    "collection-number": "2015,12",
+    "collection-title": "Wissenschaftspolitik im Dialog",
+    "contributor": [
+      { "literal": "Berlin-Brandenburgische Akademie der Wissenschaften" }
+    ],
+    "event-place": "Berlin",
+    "ISBN": "978-3-939818-60-1",
+    "issued": { "date-parts": [["2015"]] },
+    "keyword": "#bf2035/topics/excellence;#",
+    "language": "en",
+    "number-of-pages": "68",
+    "publisher": "Berlin-Brandenburgische Akademie der Wissenschaften",
+    "publisher-place": "Berlin",
+    "source": "K10plus ISBN",
+    "title": "Die Exzellenzinitiative und das deutsche Wissenschaftssystem: eine bibliometrische Wirkungsanalyse",
+    "title-short": "Die Exzellenzinitiative und das deutsche Wissenschaftssystem",
+    "type": "book"
+  },
+  {
+    "id": "humboldt-stiftung__2015__bibliometrics",
+    "accessed": { "date-parts": [["2024", 6, 12]] },
+    "author": [{ "family": "Humboldt-Stiftung", "given": "" }],
+    "citation-key": "humboldt-stiftung__2015__bibliometrics",
+    "event-place": "Berlin",
+    "genre": "Proceedings",
+    "issued": { "date-parts": [["2015", 5]] },
+    "keyword": "#bf2035/topics/excellence;#bf2035/topics/bibliometrics",
+    "language": "en",
+    "publisher": "Alexander von Humboldt Stiftung",
+    "publisher-place": "Berlin",
+    "title": "Beyond Bibliometrics – Identifying the Best",
+    "type": "report",
+    "URL": "https://www.humboldt-foundation.de/fileadmin/Entdecken/Organisation/International_Advisory_Board/2014_duzSpecial.pdf"
+  },
+  {
     "id": "hutton__2021__report",
     "author": [{ "family": "Hutton", "given": "Andrew" }],
     "citation-key": "hutton__2021__report",
@@ -2052,6 +2418,62 @@
     "source": "Zotero",
     "title": "Report from the ERL Roadmap Panel",
     "type": "report"
+  },
+  {
+    "id": "hzb__2020__highlights",
+    "author": [{ "literal": "HZB" }],
+    "citation-key": "hzb__2020__highlights",
+    "event-place": "Berlin",
+    "issued": { "date-parts": [["2020"]] },
+    "keyword": "",
+    "language": "en",
+    "page": "44",
+    "publisher": "HZB",
+    "publisher-place": "Berlin",
+    "title": "Highlights 2019/2020",
+    "type": "report"
+  },
+  {
+    "id": "hzb__2022__highlights",
+    "author": [{ "literal": "HZB" }],
+    "citation-key": "hzb__2022__highlights",
+    "event-place": "Berlin",
+    "issued": { "date-parts": [["2022"]] },
+    "keyword": "",
+    "language": "en",
+    "page": "36",
+    "publisher": "HZB",
+    "publisher-place": "Berlin",
+    "title": "Highlights 2021",
+    "type": "report"
+  },
+  {
+    "id": "hzb__2023__highlights",
+    "author": [{ "literal": "HZB" }],
+    "citation-key": "hzb__2023__highlights",
+    "event-place": "Berlin",
+    "issued": { "date-parts": [["2023"]] },
+    "keyword": "",
+    "language": "en",
+    "page": "36",
+    "publisher": "HZB",
+    "publisher-place": "Berlin",
+    "title": "Highlights 2022",
+    "type": "report"
+  },
+  {
+    "id": "hzb__2024__hzb",
+    "abstract": "Hands-on research experience for undergraduates: The HZB offers the eight-week summer student programme. Students from all over the world get the chance to work on their own research project in close cooperation with scientists. The programme affords students the rare opportunity to participate in the everyday work of our research teams at their laboratories or experimental areas located at the HZB-campuses in Berlin-Wannsee or Berlin-Adlershof.",
+    "accessed": { "date-parts": [["2024", 5, 29]] },
+    "author": [{ "literal": "HZB" }],
+    "citation-key": "hzb__2024__hzb",
+    "container-title": "HZB Website",
+    "issued": { "date-parts": [["2024"]] },
+    "keyword": "#bf2035/topics/teaching",
+    "language": "en",
+    "title": "HZB International Summer Student Programme",
+    "type": "webpage",
+    "URL": "https://www-intern.helmholtz-berlin.de/jobskarriere/schule-und-studium/summer-schools/sommerstudierende_en.html"
   },
   {
     "id": "hzdr__2017__ibc",
@@ -2293,7 +2715,7 @@
     "event-place": "Geneva",
     "genre": "Status Report",
     "issued": { "date-parts": [["2012"]] },
-    "keyword": "#collection/D./related-strategies",
+    "keyword": "#bf2035/topics/teaching;#collection/D./related-strategies",
     "language": "en",
     "publisher": "CERN",
     "publisher-place": "Geneva",
@@ -2333,6 +2755,25 @@
     "URL": "https://www.beschleunigerphysik.de/de/kfb/satzung/"
   },
   {
+    "id": "lalli_howey_etal__2019__dynamics",
+    "abstract": "This paper presents a novel methodology for defining and analyzing the dynamics of the collaboration networks of scientists working on general relativity from the mid-1920s-1970. During these four and a half decades the status of the theory underwent a radical transformation: from a marginal theory before the mid-1950s to a pillar of modern physics. To investigate this passage-known as the renaissance of general relativity-we used a definition of collaboration networks broader than the co-authorship relations retriev-able from online datasets. We constructed a multilayer network, in which each layer represents a different kind of collaboration. After having analyzed the evolution over time of specific parameters of the co-authorship network, we investigated the effects of adding one type of collaboration edge at a time, in a cumulative fashion, on the values of these parameters and on the topology of the collaboration network through time, including rapid shifts in the dynamic evolution of the largest component. This analysis provides robust quantitative evidence that a shift in the structure of the relativity collaboration network occurred between the late 1950s and the early 1960s, when a giant component started forming. We interpret this shift as the central social dynamic of the renaissance process and then identify its central actors. Our analysis disproves common explanations of the renaissance process. It shows that this phenomenon was not a consequence of astrophysical discoveries in the 1960s, nor was it a simple by-product of socioeconomic transformations in the physics landscape after World War II.",
+    "author": [
+      { "family": "Lalli", "given": "Roberto" },
+      { "family": "Howey", "given": "Riaz" },
+      { "family": "Wintergrün", "given": "Dirk" }
+    ],
+    "citation-key": "lalli_howey_etal__2019__dynamics",
+    "container-title": "Scientometrics",
+    "container-title-short": "Scientometrics",
+    "DOI": "10.1007/s11192-019-03327-1",
+    "issued": { "date-parts": [["2019", 12, 16]] },
+    "keyword": "#bf2035/topics/bibliometrics",
+    "source": "ResearchGate",
+    "title": "The dynamics of collaboration networks and the history of general relativity, 1925-1970",
+    "type": "article-journal",
+    "volume": "121"
+  },
+  {
     "id": "leaps__2022__european",
     "accessed": { "date-parts": [["2023", 11, 17]] },
     "author": [{ "literal": "Leaps" }],
@@ -2353,7 +2794,7 @@
     "event-place": "CERN",
     "event-title": "Workshop on Compact and Low-Consumption Magnet Design for Future Linear and Circular Colliders",
     "issued": { "date-parts": [["2014", 10, 9]] },
-    "keyword": "bf2035:research-topics:energy-efficiency;#bf2035/projects/lhc",
+    "keyword": "#bf2035/projects/lhc;#bf2035/research-topics/sustainability",
     "language": "en",
     "publisher-place": "CERN",
     "title": "Why are particle accelerators so inefficient?",
@@ -2404,6 +2845,24 @@
     "volume": "28"
   },
   {
+    "id": "moller_hornbostel__2023__long",
+    "abstract": "A pioneering collection of case studies on the global phenomenon of academic excellence initiatives and how they shape the performance of research universities.\nAcademic excellence initiatives (AEIs)—special government-sponsored programs to improve research universities—have provided billions of dollars to top universities and represent perhaps the most significant effort in the past half-century to jump-start academic research. The contributors to Academic Star Wars, superbly edited by Maria Yudkevich, Philip G. Altbach, and Jamil Salmi, analyze AEIs in nine European and Asian countries, including China, Japan, Malaysia, South Korea, Taiwan, Denmark, France, Germany, and Russia, and offer penetrating insights into the successes and problems of these initiatives, as well as into the broader system of higher education itself.\nAcademic Star Wars provides a comprehensive analysis of AEIs across the globe as it seeks to understand the impact of these programs on national higher ed systems. The contributors explore a host of topics, including how the idea of excellence varies across national systems; the lessons to be drawn from the most successful AEIs; the consequences of AEIs, both intended and unintended, for participating universities; and whether AEIs ensure a significant impact on the global standing of national higher education systems. Finally, the contributors offer policy recommendations for national decision-makers and university leaders, taking into account the variety of initial conditions of national higher education systems and the differences in AEI design, scope, and funding.",
+    "author": [
+      { "family": "Möller", "given": "Torger" },
+      { "family": "Hornbostel", "given": "Stefan" }
+    ],
+    "citation-key": "moller_hornbostel__2023__long",
+    "DOI": "10.7551/mitpress/14601.003.0012",
+    "ISBN": "978-0-262-37669-3",
+    "issued": { "date-parts": [["2023", 12, 5]] },
+    "keyword": "#bf2035/topics/excellence",
+    "page": "177-202",
+    "source": "ResearchGate",
+    "title": "The Long and Winding Road to Excellence: The German Case",
+    "title-short": "The Long and Winding Road to Excellence",
+    "type": "chapter"
+  },
+  {
     "id": "moller_schmidt_etal__2016__assessing",
     "abstract": "The German Excellence Initiative started in 2006 as a public funding program of crucial importance for German universities. Since this time, several studies on different aspects of the program have been conducted, but there have been no analyses using bibliometric methods to measure the direct effects of funding—which is apparently due to the fact that publications resulting from the funding program are not publicly and comprehensively documented. This paper uses the concept of highly cited publications to measure excellent research, and explores two methodological approaches in order to attribute highly cited publications to the Excellence Initiative. To this end, the paper focuses on publications produced by the clusters of excellence (CoEs). The clusters of excellence constitute only one of three funding lines, but receive 60 % of the total funding of the excellence program and form the core research units of the Excellence Initiative. The highly cited publications of the CoEs are identiﬁed via self-selected lists of publications in the CoE renewal proposals and via a funding acknowledgement analysis. The validity of both data sources is analyzed comparatively. Based on the objectives of the Excellence Initiative, its effects on the level of funded clusters, universities and the overall German research system are explored. The bibliometric analysis gives evidence that the funding program has succeeded in concentrating excellent research and fostering collaborations between universities and the non-university research sector, but has not caused massive changes to the overall German research system.",
     "accessed": { "date-parts": [["2024", 1, 4]] },
@@ -2419,7 +2878,7 @@
     "ISSN": "0138-9130, 1588-2861",
     "issue": "3",
     "issued": { "date-parts": [["2016", 12]] },
-    "keyword": "#collection/D./excellence",
+    "keyword": "#bf2035/topics/excellence",
     "language": "en",
     "note": "30 citations (Crossref) [2024-01-04]",
     "page": "2217-2239",
@@ -2428,6 +2887,15 @@
     "type": "article-journal",
     "URL": "http://link.springer.com/10.1007/s11192-016-2090-3",
     "volume": "109"
+  },
+  {
+    "id": "muller____thzdiagkodiagneodyn",
+    "author": [{ "family": "Müller", "given": "Anke-Susanne" }],
+    "citation-key": "muller____thzdiagkodiagneodyn",
+    "keyword": "",
+    "language": "en",
+    "title": "THzDiag-KoDiag-Neodyn",
+    "type": "document"
   },
   {
     "id": "nagaitsev_huang_etal__2021__accelerator",
@@ -2493,6 +2961,22 @@
     "URL": "https://www.oecd-ilibrary.org/science-and-technology/measuring-the-digital-transformation_9789264311992-en"
   },
   {
+    "id": "olechnicka_ploszaj_etal__2018__geography",
+    "abstract": "Science is increasingly defined by multidimensional collaborative networks. Despite the unprecedented growth of scientific collaboration around the globe—the collaborative turn—geography still matters for the cognitive enterprise. The spatial location and distance between scholars and research organisations affect their likelihood to collaborate and to achieve results that expand the knowledge frontier. At the same time, the developmental prospects of cities, regions, and countries result from, and depend on, their place in the global network of research collaboration.\n\nThis book explores how geography conditions scientific collaboration and how collaboration affects the spatiality of science. Addressing these questions requires the reconstruction of historical developments that led to the collaborative turn in science, the examination of mutual relations between science and places, and the analysis of spatial patterns of research collaboration at various levels: from individual to global. By combining a vast array of approaches, concepts, and methodologies, the volume offers a comprehensive theoretical framework for the geography of scientific collaboration.\n\nThe momentous role of collaboration for contemporary science implies that understanding the processes and patterns of research collaboration is now essential, not only for scholars interested in science studies, but also for policymakers and managers of research organisations. Those more practically oriented readers may be particularly attracted by the case studies of scientific collaboration policies from the European Union, the United States, and China, as well as the catalogue of tools for scientific collaboration policy.",
+    "author": [
+      { "family": "Olechnicka", "given": "Agnieszka" },
+      { "family": "Ploszaj", "given": "Adam" },
+      { "family": "Celińska-Janowicz", "given": "Dorota" }
+    ],
+    "citation-key": "olechnicka_ploszaj_etal__2018__geography",
+    "ISBN": "978-1-138-20333-4",
+    "issued": { "date-parts": [["2018", 10, 22]] },
+    "keyword": "#bf2035/topics/bibliometrics",
+    "source": "ResearchGate",
+    "title": "The Geography of Scientific Collaboration",
+    "type": "book"
+  },
+  {
     "id": "organisationforeconomicco-operationanddevelopment__2014__promoting",
     "abstract": "National research systems face an increasingly competitive environment for ideas, talent and funds, and governments have shifted funds from institutional core funding to project funding, often on a competitive basis, or reward success in raising third-party funds in performance-based funding schemes. It is in this context that \"research excellence initiatives\" (REIs) have emerged. This is an instrument designed to encourage outstanding research by providing large-scale, long-term funding to designated research units. They provide funds for research and research-related measures, such as the improvement or extension of physical infrastructure, the recruitment of outstanding researchers from abroad and researcher training. This report presents new evidence on how governments steer and fund public research in higher education and public research institutions through REIs. The report can help inform discussions on future government policy directions by providing information on how REIs work and on the functioning and characteristics of institutions that host centres of excellence. The findings show some of the benefits to be gained through REIs and note some pitfalls to be avoided",
     "call-number": "Q180.55.F5 P76 2014",
@@ -2550,7 +3034,7 @@
     "citation-key": "particletherapyco-operativegroup__2020__particle",
     "container-title": "www.ptcog.ch",
     "issued": { "date-parts": [["2020", 2]] },
-    "keyword": "impact:health",
+    "keyword": "#bf2035/applications/health",
     "language": "en",
     "title": "Particle therapy facilities in clinical operation",
     "type": "webpage",
@@ -2626,37 +3110,6 @@
     "URL": "https://bib-pubdb1.desy.de/record/597326"
   },
   {
-    "id": "philipburrowswpleader_francoiskircher_etal__2013__needs",
-    "author": [
-      { "literal": "Philip Burrows (WP leader)" },
-      { "literal": "François Kircher" },
-      { "literal": "Roger Bailey" },
-      { "literal": "M. Luisa Marco Arboli" },
-      { "literal": "Catherine Clerc" },
-      { "literal": "Alex C. Mueller" },
-      { "literal": "Leonid Rivkin" },
-      { "literal": "Sabrina Appel" },
-      { "literal": "Oliver Boine-Frankenheim" },
-      { "literal": "Francesca Galluccio" },
-      { "literal": "Vittorio Vaccaro" },
-      { "literal": "Piotr Malecki" },
-      { "literal": "Søren Pape Møller" },
-      { "literal": "Ole Petter Nordahl" },
-      { "literal": "Steinar Stapnes" },
-      { "literal": "Burrows, P." }
-    ],
-    "citation-key": "philipburrowswpleader_francoiskircher_etal__2013__needs",
-    "genre": "Status Report",
-    "issued": { "date-parts": [["2013", 2, 28]] },
-    "keyword": "",
-    "language": "en-US",
-    "note": "https://web.archive.org/web/20220123043700/https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf",
-    "number": "TIARA-REP-WP5-2013-005",
-    "title": "Needs for Accelerator Scientists Report",
-    "type": "report",
-    "URL": "https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf"
-  },
-  {
     "id": "projekttragerdesy__2022__infrastrukturen",
     "abstract": "Auf dieser Website stellen wir Ihnen Großforschungsanlagen aus aller Welt zur Erforschung von Teilchen, Materie und Universum vor, die mit deutscher Beteiligung betrieben werden oder sich in Planung befinden.",
     "accessed": { "date-parts": [["2022", 7, 16]] },
@@ -2725,7 +3178,7 @@
     "DOI": "10.24425/ijet.2022.141285",
     "ISSN": "2300-1933",
     "issued": { "date-parts": [["2022", 4, 27]] },
-    "keyword": "#collection/D./related-strategies",
+    "keyword": "#collection/D./related-strategies;#bf2035/funding/eu/horizon2020",
     "language": "en",
     "note": "0 citations (Crossref/DOI) [2024-03-17]",
     "page": "647-653",
@@ -2796,6 +3249,30 @@
     "type": "article-journal",
     "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0168900218314074",
     "volume": "936"
+  },
+  {
+    "id": "sanders_stenkula_etal__2020__reform",
+    "abstract": "In this chapter, we outline a reform strategy to promote a more entrepreneurial society in Germany. Germany has developed a successful model of capitalism in which high productivity growth is driven by on-the-job learning and firm-specific skill accumulation. The economy is rooted in a strong and regionally embedded Mittelstand, which supports an export-oriented industry mainly based on incremental innovations, but which is less conducive to more radical innovation. We, therefore, suggest a reform agenda for Germany that encourages more entrepreneurial experimentation with the aim of facilitating radical innovation, both in incumbent and new firms. Germany’s entrepreneurial talent should be encouraged to take on more risk, the education system could promote initiative, creativity and a willingness to experiment, and a more equal playing field between dependent employment and self-employment/employer could be created.",
+    "author": [
+      { "family": "Sanders", "given": "Mark" },
+      { "family": "Stenkula", "given": "Mikael" },
+      { "family": "Fritsch", "given": "Michael" },
+      { "family": "Herrmann", "given": "Andrea" },
+      { "family": "Latifi", "given": "Gresa" },
+      { "family": "Páger", "given": "Balázs" },
+      { "family": "Szerb", "given": "László" },
+      { "family": "Terragno", "given": "Elisa" },
+      { "family": "Wyrwich", "given": "Michael" }
+    ],
+    "citation-key": "sanders_stenkula_etal__2020__reform",
+    "DOI": "10.1007/978-3-662-61007-7_7",
+    "ISBN": "978-3-662-61006-0",
+    "issued": { "date-parts": [["2020", 4, 4]] },
+    "keyword": "#bf2035/topics/entrepreneurship",
+    "page": "163-202",
+    "source": "ResearchGate",
+    "title": "A Reform Strategy for Germany",
+    "type": "chapter"
   },
   {
     "id": "shiltsev__2015__crystal",
@@ -2996,7 +3473,7 @@
     "collection-editor": [{ "family": "Szeberenyi", "given": "A." }],
     "event-place": "Geneva",
     "issued": { "date-parts": [["2013", 11, 1]] },
-    "keyword": "#bf2035/funders/europe;#collection/D./related-strategies",
+    "keyword": "#collection/D./related-strategies;#bf2035/funding/eu/fp7",
     "page": "115",
     "publisher": "CERN",
     "publisher-place": "Geneva",
@@ -8581,6 +9058,89 @@
     "source": "Zotero",
     "title": "2024 International Topical Meeting on Nuclear Applications of Accelerators",
     "type": "document"
+  },
+  {
+    "id": "vano__2023__collapse",
+    "abstract": "ASTRO, the world's premier radiation oncology conference, was held in San Diego, California last week.  One the second day of the ...",
+    "accessed": { "date-parts": [["2024", 6, 6]] },
+    "author": [{ "family": "Vano", "given": "John" }],
+    "citation-key": "vano__2023__collapse",
+    "container-title": "Radiology Oncology Systems",
+    "issued": { "date-parts": [["2023", 10, 13]] },
+    "keyword": "",
+    "language": "en",
+    "title": "The Collapse of ViewRay",
+    "type": "post-weblog",
+    "URL": "https://www.oncologysystems.com/blog/the-collapse-of-viewray"
+  },
+  {
+    "id": "varian__2019__varian",
+    "accessed": { "date-parts": [["2024", 6, 6]] },
+    "author": [{ "literal": "Varian" }],
+    "citation-key": "varian__2019__varian",
+    "issued": { "date-parts": [["2019"]] },
+    "keyword": "",
+    "language": "en",
+    "publisher": "Varian Medical Systems",
+    "title": "Varian EDGE",
+    "type": "document",
+    "URL": "https://varian.widen.net/s/7rxbczh7tp/edge_brochure_rad10621_may2019"
+  },
+  {
+    "id": "varian__2020__probeam",
+    "accessed": { "date-parts": [["2024", 6, 6]] },
+    "author": [{ "literal": "Varian" }],
+    "citation-key": "varian__2020__probeam",
+    "issued": { "date-parts": [["2020", 1]] },
+    "keyword": "",
+    "language": "en",
+    "publisher": "Varian Medical Systems",
+    "title": "ProBeam Brochure",
+    "type": "document",
+    "URL": "https://varian.widen.net/view/pdf/afdgjwofxr/ProBeam_Brochure_RAD10319B_Jan2020.pdf?u=fu64nb"
+  },
+  {
+    "id": "varian__2022__varian",
+    "accessed": { "date-parts": [["2024", 6, 6]] },
+    "author": [{ "literal": "Varian" }],
+    "citation-key": "varian__2022__varian",
+    "issued": { "date-parts": [["2022", 5]] },
+    "keyword": "",
+    "language": "en",
+    "publisher": "Varian Medical Systems",
+    "title": "Varian TrueBeam",
+    "type": "document",
+    "URL": "https://varian.widen.net/s/7kc2jwlv7p/truebeam_brochure_rad10452a_may2022"
+  },
+  {
+    "id": "vincini_zaffaroni_etal__2023__more",
+    "abstract": "Simple Summary\nThe therapeutic potential of proton therapy (PT) was first recognized in 1946 by Robert Wilson, and nowadays, over 100 proton centers are in operation worldwide, and more than 60 are under construction or planned. Bibliometrics allows us to assess the growth and development of the field and provides an overview of the most relevant sources, authors, and institutions in the chosen field. Additionally, keyword analysis can be performed to provide details that could aid in identifying research trends and hot topics. Indeed, bibliometrics allows for identifying the basic and dominant themes and trends, as well as those emerging or declining. The aim of this study is to provide a comprehensive bibliometric analysis of the current status and trends in scientific literature in the PT field. The analysis will give an overview of past scientific production and, most importantly, provide a useful point of view on the future directions of the research activities.\n\nAbstract\nBackground: The therapeutic potential of proton therapy (PT) was first recognized in 1946 by Robert Wilson, and nowadays, over 100 proton centers are in operation worldwide, and more than 60 are under construction or planned. Bibliometric data can be used to perform a structured analysis of large amounts of scientific data to provide new insights, e.g., to assess the growth and development of the field and to identify research trends and hot topics. The aim of this study is to provide a comprehensive bibliometric analysis of the current status and trends in scientific literature in the PT field. Methods: The literature on PT until the 31st December 2022 in the Scopus database was searched, including the following keywords: proton AND radiotherapy AND cancer/tumor in title, abstract, and/or keywords. The open-source R Studio’s Bibliometrix package and Biblioshiny software (version 2.0) were used to perform the analysis. Results: A total of 7335 documents, mainly articles (n = 4794, 65%) and reviews (n = 1527, 21%), were collected from 1946 to 2022 from 1054 sources and 21,696 authors. Of these, roughly 84% (n = 6167) were produced in the last 15 years (2008–2022), in which the mean annual growth rate was 13%. Considering the corresponding author’s country, 79 countries contributed to the literature; the USA was the top contributor, with 2765 (38%) documents, of whom 84% were single-country publications (SCP), followed by Germany and Japan, with 535 and 531 documents of whom 66% and 93% were SCP. Considering the themes subanalysis (2002–2022), a total of 7192 documents were analyzed; among all keywords used by authors, the top three were radiotherapy (n = 1394, 21% of documents), intensity-modulated radiotherapy (n = 301, 5%), and prostate cancer (n = 301, 5%). Among disease types, prostate cancer is followed by chordoma, head and neck, and breast cancer. The change in trend themes demonstrated the fast evolution of hotspots in PT; among the most recent trends, the appearance of flash, radiomics, relative biological effectiveness (RBE), and linear energy transfer (LET) deserve to be highlighted. Conclusions: The results of the present bibliometric analysis showed that PT is an active and rapidly increasing field of research. Themes of the published works encompass the main aspects of its application in clinical practice, such as the comparison with the actual photon-based standard of care technique and the continuing technological advances. This analysis gives an overview of past scientific production and, most importantly, provides a useful point of view on the future directions of the research activities.",
+    "author": [
+      { "family": "Vincini", "given": "Maria Giulia" },
+      { "family": "Zaffaroni", "given": "Mattia" },
+      { "family": "Schwarz", "given": "Marco" },
+      { "family": "Marvaso", "given": "Giulia" },
+      { "family": "Mastroleo", "given": "Federico" },
+      { "family": "Volpe", "given": "Stefania" },
+      { "family": "Bergamaschi", "given": "Luca" },
+      { "family": "Mazzola", "given": "Giovanni" },
+      { "family": "Corrao", "given": "Giulia" },
+      { "family": "Orecchia", "given": "Roberto" },
+      { "family": "Jereczek-Fossa", "given": "Barbara" },
+      { "family": "Alterio", "given": "Daniela" }
+    ],
+    "citation-key": "vincini_zaffaroni_etal__2023__more",
+    "container-title": "Cancers",
+    "container-title-short": "Cancers",
+    "DOI": "10.3390/cancers15235545",
+    "issued": { "date-parts": [["2023", 11, 23]] },
+    "keyword": "#bf2035/topics/bibliometrics",
+    "page": "5545",
+    "source": "ResearchGate",
+    "title": "More than Five Decades of Proton Therapy: A Bibliometric Overview of the Scientific Literature",
+    "title-short": "More than Five Decades of Proton Therapy",
+    "type": "article-journal",
+    "volume": "15"
   },
   {
     "id": "westphalen__2020__konkurrenz",

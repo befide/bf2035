@@ -8,7 +8,7 @@ cslItem:
     date-parts:
       - - "2022"
         - 6
-  keyword: "#collection/D./excellence;#bf2035/funding/bmbf"
+  keyword: "#bf2035/topics/innovation;#bf2035/funding/bmbf"
   language: en
   source: Zotero
   title: >-
@@ -17,6 +17,7 @@ cslItem:
   type: report
   URL: https://www.datenportal.bmbf.de/portal/de/bufi.html
 tags:
+  - "#bf2035/topics/innovation"
   - "#bf2035/funding/bmbf"
 rendered:
   bibliography: |-
