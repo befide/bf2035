@@ -1,4 +1,5 @@
 import { z, defineCollection, reference } from "astro:content"
+import spaceCommander from "@utils/space-commander";
 
 const tags = z.array(z.string()).optional()
 
@@ -13,7 +14,7 @@ const sectionCollection = defineCollection({
   schema: ({ image }) =>
     z
       .object({
-        abstract: z.string().optional(),
+        abstract: z.string().optional().transform((str) => new Date(str)),
         lang: z.string().optional(),
         backgroundImageSrc: image().optional(),
         bibliography: z.string().optional(),
@@ -28,44 +29,17 @@ const sectionCollection = defineCollection({
         sectionNumber: z.string().optional(),
         description: z.string().optional(),
         template: z.string().optional(),
-        subtitle: z.string().optional(),
-        supertitle: z.string().optional(),
+        subtitle: z.string().optional().transform((str) => spaceCommander(str)),
+        supertitle: z.string().optional().transform((str) => spaceCommander(str)),
         tags,
         title__toc: z.string().optional(),
-        title: z.string(),
+        title: z.string().transform((str) => spaceCommander(str)),
         tocIcon: z.string().optional(),
         virtual: z.boolean().optional(),
       })
       .strict(),
 })
 
-const causalMapNodeCollection = defineCollection({
-  schema: () =>
-    z
-      .object({
-        title: z.string(),
-        title_short: z.string().optional(),
-        description: z.string().optional(),
-        sigel: z.string().optional(),
-        i_x: z.number().optional(),
-        i_y: z.number().optional(),
-        v3_x: z.number().optional(),
-        v3_y: z.number().optional(),
-        cluster: z.string().optional(),
-        parent: reference("causal-map-nodes").optional(),
-
-        type: z.string(),
-
-        influences_positively: z
-          .array(reference("causal-map-nodes"))
-          .optional(),
-        influences_positively2: z.array(z.string()).optional(),
-        influences_negatively: z
-          .array(reference("causal-map-nodes"))
-          .optional(),
-      })
-      .strict(),
-})
 
 const referenceCollection = defineCollection({
   // type: 'data',
@@ -249,5 +223,5 @@ const referenceCollection = defineCollection({
 export const collections = {
   sections: sectionCollection,
   references: referenceCollection,
-  "causal-map-nodes": causalMapNodeCollection,
+
 }
