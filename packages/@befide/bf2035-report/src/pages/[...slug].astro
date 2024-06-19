@@ -2,14 +2,14 @@
 import { getCollection } from "astro:content";
 import SectionLayout from "@layouts/Section.astro";
 import PartLayout from "@layouts/Part.astro";
-import { getPath } from "@utils/getSections";
+import { getSlug } from "@utils/getSections";
 import Layout from "@layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const sections = await getCollection("sections");
 
   const paths = sections.map((section) => ({
-    params: { slug: getPath(section) },
+    params: { slug: getSlug(section) },
     props: { section },
   }));
 
@@ -20,7 +20,7 @@ const { section } = Astro.props;
 
 const {
   title,
-  pageType,
+  sectionType,
   lang
 } = section.data;
 
@@ -28,12 +28,12 @@ const {
 <Layout {lang} {title}>
 
 {
-  (pageType === "part" || pageType === "cover") && (
+  (sectionType === "part" || sectionType === "cover") && (
     <PartLayout section={section} />
   )
 }
 {
-  !(pageType === "part" || pageType === "cover") && (
+  !(sectionType === "part" || sectionType === "cover") && (
     <SectionLayout section={section} />
   )
 }
