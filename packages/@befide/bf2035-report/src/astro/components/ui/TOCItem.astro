@@ -1,81 +1,100 @@
 ---
-import { getPath } from "@utils/getSections";
+import { getPath, getSlug } from "@utils/getSections";
 import type { SectionTreeNode } from "@utils/getSections";
 
 export type Props = {
   node: SectionTreeNode;
 };
 
-const { node: tocIten } = Astro.props;
+
+
+const { node: tocItem } = Astro.props;
+
+
+
 ---
 
-
-<li class={`sitemap-node depth-${tocIten.depth}`}>
+<li
+  class={`toc-item depth-${tocItem.depth}`}
+  data-path={getSlug(tocItem.data)}
+>
   {
-    (
-      <a href={getPath(tocIten.data)}>
+    (!tocItem.data?.data?.excludeFromToc &&
+      <a href={getPath(tocItem.data)}>
         <span class="section-number">
-          {tocIten.data && tocIten.data?.data.sectionNumber}
+          {tocItem.data && tocItem.data?.data.sectionNumber}
         </span>
         <span class="section-title">
-          {tocIten.data && tocIten.data.data.title}
+          {tocItem.data && tocItem.data?.data.title}
         </span>
       </a>
     )
   }
-  <ul>
-    {tocIten.children?.map((child) => <Astro.self node={child} />)}
+  <ul class={`toc-items depth-${tocItem.depth + 1}`} data-path={"xxx" + getSlug(tocItem.data)}>
+    {tocItem.children?.map((child) => <Astro.self node={child} />)}
   </ul>
+
 </li>
 
 <style lang="stylus" is:global>
-  ul.md li:before  
+  li.toc-item:before  
     content: " "
     display none;
-  li a
-    padding-left: 6rem;
-    // display: inline-block;   
-    // position: relative;
+  // li a
+  //   padding-left: 1rem;
+  //   // display: inline-block;   
+  //   // position: relative;
   
-  .section-number 
-    opacity: .5;
-    position: absolute;
-    left: 0rem;
-    width: 5rem;
-    text-align: left;
-    display block
-    background-color: red;
+  
+  li  > a
+    display: flex;   
+    // flex-direction row
+    gap 1rem
+    width: 16rem
     
-  
-  
-  #toc-item__01--mainmatter > ul {
-    display: flex;
-    gap: 1rem;
-  }
-  #toc-item__01--mainmatter > ul > li {
-    flex: 1;
-  }
+    
+    span 
+      display inline-block
+      $baselined-typography(body-sm);
 
-  li.depth-0 > a {
-    text-transform: uppercase;
-    font-weight: var(--font-weight--bold);
-    color: red;
-    }
+
+  .section-number 
+    flex: 0 0 3rem;
+    // flex-direction row
+    text-align: right;
     
-   li.depth-1> a {
-    text-transform: uppercase;
-    font-weight: var(--font-weight--bold);
-    }
-    li.depth-2> a {
-      padding-left: 7rem;
-    font-weight: var(--font-weight--bold);
-    }
-  li.depth-3 > a {
-    padding-left: 7rem;
-    font-weight: 400
-    }
-  li.depth-4 > a {
-    padding-left: 8rem;
-    font-weight: 200;
-    }
+  .depth-2 span
+    $baselined-typography(body-lg);
+    
+  .depth-3 span
+    $baselined-typography(body-md);
+  .depth-4 span
+    $baselined-typography(body-md);
+  
+  [id*='mainmatter'].toc-item.depth-2
+    margin-bottom: 1rem;
+    
+  .section-title
+    flex: 0 0  20rem
+    
+  .depth-2 .section-title
+    $bold()
+    text-transform uppercase
+  
+  .depth-3 .section-title
+    $bold()
+    text-transform none
+  
+  .depth-4 .section-title, [id*='frontmatter'].depth-2 .section-title
+      $regular()
+      text-transform none
+
+  [id*='mainmatter'].toc-items.depth-3
+    display flex
+    flex-direction column
+  [id*='mainmatter'].toc-items.depth-4
+    flex-direction column
+
+
+
 </style>

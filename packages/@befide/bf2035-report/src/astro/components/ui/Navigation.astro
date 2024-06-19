@@ -8,48 +8,69 @@ const path = ("/" + slug + "/").replaceAll("//", "/");
 const { prev, next, home } = await getPrevNext(path);
 ---
 
-<footer>
-  <!-- <Breadcrumbs /> -->
-  <div class="flex-1"></div>
+<nav class="linear-navigation">
+  {
+    home && (
+      <a id="navigation__home" href={getPath(home)} class="home">
+        <span class="visually-hidden">Home</span>
+      </a>
+    )
+  }
+  {
+    prev && (
+      <a id="navigation__prev" href={getPath(prev)} class="prev">
+        <span class="visually-hidden">zurück</span>
+      </a>
+    )
+  }
+  {
+    next && (
+      <a id="navigation__next" class="next" href={getPath(next)}>
+        <span class="visually-hidden">vor</span>
+      </a>
+    )
+  }
+</nav>
+<script is:inline>
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.code === "KeyN") {
+      document.getElementById("navigation__next")?.click();
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === "KeyH") {
+      document.getElementById("navigation__home")?.click();
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === "KeyN") {
+      document.getElementById("navigation__prev")?.click();
+    }
+  });
+</script>
 
-  <nav class="">
-    {
-      home && (
-        <a id="navigation__home" href={getPath(home)} class="">
-          Home
-        </a>
-      )
-    }
-    {
-      prev && (
-        <a id="navigation__prev" href={getPath(prev)} class="">
-          Zurück
-        </a>
-      )
-    }
-    {
-      next && (
-        <a id="navigation__next" href={getPath(next)} class="">
-          Vor
-        </a>
-      )
-    }
-  </nav>
-  <script is:inline>
-    document.addEventListener("keydown", function (e) {
-      if (e.ctrlKey && e.code === "KeyN") {
-        document.getElementById("navigation__next")?.click();
-      }
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.ctrlKey && e.shiftKey && e.code === "KeyH") {
-        document.getElementById("navigation__home")?.click();
-      }
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.ctrlKey && e.shiftKey && e.code === "KeyN") {
-        document.getElementById("navigation__prev")?.click();
-      }
-    });
-  </script>
-</footer>
+<style lang="stylus">
+.linear-navigation {
+  display flex; 
+}
+.linear-navigation a {
+  display inline-block
+  padding: var(--ui__baseline-height);
+  width: calc(4* var(--ui__baseline-height))
+  background-size: calc(2 * var(--ui__baseline-height))
+  background-position: center
+  background-repeat: no-repeat
+}
+
+.home {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhvbWUiPjxwYXRoIGQ9Im0zIDkgOS03IDkgN3YxMWEyIDIgMCAwIDEtMiAySDVhMiAyIDAgMCAxLTItMnoiLz48cG9seWxpbmUgcG9pbnRzPSI5IDIyIDkgMTIgMTUgMTIgMTUgMjIiLz48L3N2Zz4=")}
+
+.prev {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tbGVmdCI+PHBhdGggZD0ibTE1IDE4LTYtNiA2LTYiLz48L3N2Zz4=")
+  
+}
+.next {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tcmlnaHQiPjxwYXRoIGQ9Im05IDE4IDYtNi02LTYiLz48L3N2Zz4=")
+}
+
+</style>

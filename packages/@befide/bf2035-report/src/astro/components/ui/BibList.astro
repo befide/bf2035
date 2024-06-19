@@ -1,19 +1,14 @@
 ---
 import { getReferences } from "@utils/getReferences";
 import BibItem from "./BibItem.astro";
-// import { reference } from "astro:content";
 
 export interface Props {
   title?: string;
-  collection?: string;
+  tag?: string;
 }
-const { collection, title } = Astro.props;
+const { tag, title } = Astro.props;
 
-const scopedTag = collection
-  ? { scope: "collection", value: collection }
-  : null;
-
-const references = await getReferences(scopedTag);
+const references = await getReferences(tag);
 ---
 
 {title && <h3 class="md">{title}</h3>}
@@ -24,10 +19,3 @@ const references = await getReferences(scopedTag);
     ))
   }
 </ul>
-
-<style lang="stylus" is:global>
-  ul.bib-list {
-    columns: 2;
-  }
-  
-  </style>

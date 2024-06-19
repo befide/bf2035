@@ -3,7 +3,7 @@ import { getEntry } from "astro:content";
 
 export interface Props {
   citeKey: string;
-  locator: string;
+  locator?: string;
 }
 const { citeKey, locator } = Astro.props;
 

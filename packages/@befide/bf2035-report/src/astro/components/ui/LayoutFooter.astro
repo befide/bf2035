@@ -13,20 +13,27 @@ const currentYear = new Date().getFullYear();
     <span class="separator">&nbsp;|&nbsp;</span>
     <span>All rights reserved.</span>
   </p>
-  <div class="flex-1"></div>
-
-  <SettingsThemeToggle />
-  <SettingsPrintPreviewToggle />
-  <SettingsDebugToggle />
-  <SettingsFitSpreadToggle />
+  <div class="toggles">
+    <SettingsPrintPreviewToggle />
+    <SettingsThemeToggle />
+    <SettingsDebugToggle />
+    <SettingsFitSpreadToggle />
+  </div>
 </footer>
 
 <style lang="stylus">
-  footer {
-    display: flex;
-  }
-  .copyright-wrapper {
-    $baselined-typography(ui-sm);
+  .layout__footer 
+    display flex
+    align-items space-between
 
+  .toggles
+    flex 1 1 100%
+    display flex
+    align-items space-between
+  .copyright-wrapper {
+    font-size var(--ui__font-size--md)
+    padding: var(--ui__baseline-height);
+    line-height:  var(--ui__baseline-height);
+    white-space: nowrap
   }
 </style>

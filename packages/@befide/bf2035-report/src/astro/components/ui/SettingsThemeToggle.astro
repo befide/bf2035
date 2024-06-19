@@ -1,13 +1,11 @@
-<div class="toggle">
-  <label>
-    <span class="label">Farbschmema</span>
-    <select id="toggle__theme">
-      <option value="system">System</option>
-      <option value="dark">Dark</option>
-      <option value="light">Light</option>
-    </select>
-  </label>
-</div>
+<label class="toggle">
+  <span class="label-text">Farbschmema</span>
+  <select id="toggle__theme">
+    <option value="system">System</option>
+    <option value="dark">Dark</option>
+    <option value="light">Light</option>
+  </select>
+</label>
 
 <script>
   import { updateDocumentSettings, toggleTheme } from "@utils/settingsStore.js";
