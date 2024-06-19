@@ -4,7 +4,7 @@ import { rollup, rollups, sum } from "d3-array";
 import teachings from "./teaching.json";
 import professorships from "./professorships.json";
 
-const teachingsByUniversities = rollup(
+const teachingsByUniversities = rollups(
   teachings,
   (v) => ({
     entries: v,
@@ -16,19 +16,13 @@ const teachingsByUniversities = rollup(
     exercises__sws: sum(v, (d) => d.lab__sws + d.exercises__sws),
     seminar__sws: sum(v, (d) => d.seminar__sws),
   }),
-  (d) => d.university,
+  (d) => d["link:university"],
 );
 
-const professorshipsByUniversities = rollups(
-  professorships,
-  (v) => ({
-    entries: v,
-    professorships: v.length,
-    professorships_m: v.filter((d) => d.gender === "m").length,
-    professorships_f: v.filter((d) => d.gender === "w").length,
-  }),
-  (d) => d["link:university"],
-).sort((a, b) => a[0].localeCompare(b[0]));
+
+
+
+
 
 function fachbereich(university: string) {
   const dir = new Map<string, string[]>();
@@ -52,19 +46,17 @@ function fachbereich(university: string) {
 
 <table class="md">
   <thead>
+
     <tr>
       <!-- <th class="md sm"></th> -->
       <th class="md sm">
         <div>Hochschule</div>
       </th>
       <th class="md sm right">
-        <div>Professoren (davon w)</div>
+        <div>SWS&nbsp;SS24</div>
       </th>
       <th class="md sm right">
-        <div>SWS SS24</div>
-      </th>
-      <th class="md sm right">
-        <div>SWS WS23</div>
+        <div>SWS&nbsp;WS24</div>
       </th>
       <th class="md sm">
         <div>Fachbereich</div>
@@ -73,7 +65,7 @@ function fachbereich(university: string) {
   </thead>
   <tbody>
     {
-      professorshipsByUniversities.map(([k, v]) => (
+      teachingsByUniversities.map(([k, v]) => (
         <tr class="md">
           {/* <td class="md nw sm">
             <div>{i + 1}</div>
@@ -81,16 +73,9 @@ function fachbereich(university: string) {
           <td class="md nw sm">
             <div>{k}</div>
           </td>
-          <td class="md right">
-            <div>{v.professorships} ({v.professorships_f})</div>
-            {/* <div>
-              {"m".repeat(v.professorships_m)}
-              {"w".repeat(v.professorships_f)}
-            </div> */}
-          </td>
         
           <td class="md right nw">
-            <div>{teachingsByUniversities.get(k)?.sws || "-"}</div>
+            <div>{v.sws || "-"}</div>
             {/* <div>
               {"V".repeat(teachingsByUniversities.get(k)?.lecture__sws)}{" "}
               {"Ü".repeat(teachingsByUniversities.get(k)?.exercises__sws)}{" "}
@@ -98,7 +83,7 @@ function fachbereich(university: string) {
             </div> */}
           </td>
           <td class="md right nw">
-            <div>{teachingsByUniversities.get(k)?.sws || "-"}</div>
+            <div>{v.sws || "-"}</div>
             {/* <div>
               {"V".repeat(teachingsByUniversities.get(k)?.lecture__sws)}{" "}
               {"Ü".repeat(teachingsByUniversities.get(k)?.exercises__sws)}{" "}
@@ -106,15 +91,16 @@ function fachbereich(university: string) {
             </div> */}
           </td>
 
-          <td class="md">
-            <div>{fachbereich(k).join(", ")}</div>
-          </td>
+          <td class="md"set:html={fachbereich(k).join(",&nbsp;")}></td>
+             
+          
         </tr>
       ))
     }
   </tbody>
-  <caption class="md">
-    Hochschulen mit Professuren und Lehrveranstaltungen zur 
-    Beschleunigerforschung im Rahmen von Masterstudiengängen (Stand 2024)
+  <caption class="sm">
+
+    <slot />
+    
   </caption>
 </table>

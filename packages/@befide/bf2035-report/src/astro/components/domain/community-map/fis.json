@@ -1,0 +1,194 @@
+[
+  {
+    "name": "ALMA",
+    "erumField": "Universum",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": -23,
+    "lng": -67.8
+  },
+  {
+    "name": "Belle II",
+    "erumField": "Teilchen",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 36.1,
+    "lng": 140.1
+  },
+  {
+    "name": "BESSY II",
+    "erumField": "Materie",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 52.4,
+    "lng": 13.5
+  },
+  {
+    "name": "CTA",
+    "erumField": "Universum",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": -24.7,
+    "lng": -70.3
+  },
+  {
+    "name": "ELI",
+    "erumField": "Materie",
+    "acceleratorDriven": "",
+    "lifeCycle": "3. Bau und Instrumentierung",
+    "lat": 44.3,
+    "lng": 26
+  },
+  {
+    "name": "ELT",
+    "erumField": "Universum",
+    "acceleratorDriven": "",
+    "lifeCycle": "3. Bau und Instrumentierung",
+    "lat": -24.6,
+    "lng": -70.2
+  },
+  {
+    "name": "ESRF",
+    "erumField": "Materie",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 45.2,
+    "lng": 5.7
+  },
+  {
+    "name": "ESS",
+    "erumField": "Materie",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "3. Bau und Instrumentierung",
+    "lat": 55.7,
+    "lng": 13.2
+  },
+  {
+    "name": "European XFEL",
+    "erumField": "Materie",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 53.6,
+    "lng": 9.8
+  },
+  {
+    "name": "FAIR",
+    "erumField": "Teilchen",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "3. Bau und Instrumentierung",
+    "lat": 49.9,
+    "lng": 8.7
+  },
+  {
+    "name": "FELBE",
+    "erumField": "Materie",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 51.1,
+    "lng": 13.9
+  },
+  {
+    "name": "FLASH",
+    "erumField": "Materie",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 53.6,
+    "lng": 9.9
+  },
+  {
+    "name": "FRM II/MLZ",
+    "erumField": "Materie",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 48.3,
+    "lng": 11.7
+  },
+  {
+    "name": "H.E.S.S.",
+    "erumField": "Universum",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": -23.3,
+    "lng": 16.5
+  },
+  {
+    "name": "HFR/ILL",
+    "erumField": "Materie",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 45.2,
+    "lng": 5.7
+  },
+  {
+    "name": "IBC",
+    "erumField": "Materie",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 51.1,
+    "lng": 14
+  },
+  {
+    "name": "IceCube",
+    "erumField": "Universum",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": -77,
+    "lng": 40
+  },
+  {
+    "name": "ISOLDE",
+    "erumField": "Materie",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 46.2,
+    "lng": 6.1
+  },
+  {
+    "name": "KATRIN",
+    "erumField": "Universum",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 49,
+    "lng": 8.4
+  },
+  {
+    "name": "LHC",
+    "erumField": "Teilchen",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 46.2,
+    "lng": 6
+  },
+  {
+    "name": "LOFAR",
+    "erumField": "Universum",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 52.8,
+    "lng": 6.4
+  },
+  {
+    "name": "PETRA III",
+    "erumField": "Materie",
+    "acceleratorDriven": "checked",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": 53.6,
+    "lng": 9.9
+  },
+  {
+    "name": "Pierre-Auger-Observatorium",
+    "erumField": "Universum",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": -35.5,
+    "lng": -69.6
+  },
+  {
+    "name": "VLT",
+    "erumField": "Universum",
+    "acceleratorDriven": "",
+    "lifeCycle": "4. Betrieb und Instrumentierung",
+    "lat": -24.6,
+    "lng": -70.4
+  }
+]
