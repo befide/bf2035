@@ -13,14 +13,15 @@ cslItem:
     date-parts:
       - - "2020"
         - 1
-  keyword: ""
+  keyword: "#bf2035/topics/commercialisation"
   language: en
   publisher: Varian Medical Systems
   title: ProBeam Brochure
   type: document
   URL: >-
     https://varian.widen.net/view/pdf/afdgjwofxr/ProBeam_Brochure_RAD10319B_Jan2020.pdf?u=fu64nb
-tags: []
+tags:
+  - "#bf2035/topics/commercialisation"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

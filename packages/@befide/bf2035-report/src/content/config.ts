@@ -1,5 +1,5 @@
-import { z, defineCollection, reference } from "astro:content"
-import spaceCommander from "@utils/space-commander";
+import { z, defineCollection } from "astro:content"
+import spaceCommander from "@utils/space-commander"
 
 const tags = z.array(z.string()).optional()
 
@@ -14,7 +14,10 @@ const sectionCollection = defineCollection({
   schema: ({ image }) =>
     z
       .object({
-        abstract: z.string().optional().transform((str) => new Date(str)),
+        abstract: z
+          .string()
+          .optional()
+          .transform((str) => new Date(str)),
         lang: z.string().optional(),
         backgroundImageSrc: image().optional(),
         bibliography: z.string().optional(),
@@ -29,8 +32,14 @@ const sectionCollection = defineCollection({
         sectionNumber: z.string().optional(),
         description: z.string().optional(),
         template: z.string().optional(),
-        subtitle: z.string().optional().transform((str) => spaceCommander(str)),
-        supertitle: z.string().optional().transform((str) => spaceCommander(str)),
+        subtitle: z
+          .string()
+          .optional()
+          .transform((str) => spaceCommander(str)),
+        supertitle: z
+          .string()
+          .optional()
+          .transform((str) => spaceCommander(str)),
         tags,
         title__toc: z.string().optional(),
         title: z.string().transform((str) => spaceCommander(str)),
@@ -39,7 +48,6 @@ const sectionCollection = defineCollection({
       })
       .strict(),
 })
-
 
 const referenceCollection = defineCollection({
   // type: 'data',
@@ -223,5 +231,4 @@ const referenceCollection = defineCollection({
 export const collections = {
   sections: sectionCollection,
   references: referenceCollection,
-
 }

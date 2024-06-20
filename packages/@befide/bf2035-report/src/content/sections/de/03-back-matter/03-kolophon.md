@@ -4,7 +4,6 @@ title: Kolophon
 tocIcon: info-circle
 sectionNumber: D.3
 sectionType: left
-
 ---
 
 <div class="spread--left spread-area--c-1-under-header">

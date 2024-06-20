@@ -20,7 +20,7 @@ cslItem:
       - - "2020"
         - 4
         - 1
-  keyword: ""
+  keyword: "#bf2035/applications/science"
   language: en
   note: >-
     http://web.archive.org/web/20200427073743/https://physicstoday.scitation.org/doi/10.1063/PT.3.4452
@@ -30,7 +30,8 @@ cslItem:
   type: article-journal
   URL: 10.1063/PT.3.4452
   volume: "73"
-tags: []
+tags:
+  - "#bf2035/applications/science"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

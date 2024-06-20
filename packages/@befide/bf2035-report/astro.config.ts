@@ -22,10 +22,11 @@ import pagefind from "astro-pagefind"
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-const site =
-  process.env.NODE_ENV === "production"
-    ? "https://bf2035-report.surge.sh/"
-    : undefined
+const site = undefined
+
+process.env.NODE_ENV === "production"
+  ? "https://bf2035-report.surge.sh/"
+  : undefined
 
 export default defineConfig({
   vite: {
@@ -46,7 +47,7 @@ export default defineConfig({
   // },
 
   redirects: {
-    "/": "/de/",
+    // "/": "/de/",
   },
   markdown: {
     remarkPlugins: [

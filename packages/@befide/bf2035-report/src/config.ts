@@ -9,4 +9,3 @@ export const SITE = {
   issuesPerPage: 5,
   referencesPerPage: 250,
 }
-

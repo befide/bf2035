@@ -1,6 +1,15 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import PartLayout from "./Part.astro"
 import SectionLayout from "./Section.astro"
+
+
+export interface Props {
+  sections: CollectionEntry<"sections">[];
+  lang?: string;
+  author?: string;
+  description?: string;
+}
 
 const { sections } = Astro.props;
 

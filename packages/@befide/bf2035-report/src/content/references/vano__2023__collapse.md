@@ -17,12 +17,13 @@ cslItem:
       - - "2023"
         - 10
         - 13
-  keyword: ""
+  keyword: "#bf2035/topics/commercialisation"
   language: en
   title: The Collapse of ViewRay
   type: post-weblog
   URL: https://www.oncologysystems.com/blog/the-collapse-of-viewray
-tags: []
+tags:
+  - "#bf2035/topics/commercialisation"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

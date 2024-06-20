@@ -175,9 +175,7 @@
       "recAxJnfIvbqKKQcg",
       "recv8FwKivGQH5h9s"
     ],
-    "links:agenda-facilities": [
-      "rec88iGRshqzOtMcT"
-    ],
+    "links:agenda-facilities": ["rec88iGRshqzOtMcT"],
     "usedInResearchAgenda": true,
     "links": [
       "rec74m9HQsNhvQ8cx",
@@ -266,10 +264,7 @@
       "recHR3u3xw25LZBKs",
       "recm05NZ1KPwUYcq4"
     ],
-    "links:agenda-facilities": [
-      "recQgzOIDgmlEvfls",
-      "recOXnmru9T2Jqegz"
-    ],
+    "links:agenda-facilities": ["recQgzOIDgmlEvfls", "recOXnmru9T2Jqegz"],
     "usedInResearchAgenda": true,
     "links": [
       "recz6UjUW4lez8dVc",
@@ -332,10 +327,7 @@
       "reclgXQJ4Y1H4y5cr",
       "recPwI0nh8V7HJ53x"
     ],
-    "links:agenda-facilities": [
-      "recQgzOIDgmlEvfls",
-      "recOXnmru9T2Jqegz"
-    ],
+    "links:agenda-facilities": ["recQgzOIDgmlEvfls", "recOXnmru9T2Jqegz"],
     "usedInResearchAgenda": true,
     "links": [
       "recwfh5lmddLhMqRZ",
@@ -368,10 +360,7 @@
       "reclgXQJ4Y1H4y5cr",
       "recm05NZ1KPwUYcq4"
     ],
-    "links:agenda-facilities": [
-      "rec9QE9rEkuNJPNXm",
-      "rec5IOGhboTRgii1W"
-    ],
+    "links:agenda-facilities": ["rec9QE9rEkuNJPNXm", "rec5IOGhboTRgii1W"],
     "usedInResearchAgenda": true,
     "links": [
       "recd87xm029h86pvE",
@@ -435,10 +424,7 @@
       "rec3y7KjlLj5eZxI3",
       "recm05NZ1KPwUYcq4"
     ],
-    "links:agenda-facilities": [
-      "rec5IOGhboTRgii1W",
-      "recwim0JcMJPUSyNr"
-    ],
+    "links:agenda-facilities": ["rec5IOGhboTRgii1W", "recwim0JcMJPUSyNr"],
     "usedInResearchAgenda": true,
     "links": [
       "recHR3u3xw25LZBKs",
@@ -456,17 +442,10 @@
     "name": "beam.particle-energy-spread",
     "group": "Teilchenstrahl",
     "label": "Energieverteilung",
-    "links:agenda-topics": [
-      "recNg7LJNXWr6iwGe"
-    ],
-    "links:agenda-facilities": [
-      "recCQFAGReVYnM1fd"
-    ],
+    "links:agenda-topics": ["recNg7LJNXWr6iwGe"],
+    "links:agenda-facilities": ["recCQFAGReVYnM1fd"],
     "usedInResearchAgenda": true,
-    "links": [
-      "recNg7LJNXWr6iwGe",
-      "recCQFAGReVYnM1fd"
-    ]
+    "links": ["recNg7LJNXWr6iwGe", "recCQFAGReVYnM1fd"]
   },
   {
     "id": "recpVPQnPMxGx7A19",
@@ -703,14 +682,8 @@
     "group": "3. Ultrakompakte Anlagen",
     "label": "Teilchenstrahl-Plasmabeschleuniger",
     "description": "Teilchenstrahl-getriebene Plasma-Beschleuniger",
-    "links:agenda-objectives": [
-      "recO7SA0HrYZ7n3YY",
-      "recMPpwzvAUtdoHIi"
-    ],
-    "links:agenda-facilities": [
-      "recsQNwqB2tTT5O9G",
-      "rec1GjRkmYzuMmWy4"
-    ],
+    "links:agenda-objectives": ["recO7SA0HrYZ7n3YY", "recMPpwzvAUtdoHIi"],
+    "links:agenda-facilities": ["recsQNwqB2tTT5O9G", "rec1GjRkmYzuMmWy4"],
     "usedInResearchAgenda": true,
     "links": [
       "recO7SA0HrYZ7n3YY",
@@ -733,11 +706,7 @@
     ],
     "links:agenda-facilities": [],
     "usedInResearchAgenda": true,
-    "links": [
-      "recO7SA0HrYZ7n3YY",
-      "recZQHHoQtGtm5R3d",
-      "reckX7ew0Xmo7DNiP"
-    ]
+    "links": ["recO7SA0HrYZ7n3YY", "recZQHHoQtGtm5R3d", "reckX7ew0Xmo7DNiP"]
   },
   {
     "id": "recm05NZ1KPwUYcq4",
@@ -751,9 +720,7 @@
       "rec67i6PCMPZ9pp5O",
       "rec5vEfgSlNhJPdUi"
     ],
-    "links:agenda-facilities": [
-      "rec5IOGhboTRgii1W"
-    ],
+    "links:agenda-facilities": ["rec5IOGhboTRgii1W"],
     "usedInResearchAgenda": true,
     "links": [
       "recqq2aU6Fki3MeTH",
@@ -798,10 +765,7 @@
     "group": "4. Magnet-Technologie",
     "label": "Hochfeld-Dipolmagnete",
     "description": "15T-Dipolmagnete (Nb3Sn) und 20T-Dipolmagnete (HTS)",
-    "links:agenda-objectives": [
-      "recO7SA0HrYZ7n3YY",
-      "recPAtrvNsEROo9th"
-    ],
+    "links:agenda-objectives": ["recO7SA0HrYZ7n3YY", "recPAtrvNsEROo9th"],
     "links:agenda-facilities": [
       "reckYve3j9CIChtm5",
       "recctKRK4WOPMLEee",
@@ -823,9 +787,7 @@
     "group": "4. Magnet-Technologie",
     "label": "Undulatoren",
     "description": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. ",
-    "links:agenda-objectives": [
-      "recO7SA0HrYZ7n3YY"
-    ],
+    "links:agenda-objectives": ["recO7SA0HrYZ7n3YY"],
     "links:agenda-facilities": [
       "recjUatRmzNwdpFVW",
       "rec5IOGhboTRgii1W",
@@ -1197,9 +1159,7 @@
       "recnYSzxmZoamyC9d",
       "rec6TNwM3YflZTifY"
     ],
-    "links:agenda-facilities": [
-      "recGFBz8r8xjYImWF"
-    ],
+    "links:agenda-facilities": ["recGFBz8r8xjYImWF"],
     "usedInResearchAgenda": true,
     "links": [
       "recMPpwzvAUtdoHIi",
@@ -1223,11 +1183,7 @@
     ],
     "links:agenda-facilities": [],
     "usedInResearchAgenda": true,
-    "links": [
-      "recMPpwzvAUtdoHIi",
-      "rec6TNwM3YflZTifY",
-      "rec67i6PCMPZ9pp5O"
-    ]
+    "links": ["recMPpwzvAUtdoHIi", "rec6TNwM3YflZTifY", "rec67i6PCMPZ9pp5O"]
   },
   {
     "id": "rec74m9HQsNhvQ8cx",
@@ -1348,9 +1304,7 @@
     "name": "energy-supply.erl",
     "group": "1. Energieversorgung",
     "label": "ERL",
-    "links:agenda-objectives": [
-      "recPkRSP1oXKx2Vi6"
-    ],
+    "links:agenda-objectives": ["recPkRSP1oXKx2Vi6"],
     "links:agenda-facilities": [
       "recW2MvQKGGvNcJGz",
       "reci5zbJZBMapte7p",
@@ -1464,18 +1418,14 @@
     "group": "accelerator-science",
     "label": "(AUX) Supralab",
     "description": "Das SupraLab am HZB bietet an einem Standort die Infrastruktur und Testexpertise für die gesamte Entwicklungskette supraleitender Hochfrequenzsysteme von der ersten Analyse supraleitender Proben bis hin zum vollen Betrieb solcher Module.",
-    "links:agenda-topics": [
-      "recwfh5lmddLhMqRZ"
-    ],
+    "links:agenda-topics": ["recwfh5lmddLhMqRZ"],
     "links:agenda-objectives": [],
     "userGroup": "accelerator-science",
     "facilityName": "Supralab",
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recwfh5lmddLhMqRZ"
-    ]
+    "links": ["recwfh5lmddLhMqRZ"]
   },
   {
     "id": "recYM3Nvz8uWHX6lz",
@@ -1497,11 +1447,7 @@
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recDV07no7AypNhxL",
-      "rec3y7KjlLj5eZxI3",
-      "recv8FwKivGQH5h9s"
-    ]
+    "links": ["recDV07no7AypNhxL", "rec3y7KjlLj5eZxI3", "recv8FwKivGQH5h9s"]
   },
   {
     "id": "recEwJ5oFVzaKylAI",
@@ -1510,10 +1456,7 @@
     "name": "jeti",
     "group": "accelerator-science",
     "label": "(Laser) JETI",
-    "links:agenda-topics": [
-      "recDV07no7AypNhxL",
-      "rec3y7KjlLj5eZxI3"
-    ],
+    "links:agenda-topics": ["recDV07no7AypNhxL", "rec3y7KjlLj5eZxI3"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": " Jena Titanium:sapphire 40 TW Laser",
     "userGroup": "accelerator-science",
@@ -1521,10 +1464,7 @@
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recDV07no7AypNhxL",
-      "rec3y7KjlLj5eZxI3"
-    ]
+    "links": ["recDV07no7AypNhxL", "rec3y7KjlLj5eZxI3"]
   },
   {
     "id": "recpr7HybCZ3pJHJq",
@@ -1537,9 +1477,7 @@
     "links:agenda-topics": [],
     "links:agenda-objectives": [],
     "userGroup": "accelerator-science",
-    "additionalUserGroups": [
-      "photon-science"
-    ],
+    "additionalUserGroups": ["photon-science"],
     "isInGermany": true,
     "usedInResearchAgenda": true,
     "links": []
@@ -1551,10 +1489,7 @@
     "name": "phelix",
     "group": "accelerator-science",
     "label": "(LASER) PHELIX",
-    "links:agenda-topics": [
-      "recDV07no7AypNhxL",
-      "rec3y7KjlLj5eZxI3"
-    ],
+    "links:agenda-topics": ["recDV07no7AypNhxL", "rec3y7KjlLj5eZxI3"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "PW-class laser PHELIX with dedicated plasma accelerator",
     "userGroup": "accelerator-science",
@@ -1562,10 +1497,7 @@
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recDV07no7AypNhxL",
-      "rec3y7KjlLj5eZxI3"
-    ]
+    "links": ["recDV07no7AypNhxL", "rec3y7KjlLj5eZxI3"]
   },
   {
     "id": "recbtmmlI2fV7KsRw",
@@ -1611,9 +1543,7 @@
       "rec0VjldlgXWvJQJs",
       "rec3y7KjlLj5eZxI3"
     ],
-    "links:agenda-objectives": [
-      "recO7SA0HrYZ7n3YY"
-    ],
+    "links:agenda-objectives": ["recO7SA0HrYZ7n3YY"],
     "nameIsAcronymFor": "Advanced proton driven plasma Wakefield Acceleration Experiment ",
     "userGroup": "accelerator-science",
     "facilityName": "AWAKE",
@@ -1658,9 +1588,7 @@
       "rec74m9HQsNhvQ8cx",
       "recYILU6UpjBRoD4J"
     ],
-    "links:agenda-objectives": [
-      "recPkRSP1oXKx2Vi6"
-    ],
+    "links:agenda-objectives": ["recPkRSP1oXKx2Vi6"],
     "nameIsAcronymFor": "Berlin Energy Recovery LINac PROject",
     "userGroup": "accelerator-science",
     "facilityName": "bERLinPro",
@@ -1686,9 +1614,7 @@
       "rec3y7KjlLj5eZxI3",
       "recYWdk4lRaIcuA5B"
     ],
-    "links:agenda-objectives": [
-      "rec5vEfgSlNhJPdUi"
-    ],
+    "links:agenda-objectives": ["rec5vEfgSlNhJPdUi"],
     "userGroup": "photon-science",
     "facilityName": "BESSY",
     "facilityVersion": "II/VSR",
@@ -1718,9 +1644,7 @@
       "reciuamlplehYBucK",
       "recYWdk4lRaIcuA5B"
     ],
-    "links:agenda-objectives": [
-      "recPkRSP1oXKx2Vi6"
-    ],
+    "links:agenda-objectives": ["recPkRSP1oXKx2Vi6"],
     "userGroup": "photon-science",
     "facilityName": "BESSY",
     "facilityVersion": "III",
@@ -1745,18 +1669,14 @@
     "group": "particle-physics",
     "label": "CLIC",
     "description": "Linearer Elektronen-Positronen-Collider im TeV-Bereich mit hoher Luminosität für die Erforschung kleinster Teilchen, der von internationalen Kollaborationen unter der Leitung des CERN entwickelt wird. Der CLIC-Beschleuniger wurde für drei Energiestufen bei Massenschwerpunktenergien von 380 GeV, 1,5 TeV und 3 TeV optimiert [1]. CLIC verwendet eine neuartige Zweistrahl-Beschleunigungstechnik mit normalleitenden Beschleunigungsstrukturen, die im Bereich von 70 MV/m bis 100 MV/m arbeiten.",
-    "links:agenda-topics": [
-      "recwfh5lmddLhMqRZ"
-    ],
+    "links:agenda-topics": ["recwfh5lmddLhMqRZ"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "Compact LInear Collider",
     "userGroup": "particle-physics",
     "facilityName": "CLIC",
     "lifeCycleStage": "conceptionally-designed",
     "usedInResearchAgenda": true,
-    "links": [
-      "recwfh5lmddLhMqRZ"
-    ]
+    "links": ["recwfh5lmddLhMqRZ"]
   },
   {
     "id": "rece9egZWS5hLuigA",
@@ -1812,10 +1732,7 @@
     "group": "photon-science",
     "label": "DALI",
     "description": "Dresden Advanced Light Infrastructure",
-    "links:agenda-topics": [
-      "rec3y7KjlLj5eZxI3",
-      "recLmpFLNPEBaStTU"
-    ],
+    "links:agenda-topics": ["rec3y7KjlLj5eZxI3", "recLmpFLNPEBaStTU"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "Dresden Advanced Light Infrastructure",
     "userGroup": "photon-science",
@@ -1823,10 +1740,7 @@
     "lifeCycleStage": "conceptionally-designed",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "rec3y7KjlLj5eZxI3",
-      "recLmpFLNPEBaStTU"
-    ]
+    "links": ["rec3y7KjlLj5eZxI3", "recLmpFLNPEBaStTU"]
   },
   {
     "id": "rec9vVPyNMr36e1Jj",
@@ -1835,22 +1749,16 @@
     "name": "delta",
     "group": "photon-science",
     "label": "DELTA",
-    "links:agenda-topics": [
-      "rec74m9HQsNhvQ8cx"
-    ],
+    "links:agenda-topics": ["rec74m9HQsNhvQ8cx"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "Dortmunder ELekTronenspeicherring-Anlage",
     "userGroup": "photon-science",
-    "additionalUserGroups": [
-      "accelerator-science"
-    ],
+    "additionalUserGroups": ["accelerator-science"],
     "facilityName": "DELTA",
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "rec74m9HQsNhvQ8cx"
-    ]
+    "links": ["rec74m9HQsNhvQ8cx"]
   },
   {
     "id": "recNr50BjUm6CpJVM",
@@ -1872,11 +1780,7 @@
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "rec3y7KjlLj5eZxI3",
-      "rec74m9HQsNhvQ8cx",
-      "recv8FwKivGQH5h9s"
-    ]
+    "links": ["rec3y7KjlLj5eZxI3", "rec74m9HQsNhvQ8cx", "recv8FwKivGQH5h9s"]
   },
   {
     "id": "recnnqvZHS5qHobdT",
@@ -1929,17 +1833,11 @@
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "European Plasma Research Accelerator with eXcellence In Applications ",
     "userGroup": "accelerator-science",
-    "additionalUserGroups": [
-      "photon-science"
-    ],
+    "additionalUserGroups": ["photon-science"],
     "facilityName": "EuPRAXIA",
     "lifeCycleStage": "conceptionally-designed",
     "usedInResearchAgenda": true,
-    "links": [
-      "recd87xm029h86pvE",
-      "recDV07no7AypNhxL",
-      "recLmpFLNPEBaStTU"
-    ]
+    "links": ["recd87xm029h86pvE", "recDV07no7AypNhxL", "recLmpFLNPEBaStTU"]
   },
   {
     "id": "recgv6Pp1ioQ12zRW",
@@ -1960,11 +1858,7 @@
     "lifeCycleStage": "designing",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recwfh5lmddLhMqRZ",
-      "reciuamlplehYBucK",
-      "rec3y7KjlLj5eZxI3"
-    ]
+    "links": ["recwfh5lmddLhMqRZ", "reciuamlplehYBucK", "rec3y7KjlLj5eZxI3"]
   },
   {
     "id": "rec5IOGhboTRgii1W",
@@ -2168,24 +2062,18 @@
     "group": "photon-science",
     "label": "FLASH 1+2",
     "description": "Free electron-laser in Hamburg",
-    "links:agenda-topics": [
-      "recLmpFLNPEBaStTU"
-    ],
+    "links:agenda-topics": ["recLmpFLNPEBaStTU"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "Free electron-laser in Hamburg",
     "userGroup": "photon-science",
-    "additionalUserGroups": [
-      "accelerator-science"
-    ],
+    "additionalUserGroups": ["accelerator-science"],
     "facilityName": "FLASH",
     "facilityVersion": "1+2",
     "lifeCycleStage": "operation",
     "isBmbfFis": true,
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recLmpFLNPEBaStTU"
-    ]
+    "links": ["recLmpFLNPEBaStTU"]
   },
   {
     "id": "recrYqyas2lXkaA01",
@@ -2199,9 +2087,7 @@
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "Free electron-laser in Hamburg",
     "userGroup": "photon-science",
-    "additionalUserGroups": [
-      "accelerator-science"
-    ],
+    "additionalUserGroups": ["accelerator-science"],
     "facilityName": "FLASH",
     "facilityVersion": "2020+",
     "lifeCycleStage": "construction",
@@ -2217,9 +2103,7 @@
     "group": "accelerator-science",
     "label": "FLASHForward",
     "description": "Testinfrastruktur für teilchenstrahlgetriebene Plasma-Wakefield-Beschleunigungsexperimente, die darauf abzielen, in einigen Zentimetern ionisiertem Wasserstoff Elektronenstrahlen mit Energien von mehr als 1,5 GeV und einer ausreichenden Qualität für den Betrieb eines Freie-Elektronen-Lasers zu erzeugen",
-    "links:agenda-topics": [
-      "rec0VjldlgXWvJQJs"
-    ],
+    "links:agenda-topics": ["rec0VjldlgXWvJQJs"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "Future-Oriented Wakefield Accelerator Research and Developement at FLASH",
     "userGroup": "accelerator-science",
@@ -2227,9 +2111,7 @@
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "rec0VjldlgXWvJQJs"
-    ]
+    "links": ["rec0VjldlgXWvJQJs"]
   },
   {
     "id": "rec8o6tjXFzfU9Ovs",
@@ -2273,9 +2155,7 @@
     "group": "neutron-science",
     "label": "HBNS",
     "description": "High Brilliance Neutron Source",
-    "links:agenda-topics": [
-      "recwfh5lmddLhMqRZ"
-    ],
+    "links:agenda-topics": ["recwfh5lmddLhMqRZ"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "High Brilliance Neutron Source",
     "userGroup": "neutron-science",
@@ -2283,9 +2163,7 @@
     "lifeCycleStage": "designing",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recwfh5lmddLhMqRZ"
-    ]
+    "links": ["recwfh5lmddLhMqRZ"]
   },
   {
     "id": "reckYve3j9CIChtm5",
@@ -2295,10 +2173,7 @@
     "group": "particle-physics",
     "label": "HE-LHC",
     "description": "High-Energy Large Hadron Collider",
-    "links:agenda-topics": [
-      "recPwI0nh8V7HJ53x",
-      "rec8zYDjjjV4E8XKw"
-    ],
+    "links:agenda-topics": ["recPwI0nh8V7HJ53x", "rec8zYDjjjV4E8XKw"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "High-Energy Large Hadron Collider",
     "userGroup": "particle-physics",
@@ -2306,10 +2181,7 @@
     "facilityVersion": "HE-LHC",
     "lifeCycleStage": "designing",
     "usedInResearchAgenda": true,
-    "links": [
-      "recPwI0nh8V7HJ53x",
-      "rec8zYDjjjV4E8XKw"
-    ]
+    "links": ["recPwI0nh8V7HJ53x", "rec8zYDjjjV4E8XKw"]
   },
   {
     "id": "recwim0JcMJPUSyNr",
@@ -2324,9 +2196,7 @@
       "recpVPQnPMxGx7A19",
       "rec8zYDjjjV4E8XKw"
     ],
-    "links:agenda-objectives": [
-      "recqq2aU6Fki3MeTH"
-    ],
+    "links:agenda-objectives": ["recqq2aU6Fki3MeTH"],
     "nameIsAcronymFor": "High-Luminosity Large Hadron Collider",
     "userGroup": "particle-physics",
     "facilityName": "LHC",
@@ -2347,20 +2217,14 @@
     "name": "ilc",
     "group": "particle-physics",
     "label": "ILC",
-    "links:agenda-topics": [
-      "recMOHVZ3l4wm0bb2",
-      "recwfh5lmddLhMqRZ"
-    ],
+    "links:agenda-topics": ["recMOHVZ3l4wm0bb2", "recwfh5lmddLhMqRZ"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "International Linear Collider",
     "userGroup": "particle-physics",
     "facilityName": "ILC",
     "lifeCycleStage": "technically-designed",
     "usedInResearchAgenda": true,
-    "links": [
-      "recMOHVZ3l4wm0bb2",
-      "recwfh5lmddLhMqRZ"
-    ]
+    "links": ["recMOHVZ3l4wm0bb2", "recwfh5lmddLhMqRZ"]
   },
   {
     "id": "reczaW6lmxwmuZ9gR",
@@ -2378,14 +2242,10 @@
       "rec74m9HQsNhvQ8cx",
       "recNg7LJNXWr6iwGe"
     ],
-    "links:agenda-objectives": [
-      "recPkRSP1oXKx2Vi6"
-    ],
+    "links:agenda-objectives": ["recPkRSP1oXKx2Vi6"],
     "nameIsAcronymFor": "Karlsruhe Research Accelerator",
     "userGroup": "accelerator-science",
-    "additionalUserGroups": [
-      "photon-science"
-    ],
+    "additionalUserGroups": ["photon-science"],
     "facilityName": "KARA",
     "lifeCycleStage": "operation",
     "isInGermany": true,
@@ -2408,18 +2268,10 @@
     "group": "accelerator-science",
     "label": "LUX",
     "description": "Laser-Plasma-Beschleuniger für die Forschung mit Photonen. Lux leitet einen Paradigmenwechsel ein, der von Single-Shot-Demonstrationsexperimenten zu einem verfügbaren, stabilen und kontrollierbaren Beschleunigerbetrieb führt. ",
-    "links:agenda-topics": [
-      "recDV07no7AypNhxL",
-      "recNg7LJNXWr6iwGe"
-    ],
-    "links:agenda-objectives": [
-      "recO7SA0HrYZ7n3YY",
-      "reckYBc8D4ooSEpfT"
-    ],
+    "links:agenda-topics": ["recDV07no7AypNhxL", "recNg7LJNXWr6iwGe"],
+    "links:agenda-objectives": ["recO7SA0HrYZ7n3YY", "reckYBc8D4ooSEpfT"],
     "userGroup": "accelerator-science",
-    "additionalUserGroups": [
-      "photon-science"
-    ],
+    "additionalUserGroups": ["photon-science"],
     "isInGermany": true,
     "usedInResearchAgenda": true,
     "links": [
@@ -2440,9 +2292,7 @@
     "links:agenda-objectives": [],
     "nameIsAcronymFor": " Mainzer Mikrotron",
     "userGroup": "hadron-physics",
-    "additionalUserGroups": [
-      "accelerator-science"
-    ],
+    "additionalUserGroups": ["accelerator-science"],
     "facilityName": "MAMI",
     "lifeCycleStage": "operation",
     "isInGermany": true,
@@ -2456,27 +2306,16 @@
     "name": "mesa",
     "group": "hadron-physics",
     "label": "MESA",
-    "links:agenda-topics": [
-      "recwfh5lmddLhMqRZ",
-      "recYILU6UpjBRoD4J"
-    ],
-    "links:agenda-objectives": [
-      "recPkRSP1oXKx2Vi6"
-    ],
+    "links:agenda-topics": ["recwfh5lmddLhMqRZ", "recYILU6UpjBRoD4J"],
+    "links:agenda-objectives": ["recPkRSP1oXKx2Vi6"],
     "nameIsAcronymFor": "Mainz Energy-Recovering Superconducting Accelerator",
     "userGroup": "hadron-physics",
-    "additionalUserGroups": [
-      "accelerator-science"
-    ],
+    "additionalUserGroups": ["accelerator-science"],
     "facilityName": "MESA",
     "lifeCycleStage": "construction",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recwfh5lmddLhMqRZ",
-      "recYILU6UpjBRoD4J",
-      "recPkRSP1oXKx2Vi6"
-    ]
+    "links": ["recwfh5lmddLhMqRZ", "recYILU6UpjBRoD4J", "recPkRSP1oXKx2Vi6"]
   },
   {
     "id": "recjyTLh49EAjCogl",
@@ -2485,9 +2324,7 @@
     "name": "petra–iii",
     "group": "photon-science",
     "label": "PETRA III",
-    "links:agenda-topics": [
-      "recpVPQnPMxGx7A19"
-    ],
+    "links:agenda-topics": ["recpVPQnPMxGx7A19"],
     "links:agenda-objectives": [],
     "userGroup": "photon-science",
     "facilityName": "PETRA",
@@ -2496,9 +2333,7 @@
     "isBmbfFis": true,
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recpVPQnPMxGx7A19"
-    ]
+    "links": ["recpVPQnPMxGx7A19"]
   },
   {
     "id": "rec88iGRshqzOtMcT",
@@ -2515,9 +2350,7 @@
       "reciuamlplehYBucK",
       "recYWdk4lRaIcuA5B"
     ],
-    "links:agenda-objectives": [
-      "recMPpwzvAUtdoHIi"
-    ],
+    "links:agenda-objectives": ["recMPpwzvAUtdoHIi"],
     "userGroup": "photon-science",
     "facilityName": "PETRA",
     "facilityVersion": "IV",
@@ -2541,9 +2374,7 @@
     "name": "pitz",
     "group": "accelerator-science",
     "label": "PITZ",
-    "links:agenda-topics": [
-      "recLmpFLNPEBaStTU"
-    ],
+    "links:agenda-topics": ["recLmpFLNPEBaStTU"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "Photoinjektor-Teststand ",
     "userGroup": "accelerator-science",
@@ -2551,9 +2382,7 @@
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recLmpFLNPEBaStTU"
-    ]
+    "links": ["recLmpFLNPEBaStTU"]
   },
   {
     "id": "recU5NQXpbP40uEKI",
@@ -2569,16 +2398,10 @@
       "reckX7ew0Xmo7DNiP"
     ],
     "userGroup": "accelerator-science",
-    "additionalUserGroups": [
-      "medicine"
-    ],
+    "additionalUserGroups": ["medicine"],
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "rec6TNwM3YflZTifY",
-      "recO7SA0HrYZ7n3YY",
-      "reckX7ew0Xmo7DNiP"
-    ]
+    "links": ["rec6TNwM3YflZTifY", "recO7SA0HrYZ7n3YY", "reckX7ew0Xmo7DNiP"]
   },
   {
     "id": "recwdodGq6NXky0NC",
@@ -2599,11 +2422,7 @@
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "rec3y7KjlLj5eZxI3",
-      "recLmpFLNPEBaStTU",
-      "recv8FwKivGQH5h9s"
-    ]
+    "links": ["rec3y7KjlLj5eZxI3", "recLmpFLNPEBaStTU", "recv8FwKivGQH5h9s"]
   },
   {
     "id": "recW2MvQKGGvNcJGz",
@@ -2613,9 +2432,7 @@
     "group": "accelerator-science",
     "label": "S-DALINAC",
     "description": "Supraleitender Elektronenbeschleuniger, der sowohl im Dauerstrich- als auch im Energierückgewinnungs-Modus betrieben werden kann. ",
-    "links:agenda-topics": [
-      "recYILU6UpjBRoD4J"
-    ],
+    "links:agenda-topics": ["recYILU6UpjBRoD4J"],
     "links:agenda-objectives": [],
     "nameIsAcronymFor": "Superconducting-DArmstadt-LINear-ACcelerator",
     "userGroup": "accelerator-science",
@@ -2623,8 +2440,6 @@
     "lifeCycleStage": "operation",
     "isInGermany": true,
     "usedInResearchAgenda": true,
-    "links": [
-      "recYILU6UpjBRoD4J"
-    ]
+    "links": ["recYILU6UpjBRoD4J"]
   }
 ]

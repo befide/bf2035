@@ -8,7 +8,7 @@ sectionNumber: C.4.e
 
 <div class="spread--right spread-area--research-agenda-topic">
 
-![](@befide/bf2035-report/src/astro/assets/agenda/agenda.topics.materials.svg)
+![](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.topics.materials.svg)
 
 </div>
 

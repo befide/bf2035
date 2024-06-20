@@ -3,24 +3,26 @@ import Base from "./Base.astro";
 import Footer from "@ui/LayoutFooter.astro";
 import Header from "@ui/LayoutHeader.astro";
 import BookSections from "./BookSections.astro";
-import {getSections} from "@utils/getSections.ts";
+import { getSections } from "@utils/getSections.ts";
 
-const sections =  await getSections().then(r => (r.filter(section => !section.data.excludeFromTour && section.id.indexOf("strategiefelder") > -1)));
-
+const sections = await getSections().then((r) =>
+  r.filter(
+    (section) =>
+      !section.data.excludeFromTour &&
+      section.id.indexOf("strategiefelder") > -1
+  )
+);
 ---
 
 <Base>
   <div class="layout layout--book">
     <Header />
     <div class="layout__main">
-      <BookSections id="main" sections={sections} />
+      <BookSections sections={sections} />
     </div>
     <div class="layout__paged-js layout__paged-js--book">
       <!-- <vue-paged-js refid="main" mode="book" /> -->
     </div>
     <Footer />
   </div>
-
-
-
 </Base>

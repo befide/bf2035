@@ -23,7 +23,7 @@ function setFitSpreadScale() {
     (windowSize.height - 100) / boundingRect.height,
     windowSize.width / boundingRect.width,
   )
-  console.log({ scale, windowSize, boundingRect })
+
   document.documentElement.style.setProperty("--fit-spread-scale", scale + "")
 }
 

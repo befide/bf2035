@@ -8,7 +8,7 @@ sectionType: spread
 
 <div class="spread--left spread-area--research-agenda-topic">
 
-![](@befide/bf2035-report/src/astro/assets/agenda/agenda.topics.ultracompact.svg)
+![](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.topics.ultracompact.svg)
 
 </div>
 

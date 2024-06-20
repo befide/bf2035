@@ -38,15 +38,15 @@ const { name } = Astro.props;
 
 const item = data.find((item) => item.name === name);
 
-const imagePath = "/src/astro/assets/agenda/agenda.objectives." + name + ".svg";
 
-const images = import.meta.glob<{ default: ImageMetadata }>("/src/astro/assets/agenda/agenda.objectives.*.svg")
+const imagePath = "/src/astro/assets/svg/agenda/agenda.objectives." + name + ".svg";
+const images = import.meta.glob<{ default: ImageMetadata }>("/src/astro/assets/svg/agenda/agenda.objectives.*.svg")
 
   
 
 if (!images[imagePath])
   throw new Error(
-    `"${imagePath}" does not exist in glob: "${globPath}"`
+    `"${imagePath}" does not exist in glob: "/src/astro/assets/svg/agenda/agenda.objectives.*.svg"`
   );
 
 const image = images[imagePath]();

@@ -1,8 +1,27 @@
 ---
-import { rollup, rollups, sum } from "d3-array";
+import { rollups, sum } from "d3-array";
 
-import teachings from "./teaching.json";
-import professorships from "./professorships.json";
+import _teachings from "./teaching.json";
+
+export type Teachings = Teaching[];
+
+export interface Teaching {
+  Name: string;
+  targetAudience: string;
+  type: string;
+  lecture__sws: number;
+  exercises__sws: number;
+  lab__sws: number;
+  seminar__sws: number;
+  sws: number;
+  WiSe: string;
+  SoSe: string;
+  "link:university": string;
+  university: string;
+  "link:professors": string;
+  url: string;
+}
+const teachings: Teachings = _teachings;
 
 const teachingsByUniversities = rollups(
   teachings,
@@ -10,19 +29,14 @@ const teachingsByUniversities = rollups(
     entries: v,
     sws: sum(
       v,
-      (d) => d.lecture__sws + d.lab__sws + d.exercises__sws + d.seminar__sws,
+      (d) => d.lecture__sws + d.lab__sws + d.exercises__sws + d.seminar__sws
     ),
     lecture__sws: sum(v, (d) => d.lecture__sws),
     exercises__sws: sum(v, (d) => d.lab__sws + d.exercises__sws),
     seminar__sws: sum(v, (d) => d.seminar__sws),
   }),
-  (d) => d["link:university"],
+  (d) => d["link:university"]
 );
-
-
-
-
-
 
 function fachbereich(university: string) {
   const dir = new Map<string, string[]>();
@@ -46,7 +60,6 @@ function fachbereich(university: string) {
 
 <table class="md">
   <thead>
-
     <tr>
       <!-- <th class="md sm"></th> -->
       <th class="md sm">
@@ -73,7 +86,7 @@ function fachbereich(university: string) {
           <td class="md nw sm">
             <div>{k}</div>
           </td>
-        
+
           <td class="md right nw">
             <div>{v.sws || "-"}</div>
             {/* <div>
@@ -91,16 +104,12 @@ function fachbereich(university: string) {
             </div> */}
           </td>
 
-          <td class="md"set:html={fachbereich(k).join(",&nbsp;")}></td>
-             
-          
+          <td class="md" set:html={fachbereich(k).join(",&nbsp;")} />
         </tr>
       ))
     }
   </tbody>
   <caption class="sm">
-
     <slot />
-    
   </caption>
 </table>

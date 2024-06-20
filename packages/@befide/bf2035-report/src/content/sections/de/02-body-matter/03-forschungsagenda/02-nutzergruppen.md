@@ -38,28 +38,28 @@ Die Forschungsagenda verdeutlicht, für welche beschleunigerbetriebene Forschung
 
 <div class="spread--right spread-area--6-3-12-8">
 
-![Teilchenphysik](@befide/bf2035-report/src/astro/assets/agenda/agenda.facilities.particle-physics.svg)
+![Teilchenphysik](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.facilities.particle-physics.svg)
 
 </div>
 
 <div class="spread--right spread-area--12-3-18-8">
 
-![Kernphysik](@befide/bf2035-report/src/astro/assets/agenda/agenda.facilities.hadron-physics.svg)
+![Kernphysik](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.facilities.hadron-physics.svg)
 
 </div>
 
 <div class="spread--right spread-area--6-9-12-12">
 
-![Forschung mit Photonen](@befide/bf2035-report/src/astro/assets/agenda/agenda.facilities.photon-science.svg)
+![Forschung mit Photonen](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.facilities.photon-science.svg)
 
 </div>
 
 <div class="spread--right spread-area--12-9-18-12">
 
-![Forschung mit Neutronen](@befide/bf2035-report/src/astro/assets/agenda/agenda.facilities.neutron-science.svg)
+![Forschung mit Neutronen](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.facilities.neutron-science.svg)
 
 </div>
 
 <div class="spread--left spread-area--6-3-18-12">
 
-![Beschleunigerforschung](@befide/bf2035-report/src/astro/assets/agenda/agenda.facilities.accelerator-science.svg)
+![Beschleunigerforschung](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.facilities.accelerator-science.svg)

@@ -1,29 +1,5 @@
 [
   {
-    "id": "____linear",
-    "abstract": "The linear particle accelerators market size was valued at USD 2.8 billion in 2023 and is anticipated to showcase growth at 5.9% CAGR from 2024 and 2032 driven by growing demand for radiotherapy treatments.",
-    "accessed": { "date-parts": [["2024", 6, 6]] },
-    "citation-key": "____linear",
-    "container-title": "Global Market Insights Inc.",
-    "keyword": "",
-    "language": "en",
-    "title": "Linear Particle Accelerators Market Size & Share Report, 2032",
-    "type": "webpage",
-    "URL": "https://www.gminsights.com/industry-analysis/linear-particle-accelerators-market"
-  },
-  {
-    "id": "____research",
-    "abstract": "According to a recent report by Market.us, the Global Linear Particle Accelerators Market size is expected to be worth around USD 4.8 Billion by 2033 from USD 2.7 Billion in 2023, growing at a CAGR of 5.7% during the forecast period from 2024 to 2033.An Increase in Demand and Opportunities for th...",
-    "accessed": { "date-parts": [["2024", 6, 6]] },
-    "citation-key": "____research",
-    "container-title": "PharmiWeb.com",
-    "keyword": "",
-    "language": "en",
-    "title": "Research Predicts Surge in Global Linear Particle Accelerators Market, Reaching USD 4.8 Billion by 2",
-    "type": "webpage",
-    "URL": "https://www.pharmiweb.com/press-release/2024-03-20/research-predicts-surge-in-global-linear-particle-accelerators-market-reaching-usd-48-billion-by-2"
-  },
-  {
     "id": "aberle_bejaralonso_etal__2020__highluminosity",
     "author": [
       { "family": "Aberle", "given": "O." },
@@ -679,6 +655,21 @@
     "volume": "746"
   },
   {
+    "id": "andreasvonwestphalen__2020__konkurrenz",
+    "abstract": "Die Ansicht, der Mensch sei von Natur aus ein Wesen, das konkurrenzorientiert ist und seine beste Leistung in einer Konkurrenzsituation erzielt, erscheint als eine Gewissheit, die keines Beweises bedarf. Was aber sagt die Wissenschaft?",
+    "accessed": { "date-parts": [["2023", 10, 10]] },
+    "author": [{ "literal": "Andreas von Westphalen" }],
+    "citation-key": "andreasvonwestphalen__2020__konkurrenz",
+    "container-title": "Telepolis",
+    "issued": { "date-parts": [["2020", 2, 8]] },
+    "keyword": "",
+    "language": "en",
+    "title": "Konkurrenz oder Kooperation? Das ist die entscheidende Frage",
+    "title-short": "Konkurrenz Oder Kooperation?",
+    "type": "webpage",
+    "URL": "https://www.telepolis.de/features/Konkurrenz-oder-Kooperation-Das-ist-die-entscheidende-Frage-4647091.html"
+  },
+  {
     "id": "APS_PRAB",
     "author": [{ "literal": "American Physical Society" }],
     "citation-key": "APS_PRAB",
@@ -946,7 +937,7 @@
     "accessed": { "date-parts": [["2023", 1, 23]] },
     "author": [{ "literal": "Bilfinger Noell" }],
     "citation-key": "bilfingernoell____insertion",
-    "keyword": "",
+    "keyword": "#bf2035/topics/commercialisation",
     "language": "en",
     "publisher": "Bilfinger Noell Gmbh",
     "title": "Insertion devices",
@@ -1625,6 +1616,23 @@
     "URL": "https://dns-indikatoren.de/assets/Publikationen/Indikatorenberichte/2022.pdf"
   },
   {
+    "id": "desy__2023__softwert",
+    "accessed": { "date-parts": [["2024", 6, 20]] },
+    "author": [{ "literal": "DESY" }],
+    "citation-key": "desy__2023__softwert",
+    "event-place": "Hamburg",
+    "issued": { "date-parts": [["2023", 11]] },
+    "keyword": "#bf2035/topics/digitalisierung;#bf2035/topics/commercialisation",
+    "language": "de",
+    "note": "Read_Status: To Read\nRead_Status_Date: 2024-06-20T05:34:44.893Z",
+    "publisher": "DESY",
+    "publisher-place": "Hamburg",
+    "title": "SoftWert. Entwicklung und Implementierung eines Methodenbaukastens zur Verwertung von Forschungssoftware",
+    "title-short": "SoftWert",
+    "type": "report",
+    "URL": "http://softwert.org"
+  },
+  {
     "id": "desy__2024__desy",
     "accessed": { "date-parts": [["2024", 5, 29]] },
     "author": [{ "literal": "DESY" }],
@@ -1988,6 +1996,24 @@
     "title": "2020 Update of the European Strategy for Particle Physics (Brochure)",
     "type": "report",
     "URL": "https://cds.cern.ch/record/2721370/files/CERN-ESU-015-2020%20Update%20European%20Strategy.pdf"
+  },
+  {
+    "id": "faizullabhoy_wani__2024__linear",
+    "abstract": "The linear particle accelerators market size was valued at USD 2.8 billion in 2023 and is anticipated to showcase growth at 5.9% CAGR from 2024 and 2032 driven by growing demand for radiotherapy treatments.",
+    "accessed": { "date-parts": [["2024", 6, 6]] },
+    "author": [
+      { "family": "Faizullabhoy", "given": "Mariam" },
+      { "family": "Wani", "given": "Gauri" }
+    ],
+    "citation-key": "faizullabhoy_wani__2024__linear",
+    "genre": "Market Research Report",
+    "issued": { "date-parts": [["2024", 5]] },
+    "keyword": "#bf2035/topics/commercialisation",
+    "language": "en",
+    "publisher": "Global Market Insights Inc.",
+    "title": "Linear Particle Accelerators Market Size & Share Report",
+    "type": "report",
+    "URL": "https://www.gminsights.com/industry-analysis/linear-particle-accelerators-market"
   },
   {
     "id": "fernandez-tornero_moreno-morcillo_etal__2013__crystal",
@@ -2736,7 +2762,7 @@
     ],
     "citation-key": "kirchner_englert_etal__2015__gutachten",
     "issued": { "date-parts": [["2015", 8, 12]] },
-    "keyword": "bf2035:impact:security",
+    "keyword": "#bf2035/applications",
     "page": "158",
     "publisher": "Zentrum für Naturwissenschaft und Friedensforschung (ZNF) und Öko-Institut",
     "title": "Gutachten \"Transmutation\"",
@@ -2843,6 +2869,25 @@
     "type": "article-journal",
     "URL": "http://ieeexplore.ieee.org/document/7420720/",
     "volume": "28"
+  },
+  {
+    "id": "market_us__2024__global",
+    "abstract": "Linear Particle Accelerators Маrkеt size is expected to be worth around USD 4.8 Billion by 2033 from USD 2.7 Billion in 2023",
+    "accessed": { "date-parts": [["2024", 6, 20]] },
+    "author": [{ "literal": "Market.us" }],
+    "citation-key": "market_us__2024__global",
+    "event-place": "New York",
+    "genre": "Market Research Report",
+    "issued": { "date-parts": [["2024", 3]] },
+    "keyword": "#bf2035/topics/commercialisation",
+    "language": "en",
+    "note": "abstract: The Global Linear Particle Accelerators Маrkеt size is expected to be worth around USD 4.8 Billion by 2033 from USD 2.7 Billion in 2023, growing at a CAGR of 5.7% during the forecast period from 2024 to 2033.",
+    "page": "333",
+    "publisher": "Market.us",
+    "publisher-place": "New York",
+    "title": "Global Linear Particle Accelerators Market",
+    "type": "report",
+    "URL": "https://market.us/report/linear-particle-accelerators-market/"
   },
   {
     "id": "moller_hornbostel__2023__long",
@@ -3268,7 +3313,7 @@
     "DOI": "10.1007/978-3-662-61007-7_7",
     "ISBN": "978-3-662-61006-0",
     "issued": { "date-parts": [["2020", 4, 4]] },
-    "keyword": "#bf2035/topics/entrepreneurship",
+    "keyword": "#bf2035/topics/entrepreneurship;#bf2035/topics/commercialisation",
     "page": "163-202",
     "source": "ResearchGate",
     "title": "A Reform Strategy for Germany",
@@ -3301,7 +3346,7 @@
     "ISSN": "0031-9228",
     "issue": "4",
     "issued": { "date-parts": [["2020", 4, 1]] },
-    "keyword": "",
+    "keyword": "#bf2035/applications/science",
     "language": "en",
     "note": "http://web.archive.org/web/20200427073743/https://physicstoday.scitation.org/doi/10.1063/PT.3.4452",
     "page": "32-39",
@@ -9067,7 +9112,7 @@
     "citation-key": "vano__2023__collapse",
     "container-title": "Radiology Oncology Systems",
     "issued": { "date-parts": [["2023", 10, 13]] },
-    "keyword": "",
+    "keyword": "#bf2035/topics/commercialisation",
     "language": "en",
     "title": "The Collapse of ViewRay",
     "type": "post-weblog",
@@ -9079,7 +9124,7 @@
     "author": [{ "literal": "Varian" }],
     "citation-key": "varian__2019__varian",
     "issued": { "date-parts": [["2019"]] },
-    "keyword": "",
+    "keyword": "#bf2035/topics/commercialisation",
     "language": "en",
     "publisher": "Varian Medical Systems",
     "title": "Varian EDGE",
@@ -9092,7 +9137,7 @@
     "author": [{ "literal": "Varian" }],
     "citation-key": "varian__2020__probeam",
     "issued": { "date-parts": [["2020", 1]] },
-    "keyword": "",
+    "keyword": "#bf2035/topics/commercialisation",
     "language": "en",
     "publisher": "Varian Medical Systems",
     "title": "ProBeam Brochure",
@@ -9105,7 +9150,7 @@
     "author": [{ "literal": "Varian" }],
     "citation-key": "varian__2022__varian",
     "issued": { "date-parts": [["2022", 5]] },
-    "keyword": "",
+    "keyword": "#bf2035/topics/commercialisation",
     "language": "en",
     "publisher": "Varian Medical Systems",
     "title": "Varian TrueBeam",
@@ -9141,23 +9186,6 @@
     "title-short": "More than Five Decades of Proton Therapy",
     "type": "article-journal",
     "volume": "15"
-  },
-  {
-    "id": "westphalen__2020__konkurrenz",
-    "abstract": "Die Ansicht, der Mensch sei von Natur aus ein Wesen, das konkurrenzorientiert ist und seine beste Leistung in einer Konkurrenzsituation erzielt, erscheint als eine Gewissheit, die keines Beweises bedarf. Was aber sagt die Wissenschaft?",
-    "accessed": { "date-parts": [["2023", 10, 10]] },
-    "author": [
-      { "family": "Westphalen", "given": "Andreas", "dropping-particle": "von" }
-    ],
-    "citation-key": "westphalen__2020__konkurrenz",
-    "container-title": "Telepolis",
-    "issued": { "date-parts": [["2020", 2, 8]] },
-    "keyword": "",
-    "language": "en",
-    "title": "Konkurrenz oder Kooperation? Das ist die entscheidende Frage",
-    "title-short": "Konkurrenz Oder Kooperation?",
-    "type": "webpage",
-    "URL": "https://www.telepolis.de/features/Konkurrenz-oder-Kooperation-Das-ist-die-entscheidende-Frage-4647091.html"
   },
   {
     "id": "williams__2021__20210604",

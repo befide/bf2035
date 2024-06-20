@@ -12,13 +12,14 @@ cslItem:
   issued:
     date-parts:
       - - "2019"
-  keyword: ""
+  keyword: "#bf2035/topics/commercialisation"
   language: en
   publisher: Varian Medical Systems
   title: Varian EDGE
   type: document
   URL: https://varian.widen.net/s/7rxbczh7tp/edge_brochure_rad10621_may2019
-tags: []
+tags:
+  - "#bf2035/topics/commercialisation"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
