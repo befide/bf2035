@@ -10,30 +10,26 @@
   height calc(3 * var(--ui__baseline-height));
 }
 
-.layout__main, .layout__header {
-  margin 0 auto;
-  transition 200ms;
+.content-wrapper {
+  width var(--spread--width);
+  margin: 0 auto
 }
-
 
 @media screen {
   [data-fit-spread=true] {
     .layout {
-      height 100vh;
+      min-height 100vh;
     }
 
     .layout__main {
       flex 1 0 calc(100vh - 6 * var(--ui__baseline-height));
-      
     }
 
-    .bleeding-spread {
-      margin 0 auto
-      transform-origin 0 0;
+    .content-wrapper {
+      margin 0 auto;
+      transform-origin 50% 0;
       transform scale(var(--fit-spread-scale, 1));
-      margin: 1rem
     }
-    
   }
 }
 
@@ -41,9 +37,8 @@
   display none;
 }
 
-
 .layout__header, .layout__footer {
-  display: flex;
-  box-shadow: 0px 0px 2px #999;
-  background-color: #eee;
+  display flex;
+  box-shadow 0px 0px 2px #999;
+  background-color #eee;
 }

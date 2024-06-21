@@ -1,6 +1,6 @@
 ---
 title: Estimating the size and structure of the German accelerator science community
-lang: en
+language: en
 ---
 
 <div class="spread--left spread-area--c-1-under-header">

@@ -17,9 +17,11 @@ const sections = await getSections().then((r) =>
 <Base>
   <div class="layout layout--book">
     <Header />
-    <div class="layout__main">
-      <BookSections sections={sections} />
-    </div>
+    <main id="main" class="layout__main" data-pagefind-body>
+      <div class="content-wrapper">
+        <BookSections sections={sections} />
+      </div>
+    </main>
     <div class="layout__paged-js layout__paged-js--book">
       <!-- <vue-paged-js refid="main" mode="book" /> -->
     </div>

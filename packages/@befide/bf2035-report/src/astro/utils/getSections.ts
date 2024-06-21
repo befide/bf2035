@@ -52,7 +52,7 @@ export async function getPrevNext(currentPath = "") {
   if (nextSectionIndex === sections.length - 1) nextSectionIndex = 0
 
   return {
-    home: sections[0],
+    home: sections.find(s => !s.data.excludeFromTour),
     prev: sections[prevSectionIndex],
     current: sections[currentSectionIndex],
     next: sections[nextSectionIndex],

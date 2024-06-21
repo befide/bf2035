@@ -18,7 +18,9 @@ const { lang = "de", title = "" } = Astro.props;
       <Header />
     </header>
     <main id="main" class="layout__main" data-pagefind-body>
-      <slot />
+      <div class="content-wrapper">
+        <slot />
+      </div>
     </main>
     <Footer />
   </div>

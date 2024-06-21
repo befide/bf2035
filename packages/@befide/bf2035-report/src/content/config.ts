@@ -14,37 +14,22 @@ const sectionCollection = defineCollection({
   schema: ({ image }) =>
     z
       .object({
-        abstract: z
-          .string()
-          .optional()
-          .transform((str) => new Date(str)),
-        lang: z.string().optional(),
+        abstract: z.string().optional().transform((str) => spaceCommander(str)),
         backgroundImageSrc: image().optional(),
         bibliography: z.string().optional(),
-        excludeFromTour: z.boolean().optional().default(false),
         excludeFromToc: z.boolean().optional().default(false),
-        isTocItemCollapsible: z.boolean().optional(),
-        layoutType: z.string().optional(), // part, spread, left, right
-        sectionClass: z.string().optional(),
-        pageName: z.string().optional(),
-        sectionType: z.string().optional(),
+        excludeFromTour: z.boolean().optional().default(false),
+        language: z.enum(["de", "en"]).optional(), 
         path: z.string().optional(),
+        sectionClass: z.string().optional(),
         sectionNumber: z.string().optional(),
-        description: z.string().optional(),
-        template: z.string().optional(),
-        subtitle: z
-          .string()
-          .optional()
-          .transform((str) => spaceCommander(str)),
-        supertitle: z
-          .string()
-          .optional()
-          .transform((str) => spaceCommander(str)),
+        sectionType: z.string().optional(), // part, spread, left, right
+        subtitle: z.string().optional().transform((str) => spaceCommander(str)),
+        supertitle: z.string().optional().transform((str) => spaceCommander(str)),
         tags,
         title__toc: z.string().optional(),
         title: z.string().transform((str) => spaceCommander(str)),
-        tocIcon: z.string().optional(),
-        virtual: z.boolean().optional(),
+        tocIcon: z.string().optional()
       })
       .strict(),
 })

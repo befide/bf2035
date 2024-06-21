@@ -1,8 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
 
-
-
 import { getImage, Image } from "astro:assets";
 
 import LinkCard from "@ui/LinkCard.astro";
@@ -38,81 +36,79 @@ const optimizedBackground =
     : backgroundImageSrc);
 ---
 
-<div class="bleeding-spread">
-  <div class={"spread " + sectionType + " " + sectionClass}>
-    {
-      (sectionType === "spread" || sectionType === "left") && (
-        <div
-          class="spread__page left"
-          style={
-            optimizedBackground
-              ? `background-image: url(${optimizedBackground.src})`
-              : ``
-          }
-        >
-          <div class="spread__page-grid debug-overlay">
+<div class={"spread " + sectionType + " " + sectionClass}>
+  {
+    (sectionType === "spread" || sectionType === "left") && (
+      <div
+        class="spread__page left"
+        style={
+          optimizedBackground
+            ? `background-image: url(${optimizedBackground.src})`
+            : ``
+        }
+      >
+        <div class="spread__page-grid debug-overlay">
+          <header class="spread__header">
+            {supertitle && (
+              <div class="spread__supertitle">
+                <span>
+                  {sectionNumber}: {supertitle}
+                </span>
+              </div>
+            )}
+            {title && (
+              <h1 class="spread__title">
+                <span>{title}</span>
+              </h1>
+            )}
+            {subtitle && (
+              <div class="spread__subtitle">
+                <span>{subtitle}</span>
+              </div>
+            )}
+          </header>
+
+          <Content components={{ Image, BibRef, LinkCard, CardGrid }} />
+        </div>
+      </div>
+    )
+  }
+  {
+    (sectionType === "spread" || sectionType === "right") && (
+      <div
+        class="spread__page right"
+        style={
+          optimizedBackground
+            ? `background-image: url(${optimizedBackground.src})`
+            : ``
+        }
+      >
+        <div class="spread__page-grid debug-overlay">
+          {sectionType === "right" && (
             <header class="spread__header">
-              {supertitle && (
-                <div class="spread__supertitle">
-                  <span>
-                    {sectionNumber}: {supertitle}
-                  </span>
+              {sectionNumber && (
+                <div class="spread__sectionNumber">
+                  <span>{sectionNumber}</span>
                 </div>
               )}
-              {title && (
-                <h1 class="spread__title">
-                  <span>{title}</span>
-                </h1>
+              {supertitle && (
+                <div class="spread__supertitle">
+                  <span>{supertitle}</span>
+                </div>
               )}
+              <h1 class="spread__title">
+                <span>{title}</span>
+              </h1>
               {subtitle && (
                 <div class="spread__subtitle">
                   <span>{subtitle}</span>
                 </div>
               )}
             </header>
-
-            <Content components={{ Image, BibRef, LinkCard, CardGrid }} />
-          </div>
+          )}
+          <Content components={{ Image, BibRef, LinkCard, CardGrid }} />
         </div>
-      )
-    }
-    {
-      (sectionType === "spread" || sectionType === "right") && (
-        <div
-          class="spread__page right"
-          style={
-            optimizedBackground
-              ? `background-image: url(${optimizedBackground.src})`
-              : ``
-          }
-        >
-          <div class="spread__page-grid debug-overlay">
-            {sectionType === "right" && (
-              <header class="spread__header">
-                {sectionNumber && (
-                  <div class="spread__sectionNumber">
-                    <span>{sectionNumber}</span>
-                  </div>
-                )}
-                {supertitle && (
-                  <div class="spread__supertitle">
-                    <span>{supertitle}</span>
-                  </div>
-                )}
-                <h1 class="spread__title">
-                  <span>{title}</span>
-                </h1>
-                {subtitle && (
-                  <div class="spread__subtitle">
-                    <span>{subtitle}</span>
-                  </div>
-                )}
-              </header>
-            )}
-            <Content components={{ Image, BibRef, LinkCard, CardGrid }} />
-          </div>
-        </div>
-      )
-    }
-  </div>
+      </div>
+    )
+  }
 </div>

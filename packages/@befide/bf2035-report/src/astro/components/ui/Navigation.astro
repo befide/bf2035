@@ -6,6 +6,7 @@ const slug = Astro.params?.slug;
 const path = ("/" + slug + "/").replaceAll("//", "/");
 
 const { prev, next, home } = await getPrevNext(path);
+
 ---
 
 <nav class="linear-navigation">
