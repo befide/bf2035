@@ -23,6 +23,7 @@ cslItem:
         - 5
   keyword: "#bf2035/topics/commercialisation"
   language: en
+  page: "193"
   publisher: Global Market Insights Inc.
   title: Linear Particle Accelerators Market Size & Share Report
   type: report
@@ -33,11 +34,11 @@ tags:
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="faizullabhoy_wani__2024__linear" class="csl-entry"><span class='author-bib'>Faizullabhoy, &#38; Wani, G.</span>. <span class='date-bib'>(2024)</span>. <span class='title'><i><b><span style="font-style:normal;">Linear Particle Accelerators Market Size &#38; Share Report</span></b></i></span> [Market Research Report]. Global Market Insights Inc. <span class='URL'><a href='https://www.gminsights.com/industry-analysis/linear-particle-accelerators-market'>LINK</a></span></span>
+      <span data-csl-entry-id="faizullabhoy_wani__2024__linear" class="csl-entry"><span class='author-bib'>Faizullabhoy, &#38; Wani, G.</span>. <span class='date-bib'>(2024)</span>. <span class='title'><i><b><span style="font-style:normal;">Linear Particle Accelerators Market Size &#38; Share Report</span></b></i></span> (S. 193) [Market Research Report]. Global Market Insights Inc. <span class='URL'><a href='https://www.gminsights.com/industry-analysis/linear-particle-accelerators-market'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">Faizullabhoy</span> &#38; <span
     style="font-variant:small-caps;">Wani</span></span>, 2024)
-bibTex: "@techreport{faizullabhoy_wani__2024__linear,\n\tnote = {[Online; accessed 2024-06-06]},\n\tauthor = {Faizullabhoy, Mariam and Wani, Gauri},\n\tyear = {2024},\n\tmonth = {5},\n\tinstitution = {Global Market Insights Inc.},\n\ttitle = {Linear {Particle} {Accelerators} {Market} {Size} & {Share} {Report}},\n\ttype = {Market {Research} {Report}},\n\turl = {https://www.gminsights.com/industry-analysis/linear-particle-accelerators-market},\n}\n\n"
+bibTex: "@techreport{faizullabhoy_wani__2024__linear,\n\tnote = {[Online; accessed 2024-06-06]},\n\tauthor = {Faizullabhoy, Mariam and Wani, Gauri},\n\tyear = {2024},\n\tmonth = {5},\n\tpages = {193},\n\tinstitution = {Global Market Insights Inc.},\n\ttitle = {Linear {Particle} {Accelerators} {Market} {Size} & {Share} {Report}},\n\ttype = {Market {Research} {Report}},\n\turl = {https://www.gminsights.com/industry-analysis/linear-particle-accelerators-market},\n}\n\n"
 ---

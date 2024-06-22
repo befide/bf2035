@@ -9,7 +9,7 @@ cslItem:
   issued:
     date-parts:
       - - "2015"
-  keyword: ""
+  keyword: "#bf2035/applications/transmutation;#bf2035/projects/myrrha"
   language: en
   publisher: International Atomic Energy Agency
   publisher-place: Vienna
@@ -17,7 +17,9 @@ cslItem:
   type: report
   URL: >-
     https://www.iaea.org/publications/10870/status-of-accelerator-driven-systems-research-and-technology-development
-tags: []
+tags:
+  - "#bf2035/applications/transmutation"
+  - "#bf2035/projects/myrrha"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

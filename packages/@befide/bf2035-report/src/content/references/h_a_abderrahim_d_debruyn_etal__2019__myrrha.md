@@ -26,7 +26,7 @@ cslItem:
     date-parts:
       - - "2019"
         - 6
-  keyword: "#bf2035/facilities/myrrha;#bf2035/topics/transmutation"
+  keyword: "#bf2035/facilities/myrrha;#bf2035/applications/transmutation"
   language: en
   page: 29-42
   source: DOI.org (Crossref)
@@ -37,7 +37,7 @@ cslItem:
   volume: "2019"
 tags:
   - "#bf2035/facilities/myrrha"
-  - "#bf2035/topics/transmutation"
+  - "#bf2035/applications/transmutation"
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

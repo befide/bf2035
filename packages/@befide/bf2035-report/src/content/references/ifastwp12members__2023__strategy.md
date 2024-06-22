@@ -29,19 +29,18 @@ cslItem:
         - 14
   keyword: ""
   language: en
-  publisher: "[object Object]"
-  source: DOI.org (Datacite)
+  source: Zenodo
   title: Strategy for implementing novel societal applications of accelerators
-  type: article-journal
+  type: report
   URL: https://zenodo.org/record/8348103
 tags: []
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
-      <span data-csl-entry-id="ifastwp12members__2023__strategy" class="csl-entry"><span class='author-bib'>IFAST WP12 Members</span>. <span class='date-bib'>(2023)</span>. <span class='title'><b><i>Strategy for implementing novel societal applications of accelerators</i></b></span>. <span class='URL'><a href='https://doi.org/10.5281/ZENODO.8348103'>LINK</a></span></span>
+      <span data-csl-entry-id="ifastwp12members__2023__strategy" class="csl-entry"><span class='author-bib'>IFAST WP12 Members</span>. <span class='date-bib'>(2023)</span>. <span class='title'><i><b><span style="font-style:normal;">Strategy for implementing novel societal applications of accelerators</span></b></i></span>. <span class='URL'><a href='https://doi.org/10.5281/ZENODO.8348103'>LINK</a></span></span>
     </span>
   citation: >-
     (<span style="font-variant:small-caps;"><span
     style="font-variant:small-caps;">IFAST WP12 Members</span></span>, 2023)
-bibTex: "@article{ifastwp12members__2023__strategy,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{IFAST WP12 Members}},\n\tdoi = {10.5281/ZENODO.8348103},\n\tyear = {2023},\n\tmonth = {sep 14},\n\tpublisher = {[object Object]},\n\ttitle = {Strategy for implementing novel societal applications of accelerators},\n\turl = {https://zenodo.org/record/8348103},\n}\n\n"
+bibTex: "@techreport{ifastwp12members__2023__strategy,\n\tnote = {[Online; accessed 2024-03-17]},\n\tauthor = {{IFAST WP12 Members}},\n\tdoi = {10.5281/ZENODO.8348103},\n\tyear = {2023},\n\tmonth = {sep 14},\n\ttitle = {Strategy for implementing novel societal applications of accelerators},\n\turl = {https://zenodo.org/record/8348103},\n\thowpublished = {https://zenodo.org/record/8348103},\n}\n\n"
 ---
