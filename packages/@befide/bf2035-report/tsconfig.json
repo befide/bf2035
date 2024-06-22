@@ -25,7 +25,6 @@
     "src/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.astro",
-    "node_modules/vite-plugin-pwa/client.d.ts",
-    "src/pages/_dynamics-model.dot.ts_"
+    "node_modules/vite-plugin-pwa/client.d.ts"
   ]
 }
