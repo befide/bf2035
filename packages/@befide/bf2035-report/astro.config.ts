@@ -47,7 +47,6 @@ export default defineConfig({
   // },
 
   redirects: {
-    // "/": "/de/",
   },
   markdown: {
     remarkPlugins: [
@@ -93,7 +92,7 @@ export default defineConfig({
     defaultLocale: "de",
     locales: ["de"],
     routing: {
-      prefixDefaultLocale: true,
+      prefixDefaultLocale: false,
     },
   },
 
