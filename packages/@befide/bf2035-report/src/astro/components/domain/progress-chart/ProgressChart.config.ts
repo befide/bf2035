@@ -6,7 +6,7 @@ import acceleratorsInUse from "./data/acceleratorsInUsePerYear.json" assert { ty
 
 import nuclideDiscoveriesPerYear from "./data/nuclideDiscoveriesPerYear.json" assert { type: "json" }
 
-import particleDiscoveries from "./data/particleDiscoveries.json" assert { type: "json" }
+import _particleDiscoveries from "./data/particleDiscoveries.json" assert { type: "json" }
 
 import pdbEntries from "./data/proteinStructures.json" assert { type: "json" }
 
@@ -45,6 +45,9 @@ import neutronFlux from "./data/neutronFlux.json" assert { type: "json" }
 import projectFunding from "./data/projektfoerderung_pt-desy.2-aggregated.accelerator_related_projects_per_year.json" assert { type: "json" }
 import excellenceRate from "./data/excellence-rate.json" assert { type: "json" }
 
+const particleDiscoveries = Array.from(group(_particleDiscoveries, ({ year }) => year)).map(
+  ([y, v]) => ({ year: y, value: v.length }),
+)
 const nobelPrizes = Array.from(group(_nobelPrizes, ({ year }) => year)).map(
   ([y, v]) => ({ year: y, value: v.length }),
 )
@@ -89,15 +92,11 @@ export default {
     yDomain: [0, 25],
     scale: "linear",
     cumulate: true,
-    data: particleDiscoveries
-      .filter((d) => d.isAcceleratorBased)
-      .map(({ year, label__de }) => ({
-        year,
-        label: label__de,
-      })),
+    data: particleDiscoveries,
     quantityName: "Elementarteilchen",
     quantityNameQualifier: "",
     unit: "an Beschleunigern entdeckt (kumuliert)",
+    curveGenerator: curveStepAfter,
   },
   pdbEntries: {
     yDomain: [0, 100000],
@@ -113,13 +112,13 @@ export default {
     curveGenerator: curveStepAfter,
   },
   accelerator_related__nobel_prizes: {
-    yDomain: [0, 50],
+    yDomain: [0, 25],
     scale: "linear",
     cumulate: true,
     data: nobelPrizes,
     quantityName: "Nobelpreise",
     quantityNameQualifier: "",
-    unit: "kumulierte Zahl der Nobelpreise mit Beschleunigerbezug",
+    unit: "mit Beschleunigerbezug (kumuliert)",
     curveGenerator: curveStepAfter,
   },
 
@@ -209,7 +208,7 @@ export default {
     cumulate: true,
     data: publications,
     quantityName: "Veröffentlichungen",
-    quantityNameQualifier: "Akadmenische ",
+    quantityNameQualifier: "Akademenische ",
     unit: "in Physics Review Accelerators and Beams pro Jahr",
     curveGenerator: curveStepAfter,
   },
@@ -225,12 +224,12 @@ export default {
   },
   progress__projectFundingAmount: {
     scale: "linear",
-    yDomain: [0, 300000000],
+    yDomain: [0, 250000000],
     cumulate: true,
     data: projectFundingAmount,
     quantityName: "Projektförderung",
     quantityNameQualifier: "Verbundforschung ",
-    unit: "Euro",
+    unit: "Fördersumme in Euro",
     curveGenerator: curveStepAfter,
   },
   progress__excellenceRate: {
