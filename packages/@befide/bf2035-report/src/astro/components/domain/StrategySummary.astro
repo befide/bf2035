@@ -1,0 +1,25 @@
+---
+import { getSections } from '@utils/getSections'
+import { getEntry } from 'astro:content'
+
+export interface StrategySummary {
+  slug: string
+}
+
+const { slug } = Astro.props
+
+const section = await getEntry('sections', slug)
+
+if (!section) throw new Error('section not found: ' + slug)
+---
+
+<section class="strategy-summary">
+  <h3 class="md">{section.data.title}</h3>
+  <p class="md" set:html={section.data.abstract} />
+</section>
+
+<style>
+  .strategy-summary {
+    margin-bottom: 1rem;
+  }
+</style>
