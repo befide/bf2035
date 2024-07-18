@@ -19,6 +19,10 @@
     grid-template-rows repeat(var(--grid__row-count), calc(var(--grid__column-width-in-baselines) * var(--baseline-height)));
   }
 
+  .header-padding {
+    padding-top 3rem;
+  }
+
   .spread-area--university {
     grid-area 1 / 1 / 7 / 3;
   }
@@ -68,86 +72,113 @@
   }
 
   .spread-area--intro {
-    grid-area 3 / 1 / 8 / 7;
+    grid-area 2 / 1 / 8 / 7;
   }
 
   .spread-area--strategic-starting-point {
-    grid-area 1 / 1 / 17 / 5;
+    grid-area 1 / 9 / 9 / 13;
   }
 
   .spread-area--strategic-starting-point-2 {
-    grid-area 1 / 5 / 17 / 9;
+    grid-area 1 / 1 / 17 / 5;
     padding-top 2rem;
   }
 
   .spread-area--strategic-interventions {
-    grid-area 1 / 9 / 13 / 13;
+    grid-area 1 / 5 / 13 / 9;
   }
 
   .spread-area--strategic-map {
-    grid-area 9 / 9 / 17 / 13;
-    overflow: hidden
-   
+    grid-area 9 / 1 / 17 / 5;
+    overflow hidden;
   }
 
-  .spread-area--strategic-aside {
-
+  .spread-area--aside {
     grid-area 1 / 9 / 17 / 13;
-    padding-top 3rem
-    position: relative
+    position relative;
   }
 
-  .spread-area--strategic-aside::before {
-      position: absolute;
-      content " "
-      display: block
-      width calc(100%+1rem)
-      height calc(100%+1rem)
-      top: -.5rem
-      left: -.5rem
-      z-index: -1
-
-      background-color: rgba(#dddddd, .8);
-
+  .spread--strategic-area .spread-area--aside::before {
+    position absolute;
+    content ' ';
+    display block;
+    width calc(100% + 1rem);
+    height calc(100% + 8rem);
+    top -4rem;
+    left -0.5rem;
+    z-index -1;
+    background-color rgba(black, 0.1);
   }
-  .spread-area--full {
+
+  .spread-area--c-1_1 {
     grid-area 3 / 1 / 17 / 13;
   }
 
-  .spread-area--c-1 {
+  .align-bottom {
+    height 100%;
+    display flex;
+    align-items flex-end;
+  }
+
+  .flex-grid {
+    display flex;
+    flex-wrap wrap;
+    gap 1rem;
+  }
+
+  .spread-area--c-1_2 {
+    grid-area 1 / 1 / 17 / 7;
+  }
+
+  .spread-area--c-2_2 {
+    grid-area 1 / 7 / 17 / 13;
+  }
+
+  .spread-area--c-1_3 {
     grid-area 1 / 1 / 8 / 5;
   }
 
-  .spread-area--c-2 {
+  .under-header {
+    padding-top 10rem;
+  }
+
+  .spread-area--c-2_3 {
     grid-area 1 / 5 / 9 / 9;
+
+    p {
+      margin-right 1rem;
+    }
   }
 
-  .spread-area--c-3 {
-    grid-area 1 / 9 / 9 / 13;
+  .spread-area--c-3_3 {
+    grid-area 1 / 9 / 17 / 13;
   }
 
-  .spread-area--under-header {
-    grid-area 3 / 1 / 17 / 13;
+  .spread-area--c-1_4 {
+    grid-area 2 / 1 / 17 / 4;
   }
 
-  .spread-area--c-1-under-header {
-    grid-area 3 / 1 / 17 / 5;
+  .spread-area--c-2_4 {
+    grid-area 2 / 4 / 17 / 7;
+    background-color red;
   }
 
-  .spread-area--c-2-under-header {
-    grid-area 3 / 5 / 17 / 9;
+  .spread-area--c-3_4 {
+    grid-area 2 / 7 / 17 / 10;
+    background-color red;
   }
 
-  .spread-area--c-3-under-header {
-    grid-area 3 / 9 / 9 / 13;
+  .spread-area--c-4_4 {
+    grid-area 2 / 10 / 17 / 13;
+    background-color red;
   }
 
-  .spread-area--1-7-9-13 {
-    grid-area 1 / 7 / 9 / 13;
+  .spread.spread.accelerator-type .spread-area--aside {
+    grid-area 1 / 9 / 17 / 13;
   }
 
   .spread--strategic-area section.footnotes {
-    grid-area 9 / 1 / 18 / 7;
+    grid-area 9 / 5 / 18 / 9;
     align-content end;
   }
 
@@ -155,27 +186,51 @@
     display none;
   }
 
-  section.footnotes {
-    grid-area 9 / 1 / 18 / 4;
-    align-content end;
+  .spread-area--research-agenda-topic {
+    grid-area 11 / 1 / 17 / 7;
+
+    img {
+      width 100%;
+      height 100%;
+    }
   }
-  
+
+  section.footnotes {
+    grid-area 9 / 1 / 18 / 7;
+    align-content end;
+    padding-bottom 1rem;
+  }
+
+  .data-footnote-backref {
+    display none;
+  }
+
   .right section.footnotes {
     display none;
   }
 
-
-  .spread-area--c-1_2--full {
-    grid-area 1 / 1 / 19 / 7
+  .spread-area--6-3-12-8 {
+    grid-area 5 / 1 / 11 / 7;
   }
 
-  .spread-area--c-2_2--full {
-    grid-area 1 / 7 / 19 / 13
+  .spread-area--12-3-18-8 {
+    grid-area 5 / 7 / 11 / 13;
   }
 
+  .spread-area--6-9-12-12 {
+    grid-area 11 / 1 / 17 / 7;
+  }
 
-}
+  .spread-area--12-9-18-12 {
+    grid-area 11 / 7 / 17 / 13;
+  }
 
-.spread-area--hidden {
-  display none;
+  .spread-area--6-3-18-12 {
+    grid-area 9 / 5 / 17 / 13;
+  }
+
+  .spread-area--r-12-17 {
+    grid-area 13 / 1 / 17 / 13;
+    background-color red;
+  }
 }

@@ -2,6 +2,54 @@
 @import './reset.styl';
 @import './root.styl';
 
+@page {
+  size: 210mm 297mmm;
+  margin: 0; 
+  // marks: crop;
+}
+
+// @page {
+//   margin 0;
+//   size 210mm 297mm;
+//   bleed 0mm;
+// }
+
+// @page :left {
+//   @bottom-left-corner {
+//     content counter(page);
+//     $bold();
+//     position absolute;
+//     bottom calc(var(--page__margin__bottom) + 7pt);
+//     left 0;
+//     z-index 1000000;
+//     display block;
+//     padding-right $bl(1);
+//     width var(--page__margin__outside);
+//     height 10.5pt;
+//     text-align right;
+//     text-shadow 0 0 2px white;
+//     font-size 10.5pt;
+//     line-height 10.5pt;
+//   }
+// }
+
+// @page :right {
+//   @bottom-right-corner {
+//     content counter(page);
+//     $bold();
+//     position absolute;
+//     right 0;
+//     bottom calc(var(--page__margin__bottom) + 14pt);
+//     z-index 1000000;
+//     display block;
+//     padding-left $bl(1);
+//     width var(--page__margin__outside);
+//     height 10.5pt;
+//     font-size 10.5pt;
+//     line-height 10.5pt;
+//   }
+// }
+
 $CONFIG__COLOR();
 $CONFIG__TYPOGRAPHY();
 $CONFIG__UI();
@@ -14,55 +62,23 @@ $CONFIG__LAYOUT--SCREEN();
 @import './layout__spread__grid.styl';
 @import './layout__debug.styl';
 @import './layout__spread.styl';
-@import './content__block.styl';  
+@import './content__block.styl';
 @import './content__inline.styl';
 @import './content__table.styl';
 @import './toggle.styl';
+@import './print.styl';
 
-
-@import './print.styl'
 html {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-print-color-adjust: exact;
+  -moz-osx-font-smoothing grayscale;
+  -webkit-font-smoothing antialiased;
+  -webkit-print-color-adjust exact;
 }
-
-body {
-  transition: background-color 1s;
-  background-color: var(--color-background);
-  background-size: 100% 1rem, 100% 5rem, 100% 100%;
-  color: var(--color-text-base);
-}
-
-
-.csl-entry {
-  display: inline;
-}
-
-.csl-entry a {
-  word-break: break-word;
-}
-
 
 a {
-  color: var(--color-text-base);
-  text-decoration: none;
+  color var(--color-text-base);
+  text-decoration none;
 }
 
-.italic {
-  font-style: italic;
+.visually-hidden {
+  display none;
 }
-
-.bold {
-  font-weight: var(--font-weight--bold);
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-
-
-
-.visually-hidden 
-  display none

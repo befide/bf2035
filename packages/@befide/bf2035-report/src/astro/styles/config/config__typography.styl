@@ -1,7 +1,7 @@
 
 // code
 $PAGE-NUMBER-DISPLAY ?= none
-$FONT-FAMILY--BODY ?= 'Barlow Semi Condensed', sans-serif
+$FONT-FAMILY--BODY = 'Barlow Semi Condensed', sans-serif
 $FONT-BASELINE ?= 0.1
 $FONT_WEIGHT__BOLD ?= 700
 $FONT_WEIGHT__LIGHT ?= 400
@@ -47,7 +47,7 @@ $PRINT__HEADER__FONT_SIZE__LARGE ?= $SCREEN2PRINT($SCREEN__HEADER__FONT_SIZE__LA
 
 $VARIABLES__TYPOGRAPHY()
   --font--baseline $FONT-BASELINE
-  --font-family--body $FONT-FAMILY--BODY, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  --font-family--body $FONT-FAMILY--BODY
   --font-weight--bold $FONT_WEIGHT__BOLD
   --font-weight--light $FONT_WEIGHT__LIGHT
   --font-weight--regular $FONT_WEIGHT__REGULAR  
@@ -61,7 +61,7 @@ $VARIABLES__TYPOGRAPHY--PRINT()
   $set-baselined-typography('body-sm', $PRINT__TEXT__FONT_SIZE__SMALL, $PRINT__BASELINE-HEIGHT, 1, 0, 0, $FONT-BASELINE)
   $set-baselined-typography('body-md', $PRINT__TEXT__FONT_SIZE__REGULAR, $PRINT__BASELINE-HEIGHT, 1, 0, 0, $FONT-BASELINE)
   $set-baselined-typography('body-lg', $PRINT__TEXT__FONT_SIZE__LARGE, $PRINT__BASELINE-HEIGHT, 1, 0, 0, $FONT-BASELINE)
-  $set-baselined-typography('body-intro', $PRINT__TEXT__FONT_SIZE__XLARGE, $PRINT__BASELINE-HEIGHT, 1.5, 0, 1, $FONT-BASELINE)
+  $set-baselined-typography('body-intro', $PRINT__TEXT__FONT_SIZE__XLARGE, $PRINT__BASELINE-HEIGHT, 1.5, -.5, 1, $FONT-BASELINE)
   $set-baselined-typography('body-xl', $PRINT__TEXT__FONT_SIZE__XLARGE, $PRINT__BASELINE-HEIGHT, 1, 0, 1, $FONT-BASELINE)
 
 

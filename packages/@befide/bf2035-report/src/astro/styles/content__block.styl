@@ -1,8 +1,8 @@
 @import './mixins/index.styl';
 
 section.md {
-  margin-top: calc(1 * var(--baseline-height));
-  margin-bottom: calc(1 * var(--baseline-height));
+  margin-top: 1rem
+  
 
 }
 
@@ -26,15 +26,13 @@ h1.md, h2.md {
 
 h3.md {
   $baselined-typography(body-lg);
-  text-transform: uppercase;
-  font-weight: var(--font-weight--normal);
+  // text-transform: uppercase;
+  font-weight: var(--font-weight--bold);
 }
 
 h4.md {
   $baselined-typography(body-md);
   text-transform: none;
-
-  font-family: 'Barlow Semi Condensed';
 }
 
 hr.md {
