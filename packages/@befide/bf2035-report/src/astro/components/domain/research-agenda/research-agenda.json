@@ -1397,7 +1397,6 @@
   },
   {
     "id": "recE38XOoFzYeNbcI",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.mcf",
     "name": "mcf",
     "group": "accelerator-science",
@@ -1412,7 +1411,6 @@
   },
   {
     "id": "recvik7ctgkvWtVyC",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.supralab",
     "name": "supralab",
     "group": "accelerator-science",
@@ -1429,7 +1427,6 @@
   },
   {
     "id": "recYM3Nvz8uWHX6lz",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.draco",
     "name": "draco",
     "group": "accelerator-science",
@@ -1451,7 +1448,6 @@
   },
   {
     "id": "recEwJ5oFVzaKylAI",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.jeti",
     "name": "jeti",
     "group": "accelerator-science",
@@ -1468,7 +1464,6 @@
   },
   {
     "id": "recpr7HybCZ3pJHJq",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.kaldera",
     "name": "kaldera",
     "group": "accelerator-science",
@@ -1484,7 +1479,6 @@
   },
   {
     "id": "recV3WvizBiWIYM3h",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.phelix",
     "name": "phelix",
     "group": "accelerator-science",
@@ -1501,7 +1495,6 @@
   },
   {
     "id": "recbtmmlI2fV7KsRw",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.ares",
     "name": "ares",
     "group": "accelerator-science",
@@ -1531,7 +1524,6 @@
   },
   {
     "id": "recsQNwqB2tTT5O9G",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.awake",
     "name": "awake",
     "group": "accelerator-science",
@@ -1559,7 +1551,6 @@
   },
   {
     "id": "reccM05PB9i79alHi",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.axsis",
     "name": "axsis",
     "group": "accelerator-science",
@@ -1577,7 +1568,6 @@
   },
   {
     "id": "recEeSch85dal3BhL",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.berlinpro",
     "name": "berlinpro",
     "group": "accelerator-science",
@@ -1604,7 +1594,6 @@
   },
   {
     "id": "rec9QE9rEkuNJPNXm",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.bessy-ii-vsr",
     "name": "bessy-ii/vsr",
     "group": "photon-science",
@@ -1631,7 +1620,6 @@
   },
   {
     "id": "recjUatRmzNwdpFVW",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.bessy-iii",
     "name": "bessy-iii",
     "group": "photon-science",
@@ -1663,7 +1651,6 @@
   },
   {
     "id": "recXMw6vJLtsSECwZ",
-    "collection": "facilities",
     "path": "agenda.facilities.particle-physics.clic",
     "name": "clic",
     "group": "particle-physics",
@@ -1680,7 +1667,6 @@
   },
   {
     "id": "rece9egZWS5hLuigA",
-    "collection": "facilities",
     "path": "agenda.facilities.hadron-physics.cosy",
     "name": "cosy",
     "group": "hadron-physics",
@@ -1698,7 +1684,6 @@
   },
   {
     "id": "rec48qjkwizKsZ15Z",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.cstart",
     "name": "cstart",
     "group": "accelerator-science",
@@ -1726,7 +1711,6 @@
   },
   {
     "id": "rectuabAN3o6VcV7A",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.dali",
     "name": "dali",
     "group": "photon-science",
@@ -1744,7 +1728,6 @@
   },
   {
     "id": "rec9vVPyNMr36e1Jj",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.delta",
     "name": "delta",
     "group": "photon-science",
@@ -1762,7 +1745,6 @@
   },
   {
     "id": "recNr50BjUm6CpJVM",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.elbe",
     "name": "elbe",
     "group": "photon-science",
@@ -1784,7 +1766,6 @@
   },
   {
     "id": "recnnqvZHS5qHobdT",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.esrf-ebs",
     "name": "esrf-ebs",
     "group": "photon-science",
@@ -1802,7 +1783,6 @@
   },
   {
     "id": "recb3bh59Yn5H6oqE",
-    "collection": "facilities",
     "path": "agenda.facilities.neutron-science.ess",
     "name": "ess",
     "group": "neutron-science",
@@ -1820,7 +1800,6 @@
   },
   {
     "id": "reclRmLZ6gZXlXYwX",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.eupraxia",
     "name": "eupraxia",
     "group": "accelerator-science",
@@ -1841,7 +1820,6 @@
   },
   {
     "id": "recgv6Pp1ioQ12zRW",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.eu-xfel-1-5",
     "name": "eu-xfel-1.5",
     "group": "photon-science",
@@ -1862,7 +1840,6 @@
   },
   {
     "id": "rec5IOGhboTRgii1W",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.eu-xfel-2-0",
     "name": "eu-xfel-2.0",
     "group": "photon-science",
@@ -1904,7 +1881,6 @@
   },
   {
     "id": "rec5tsVk7cwc8D58G",
-    "collection": "facilities",
     "path": "agenda.facilities.hadron-physics.fair",
     "name": "fair",
     "group": "hadron-physics",
@@ -1935,7 +1911,6 @@
   },
   {
     "id": "recOXnmru9T2Jqegz",
-    "collection": "facilities",
     "path": "agenda.facilities.particle-physics.fcc-ee",
     "name": "fcc-ee",
     "group": "particle-physics",
@@ -1980,7 +1955,6 @@
   },
   {
     "id": "recPjWBQosgay6w79",
-    "collection": "facilities",
     "path": "agenda.facilities.particle-physics.fcc-eh",
     "name": "fcc-eh",
     "group": "particle-physics",
@@ -2018,7 +1992,6 @@
   },
   {
     "id": "recctKRK4WOPMLEee",
-    "collection": "facilities",
     "path": "agenda.facilities.particle-physics.fcc-hh",
     "name": "fcc-hh",
     "group": "particle-physics",
@@ -2056,7 +2029,6 @@
   },
   {
     "id": "rec53z1qcqrZZdeLC",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.flash1-flash2",
     "name": "flash1+flash2",
     "group": "photon-science",
@@ -2077,7 +2049,6 @@
   },
   {
     "id": "recrYqyas2lXkaA01",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.flash2020",
     "name": "flash2020+",
     "group": "photon-science",
@@ -2097,7 +2068,6 @@
   },
   {
     "id": "rec1GjRkmYzuMmWy4",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.flashforward",
     "name": "flashforward",
     "group": "accelerator-science",
@@ -2115,7 +2085,6 @@
   },
   {
     "id": "rec8o6tjXFzfU9Ovs",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.flute",
     "name": "flute",
     "group": "accelerator-science",
@@ -2149,7 +2118,6 @@
   },
   {
     "id": "reczWX71DGInknaT9",
-    "collection": "facilities",
     "path": "agenda.facilities.neutron-science.hbns",
     "name": "hbns",
     "group": "neutron-science",
@@ -2167,7 +2135,6 @@
   },
   {
     "id": "reckYve3j9CIChtm5",
-    "collection": "facilities",
     "path": "agenda.facilities.particle-physics.he-lhc",
     "name": "he-lhc",
     "group": "particle-physics",
@@ -2185,7 +2152,6 @@
   },
   {
     "id": "recwim0JcMJPUSyNr",
-    "collection": "facilities",
     "path": "agenda.facilities.particle-physics.hl-lhc",
     "name": "hl-lhc",
     "group": "particle-physics",
@@ -2212,7 +2178,6 @@
   },
   {
     "id": "recGFBz8r8xjYImWF",
-    "collection": "facilities",
     "path": "agenda.facilities.particle-physics.ilc",
     "name": "ilc",
     "group": "particle-physics",
@@ -2228,7 +2193,6 @@
   },
   {
     "id": "reczaW6lmxwmuZ9gR",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.kara",
     "name": "kara",
     "group": "accelerator-science",
@@ -2262,7 +2226,6 @@
   },
   {
     "id": "recCQFAGReVYnM1fd",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.lux",
     "name": "lux",
     "group": "accelerator-science",
@@ -2283,7 +2246,6 @@
   },
   {
     "id": "rec7xWz8SJwpLw9EF",
-    "collection": "facilities",
     "path": "agenda.facilities.hadron-physics.mami",
     "name": "mami",
     "group": "hadron-physics",
@@ -2301,7 +2263,6 @@
   },
   {
     "id": "reci5zbJZBMapte7p",
-    "collection": "facilities",
     "path": "agenda.facilities.hadron-physics.mesa",
     "name": "mesa",
     "group": "hadron-physics",
@@ -2319,7 +2280,6 @@
   },
   {
     "id": "recjyTLh49EAjCogl",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.petra-iii",
     "name": "petra–iii",
     "group": "photon-science",
@@ -2337,7 +2297,6 @@
   },
   {
     "id": "rec88iGRshqzOtMcT",
-    "collection": "facilities",
     "path": "agenda.facilities.photon-science.petra-iv",
     "name": "petra-iv",
     "group": "photon-science",
@@ -2369,7 +2328,6 @@
   },
   {
     "id": "rec4WtYTbYHVPD6qZ",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.pitz",
     "name": "pitz",
     "group": "accelerator-science",
@@ -2386,7 +2344,6 @@
   },
   {
     "id": "recU5NQXpbP40uEKI",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.plasmedx",
     "name": "plasmedx",
     "group": "accelerator-science",
@@ -2405,7 +2362,6 @@
   },
   {
     "id": "recwdodGq6NXky0NC",
-    "collection": "facilities",
     "path": "agenda.facilities.hadron-physics.regae",
     "name": "regae",
     "group": "hadron-physics",
@@ -2426,7 +2382,6 @@
   },
   {
     "id": "recW2MvQKGGvNcJGz",
-    "collection": "facilities",
     "path": "agenda.facilities.accelerator-science.s-dalinac",
     "name": "s-dalinac",
     "group": "accelerator-science",
