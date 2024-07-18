@@ -6,20 +6,12 @@ export type Props = {
   node: SectionTreeNode;
 };
 
-
-
 const { node: tocItem } = Astro.props;
-
-
-
 ---
 
-<li
-  class={`toc-item depth-${tocItem.depth}`}
-  data-path={getSlug(tocItem.data)}
->
+<li class={`toc-item depth-${tocItem.depth}`} data-path={getSlug(tocItem.data)}>
   {
-    (!tocItem.data?.data?.excludeFromToc &&
+    !tocItem.data?.data?.excludeFromToc && (
       <a href={getPath(tocItem.data)}>
         <span class="section-number">
           {tocItem.data && tocItem.data?.data.sectionNumber}
@@ -30,10 +22,12 @@ const { node: tocItem } = Astro.props;
       </a>
     )
   }
-  <ul class={`toc-items depth-${tocItem.depth + 1}`} data-path={"xxx" + getSlug(tocItem.data)}>
+  <ul
+    class={`toc-items depth-${tocItem.depth + 1}`}
+    data-path={getSlug(tocItem.data)}
+  >
     {tocItem.children?.map((child) => <Astro.self node={child} />)}
   </ul>
-
 </li>
 
 <style lang="stylus" is:global>
@@ -50,7 +44,7 @@ const { node: tocItem } = Astro.props;
     display: flex;   
     // flex-direction row
     gap 1rem
-    width: 16rem
+    max-width: 16rem
     
     
     span 
@@ -64,18 +58,18 @@ const { node: tocItem } = Astro.props;
     text-align: right;
     
   .depth-2 span
-    $baselined-typography(body-lg);
+    $baselined-typography(body-xl);
     
   .depth-3 span
-    $baselined-typography(body-md);
+    $baselined-typography(body-xl);
   .depth-4 span
-    $baselined-typography(body-md);
+    $baselined-typography(body-lg);
   
   [id*='mainmatter'].toc-item.depth-2
     margin-bottom: 1rem;
     
   .section-title
-    flex: 0 0  20rem
+    flex: 1 0 5rem
     
   .depth-2 .section-title
     $bold()
@@ -95,6 +89,21 @@ const { node: tocItem } = Astro.props;
   [id*='mainmatter'].toc-items.depth-4
     flex-direction column
 
+  .toc-items.depth-2[data-path="de/01-front-matter/"] .depth-2 .section-title
+    text-transform none
+    $regular()
+
+  .toc-items.depth-2[data-path="de/02-body-matter/"]
+    display flex
+    flex-direction row
+    width 100%
+    margin-top 4rem
+    margin-bottom 4rem
+    
+    gap 1rem
+
+    li
+      flex 0 0 15rem
 
 
 </style>

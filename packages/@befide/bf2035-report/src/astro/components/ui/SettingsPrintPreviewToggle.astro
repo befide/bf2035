@@ -23,7 +23,7 @@
     .getElementById("toggle__print_preview")
     ?.addEventListener("click", togglePrintPreview);
 
-  document.addEventListener("keyup", function (e) {
+  document.addEventListener("keydown", function (e) {
     if (e.ctrlKey && e.shiftKey && e.code === "KeyP") {
       document.getElementById("toggle__print_preview")?.click();
     }

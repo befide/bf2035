@@ -8,8 +8,8 @@ import { getSections } from "@utils/getSections.ts";
 const sections = await getSections().then((r) =>
   r.filter(
     (section) =>
-      !section.data.excludeFromTour &&
-      section.id.indexOf("strategiefelder") > -1
+      !section.data.excludeFromTour
+      // &&       section.id.indexOf("strategiefelder") > -1
   )
 );
 ---
@@ -22,9 +22,35 @@ const sections = await getSections().then((r) =>
         <BookSections sections={sections} />
       </div>
     </main>
-    <div class="layout__paged-js layout__paged-js--book">
-      <!-- <vue-paged-js refid="main" mode="book" /> -->
-    </div>
     <Footer />
   </div>
+  <script>
+    function render() {
+      import("pagedjs").then((pagedjs) => {
+        const previewer = new pagedjs.Previewer();
+
+        const inputNode = document.getElementById("main");
+
+        if (inputNode != null) {
+          const clone = inputNode;
+
+          const fragment = document.createDocumentFragment();
+          fragment.appendChild(clone);
+
+          previewer.preview(fragment, null).then((flow: any) => {});
+        }
+      });
+    }
+    document.addEventListener("keydown", function (e) {
+      if (e.ctrlKey && e.code === "KeyP") {
+        render();
+      }
+    });
+  </script>
 </Base>
+
+
+
+<style lang="stylus">
+
+</style>

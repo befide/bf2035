@@ -2,7 +2,6 @@
 
 import { getEntry } from "astro:content";
 
-
 export interface Props {
   citeKey: string;
   locator?: string;
@@ -33,7 +32,7 @@ const item = await getEntry("references", citeKey);
 //   ["broadcast", "../assets/bib-icons/note.png"],
 // ]);
 
-const collections = [];
+// const collections = [];
 // item.data.tags
 //   ?.filter(({ scope }) => scope === "collection")
 //   .flatMap((t) => t.value.split("/"));
@@ -53,9 +52,9 @@ const collections = [];
     <span class="bib-ref">
       {withTags && (
         <ul class="collections">
-          {collections?.map((collection) => (
-            <li class="collection pill">{collection}</li>
-          ))}
+          <!--{collections?.map((collection) => (-->
+          <!--  <li class="collection pill">{collection}</li>-->
+          <!--))}-->
         </ul>
       )}
 
@@ -68,22 +67,24 @@ const collections = [];
 {!item && <span class="bib-ref-eror">Invalid {citeKey} not found</span>}
 
 ---
+{
+    item &&
 
-<li class={"bib-item " + item.data.cslItem.type}>
-  <span class="bib-item__icon">
-    <!-- <Image
-      src={imagesrc}
-      width="20"
-      height="20"
-      alt={"ICON: " + item.data.cslItem.type}
-    /> -->
-  </span>
-  <span
-    class="bib-ref__bibliography"
-    set:html={item.data.rendered.bibliography}
-  />
-</li>
-
+  <li class={"bib-item " + item.data.cslItem.type}>
+    <span class="bib-item__icon">
+      <!-- <Image
+        src={imagesrc}
+        width="20"
+        height="20"
+        alt={"ICON: " + item.data.cslItem.type}
+      /> -->
+    </span>
+    <span
+      class="bib-ref__bibliography"
+      set:html={item.data.rendered.bibliography}
+    />
+  </li>
+    }
 <style lang="stylus" is:global>
 .bib-item
   min-height 2rem
@@ -93,29 +94,29 @@ const collections = [];
   a
     word-break: break-all
     text-decoration underline
-    
+
   // a::after
   //   content " " attr(href)
 
-  
 
 
-  
+
+
 
   .title
     font-weight: bold;
     color gray
 
 
-    
 
 
 
 
-  
-  
 
-.bib-item__icon 
+
+
+
+.bib-item__icon
   position: absolute;
   left 0
 
@@ -166,5 +167,5 @@ ul.bib-list li:before {
 }
 
 
- 
+
 </style>

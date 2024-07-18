@@ -23,7 +23,7 @@
     .getElementById("toggle__fit_spread")
     ?.addEventListener("click", toggleFitSpread);
 
-  document.addEventListener("keyup", function (e) {
+  document.addEventListener("keydown", function (e) {
     if (e.ctrlKey && e.shiftKey && e.code === "KeyF") {
       document.getElementById("toggle__fit_spread")?.click();
     }

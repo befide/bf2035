@@ -86,15 +86,12 @@ const optimizedBackground =
         <div class="spread__page-grid debug-overlay">
           {sectionType === "right" && (
             <header class="spread__header">
-              {sectionNumber && (
-                <div class="spread__sectionNumber">
-                  <span>{sectionNumber}</span>
-                </div>
-              )}
               {supertitle && (
-                <div class="spread__supertitle">
-                  <span>{supertitle}</span>
-                </div>
+              <div class="spread__supertitle">
+                <span>
+                  {sectionNumber}: {supertitle}
+                </span>
+              </div>
               )}
               <h1 class="spread__title">
                 <span>{title}</span>

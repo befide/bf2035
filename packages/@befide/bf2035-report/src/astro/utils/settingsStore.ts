@@ -98,3 +98,11 @@ export const togglePrintPreview = () => {
   )
   updateDocumentSettings.printPreview()
 }
+
+
+document.addEventListener('astro:page-load', () => {
+  updateDocumentSettings.debug()
+  updateDocumentSettings.printPreview()
+  updateDocumentSettings.theme()
+
+});
