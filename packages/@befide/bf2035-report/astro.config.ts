@@ -1,49 +1,42 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig } from "astro/config";
 
-import mdx from '@astrojs/mdx'
+import mdx from "@astrojs/mdx";
 
-import AstroPWA from '@vite-pwa/astro'
+import AstroPWA from "@vite-pwa/astro";
 
-import rehypeAddClasses from 'rehype-add-classes'
-import rehypeCitation from 'rehype-citation'
+import rehypeAddClasses from "rehype-add-classes";
+import rehypeCitation from "rehype-citation";
 // import rehypeFigure from "rehype-figure"
-import rehypeRewrite from 'rehype-rewrite'
-import rehypeWidont from 'rehype-widont'
-import remarkNumberedFootnotes from 'remark-numbered-footnote-labels'
-import sectionize from 'remark-sectionize'
-import spaceCommander from './src/astro/utils/space-commander.ts'
+import rehypeRewrite from "rehype-rewrite";
+import rehypeWidont from "rehype-widont";
+import remarkNumberedFootnotes from "remark-numbered-footnote-labels";
+import sectionize from "remark-sectionize";
+import spaceCommander from "./src/astro/utils/space-commander.ts";
 
-import { dirname, resolve } from 'node:path'
+import { dirname, resolve } from "node:path";
 
-import { fileURLToPath } from 'url'
-import pagefind from 'astro-pagefind'
+import { fileURLToPath } from "url";
+import pagefind from "astro-pagefind";
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-const site = undefined
-
-process.env.NODE_ENV === 'production'
-  ? 'https://bf2035-report.surge.sh/'
-  : undefined
+process.env.NODE_ENV === "production"
+  ? "https://bf2035-report.surge.sh/"
+  : undefined;
 
 export default defineConfig({
   vite: {
-    server: {
-      watch: {
-        ignored: ['**/.obsidianS/**/*'], // HERE
-      },
-    },
     css: {
       preprocessorOptions: {
         stylus: {
-          imports: [resolve(__dirname, 'src/astro/styles/mixins/index.styl')],
+          imports: [resolve(__dirname, "src/astro/styles/mixins/index.styl")],
         },
       },
     },
   },
-  output: 'static',
-  site,
+  output: "static",
+  // site,
   // site: "https://bf2035-report.surge.sh/",
   // site: "https://bf2035-report.surge.sh/",
   // prefetch: {
@@ -68,7 +61,7 @@ export default defineConfig({
       [
         rehypeCitation,
         {
-          bibliography: 'src/kfb-bf2035_used.csl.json',
+          bibliography: "src/kfb-bf2035_used.csl.json",
           linkCitations: true,
         },
       ],
@@ -76,15 +69,15 @@ export default defineConfig({
       [
         rehypeAddClasses,
         {
-          'img,figure,table,section,h1,h2,h3,h4,p,ol,ul,li,blockquote': 'md',
+          "img,figure,table,section,h1,h2,h3,h4,p,ol,ul,li,blockquote": "md",
         },
       ],
       [
         rehypeRewrite,
         {
           rewrite: (node: any) => {
-            if (node.type === 'text') {
-              node.value = spaceCommander(node.value)
+            if (node.type === "text") {
+              node.value = spaceCommander(node.value);
             }
           },
         },
@@ -92,8 +85,8 @@ export default defineConfig({
     ],
   },
   i18n: {
-    defaultLocale: 'de',
-    locales: ['de'],
+    defaultLocale: "de",
+    locales: ["de"],
     routing: {
       prefixDefaultLocale: false,
     },
@@ -107,24 +100,24 @@ export default defineConfig({
     // sitemap({}),
 
     AstroPWA({
-      mode: 'development',
-      base: '/',
+      mode: "development",
+      base: "/",
 
-      scope: '/',
-      includeAssets: ['favicon.svg'],
-      registerType: 'autoUpdate',
+      scope: "/",
+      includeAssets: ["favicon.svg"],
+      registerType: "autoUpdate",
       manifest: {
-        name: 'Beschleunigerforschung 2035',
-        short_name: 'BF2035',
-        theme_color: '#ffffff',
-        lang: 'de',
+        name: "Beschleunigerforschung 2035",
+        short_name: "BF2035",
+        theme_color: "#ffffff",
+        lang: "de",
       },
       pwaAssets: {
         config: true,
       },
       workbox: {
-        navigateFallback: '/',
-        globPatterns: ['**/*.{css,js,html,svg,png,ico,txt}'],
+        navigateFallback: "/",
+        globPatterns: ["**/*.{css,js,html,svg,png,ico,txt}"],
       },
       devOptions: {
         enabled: false,
@@ -133,4 +126,4 @@ export default defineConfig({
     }),
   ],
   devToolbar: { enabled: false },
-})
+});
