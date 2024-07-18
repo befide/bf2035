@@ -23,7 +23,7 @@ cslItem:
     physics and discoveries.
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 8
         - 25
   author:
@@ -1793,7 +1793,7 @@ cslItem:
       given: S. A.
     - family: Nisati
       given: A.
-    - family: "No"
+    - family: 'No'
       given: J. M.
     - family: Nonis
       given: M.
@@ -2761,23 +2761,23 @@ cslItem:
   container-title-short: Eur. Phys. J. Spec. Top.
   DOI: 10.1140/epjst/e2019-900088-6
   ISSN: 1951-6355, 1951-6401
-  issue: "5"
+  issue: '5'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 7
-  keyword: "#bf2035/projects/lhc"
+  keyword: '#bf2035/projects/lhc'
   language: en
   note: 76 citations (Crossref) [2022-08-25]
   page: 1109-1382
   source: DOI.org (Crossref)
-  title: "HE-LHC: The High-Energy Large Hadron Collider"
+  title: 'HE-LHC: The High-Energy Large Hadron Collider'
   title-short: HE-LHC
   type: article-journal
   URL: http://link.springer.com/10.1140/epjst/e2019-900088-6
-  volume: "228"
+  volume: '228'
 tags:
-  - "#bf2035/projects/lhc"
+  - '#bf2035/projects/lhc'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

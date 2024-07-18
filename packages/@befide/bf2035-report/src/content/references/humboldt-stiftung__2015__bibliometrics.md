@@ -3,20 +3,20 @@ cslItem:
   id: humboldt-stiftung__2015__bibliometrics
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 12
   author:
     - family: Humboldt-Stiftung
-      given: ""
+      given: ''
   citation-key: humboldt-stiftung__2015__bibliometrics
   event-place: Berlin
   genre: Proceedings
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 5
-  keyword: "#bf2035/topics/excellence;#bf2035/topics/bibliometrics"
+  keyword: '#bf2035/topics/excellence;#bf2035/topics/bibliometrics'
   language: en
   publisher: Alexander von Humboldt Stiftung
   publisher-place: Berlin
@@ -25,8 +25,8 @@ cslItem:
   URL: >-
     https://www.humboldt-foundation.de/fileadmin/Entdecken/Organisation/International_Advisory_Board/2014_duzSpecial.pdf
 tags:
-  - "#bf2035/topics/excellence"
-  - "#bf2035/topics/bibliometrics"
+  - '#bf2035/topics/excellence'
+  - '#bf2035/topics/bibliometrics'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

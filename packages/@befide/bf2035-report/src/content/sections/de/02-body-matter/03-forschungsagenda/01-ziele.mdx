@@ -6,7 +6,7 @@ sectionNumber: C.1
 sectionType: spread
 ---
 
-import ResearchAgendaObjective from "@components/domain/research-agenda/ResearchAgendaObjective.astro";
+import ResearchAgenda from '@components/domain/research-agenda/ResearchAgenda.astro'
 
 <div class="spread--left spread-area--intro">
 
@@ -18,9 +18,9 @@ Um auch in Zukunft einen Beitrag der deutschen Beschleunigerforschung zur Realis
 
 ## Anlage
 
-<ResearchAgendaObjective name="facility.size" />
+<ResearchAgenda filter="facility.size" />
 
-<ResearchAgendaObjective name="facility.construction-cost" />
+<ResearchAgenda filter="facility.construction-cost" />
 
 </div>
 
@@ -28,11 +28,11 @@ Um auch in Zukunft einen Beitrag der deutschen Beschleunigerforschung zur Realis
 
 ## Anlage
 
-<ResearchAgendaObjective name="facility.operability" />
+<ResearchAgenda filter="facility.operability" />
 
-<ResearchAgendaObjective name="facility.operation-cost" />
+<ResearchAgenda filter="facility.operation-cost" />
 
-<ResearchAgendaObjective name="facility.energy-efficiency" />
+<ResearchAgenda filter="facility.energy-efficiency" />
 
 </div>
 
@@ -40,13 +40,13 @@ Um auch in Zukunft einen Beitrag der deutschen Beschleunigerforschung zur Realis
 
 ## Teilchenstrahl
 
-<ResearchAgendaObjective name="beam.emittance" />
+<ResearchAgenda filter="beam.emittance" />
 
-<ResearchAgendaObjective name="beam.intensity-maximum" />
+<ResearchAgenda filter="beam.intensity-maximum" />
 
-<ResearchAgendaObjective name="beam.intensity-minimum" />
+<ResearchAgenda filter="beam.intensity-minimum" />
 
-<ResearchAgendaObjective name="beam.particle-energy" />
+<ResearchAgenda filter="beam.particle-energy" />
 
 </div>
 
@@ -54,10 +54,10 @@ Um auch in Zukunft einen Beitrag der deutschen Beschleunigerforschung zur Realis
 
 ## Nutzer
 
-<ResearchAgendaObjective name="user.availability" />
+<ResearchAgenda filter="user.availability" />
 
-<ResearchAgendaObjective name="user.data-rate" />
+<ResearchAgenda filter="user.data-rate" />
 
-<ResearchAgendaObjective name="user.variable-pulse-structure" />
+<ResearchAgenda filter="user.variable-pulse-structure" />
 
 </div>

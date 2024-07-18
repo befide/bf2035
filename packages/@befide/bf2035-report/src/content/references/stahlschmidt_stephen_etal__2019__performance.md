@@ -89,8 +89,8 @@ cslItem:
   event-place: Berlin
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#bf2035/topics/excellence;#collection/D./excellence"
+      - - '2019'
+  keyword: '#bf2035/topics/excellence;#collection/D./excellence'
   language: en
   number: Studie
   publisher: Expertenkommission Forschung und Innovation (EFI)
@@ -99,7 +99,7 @@ cslItem:
   title: Performance and Structures of the German Science System
   type: report
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

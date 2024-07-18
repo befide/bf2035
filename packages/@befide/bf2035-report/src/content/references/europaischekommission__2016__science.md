@@ -5,15 +5,15 @@ cslItem:
   collection-title: Research and Innovation
   editor:
     - family: Europäische Kommission
-      given: ""
+      given: ''
   event-place: Luxembourg
   ISBN: 978-92-79-49557-1 978-92-79-49558-8
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#bf2035/topics/excellence;#collection/D./excellence"
+      - - '2016'
+  keyword: '#bf2035/topics/excellence;#collection/D./excellence'
   language: en
-  number-of-pages: "330"
+  number-of-pages: '330'
   publisher: Publications Office of the European Union
   publisher-place: Luxembourg
   source: K10plus ISBN
@@ -23,7 +23,7 @@ cslItem:
   title-short: Science, research and innovation performance of the EU
   type: book
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

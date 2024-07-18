@@ -4,29 +4,29 @@
 // import { geoMercator, geoPath } from "d3-geo";
 
 // import bundeslaender from "./bundeslaender.geo.json";
-import fis from './fis.json'
+import fis from './fis.json';
 
-const baselineHeight = 14
-const widthInGridUnits = 4
-const heightInGridUnits = 4
+const baselineHeight = 14;
+const widthInGridUnits = 4;
+const heightInGridUnits = 4;
 
-const radius = baselineHeight / 2
+const radius = baselineHeight / 2;
 
-const unit_space = 14 / 2
-const swapxy = false
+const unit_space = 14 / 2;
+const swapxy = false;
 
 function gridUnits2BaselineCount(gridUnits: number) {
-  return gridUnits * 3 + gridUnits - 1
+  return gridUnits * 3 + gridUnits - 1;
 }
 
-const height = gridUnits2BaselineCount(heightInGridUnits + 0) * baselineHeight
+const height = gridUnits2BaselineCount(heightInGridUnits + 0) * baselineHeight;
 
-const width = gridUnits2BaselineCount(widthInGridUnits + 0) * baselineHeight
+const width = gridUnits2BaselineCount(widthInGridUnits + 0) * baselineHeight;
 
 //const tf = `matrix(${unit_space},0,${unit_space*0.5},${-unit_space*0.5*Math.sqrt(3)},0,0)`;
 //const itf = `matrix(${1/unit_space},0,${1/(unit_space*Math.sqrt(3))},${-1/(unit_space*0.5*Math.sqrt(3))},0,0)`;
 
-type Coordinate = [number, number]
+type Coordinate = [number, number];
 
 const corners = [
   [1, 1],
@@ -34,20 +34,20 @@ const corners = [
   [-2, 1],
   [-1, -1],
   [1, -2],
-  [2, -1]
-] as Coordinate[]
+  [2, -1],
+] as Coordinate[];
 //const corners = [[2,1], [1,2], [-1,1], [-2,-1], [-1,-2], [1,-1]];
 
 //const nx = Math.ceil(width/unit_space);
 //const ny = Math.ceil(height/(unit_space*0.5*Math.sqrt(3)));
 
 function cc2xy(cc: Coordinate): Coordinate {
-  const x = unit_space * (cc[0] + 0.5 * cc[1])
-  const y = unit_space * (-0.5 * Math.sqrt(3) * cc[1])
-  return swapxy ? [-y, -x] : [x, y]
+  const x = unit_space * (cc[0] + 0.5 * cc[1]);
+  const y = unit_space * (-0.5 * Math.sqrt(3) * cc[1]);
+  return swapxy ? [-y, -x] : [x, y];
 }
 
-const visible_cc = []
+const visible_cc = [];
 // for (
 //   let x = Math.floor(-1 / (2 * unit_space));
 //   x <= Math.ceil(width / (2 * unit_space));
@@ -60,7 +60,8 @@ const visible_cc = []
 //   )
 //     visible_cc.push([x - Math.floor(y / 2), y, -y - x + Math.floor(y / 2)]);
 for (let x = -10; x <= 10; x++)
-  for (let y = -10; y <= 10; y++) visible_cc.push([x - Math.floor(y / 2), y, -y - x + Math.floor(y / 2)])
+  for (let y = -10; y <= 10; y++)
+    visible_cc.push([x - Math.floor(y / 2), y, -y - x + Math.floor(y / 2)]);
 
 // function text_trans(cornr) {
 //   const xy = corners[cornr];
@@ -166,9 +167,9 @@ const facilities = fis
       type: 'facility',
       subtype: erumField,
       x: 0,
-      y: 0
-    }
-  })
+      y: 0,
+    };
+  });
 
 // debugger
 
@@ -325,20 +326,24 @@ const facilities = fis
 
 const containerStyle = {
   width: width + 'px',
-  height: height + 'px'
-}
+  height: height + 'px',
+};
 
 // const scale = .9;
 // const scale_c = (xy: Coordinate) => [(xy[0] * (scale || 1)) / 3, (xy[1] * (scale || 1)) / 3];
 // const translate_corner = (cc: Coordinate) => cc2xy(scale_c(cc));
 ---
 
-<div class="chart-container chart-container--community-map" style={containerStyle}>
+<div
+  class="chart-container chart-container--community-map"
+  style={containerStyle}
+>
   <svg
     width={width}
     height={height}
     viewBox={[(-width * 0) / 2, (-height * 0) / 2, width, height].join(' ')}
-    xmlns="http://www.w3.org/2000/svg">
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g class="grid">
       {
         // <path d={path(bundeslaender)} stroke="black" fill="none" fill-opacity="0.5" stroke-opacity="0.2"/>

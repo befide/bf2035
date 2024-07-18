@@ -14,8 +14,8 @@ cslItem:
   genre: CERN-Brochure
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#bf2035/projects/lhc;#bf2035/research-topics/sustainability"
+      - - '2017'
+  keyword: '#bf2035/projects/lhc;#bf2035/research-topics/sustainability'
   number: CERN-Brochure-2017-002-Eng
   publisher: CERN
   publisher-place: Geneva
@@ -23,8 +23,8 @@ cslItem:
   type: report
   URL: https://cds.cern.ch/record/2255762/files/CERN-Brochure-2017-002-Eng.pdf
 tags:
-  - "#bf2035/projects/lhc"
-  - "#bf2035/research-topics/sustainability"
+  - '#bf2035/projects/lhc'
+  - '#bf2035/research-topics/sustainability'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

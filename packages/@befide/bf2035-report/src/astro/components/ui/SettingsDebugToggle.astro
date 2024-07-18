@@ -8,17 +8,17 @@
 </label>
 
 <script>
-  import { updateDocumentSettings, toggleDebug } from "@utils/settingsStore.js";
+  import { updateDocumentSettings, toggleDebug } from '@utils/settingsStore.js';
 
   updateDocumentSettings.debug();
-  document.addEventListener("astro:after-swap", updateDocumentSettings.debug);
+  document.addEventListener('astro:after-swap', updateDocumentSettings.debug);
 
   document
-    .getElementById("toggle__debug")
-    ?.addEventListener("click", toggleDebug);
+    .getElementById('toggle__debug')
+    ?.addEventListener('click', toggleDebug);
 
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyD") {
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyD') {
       toggleDebug();
     }
   });

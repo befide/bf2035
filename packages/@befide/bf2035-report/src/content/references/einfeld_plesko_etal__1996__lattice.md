@@ -25,17 +25,17 @@ cslItem:
   citation-key: einfeld_plesko_etal__1996__lattice
   issued:
     date-parts:
-      - - "1996"
-  keyword: "#bf2035/accelerator-types/dla"
+      - - '1996'
+  keyword: '#bf2035/accelerator-types/dla'
   language: en
-  page: "3"
+  page: '3'
   source: Zotero
   title: >-
     A Lattice Design to Reach the Theoretical Minimum Emittance for a Storage
     Ring
   type: article-journal
 tags:
-  - "#bf2035/accelerator-types/dla"
+  - '#bf2035/accelerator-types/dla'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

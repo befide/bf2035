@@ -3,7 +3,7 @@ cslItem:
   id: szeberenyi__2013__eucard
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   citation-key: szeberenyi__2013__eucard
@@ -13,11 +13,11 @@ cslItem:
   event-place: Geneva
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
         - 11
         - 1
-  keyword: "#collection/D./related-strategies;#bf2035/funding/eu/fp7"
-  page: "115"
+  keyword: '#collection/D./related-strategies;#bf2035/funding/eu/fp7'
+  page: '115'
   publisher: CERN
   publisher-place: Geneva
   title: EuCARD. Final Report
@@ -25,7 +25,7 @@ cslItem:
   URL: >-
     https://edms.cern.ch/ui/file/1001829/1/EuCARD-Del-D1_4_finalReport_full_v14_final.pdf
 tags:
-  - "#bf2035/funding/eu/fp7"
+  - '#bf2035/funding/eu/fp7'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

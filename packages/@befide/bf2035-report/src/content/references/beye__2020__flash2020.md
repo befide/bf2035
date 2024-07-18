@@ -3,7 +3,7 @@ cslItem:
   id: beye__2020__flash2020
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 8
         - 10
   author:
@@ -39,8 +39,8 @@ cslItem:
   event-place: Hamburg
   issued:
     date-parts:
-      - - "2020"
-  keyword: ""
+      - - '2020'
+  keyword: ''
   language: en
   page: pages 1-126
   publisher: DESY

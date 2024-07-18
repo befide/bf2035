@@ -11,9 +11,9 @@ cslItem:
   citation-key: iso__2013__iso
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
         - 11
-  keyword: "#bf2035/topics/tlr;#nosource"
+  keyword: '#bf2035/topics/tlr;#nosource'
   language: en
   publisher: ISO
   title: >-
@@ -23,7 +23,7 @@ cslItem:
   type: document
   URL: https://www.iso.org/standard/56064.html
 tags:
-  - "#bf2035/topics/tlr"
+  - '#bf2035/topics/tlr'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

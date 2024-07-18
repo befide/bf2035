@@ -6,15 +6,15 @@ cslItem:
   citation-key: APS_PRAB
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 7
         - 13
-  keyword: "#bf2035/topics/excellence"
+  keyword: '#bf2035/topics/excellence'
   title: Physical Review Search
   type: dataset
   URL: https://journals.aps.org/search/results?journal=prstab&journal=prab
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

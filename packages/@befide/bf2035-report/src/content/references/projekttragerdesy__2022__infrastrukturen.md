@@ -7,7 +7,7 @@ cslItem:
     Beteiligung betrieben werden oder sich in Planung befinden.
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 7
         - 16
   author:
@@ -15,8 +15,8 @@ cslItem:
   citation-key: projekttragerdesy__2022__infrastrukturen
   issued:
     date-parts:
-      - - "2022"
-  keyword: ""
+      - - '2022'
+  keyword: ''
   language: en
   title: Infrastrukturen zur Erforschung von Universum und Materie
   type: webpage

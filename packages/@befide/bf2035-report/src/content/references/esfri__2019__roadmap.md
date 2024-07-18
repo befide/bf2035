@@ -3,7 +3,7 @@ cslItem:
   id: esfri__2019__roadmap
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 2
         - 23
   author:
@@ -12,12 +12,12 @@ cslItem:
   collection-title: Strategy Report on Research Infrastructures
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 9
         - 25
-  keyword: ""
+  keyword: ''
   publisher: ESFRI
-  title: "Roadmap 2021: Public Guide"
+  title: 'Roadmap 2021: Public Guide'
   type: report
   URL: >-
     https://www.esfri.eu/sites/default/files/ESFRI_Roadmap2021_Public_Guide_Public.pdf

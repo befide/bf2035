@@ -20,7 +20,7 @@ cslItem:
     European Strategy for Particle Physics.
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 1
         - 23
   author:
@@ -28,23 +28,23 @@ cslItem:
   citation-key: alegrocollaboration__2019__advanced
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 1
         - 30
-  keyword: "#bf2035/accelerator-types/linear-collider;#bf2035/user-group/hep"
+  keyword: '#bf2035/accelerator-types/linear-collider;#bf2035/user-group/hep'
   language: en
   note: |-
     Read_Status: To Read
     Read_Status_Date: 2024-03-17T07:32:19.889Z
-  page: "83"
+  page: '83'
   publisher: ALEGRO
   source: arXiv.org
   title: Towards an Advanced Linear International Collider
   type: report
   URL: http://arxiv.org/abs/1901.10370
 tags:
-  - "#bf2035/accelerator-types/linear-collider"
-  - "#bf2035/user-group/hep"
+  - '#bf2035/accelerator-types/linear-collider'
+  - '#bf2035/user-group/hep'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

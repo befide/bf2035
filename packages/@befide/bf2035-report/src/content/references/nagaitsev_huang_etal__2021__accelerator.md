@@ -3,7 +3,7 @@ cslItem:
   id: nagaitsev_huang_etal__2021__accelerator
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 4
         - 27
   author:
@@ -25,10 +25,10 @@ cslItem:
   DOI: 10.2172/1764152
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 1
         - 1
-  keyword: ""
+  keyword: ''
   language: en
   number: FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291
   page: FERMILAB-FN--1123, 1764152, oai:inspirehep.net:1840291

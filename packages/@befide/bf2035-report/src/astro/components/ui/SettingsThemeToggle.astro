@@ -8,29 +8,29 @@
 </label>
 
 <script>
-  import { updateDocumentSettings, toggleTheme } from "@utils/settingsStore.js";
+  import { updateDocumentSettings, toggleTheme } from '@utils/settingsStore.js';
 
   updateDocumentSettings.theme();
-  document.addEventListener("astro:after-swap", updateDocumentSettings.theme);
+  document.addEventListener('astro:after-swap', updateDocumentSettings.theme);
 
   document
-    .getElementById("toggle__theme")
-    ?.addEventListener("change", toggleTheme);
+    .getElementById('toggle__theme')
+    ?.addEventListener('change', toggleTheme);
 
-  document.addEventListener("keyup", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyT") {
+  document.addEventListener('keyup', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyT') {
       const value = toggleTheme();
-      (document.getElementById("toggle__theme") as HTMLInputElement).value =
+      (document.getElementById('toggle__theme') as HTMLInputElement).value =
         value;
     }
   });
 </script>
 
 <style is:global>
-  :global([data-theme="dark"]) {
+  :global([data-theme='dark']) {
     color-scheme: dark;
   }
-  :global([data-theme="light"]) {
+  :global([data-theme='light']) {
     color-scheme: light;
   }
 </style>

@@ -3,16 +3,16 @@ cslItem:
   id: grest____european
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 13
   author:
     - literal: GREST
   citation-key: grest____european
-  keyword: ""
+  keyword: ''
   language: en
   publisher: GREST
-  title: "European Solar Physics Community: Demographics & Research Interests"
+  title: 'European Solar Physics Community: Demographics & Research Interests'
   type: report
   URL: >-
     https://www.est-east.eu/images/imagenesweb/solar/files/SolarCommunity-compressed.pdf

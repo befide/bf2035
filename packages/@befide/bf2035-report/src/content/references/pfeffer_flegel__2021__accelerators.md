@@ -3,7 +3,7 @@ cslItem:
   id: pfeffer_flegel__2021__accelerators
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -21,8 +21,8 @@ cslItem:
   genre: Annual Report
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#collection/D./annual repoorts;#bf2035/organisations/desy"
+      - - '2021'
+  keyword: '#collection/D./annual repoorts;#bf2035/organisations/desy'
   language: en
   note: |-
     Read_Status: To Read
@@ -37,7 +37,7 @@ cslItem:
   type: report
   URL: https://bib-pubdb1.desy.de/record/452995
 tags:
-  - "#bf2035/organisations/desy"
+  - '#bf2035/organisations/desy'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

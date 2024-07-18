@@ -8,7 +8,7 @@ cslItem:
   ISBN: 978-3-525-13237-1
   issued:
     date-parts:
-      - - "1939"
+      - - '1939'
   keyword: >-
     #nosource;__strategy2030:strategic-planning;__strategy2030:strategic-planning:innovation
   language: en

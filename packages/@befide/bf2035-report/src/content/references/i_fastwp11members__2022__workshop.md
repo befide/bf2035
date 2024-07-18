@@ -14,7 +14,7 @@ cslItem:
     addressed for the first time in this workshop series
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -23,12 +23,12 @@ cslItem:
   DOI: 10.5281/ZENODO.7299846
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 10
         - 31
-  keyword: ""
+  keyword: ''
   language: en
-  publisher: "[object Object]"
+  publisher: '[object Object]'
   source: DOI.org (Datacite)
   title: >-
     Workshop on energy for sustainable science at research infrastructures, at

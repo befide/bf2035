@@ -3,7 +3,7 @@ cslItem:
   id: desy__2023__softwert
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 20
   author:
@@ -12,9 +12,9 @@ cslItem:
   event-place: Hamburg
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
-  keyword: "#bf2035/topics/commercialisation;#bf2035/topics/digitalisierung"
+  keyword: '#bf2035/topics/commercialisation;#bf2035/topics/digitalisierung'
   language: de
   note: |-
     Read_Status: To Read
@@ -28,8 +28,8 @@ cslItem:
   type: report
   URL: http://softwert.org
 tags:
-  - "#bf2035/topics/commercialisation"
-  - "#bf2035/topics/digitalisierung"
+  - '#bf2035/topics/commercialisation'
+  - '#bf2035/topics/digitalisierung'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -12,9 +12,9 @@ cslItem:
   event-place: Göttingen
   issued:
     date-parts:
-      - - "2003"
+      - - '2003'
         - 1
-  keyword: "#collection/A.2.5 Nukleare Sonden und Ionenstrahlen"
+  keyword: '#collection/A.2.5 Nukleare Sonden und Ionenstrahlen'
   language: en
   publisher: Komitee für Forschung mit Nuklearen Sonden und Ionenstrahlen
   publisher-place: Göttingen

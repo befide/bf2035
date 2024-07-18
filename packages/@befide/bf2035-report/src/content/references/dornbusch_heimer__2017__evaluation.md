@@ -9,10 +9,10 @@ cslItem:
   citation-key: dornbusch_heimer__2017__evaluation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#bf2035/topics/verbundforschung"
+      - - '2017'
+  keyword: '#bf2035/topics/verbundforschung'
   language: en
-  page: "62"
+  page: '62'
   publisher: Fraunhofer
   title: >-
     Evaluation der Verbundforschung im Bereich der „Naturwissenschaftlichen
@@ -21,7 +21,7 @@ cslItem:
   URL: >-
     https://www.bmbf.de/files/170125_Endbericht_Evaluation_Verbundforschung_NWGF.pdf
 tags:
-  - "#bf2035/topics/verbundforschung"
+  - '#bf2035/topics/verbundforschung'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

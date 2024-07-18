@@ -7,10 +7,10 @@ cslItem:
   event-place: Berlin
   issued:
     date-parts:
-      - - "2020"
-  keyword: ""
+      - - '2020'
+  keyword: ''
   language: en
-  page: "44"
+  page: '44'
   publisher: HZB
   publisher-place: Berlin
   title: Highlights 2019/2020

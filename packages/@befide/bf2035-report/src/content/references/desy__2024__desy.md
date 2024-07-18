@@ -3,7 +3,7 @@ cslItem:
   id: desy__2024__desy
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
         - 29
   author:
@@ -12,14 +12,14 @@ cslItem:
   genre: Homepage
   issued:
     date-parts:
-      - - "2024"
-  keyword: "#bf2035/topics/teaching"
+      - - '2024'
+  keyword: '#bf2035/topics/teaching'
   language: en
   title: DESY International Summer Student Program 2024
   type: webpage
   URL: https://summerstudents.desy.de
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

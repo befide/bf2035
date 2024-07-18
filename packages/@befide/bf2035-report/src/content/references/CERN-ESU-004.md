@@ -236,9 +236,9 @@ cslItem:
   event-place: Geneva
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 10
-  keyword: "#bf2035/user-group/hep"
+  keyword: '#bf2035/user-group/hep'
   language: en
   number: arXiv:1910.11775
   publisher: CERN
@@ -249,7 +249,7 @@ cslItem:
   type: report
   URL: http://cds.cern.ch/record/2691414
 tags:
-  - "#bf2035/user-group/hep"
+  - '#bf2035/user-group/hep'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

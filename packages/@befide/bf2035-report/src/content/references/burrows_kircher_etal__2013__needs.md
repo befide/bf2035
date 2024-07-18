@@ -25,10 +25,10 @@ cslItem:
   genre: Status Report
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
         - 2
         - 28
-  keyword: "#bf2035/topics/teaching"
+  keyword: '#bf2035/topics/teaching'
   language: en-US
   note: >-
     https://web.archive.org/web/20220123043700/https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf
@@ -37,7 +37,7 @@ cslItem:
   type: report
   URL: https://cds.cern.ch/record/1521336/files/TIARA-REP-WP5-2013-005.pdf
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

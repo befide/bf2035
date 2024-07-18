@@ -1,11 +1,11 @@
 // @ts-nocheck
-import removeMarkdown from "remove-markdown";
+import removeMarkdown from 'remove-markdown';
 
-import { renderInline } from "./render";
-import { traverse } from "./traverse-object.mjs";
+import { renderInline } from './render';
+import { traverse } from './traverse-object.mjs';
 
-const md2html = async (obj = {}, path = "", value = "") => {
-  const isBlock = path[path.length - 1].endsWith("mdb");
+const md2html = async (obj = {}, path = '', value = '') => {
+  const isBlock = path[path.length - 1].endsWith('mdb');
   const rendered = isBlock
     ? await renderInline(value)
     : await renderInline(value);
@@ -14,7 +14,7 @@ const md2html = async (obj = {}, path = "", value = "") => {
 
   const relativePropertyNameAsHtml = path
     .slice(-1)[0]
-    .replace(/__mdb?/, "__html");
+    .replace(/__mdb?/, '__html');
   obj[relativePropertyNameAsHtml] = rendered;
   delete obj[relativePropertyName];
 };
@@ -27,7 +27,7 @@ export function markdownedFrontmatterPlugin() {
     if (!frontmatter.title__md) frontmatter.title__md = frontmatter.title;
 
     frontmatter.title = removeMarkdown(frontmatter.title);
-    frontmatter.title.replaceAll(" @@ ", " ").replaceAll(" @ ", " ");
+    frontmatter.title.replaceAll(' @@ ', ' ').replaceAll(' @ ', ' ');
 
     traverse(frontmatter, md2html, [/__md/, /__mdb/]);
   };

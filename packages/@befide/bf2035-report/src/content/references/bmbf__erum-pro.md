@@ -6,12 +6,12 @@ cslItem:
   citation-key: bmbf__erum-pro
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/topics/verbundforschung;#bf2035/funding/bmbf"
+      - - '2022'
+  keyword: '#bf2035/topics/verbundforschung;#bf2035/funding/bmbf'
   language: en
   original-date:
     date-parts:
-      - - "2018"
+      - - '2018'
   publisher: BMBF
   title: >-
     Aktionsplan ErUM-Pro. Projektförderung zur Vernetzung Von Hochschulen,
@@ -21,8 +21,8 @@ cslItem:
   URL: >-
     https://www.bmbf.de/SharedDocs/Publikationen/de/bmbf/7/31440_Aktionsplan_ErUM-Pro.pdf;jsessionid=FBE748A3794008BE93F3A34CBBE24EE9.live472?__blob=publicationFile&v=10
 tags:
-  - "#bf2035/topics/verbundforschung"
-  - "#bf2035/funding/bmbf"
+  - '#bf2035/topics/verbundforschung'
+  - '#bf2035/funding/bmbf'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

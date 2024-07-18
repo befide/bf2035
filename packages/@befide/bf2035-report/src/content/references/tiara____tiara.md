@@ -3,13 +3,13 @@ cslItem:
   id: tiara____tiara
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
     - literal: Tiara
   citation-key: tiara____tiara
-  keyword: "#collection/D./related-strategies"
+  keyword: '#collection/D./related-strategies'
   language: en
   title: TIARA.Accelerators for Society
   type: webpage

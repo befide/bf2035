@@ -12,7 +12,7 @@ cslItem:
     contributed the various chapters to this report.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -21,12 +21,12 @@ cslItem:
   DOI: 10.5281/ZENODO.7994823
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 6
         - 1
-  keyword: "#collection/D./related-strategies"
+  keyword: '#collection/D./related-strategies'
   language: en
-  publisher: "[object Object]"
+  publisher: '[object Object]'
   source: DOI.org (Datacite)
   title: >-
     Report on the Novel Accelerator Landscape in Europe: Facilities, Projects

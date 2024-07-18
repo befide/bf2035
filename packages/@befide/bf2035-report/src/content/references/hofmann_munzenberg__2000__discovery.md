@@ -3,7 +3,7 @@ cslItem:
   id: hofmann_munzenberg__2000__discovery
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 8
         - 4
   author:
@@ -16,13 +16,13 @@ cslItem:
   container-title-short: Rev. Mod. Phys.
   DOI: 10.1103/RevModPhys.72.733
   ISSN: 0034-6861, 1539-0756
-  issue: "3"
+  issue: '3'
   issued:
     date-parts:
-      - - "2000"
+      - - '2000'
         - 7
         - 1
-  keyword: "#bf2035/user-group/hadron-physics"
+  keyword: '#bf2035/user-group/hadron-physics'
   language: en
   note: |-
     913 citations (Semantic Scholar/DOI) [2023-12-12]
@@ -33,9 +33,9 @@ cslItem:
   title: The discovery of the heaviest elements
   type: article-journal
   URL: https://link.aps.org/doi/10.1103/RevModPhys.72.733
-  volume: "72"
+  volume: '72'
 tags:
-  - "#bf2035/user-group/hadron-physics"
+  - '#bf2035/user-group/hadron-physics'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

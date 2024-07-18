@@ -3,7 +3,7 @@ cslItem:
   id: biasci_bouteille_etal__2014__lowemittance
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 5
         - 14
   author:
@@ -54,22 +54,22 @@ cslItem:
   container-title-short: Synchrotron Radiation News
   DOI: 10.1080/08940886.2014.970931
   ISSN: 0894-0886, 1931-7344
-  issue: "6"
+  issue: '6'
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 11
         - 2
-  keyword: "#bf2035/accelerator-types/dla"
+  keyword: '#bf2035/accelerator-types/dla'
   language: en
   page: 8-12
   source: DOI.org (Crossref)
   title: A Low-Emittance Lattice for the ESRF
   type: article-journal
   URL: http://www.tandfonline.com/doi/abs/10.1080/08940886.2014.970931
-  volume: "27"
+  volume: '27'
 tags:
-  - "#bf2035/accelerator-types/dla"
+  - '#bf2035/accelerator-types/dla'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

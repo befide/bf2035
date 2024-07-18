@@ -8,13 +8,13 @@ cslItem:
   ISBN: 978-92-894-9313-0
   issued:
     date-parts:
-      - - "2005"
-  keyword: "#werte;#laufbahnentwicklung;#bf2035/topics/teaching"
+      - - '2005'
+  keyword: '#werte;#laufbahnentwicklung;#bf2035/topics/teaching'
   language: en
   note: |-
     Read_Status: To Read
     Read_Status_Date: 2024-03-17T22:09:35.481Z
-  number-of-pages: "64"
+  number-of-pages: '64'
   publisher: Office for Official Publications of the European Communities
   publisher-place: Luxembourg
   source: K10plus ISBN
@@ -24,7 +24,7 @@ cslItem:
   title-short: Europäische Charta for Forscher
   type: book
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

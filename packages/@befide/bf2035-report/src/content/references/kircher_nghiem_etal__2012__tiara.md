@@ -3,7 +3,7 @@ cslItem:
   id: kircher_nghiem_etal__2012__tiara
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 22
   author:
@@ -54,18 +54,18 @@ cslItem:
   genre: Status Report
   issued:
     date-parts:
-      - - "2012"
-  keyword: "#bf2035/topics/teaching;#collection/D./related-strategies"
+      - - '2012'
+  keyword: '#bf2035/topics/teaching;#collection/D./related-strategies'
   language: en
   publisher: CERN
   publisher-place: Geneva
   source: CERN Document Server
-  title: "TIARA: Education and Training Survey Report: Deliverable 5.1"
+  title: 'TIARA: Education and Training Survey Report: Deliverable 5.1'
   title-short: Education and Training Survey Report
   type: report
   URL: https://cds.cern.ch/record/1442599
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

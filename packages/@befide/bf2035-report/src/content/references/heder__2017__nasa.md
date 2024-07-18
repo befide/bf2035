@@ -22,21 +22,21 @@ cslItem:
     - family: Héder
       given: Mihály
   citation-key: heder__2017__nasa
-  container-title: "The Innovation Journal: The Public Sector Innovation Journal"
-  issue: "2"
+  container-title: 'The Innovation Journal: The Public Sector Innovation Journal'
+  issue: '2'
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#bf2035/topics/tlr"
+      - - '2017'
+  keyword: '#bf2035/topics/tlr'
   language: en
-  number: "2"
-  title: "From NASA to EU: the evolution of the TRL scale in public sector innovation"
+  number: '2'
+  title: 'From NASA to EU: the evolution of the TRL scale in public sector innovation'
   type: article-journal
   URL: >-
     https://www.innovation.cc/discussion-papers/2017_22_2_3_heder_nasa-to-eu-trl-scale.pdf
-  volume: "22"
+  volume: '22'
 tags:
-  - "#bf2035/topics/tlr"
+  - '#bf2035/topics/tlr'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

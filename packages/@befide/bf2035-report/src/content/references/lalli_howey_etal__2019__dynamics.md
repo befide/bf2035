@@ -38,18 +38,18 @@ cslItem:
   DOI: 10.1007/s11192-019-03327-1
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 12
         - 16
-  keyword: "#bf2035/topics/bibliometrics"
+  keyword: '#bf2035/topics/bibliometrics'
   source: ResearchGate
   title: >-
     The dynamics of collaboration networks and the history of general
     relativity, 1925-1970
   type: article-journal
-  volume: "121"
+  volume: '121'
 tags:
-  - "#bf2035/topics/bibliometrics"
+  - '#bf2035/topics/bibliometrics'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

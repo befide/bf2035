@@ -7,16 +7,16 @@ cslItem:
   citation-key: freudenreich__2019__helmholtz
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 4
         - 30
-  keyword: "#bf2035/topics/teaching"
+  keyword: '#bf2035/topics/teaching'
   language: en
   source: Zotero
   title: Helmholtz Doctoral Guidelines
   type: report
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

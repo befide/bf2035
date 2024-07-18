@@ -3,7 +3,7 @@ cslItem:
   id: europeanstrategygroup__2020__2020
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 8
         - 24
   author:
@@ -13,8 +13,8 @@ cslItem:
   event-place: Geneva
   issued:
     date-parts:
-      - - "2020"
-  keyword: ""
+      - - '2020'
+  keyword: ''
   language: en
   number: CERN-ESU-015
   publisher: CERN

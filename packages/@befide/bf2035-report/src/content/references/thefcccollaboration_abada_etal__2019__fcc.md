@@ -3,7 +3,7 @@ cslItem:
   id: thefcccollaboration_abada_etal__2019__fcc
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 3
         - 5
   author:
@@ -1773,7 +1773,7 @@ cslItem:
       given: S. A.
     - family: Nisati
       given: A.
-    - family: "No"
+    - family: 'No'
       given: J. M.
     - family: Nonis
       given: M.
@@ -2740,15 +2740,15 @@ cslItem:
   container-title-short: Eur. Phys. J. C
   DOI: 10.1140/epjc/s10052-019-6904-3
   ISSN: 1434-6044, 1434-6052
-  issue: "6"
+  issue: '6'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 6
   keyword: >-
     #bf2035/accelerator-types/circular-collider;#bf2035/projects/fcc;#bf2035/user-group/hep
   language: en
-  page: "474"
+  page: '474'
   source: DOI.org (Crossref)
   title: >-
     FCC Physics Opportunities: Future Circular Collider Conceptual Design Report
@@ -2756,11 +2756,11 @@ cslItem:
   title-short: FCC Physics Opportunities
   type: article-journal
   URL: 10.1140/epjc/s10052-019-6904-3
-  volume: "79"
+  volume: '79'
 tags:
-  - "#bf2035/accelerator-types/circular-collider"
-  - "#bf2035/projects/fcc"
-  - "#bf2035/user-group/hep"
+  - '#bf2035/accelerator-types/circular-collider'
+  - '#bf2035/projects/fcc'
+  - '#bf2035/user-group/hep'
 rendered:
   bibliography: "<span class=\"csl-bib-body\">\n  <span data-csl-entry-id=\"thefcccollaboration_abada_etal__2019__fcc\" class=\"csl-entry\"><span class='author-bib'>The FCC\_Collaboration, Abada, A., Abbrescia, M., AbdusSalam, S. S., Abdyukhanov, I., Fernandez, J. A., Abramov, A., Aburaia, M., Acar, A. O., Adzic, P. R., Agrawal, P., Aguilar-Saavedra, J. A., Aguilera-Verdugo, J. J., Aiba, M., Aichinger, I., Aielli, G., Akay, A., Akhundov, A., Aksakal, H., … Zurita, J.</span>. <span class='date-bib'>(2019)</span>. <span class='title'><b>FCC Physics Opportunities: Future Circular Collider Conceptual Design Report Volume 1</b></span>. <i>The European Physical Journal C</i>, <i>79</i>(6), 474. <span class='URL'><a href='https://doi.org/10.1140/epjc/s10052-019-6904-3'>LINK</a></span></span>\n</span>"
   citation: "(<span style=\"font-variant:small-caps;\"><span style=\"font-variant:small-caps;\"><span style=\"font-variant:small-caps;\">The FCC\_Collaboration</span> et al.</span></span>, 2019)"

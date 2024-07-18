@@ -3,7 +3,7 @@ cslItem:
   id: varian__2022__varian
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 6
   author:
@@ -11,16 +11,16 @@ cslItem:
   citation-key: varian__2022__varian
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 5
-  keyword: "#bf2035/topics/commercialisation"
+  keyword: '#bf2035/topics/commercialisation'
   language: en
   publisher: Varian Medical Systems
   title: Varian TrueBeam
   type: document
   URL: https://varian.widen.net/s/7kc2jwlv7p/truebeam_brochure_rad10452a_may2022
 tags:
-  - "#bf2035/topics/commercialisation"
+  - '#bf2035/topics/commercialisation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

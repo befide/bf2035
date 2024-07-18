@@ -1,13 +1,10 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from 'astro:content';
 
-import { getImage } from "astro:assets";
-
-import LinkCard from "@ui/LinkCard.astro";
-import CardGrid from "@ui/CardGrid.astro";
+import { getImage } from 'astro:assets';
 
 export interface Props {
-  section: CollectionEntry<"sections">;
+  section: CollectionEntry<'sections'>;
 }
 
 const { section } = Astro.props;
@@ -18,10 +15,10 @@ const { Content } = await section.render();
 
 const optimizedBackground =
   backgroundImageSrc &&
-  (process.env.NODE_ENV === "production"
+  (process.env.NODE_ENV === 'production'
     ? await getImage({
         src: backgroundImageSrc.src,
-        format: "webp",
+        format: 'webp',
         width: 4960,
         height: 3508,
       })
@@ -36,7 +33,7 @@ const optimizedBackground =
       : ``}
   >
     <div class="spread__page-grid debug-overlay">
-      <Content components={{ LinkCard, CardGrid }} />
+      <Content />
     </div>
   </div>
   <div
@@ -78,7 +75,7 @@ const optimizedBackground =
         }
       </header>
 
-      <Content components={{ LinkCard, CardGrid }} />
+      <Content />
     </div>
   </div>
 </div>

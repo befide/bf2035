@@ -13,7 +13,7 @@ cslItem:
     discussing scientific and technical readiness of concepts, and providing a
     timeline for implementation.
   archive: INSPIRE
-  archive_location: "2054187"
+  archive_location: '2054187'
   author:
     - family: Emma
       given: Claudio
@@ -41,8 +41,8 @@ cslItem:
   citation-key: emma_vantilborg_etal__2022__snowmass
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/topics/teaching"
+      - - '2022'
+  keyword: '#bf2035/topics/teaching'
   note: |-
     4 citations (INSPIRE 2024/3/22)
     3 citations w/o self (INSPIRE 2024/3/22)
@@ -52,7 +52,7 @@ cslItem:
   type: document
   URL: https://arxiv.org/abs/2203.09094
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

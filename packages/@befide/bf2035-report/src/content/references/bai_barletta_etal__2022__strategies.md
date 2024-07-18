@@ -24,7 +24,7 @@ cslItem:
     - family: Chattopadhyay
       given: S
     - family: Hao
-      given: "Y"
+      given: 'Y'
     - family: Holder
       given: S
     - family: Holzbauer
@@ -35,8 +35,8 @@ cslItem:
   genre: White Paper
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/topics/teaching;#bf2035/topics/participation"
+      - - '2022'
+  keyword: '#bf2035/topics/teaching;#bf2035/topics/participation'
   language: en
   note: |-
     Read_Status: To Read
@@ -47,8 +47,8 @@ cslItem:
     in Accelerator Science and Engineering
   type: report
 tags:
-  - "#bf2035/topics/teaching"
-  - "#bf2035/topics/participation"
+  - '#bf2035/topics/teaching'
+  - '#bf2035/topics/participation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

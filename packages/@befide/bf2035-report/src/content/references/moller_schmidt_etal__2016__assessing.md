@@ -27,7 +27,7 @@ cslItem:
     research system.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 1
         - 4
   author:
@@ -42,12 +42,12 @@ cslItem:
   container-title-short: Scientometrics
   DOI: 10.1007/s11192-016-2090-3
   ISSN: 0138-9130, 1588-2861
-  issue: "3"
+  issue: '3'
   issued:
     date-parts:
-      - - "2016"
+      - - '2016'
         - 12
-  keyword: "#bf2035/topics/excellence"
+  keyword: '#bf2035/topics/excellence'
   language: en
   note: 30 citations (Crossref) [2024-01-04]
   page: 2217-2239
@@ -57,9 +57,9 @@ cslItem:
     methods
   type: article-journal
   URL: http://link.springer.com/10.1007/s11192-016-2090-3
-  volume: "109"
+  volume: '109'
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -3,7 +3,7 @@ cslItem:
   id: gsihelmholtzzentrumfurschwerionenforschung_fair__2024__gsifair
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 4
   author:
@@ -13,8 +13,8 @@ cslItem:
   DOI: 10.15120/GSI-2024-00500
   issued:
     date-parts:
-      - - "2024"
-  keyword: ""
+      - - '2024'
+  keyword: ''
   language: en
   page: pages 184 p.
   publisher: GSI Helmholtzzentrum fuer Schwerionenforschung, GSI, Darmstadt

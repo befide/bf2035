@@ -23,7 +23,7 @@ cslItem:
     high-technology European industry and for the whole European society.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -32,17 +32,17 @@ cslItem:
   DOI: 10.5281/zenodo.7085311
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 7
         - 22
-  keyword: "#collection/D./related-strategies;#bf2035/funding/eu/horizon2020"
+  keyword: '#collection/D./related-strategies;#bf2035/funding/eu/horizon2020'
   language: en
   source: DOI.org (Datacite)
   title: ARIES. Final Report on European Strategy
   type: report
   URL: https://zenodo.org/record/7085311
 tags:
-  - "#bf2035/funding/eu/horizon2020"
+  - '#bf2035/funding/eu/horizon2020'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

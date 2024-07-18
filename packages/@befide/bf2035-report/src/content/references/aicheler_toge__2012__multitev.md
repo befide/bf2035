@@ -3,18 +3,18 @@ cslItem:
   id: aicheler_toge__2012__multitev
   author:
     - family: Aicheler
-      given: ""
+      given: ''
       suffix: >-
         M, Burrows, P, Draper, M, Garvey, T, Lebrun, P, Peach, K, Phinney, N,
         Schmickler, H, Schulte, D
     - family: Toge
-      given: "N"
+      given: 'N'
   citation-key: aicheler_toge__2012__multitev
   issued:
     date-parts:
-      - - "2012"
+      - - '2012'
         - 7
-  keyword: "#bf2035/accelerator-types/linear-collider;#bf2035/user-group/hep"
+  keyword: '#bf2035/accelerator-types/linear-collider;#bf2035/user-group/hep'
   language: en
   note: DOI 10.5170/CERN-2012-007
   number: CERN-2012-007
@@ -24,8 +24,8 @@ cslItem:
   type: report
   URL: https://cds.cern.ch/record/1500095/files/CERN-2012-007.pdf
 tags:
-  - "#bf2035/accelerator-types/linear-collider"
-  - "#bf2035/user-group/hep"
+  - '#bf2035/accelerator-types/linear-collider'
+  - '#bf2035/user-group/hep'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

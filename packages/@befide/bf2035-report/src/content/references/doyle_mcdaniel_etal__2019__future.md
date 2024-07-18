@@ -20,7 +20,7 @@ cslItem:
     update submissions.
   accessed:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 8
         - 6
   author:
@@ -35,22 +35,22 @@ cslItem:
   container-title-short: Rev. Accl. Sci. Tech.
   DOI: 10.1142/S1793626819300068
   ISSN: 1793-6268, 1793-8058
-  issue: "01"
+  issue: '01'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 8
-  keyword: "#bf2035/applications/industry;#bf2035/topics/commercialisation"
+  keyword: '#bf2035/applications/industry;#bf2035/topics/commercialisation'
   language: en
   page: 93-116
   source: DOI.org (Crossref)
   title: The Future of Industrial Accelerators and Applications
   type: article-journal
   URL: https://doi.org/10.1142/S1793626819300068
-  volume: "10"
+  volume: '10'
 tags:
-  - "#bf2035/applications/industry"
-  - "#bf2035/topics/commercialisation"
+  - '#bf2035/applications/industry'
+  - '#bf2035/topics/commercialisation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

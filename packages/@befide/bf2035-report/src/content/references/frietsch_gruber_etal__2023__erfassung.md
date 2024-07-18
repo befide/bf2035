@@ -3,7 +3,7 @@ cslItem:
   id: frietsch_gruber_etal__2023__erfassung
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 18
   author:
@@ -18,10 +18,10 @@ cslItem:
   citation-key: frietsch_gruber_etal__2023__erfassung
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 2
         - 1
-  keyword: ""
+  keyword: ''
   language: en
   note: |-
     Read_Status: To Read

@@ -7,10 +7,10 @@ cslItem:
   citation-key: erdman__2019__challenges
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 4
         - 29
-  keyword: "#bf2035/topics/digitalisierung"
+  keyword: '#bf2035/topics/digitalisierung'
   language: en
   title: >-
     Challenges and Opportunities of Digital Transformation in Fundamental
@@ -19,7 +19,7 @@ cslItem:
   URL: >-
     https://www.sni-portal.de/en/files/2019-Strategiepapier_ErUM-Data.pdf/at_download/file
 tags:
-  - "#bf2035/topics/digitalisierung"
+  - '#bf2035/topics/digitalisierung'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

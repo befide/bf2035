@@ -3,7 +3,7 @@ cslItem:
   id: colby_len__2017__roadmap
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 4
   author:
@@ -22,9 +22,9 @@ cslItem:
   ISBN: 978-981-320-957-2 978-981-320-958-9
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
         - 4
-  keyword: ""
+  keyword: ''
   language: en
   page: 1-18
   publisher: WORLD SCIENTIFIC

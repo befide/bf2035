@@ -37,17 +37,17 @@ cslItem:
   ISBN: 978-0-262-37669-3
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 12
         - 5
-  keyword: "#bf2035/topics/excellence"
+  keyword: '#bf2035/topics/excellence'
   page: 177-202
   source: ResearchGate
-  title: "The Long and Winding Road to Excellence: The German Case"
+  title: 'The Long and Winding Road to Excellence: The German Case'
   title-short: The Long and Winding Road to Excellence
   type: chapter
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -6,13 +6,13 @@ cslItem:
   citation-key: helmholtz__2021__helmholtz
   issued:
     date-parts:
-      - - "2021"
-  keyword: ""
+      - - '2021'
+  keyword: ''
   language: en
   note: |-
     Read_Status: To Read
     Read_Status_Date: 2024-03-17T21:59:39.484Z
-  page: "33"
+  page: '33'
   publisher: Helmholtz Gemeinschaft
   title: Helmholtz Photon Science Roadmap 2021
   type: report

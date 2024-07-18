@@ -3,7 +3,7 @@ cslItem:
   id: h_a_abderrahim_d_debruyn_etal__2019__myrrha
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 13
   author:
@@ -20,24 +20,24 @@ cslItem:
   container-title: Izvestiya Wysshikh Uchebnykh Zawedeniy, Yadernaya Energetika
   container-title-short: YadEn
   DOI: 10.26583/npe.2019.2.03
-  ISSN: "02043327"
-  issue: "2"
+  ISSN: '02043327'
+  issue: '2'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 6
-  keyword: "#bf2035/facilities/myrrha;#bf2035/applications/transmutation"
+  keyword: '#bf2035/facilities/myrrha;#bf2035/applications/transmutation'
   language: en
   page: 29-42
   source: DOI.org (Crossref)
-  title: "Myrrha accelerator driven system programme: recent progress and perspectives"
+  title: 'Myrrha accelerator driven system programme: recent progress and perspectives'
   title-short: Myrrha accelerator driven system programme
   type: article-journal
   URL: https://nuclear-power-engineering.ru/en/article/2019/02/03/
-  volume: "2019"
+  volume: '2019'
 tags:
-  - "#bf2035/facilities/myrrha"
-  - "#bf2035/applications/transmutation"
+  - '#bf2035/facilities/myrrha'
+  - '#bf2035/applications/transmutation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

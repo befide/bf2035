@@ -6,10 +6,10 @@ cslItem:
   citation-key: icfa__2022__pressemitteilung
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 4
         - 10
-  keyword: "#bf2035/user-group/hep;#bf2035/accelerator-types/higgs-factory"
+  keyword: '#bf2035/user-group/hep;#bf2035/accelerator-types/higgs-factory'
   language: en
   publisher: ICFA
   title: >-
@@ -18,8 +18,8 @@ cslItem:
   type: document
   URL: https://icfa.hep.net/wp-content/uploads/ICFA_Statement_April2022_Final.pdf
 tags:
-  - "#bf2035/user-group/hep"
-  - "#bf2035/accelerator-types/higgs-factory"
+  - '#bf2035/user-group/hep'
+  - '#bf2035/accelerator-types/higgs-factory'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

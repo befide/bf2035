@@ -1,7 +1,7 @@
 ---
-import { rollups, sum } from "d3-array";
+import { rollups, sum } from 'd3-array';
 
-import _teachings from "./teaching.json";
+import _teachings from './teaching.json';
 
 export type Teachings = Teaching[];
 
@@ -16,9 +16,9 @@ export interface Teaching {
   sws: number;
   WiSe: string;
   SoSe: string;
-  "link:university": string;
+  'link:university': string;
   university: string;
-  "link:professors": string;
+  'link:professors': string;
   url: string;
 }
 const teachings: Teachings = _teachings;
@@ -29,31 +29,31 @@ const teachingsByUniversities = rollups(
     entries: v,
     sws: sum(
       v,
-      (d) => d.lecture__sws + d.lab__sws + d.exercises__sws + d.seminar__sws
+      (d) => d.lecture__sws + d.lab__sws + d.exercises__sws + d.seminar__sws,
     ),
     lecture__sws: sum(v, (d) => d.lecture__sws),
     exercises__sws: sum(v, (d) => d.lab__sws + d.exercises__sws),
     seminar__sws: sum(v, (d) => d.seminar__sws),
   }),
-  (d) => d["link:university"]
+  (d) => d['link:university'],
 );
 
 function fachbereich(university: string) {
   const dir = new Map<string, string[]>();
-  dir.set("HU Berlin", ["Physik"]);
-  dir.set("KIT", ["Physik"]);
-  dir.set("RWTH Aachen", ["Physik"]);
-  dir.set("TU Darmstadt", ["Physik", "E-Technik"]);
-  dir.set("TU Dortmund", ["Physik"]);
-  dir.set("TU Dresden", ["Physik"]);
-  dir.set("Uni Bonn", ["Physik"]);
-  dir.set("Uni Frankfurt", ["Physik"]);
-  dir.set("Uni Hamburg", ["Physik"]);
-  dir.set("Uni Hamburg", ["Physik"]);
-  dir.set("Uni Jena", ["Physik"]);
-  dir.set("Uni Mainz", ["Physik"]);
-  dir.set("Uni Rostock", ["E-Technik"]);
-  dir.set("Uni Siegen", ["Physik"]);
+  dir.set('HU Berlin', ['Physik']);
+  dir.set('KIT', ['Physik']);
+  dir.set('RWTH Aachen', ['Physik']);
+  dir.set('TU Darmstadt', ['Physik', 'E-Technik']);
+  dir.set('TU Dortmund', ['Physik']);
+  dir.set('TU Dresden', ['Physik']);
+  dir.set('Uni Bonn', ['Physik']);
+  dir.set('Uni Frankfurt', ['Physik']);
+  dir.set('Uni Hamburg', ['Physik']);
+  dir.set('Uni Hamburg', ['Physik']);
+  dir.set('Uni Jena', ['Physik']);
+  dir.set('Uni Mainz', ['Physik']);
+  dir.set('Uni Rostock', ['E-Technik']);
+  dir.set('Uni Siegen', ['Physik']);
   return dir.get(university) || [];
 }
 ---
@@ -88,7 +88,7 @@ function fachbereich(university: string) {
           </td>
 
           <td class="md right nw">
-            <div>{v.sws || "-"}</div>
+            <div>{v.sws || '-'}</div>
             {/* <div>
               {"V".repeat(teachingsByUniversities.get(k)?.lecture__sws)}{" "}
               {"Ü".repeat(teachingsByUniversities.get(k)?.exercises__sws)}{" "}
@@ -96,7 +96,7 @@ function fachbereich(university: string) {
             </div> */}
           </td>
           <td class="md right nw">
-            <div>{v.sws || "-"}</div>
+            <div>{v.sws || '-'}</div>
             {/* <div>
               {"V".repeat(teachingsByUniversities.get(k)?.lecture__sws)}{" "}
               {"Ü".repeat(teachingsByUniversities.get(k)?.exercises__sws)}{" "}
@@ -104,7 +104,7 @@ function fachbereich(university: string) {
             </div> */}
           </td>
 
-          <td class="md" set:html={fachbereich(k).join(",&nbsp;")} />
+          <td class="md" set:html={fachbereich(k).join(',&nbsp;')} />
         </tr>
       ))
     }

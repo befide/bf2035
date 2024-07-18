@@ -8,10 +8,10 @@ cslItem:
   ISBN: 978-92-79-69745-6
   issued:
     date-parts:
-      - - "2018"
-  keyword: "#bf2035/topics/excellence"
+      - - '2018'
+  keyword: '#bf2035/topics/excellence'
   language: en
-  note: "OCLC: 1112885217"
+  note: 'OCLC: 1112885217'
   publisher: Publications Office
   publisher-place: Luxembourg
   source: Open WorldCat
@@ -21,7 +21,7 @@ cslItem:
   title-short: Science, research and innovation performance of the EU, 2018
   type: book
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

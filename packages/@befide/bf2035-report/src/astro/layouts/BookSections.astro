@@ -1,10 +1,10 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import PartLayout from "./Part.astro"
-import SectionLayout from "./Section.astro"
+import type { CollectionEntry } from 'astro:content';
+import PartLayout from './Part.astro';
+import SectionLayout from './Section.astro';
 
 export interface Props {
-  sections: CollectionEntry<"sections">[];
+  sections: CollectionEntry<'sections'>[];
   lang?: string;
   author?: string;
   description?: string;
@@ -13,19 +13,19 @@ export interface Props {
 const { sections } = Astro.props;
 ---
 
-
-    <div class="book-sections">
-      {sections.map((section) => (
-        <section class="book-section">
-          {(section.data.sectionType === "part" ||
-            section.data.sectionType === "cover") && (
-            <PartLayout section={section} />
-          )}
-          {!(
-            section.data.sectionType === "part" ||
-            section.data.sectionType === "cover"
-          ) && <SectionLayout section={section} />}
-        </section>
-      ))}
-    </div>
-
+<div class="book-sections">
+  {
+    sections.map((section) => (
+      <section class="book-section">
+        {(section.data.sectionType === 'part' ||
+          section.data.sectionType === 'cover') && (
+          <PartLayout section={section} />
+        )}
+        {!(
+          section.data.sectionType === 'part' ||
+          section.data.sectionType === 'cover'
+        ) && <SectionLayout section={section} />}
+      </section>
+    ))
+  }
+</div>

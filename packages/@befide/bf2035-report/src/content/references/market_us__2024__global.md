@@ -6,7 +6,7 @@ cslItem:
     4.8 Billion by 2033 from USD 2.7 Billion in 2023
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 20
   author:
@@ -16,22 +16,22 @@ cslItem:
   genre: Market Research Report
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
-  keyword: "#bf2035/topics/commercialisation"
+  keyword: '#bf2035/topics/commercialisation'
   language: en
   note: >-
     abstract: The Global Linear Particle Accelerators Маrkеt size is expected to
     be worth around USD 4.8 Billion by 2033 from USD 2.7 Billion in 2023,
     growing at a CAGR of 5.7% during the forecast period from 2024 to 2033.
-  page: "333"
+  page: '333'
   publisher: Market.us
   publisher-place: New York
   title: Global Linear Particle Accelerators Market
   type: report
   URL: https://market.us/report/linear-particle-accelerators-market/
 tags:
-  - "#bf2035/topics/commercialisation"
+  - '#bf2035/topics/commercialisation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

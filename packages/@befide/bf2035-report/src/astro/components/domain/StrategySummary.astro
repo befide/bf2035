@@ -1,16 +1,16 @@
 ---
-import { getSections } from '@utils/getSections'
-import { getEntry } from 'astro:content'
+import { getSections } from '@utils/getSections';
+import { getEntry } from 'astro:content';
 
 export interface StrategySummary {
-  slug: string
+  slug: string;
 }
 
-const { slug } = Astro.props
+const { slug } = Astro.props;
 
-const section = await getEntry('sections', slug)
+const section = await getEntry('sections', slug);
 
-if (!section) throw new Error('section not found: ' + slug)
+if (!section) throw new Error('section not found: ' + slug);
 ---
 
 <section class="strategy-summary">

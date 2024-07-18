@@ -29,7 +29,7 @@ cslItem:
     organizations.
   accessed:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 1
         - 21
   author:
@@ -39,24 +39,24 @@ cslItem:
   container-title: Acta Astronautica
   container-title-short: Acta Astronautica
   DOI: 10.1016/j.actaastro.2009.03.058
-  ISSN: "00945765"
+  ISSN: '00945765'
   issue: 9-10
   issued:
     date-parts:
-      - - "2009"
+      - - '2009'
         - 11
-  keyword: "#bf2035/topics/tlr"
+  keyword: '#bf2035/topics/tlr'
   language: en
   number: 9-10
   page: 1216-1223
   source: DOI.org (Crossref)
-  title: "Technology readiness assessments: a retrospective"
+  title: 'Technology readiness assessments: a retrospective'
   title-short: Technology readiness assessments
   type: article-journal
   URL: https://linkinghub.elsevier.com/retrieve/pii/S0094576509002008
-  volume: "65"
+  volume: '65'
 tags:
-  - "#bf2035/topics/tlr"
+  - '#bf2035/topics/tlr'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

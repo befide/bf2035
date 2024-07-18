@@ -6,16 +6,16 @@ cslItem:
   citation-key: bmbf__2022__daten
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 6
-  keyword: "#bf2035/funding/bmbf"
+  keyword: '#bf2035/funding/bmbf'
   language: en
   publisher: BMBF
   source: Zotero
   title: Daten und ­Fakten zum deutschen ­Forschungs- und Innovationssystem
   type: report
 tags:
-  - "#bf2035/funding/bmbf"
+  - '#bf2035/funding/bmbf'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

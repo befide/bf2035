@@ -40,17 +40,17 @@ cslItem:
   ISBN: 978-3-662-61006-0
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 4
         - 4
-  keyword: "#bf2035/topics/entrepreneurship;#bf2035/topics/commercialisation"
+  keyword: '#bf2035/topics/entrepreneurship;#bf2035/topics/commercialisation'
   page: 163-202
   source: ResearchGate
   title: A Reform Strategy for Germany
   type: chapter
 tags:
-  - "#bf2035/topics/entrepreneurship"
-  - "#bf2035/topics/commercialisation"
+  - '#bf2035/topics/entrepreneurship'
+  - '#bf2035/topics/commercialisation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

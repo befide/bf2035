@@ -22,7 +22,7 @@ cslItem:
     in background field are being organized.
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 2
         - 6
   author:
@@ -35,22 +35,22 @@ cslItem:
   container-title-short: Instruments
   DOI: 10/gpcwzz
   ISSN: 2410-390X
-  issue: "1"
+  issue: '1'
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 2
         - 23
-  keyword: ""
+  keyword: ''
   language: en
   note: >-
     https://web.archive.org/web/20220206093607/https://www.mdpi.com/2410-390X/5/1/8
-  page: "8"
+  page: '8'
   source: DOI.org (Crossref)
   title: HTS Accelerator Magnet and Conductor Development in Europe
   type: article-journal
   URL: https://www.mdpi.com/2410-390X/5/1/8
-  volume: "5"
+  volume: '5'
 tags: []
 rendered:
   bibliography: |-

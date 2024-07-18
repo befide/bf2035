@@ -11,10 +11,10 @@ cslItem:
     Circular Colliders
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 10
         - 9
-  keyword: "#bf2035/projects/lhc;#bf2035/research-topics/sustainability"
+  keyword: '#bf2035/projects/lhc;#bf2035/research-topics/sustainability'
   language: en
   publisher-place: CERN
   title: Why are particle accelerators so inefficient?
@@ -22,8 +22,8 @@ cslItem:
   URL: >-
     https://indico.cern.ch/event/321880/contributions/1702584/attachments/622090/855967/Talk_Accelerator_Energy_Efficiency_141126.pdf
 tags:
-  - "#bf2035/projects/lhc"
-  - "#bf2035/research-topics/sustainability"
+  - '#bf2035/projects/lhc'
+  - '#bf2035/research-topics/sustainability'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

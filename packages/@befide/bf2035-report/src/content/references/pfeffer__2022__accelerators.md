@@ -3,7 +3,7 @@ cslItem:
   id: pfeffer__2022__accelerators
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 11
         - 23
   author:
@@ -17,20 +17,20 @@ cslItem:
   genre: Annual Report
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#collection/D./annual repoorts;#bf2035/organisations/desy"
+      - - '2022'
+  keyword: '#collection/D./annual repoorts;#bf2035/organisations/desy'
   language: en
   note: |-
     Read_Status: To Read
     Read_Status_Date: 2024-03-24T18:49:16.025Z
   publisher: Deutsches Elektronen-Synchrotron
   source: DOI.org (Datacite)
-  title: "Accelerators 2021: Highlights and Annual Report"
+  title: 'Accelerators 2021: Highlights and Annual Report'
   title-short: Accelerators 2021
   type: report
   URL: https://bib-pubdb1.desy.de/record/476767
 tags:
-  - "#bf2035/organisations/desy"
+  - '#bf2035/organisations/desy'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

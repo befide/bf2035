@@ -3,7 +3,7 @@ cslItem:
   id: cern__2023__cern
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
         - 29
   author:
@@ -11,15 +11,15 @@ cslItem:
   citation-key: cern__2023__cern
   issued:
     date-parts:
-      - - "2023"
-  keyword: "#bf2035/topics/teaching"
+      - - '2023'
+  keyword: '#bf2035/topics/teaching'
   language: en
   title: CERN Summer Student Programme 2024
   type: webpage
   URL: >-
     https://www.smartrecruiters.com/CERN/743999941597816-cern-summer-student-programme-2024-member-and-non-member-state-
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

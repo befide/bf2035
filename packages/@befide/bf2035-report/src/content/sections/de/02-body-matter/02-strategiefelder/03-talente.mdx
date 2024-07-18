@@ -9,12 +9,12 @@ abstract: |
   Massa tincidunt nunc pulvinar sapien et. Donec enim diam vulputate ut. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus.{.red}
 ---
 
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets'
 
-import ProgressChart from "@components/domain/progress-chart/ProgressChart.astro";
-import Universities from "@components/domain/Universities.astro";
-import Teaching from "@components/domain/Teaching.astro";
-import strategyMap from "@befide/bf2035-report/src/astro/assets/svg/strategy-map.teaching.svg";
+import ProgressChart from '@components/domain/progress-chart/ProgressChart.astro'
+import Universities from '@components/domain/Universities.astro'
+import Teaching from '@components/domain/Teaching.astro'
+import strategyMap from '@befide/bf2035-report/src/astro/assets/svg/strategy-map.teaching.svg'
 
 <div class="spread--left spread-area--intro">
 
@@ -44,12 +44,11 @@ Die Lehrschwerpunkte an den einzelnen Standorten umfassen sowohl die seit Jahrze
 
 ### Schwächen
 
-Während an allen Universitäten die gleichen Grundlagen gelehrt werden, hängen die vertiefenden Schwerpunkte stark vom jeweiligen Standort ab - von den angeschlossenen Beschleunigeranlagen (Elektronen- oder Hadronenbeschleuniger, Hochfrequenz/Plasma) und deren Anwendungen (Teilchen- oder Kernphysik, Kondensierte Materie)[^1].
+{/* Während an allen Universitäten die gleichen Grundlagen gelehrt werden, hängen die vertiefenden Schwerpunkte stark vom jeweiligen Standort ab - von den angeschlossenen Beschleunigeranlagen (Elektronen- oder Hadronenbeschleuniger, Hochfrequenz/Plasma) und deren Anwendungen (Teilchen- oder Kernphysik, Kondensierte Materie)[^1]. */}
 
 {/* Die **CERN Accelerator School (CAS)** wurde Anfang 1983 mit dem Hauptziel gegründet, das am CERN und anderswo gesammelte Wissen über Teilchenbeschleuniger und Collider aller Art zu bewahren und weiterzugeben. Jedes Jahr werden ein fünftägiger Grundkurs und ein zweiwöchiger Einführungskurs angeboten; dazu kommen im jährlichen Wechsel ein zweiwöchiger Fortgeschrittenenkurs sowie Kurse zu speziellen Themen wie Magnettechnik, Hochfrequenztechnik, Strahlmodellierung oder Strahlinstrumentierung.[^3]
 
-Die **Joint Universities Accelerator School (JUAS)** bietet jährlich zwei aufeinander folgende Kurse an von jeweils fünf Wochen Dauer an. Die jeweils rund 100 Stunden Vorlesungenstunden werden durch Live-Tutorials, Computersitzungen und Gruppenarbeiten ergänzt. Schriftliche Prüfungen ermöglichen es den Studierenden, ECTS-Punkte an derzeit 14 teilnehmenden Heimatuniversitäten zu erwerben (in Deutschland sind diese die Uni Rostock, TU Darmstadt sowie das KIT)[^4] */}
-
+Die **Joint Universities Accelerator School (JUAS)** bietet jährlich zwei aufeinander folgende Kurse an von jeweils fünf Wochen Dauer an. Die jeweils rund 100 Stunden Vorlesungenstunden werden durch Live-Tutorials, Computersitzungen und Gruppenarbeiten ergänzt. Schriftliche Prüfungen ermöglichen es den Studierenden, ECTS-Punkte an derzeit 14 teilnehmenden Heimatuniversitäten zu erwerben (in Deutschland sind diese die Uni Rostock, TU Darmstadt sowie das KIT)[^4] \*/}
 
 ### Diversität
 
@@ -122,20 +121,17 @@ Während das Fach schon heute mit Nachwuchsmangel zu kämpfen hat, ist abzusehen
 <div class="spread--right spread-area--aside">
 
 <Teaching>
-  Universitäre Lehrangebote zur Beschleunigerforschung im Rahmen von
-  Masterstudiengängen.[^lehrangebote]
+  Universitäre Lehrangebote zur Beschleunigerforschung im Rahmen von Masterstudiengängen.[^lehrangebote]
 </Teaching>
 
 <ProgressChart dimension="progress__doctoral_theses">
-  In den letzten 10 Jahren haben durchschnittlich mehr als 12 Doktoranden pro
-  Jahr ihre Doktorarbeit in der Beschleunigerforschung erfolgreich
-  abgeschlossen.[^2]
+  In den letzten 10 Jahren haben durchschnittlich mehr als 12 Doktoranden pro Jahr ihre Doktorarbeit in der
+  Beschleunigerforschung erfolgreich abgeschlossen.[^2]
 </ProgressChart>
 
 <ProgressChart dimension="progress__master_theses">
-  In den letzten 10 Jahren haben durchschnittlich mehr als N Absolventen pro
-  Jahr ihren Masterabschluss mit einer Arbeit in der Beschleunigerforschung
-  erfolgreich abgeschlossen.[^masterarbeiten]
+  In den letzten 10 Jahren haben durchschnittlich mehr als N Absolventen pro Jahr ihren Masterabschluss mit einer Arbeit
+  in der Beschleunigerforschung erfolgreich abgeschlossen.[^masterarbeiten]
 </ProgressChart>
 
 </div>
@@ -170,13 +166,7 @@ Während das Fach schon heute mit Nachwuchsmangel zu kämpfen hat, ist abzusehen
 [^9]: Eigene Erhebung auf Grundlage der <BibRef citeKey="kfb__2022__dissertationsdatenbank" />
 
 [^10]:
-    <BibRef
-      citeKey="statistischesbundesamt__2020__statistik"
-      locator="Seite 36"
-    />
+    <BibRef citeKey="statistischesbundesamt__2020__statistik" locator="Seite 36" />
 
 [^11]:
-    <BibRef
-      citeKey="statistischesbundesamt__2020__personal"
-      locator="Seite 288"
-    />
+    <BibRef citeKey="statistischesbundesamt__2020__personal" locator="Seite 288" />

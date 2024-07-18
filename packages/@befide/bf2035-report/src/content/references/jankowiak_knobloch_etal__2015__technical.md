@@ -3,7 +3,7 @@ cslItem:
   id: jankowiak_knobloch_etal__2015__technical
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 1
         - 31
   author:
@@ -20,8 +20,8 @@ cslItem:
   genre: Technical Design Study
   issued:
     date-parts:
-      - - "2015"
-  keyword: "#bf2035/projects/bessy/bessy-vsr"
+      - - '2015'
+  keyword: '#bf2035/projects/bessy/bessy-vsr'
   language: en
   page: 12898 kb, 220 pages
   publisher: Helmholtz-Zentrum Berlin für Materialien und Energie
@@ -31,7 +31,7 @@ cslItem:
   URL: >-
     https://www.helmholtz-berlin.de/media/media/angebote/bibliothek/reports/r0001-bessy-vsr-tds.pdf
 tags:
-  - "#bf2035/projects/bessy/bessy-vsr"
+  - '#bf2035/projects/bessy/bessy-vsr'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

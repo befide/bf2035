@@ -11,7 +11,7 @@ cslItem:
     Berlin-Adlershof.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
         - 29
   author:
@@ -20,15 +20,15 @@ cslItem:
   container-title: HZB Website
   issued:
     date-parts:
-      - - "2024"
-  keyword: "#bf2035/topics/teaching"
+      - - '2024'
+  keyword: '#bf2035/topics/teaching'
   language: en
   title: HZB International Summer Student Programme
   type: webpage
   URL: >-
     https://www-intern.helmholtz-berlin.de/jobskarriere/schule-und-studium/summer-schools/sommerstudierende_en.html
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

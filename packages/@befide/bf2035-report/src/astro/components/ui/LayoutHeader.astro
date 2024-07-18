@@ -1,6 +1,6 @@
 ---
-import SkipNavigation from "./SkipNavigation.astro";
-import Navigation from "@components/ui/Navigation.astro";
+import SkipNavigation from './SkipNavigation.astro';
+import Navigation from '@components/ui/Navigation.astro';
 ---
 
 <SkipNavigation />
@@ -31,15 +31,15 @@ import Navigation from "@components/ui/Navigation.astro";
     <li><a id="navigation__book" href="/book/" class="">Book</a></li>
   </ul>
   <Navigation />
-  <label  for="nav__toggle">
+  <label for="nav__toggle">
     <input id="nav__toggle" type="checkbox" class="visually-hidden" />
   </label>
 </nav>
 
 <script is:inline>
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyB") {
-      document.getElementById("navigation__book")?.click();
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyB') {
+      document.getElementById('navigation__book')?.click();
     }
   });
 </script>

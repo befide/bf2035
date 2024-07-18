@@ -8,11 +8,11 @@ export interface ResearchAgendaItem {
   group?: string;
   label: string;
   description?: string;
-  "links:agenda-topics"?: string[];
-  "links:agenda-facilities"?: string[];
+  'links:agenda-topics'?: string[];
+  'links:agenda-facilities'?: string[];
   usedInResearchAgenda: boolean;
   links: string[];
-  "links:agenda-objectives"?: string[];
+  'links:agenda-objectives'?: string[];
   collection?: string;
   nameIsAcronymFor?: string;
   userGroup?: string;
@@ -24,9 +24,9 @@ export interface ResearchAgendaItem {
   isBmbfFis?: boolean;
 }
 
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
-import _data from "./research-agenda.json";
+import _data from './research-agenda.json';
 
 let data: ResearchAgenda = _data;
 
@@ -37,23 +37,12 @@ export interface Props {
 const { name } = Astro.props;
 
 const item = data.find((item) => item.name === name);
-
-
-const imagePath = "/src/astro/assets/svg/agenda/agenda.objectives." + name + ".svg";
-const images = import.meta.glob<{ default: ImageMetadata }>("/src/astro/assets/svg/agenda/agenda.objectives.*.svg")
-
-  
-
-if (!images[imagePath])
-  throw new Error(
-    `"${imagePath}" does not exist in glob: "/src/astro/assets/svg/agenda/agenda.objectives.*.svg"`
-  );
-
-const image = images[imagePath]();
 ---
 
 <figure class="objective">
-  <Image src={image} alt="..." />
+  <div class="img-container">
+    <Image src={import(`./svg/agenda.objectives.${name}.svg`)} alt="..." />
+  </div>
   <figcaption>
     <p class="md">
       <strong>{item.label}: </strong>{item.description}
@@ -61,22 +50,27 @@ const image = images[imagePath]();
   </figcaption>
 </figure>
 
-<style lang="stylus">
+<style lang="stylus" is:global>
 figure.objective
-  height 15rem
-
+  display flex
+  flex-direction row
+  width 23rem
+  height 11rem
+  margin-top 1rem
   position relative
-  img
-
-    width calc(20 * var(--baseline-height))
-    height calc(20 * var(--baseline-height))
-    position absolute
-    left calc(-6 * var(--baseline-height))
-    top calc(-.5 * var(--baseline-height))
-    z-index -1
+  
+  .img-container
+    flex 1
+    position relative
+    
+    img
+      position absolute
+      width 11rem
+      height 11rem
+      top 0
+      left 0
 
   figcaption
-    margin-left calc(12 * var(--baseline-height))
-    height calc(16 * var(--baseline-height))
-    z-index 10
+    flex 1 
+    
 </style>

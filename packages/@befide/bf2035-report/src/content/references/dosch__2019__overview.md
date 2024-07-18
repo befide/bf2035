@@ -8,8 +8,8 @@ cslItem:
   event-place: Berlin
   issued:
     date-parts:
-      - - "2019"
-  keyword: ""
+      - - '2019'
+  keyword: ''
   language: en
   publisher: Helmholtz Gemeinschaft
   publisher-place: Berlin

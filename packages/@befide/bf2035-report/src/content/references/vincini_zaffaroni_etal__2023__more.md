@@ -90,20 +90,20 @@ cslItem:
   DOI: 10.3390/cancers15235545
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 23
-  keyword: "#bf2035/topics/bibliometrics"
-  page: "5545"
+  keyword: '#bf2035/topics/bibliometrics'
+  page: '5545'
   source: ResearchGate
   title: >-
     More than Five Decades of Proton Therapy: A Bibliometric Overview of the
     Scientific Literature
   title-short: More than Five Decades of Proton Therapy
   type: article-journal
-  volume: "15"
+  volume: '15'
 tags:
-  - "#bf2035/topics/bibliometrics"
+  - '#bf2035/topics/bibliometrics'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -1,12 +1,11 @@
 ---
-import { getPath, getPrevNext } from "@utils/getSections";
+import { getPath, getPrevNext } from '@utils/getSections';
 
-const {slug} = Astro.params;
+const { slug } = Astro.params;
 
-const path = ("/" + slug + "/").replaceAll("//", "/");
+const path = ('/' + slug + '/').replaceAll('//', '/');
 
 const { prev, next, home } = await getPrevNext(path);
-
 ---
 
 <nav class="linear-navigation">
@@ -33,19 +32,19 @@ const { prev, next, home } = await getPrevNext(path);
   }
 </nav>
 <script is:inline>
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.code === "KeyN") {
-      document.getElementById("navigation__next")?.click();
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.code === 'KeyN') {
+      document.getElementById('navigation__next')?.click();
     }
   });
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyH") {
-      document.getElementById("navigation__home")?.click();
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyH') {
+      document.getElementById('navigation__home')?.click();
     }
   });
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyN") {
-      document.getElementById("navigation__prev")?.click();
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyN') {
+      document.getElementById('navigation__prev')?.click();
     }
   });
 </script>

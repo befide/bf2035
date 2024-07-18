@@ -4,7 +4,7 @@ cslItem:
   abstract: "ASTRO, the world's premier radiation oncology conference, was held in San Diego, California last week.\_ One the second day of the ..."
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 6
   author:
@@ -14,16 +14,16 @@ cslItem:
   container-title: Radiology Oncology Systems
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 10
         - 13
-  keyword: "#bf2035/topics/commercialisation"
+  keyword: '#bf2035/topics/commercialisation'
   language: en
   title: The Collapse of ViewRay
   type: post-weblog
   URL: https://www.oncologysystems.com/blog/the-collapse-of-viewray
 tags:
-  - "#bf2035/topics/commercialisation"
+  - '#bf2035/topics/commercialisation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -7,7 +7,7 @@ cslItem:
   citation-key: hutton__2021__report
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 7
         - 9
   keyword: >-
@@ -17,9 +17,9 @@ cslItem:
   title: Report from the ERL Roadmap Panel
   type: report
 tags:
-  - "#bf2035/projects/berlinpro"
-  - "#bf2035/user-group/hep"
-  - "#bf2035/accelerator-types/erl"
+  - '#bf2035/projects/berlinpro'
+  - '#bf2035/user-group/hep'
+  - '#bf2035/accelerator-types/erl'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

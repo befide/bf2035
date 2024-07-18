@@ -25,20 +25,20 @@ cslItem:
   citation-key: behnke_brau_etal__2013__ilc
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#bf2035/accelerator-types/linear-collider;#bf2035/user-group/hep"
+      - - '2013'
+  keyword: '#bf2035/accelerator-types/linear-collider;#bf2035/user-group/hep'
   language: en
   note: >-
     http://web.archive.org/web/20200302182730/https://inspirehep.net/record/1240093
-  number-of-volumes: "5"
+  number-of-volumes: '5'
   publisher: ILC
-  title: "The ILC TDR - Volume 1: Executive Summary"
+  title: 'The ILC TDR - Volume 1: Executive Summary'
   type: book
   URL: https://inspirehep.net/record/1240093
-  volume: "1"
+  volume: '1'
 tags:
-  - "#bf2035/accelerator-types/linear-collider"
-  - "#bf2035/user-group/hep"
+  - '#bf2035/accelerator-types/linear-collider'
+  - '#bf2035/user-group/hep'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

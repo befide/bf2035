@@ -6,8 +6,8 @@ cslItem:
   citation-key: kfb__2023__mitgliederbefragung
   issued:
     date-parts:
-      - - "2023"
-  keyword: ""
+      - - '2023'
+  keyword: ''
   language: en
   publisher: KfB
   title: Mitgliederbefragung im Forum Beschleunigerphysik

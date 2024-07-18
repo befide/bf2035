@@ -3,7 +3,7 @@ cslItem:
   id: ecfa__2022__homepage
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 8
         - 20
   author:
@@ -11,8 +11,8 @@ cslItem:
   citation-key: ecfa__2022__homepage
   issued:
     date-parts:
-      - - "2022"
-  keyword: ""
+      - - '2022'
+  keyword: ''
   language: en
   title: Homepage of the European Committee for Future Accelerators
   type: webpage

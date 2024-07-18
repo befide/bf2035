@@ -4,14 +4,14 @@ cslItem:
   author:
     - literal: Iaea
   citation-key: iaea__2021__compact
-  collection-number: "1981"
+  collection-number: '1981'
   collection-title: TECDOC series
   event-place: Vienna
   ISBN: 978-92-0-127022-1
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#bf2035/user-group/neutron-science"
+      - - '2021'
+  keyword: '#bf2035/user-group/neutron-science'
   language: en
   publisher: INTERNATIONAL ATOMIC ENERGY AGENCY
   publisher-place: Vienna
@@ -20,7 +20,7 @@ cslItem:
   URL: >-
     https://www.iaea.org/publications/14948/compact-accelerator-based-neutron-sources
 tags:
-  - "#bf2035/user-group/neutron-science"
+  - '#bf2035/user-group/neutron-science'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

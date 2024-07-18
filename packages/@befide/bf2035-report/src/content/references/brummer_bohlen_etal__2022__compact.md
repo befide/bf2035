@@ -6,7 +6,7 @@ cslItem:
                 Readily available bright X-ray beams with narrow bandwidth and tunable energy promise to unlock novel developments in a wide range of applications. Among emerging alternatives to large-scale and costly present-day radiation sources which severely restrict the availability of such beams, compact laser-plasma-accelerator-driven inverse Compton scattering sources show great potential. However, these sources are currently limited to tens of percent bandwidths, unacceptably large for many applications. Here, we show conceptually that using active plasma lenses to tailor the electron bunch-photon interaction, tunable X-ray and gamma beams with percent-level bandwidths can be produced. The central X-ray energy is tunable by varying the focusing strength of the lens, without changing electron bunch properties, allowing for precision-tuning the X-ray beam energy. This method is a key development towards laser-plasma-accelerator-driven narrowband, precision tunable femtosecond photon sources, enabling a paradigm shift and proliferation of compact X-ray applications.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -25,10 +25,10 @@ cslItem:
   container-title-short: Sci Rep
   DOI: 10.1038/s41598-022-20283-8
   ISSN: 2045-2322
-  issue: "1"
+  issue: '1'
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 9
         - 26
   keyword: >-
@@ -37,15 +37,15 @@ cslItem:
   note: |-
     Read_Status: To Read
     Read_Status_Date: 2024-03-17T10:08:39.662Z
-  page: "16017"
+  page: '16017'
   source: DOI.org (Crossref)
   title: Compact all-optical precision-tunable narrowband hard Compton X-ray source
   type: article-journal
   URL: https://www.nature.com/articles/s41598-022-20283-8
-  volume: "12"
+  volume: '12'
 tags:
-  - "#bf2035/accelerator-types/photon-source"
-  - "#bf2035/research-topics/plasma-acceleration"
+  - '#bf2035/accelerator-types/photon-source'
+  - '#bf2035/research-topics/plasma-acceleration'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

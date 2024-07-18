@@ -3,7 +3,7 @@ cslItem:
   id: varian__2019__varian
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 6
   author:
@@ -11,15 +11,15 @@ cslItem:
   citation-key: varian__2019__varian
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#bf2035/topics/commercialisation"
+      - - '2019'
+  keyword: '#bf2035/topics/commercialisation'
   language: en
   publisher: Varian Medical Systems
   title: Varian EDGE
   type: document
   URL: https://varian.widen.net/s/7rxbczh7tp/edge_brochure_rad10621_may2019
 tags:
-  - "#bf2035/topics/commercialisation"
+  - '#bf2035/topics/commercialisation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -4,7 +4,7 @@ cslItem:
     europeancommission_directorategeneralforresearchandinnovation___2016__science
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -14,8 +14,8 @@ cslItem:
   event-place: LU
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#bf2035/topics/excellence"
+      - - '2016'
+  keyword: '#bf2035/topics/excellence'
   language: en
   publisher: Publications Office
   publisher-place: LU
@@ -27,7 +27,7 @@ cslItem:
   type: book
   URL: https://data.europa.eu/doi/10.2777/427046
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

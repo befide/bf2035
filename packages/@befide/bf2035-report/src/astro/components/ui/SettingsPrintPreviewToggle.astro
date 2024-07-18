@@ -11,21 +11,21 @@
   import {
     updateDocumentSettings,
     togglePrintPreview,
-  } from "@utils/settingsStore.js";
+  } from '@utils/settingsStore.js';
 
   updateDocumentSettings.printPreview();
   document.addEventListener(
-    "astro:after-swap",
-    updateDocumentSettings.printPreview
+    'astro:after-swap',
+    updateDocumentSettings.printPreview,
   );
 
   document
-    .getElementById("toggle__print_preview")
-    ?.addEventListener("click", togglePrintPreview);
+    .getElementById('toggle__print_preview')
+    ?.addEventListener('click', togglePrintPreview);
 
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyP") {
-      document.getElementById("toggle__print_preview")?.click();
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyP') {
+      document.getElementById('toggle__print_preview')?.click();
     }
   });
 </script>

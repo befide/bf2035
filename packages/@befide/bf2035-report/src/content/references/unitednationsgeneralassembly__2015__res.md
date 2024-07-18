@@ -6,10 +6,10 @@ cslItem:
   citation-key: unitednationsgeneralassembly__2015__res
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 10
         - 21
-  keyword: "#bf2035/topics/sustainability"
+  keyword: '#bf2035/topics/sustainability'
   language: en
   source: Zotero
   title: >-
@@ -17,7 +17,7 @@ cslItem:
     Development
   type: document
 tags:
-  - "#bf2035/topics/sustainability"
+  - '#bf2035/topics/sustainability'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

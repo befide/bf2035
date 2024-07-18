@@ -9,13 +9,13 @@ cslItem:
   genre: Technical Design Report
   issued:
     date-parts:
-      - - "2006"
-  keyword: ""
+      - - '2006'
+  keyword: ''
   language: en
   publisher: DESY XFEL Project Group [u.a.]
   publisher-place: Hamburg
   source: K10plus ISBN
-  title: "XFEL, the European X-ray free-electron laser: technical design report"
+  title: 'XFEL, the European X-ray free-electron laser: technical design report'
   title-short: XFEL, the European X-ray free-electron laser
   type: report
   URL: https://bib-pubdb1.desy.de/record/77248/files/european-xfel-tdr.pdf

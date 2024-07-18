@@ -10,10 +10,10 @@ cslItem:
   event-title: FCC-ee Software Framework meeting
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 9
         - 30
-  keyword: ""
+  keyword: ''
   title: Xsuite code
   type: speech
 tags: []

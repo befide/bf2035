@@ -6,11 +6,11 @@ cslItem:
   citation-key: destatis__2023__nachhaltige
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 4
-  keyword: ""
+  keyword: ''
   language: en
-  page: "180"
+  page: '180'
   publisher: Statistisches Bundesamt (Destatis)
   source: Zotero
   title: Nachhaltige Entwicklung in Deutschland, Indikatorenbericht 2022

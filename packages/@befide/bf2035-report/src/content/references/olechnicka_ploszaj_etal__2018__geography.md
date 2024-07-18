@@ -42,15 +42,15 @@ cslItem:
   ISBN: 978-1-138-20333-4
   issued:
     date-parts:
-      - - "2018"
+      - - '2018'
         - 10
         - 22
-  keyword: "#bf2035/topics/bibliometrics"
+  keyword: '#bf2035/topics/bibliometrics'
   source: ResearchGate
   title: The Geography of Scientific Collaboration
   type: book
 tags:
-  - "#bf2035/topics/bibliometrics"
+  - '#bf2035/topics/bibliometrics'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

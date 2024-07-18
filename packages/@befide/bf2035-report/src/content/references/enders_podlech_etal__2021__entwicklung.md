@@ -11,8 +11,8 @@ cslItem:
   citation-key: enders_podlech_etal__2021__entwicklung
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#bf2035/topics/teaching"
+      - - '2021'
+  keyword: '#bf2035/topics/teaching'
   language: de
   publisher: unpublished
   title: >-
@@ -20,7 +20,7 @@ cslItem:
     RMU-Masterstudiengangs "Accelerator Science"
   type: document
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

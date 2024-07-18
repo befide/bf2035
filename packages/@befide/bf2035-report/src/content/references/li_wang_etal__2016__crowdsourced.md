@@ -3,7 +3,7 @@ cslItem:
   id: li_wang_etal__2016__crowdsourced
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 12
         - 13
   author:
@@ -20,22 +20,22 @@ cslItem:
   container-title-short: IEEE Trans. Knowl. Data Eng.
   DOI: 10.1109/TKDE.2016.2535242
   ISSN: 1041-4347
-  issue: "9"
+  issue: '9'
   issued:
     date-parts:
-      - - "2016"
+      - - '2016'
         - 9
         - 1
-  keyword: "#collection/D./community-size-and-structure"
+  keyword: '#collection/D./community-size-and-structure'
   language: en
   note: 202 citations (Crossref) [2023-12-13]
   page: 2296-2319
   source: DOI.org (Crossref)
-  title: "Crowdsourced Data Management: A Survey"
+  title: 'Crowdsourced Data Management: A Survey'
   title-short: Crowdsourced Data Management
   type: article-journal
   URL: http://ieeexplore.ieee.org/document/7420720/
-  volume: "28"
+  volume: '28'
 tags: []
 rendered:
   bibliography: |-

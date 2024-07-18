@@ -3,7 +3,7 @@ cslItem:
   id: thefcccollaboration_abada_etal__2019__fcchh
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 3
         - 5
   author:
@@ -1773,7 +1773,7 @@ cslItem:
       given: S. A.
     - family: Nisati
       given: A.
-    - family: "No"
+    - family: 'No'
       given: J. M.
     - family: Nonis
       given: M.
@@ -2740,10 +2740,10 @@ cslItem:
   container-title-short: Eur. Phys. J. Spec. Top.
   DOI: 10.1140/epjst/e2019-900087-0
   ISSN: 1951-6355, 1951-6401
-  issue: "4"
+  issue: '4'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 7
   keyword: >-
     #bf2035/accelerator-types/circular-collider;#bf2035/projects/fcc;#bf2035/user-group/hep
@@ -2756,11 +2756,11 @@ cslItem:
   title-short: FCC-hh
   type: article-journal
   URL: 10.1140/epjst/e2019-900087-0
-  volume: "228"
+  volume: '228'
 tags:
-  - "#bf2035/accelerator-types/circular-collider"
-  - "#bf2035/projects/fcc"
-  - "#bf2035/user-group/hep"
+  - '#bf2035/accelerator-types/circular-collider'
+  - '#bf2035/projects/fcc'
+  - '#bf2035/user-group/hep'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

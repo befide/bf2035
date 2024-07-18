@@ -4,7 +4,7 @@ cslItem:
   abstract: ePaper
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 10
         - 13
   author:
@@ -12,10 +12,10 @@ cslItem:
   citation-key: helmholtz__2020__programmorientierte
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 6
         - 3
-  keyword: ""
+  keyword: ''
   language: en
   publisher: Helmholtz
   title: >-

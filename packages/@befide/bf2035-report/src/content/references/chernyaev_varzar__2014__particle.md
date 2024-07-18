@@ -3,7 +3,7 @@ cslItem:
   id: chernyaev_varzar__2014__particle
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 5
         - 7
   author:
@@ -16,21 +16,21 @@ cslItem:
   container-title-short: Phys. Atom. Nuclei
   DOI: 10.1134/S1063778814100032
   ISSN: 1063-7788, 1562-692X
-  issue: "10"
+  issue: '10'
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 10
-  keyword: "#bf2035/applications"
+  keyword: '#bf2035/applications'
   language: en
   page: 1203-1215
   source: DOI.org (Crossref)
   title: Particle accelerators in modern world
   type: article-journal
   URL: 10.1134/S1063778814100032
-  volume: "77"
+  volume: '77'
 tags:
-  - "#bf2035/applications"
+  - '#bf2035/applications'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

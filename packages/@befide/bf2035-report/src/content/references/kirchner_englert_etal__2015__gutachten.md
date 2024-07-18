@@ -15,18 +15,18 @@ cslItem:
   citation-key: kirchner_englert_etal__2015__gutachten
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 8
         - 12
-  keyword: "#bf2035/applications"
-  page: "158"
+  keyword: '#bf2035/applications'
+  page: '158'
   publisher: Zentrum für Naturwissenschaft und Friedensforschung (ZNF) und Öko-Institut
   title: Gutachten "Transmutation"
   type: report
   URL: >-
     https://www.bundestag.de/resource/blob/400438/f54e3da4bbe76395bce2e40721212379/kmat_48-data.pdf
 tags:
-  - "#bf2035/applications"
+  - '#bf2035/applications'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

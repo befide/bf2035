@@ -5,7 +5,7 @@ cslItem:
     - family: Müller
       given: Anke-Susanne
   citation-key: muller____thzdiagkodiagneodyn
-  keyword: ""
+  keyword: ''
   language: en
   title: THzDiag-KoDiag-Neodyn
   type: document

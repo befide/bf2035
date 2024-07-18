@@ -11,21 +11,21 @@
   import {
     updateDocumentSettings,
     toggleFitSpread,
-  } from "@utils/settingsStore.js";
+  } from '@utils/settingsStore.js';
 
   updateDocumentSettings.fitSpread();
   document.addEventListener(
-    "astro:after-swap",
-    updateDocumentSettings.fitSpread
+    'astro:after-swap',
+    updateDocumentSettings.fitSpread,
   );
 
   document
-    .getElementById("toggle__fit_spread")
-    ?.addEventListener("click", toggleFitSpread);
+    .getElementById('toggle__fit_spread')
+    ?.addEventListener('click', toggleFitSpread);
 
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.code === "KeyF") {
-      document.getElementById("toggle__fit_spread")?.click();
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyF') {
+      document.getElementById('toggle__fit_spread')?.click();
     }
   });
 </script>

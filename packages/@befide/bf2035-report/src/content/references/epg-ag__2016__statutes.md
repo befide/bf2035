@@ -3,7 +3,7 @@ cslItem:
   id: epg-ag__2016__statutes
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 4
   author:
@@ -11,9 +11,9 @@ cslItem:
   citation-key: epg-ag__2016__statutes
   issued:
     date-parts:
-      - - "2016"
+      - - '2016'
         - 3
-  keyword: ""
+  keyword: ''
   language: en
   title: Statutes of the European Physical Society Accelerator Group (eps-Ag)
   type: legislation

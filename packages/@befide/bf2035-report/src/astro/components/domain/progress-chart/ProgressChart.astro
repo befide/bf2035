@@ -1,45 +1,44 @@
 ---
-// import Svg from "@jasikpark/astro-svg-loader";
-import { JSDOM } from 'jsdom'
-import { axisBottom, axisRight } from 'd3-axis'
+import { JSDOM } from 'jsdom';
+import { axisBottom, axisRight } from 'd3-axis';
 
-import { format, formatLocale } from 'd3-format'
-import { scaleLinear, scaleLog } from 'd3-scale'
-import { select } from 'd3-selection'
+import { format, formatLocale } from 'd3-format';
+import { scaleLinear, scaleLog } from 'd3-scale';
+import { select } from 'd3-selection';
 
-import { curveCardinal, line } from 'd3-shape'
+import { curveCardinal, line } from 'd3-shape';
 
-import chartMetas from './ProgressChart.config'
+import chartMetas from './ProgressChart.config';
 
 export interface ProgressChart {
-  baselineHeight?: number
-  widthInGridUnits?: number
-  heightInGridUnits?: number
-  dimension?: string
+  baselineHeight?: number;
+  widthInGridUnits?: number;
+  heightInGridUnits?: number;
+  dimension?: string;
 }
 
-export type Data = Datum[]
+export type Data = Datum[];
 
 export interface Datum {
-  year: number
-  value: number
-  value_sum?: number
+  year: number;
+  value: number;
+  value_sum?: number;
 }
 
 function gridUnits2BaselineCount(gridUnits: number) {
-  return gridUnits * 3 + gridUnits - 1
+  return gridUnits * 3 + gridUnits - 1;
 }
 
 const {
   baselineHeight = 14,
   widthInGridUnits = 4,
   heightInGridUnits = 2,
-  dimension = 'nuclideDiscoveriesPerYear'
-} = Astro.props
+  dimension = 'nuclideDiscoveriesPerYear',
+} = Astro.props;
 
-const chartMeta = chartMetas[dimension]
+const chartMeta = chartMetas[dimension];
 
-if (!chartMeta) throw new Error('undefined dimension: ' + dimension)
+if (!chartMeta) throw new Error('undefined dimension: ' + dimension);
 
 const locale = formatLocale({
   decimal: ',',
@@ -47,90 +46,99 @@ const locale = formatLocale({
   grouping: [3],
   currency: ['', '\u00A0€'],
   minus: '\u2212',
-  percent: '\u202F%'
-})
+  percent: '\u202F%',
+});
 
-const height = gridUnits2BaselineCount(heightInGridUnits + 0) * baselineHeight
+const height = gridUnits2BaselineCount(heightInGridUnits + 0) * baselineHeight;
 
-const width = gridUnits2BaselineCount(widthInGridUnits + 0) * baselineHeight
+const width = gridUnits2BaselineCount(widthInGridUnits + 0) * baselineHeight;
 
-const t0 = 1925
-const t1 = 2025
+const t0 = 1925;
+const t1 = 2025;
 
-const x = scaleLinear().domain([t0, t1]).range([0, width])
+const x = scaleLinear().domain([t0, t1]).range([0, width]);
 
 const y =
-  chartMeta.scale === 'linear' ?
-    scaleLinear()
-      .domain(chartMeta.yDomain)
-      .range([height - 1 * baselineHeight, baselineHeight * 1])
-  : scaleLog()
-      .domain([10 ** chartMeta.y0, 10 ** (chartMeta.y0 + chartMeta.yFactor)])
-      .range([height - 1 * baselineHeight, baselineHeight * 1])
+  chartMeta.scale === 'linear'
+    ? scaleLinear()
+        .domain(chartMeta.yDomain)
+        .range([height - 1 * baselineHeight, baselineHeight * 1])
+    : scaleLog()
+        .domain([10 ** chartMeta.y0, 10 ** (chartMeta.y0 + chartMeta.yFactor)])
+        .range([height - 1 * baselineHeight, baselineHeight * 1]);
 
 function logFormat(d: number) {
-  const x = Math.log(d) / Math.log(10) + 1e-6
-  return Math.abs(x - Math.floor(x)) < 0.1 ? ((chartMeta && chartMeta.numberFormat) || locale.format(',.0f'))(d) : ''
+  const x = Math.log(d) / Math.log(10) + 1e-6;
+  return Math.abs(x - Math.floor(x)) < 0.1
+    ? ((chartMeta && chartMeta.numberFormat) || locale.format(',.0f'))(d)
+    : '';
 }
 function cumulativeByYear(input: any): Data {
-  let runningCount = 0
+  let runningCount = 0;
   return input.map(({ year, value }) => {
-    runningCount += +value
+    runningCount += +value;
     // Return a new datum for this date with the cumulative tally instead of that day's count.
     return {
       year,
       value: +value,
-      value_sum: runningCount
-    }
-  })
+      value_sum: runningCount,
+    };
+  });
 }
 
-const data = cumulativeByYear(chartMeta.data)
+const data = cumulativeByYear(chartMeta.data);
 
 const xAxis = (g: any) =>
   g
     .attr('transform', `translate(0,${height - baselineHeight})`)
-    .call(axisBottom(x).tickValues([1920, 1940, 1960, 1980, 2000, 2020]).tickSize(0).tickFormat(format('.0f')))
-    .call((g: any) => g.selectAll('.domain').remove())
+    .call(
+      axisBottom(x)
+        .tickValues([1920, 1940, 1960, 1980, 2000, 2020])
+        .tickSize(0)
+        .tickFormat(format('.0f')),
+    )
+    .call((g: any) => g.selectAll('.domain').remove());
 
 const yAxis =
-  chartMeta.scale === 'linear' ?
-    (g: any) => {
-      g.attr('transform', 'translate(0,0)')
-        .call(
-          axisRight(y)
-            .tickSize(width)
-            .ticks(5)
-            .tickFormat((chartMeta && chartMeta.numberFormat) || format(',.0f'))
-        )
-        .call((g: any) => g.selectAll('.domain').remove())
-        .call((g: any) => {
-          g.selectAll('.tick text').attr('x', 0).attr('dy', 0)
-        })
+  chartMeta.scale === 'linear'
+    ? (g: any) => {
+        g.attr('transform', 'translate(0,0)')
+          .call(
+            axisRight(y)
+              .tickSize(width)
+              .ticks(5)
+              .tickFormat(
+                (chartMeta && chartMeta.numberFormat) || format(',.0f'),
+              ),
+          )
+          .call((g: any) => g.selectAll('.domain').remove())
+          .call((g: any) => {
+            g.selectAll('.tick text').attr('x', 0).attr('dy', 0);
+          });
 
-      g.selectAll('.tick:last-child text').text('')
-      g.selectAll('.tick:nth-last-child(2) text').text('')
-    }
-  : (g: any) =>
-      g
-        // .attr("transform", `translate(0,0)`)
-        .call(axisRight(y).tickSize(width).tickFormat(logFormat))
-        .call((g: any) => g.selectAll('.domain').remove())
-        .call((g: any) => {
-          g.selectAll('.tick text').attr('x', 0).attr('dy', 0)
+        g.selectAll('.tick:last-child text').text('');
+        g.selectAll('.tick:nth-last-child(2) text').text('');
+      }
+    : (g: any) =>
+        g
+          // .attr("transform", `translate(0,0)`)
+          .call(axisRight(y).tickSize(width).tickFormat(logFormat))
+          .call((g: any) => g.selectAll('.domain').remove())
+          .call((g: any) => {
+            g.selectAll('.tick text').attr('x', 0).attr('dy', 0);
 
-          // g.selectAll('.tick text').each(function (e, i) {
-          //   const textElement = select(this.parentNode).select('text')
+            // g.selectAll('.tick text').each(function (e, i) {
+            //   const textElement = select(this.parentNode).select('text')
 
-          //   const text = textElement.text()
-          // })
+            //   const text = textElement.text()
+            // })
 
-          if (chartMeta.yFactor >= 10) {
-            g.selectAll('.tick:last-child text').text('')
-            g.selectAll('.tick:nth-last-child(2) text').text('')
-            g.selectAll('.tick:nth-last-child(3) text').text('')
-          }
-        })
+            if (chartMeta.yFactor >= 10) {
+              g.selectAll('.tick:last-child text').text('');
+              g.selectAll('.tick:nth-last-child(2) text').text('');
+              g.selectAll('.tick:nth-last-child(3) text').text('');
+            }
+          });
 
 // // const curve = line()
 // //   .x((d) => x(d[0]))
@@ -139,24 +147,30 @@ const yAxis =
 // //   data.map(({ year, value }) => [year, value])
 // );
 
-const { document } = new JSDOM().window
-const svg = select(document.body).append('svg')
+const { document } = new JSDOM().window;
+const svg = select(document.body).append('svg');
 
 svg
   .attr('xmlns', 'http://www.w3.org/2000/svg')
   .attr('width', width)
   .attr('height', height)
-  .attr('viewBox', [0, 0, width, height].join(' '))
+  .attr('viewBox', [0, 0, width, height].join(' '));
 
 const title = svg
   .append('g')
   .attr('class', 'title')
   .attr('text-anchor', 'start')
   .attr('transform', `translate(0,${1 * baselineHeight})`)
-  .append('text')
+  .append('text');
 
-title.append('tspan').attr('class', 'quantity-name-qualifier').text(chartMeta.quantityNameQualifier)
-title.append('tspan').attr('class', 'quantity-name').text(chartMeta.quantityName)
+title
+  .append('tspan')
+  .attr('class', 'quantity-name-qualifier')
+  .text(chartMeta.quantityNameQualifier);
+title
+  .append('tspan')
+  .attr('class', 'quantity-name')
+  .text(chartMeta.quantityName);
 
 svg
   .append('g')
@@ -165,9 +179,9 @@ svg
   .attr('transform', `translate(0,${2 * baselineHeight})`)
   .append('text')
   .attr('class', 'quantity-name')
-  .text(chartMeta.unit)
+  .text(chartMeta.unit);
 
-const dataPoints = svg.append('g').attr('class', 'data-points')
+const dataPoints = svg.append('g').attr('class', 'data-points');
 
 !chartMeta.cumulate &&
   dataPoints
@@ -177,7 +191,7 @@ const dataPoints = svg.append('g').attr('class', 'data-points')
     .classed('data-point', true)
     .attr('cx', (d) => x(d.year))
     .attr('cy', (d) => y(d.value))
-    .attr('r', 1)
+    .attr('r', 1);
 
 chartMeta.cumulate &&
   dataPoints
@@ -188,7 +202,7 @@ chartMeta.cumulate &&
     .attr('x', ({ year }) => x(year) - 0.5)
     .attr('y', ({ value }) => y(value))
     .attr('height', ({ value }) => -y(value) + y(0))
-    .attr('width', 1)
+    .attr('width', 1);
 
 svg
   .append('g')
@@ -202,28 +216,30 @@ svg
       .x((d) => x(d[0]))
       .y((d) => y(d[1]))
       .curve(chartMeta.curveGenerator || curveCardinal.tension(1))(
-      data.map(({ year, value, value_sum }) => (chartMeta.cumulate ? [year, value_sum] : [year, value]))
-    )
-  )
-svg.append('g').attr('class', 'x-axis').call(xAxis)
-svg.append('g').attr('class', 'y-axis').call(yAxis)
+      data.map(({ year, value, value_sum }) =>
+        chartMeta.cumulate ? [year, value_sum] : [year, value],
+      ),
+    ),
+  );
+svg.append('g').attr('class', 'x-axis').call(xAxis);
+svg.append('g').attr('class', 'y-axis').call(yAxis);
 ---
 
 <figure class="progress-chart md">
-  <Fragment set:html={document.body.innerHTML} />
+  <!-- <Fragment set:html={document.body.innerHTML} /> -->
 
   <figcaption class="md">
     <slot />
   </figcaption>
 </figure>
 
-<style lang="stylus" is:global> 
+<style lang="stylus" is:global>
 @import "./progress-chart"
 
 svg {
   background-color rgba(white, .9);
 }
-  
+
 
 figure.md.progress-chart
   overflow: visible
@@ -233,7 +249,7 @@ figure.md.progress-chart
   position: absolute
   background-color: rgba(white, .5)
   z-index: -1
-  
+
   top -.25rem
   bottom -.25rem
   left -.25rem

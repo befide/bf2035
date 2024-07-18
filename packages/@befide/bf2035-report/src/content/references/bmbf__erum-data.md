@@ -6,13 +6,13 @@ cslItem:
   citation-key: bmbf__erum-data
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
   keyword: >-
     #bf2035/topics/digitalisierung;#bf2035/funding/bmbf;#bf2035/issues/funders/digitalization
   language: en
   original-date:
     date-parts:
-      - - "2020"
+      - - '2020'
   publisher: BMBF
   title: >-
     Aktionsplan ErUM-Data. Von Big Data zu Smart Data: Digitalisierung in der
@@ -22,9 +22,9 @@ cslItem:
   URL: >-
     https://www.bmbf.de/SharedDocs/Publikationen/de/bmbf/7/31640_Aktionsplan_ErUM-Data.pdf?__blob=publicationFile&v=7
 tags:
-  - "#bf2035/topics/digitalisierung"
-  - "#bf2035/funding/bmbf"
-  - "#bf2035/issues/funders/digitalization"
+  - '#bf2035/topics/digitalisierung'
+  - '#bf2035/funding/bmbf'
+  - '#bf2035/issues/funders/digitalization'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

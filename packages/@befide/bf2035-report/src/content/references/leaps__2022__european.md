@@ -3,7 +3,7 @@ cslItem:
   id: leaps__2022__european
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 17
   author:
@@ -11,8 +11,8 @@ cslItem:
   citation-key: leaps__2022__european
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/user-group/photon-science"
+      - - '2022'
+  keyword: '#bf2035/user-group/photon-science'
   language: en
   note: |-
     Read_Status: To Read
@@ -23,7 +23,7 @@ cslItem:
   URL: >-
     https://leaps-initiative.eu/wp-content/uploads/2022/05/LEAPS-ESAPS-Broschure_final-20052022-3.pdf
 tags:
-  - "#bf2035/user-group/photon-science"
+  - '#bf2035/user-group/photon-science'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

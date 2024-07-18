@@ -7,7 +7,7 @@ cslItem:
     maximise visibility and increase the project impact.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -17,12 +17,12 @@ cslItem:
   DOI: 10.5281/ZENODO.5643501
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 10
         - 28
-  keyword: "#collection/D./related-strategies"
+  keyword: '#collection/D./related-strategies'
   language: en
-  publisher: "[object Object]"
+  publisher: '[object Object]'
   source: DOI.org (Datacite)
   title: Communication Strategy
   type: article-journal

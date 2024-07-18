@@ -23,24 +23,24 @@ cslItem:
   citation-key: organisationforeconomicco-operationanddevelopment__2014__promoting
   editor:
     - family: Organisation for Economic Co-operation and Development
-      given: ""
+      given: ''
   event-place: Paris
   ISBN: 978-92-64-20745-5
   issued:
     date-parts:
-      - - "2014"
-  keyword: "#bf2035/topics/excellence;#collection/D./excellence"
+      - - '2014'
+  keyword: '#bf2035/topics/excellence;#collection/D./excellence'
   language: en
-  note: "OCLC: on1062312701"
-  number-of-pages: "215"
+  note: 'OCLC: on1062312701'
+  number-of-pages: '215'
   publisher: OECD
   publisher-place: Paris
   source: Library of Congress ISBN
-  title: "Promoting research excellence: new approaches to funding"
+  title: 'Promoting research excellence: new approaches to funding'
   title-short: Promoting research excellence
   type: book
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

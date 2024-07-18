@@ -3,19 +3,19 @@ cslItem:
   id: stoddart____how
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 11
         - 17
   citation-key: stoddart____how
-  collection-title: "2"
+  collection-title: '2'
   dimensions: 38 min
   director:
     - family: Stoddart
       given: Charlotte
   DOI: 10.1146/knowable-032822-1
-  keyword: "#history"
+  keyword: '#history'
   language: en
-  number: "5"
+  number: '5'
   title: How particle accelerators came to be
   type: broadcast
   URL: >-

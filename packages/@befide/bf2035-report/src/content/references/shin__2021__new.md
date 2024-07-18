@@ -6,7 +6,7 @@ cslItem:
                 There had been remarkable progress in developing third-generation electron storage rings as the main sources of very bright photon beams. Fourth-generation storage rings based on the multi-bend achromat lattice concept may be able to surpass the brightness and coherence that are attained using present third-generation storage rings. In this paper, we survey ongoing work around the world to develop concepts and designs for fourth-generation electron storage rings.
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 5
         - 14
   author:
@@ -17,20 +17,20 @@ cslItem:
   container-title-short: AAPPS Bull.
   DOI: 10.1007/s43673-021-00021-4
   ISSN: 2309-4710
-  issue: "1"
+  issue: '1'
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 12
-  keyword: ""
+  keyword: ''
   language: en-US
-  page: "21"
+  page: '21'
   source: DOI.org (Crossref)
-  title: "New era of synchrotron radiation: fourth-generation storage ring"
+  title: 'New era of synchrotron radiation: fourth-generation storage ring'
   title-short: New era of synchrotron radiation
   type: article-journal
   URL: https://link.springer.com/10.1007/s43673-021-00021-4
-  volume: "31"
+  volume: '31'
 tags: []
 rendered:
   bibliography: |-

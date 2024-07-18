@@ -9,8 +9,8 @@ cslItem:
   citation-key: arjona_ravet__2020__science
   issued:
     date-parts:
-      - - "2020"
-  keyword: ""
+      - - '2020'
+  keyword: ''
   language: en
   source: Zotero
   title: Science, Research and Innovation Performance of the EU 2020

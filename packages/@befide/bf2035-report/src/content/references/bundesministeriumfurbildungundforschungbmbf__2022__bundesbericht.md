@@ -6,9 +6,9 @@ cslItem:
   citation-key: bundesministeriumfurbildungundforschungbmbf__2022__bundesbericht
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 6
-  keyword: "#bf2035/topics/innovation;#bf2035/funding/bmbf"
+  keyword: '#bf2035/topics/innovation;#bf2035/funding/bmbf'
   language: en
   source: Zotero
   title: >-
@@ -17,8 +17,8 @@ cslItem:
   type: report
   URL: https://www.datenportal.bmbf.de/portal/de/bufi.html
 tags:
-  - "#bf2035/topics/innovation"
-  - "#bf2035/funding/bmbf"
+  - '#bf2035/topics/innovation'
+  - '#bf2035/funding/bmbf'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

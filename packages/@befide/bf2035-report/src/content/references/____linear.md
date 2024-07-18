@@ -7,12 +7,12 @@ cslItem:
     2032 driven by growing demand for radiotherapy treatments.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 6
   citation-key: ____linear
   container-title: Global Market Insights Inc.
-  keyword: ""
+  keyword: ''
   language: en
   title: Linear Particle Accelerators Market Size & Share Report, 2032
   type: webpage

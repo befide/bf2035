@@ -1,5 +1,5 @@
 ---
-backgroundImageSrc: "@assets/backgrounds/usage.photon-science.webp"
+backgroundImageSrc: '@assets/backgrounds/usage.photon-science.webp'
 sectionType: spread
 sectionClass: user-group
 sectionNumber: A.2.c
@@ -8,9 +8,7 @@ title__toc: ... Forschung mit Photonen
 title: Materieforschung mit Photonen
 ---
 
-
-
-import ProgressChart from "@components/domain/progress-chart/ProgressChart.astro";
+import ProgressChart from '@components/domain/progress-chart/ProgressChart.astro'
 
 <div class="spread--left spread-area--intro">
 
@@ -20,13 +18,10 @@ Die Erforschung der kondensierten Materie hat mit beschleunigerbasierten Strahlu
 
 </div>
 
-{/* 
+{/*
 
 Mit Röntgenstrahlung werden die inneren Elektronenschalen von Atomen erreicht und aufgrund der kurzen Wellenlänge kann die atomare Struktur von Kristallen oder Molekülen wird räumlich aufgelöst werden. So ist zum Beispiel die Struktur von über 180.000 Proteinen (Stand 2021) bekannt und in einer Datenbank verfügbar. Auch langwellige Strahlung im fernen Infrarotbereich – die sog. Terahertz-Lücke, die lange Zeit schwer zugänglich war – ist von Interesse, da sie für kollektive Anregungen, zum Beispiel vibrierende oder rotierende Moleküle, charakteristisch ist.
- */}
-
-
-
+\*/}
 
 <div class="spread--left spread-area--c-3_3">
 
@@ -63,32 +58,37 @@ Eine sehr aktive Forschungsrichtung ist die Entwicklung neuer Beschleunigungskon
 
 </div>
 
-
 <div class="spread--right spread-area--aside">
 
 <ProgressChart dimension="pdbEntries">
-  Entwicklung der Anzahl der Einträge in der **Protein-Datenbank (PDB)**. Das
-  PDB-Projekt wurde in den 1970er Jahren als Sammlung dreidimensionaler
-  Strukturdaten großer biologischer Moleküle wie Proteine und Nukleinsäuren ins
-  Leben gerufen. Datenquelle: PDB, erstellt durch: DR
+  Entwicklung der Anzahl der Einträge in der **Protein-Datenbank (PDB)**. Das PDB-Projekt wurde in den 1970er Jahren als
+  Sammlung dreidimensionaler Strukturdaten großer biologischer Moleküle wie Proteine und Nukleinsäuren ins Leben
+  gerufen. Datenquelle: PDB, erstellt durch: DR
 </ProgressChart>
 
 <ProgressChart dimension="progress__peak_brilliance">
-  Bei beschleunigerbetriebenen Lichtquellen beschreibt die **Brillanz** die Zahl
-  der Photonen einer bestimmten Wellenlänge und Richtung pro Zeiteinheit und
-  Fläche.^6^
+  Bei beschleunigerbetriebenen Lichtquellen beschreibt die **Brillanz** die Zahl der Photonen einer bestimmten
+  Wellenlänge und Richtung pro Zeiteinheit und Fläche.^6^
 </ProgressChart>
 
 Struktur der RNA-Polymerase @@ I, die eine überlebenswichtige Rolle bei der Herstellung von Proteinen in Zellen spielt. Das Verständnis von Form und Funktion solcher Biomoleküle dient nicht nur dem Einblick in das Leben an sich, sondern auch der Entwicklung von Medikamenten. Die gezeigte Struktur wurde mit einer Auflösung von 0,3 Nanometern an der PETRA III-Beamline P14 erzeugt und in _Nature_ [01] veröffentlicht. Das Molekül besteht aus mehr als 34 @ 000 Atomen.
 
 </div>
 
+[^1]:
+    <BibRef citeKey="fernandez-tornero_moreno-morcillo_etal__2013__crystal" />
 
+[^2]:
+    <BibRef citeKey="biasci_bouteille_etal__2014__lowemittance" />
 
-[^1]: <BibRef citeKey="fernandez-tornero_moreno-morcillo_etal__2013__crystal" />
-[^2]: <BibRef citeKey="biasci_bouteille_etal__2014__lowemittance" />
-[^3]: <BibRef citeKey="jankowiak_knobloch_etal__2015__technical" />
-[^4]: <BibRef citeKey="rohlsberger_schroer_etal__2019__light" />
-[^5]: <BibRef citeKey="beye__2020__flash2020" />
-[^6]: <BibRef citeKey="altarelli__2006__xfel" />
+[^3]:
+    <BibRef citeKey="jankowiak_knobloch_etal__2015__technical" />
 
+[^4]:
+    <BibRef citeKey="rohlsberger_schroer_etal__2019__light" />
+
+[^5]:
+    <BibRef citeKey="beye__2020__flash2020" />
+
+[^6]:
+    <BibRef citeKey="altarelli__2006__xfel" />

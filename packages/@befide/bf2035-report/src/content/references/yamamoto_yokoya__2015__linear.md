@@ -3,7 +3,7 @@ cslItem:
   id: yamamoto_yokoya__2015__linear
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 3
         - 4
   author:
@@ -21,9 +21,9 @@ cslItem:
   ISBN: 978-981-4651-48-6 978-981-4651-49-3
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 4
-  keyword: "#bf2035/accelerator-types/linear-collider;#bf2035/user-group/hep"
+  keyword: '#bf2035/accelerator-types/linear-collider;#bf2035/user-group/hep'
   language: en-US
   note: >-
     http://web.archive.org/web/20200304070413/https://www.worldscientific.com/doi/abs/10.1142/9789814651493_0006
@@ -34,8 +34,8 @@ cslItem:
   type: chapter
   URL: https://doi.org/10.1142/9789814651493_0006
 tags:
-  - "#bf2035/accelerator-types/linear-collider"
-  - "#bf2035/user-group/hep"
+  - '#bf2035/accelerator-types/linear-collider'
+  - '#bf2035/user-group/hep'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

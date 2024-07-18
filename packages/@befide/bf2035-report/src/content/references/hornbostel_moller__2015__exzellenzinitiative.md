@@ -15,10 +15,10 @@ cslItem:
   ISBN: 978-3-939818-60-1
   issued:
     date-parts:
-      - - "2015"
-  keyword: "#bf2035/topics/excellence;#"
+      - - '2015'
+  keyword: '#bf2035/topics/excellence;#'
   language: en
-  number-of-pages: "68"
+  number-of-pages: '68'
   publisher: Berlin-Brandenburgische Akademie der Wissenschaften
   publisher-place: Berlin
   source: K10plus ISBN
@@ -28,7 +28,7 @@ cslItem:
   title-short: Die Exzellenzinitiative und das deutsche Wissenschaftssystem
   type: book
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

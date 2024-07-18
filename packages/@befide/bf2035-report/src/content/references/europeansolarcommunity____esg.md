@@ -3,13 +3,13 @@ cslItem:
   id: europeansolarcommunity____esg
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 1
   author:
     - literal: European Solar Community
   citation-key: europeansolarcommunity____esg
-  keyword: ""
+  keyword: ''
   language: en
   title: ESG Census
   type: webpage

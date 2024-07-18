@@ -7,10 +7,10 @@ cslItem:
   container-title: The Joint Accelerator Conferences Website
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 18
-  keyword: ""
+  keyword: ''
   language: en
   title: The Conference Proceedings
   type: webpage

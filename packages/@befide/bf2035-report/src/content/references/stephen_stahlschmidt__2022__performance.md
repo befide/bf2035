@@ -9,15 +9,15 @@ cslItem:
   citation-key: stephen_stahlschmidt__2022__performance
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/topics/excellence;#collection/D./excellence"
+      - - '2022'
+  keyword: '#bf2035/topics/excellence;#collection/D./excellence'
   language: en
-  page: "17"
+  page: '17'
   source: Zotero
   title: Performance and Structures of the German Science System 2022
   type: article-journal
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

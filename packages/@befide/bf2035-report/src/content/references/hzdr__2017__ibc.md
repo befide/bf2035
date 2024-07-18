@@ -3,7 +3,7 @@ cslItem:
   id: hzdr__2017__ibc
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 5
         - 6
   author:
@@ -11,9 +11,9 @@ cslItem:
   citation-key: hzdr__2017__ibc
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
         - 1
-  keyword: "#collection/A.2.5 Nukleare Sonden und Ionenstrahlen"
+  keyword: '#collection/A.2.5 Nukleare Sonden und Ionenstrahlen'
   language: en
   publisher: Helmholtz-Zentrum Dresden-Rossendorf (HZDR)
   title: IBC. Ion Beam Center,.

@@ -3,7 +3,7 @@ cslItem:
   id: statistischesbundesamt__2021__personal
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 4
         - 29
   author:
@@ -13,10 +13,10 @@ cslItem:
   event-place: Wiesbaden
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#bf2035/topics/diversity"
+      - - '2021'
+  keyword: '#bf2035/topics/diversity'
   language: en
-  number: "2110440207004"
+  number: '2110440207004'
   publisher: Statistisches Bundesamt
   publisher-place: Wiesbaden
   title: Personal an Hochschulen 2020
@@ -25,7 +25,7 @@ cslItem:
   URL: >-
     https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bildung-Forschung-Kultur/Hochschulen/Publikationen/Downloads-Hochschulen/personal-hochschulen-2110440207004.pdf?__blob=publicationFile
 tags:
-  - "#bf2035/topics/diversity"
+  - '#bf2035/topics/diversity'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

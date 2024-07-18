@@ -3,7 +3,7 @@ cslItem:
   id: pfeffer_flegel_etal__2023__accelerators
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -20,8 +20,8 @@ cslItem:
   genre: Annual Report
   issued:
     date-parts:
-      - - "2023"
-  keyword: "#collection/D./annual repoorts;#bf2035/organisations/desy"
+      - - '2023'
+  keyword: '#collection/D./annual repoorts;#bf2035/organisations/desy'
   language: en
   note: |-
     Read_Status: To Read
@@ -29,12 +29,12 @@ cslItem:
   page: pages 115
   publisher: DESY
   source: DOI.org (Datacite)
-  title: "Accelerators 2022: Highlights and Annual Report"
+  title: 'Accelerators 2022: Highlights and Annual Report'
   title-short: Accelerators 2022
   type: report
   URL: https://bib-pubdb1.desy.de/record/597326
 tags:
-  - "#bf2035/organisations/desy"
+  - '#bf2035/organisations/desy'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

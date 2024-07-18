@@ -19,7 +19,7 @@ cslItem:
     accelerator-based particle physics.
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 4
         - 27
   author:
@@ -30,16 +30,16 @@ cslItem:
   event-title: The European Physical Society Conference on High Energy Physics
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 11
-  keyword: "#bf2035/user-group/hep"
+  keyword: '#bf2035/user-group/hep'
   language: en-US
   publisher-place: Vienna
-  title: "Crystal ball: On the future high energy colliders"
+  title: 'Crystal ball: On the future high energy colliders'
   type: paper-conference
   URL: https://arxiv.org/pdf/1511.01934.pdf
 tags:
-  - "#bf2035/user-group/hep"
+  - '#bf2035/user-group/hep'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -3,7 +3,7 @@ cslItem:
   id: romaniuk__2022__aries
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -15,10 +15,10 @@ cslItem:
   ISSN: 2300-1933
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 4
         - 27
-  keyword: "#collection/D./related-strategies;#bf2035/funding/eu/horizon2020"
+  keyword: '#collection/D./related-strategies;#bf2035/funding/eu/horizon2020'
   language: en
   note: 0 citations (Crossref/DOI) [2024-03-17]
   page: 647-653
@@ -29,7 +29,7 @@ cslItem:
   type: article-journal
   URL: https://journals.pan.pl/dlibra/publication/141285/edition/124277/content
 tags:
-  - "#bf2035/funding/eu/horizon2020"
+  - '#bf2035/funding/eu/horizon2020'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -20,16 +20,16 @@ cslItem:
   citation-key: stahlschmidt_schmidt__2019__measurement
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 9
         - 1
-  keyword: "#bf2035/topics/excellence;#collection/D./excellence"
+  keyword: '#bf2035/topics/excellence;#collection/D./excellence'
   language: en
   source: ResearchGate
   title: Measurement variation in bibliometric impact indicators
   type: book
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -12,7 +12,7 @@ cslItem:
     Bürgerinnen und Bürger aktiv einbinden.
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 7
         - 2
   author:
@@ -21,17 +21,17 @@ cslItem:
   genre: Positionspapier
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 11
         - 9
-  keyword: "#bf2035/topics/participation"
-  note: "Last Modified: 2023-06-29T15:09:30"
+  keyword: '#bf2035/topics/participation'
+  note: 'Last Modified: 2023-06-29T15:09:30'
   title: Partizipation in der Forschung
   type: report
   URL: >-
     https://www.allianz-der-wissenschaftsorganisationen.de/wp-content/uploads/2022/11/2022-11-09_Allianz_Stellungnahme_Partizipation-1.pdf
 tags:
-  - "#bf2035/topics/participation"
+  - '#bf2035/topics/participation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

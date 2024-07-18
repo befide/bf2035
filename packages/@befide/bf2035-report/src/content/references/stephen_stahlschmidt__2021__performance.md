@@ -9,14 +9,14 @@ cslItem:
   citation-key: stephen_stahlschmidt__2021__performance
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#bf2035/topics/excellence;#collection/D./excellence"
+      - - '2021'
+  keyword: '#bf2035/topics/excellence;#collection/D./excellence'
   language: en
   source: Zotero
   title: Performance and Structures of the German Science System 2021
   type: article-journal
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

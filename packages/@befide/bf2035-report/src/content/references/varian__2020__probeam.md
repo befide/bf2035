@@ -3,7 +3,7 @@ cslItem:
   id: varian__2020__probeam
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 6
   author:
@@ -11,9 +11,9 @@ cslItem:
   citation-key: varian__2020__probeam
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 1
-  keyword: "#bf2035/topics/commercialisation"
+  keyword: '#bf2035/topics/commercialisation'
   language: en
   publisher: Varian Medical Systems
   title: ProBeam Brochure
@@ -21,7 +21,7 @@ cslItem:
   URL: >-
     https://varian.widen.net/view/pdf/afdgjwofxr/ProBeam_Brochure_RAD10319B_Jan2020.pdf?u=fu64nb
 tags:
-  - "#bf2035/topics/commercialisation"
+  - '#bf2035/topics/commercialisation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -3,7 +3,7 @@ cslItem:
   id: cernacceleratorschool__2024__cern
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 4
         - 27
   author:
@@ -12,14 +12,14 @@ cslItem:
   genre: Homepage
   issued:
     date-parts:
-      - - "2024"
-  keyword: "#bf2035/topics/teaching"
+      - - '2024'
+  keyword: '#bf2035/topics/teaching'
   language: en
   title: CERN Accelerator School
   type: webpage
   URL: https://cas.web.cern.ch/
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

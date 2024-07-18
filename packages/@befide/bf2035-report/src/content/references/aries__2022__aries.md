@@ -3,7 +3,7 @@ cslItem:
   id: aries__2022__aries
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
         - 22
   author:
@@ -11,8 +11,8 @@ cslItem:
   citation-key: aries__2022__aries
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/topics/teaching"
+      - - '2022'
+  keyword: '#bf2035/topics/teaching'
   language: en
   title: ARIES MOOC
   title-short: >-
@@ -21,7 +21,7 @@ cslItem:
   type: webpage
   URL: http://mooc.particle-accelerators.eu/
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

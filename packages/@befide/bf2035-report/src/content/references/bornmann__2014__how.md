@@ -3,7 +3,7 @@ cslItem:
   id: bornmann__2014__how
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 29
   author:
@@ -14,13 +14,13 @@ cslItem:
   container-title-short: Research Evaluation
   DOI: 10.1093/reseval/rvu002
   ISSN: 0958-2029, 1471-5449
-  issue: "2"
+  issue: '2'
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 4
         - 1
-  keyword: "#bf2035/topics/excellence"
+  keyword: '#bf2035/topics/excellence'
   language: en
   page: 166-173
   source: DOI.org (Crossref)
@@ -30,9 +30,9 @@ cslItem:
   title-short: How are excellent (highly cited) papers defined in bibliometrics?
   type: article-journal
   URL: https://academic.oup.com/rev/article-lookup/doi/10.1093/reseval/rvu002
-  volume: "23"
+  volume: '23'
 tags:
-  - "#bf2035/topics/excellence"
+  - '#bf2035/topics/excellence'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

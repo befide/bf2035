@@ -6,7 +6,7 @@ cslItem:
     Paul Wouters and colleagues.
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 19
   author:
@@ -25,22 +25,22 @@ cslItem:
   container-title: Nature
   DOI: 10.1038/520429a
   ISSN: 1476-4687
-  issue: "7548"
+  issue: '7548'
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 4
-  keyword: "#collection/D./excellence"
+  keyword: '#collection/D./excellence'
   language: en
-  number: "7548"
+  number: '7548'
   page: 429-431
   publisher: Nature Publishing Group
   source: www.nature.com
-  title: "Bibliometrics: The Leiden Manifesto for research metrics"
+  title: 'Bibliometrics: The Leiden Manifesto for research metrics'
   title-short: Bibliometrics
   type: article-journal
   URL: https://www.nature.com/articles/520429a
-  volume: "520"
+  volume: '520'
 tags: []
 rendered:
   bibliography: |-

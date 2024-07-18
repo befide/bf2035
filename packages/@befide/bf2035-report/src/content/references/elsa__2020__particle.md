@@ -3,17 +3,17 @@ cslItem:
   id: elsa__2020__particle
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 6
         - 19
   author:
     - family: Elsa
-      given: ""
+      given: ''
   citation-key: elsa__2020__particle
   issued:
     date-parts:
-      - - "2020"
-  keyword: ""
+      - - '2020'
+  keyword: ''
   language: en
   title: Particle Accelerators Around the World
   type: webpage

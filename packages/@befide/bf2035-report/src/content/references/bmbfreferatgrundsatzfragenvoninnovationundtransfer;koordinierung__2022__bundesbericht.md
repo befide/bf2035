@@ -4,7 +4,7 @@ cslItem:
     bmbfreferatgrundsatzfragenvoninnovationundtransfer;koordinierung__2022__bundesbericht
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 29
   author:
@@ -15,8 +15,8 @@ cslItem:
     bmbfreferatgrundsatzfragenvoninnovationundtransfer;koordinierung__2022__bundesbericht
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/topics/innovation;#bf2035/funding/bmbf"
+      - - '2022'
+  keyword: '#bf2035/topics/innovation;#bf2035/funding/bmbf'
   language: en
   publisher: BMBF
   title: >-
@@ -26,8 +26,8 @@ cslItem:
   type: report
   URL: https://www.datenportal.bmbf.de/portal/de/bufi.html
 tags:
-  - "#bf2035/topics/innovation"
-  - "#bf2035/funding/bmbf"
+  - '#bf2035/topics/innovation'
+  - '#bf2035/funding/bmbf'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

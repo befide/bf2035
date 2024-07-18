@@ -7,9 +7,9 @@ cslItem:
   event-place: Geneva
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 9
-  keyword: "#bf2035/user-group/hep"
+  keyword: '#bf2035/user-group/hep'
   language: en
   number: CERN-ESU-005
   publisher: CERN
@@ -20,7 +20,7 @@ cslItem:
   type: report
   URL: https://cds.cern.ch/record/2705370
 tags:
-  - "#bf2035/user-group/hep"
+  - '#bf2035/user-group/hep'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

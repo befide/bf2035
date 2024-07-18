@@ -24,24 +24,24 @@ cslItem:
     duration and wider in scope.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   archive: INSPIRE
-  archive_location: "2056563"
+  archive_location: '2056563'
   author:
     - family: Newbold
       given: D.
   citation-key: Newbold:2022qhs
-  container-title: "CERN Yellow Reports: Monographs"
+  container-title: 'CERN Yellow Reports: Monographs'
   container-title-short: CERN Yellow Rep. Monogr.
   DOI: 10.23731/CYRM-2022-001.1
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 3
         - 17
-  keyword: ""
+  keyword: ''
   language: en
   note: |-
     0 citations (INSPIRE 2024/3/17)
@@ -51,7 +51,7 @@ cslItem:
   title: Introduction
   type: article-journal
   URL: https://e-publishing.cern.ch/index.php/CYRM/article/view/1344
-  volume: "1"
+  volume: '1'
 tags: []
 rendered:
   bibliography: |-

@@ -14,7 +14,7 @@ cslItem:
     and phase distribution.
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 11
         - 16
   author:
@@ -24,19 +24,19 @@ cslItem:
   container-title: International Journal of Electronics and Telecommunications
   DOI: 10.2478/v10177-011-0057-0
   ISSN: 0867-6747
-  issue: "3"
+  issue: '3'
   issued:
     date-parts:
-      - - "2011"
+      - - '2011'
         - 1
         - 1
-  keyword: "#collection/D./related-strategies"
+  keyword: '#collection/D./related-strategies'
   language: en
   source: DOI.org (Crossref)
   title: Accelerator Infrastructure in Europe EuCARD 2011
   type: article-journal
   URL: http://journals.pan.pl/dlibra/publication/100987/edition/87005/content
-  volume: "57"
+  volume: '57'
 tags: []
 rendered:
   bibliography: |-

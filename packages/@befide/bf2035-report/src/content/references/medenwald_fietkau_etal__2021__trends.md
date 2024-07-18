@@ -9,7 +9,7 @@ cslItem:
     conditions in radiotherapy and non-radiotherapy departments.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 21
   author:
@@ -30,13 +30,13 @@ cslItem:
   container-title-short: Strahlenther Onkol
   DOI: 10.1007/s00066-021-01829-7
   ISSN: 1439-099X
-  issue: "10"
+  issue: '10'
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 10
         - 1
-  keyword: ""
+  keyword: ''
   language: en
   page: 865-875
   source: Springer Link
@@ -44,7 +44,7 @@ cslItem:
   title-short: Trends in radiotherapy inpatient admissions in Germany
   type: article-journal
   URL: https://doi.org/10.1007/s00066-021-01829-7
-  volume: "197"
+  volume: '197'
 tags: []
 rendered:
   bibliography: "<span class=\"csl-bib-body\">\n  <span data-csl-entry-id=\"medenwald_fietkau_etal__2021__trends\" class=\"csl-entry\"><span class='author-bib'>Medenwald, Fietkau, R., Klautke, G., Langer, S., Würschmidt, F., &#38; Vordermark, D.</span>. <span class='date-bib'>(2021)</span>. <span class='title'><b>Trends in radiotherapy inpatient admissions in Germany: a\_population-based study over a\_10-year period</b></span>. <i>Strahlentherapie Und Onkologie</i>, <i>197</i>(10), 865–875. <span class='URL'><a href='https://doi.org/10.1007/s00066-021-01829-7'>LINK</a></span></span>\n</span>"

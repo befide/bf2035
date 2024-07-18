@@ -23,11 +23,11 @@ cslItem:
     Planck-scale collider sited in our Solar System.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   archive: INSPIRE
-  archive_location: "1867198"
+  archive_location: '1867198'
   author:
     - family: Beacham
       given: James
@@ -38,24 +38,24 @@ cslItem:
   container-title-short: New J. Phys.
   DOI: 10.1088/1367-2630/ac4921
   ISSN: 1367-2630
-  issue: "2"
+  issue: '2'
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 2
         - 22
-  keyword: ""
+  keyword: ''
   language: en
   note: |-
     2 citations (Crossref/DOI) [2024-03-17]
     7 citations (INSPIRE 2024/3/17)
     3 citations w/o self (INSPIRE 2024/3/17)
-  page: "23029"
+  page: '23029'
   source: DOI.org (Crossref)
   title: A very high energy hadron collider on the Moon
   type: article-journal
   URL: https://iopscience.iop.org/article/10.1088/1367-2630/ac4921
-  volume: "24"
+  volume: '24'
 tags: []
 rendered:
   bibliography: |-

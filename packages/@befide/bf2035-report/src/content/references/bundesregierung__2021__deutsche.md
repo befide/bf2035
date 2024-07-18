@@ -6,8 +6,8 @@ cslItem:
   citation-key: bundesregierung__2021__deutsche
   issued:
     date-parts:
-      - - "2021"
-  keyword: ""
+      - - '2021'
+  keyword: ''
   language: en
   publisher: Die Bundesregierung
   source: Zotero

@@ -7,10 +7,10 @@ cslItem:
   event-place: Berlin
   issued:
     date-parts:
-      - - "2022"
-  keyword: ""
+      - - '2022'
+  keyword: ''
   language: en
-  page: "36"
+  page: '36'
   publisher: HZB
   publisher-place: Berlin
   title: Highlights 2021

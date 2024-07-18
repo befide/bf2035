@@ -12,7 +12,7 @@ cslItem:
     complex accelerators
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -21,18 +21,18 @@ cslItem:
   DOI: 10.5281/ZENODO.7994429
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 6
         - 1
-  keyword: "#bf2035/topics/digitalisierung"
+  keyword: '#bf2035/topics/digitalisierung'
   language: en
-  publisher: "[object Object]"
+  publisher: '[object Object]'
   source: DOI.org (Datacite)
   title: Present and future AI accelerator applications
   type: article-journal
   URL: https://zenodo.org/record/7994429
 tags:
-  - "#bf2035/topics/digitalisierung"
+  - '#bf2035/topics/digitalisierung'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

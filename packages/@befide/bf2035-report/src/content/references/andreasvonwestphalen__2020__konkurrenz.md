@@ -8,7 +8,7 @@ cslItem:
     Beweises bedarf. Was aber sagt die Wissenschaft?
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 10
         - 10
   author:
@@ -17,10 +17,10 @@ cslItem:
   container-title: Telepolis
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 2
         - 8
-  keyword: ""
+  keyword: ''
   language: en
   title: Konkurrenz oder Kooperation? Das ist die entscheidende Frage
   title-short: Konkurrenz Oder Kooperation?

@@ -1,5 +1,5 @@
 ---
-import facilities from "./facilities.json";
+import facilities from './facilities.json';
 
 export type Facilities = Facility[];
 
@@ -17,8 +17,8 @@ export interface Facility {
   isBmbfFis: string;
   userGroup: string;
   additionalUserGroups: string;
-  "links:agenda-topics": string;
-  "links:agenda-objectives": string;
+  'links:agenda-topics': string;
+  'links:agenda-objectives': string;
   facilityName: string;
   facilityVersion: any;
   layoutGroup: string;
@@ -30,7 +30,7 @@ export interface Facility {
   facilityTypeParticles: string;
   facilityTypeForm: string;
   t0: any;
-  "source for t0, t1": string;
+  'source for t0, t1': string;
   website: string;
 }
 
@@ -41,7 +41,6 @@ export interface Props {
 }
 
 const { filter } = Astro.props;
-
 
 const filteredItems = facilities.filter(filter);
 ---

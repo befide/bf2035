@@ -6,13 +6,13 @@ cslItem:
   citation-key: europeancommission__2014__anhang
   issued:
     date-parts:
-      - - "2014"
-  keyword: "#bf2035/topics/tlr"
+      - - '2014'
+  keyword: '#bf2035/topics/tlr'
   language: en
-  title: "Anhang G: HORIZON 2020 – work programme 2016-2017"
+  title: 'Anhang G: HORIZON 2020 – work programme 2016-2017'
   type: report
 tags:
-  - "#bf2035/topics/tlr"
+  - '#bf2035/topics/tlr'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

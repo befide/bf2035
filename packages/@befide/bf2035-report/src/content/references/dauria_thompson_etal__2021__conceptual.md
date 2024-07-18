@@ -11,11 +11,11 @@ cslItem:
     Technology Solutions A. Appendices
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   archive: INSPIRE
-  archive_location: "2659056"
+  archive_location: '2659056'
   author:
     - family: D'Auria
       given: Gerardo (ed.)
@@ -44,10 +44,10 @@ cslItem:
   genre: Conceptual Design Report
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 12
         - 22
-  keyword: "#bf2035/accelerator-types/photon-source;#collection/D./related-strategies"
+  keyword: '#bf2035/accelerator-types/photon-source;#collection/D./related-strategies'
   language: en
   note: |-
     5 citations (INSPIRE 2024/3/17)
@@ -59,7 +59,7 @@ cslItem:
   URL: https://zenodo.org/record/6375645
   version: v1
 tags:
-  - "#bf2035/accelerator-types/photon-source"
+  - '#bf2035/accelerator-types/photon-source'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

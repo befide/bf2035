@@ -6,7 +6,7 @@ cslItem:
   citation-key: eucard2__2017__eucard2
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
         - 6
   keyword: >-
     bf2035:impact:science;bf2035:impact:industry;bf2035:impact:security;impact;#collection/D./related-strategies;#bf2035/applications/health
@@ -18,7 +18,7 @@ cslItem:
   URL: >-
     http://apae.ific.uv.es/apae/wp-content/uploads/2015/04/EuCARD_Applications-of-Accelerators-2017.pdf
 tags:
-  - "#bf2035/applications/health"
+  - '#bf2035/applications/health'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

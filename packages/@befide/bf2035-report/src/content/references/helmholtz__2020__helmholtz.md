@@ -3,7 +3,7 @@ cslItem:
   id: helmholtz__2020__helmholtz
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 1
         - 31
   author:
@@ -11,10 +11,10 @@ cslItem:
   citation-key: helmholtz__2020__helmholtz
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 6
         - 16
-  keyword: "#bf2035/topics/diversity;#bf2035/topics/teaching"
+  keyword: '#bf2035/topics/diversity;#bf2035/topics/teaching'
   language: en
   note: |-
     Read_Status: To Read
@@ -25,8 +25,8 @@ cslItem:
   URL: >-
     https://www.helmholtz.de/system/beispieldaten/dokumente/Helmholtz_Guideline_on_Diversity_and_Inclusion.pdf
 tags:
-  - "#bf2035/topics/diversity"
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/diversity'
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

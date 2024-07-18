@@ -5,7 +5,7 @@ cslItem:
     - family: Zimmermann
       given: Frank
   citation-key: zimmermann____accelerator
-  keyword: ""
+  keyword: ''
   language: en
   note: |-
     Read_Status: To Read

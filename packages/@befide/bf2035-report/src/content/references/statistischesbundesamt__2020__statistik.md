@@ -7,13 +7,13 @@ cslItem:
   event-place: Wiesbaden
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 9
         - 14
-  keyword: "#bf2035/topics/diversity"
+  keyword: '#bf2035/topics/diversity'
   language: en
-  number: "5213501209004"
-  page: "63"
+  number: '5213501209004'
+  page: '63'
   publisher: Statistisches Bundesamt
   publisher-place: Wiesbaden
   source: Zotero
@@ -22,7 +22,7 @@ cslItem:
   URL: >-
     https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bildung-Forschung-Kultur/Hochschulen/Publikationen/Downloads-Hochschulen/promovierendenstatistik-5213501207004.pdf?__blob=publicationFile
 tags:
-  - "#bf2035/topics/diversity"
+  - '#bf2035/topics/diversity'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

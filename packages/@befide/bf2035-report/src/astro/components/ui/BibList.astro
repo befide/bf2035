@@ -1,12 +1,12 @@
 ---
-import { getReferences } from "@utils/getReferences";
-import BibItem from "./BibItem.astro";
+import { getReferences } from '@utils/getReferences';
+import BibItem from './BibItem.astro';
 
 export interface Props {
   title?: string;
   tag?: string;
 }
-const { tag, title } = Astro.props;
+const { tag = '', title } = Astro.props;
 
 const references = await getReferences(tag);
 ---

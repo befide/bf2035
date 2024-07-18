@@ -3,7 +3,7 @@ cslItem:
   id: helmholtzworkinggrouppostdocguidelines__2018__guidelines
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 1
         - 31
   author:
@@ -11,10 +11,10 @@ cslItem:
   citation-key: helmholtzworkinggrouppostdocguidelines__2018__guidelines
   issued:
     date-parts:
-      - - "2018"
+      - - '2018'
         - 4
         - 16
-  keyword: "#laufbahnentwicklung;#bf2035/topics/teaching"
+  keyword: '#laufbahnentwicklung;#bf2035/topics/teaching'
   language: en
   note: |-
     Read_Status: To Read
@@ -25,7 +25,7 @@ cslItem:
   URL: >-
     https://www.helmholtz.de/fileadmin/upload_Karriere/Helmholtz_Postdoc_Guidelines.pdf
 tags:
-  - "#bf2035/topics/teaching"
+  - '#bf2035/topics/teaching'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

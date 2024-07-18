@@ -7,7 +7,7 @@ cslItem:
     2032 driven by growing demand for radiotherapy treatments.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 6
   author:
@@ -19,18 +19,18 @@ cslItem:
   genre: Market Research Report
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
-  keyword: "#bf2035/topics/commercialisation"
+  keyword: '#bf2035/topics/commercialisation'
   language: en
-  page: "193"
+  page: '193'
   publisher: Global Market Insights Inc.
   title: Linear Particle Accelerators Market Size & Share Report
   type: report
   URL: >-
     https://www.gminsights.com/industry-analysis/linear-particle-accelerators-market
 tags:
-  - "#bf2035/topics/commercialisation"
+  - '#bf2035/topics/commercialisation'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

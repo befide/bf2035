@@ -19,7 +19,7 @@ cslItem:
     operation schemes of the ring.
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 8
         - 30
   author:
@@ -45,8 +45,8 @@ cslItem:
   DOI: 10.5445/IR/1000149546
   issued:
     date-parts:
-      - - "2022"
-  keyword: ""
+      - - '2022'
+  keyword: ''
   language: en
   publisher: JACoW Publishing
   source: DOI.org (Datacite)

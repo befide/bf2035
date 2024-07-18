@@ -16,7 +16,7 @@ export function traverse(obj, callback, propertiesStrOrRegEx) {
     if (RegExpCache[p]) return RegExpCache[p];
 
     return (RegExpCache[p] =
-      typeof p === "string" ? new RegExp(`^${p.replace("*", ".*")}$`) : p);
+      typeof p === 'string' ? new RegExp(`^${p.replace('*', '.*')}$`) : p);
   });
 
   return iterate(obj, []);
@@ -24,7 +24,7 @@ export function traverse(obj, callback, propertiesStrOrRegEx) {
   function pathMatch(pathArr) {
     if (!propertiesRegExes.length) return true;
 
-    const pathStr = pathArr.join(".");
+    const pathStr = pathArr.join('.');
 
     return !!propertiesRegExes.find((p) => {
       p.lastIndex = 0; // https://stackoverflow.com/questions/11477415/why-does-javascripts-regex-exec-not-always-return-the-same-value
@@ -43,7 +43,7 @@ export function traverse(obj, callback, propertiesStrOrRegEx) {
           if (r === true) return true;
         }
 
-        if (typeof object[key] === "object") {
+        if (typeof object[key] === 'object') {
           r = iterate(object[key], chainedPath);
 
           if (r === true) return true;

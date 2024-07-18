@@ -3,7 +3,7 @@ cslItem:
   id: rosenblatt_izewska_etal__2013__radiotherapy
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 21
   author:
@@ -26,16 +26,16 @@ cslItem:
   container-title-short: The Lancet Oncology
   DOI: 10.1016/S1470-2045(12)70556-9
   ISSN: 1470-2045, 1474-5488
-  issue: "2"
+  issue: '2'
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
         - 2
         - 1
-  keyword: ""
+  keyword: ''
   language: en
   page: e79-e86
-  PMID: "23352499"
+  PMID: '23352499'
   publisher: Elsevier
   source: www.thelancet.com
   title: >-
@@ -45,7 +45,7 @@ cslItem:
   type: article-journal
   URL: >-
     https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70556-9/abstract
-  volume: "14"
+  volume: '14'
 tags: []
 rendered:
   bibliography: |-

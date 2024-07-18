@@ -6,12 +6,12 @@ cslItem:
   citation-key: bmbf__erum
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/sections/A.1;#bf2035/topics/verbundforschung;#bf2035/funding/bmbf"
+      - - '2022'
+  keyword: '#bf2035/sections/A.1;#bf2035/topics/verbundforschung;#bf2035/funding/bmbf'
   language: en
   original-date:
     date-parts:
-      - - "2017"
+      - - '2017'
   publisher: BMBF
   title: >-
     Erforschung von Universum und Materie -- ErUM. Rahmenprogramm des
@@ -21,9 +21,9 @@ cslItem:
   URL: >-
     https://www.bmbf.de/SharedDocs/Publikationen/de/bmbf/7/31339_Erforschung_von_Universum_und_Materie.pdf?__blob=publicationFile&v=4
 tags:
-  - "#bf2035/sections/A.1"
-  - "#bf2035/topics/verbundforschung"
-  - "#bf2035/funding/bmbf"
+  - '#bf2035/sections/A.1'
+  - '#bf2035/topics/verbundforschung'
+  - '#bf2035/funding/bmbf'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">
