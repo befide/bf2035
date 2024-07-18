@@ -7,7 +7,7 @@ path: /02/progress
 
 import ProgressChart from "@components/domain/progress-chart/ProgressChart.astro";
 
-<div class="spread--left spread-area--c-2">
+<div class="spread--left spread-area--c-1_3">
 
 ## Anwendungen
 
@@ -21,36 +21,62 @@ import ProgressChart from "@components/domain/progress-chart/ProgressChart.astro
 
 </div>
 
-<div class="spread--left spread-area--c-3">
+<div class="spread--left spread-area--c-2_3">
 
 ## Anwendungen
 
+
+
 ### Teilchenphysik
 
-<ProgressChart dimension="particleDiscoveries"></ProgressChart>
-<ProgressChart dimension="progress__beta_electron"></ProgressChart>
-<ProgressChart dimension="progress__energy_electron"></ProgressChart>
-<ProgressChart dimension="progress__beta_proton"></ProgressChart>
-<ProgressChart dimension="progress__energy_proton"></ProgressChart>
+<ProgressChart dimension="particleDiscoveries">Velit deserunt aliqua tempor aute occaecat laboris amet deserunt dolore
+  consectetur cupidatat. Anim irure qui id reprehenderit tempor proident
+  excepteur nisi Lorem ad velit aute. </ProgressChart>
+{/* <ProgressChart dimension="progress__beta_electron">Velit deserunt aliqua tempor aute occaecat laboris amet deserunt dolore
+  consectetur cupidatat. Anim irure qui id reprehenderit tempor proident
+  excepteur nisi Lorem ad velit aute. </ProgressChart> */}
+<ProgressChart dimension="progress__energy_electron">Velit deserunt aliqua tempor aute occaecat laboris amet deserunt dolore
+  consectetur cupidatat. Anim irure qui id reprehenderit tempor proident
+  excepteur nisi Lorem ad velit aute. </ProgressChart>
+{/* <ProgressChart dimension="progress__beta_proton"></ProgressChart> */}
+<ProgressChart dimension="progress__energy_proton">Velit deserunt aliqua tempor aute occaecat laboris amet deserunt dolore
+  consectetur cupidatat. Anim irure qui id reprehenderit tempor proident
+  excepteur nisi Lorem ad velit aute. </ProgressChart>
 
 ### Kernphysik
 
-<ProgressChart dimension="nuclideDiscoveriesPerYear"></ProgressChart>
-<ProgressChart dimension="pdbEntries"></ProgressChart>
-<ProgressChart dimension="progress__emittance"></ProgressChart>
-<ProgressChart dimension="progress__peak_luminosity"></ProgressChart>
+<ProgressChart dimension="nuclideDiscoveriesPerYear">Velit deserunt aliqua tempor aute occaecat laboris amet deserunt dolore
+  consectetur cupidatat. Anim irure qui id reprehenderit tempor proident
+  excepteur nisi Lorem ad velit aute. </ProgressChart>
 
 </div>
 
-<div class="spread--right spread-area--c-1">
+<div class="spread--left spread-area--c-3_3">
+
+
+### Forschung mit Photonen
+
+
+<ProgressChart dimension="pdbEntries">Velit deserunt aliqua tempor aute occaecat laboris amet deserunt dolore
+  consectetur cupidatat. Anim irure qui id reprehenderit tempor proident
+  excepteur nisi Lorem ad velit aute. </ProgressChart>
+<ProgressChart dimension="progress__emittance">Velit deserunt aliqua tempor aute occaecat laboris amet deserunt dolore
+  consectetur cupidatat. Anim irure qui id reprehenderit tempor proident
+  excepteur nisi Lorem ad velit aute. </ProgressChart>
+<ProgressChart dimension="progress__peak_luminosity">Velit deserunt aliqua tempor aute occaecat laboris amet deserunt dolore
+  consectetur cupidatat. Anim irure qui id reprehenderit tempor proident
+  excepteur nisi Lorem ad velit aute. </ProgressChart>
+
+</div>
+
+<div class="spread--right spread-area--c-1_3">
 
 ## Kooperation
 
 <ProgressChart dimension="progress__projectFundingCount">
   Velit deserunt aliqua tempor aute occaecat laboris amet deserunt dolore
   consectetur cupidatat. Anim irure qui id reprehenderit tempor proident
-  excepteur nisi Lorem ad velit aute. Dolore sunt eiusmod adipisicing dolore qui
-  mollit ut nostrud qui ea dolor quis.
+  excepteur nisi Lorem ad velit aute.
 </ProgressChart>
 
 <ProgressChart dimension="progress__projectFundingAmount">
@@ -61,7 +87,7 @@ import ProgressChart from "@components/domain/progress-chart/ProgressChart.astro
 
 </div>
 
-<div class="spread--right spread-area--c-2">
+<div class="spread--right spread-area--c-2_3">
 
 ## Fachlichkeit
 
@@ -93,7 +119,7 @@ import ProgressChart from "@components/domain/progress-chart/ProgressChart.astro
 
 </div>
 
-<div class="spread--right spread-area--c-3">
+<div class="spread--right spread-area--c-3_3">
 
 ## Lehre
 

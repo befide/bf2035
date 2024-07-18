@@ -18,7 +18,7 @@ sectionNumber: C.4.e
 
 </div>
 
-<div class="spread--right spread-area--c-3">
+<div class="spread--right spread-area--c-3_3">
 
 ## Unterthemen
 

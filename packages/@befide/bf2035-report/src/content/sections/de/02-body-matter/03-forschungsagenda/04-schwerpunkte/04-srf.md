@@ -23,7 +23,7 @@ Im Rahmen des TESLA-Projekts wurde die Technologie druch die deutsche Beschleuni
 
 </div>
 
-<div class="spread--left spread-area--c-3">
+<div class="spread--left spread-area--c-3_3">
 
 ### Anwendbarkeit
 
@@ -50,7 +50,7 @@ Um die Anwendung von supraleitender Beschleunigungstechnologie zu erleichtern un
 
 </div>
 
-<div class="spread--right spread-area--c-1">
+<div class="spread--right spread-area--c-1_3">
 
 ### Alternative Materialien
 
@@ -64,7 +64,7 @@ Ziel: Erhöhung der Anwendbarkeit
 
 </div>
 
-<div class="spread--right spread-area--c-2">
+<div class="spread--right spread-area--c-2_3">
 
 ### Anforderungen für zukünftige Beschleuniger
 
@@ -80,7 +80,7 @@ Schwieriger: Kavitäten für niedrigere Energie/schwere Teilchen (im nicht-rel
 
 </div>
 
-<div class="spread--right spread-area--c-3">
+<div class="spread--right spread-area--c-3_3">
 
 ### Starker Standort
 

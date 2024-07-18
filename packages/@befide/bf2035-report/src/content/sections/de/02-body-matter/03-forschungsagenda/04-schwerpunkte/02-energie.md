@@ -18,7 +18,7 @@ Beschleunigeranlagen benötigen große Mengen an Energie, um die von der Forschu
 
 </div>
 
-<div class="spread--right spread-area--c-1">
+<div class="spread--right spread-area--c-1_3">
 
 ## Unterthemen
 
@@ -29,7 +29,7 @@ Beschleunigeranlagen benötigen große Mengen an Energie, um die von der Forschu
 
 </div>
 
-<div class="spread--right spread-area--c-2">
+<div class="spread--right spread-area--c-2_3">
 
 Die geplanten und bestehenden Forschungsstandorte verfügen über eine einzigartige Infrastruktur und Expertise, um neue Technologien zu entwickeln, in Kooperation mit der Industrie vom Prototypenstatus zur Anwendungsreife zu bringen und produktiv einzusetzen (Höchstspannungsversorgung, Supraleitung, Kryotechnik: z.B. innovative Energiespeicher).
 
@@ -37,7 +37,7 @@ Der hohe Energiebedarf in Verbindung mit dem Forschungsauftrag ermöglicht es, M
 
 </div>
 
-<div class="spread--left spread-area--c-3">
+<div class="spread--left spread-area--c-3_3">
 
 ### Energieeffizienz des LHC
 

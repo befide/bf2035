@@ -1,9 +1,8 @@
 ---
-title: Estimating the size and structure of the German accelerator science community
-language: en
+title: Size and structure of the German accelerator science community
 ---
 
-<div class="spread--left spread-area--c-1-under-header">
+<div class="spread--left spread-area--c-1_3 under-header">
 
 ## I. Abstract
 
@@ -15,29 +14,29 @@ Cillum ex ea aute quis ipsum. Est ex non aute laboris duis laborum ipsum quis. I
 
 </div>
 
-<div class="spread--left spread-area--c-2-under-header">
+<div class="spread--left spread-area--c-2_3  under-header">
 
 ## II. Introduction
 
-According to the statute of the _Committee for Accelerator Physics_[^1], anyone who fulfills the following three requirements belongs to the _Community of German Accelerator Physicists_:
+The statutes of the _Committee for Accelerator Physics_[^1] establish the body _Forum Beschleunigerphysik_ for the triennial election of the committee. Anyone who fulfils the following three requirements can register for this body
 
-- University degree (bachelor, master, diploma or doctorate),
-- activity in research, development, teaching or management in the field of accelerator physics
+- A university degree (Bachelor's, Master's, Diploma or Doctorate),
+- working in research, development, teaching or managing in the field of accelerator physics
 - at a scientific institution in the Federal Republic of Germany or as a German at institutions in which the Federal Republic of Germany participates in the basic funding (e.g. CERN, ESRF, ESS).
 
-In order to conduct the triennial committee election, the statute establishes the body _Forum Beschleunigerphysik_, to which every member of the community of German accelerator physicists registered with the KfB belongs. Due to the prerequisite of a registration action, it is clear that the _Forum Beschleunigerphysik_ is neither a full nor a representative sample of the community of German accelerator scientists. In particular, data on the _Forum Beschleunigerphysik_ can only be used to a limited extent as an empirical basis for strategy development. Furthermore,
+Due to the requirement of registration, it is clear that the _Forum Beschleunigerphysik_ is neither a complete nor a representative sample of the community of German accelerator scientists. In particular, data from the _Forum Beschleunigerphysik_ can only be used to a limited extent as an empirical basis for strategy development.
 
-Thus, For the development of the strategy _Accelerator Science 2035_, a methodologically transparent, intersubjectively comprehensible and efficient estimate of the population was therefore proposed.
+Therefore, a methodologically transparent, intersubjectively comprehensible and efficient estimation of the size of the community population is proposed for developing the strategy _Accelerator Science 2035_.
 
 </div>
 
-<div class="spread--left spread-area--c-3-under-header">
+<div class="spread--left spread-area--c-3_3">
 
 ### 1. State of research and research questions
 
 Lorem ipsum
 
-#### Staff categories of POF IV Proposal
+#### Staff categories of the POF IV Proposal
 
 In the _Proposal for the Helmholtz Research Programme Matter and Technologies. Research Field MATTER (2021 - 2027)_[^2], personnel resources are classified into three groups: scientists, PhD students, scientific support staff.
 
@@ -101,7 +100,7 @@ xxx
 
 </div>
 
-<div class="spread--right spread-area--c-1">
+<div class="spread--right spread-area--c-1_3">
 
 ## Purpose of the data set
 
@@ -111,23 +110,25 @@ xxx
 
 </div>
 
-<div class="spread--right spread-area--c-2">
+<div class="spread--right spread-area--c-2_3">
 
 # Methodology and data
 
-The assessment of the community size is realised via a questionnaire, which is to be completed by the N known chair holders on the university side and by the seven accelerator working group leaders on the Helmholtz side.
+The size of the community is assessed by means of a questionnaire to be completed by the N known chair holders on the university side and by the seven accelerator working group leaders on the Helmholtz side.
 
-A response rate of 100 per cent is required for a complete survey. Therefore, the questionnaire will be sent out with the friendly. The questionnaire is therefore sent out in an official e-mail from the committee chairman with a kind request to return it by a deadline.
+As a complete survey is required, the following steps will be taken to ensure a response rate of 100 per cent:
 
-The accompanying letter emphasises the importance of a complete survey. It also describes exactly how and where the results will be published. The possibility of queries is also pointed out.
-
-After the response deadline has expired, a reminder email is sent with a new deadline if data is still missing.
-
-If this deadline also expires without results, you will be contacted by telephone.
+1. The questionnaire will be distributed in an official email from the committee chair with a friendly request to return it by a certain date. The accompanying letter stresses the importance of a complete survey. It also describes exactly how and where the results will be published. The possibility of queries is also mentioned.
+2. After the response deadline has passed, a reminder e-mail with a second deadline will be sent to all the survey participants who have failed to respond to date.
+3. If the second deadline passes without a response, the respondents will be contacted by telephone.
 
 </div>
 
-<div class="spread--right spread-area--c-3">
+<div class="spread--right spread-area--c-3_3">
+
+## Participants
+
+Universities:
 
 ## Questionaire
 

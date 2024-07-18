@@ -6,7 +6,7 @@ sectionNumber: D.3
 sectionType: left
 ---
 
-<div class="spread--left spread-area--c-1-under-header">
+<div class="spread--left spread-area--c-1_3">
 
 ## DOI
 
@@ -43,7 +43,7 @@ veröffentlicht am 1. @ Juni @@ 2019.
 
 </div>
 
-<div class="spread--left spread-area--c-2-under-header">
+<div class="spread--left spread-area--c-2_3">
 
 ## Herausgeber
 
@@ -56,7 +56,7 @@ Diese Zusammensetzung ermöglicht es der Bundesregierung, den _Komitee für Besc
 
 </div>
 
-<div class="spread--left spread-area--c-3-under-header">
+<div class="spread--left spread-area--c-3_3">
 
 ## Komitee für Beschleunigerphysik
 

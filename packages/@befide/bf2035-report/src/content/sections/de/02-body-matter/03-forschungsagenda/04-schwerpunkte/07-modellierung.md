@@ -19,7 +19,7 @@ sectionType: left
 
 </div>
 
-<div class="spread--left spread-area--c-3">
+<div class="spread--left spread-area--c-3_3">
 
 ## Unterthemen
 
