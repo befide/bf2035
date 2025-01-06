@@ -1,5 +1,4 @@
 ---
-path: /01/forschungsagenda/schwerpunkte/smt
 supertitle: Forschungsschwerpunkt
 title: Magnettechnologie
 title__toc: Supraleteinde Magnettechnologie

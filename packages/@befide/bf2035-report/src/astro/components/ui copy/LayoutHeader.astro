@@ -1,0 +1,103 @@
+---
+import SkipNavigation from './SkipNavigation.astro';
+import Navigation from '@components/ui/Navigation.astro';
+---
+
+<SkipNavigation />
+<nav>
+  <a id="nav__home" href="/de/" class="">BF2035</a>
+
+  <ul>
+    <li>
+      <a href="/de/01-front-matter/01-inhalt/" class="">Inhalt</a>
+    </li>
+    <li>
+      <a href="/de/01-front-matter/02-editorial/" class="">Einführung</a>
+    </li>
+    <li>
+      <a href="/de/02-body-matter/01-ausgangslage/" class="">Ausgangslage</a>
+    </li>
+    <li>
+      <a href="/de/02-body-matter/02-strategiefelder/" class=""
+        >Strategiefelder</a
+      >
+    </li>
+    <li>
+      <a href="/de/02-body-matter/03-forschungsagenda/">Forschungsagenda</a>
+    </li>
+  </ul>
+
+  <ul id="nav__tools">
+    <li><a id="navigation__book" href="/book/" class="">Book</a></li>
+  </ul>
+  <Navigation />
+  <label for="nav__toggle">
+    <input id="nav__toggle" type="checkbox" class="visually-hidden" />
+  </label>
+</nav>
+
+<script is:inline>
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyB') {
+      document.getElementById('navigation__book')?.click();
+    }
+  });
+</script>
+
+<style lang="stylus">
+nav {
+  display flex;
+  width 100%;
+  height: 100%
+}
+
+nav>ul {
+  display flex;
+  flex 1 1 100%;
+}
+
+nav a {
+  display inline-block;
+  text-decoration none;
+  padding var(--ui__baseline-height);
+  line-height:  var(--ui__baseline-height);
+  font-size var(--ui__font-size--md);
+}
+
+#nav__home {
+  flex 1 0 10%;
+}
+
+#nav__toggle {
+  height: 100%
+  flex 0 0 calc(4 * var(--ui__baseline-height));
+  padding var(--ui__baseline-height);
+  align-self flex-end;
+  background-size calc(2 * var(--ui__baseline-height));
+  background-position center;
+  background-repeat no-repeat;
+  background-image url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1lbnUiPjxsaW5lIHgxPSI0IiB4Mj0iMjAiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjYiIHkyPSI2Ii8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjE4IiB5Mj0iMTgiLz48L3N2Zz4=")
+}
+
+@media only screen and (max-width 736px) {
+  nav {
+    position relative;
+    z-index 100;
+  }
+
+  nav a {
+    position relative;
+  }
+
+  nav>ul {
+    display block;
+    position absolute;
+    z-index 99;
+    top -100vh;
+    width 100%;
+    background-color #eeeeee;
+    transition all 0.3s ease-in-out;
+    flex-direction column;
+  }
+}
+</style>

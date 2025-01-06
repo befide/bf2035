@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import Page from '@layouts/Page.astro';
+import Tag from '@components/ui/Tag.astro';
+
+const lang = "de"
+
+const allReferences = await getCollection("references")
+
+const tags = [...new Set(allReferences.map((allReferences) => allReferences.data.tags).flat())];
+
+const sortedTags = tags.sort((a,b) => a.localeCompare(b))
+
+
+---
+
+<Page {lang} title="Tags">
+
+  <ol class="md tags">
+    {sortedTags.map(tag => <li><Tag tag={tag}></Tag></li>)}
+    </ul>
+  
+</Page>

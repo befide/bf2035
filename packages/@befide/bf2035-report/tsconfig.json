@@ -1,15 +1,17 @@
 {
-  "extends": "astro/tsconfigs/strictest",
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
   "compilerOptions": {
-    "baseUrl": "./",
-    "rootDir": "./src",
+    "baseUrl": ".",
+    "outDir": "dist",
     "paths": {
-      "@assets/*": ["./src/astro/assets/*"],
-      "@layouts/*": ["./src/astro/layouts/*"],
+      "@assets/*": ["src/astro/assets/*"],
+      "@layouts/*": ["src/astro/layouts/*"],
       "@utils/*": ["src/astro/utils/*"],
-      "@components/*": ["./src/astro/components/*"],
-      "@ui/*": ["./src/astro/components/ui/*"],
-      "@styles/*": ["./src/astro/styles/*"]
+      "@components/*": ["src/astro/components/*"],
+      "@ui/*": ["src/astro/components/ui/*"],
+      "@styles/*": ["src/astro/styles/*"]
     },
     "types": ["vite-plugin-pwa/client", "vite-plugin-pwa/info"],
     "plugins": [

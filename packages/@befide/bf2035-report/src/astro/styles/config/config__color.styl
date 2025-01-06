@@ -1,14 +1,13 @@
-$COLOR__KFB__BLUE ?= #2174a8
-$COLOR__$KFB__GRAY ?= #757575
-$COLOR__$KFB__YELLOW ?= #EDC500
-$COLOR__$KFB__GRAY__LIGHT ?= #EEE
-$COLOR__$KFB__GRAY__DARK ?= #666
-$COLOR__$KFB__RED ?= #C53228
-$COLOR__$KFB__GREEN ?= #009900
-
+$COLOR__KFB__BLUE ?= #2174a8;
+$COLOR__$KFB__GRAY ?= #757575;
+$COLOR__$KFB__YELLOW ?= #EDC500;
+$COLOR__$KFB__GRAY__LIGHT ?= #EEE;
+$COLOR__$KFB__GRAY__DARK ?= #666;
+$COLOR__$KFB__RED ?= #C53228;
+$COLOR__$KFB__GREEN ?= #009900;
 
 $CONFIG__COLOR() {
-  html[data-theme="light"] {
+  html[data-theme='light'] {
     --color-fill: rgb(251, 254, 251);
     --color-background: rgba(252, 250, 252, 1);
     --color-foreground: rgba(60, 60, 60, 1);
@@ -17,19 +16,17 @@ $CONFIG__COLOR() {
     --color-hoverable: rgba(gray, 0.1);
     --color-hover: rgba(gray, 0.2);
     --color-border: rgb(236, 233, 233);
-
-    --kfb__blue: $COLOR__KFB__BLUE
-    --kfb__red: $COLOR__KFB__RED
-    --kfb__yellow: $COLOR__KFB__YELLOW
+    --kfb__blue: $COLOR__KFB__BLUE;
+    --kfb__red: $COLOR__KFB__RED;
+    --kfb__yellow: $COLOR__KFB__YELLOW;
   }
 
-  html[data-theme="dark"] {
+  html[data-theme='dark'] {
     --color-fill: rgb(33, 39, 55);
     --color-background: rgba(40, 40, 40, 1);
     --color-foreground: rgba(200, 200, 200, 1);
     --color-hoverable: rgba(white, 0.1);
     --color-hover: rgba(white, 0.2);
-   
     --color-text-base: rgb(234, 237, 243);
     --color-accent: rgb(255, 107, 1);
     --color-card: rgb(52, 63, 96);

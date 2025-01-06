@@ -1,0 +1,25 @@
+<label class="toggle">
+  <span class="label-text">Show grid</span>
+  <input id="toggle__debug" type="checkbox" role="switch" />
+  <span class="state">
+    <span class="on" aria-hidden="true">On</span>
+    <span class="off" aria-hidden="true">Off</span>
+  </span>
+</label>
+
+<script>
+  import { updateDocumentSettings, toggleDebug } from '@utils/settingsStore.js';
+
+  updateDocumentSettings.debug();
+  document.addEventListener('astro:after-swap', updateDocumentSettings.debug);
+
+  document
+    .getElementById('toggle__debug')
+    ?.addEventListener('click', toggleDebug);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyD') {
+      toggleDebug();
+    }
+  });
+</script>
