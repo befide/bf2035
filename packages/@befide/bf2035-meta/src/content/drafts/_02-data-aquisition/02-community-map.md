@@ -1,0 +1,153 @@
+---
+title: Size and structure of the German accelerator science community
+---
+
+## I. Abstract
+
+Ad mollit pariatur commodo ex magna enim ut cupidatat sit id mollit dolore. Aute culpa esse nostrud duis pariatur et velit ex sint pariatur id ad qui reprehenderit. Cupidatat ullamco magna ipsum sint et irure duis enim enim eu incididunt nisi. Pariatur in qui ad id irure. Consequat nulla deserunt esse ut ex. Pariatur proident et nulla nulla ullamco aute cupidatat reprehenderit enim excepteur labore enim.
+
+In aute culpa laborum culpa consectetur fugiat Lorem nostrud id. Consectetur est ea veniam laboris sunt aliqua non ex aliqua. Magna aute est ex sint consectetur ad amet non ullamco consectetur dolore occaecat. Laborum commodo reprehenderit amet anim ipsum. Proident officia voluptate elit qui sunt tempor proident ullamco aute occaecat.
+
+Cillum ex ea aute quis ipsum. Est ex non aute laboris duis laborum ipsum quis. In minim excepteur elit irure laboris nulla excepteur proident quis ipsum reprehenderit qui. Est excepteur duis est aliquip nostrud adipisicing enim. Velit consequat in quis exercitation incididunt et ipsum cillum cupidatat Lorem sit consequat ipsum aute. Nostrud Lorem quis pariatur anim aliquip adipisicing eu esse ex ad quis officia sit minim.
+
+## II. Introduction
+
+The statutes of the _Committee for Accelerator Physics_[^1] establish the body _Forum Beschleunigerphysik_ for the triennial election of the committee. Anyone who fulfils the following three requirements can register for this body
+
+- A university degree (Bachelor's, Master's, Diploma or Doctorate),
+- working in research, development, teaching or managing in the field of accelerator physics
+- at a scientific institution in the Federal Republic of Germany or as a German at institutions in which the Federal Republic of Germany participates in the basic funding (e.g. CERN, ESRF, ESS).
+
+Due to the requirement of registration, it is clear that the _Forum Beschleunigerphysik_ is neither a complete nor a representative sample of the community of German accelerator scientists. In particular, data from the _Forum Beschleunigerphysik_ can only be used to a limited extent as an empirical basis for strategy development.
+
+Therefore, a methodologically transparent, intersubjectively comprehensible and efficient estimation of the size of the community population is proposed for developing the strategy _Accelerator Science 2035_.
+
+### 1. State of research and research questions
+
+Lorem ipsum
+
+#### Staff categories of the POF IV Proposal
+
+In the _Proposal for the Helmholtz Research Programme Matter and Technologies. Research Field MATTER (2021 - 2027)_[^2], personnel resources are classified into three groups: scientists, PhD students, scientific support staff.
+
+For the topic _Accelerator research and development_, the following full-time equivalents are foreseen for 2021:
+
+| Personnel category           | FTEs |
+| ---------------------------- | ---: |
+| Scientists                   |  139 |
+| Doctoral students            |   39 |
+| Scientific support personnel |   86 |
+
+#### Critical assessment
+
+- There is no information on the share of each participating Helmholtz institute (these figures are only given cumulatively for all three themes of the MT programme).
+- There is no information on whether the scientific support staff includes only engineers and technical staff or also administrative staff.
+- There is no information on the proportion of female staff.
+- While FTEs are a good planning indicator, an assessment of the size of the community seems to be better based on individuals (full-time, part-time).
+
+### Staff categories by the Federal Statistical Office (Destatis)
+
+By German law ("Hochschulstatistikgesetz - HStatG"), the Federal Statistical Office is commissioned to compile annual statistics on personnel at universities
+
+The results are published each year in _Fachserie 11, Reihe 4.4 "Personal an Hochschulen"_ and can also be accessed via the database _Genesis Online_.
+
+The following staff categories are distinguished in the survey:
+
+- Wissenschaftliches und künstlerisches Personal
+  - hauptberuflich
+    - Professoren
+      - C4 und entspr. Besoldungsgruppen; C3 und entspr. Besoldungsgruppen; C2 und entspr. Besoldungsgruppen -auf Dauer-; C2 und entspr. Besoldungsgruppen -auf Zeit-; W3; W2; Juniorprofessoren; Gastprofessoren (hauptberuflich)
+    - Dozenten und Assistenten
+      - Hochschuldozenten; Universitätsdozenten; Oberassistenten; Oberingenieure; Hochschulassistenten; wissenschaftliche und künstlerische Assistenten; Akademische (Ober)Räte -auf Zeit-
+    - Wissenschaftliche und künstlerische Mitarbeiter
+      - Akademische Räte, Oberräte und Direktoren; wissenschaftliche und künstlerische Mitarbeiter im Angestelltenverhältnis; akademische Mitarbeiter
+    - Lehrkräfte für besondere Aufgaben
+      - Studienräte, -direktoren im Hochschuldienst; Fachlehrer, techn. Lehrer; Lektoren; sonstige Lehrkräfte für besondere Aufgaben
+  - nebenberuflich
+    - Gast-/Professoren, Emeriti
+      - Gast-/Professoren (nebenberuflich); Emeriti, Professoren im Ruhestand
+    - Lehrbeauftragte
+      - Lehrbeauftragte; Honorarprofessoren; Privatdozenten, außerplanmäßige Professoren
+    - Wissenschaftliche Hilfskräfte
+      - Wissenschaftliche Hilfskräfte; Tutoren
+- **Verwaltungs-, technisches und sonstiges Personal**
+  - hauptberuflich
+    - Verwaltungspersonal
+    - Bibliothekspersonal
+    - technisches Personal
+    - sonstiges Personal
+    - Pflegepersonal
+    - Auszubildende
+    - Praktikanten
+  - nebenberuflich
+    - sonstige Hilfskräfte
+
+For each group, the share of female employees is determined.
+
+#### Critical assessment
+
+xxx
+
+## Purpose of the data set
+
+- Empirically grounding the strategy development (proving statements and finding leverage/intervention points)
+- Utilising data set as guidance for future acquisition initiatives
+- Serving as a model for the open data approach
+
+# Methodology and data
+
+The survey project consists of four separate surveys, each targeting a different group of respondents to address specific research questions.
+
+## Survey I
+
+Survey I tackles the question of how many people currently work in German accelerator science fulfilling the requirements given by the Statute of the KfB.
+
+The target group for this survey includes all heads of institutes or departments at universities or research centres whose area of responsibility includes at least one research group in the field of accelerator research.
+
+This survey is based on the assumption that all research and development work at universities and research centres is organised into research groups and that the name (or at least the mission statement) of each of these groups is a strong indicator of whether the members of that group are involved in accelerator research.
+
+Focusing on the research groups has various advantages:
+
+1. As current research groups are usually listed on the websites of universities or research centres, it is easy to compile a preliminary list that can be provided to the target group for amendment and completion.
+2. Since in most cases the contact information of the respective group leaders can also be found on the websites, it is unobjectionable under data protection law to include these in the collected data. This information will be essential for Survey IV.
+
+## Survey II: Teaching
+
+The second survey
+
+## Survey III
+
+## Survey IV
+
+The size of the community is assessed by means of a questionnaire to be completed by the N known chair holders on the university side and by the seven accelerator working group leaders on the Helmholtz side.
+
+As a complete survey is required, the following steps will be taken to ensure a response rate of 100 per cent:
+
+1. The questionnaire will be distributed in an official email from the committee chair with a friendly request to return it by a certain date. The accompanying letter stresses the importance of a complete survey. It also describes exactly how and where the results will be published. The possibility of queries is also mentioned.
+2. After the response deadline has passed, a reminder e-mail with a second deadline will be sent to all the survey participants who have failed to respond to date.
+3. If the second deadline passes without a response, the respondents will be contacted by telephone.
+
+## Participants
+
+## Questionaire
+
+# Results
+
+## Raw data
+
+## Accumulated data
+
+# Discussion
+
+# Appendix
+
+## Questionnaire
+
+## Cover letter
+
+## Reminder
+
+## Footnotes
+
+[^1]: hhh
+[^2]: hhh
