@@ -2,8 +2,16 @@
 .intro, .spread-area--intro {
   p.md {
     $baselined-typography(body-intro);
-    font-weight var(--font-weight--bold);
+    // font-weight var(--font-weight--bold);
   }
+}
+
+
+.spread {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 10px 1px inset black;
+ 
 }
 
 .spread__page {
@@ -42,7 +50,7 @@
     padding-bottom var(--page__margin__bottom);
     width var(--page__width);
     height var(--page__height);
-    float left;
+    
   }
 
   .spread__page.left {
@@ -67,10 +75,10 @@
     margin-top var(--page__margin__top);
     width var(--page__grid__width);
     height var(--page__grid__height);
-    grid-column-gap calc(var(--grid__column-gap-in-baselines) * var(--baseline-height));
-    grid-row-gap calc(var(--grid__row-gap-in-baselines) * var(--baseline-height));
-    grid-template-columns repeat(var(--grid__column-count), calc(var(--grid__row-height-in-baselines) * var(--baseline-height)));
-    grid-template-rows repeat(var(--grid__row-count), calc(var(--grid__column-width-in-baselines) * var(--baseline-height)));
+    grid-column-gap calc(var(--grid__column-gap-in-baselines) * 1rem);
+    grid-row-gap calc(var(--grid__row-gap-in-baselines) * 1rem);
+    grid-template-columns repeat(var(--grid__column-count), calc(var(--grid__row-height-in-baselines) * 1rem));
+    grid-template-rows repeat(var(--grid__row-count), calc(var(--grid__column-width-in-baselines) * 1rem));
   }
 
   // .spread {
@@ -115,3 +123,50 @@
     }
   }
 }
+
+
+ 
+.cover, .part
+
+  
+  .spread__header
+    grid-area: 1 / 4 / 11 / 13
+    text-align right
+
+
+  .spread__supertitle, .spread__subtitle, .spread__title
+    right 0rem
+
+
+    span
+      margin-right calc(-1 * var(--page__margin__outside) - 1 * var(--bleed))
+      margin-left 0
+      padding-right calc(1 * var(--page__margin__outside) - 1 * var(--bleed))
+      padding-left 1rem;
+      padding-top: 2px;
+      padding-bottom: 2px; 
+      border-right: 0
+      box-shadow 0px 0 2px 0px rgba(0, 0, 0, 0.5)
+      
+  .spread__sectionNumber {
+    display: none;
+  }
+
+  .spread__title {
+    top 4rem;
+    color white;
+    line-height 3rem;
+    font-size 1rem;
+    height: 3rem
+  }
+
+  .spread__supertitle, .spread__subtitle {
+    font-size .1rem;
+    line-height 3rem;
+  }
+  .spread__supertitle {
+    top 0rem;
+  }
+  .spread__subtitle {
+    top 8rem;
+   }

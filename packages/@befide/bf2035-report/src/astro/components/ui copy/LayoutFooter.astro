@@ -1,0 +1,39 @@
+---
+import SettingsThemeToggle from './SettingsThemeToggle.astro';
+import SettingsFitSpreadToggle from './SettingsFitSpreadToggle.astro';
+import SettingsPrintPreviewToggle from './SettingsPrintPreviewToggle.astro';
+import SettingsDebugToggle from './SettingsDebugToggle.astro';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="layout__footer">
+  <p class="copyright-wrapper">
+    <span>&#169; {currentYear}</span>
+    <span class="separator">&nbsp;|&nbsp;</span>
+    <span>All rights reserved.</span>
+  </p>
+  <div class="toggles">
+    <SettingsPrintPreviewToggle />
+    <SettingsThemeToggle />
+    <SettingsDebugToggle />
+    <SettingsFitSpreadToggle />
+  </div>
+</footer>
+
+<style lang="stylus">
+  .layout__footer 
+    display flex
+    align-items space-between
+
+  .toggles
+    flex 1 1 100%
+    display flex
+    align-items space-between
+  .copyright-wrapper {
+    font-size var(--ui__font-size--md)
+    padding: var(--ui__baseline-height);
+    line-height:  var(--ui__baseline-height);
+    white-space: nowrap
+  }
+</style>

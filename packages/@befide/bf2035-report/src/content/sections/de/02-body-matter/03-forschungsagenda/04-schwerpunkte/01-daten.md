@@ -1,5 +1,4 @@
 ---
-path: /01/forschungsagenda/schwerpunkte/digitalisierung
 supertitle: Forschungsschwerpunkt
 title: Digitalisierung
 sectionType: spread

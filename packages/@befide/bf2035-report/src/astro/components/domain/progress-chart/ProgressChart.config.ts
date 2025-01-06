@@ -1,6 +1,6 @@
 import { curveStepAfter } from 'd3-shape';
 import { format, formatDefaultLocale } from 'd3-format';
-import { rollups, group } from 'd3-array';
+import { rollups, group, groups } from 'd3-array';
 
 import acceleratorsInUse from './data/acceleratorsInUsePerYear.json' assert { type: 'json' };
 
@@ -17,6 +17,7 @@ import conferences from './data/conferences.json' assert { type: 'json' };
 import professorships from './data/professorships.json' assert { type: 'json' };
 
 import publications from './data/publications.json' assert { type: 'json' };
+import publications_openAlex from './data/publications_open-alex.json' assert { type: 'json' };
 import doctoralTheses from './data/doctoralTheses.json' assert { type: 'json' };
 import masterTheses from './data/masterTheses.json' assert { type: 'json' };
 
@@ -45,16 +46,16 @@ import neutronFlux from './data/neutronFlux.json' assert { type: 'json' };
 import projectFunding from './data/projektfoerderung_pt-desy.2-aggregated.accelerator_related_projects_per_year.json' assert { type: 'json' };
 import excellenceRate from './data/excellence-rate.json' assert { type: 'json' };
 
+const nobelPrizes = Array.from(
+  groups(Object.values(_nobelPrizes), ({ year }) => year),
+).map(([y, v]) => ({ year: y, value: v.length }));
+
 const particleDiscoveries = Array.from(
-  group(_particleDiscoveries, ({ year }) => year),
+  group(Object.values(_particleDiscoveries), ({ year }) => year),
 ).map(([y, v]) => ({
   year: y,
   value: v.length,
 }));
-const nobelPrizes = Array.from(group(_nobelPrizes, ({ year }) => year)).map(
-  ([y, v]) => ({ year: y, value: v.length }),
-);
-
 // .map((v, k) => {year: +k, value: v.length})
 
 const projectFundingProjectsCount = projectFunding.data.map((entry) => ({
@@ -66,7 +67,7 @@ const projectFundingAmount = projectFunding.data.map((entry) => ({
   value: entry.funding_amount__sum,
 }));
 
-const germanExcellenceRate = excellenceRate.map((entry) => ({
+const germanExcellenceRate = Object.values(excellenceRate).map((entry) => ({
   year: entry.yearEnd,
   value: entry['ten percent most cited with affiliation from Germany share'],
 }));
@@ -83,7 +84,7 @@ export default {
     yDomain: [0, 5000],
     scale: 'linear',
     cumulate: false,
-    data: nuclideDiscoveriesPerYear.map(({ year, sum }) => ({
+    data: Object.values(nuclideDiscoveriesPerYear).map(({ year, sum }) => ({
       year,
       value: sum,
     })),
@@ -105,10 +106,12 @@ export default {
     yDomain: [0, 100000],
     scale: 'linear',
     cumulate: false,
-    data: pdbEntries.map(({ year, count__acceleratorBasedXcd }) => ({
-      year,
-      value: count__acceleratorBasedXcd,
-    })),
+    data: Object.values(pdbEntries).map(
+      ({ year, count__acceleratorBasedXcd }) => ({
+        year,
+        value: count__acceleratorBasedXcd,
+      }),
+    ),
     quantityName: 'Bio-Moleküle',
     quantityNameQualifier: '',
     unit: 'an Beschleuniger-Lichtquellen entschlüsselt',
@@ -119,9 +122,9 @@ export default {
     scale: 'linear',
     cumulate: true,
     data: nobelPrizes,
-    quantityName: 'Nobelpreise',
+    quantityName: 'Nobelpreise mit Beschleunigerbezug',
     quantityNameQualifier: '',
-    unit: 'mit Beschleunigerbezug (kumuliert)',
+
     curveGenerator: curveStepAfter,
   },
 
@@ -129,57 +132,53 @@ export default {
     yDomain: [0, 25000],
     scale: 'linear',
     cumulate: false,
-    data: acceleratorsInUse.map(({ year, medicine__count }) => ({
+    data: Object.values(acceleratorsInUse).map(({ year, medicine__count }) => ({
       year,
       value: medicine__count,
     })),
-    quantityName: 'Beschleuniger',
-    quantityNameQualifier: 'Medizische ',
-    unit: 'kumulierte Anzahl',
+    quantityName: 'Beschleuniger in der Medizin',
+
+    // unit: 'kumulierte Anzahl',
   },
   accelerators_in_use__industry: {
     yDomain: [0, 25000],
     scale: 'linear',
     cumulate: false,
-    data: acceleratorsInUse.map(({ year, industry__count }) => ({
+    data: Object.values(acceleratorsInUse).map(({ year, industry__count }) => ({
       year,
       value: industry__count,
     })),
-    quantityName: 'Beschleuniger',
-    quantityNameQualifier: 'Industrie-',
-    unit: 'kumulierte Anzahl',
+    quantityName: 'Beschleuniger in der Industrie',
   },
   accelerators_in_use__science: {
     yDomain: [0, 25000],
     scale: 'linear',
     cumulate: false,
-    data: acceleratorsInUse.map(({ year, science__count }) => ({
+    data: Object.values(acceleratorsInUse).map(({ year, science__count }) => ({
       year,
       value: science__count,
     })),
-    quantityName: 'Beschleuniger',
-    quantityNameQualifier: 'Wissenschafts',
-    unit: 'kumulierte Anzahl',
+    quantityName: 'Beschleuniger für die Wissenschaft',
+
+    // unit: 'kumulierte Anzahl',
   },
   progress__conferences: {
     yDomain: [0, 250],
     scale: 'linear',
     cumulate: true,
-    data: rollups(
-      conferences,
-      (d) => d.length,
-      (d) => d.year,
-    ).map((d) => ({ year: d[0], value: d[1] })),
+    data: groups(Object.values(conferences), (d) => d.year)
+      .map((d) => ({ year: d[0], value: d[1].length }))
+      .sort((d, e) => d.year - e.year),
     quantityName: 'Konferenzen',
     quantityNameQualifier: 'Internationale ',
-    unit: 'pro Jahr',
+    unit: 'kumuliert Jahr',
     curveGenerator: curveStepAfter,
   },
   progress__doctoral_theses: {
     yDomain: [0, 250],
     scale: 'linear',
     cumulate: true,
-    data: doctoralTheses,
+    data: Object.values(doctoralTheses),
     quantityName: 'Dissertationen',
     quantityNameQualifier: ' ',
     unit: 'pro Jahr',
@@ -189,7 +188,7 @@ export default {
     yDomain: [0, 250],
     scale: 'linear',
     cumulate: true,
-    data: masterTheses,
+    data: Object.values(masterTheses),
     quantityName: 'Masterarbeiten',
     quantityNameQualifier: ' ',
     unit: 'pro Jahr',
@@ -199,7 +198,7 @@ export default {
     scale: 'linear',
     yDomain: [0, 50],
     cumulate: true,
-    data: professorships,
+    data: Object.values(professorships),
     quantityName: 'Professuren',
     quantityNameQualifier: 'Einschlägige ',
     unit: 'an deutschen Universitäten (kumuliert)',
@@ -207,9 +206,11 @@ export default {
   },
   progress__publications: {
     scale: 'linear',
-    yDomain: [0, 5000],
+    yDomain: [0, 250000],
     cumulate: true,
-    data: publications,
+    data: Object.values(publications_openAlex).sort((a, b) => {
+      return a.year - b.year;
+    }),
     quantityName: 'Veröffentlichungen',
     quantityNameQualifier: 'Akademenische ',
     unit: 'in Physics Review Accelerators and Beams pro Jahr',
@@ -329,7 +330,7 @@ export default {
     scale: 'log',
     y0: 0,
     yFactor: 10,
-    data: peakLuminosity.map((d) => ({
+    data: Object.values(peakLuminosity).map((d) => ({
       ...d,
       value: d.value / 1e30,
     })),
@@ -352,7 +353,7 @@ export default {
     scale: 'log',
     y0: 0,
     yFactor: 50,
-    data: peakBrilliance
+    data: Object.values(peakBrilliance)
       // .slice(1, -1)
       .map((d) => ({ ...d, value: d.value / 1 })),
     quantityName: 'Brillianz',

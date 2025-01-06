@@ -1,25 +1,20 @@
-import { getCollection, type CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 import { type HierarchyNode, stratify } from 'd3-hierarchy';
 
 const sortByPath = (
   s1: CollectionEntry<'sections'>,
   s2: CollectionEntry<'sections'>,
-) => getSlug(s1).localeCompare(getSlug(s2));
-
-export function getSlug(section: CollectionEntry<'sections'>) {
-  // if (!section?.slug) return;
-
-  let slug = section.id.replace(/\.mdx?/, '/');
-
-  return slug;
-}
+) => s1.id.localeCompare(s2.id);
 
 export function getPath(section: CollectionEntry<'sections'>) {
-  return '/' + getSlug(section);
+  return '/' + section.id + '/';
 }
 
 export async function getSections() {
-  const sections = await getCollection('sections');
+  const sections = (await getCollection(
+    'sections',
+  )) as CollectionEntry<'sections'>[];
   sections.sort(sortByPath);
   return sections;
 }
@@ -28,8 +23,10 @@ export async function getPrevNext(currentPath = '') {
   const sections = await getSections();
 
   const currentSectionIndex = sections.findIndex(
-    (section) => getPath(section) === currentPath,
+    (section) => section.id === currentPath,
   );
+
+  // console.log({ currentPath, currentSectionIndex });
 
   let prevSectionIndex = currentSectionIndex - 1;
 
@@ -51,6 +48,12 @@ export async function getPrevNext(currentPath = '') {
 
   if (nextSectionIndex === sections.length) nextSectionIndex = 0;
 
+  // console.log({
+  //   home: sections.find((s) => !s.data.excludeFromTour),
+  //   prev: sections[prevSectionIndex],
+  //   current: sections[currentSectionIndex],
+  //   next: sections[nextSectionIndex],
+  // });
   return {
     home: sections.find((s) => !s.data.excludeFromTour),
     prev: sections[prevSectionIndex],

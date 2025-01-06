@@ -1,5 +1,4 @@
 ---
-path: /01/forschungsagenda/schwerpunkte/steuerung
 supertitle: Forschungsschwerpunkt
 title: Messung und Steuerung
 sectionNumber: C.4.g

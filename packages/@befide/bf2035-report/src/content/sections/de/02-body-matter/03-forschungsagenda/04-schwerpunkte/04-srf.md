@@ -1,5 +1,4 @@
 ---
-path: /01/forschungsagenda/schwerpunkte/srf
 supertitle: Forschungsschwerpunkt
 title: Supraleitende Hohlraumtechnologie
 title__toc: Hohlraumtechnologie

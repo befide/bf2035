@@ -16,7 +16,7 @@ import { PrimeVueResolver } from '@primevue/auto-import-resolver';
 export default defineConfig({
   site:
     process.env.NODE_ENV === 'production'
-      ? 'https://bf2035-meta.netlify.app'
+      ? 'https://bf2035meta.netlify.app'
       : '',
   vite: {
     ssr: {

@@ -1,0 +1,36 @@
+<label class="toggle">
+  <span class="label-text">Farbschmema</span>
+  <select id="toggle__theme">
+    <option value="system">System</option>
+    <option value="dark">Dark</option>
+    <option value="light">Light</option>
+  </select>
+</label>
+
+<script>
+  import { updateDocumentSettings, toggleTheme } from '@utils/settingsStore.js';
+
+  updateDocumentSettings.theme();
+  document.addEventListener('astro:after-swap', updateDocumentSettings.theme);
+
+  document
+    .getElementById('toggle__theme')
+    ?.addEventListener('change', toggleTheme);
+
+  document.addEventListener('keyup', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyT') {
+      const value = toggleTheme();
+      (document.getElementById('toggle__theme') as HTMLInputElement).value =
+        value;
+    }
+  });
+</script>
+
+<style is:global>
+  :global([data-theme='dark']) {
+    color-scheme: dark;
+  }
+  :global([data-theme='light']) {
+    color-scheme: light;
+  }
+</style>

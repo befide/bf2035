@@ -1,5 +1,4 @@
 ---
-path: /01/forschungsagenda/schwerpunkte/energiewende
 supertitle: Forschungsschwerpunkt
 title: Energiewende/Nachhaltigkeit
 sectionType: spread

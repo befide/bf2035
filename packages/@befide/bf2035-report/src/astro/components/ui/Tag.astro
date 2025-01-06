@@ -1,0 +1,52 @@
+---
+
+export type Props = {
+  tag: string;
+};
+
+const { tag } = Astro.props;
+
+const tagParts = tag.split('/');
+
+const tagType = tagParts[0].startsWith('bf2035:')
+  ? tagParts[0].substring(7)
+  : undefined;
+const tagValue = tagParts.slice(1).join('/');
+
+// console.log({tagParts, firstPart: tagParts[0], tag, type: tagType, tagValue});
+---
+
+<span class="tag">
+  <span class="tag-type">{tagType}</span><span class="tag-value"
+    >{tagValue}</span
+  >
+</span>
+
+<style>
+  .tag-type,
+  .tag-value {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    color: #666;
+    padding: 1px;
+    font-size: var(--font-size--body-xs);
+  }
+  .tag-type {
+    background-color: #666;
+    font-variant: small-caps;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-left: 6px;
+    text-align: center;
+    color: white;
+  }
+  .tag-value {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: 0;
+    padding-left: 4px;
+    padding-right: 6px;
+    background-color: #cccccc;
+    color: black;
+  }
+</style>

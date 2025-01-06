@@ -1,0 +1,31 @@
+<label class="toggle">
+  <span class="label-text">Fit screen</span>
+  <input id="toggle__fit_spread" type="checkbox" role="switch" />
+  <span class="state">
+    <span class="on" aria-hidden="true">On</span>
+    <span class="off" aria-hidden="true">Off</span>
+  </span>
+</label>
+
+<script>
+  import {
+    updateDocumentSettings,
+    toggleFitSpread,
+  } from '@utils/settingsStore.js';
+
+  updateDocumentSettings.fitSpread();
+  document.addEventListener(
+    'astro:after-swap',
+    updateDocumentSettings.fitSpread,
+  );
+
+  document
+    .getElementById('toggle__fit_spread')
+    ?.addEventListener('click', toggleFitSpread);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.shiftKey && e.code === 'KeyF') {
+      document.getElementById('toggle__fit_spread')?.click();
+    }
+  });
+</script>

@@ -2,8 +2,6 @@
 import { pwaInfo } from 'virtual:pwa-info';
 import { Head } from 'astro-capo';
 
-import { ViewTransitions } from 'astro:transitions';
-
 import { SITE } from '../../config';
 
 import '../styles/index.styl';
@@ -35,6 +33,9 @@ const canonicalURL = Astro.site
 <!doctype html>
 <html {lang} {title}>
   <Head>
+    <script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+    <script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
+
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/appicon.svg" sizes="any" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
@@ -52,7 +53,6 @@ const canonicalURL = Astro.site
 
     {pwaInfo && <>{pwaInfo.webManifest.linkTag}</>}
     <script src="/src/pwa.ts"></script>
-    <ViewTransitions />
   </Head>
   <body>
     <slot />

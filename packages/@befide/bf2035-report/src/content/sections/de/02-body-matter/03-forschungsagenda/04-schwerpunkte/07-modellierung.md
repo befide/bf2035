@@ -1,5 +1,4 @@
 ---
-path: /01/forschungsagenda/schwerpunkte/modellierung
 supertitle: Forschungsschwerpunkt
 title: Strahlmodellierung
 title__toc: Strahlmodellierung
