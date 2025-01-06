@@ -1,0 +1,362 @@
+---
+// import affiliations from "./../organisations.json";
+
+// import { geoMercator, geoPath } from "d3-geo";
+
+// import bundeslaender from "./bundeslaender.geo.json";
+import fis from './fis.json';
+
+const baselineHeight = 14;
+const widthInGridUnits = 4;
+const heightInGridUnits = 4;
+
+const radius = baselineHeight / 2;
+
+const unit_space = 14 / 2;
+const swapxy = false;
+
+function gridUnits2BaselineCount(gridUnits: number) {
+  return gridUnits * 3 + gridUnits - 1;
+}
+
+const height = gridUnits2BaselineCount(heightInGridUnits + 0) * baselineHeight;
+
+const width = gridUnits2BaselineCount(widthInGridUnits + 0) * baselineHeight;
+
+//const tf = `matrix(${unit_space},0,${unit_space*0.5},${-unit_space*0.5*Math.sqrt(3)},0,0)`;
+//const itf = `matrix(${1/unit_space},0,${1/(unit_space*Math.sqrt(3))},${-1/(unit_space*0.5*Math.sqrt(3))},0,0)`;
+
+type Coordinate = [number, number];
+
+const corners = [
+  [1, 1],
+  [-1, 2],
+  [-2, 1],
+  [-1, -1],
+  [1, -2],
+  [2, -1],
+] as Coordinate[];
+//const corners = [[2,1], [1,2], [-1,1], [-2,-1], [-1,-2], [1,-1]];
+
+//const nx = Math.ceil(width/unit_space);
+//const ny = Math.ceil(height/(unit_space*0.5*Math.sqrt(3)));
+
+function cc2xy(cc: Coordinate): Coordinate {
+  const x = unit_space * (cc[0] + 0.5 * cc[1]);
+  const y = unit_space * (-0.5 * Math.sqrt(3) * cc[1]);
+  return swapxy ? [-y, -x] : [x, y];
+}
+
+const visible_cc = [];
+// for (
+//   let x = Math.floor(-1 / (2 * unit_space));
+//   x <= Math.ceil(width / (2 * unit_space));
+//   x++
+// )
+//   for (
+//     let y = Math.floor(-1 / (unit_space * Math.sqrt(3)));
+//     y <= Math.ceil(height / (unit_space * Math.sqrt(3)));
+//     y++
+//   )
+//     visible_cc.push([x - Math.floor(y / 2), y, -y - x + Math.floor(y / 2)]);
+for (let x = -10; x <= 10; x++)
+  for (let y = -10; y <= 10; y++)
+    visible_cc.push([x - Math.floor(y / 2), y, -y - x + Math.floor(y / 2)]);
+
+// function text_trans(cornr) {
+//   const xy = corners[cornr];
+//   return `translate(${xy[0]*0.2},${xy[1]*0.2})`;
+// }
+
+// const gridpoint = svg
+//   .append("g")
+//   //.attr("transform",tf)
+//   .selectAll("g")
+//   .data(visible_cc)
+//   .join("g")
+//   .attr("transform", translate_cc);
+
+// const gridpoint_top = svg
+//   .append("g")
+//   //.attr("transform",tf)
+//   .selectAll("g")
+//   .data(visible_cc)
+//   .join("g")
+//   .attr("transform", translate_cc);
+
+// function corner_text(cornr, scale) {
+//   const scale_c = (x) => (x * (scale || 0.5)) / 3;
+//   const ccc = corners[cornr];
+
+//   return (
+//     gridpoint_top
+//       .append("g")
+//       .attr("transform", translate_cc(ccc.map(scale_c)))
+//       .append("text")
+//       //.attr("transform",itf)
+//       .style("dominant-baseline", "middle")
+//       .attr("text-anchor", "middle")
+//       .style("font-family", "sans-serif")
+//       .style("font-size", "10pt")
+//   );
+// }
+
+// function center_text() {
+//   return (
+//     gridpoint
+//       .append("text")
+//       //     .attr("transform",itf)
+//       .attr("text-anchor", "middle")
+//       .style("dominant-baseline", "middle")
+//       .style("font-family", "sans-serif")
+//       .style("font-size", "10pt")
+//   );
+// }
+
+// function hexagon(scale) {
+//   const scale_c = (x) => (x * (scale || 1)) / 3;
+//   const translate_corner = (cc) => cc2xy(cc.map(scale_c));
+//   const hexaline = d3.line()(corners.map(translate_corner)) + "Z";
+//   return gridpoint.append("path").attr("d", hexaline);
+// }
+
+// function hexaside(nr, scale) {
+//   const scale_c = (x) => (x * (scale || 1)) / 3;
+//   const translate_corner = (cc) =x^x  > cc2xy(cc.map(scale_c));
+//   const sideline = d3.line()(
+//     [corners[my.mod(nr - 1, 6)], corners[nr]].map(translate_corner)
+//   );
+//   return gridpoint_top.append("path").attr("d", sideline);
+// }
+
+// function at(cc) {
+//   return svg.append("g").attr("transform", translate_cc(cc));
+// }
+// function gp_at(cc) {
+//   return gridpoint.append("g").attr("transform", translate_cc(cc));
+// }
+
+// const projection = geoMercator().fitExtent(
+//   [
+//     [1 * baselineHeight, 2 * baselineHeight],
+//     [width - 1 * baselineHeight, height - 2 * baselineHeight],
+//   ],
+//   bundeslaender
+// );
+
+// // .scale(300) //.scale(width / 2.5 / Math.PI)
+// //                 .rotate([0, 0])
+// //                 .center([0, 0])
+// //                 .translate([-width / 5, -height / 20]);
+
+// const path = geoPath(projection)
+// const hexgridMaker = hexgrid()
+//   .extent([width, height])
+//   .geography(bundeslaender)
+//   .projection(projection)
+//   .pathGenerator(geoPath().projection(projection))
+//   .hexRadius(radius);
+
+const facilities = Object.values(fis)
+  .filter((d) => d.acceleratorDriven === 'checked')
+  .map(({ lat, lng, name, erumField }) => {
+    return {
+      lat: +lat,
+      lng: +lng,
+      label: name,
+      type: 'facility',
+      subtype: erumField,
+      x: 0,
+      y: 0,
+    };
+  });
+
+// debugger
+
+// const hexgridAffiliations = hexgridMaker(data, ["label", "type", "subtype"]);
+
+// const textPaddingX = 2;
+// const textMarginX = baselineHeight / 2;
+
+// const datapoints = hexgridAffiliations.grid.layout.filter(
+//   (d) => d.datapoints > 0
+// );
+// console.log(datapoints);
+
+// const bboxes = {};
+// svg
+//   .selectAll(".label")
+//   .data(data)
+//   .join("text")
+//   .classed("label", true)
+//   .attr("x", -100)
+//   // .attr('y', d => d.y)
+//   .text((d) => d.label);
+
+// svg
+//   .selectAll(".label")
+//   .join(data)
+//   .each(function (d) {
+//     // eslint-disable-next-line @typescript-eslint/no-invalid-this
+//     bboxes[d.label] = this.getBBox();
+//   });
+
+// const groups = svg
+//   .select(".grid")
+//   .selectAll(".hex")
+//   .data(hexgridAffiliations.grid.layout)
+//   .enter()
+//   .append("g")
+//   .attr("class", "hex")
+//   .attr("transform", (d) => `translate(${d.x} ${d.y})`);
+
+// groups
+//   .append("path")
+//   .attr("class", "hex")
+//   .attr("d", hexgridAffiliations.hexagon(radius))
+//   .style("fill", (d) => (!d.datapoints ? "#eeeeee" : "#999999"))
+//   .style("stroke", "white")
+//   .style("stroke-width", 2);
+
+// const datapoints = hexgridAffiliations.grid.layout.filter(
+//   (d) => d.datapoints > 0
+// );
+
+// const labelGroups = svg
+//   .select(".label-groups")
+//   .selectAll(".label-group")
+//   .data(datapoints)
+//   .join("g")
+//   .classed("label-group", true)
+//   .attr("transform", (d) => `translate(${d.x} ${d.y})`);
+
+// labelGroups
+//   .selectAll(".label.organisation")
+//   .data((d) =>
+//     d.filter((d) => d.type === "organisation").map((d, i) => ({ ...d, i }))
+//   )
+//   .join("g")
+//   .classed("label", true)
+//   .classed("organisation", true)
+//   .classed(
+//     "non-university",
+//     (d) => d.subtype === "non-university research institution"
+//   )
+//   .classed("university", (d) => d.subtype === "university")
+//   .attr("transform", (d, _) => `translate(0 ${d.i * radius})`)
+//   .attr("text-anchor", "end");
+
+// labelGroups
+//   .selectAll(".label.organisation")
+//   .append("rect")
+//   .attr("x", (d) => -textMarginX - bboxes[d.label].width)
+//   .attr("y", -rectHeight / 2)
+//   .attr("width", (d) => bboxes[d.label].width + textPaddingX)
+//   .attr("height", () => rectHeight - 1);
+
+// labelGroups
+//   .selectAll(".label.organisation")
+//   .append("text")
+//   .text(({ label }) => `${label}`)
+//   .attr("x", -textMarginX - textPaddingX)
+//   .attr("dy", 6);
+
+// const labelGroups2 = svg
+//   .select(".label-groups")
+//   .selectAll(".label-group")
+//   .data(datapoints)
+//   .join("g")
+//   .classed("label-group", true)
+//   .attr("transform", (d) => `translate(${d.x} ${d.y})`);
+
+// labelGroups2
+//   .selectAll(".label.facility")
+//   .data((d) =>
+//     d.filter((d) => d.type === "facility").map((d, i) => ({ ...d, i }))
+//   )
+//   .join("g")
+//   .classed("label", true)
+//   .classed("facility", true)
+//   .attr("transform", (d, _) => `translate(0 ${d.i * radius})`)
+//   .attr("text-anchor", "start");
+
+// labelGroups2
+//   .selectAll(".label.facility")
+//   .append("rect")
+//   .attr("x", textMarginX)
+//   .attr("y", -rectHeight / 2)
+//   .attr("width", (d) => bboxes[d.label].width + textPaddingX)
+//   .attr("height", rectHeight - 1);
+
+// labelGroups2
+//   .selectAll(".label.facility")
+//   .append("text")
+//   .text(({ label }) => `${label}`)
+//   .attr("x", textMarginX - textPaddingX)
+//   .attr("dy", 6);
+
+// labelGroups
+//   .selectAll('.label.facility')
+//   .data(d =>
+//     d.filter(d => d.type === 'facility').map((d, i) => ({ ...d, i })),
+//   )
+//   .join('g')
+//   .classed('label', true)
+//   .classed('right', true)
+//   .classed('facility', true)
+//   .attr('transform', (d, i) => `translate(0 ${d.i * radius})`)
+
+// labelGroups.selectAll('.label.facility')
+//   .append('rect')
+//   .attr('x', d => textMarginX)
+//   .attr('y', -rectHeight / 2)
+//   .attr('width', d => bboxes[d.label].width + 0 * textPaddingX)
+//   .attr('height', d => rectHeight - 1)
+
+// labelGroups
+//   .selectAll('.label.facility')
+//   .append('text')
+//   .text(({ label }) => label)
+//   .attr('x', textMarginX + 1 * textPaddingX)
+//   .attr('dy', 1)
+
+//     rxenderingCompleted = true;
+//   });
+// });
+
+const containerStyle = {
+  width: width + 'px',
+  height: height + 'px',
+};
+
+// const scale = .9;
+// const scale_c = (xy: Coordinate) => [(xy[0] * (scale || 1)) / 3, (xy[1] * (scale || 1)) / 3];
+// const translate_corner = (cc: Coordinate) => cc2xy(scale_c(cc));
+---
+
+<div
+  class="chart-container chart-container--community-map"
+  style={containerStyle}
+>
+  <svg
+    width={width}
+    height={height}
+    viewBox={[(-width * 0) / 2, (-height * 0) / 2, width, height].join(' ')}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g class="grid">
+      {
+        // <path d={path(bundeslaender)} stroke="black" fill="none" fill-opacity="0.5" stroke-opacity="0.2"/>
+      }
+      <!-- {
+        visible_cc.map((d) => (
+          <g transform={translate_cc(d)}>
+            <path d={hexaline} fill="red" fill-opacity="0.5" stroke-opacity="0.8"/>
+          </g>
+        ))
+      } -->
+    </g>
+  </svg>
+</div>
+
+<style is:global></style>

@@ -1,0 +1,62 @@
+---
+title: Methods
+---
+
+```d2
+s1: Analysis {
+  A: Stakeholder analysis
+  PC: Persona creation
+  A -> PC
+}
+
+s2: Content Planning {
+  LS: Literature survey
+  LS -> SD
+  SD: Scope definition
+  TC: Taxonomy creation
+  SD -> TC
+  SD -> ID
+  SD -> MD
+  ID: Issue definition
+  MD: Message definition
+  SA: SWOT analyses
+  CM: Causal mapping
+  ID -> SA
+  ID -> CM
+}
+
+s3: Content Creation {
+    CC: Copy creation
+    L: Layout
+}
+
+s4: Community Engagement & Approval {
+  CI: Community inventory
+  CS: Community survey
+}
+
+D: Deliverables {
+  SR: Strategy Report
+  SR.shape: page
+  CMD: Causal Maps
+  CMD.shape: page
+  PCD: Progress Charts
+  PCD.shape: page
+  CP: Copy
+  CP.shape: page
+
+  CMD --> SR
+  PCD --> SR
+  CP --> SR
+}
+
+
+s2.CM --> D.CMD
+s3.CC -->  D.CP
+s3.L --> D.SR
+
+s1 -> s2
+s2 -> s3
+s3 -> s4
+
+```
