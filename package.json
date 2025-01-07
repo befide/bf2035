@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "prettier-package-json": "2.8.0",
+    "@prettier/plugin-xml": "3.4.1",
     "enquirer": "2.4.1"
   },
   "packageManager": "pnpm@9.15.2"

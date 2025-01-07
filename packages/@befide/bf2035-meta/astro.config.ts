@@ -3,7 +3,10 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import vue from '@astrojs/vue';
 import astroD2 from 'astro-d2';
+import type { ManifestOptions } from 'vite-plugin-pwa';
+import manifest from './webmanifest.json';
 import AstroPWA from '@vite-pwa/astro';
+
 import { purgecss } from '@zokki/astro-purgecss';
 
 import tailwind from '@astrojs/tailwind';
@@ -43,12 +46,12 @@ export default defineConfig({
       title: 'BF2035 Meta',
       disable404Route: true,
 
-      customCss: [
-        // Fontsource files for to regular and semi-bold font weights.
-        '@fontsource/barlow-semi-condensed/400.css',
-        '@fontsource/barlow-condensed/400.css',
-        './src/tailwind.css'
-      ],
+      components: {
+        Head: './src/components/Head.astro',
+        Search: './src/components/Search.astro'
+      },
+
+      customCss: ['./src/tailwind.css'],
       // Path to your Tailwind base styles:
 
       plugins: [
@@ -119,31 +122,23 @@ export default defineConfig({
       // Disable the default base styles:
       applyBaseStyles: false
     }),
-    purgecss(),
+    // purgecss(),
     AstroPWA({
-      base: '/',
-
-      injectRegister: 'script-defer',
-      includeAssets: ['favicon.svg'],
-      registerType: 'autoUpdate',
-      manifest: {
-        name: 'BF2035 Meta',
-        short_name: 'BF2035 Meta',
-        theme_color: '#ffffff',
-        lang: 'en'
-      },
-      pwaAssets: {
-        config: true
-      },
       workbox: {
-        navigateFallback: '/',
-        globPatterns: ['**/*.{css,js,html,svg,png,ico,txt}'],
-        maximumFileSizeToCacheInBytes: 30000000000
+        skipWaiting: true,
+        clientsClaim: true,
+        navigateFallback: '/404',
+        ignoreURLParametersMatching: [/./],
+        globPatterns: [
+          '**/*.{html,js,css,png,svg,json,ttf,pf_fragment,pf_index,pf_meta,pagefind,wasm}'
+        ]
       },
-      devOptions: {
-        enabled: false,
-        navigateFallbackAllowlist: [/^\//]
-      }
+      experimental: {
+        directoryAndTrailingSlashHandler: true
+      },
+      mode: 'production',
+      registerType: 'autoUpdate',
+      manifest: manifest as Partial<ManifestOptions>
     })
   ]
 });
