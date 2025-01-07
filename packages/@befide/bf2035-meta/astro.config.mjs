@@ -17,7 +17,7 @@ export default defineConfig({
   site:
     process.env.NODE_ENV === 'production'
       ? 'https://bf2035meta.netlify.app'
-      : '',
+      : undefined,
   vite: {
     ssr: {
       noExternal: []
@@ -34,7 +34,9 @@ export default defineConfig({
     remarkPlugins: []
   },
   integrations: [
-    astroD2(),
+    ...(process.env.NODE_ENV === 'production'
+      ? []
+      : [astroD2({ inline: true })]),
     tailwind(),
     vue({ appEntrypoint: '/src/main', devtools: true }),
     starlight({

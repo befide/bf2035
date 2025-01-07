@@ -1,62 +1,86 @@
 ---
-title: Methods
+title: Methodology
 ---
 
-```d2
-s1: Analysis {
-  A: Stakeholder analysis
-  PC: Persona creation
-  A -> PC
-}
+![](/d2/docs/project/methodology/index-0.svg)
 
-s2: Content Planning {
-  LS: Literature survey
-  LS -> SD
-  SD: Scope definition
-  TC: Taxonomy creation
-  SD -> TC
-  SD -> ID
-  SD -> MD
-  ID: Issue definition
-  MD: Message definition
-  SA: SWOT analyses
-  CM: Causal mapping
-  ID -> SA
-  ID -> CM
-}
+```d layout=elk theme=301 darkTheme=301
 
-s3: Content Creation {
+s: Process {
+  label.near: outside-top-left
+
+  s1: Analysis and Planning {
+    label.near: outside-top-left
+    A: Stakeholder analysis
+    PC: Persona creation
+    A -> PC
+    LS: Literature survey
+    LS -> SD
+    SD: Scope definition
+    SD -> ID
+    SD -> MD
+    ID: Strategic issues definition
+    MD: Messages definition
+    SA: SWOT analyses
+
+    L: Layout concept
+
+    ID -> SA
+  }
+
+  s2: Data Collection and Content Creation {
+    label.near: outside-top-left
+    TC: Taxonomy compilation
+    PD: Progress data compilation
+    CD: Community data compilation
+    FD: Facility data compilation
+    CI: Teaching data compilation
+    CM: Causal mapping
     CC: Copy creation
-    L: Layout
-}
+  }
 
-s4: Community Engagement & Approval {
-  CI: Community inventory
-  CS: Community survey
+  s3: Community Engagement & Approval {
+    label.near: outside-top-left
+    CIR: Community inventory review
+    CS: Community survey
+  }
 }
 
 D: Deliverables {
-  SR: Strategy Report
-  SR.shape: page
-  CMD: Causal Maps
-  CMD.shape: page
-  PCD: Progress Charts
-  PCD.shape: page
-  CP: Copy
-  CP.shape: page
+  label.near: outside-top-left
+  P: Personas
+  SR: Strategy Report {
+    direction: right
 
-  CMD --> SR
-  PCD --> SR
-  CP --> SR
+    INDEX: Index
+
+    PC: Progress Charts
+    PC.shape: page
+
+    FM: Facility models
+    FM.shape: page
+
+    CMD: Causal Maps
+    CMD.shape: page
+
+    CP: Copy
+    CP.shape: page
+  }
+  SR.shape: page
 }
 
+s.s2.CM -> D.SR.CMD
+s.s2.CC -> D.SR.CP
+s.s1.L -> D.SR
+s.s2.PD -> D.SR.PC
 
-s2.CM --> D.CMD
-s3.CC -->  D.CP
-s3.L --> D.SR
+s.s2.TC -> D.SR.INDEX
 
-s1 -> s2
-s2 -> s3
-s3 -> s4
+s.s1 -> s.s2
+s.s2 -> s.s3
+s.s1.PC -> D.P
+
+s.s2.FD -> D.SR.FM
+
 
 ```
