@@ -646,3 +646,6 @@ packages/@befide/bf2035-community-inventory/09 meta/facility.md
 packages/@befide/bf2035-community-inventory/09 meta/organization.md
 packages/@befide/bf2035-community-inventory/09 meta/program-of-study.md
 .DS_Store
+
+# Local Netlify folder
+.netlify
