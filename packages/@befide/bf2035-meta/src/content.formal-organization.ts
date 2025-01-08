@@ -10,6 +10,11 @@ import { z } from 'zod';
 
 import { useTranslations } from './i18n/utils';
 const LocalizedString = z.object({ de: z.string(), en: z.string() });
+const NullableLocalizedString = z.object({
+  de: z.string().nullable().optional(),
+  en: z.string().nullable().optional()
+});
+
 const deTranslation = useTranslations('de');
 const enTranslation = useTranslations('en');
 
@@ -30,21 +35,25 @@ export const BefideOrganizationMetaOrganizationalLevel = z.enum([
   '05 working group'
 ]);
 
-export const BefideOrganizationMetaBefideOrganizationCategories = z.enum([
-  'fraunhofer',
-  'hgf',
-  'international',
-  'mpg',
-  'national',
-  'university',
-  'committee'
-]);
+export const BefideOrganizationMetaBefideOrganizationCategories = z
+  .enum([
+    'fraunhofer',
+    'hgf',
+    'international',
+    'mpg',
+    'national',
+    'university',
+    'committee',
+    'funder',
+    ''
+  ])
+  .optional();
 
-export const FormalOrganizationZodSchema = z.object({
+export const FormalOrganizationSchema = z.object({
   id: z.string(),
   meta: z.object({
     status: BefideOrganizationMetaStatus.optional(),
-    reviewedBy: z.null(),
+    reviewedBy: z.string().optional().nullable(),
     changelog: z.string().nullable().default(''),
     parentId: z.string().optional().nullable(),
     localId: z.string(),
@@ -56,10 +65,11 @@ export const FormalOrganizationZodSchema = z.object({
   }),
   isPartOfCommunity: z.boolean(),
   label: z.object({
-    shortForm: LocalizedString,
-    longForm: LocalizedString
+    fullName: LocalizedString,
+    abbreviatedName: LocalizedString,
+    acronym: NullableLocalizedString
   }),
-  description: z.object({ de: z.null() }),
+  description: NullableLocalizedString,
   links: z.object({
     homepage: z.object({ de: z.string(), en: z.string() }),
     rorId: z.string()
@@ -80,7 +90,7 @@ export const defineFormalOrganizationCollection = defineCollection({
   loader: () => {
     const input = fs
       .readFileSync(
-        path.join(DATA_PATH, 'befide.organizations.formal-organizations.csv')
+        path.join(DATA_PATH, 'organization.formal-organizations.csv')
       )
       .toString();
     const data = csv2json(input, {
@@ -98,9 +108,7 @@ export const defineFormalOrganizationCollection = defineCollection({
 
     return data;
   },
-  schema: FormalOrganizationZodSchema
+  schema: FormalOrganizationSchema
 });
 
-export type FormalOrganizationSchema = z.infer<
-  typeof FormalOrganizationZodSchema
->;
+export type FormalOrganization = z.infer<typeof FormalOrganizationSchema>;

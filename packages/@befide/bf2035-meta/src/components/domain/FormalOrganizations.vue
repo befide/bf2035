@@ -15,8 +15,12 @@
       <template #empty> No organizations found. </template>
       <template #loading> Loading organization data. Please wait. </template>
 
-      <Column header="Name" sortable field="data.label.longForm.en"> </Column>
-      <Column header="Short name" sortable field="data.label.shortForm.en">
+      <Column header="Name" sortable field="data.label.fullName.en"> </Column>
+      <Column
+        header="Short name"
+        sortable
+        field="data.label.abbreviatedName.en"
+      >
       </Column>
 
       <Column

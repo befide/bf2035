@@ -5,7 +5,7 @@
       dataKey="id"
       v-model:expandedKeys="expandedKeys"
       size="large"
-      sortField="data.labelShortFormDe"
+      sortField="data.fullName.en"
       :sortOrder="1"
     >
       <template #header>
@@ -22,17 +22,18 @@
           />
         </div>
       </template>
-
       <Column
-        field="data.labelShortFormDe"
+        field="data.fullName.en"
         sortable
         expander
         header="Label"
         class="font-bold"
         style="width: 40%"
       >
-        ></Column
-      >
+        <template #body="data">
+          {{ data.node.data.data.label.fullName.en }}
+        </template>
+      </Column>
 
       <Column
         field="descendantsCount"

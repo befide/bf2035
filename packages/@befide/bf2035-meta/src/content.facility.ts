@@ -12,11 +12,12 @@ import { useTranslations } from './i18n/utils';
 const deTranslation = useTranslations('de');
 const enTranslation = useTranslations('en');
 
-import { BefideOrganizationMetaStatus } from './content.formal-organization';
+import { BefideOrganizationMetaStatus as MetaStatus } from './content.formal-organization';
 const LocalizedString = z.object({
   de: z.string(),
   en: z.string()
 });
+
 const NullableLocalizedString = z.object({
   de: z.string().nullable().optional(),
   en: z.string().nullable().optional()
@@ -33,39 +34,39 @@ const peopleCount = z.object({
   other: peopleCountGender
 });
 
-export const workingGroupSchema = z.object({
+export const FacilitySchema = z.object({
   id: z.string(),
   meta: z.object({
-    status: BefideOrganizationMetaStatus.optional(),
-    reviewedBy: z.string().nullable().default(''),
-    changelog: z.string().nullable().default(''),
-    parentId: z.string().optional().nullable(),
-    localId: z.string()
+    status: MetaStatus,
+    reviewedBy: z.string().optional().nullable(),
+    changelog: z.string().nullable().default('')
   }),
-  partOf: reference('formalOrganizations'),
   label: z.object({
     fullName: LocalizedString,
-    abbreviatedName: NullableLocalizedString,
     acronym: NullableLocalizedString
   }),
-  description: NullableLocalizedString,
-  links: z.object({
+  definition: NullableLocalizedString,
+  isPartOf: reference('facilities').optional().nullable(),
+  isStageOf: reference('facilities').optional().nullable(),
+  acceleratorType: z.string().optional().nullable(),
+  facilityType: z.string().optional().nullable(),
+  facilityTypeParticles: z.string().optional().nullable(),
+  lifeCycle: z.string().optional().nullable(),
+  t0: z.number().optional().nullable(),
+  t1: z.number().optional().nullable(),
+  hasHost: z.string().optional().nullable(), //reference('formalOrganisations').optional().nullable(),
+  isBmbfFis: z.string().optional().nullable(),
+  primaryApplications: z.string().optional().nullable(),
+  secondaryApplications: z.string().optional().nullable(),
+  link: z.object({
     homepage: NullableLocalizedString
-  }),
-  peopleCount: z.object({
-    uniqueProfessors: peopleCount,
-    uniqueSeniorResearchers: peopleCount,
-    uniquePostDocs: peopleCount,
-    uniquePhdStudents: peopleCount,
-    uniqueMasterStudents: peopleCount,
-    uniqueBachelorStudents: peopleCount
   })
 });
 
-export const defineWorkingGroupsCollection = defineCollection({
+export const defineFacilityCollection = defineCollection({
   loader: () => {
     const input = fs
-      .readFileSync(path.join(DATA_PATH, 'organization.working-groups.csv'))
+      .readFileSync(path.join(DATA_PATH, 'facility.csv'))
       .toString();
     const data = csv2json(input, {
       nested: true
@@ -73,7 +74,7 @@ export const defineWorkingGroupsCollection = defineCollection({
     data.forEach((d: any) => {});
     return data;
   },
-  schema: workingGroupSchema
+  schema: FacilitySchema
 });
 
-export type WorkingGroup = z.infer<typeof workingGroupSchema>;
+export type Facility = z.infer<typeof FacilitySchema>;

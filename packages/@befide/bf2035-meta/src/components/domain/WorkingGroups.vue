@@ -103,11 +103,11 @@
       <Column
         header="Name"
         sortable
-        field="data.label.longForm.en"
+        field="data.label.fullName.en"
         style="width: 25%; white-space: nowrap"
       >
         <template #body="data"
-          ><span>{{ data.data.data.label.longForm.en }}</span>
+          ><span>{{ data.data.data.label.fullName.en }}</span>
         </template>
       </Column>
 
