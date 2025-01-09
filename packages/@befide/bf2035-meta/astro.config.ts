@@ -106,7 +106,7 @@ export default defineConfig({
               },
               {
                 label: 'Teaching',
-                items: ['data/teaching/courses']
+                items: ['data/teaching/courses', 'data/teaching/theses']
               }
             ]
           }

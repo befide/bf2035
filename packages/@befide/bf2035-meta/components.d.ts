@@ -30,6 +30,7 @@ declare module 'vue' {
     Tag: typeof import('primevue/tag')['default']
     Taxonomy: typeof import('./src/components/domain/Taxonomy.vue')['default']
     TaxonomyTree: typeof import('./src/components/domain/TaxonomyTree.vue')['default']
+    Theses: typeof import('./src/components/domain/Theses.vue')['default']
     Toolbar: typeof import('primevue/toolbar')['default']
     TreeTable: typeof import('primevue/treetable')['default']
     WorkingGroups: typeof import('./src/components/domain/WorkingGroups.vue')['default']
