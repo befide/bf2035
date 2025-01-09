@@ -8,9 +8,6 @@ import { csv2json } from 'csv42';
 import { defineCollection, reference } from 'astro:content';
 import { z } from 'zod';
 
-import { useTranslations } from './i18n/utils';
-import { LocalizedString } from './content.config';
-
 export const ThesesSchema = z.object({
   id: z.string(),
   title: z.string(),
@@ -31,7 +28,7 @@ export const defineThesesCollection = defineCollection({
     const data = csv2json(input, {
       nested: true
     });
-    data.forEach((d: any, i) => {
+    data.forEach((d: any) => {
       console.log(d.tags.split(';'));
       d.tags.split(';').forEach((t) => {
         if (t.startsWith('#university')) {

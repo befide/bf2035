@@ -129,7 +129,7 @@ export default defineConfig({
       // Disable the default base styles:
       applyBaseStyles: false
     }),
-    // purgecss(),
+    purgecss(),
     AstroPWA({
       workbox: {
         skipWaiting: true,

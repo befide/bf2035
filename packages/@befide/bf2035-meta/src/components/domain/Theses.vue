@@ -19,12 +19,12 @@
       <template #empty> No organizations found. </template>
       <template #loading> Loading organization data. Please wait. </template>
 
-      <Column header="Author" sortable field="data.author"> </Column>
-      <Column header="Title" sortable field="data.title"> </Column>
-      <Column header="Jahr" sortable field="data.year"> </Column>
+      <Column header="Author" :sortable="true" field="data.author"> </Column>
+      <Column header="Title" :sortable="true" field="data.title"> </Column>
+      <Column header="Jahr" :sortable="true" field="data.year"> </Column>
       <Column
         header="Universität"
-        sortable
+        :sortable="true"
         field="data.university.id"
         :showFilterMenu="false"
       >

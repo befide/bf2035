@@ -13,14 +13,23 @@
             icon="pi pi-minus"
             label="Collapse All"
             @click="collapseAll"
-          />
-        </div>
-      </template>
+          /></div
       ></template>
+    </Toolbar>
+
+    <TreeTable
+      :value="nodes"
+      dataKey="id"
+      v-model:expandedKeys="expandedKeys"
+      size="large"
+      sortField="data.fullName.en"
+      :sortOrder="1"
+    >
+      <template #header> </template>
       <Column
         field="data.fullName.en"
-        sortable
-        expander
+        :sortable="true"
+        :expander="true"
         header="Label"
         class="font-bold"
         style="width: 40%"
@@ -32,7 +41,7 @@
 
       <Column
         field="descendantsCount"
-        sortable
+        :sortable="true"
         header="#Einträge"
         style="width: 10%"
       ></Column>
@@ -52,7 +61,7 @@ import TreeTable from 'primevue/treetable';
 import Button from 'primevue/button';
 import Column from 'primevue/column';
 
-import { getLangFromUrl, useTranslations } from 'src/i18n/utils';
+import { useTranslations } from 'src/i18n/utils';
 
 const t = useTranslations('de');
 import { ref, onMounted } from 'vue';
