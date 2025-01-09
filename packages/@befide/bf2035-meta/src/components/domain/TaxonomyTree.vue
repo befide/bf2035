@@ -2,17 +2,7 @@
   <div class="card">
     <Toolbar>
       <template #start> {{ keys?.length }} Einträge </template>
-    </Toolbar>
-
-    <TreeTable
-      :value="nodes"
-      dataKey="id"
-      v-model:expandedKeys="expandedKeys"
-      size="large"
-      sortField="data.fullName.en"
-      :sortOrder="1"
-    >
-      <template #header>
+      <template #end>
         <div class="flex flex-wrap flex-row gap-2">
           <Button
             icon="pi pi-plus"
@@ -26,6 +16,7 @@
           />
         </div>
       </template>
+      ></template>
       <Column
         field="data.fullName.en"
         sortable
