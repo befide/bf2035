@@ -12,7 +12,7 @@ import { useTranslations } from './i18n/utils';
 const deTranslation = useTranslations('de');
 const enTranslation = useTranslations('en');
 
-import { BefideOrganizationMetaStatus } from './content.formal-organization';
+import { ReviewStatus } from './content.formal-organization';
 const LocalizedString = z.object({
   de: z.string(),
   en: z.string()
@@ -36,9 +36,9 @@ const peopleCount = z.object({
 export const workingGroupSchema = z.object({
   id: z.string(),
   meta: z.object({
-    status: BefideOrganizationMetaStatus.optional(),
-    reviewedBy: z.string().nullable().default(''),
-    changelog: z.string().nullable().default(''),
+    reviewStatus: ReviewStatus.optional(),
+    reviewedBy: z.string().optional().nullable(),
+    reviewLog: z.string().nullable().default(''),
     parentId: z.string().optional().nullable(),
     localId: z.string()
   }),

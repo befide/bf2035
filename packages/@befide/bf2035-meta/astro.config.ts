@@ -15,6 +15,9 @@ import starlightSidebarTopics from 'starlight-sidebar-topics';
 import Components from 'unplugin-vue-components/vite';
 import { PrimeVueResolver } from '@primevue/auto-import-resolver';
 
+import rehypeMermaid from 'rehype-mermaid';
+import addMermaidClass from './src/utils/add-mermaid-classname';
+
 // https://astro.build/config
 export default defineConfig({
   site:
@@ -34,7 +37,7 @@ export default defineConfig({
   },
   markdown: {
     // Applied to .md and .mdx files
-    remarkPlugins: []
+    rehypePlugins: [addMermaidClass, rehypeMermaid]
   },
   integrations: [
     ...(process.env.NODE_ENV === 'production'
@@ -83,6 +86,10 @@ export default defineConfig({
             // The sidebar configuration for the topic.
             items: [
               {
+                label: 'Review Process',
+                link: 'data/review-process'
+              },
+              {
                 label: 'Taxonomy',
                 link: 'data/taxonomy'
               },
@@ -99,7 +106,7 @@ export default defineConfig({
               },
               {
                 label: 'Teaching',
-                items: ['data/teaching/pos', 'data/teaching/courses']
+                items: ['data/teaching/courses']
               }
             ]
           }

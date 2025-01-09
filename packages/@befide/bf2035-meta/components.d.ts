@@ -16,6 +16,7 @@ declare module 'vue' {
     DataTable: typeof import('primevue/datatable')['default']
     DataView: typeof import('primevue/dataview')['default']
     Facilities: typeof import('./src/components/domain/Facilities.vue')['default']
+    FileUpload: typeof import('primevue/fileupload')['default']
     FormalOrganizations: typeof import('./src/components/domain/FormalOrganizations.vue')['default']
     Organizations: typeof import('./src/components/domain/Organizations.vue')['default']
     OrganizationsTree: typeof import('./src/components/domain/OrganizationsTree.vue')['default']

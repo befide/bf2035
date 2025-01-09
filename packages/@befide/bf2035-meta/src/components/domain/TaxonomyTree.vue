@@ -1,5 +1,9 @@
 <template>
   <div class="card">
+    <Toolbar>
+      <template #start> {{ keys?.length }} Einträge </template>
+    </Toolbar>
+
     <TreeTable
       :value="nodes"
       dataKey="id"

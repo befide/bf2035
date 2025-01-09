@@ -3,6 +3,10 @@
 /* @import "./primevue/tailwind.css"; */
 @import 'tailwindcss/utilities';
 
+.p-tag-label {
+  white-space: nowrap;
+}
+
 :root {
   --p-select-background: var(--p-form-field-background);
   --p-select-disabled-background: var(--p-form-field-disabled-background);

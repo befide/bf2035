@@ -18,13 +18,7 @@ const NullableLocalizedString = z.object({
 const deTranslation = useTranslations('de');
 const enTranslation = useTranslations('en');
 
-export const BefideOrganizationMetaStatus = z.enum([
-  '01 in preparation',
-  '02 ready for review',
-  '03 in review',
-  '04 reviewed',
-  '05 approved'
-]);
+export const ReviewStatus = z.enum(['01: in preparation', '02: in prereview']);
 
 export const BefideOrganizationMetaOrganizationalLevel = z.enum([
   '00 Community',
@@ -52,9 +46,9 @@ export const BefideOrganizationMetaBefideOrganizationCategories = z
 export const FormalOrganizationSchema = z.object({
   id: z.string(),
   meta: z.object({
-    status: BefideOrganizationMetaStatus.optional(),
+    reviewStatus: ReviewStatus.optional(),
     reviewedBy: z.string().optional().nullable(),
-    changelog: z.string().nullable().default(''),
+    reviewLog: z.string().nullable().default(''),
     parentId: z.string().optional().nullable(),
     localId: z.string(),
     organizationalLevel: BefideOrganizationMetaOrganizationalLevel.optional(),
@@ -98,7 +92,7 @@ export const defineFormalOrganizationCollection = defineCollection({
     });
     data.forEach((d: any) => {
       d.meta.befideOrganizationCategoryArray =
-        d.meta.befideOrganizationCategories.split(',');
+        d.meta.befideOrganizationCategories?.split(',');
 
       d.location.country.name = {
         de: deTranslation('country.name.' + d.location.country.code),

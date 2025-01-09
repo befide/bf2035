@@ -1,5 +1,8 @@
 <template>
   <div class="card">
+    <Toolbar class="mb-6">
+      <template #start> {{ data?.length }} Einträge </template>
+    </Toolbar>
     <DataTable
       :value="data"
       tableStyle="min-width: 50rem"
@@ -81,6 +84,14 @@
         </template>
       </Column>
       <Column header="City" sortable field="data.location.city"> </Column>
+      <Column header="Review Status" field="data.meta.reviewStatus">
+        <template #body="{ data }">
+          <Tag
+            :value="data.data.meta.reviewStatus"
+            :severity="getSeverity(data.data.meta.reviewStatus)"
+          />
+        </template>
+      </Column>
     </DataTable>
   </div>
 </template>

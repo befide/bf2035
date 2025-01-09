@@ -6,6 +6,7 @@ import { defineFormalOrganizationCollection } from './content.formal-organizatio
 import { defineWorkingGroupsCollection } from './content.working-groups';
 import { defineTaxonomyCollection } from './content.taxonomy';
 import { defineFacilityCollection } from './content.facility';
+import { defineCoursesCollection } from './content.courses';
 
 const docs = defineCollection({ loader: docsLoader(), schema: docsSchema() });
 
@@ -17,7 +18,8 @@ export const collections = {
   formalOrganizations: defineFormalOrganizationCollection,
   workingGroups: defineWorkingGroupsCollection,
 
-  facilities: defineFacilityCollection
+  facilities: defineFacilityCollection,
+  courses: defineCoursesCollection
 
   // courses,
   // programOfStudies,

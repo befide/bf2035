@@ -1,5 +1,6 @@
 <template>
   <Toolbar>
+    <template #start> {{ data?.length }} Einträge </template>
     <template #end>
       <SelectButton v-model="aggregationMode" :options="aggregationModes" />
     </template>
@@ -125,6 +126,14 @@
           }}
         </template>
       </Column>
+      <Column header="Review Status" field="data.meta.reviewStatus">
+        <template #body="{ data }">
+          <Tag
+            :value="data.data.meta.reviewStatus"
+            :severity="getSeverity(data.data.meta.reviewStatus)"
+          />
+        </template>
+      </Column>
     </DataTable>
   </div>
 </template>
@@ -175,4 +184,17 @@ onMounted(async () => {
   expandedRowGroups.value = partOfIds;
   loading.value = false;
 });
+
+const getSeverity = (reviewStatus) => {
+  switch (reviewStatus) {
+    case '01: in preparation':
+      return 'success';
+
+    case '02: in prereview':
+      return 'warn';
+
+    default:
+      return null;
+  }
+};
 </script>
