@@ -22,7 +22,7 @@ import addMermaidClass from './src/utils/add-mermaid-classname';
 export default defineConfig({
   site:
     process.env.NODE_ENV === 'production'
-      ? 'https://bf2035meta.netlify.app'
+      ? 'http://bf2035-meta.beschleunigerphysik.de'
       : undefined,
   vite: {
     ssr: {
