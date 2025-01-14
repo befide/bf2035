@@ -6,10 +6,16 @@
 
     <DataTable
       :value="facilities"
-      sortField="data.degreee"
       tableStyle="min-width: 50rem"
+      dataKey="id"
+      :removableSort="true"
+      size="small"
+      sortField="data.label.longForm.en"
+      :sortOrder="1"
     >
-      <Column header="Name" field="data.label.fullName.en"> </Column>
+      <Column header="id" :sortable="true" field="id"> </Column>
+      <Column header="Name" :sortable="true" field="data.label.fullName.en">
+      </Column>
       <Column header="Accelerator type" field="data.acceleratorType"> </Column>
       <Column header="Facility type" field="data.facilityType"> </Column>
       <Column header="Host" field="data.hasHost"> </Column>

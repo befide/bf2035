@@ -1,10 +1,7 @@
 <template>
   <div class="card">
     <Toolbar class="mb-6">
-      <template #start>
-        <div>Number of entries: {{ data?.length }}</div>
-        <div>Number of filterd entries: {{ filteredEntryCount }}</div>
-      </template>
+      <template #start> {{ data?.length }} Einträge </template>
     </Toolbar>
     <DataTable
       :value="data"
@@ -104,7 +101,6 @@
 import { ref, onMounted } from 'vue';
 import Tag from 'primevue/tag';
 const data = ref();
-const filteredEntryCount = ref(0);
 const befideOrganizationCategories = ref();
 const loading = ref(true);
 
@@ -124,7 +120,7 @@ const filters = ref({
 const countryNames = ref();
 
 onMounted(async () => {
-  data.value = await fetch('/api/formal-organizations.json').then((response) =>
+  data.value = await fetch('/api/universities.json').then((response) =>
     response.json()
   );
   befideOrganizationCategories.value = Array.from(
@@ -156,7 +152,8 @@ const getSeverity = (type) => {
       return 'info';
   }
 };
+
 const handleFilterEvent = (event) => {
-  filteredEntryCount.value = event.filteredValue.length;
+  console.log(event);
 };
 </script>

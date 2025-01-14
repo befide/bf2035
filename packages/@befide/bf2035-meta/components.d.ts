@@ -33,6 +33,7 @@ declare module 'vue' {
     Theses: typeof import('./src/components/domain/Theses.vue')['default']
     Toolbar: typeof import('primevue/toolbar')['default']
     TreeTable: typeof import('primevue/treetable')['default']
+    Universities: typeof import('./src/components/domain/Universities.vue')['default']
     WorkingGroups: typeof import('./src/components/domain/WorkingGroups.vue')['default']
   }
 }

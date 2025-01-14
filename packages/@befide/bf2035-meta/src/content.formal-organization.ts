@@ -5,7 +5,7 @@ const DATA_PATH = path.join(__dirname, 'data');
 
 import { csv2json } from 'csv42';
 
-import { defineCollection } from 'astro:content';
+import { defineCollection, reference } from 'astro:content';
 import { z } from 'zod';
 
 import { useTranslations } from './i18n/utils';
@@ -46,6 +46,7 @@ export const BefideOrganizationMetaBefideOrganizationCategories = z
 export const FormalOrganizationSchema = z.object({
   id: z.string(),
   meta: z.object({
+    type: reference('taxonomy').optional().nullable(),
     reviewStatus: ReviewStatus.optional(),
     reviewedBy: z.string().optional().nullable(),
     reviewLog: z.string().nullable().default(''),

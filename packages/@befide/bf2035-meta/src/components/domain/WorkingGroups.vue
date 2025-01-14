@@ -1,6 +1,6 @@
 <template>
   <Toolbar>
-    <template #start> {{ data?.length }} Einträge </template>
+    <template #start> {{ data?.length }} Einträge</template>
     <template #end>
       <SelectButton v-model="aggregationMode" :options="aggregationModes" />
     </template>
@@ -13,8 +13,6 @@
       dataKey="id"
       :loading="loading"
       removableSort
-      sortField="data.partOf.id"
-      :sortOrder="-1"
       v-model:expandedRowGroups="expandedRowGroups"
       expandableRowGroups
       groupRowsBy="data.partOf.id"
@@ -24,7 +22,13 @@
       <ColumnGroup type="header">
         <Row>
           <Column header="#" :rowspan="4" />
-          <Column header="Name" :rowspan="4" />
+          <Column
+            header="Group name"
+            :rowspan="4"
+            :sortable="true"
+            fieldName="label.fullName.en"
+          />
+          <Column header="affiliation" :rowspan="4" />
           <Column header="#people" :colspan="54" />
         </Row>
         <Row>
@@ -90,10 +94,10 @@
       </ColumnGroup>
       <template #groupheader="slotProps">
         <span class="align-middle ml-2 font-bold leading-normal">{{
-          slotProps.data.data.partOf.id
+          slotProps.data.partOf.data.label.fullName.en
         }}</span>
       </template>
-      <Column header="#" headerStyle="width:10rem">
+      <Column header="#" bodyStyle="text-align:right;">
         <template #body="slotProps">
           {{ slotProps.index + 1 }}
         </template>
@@ -102,14 +106,20 @@
       <template #loading> Loading working groups data. Please wait. </template>
 
       <Column
-        header="Name"
-        sortable
+        header="Group name"
         field="data.label.fullName.en"
         style="width: 25%; white-space: nowrap"
       >
         <template #body="data"
           ><span>{{ data.data.data.label.fullName.en }}</span>
         </template>
+      </Column>
+
+      <Column
+        header="affiliation"
+        field="partOf.data.label.abbreviatedName.en"
+        style="width: 25%; white-space: nowrap"
+      >
       </Column>
 
       <Column
@@ -138,13 +148,17 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, computed } from 'vue';
 
-import crossProduct from '@/utils/d3-array-cross';
+const props = defineProps(['lang']);
+const lang = props.lang;
 
+const getLocalizedFieldName = (fieldName) => [fieldName, lang].join('.');
+
+import crossProduct from '@/utils/d3-array-cross';
 import SelectButton from 'primevue/selectbutton';
-// import Toolbar from 'primevue/Toolbar';
+
 const aggregationModes = [
   'position/discipline/gender',
   'gender',
@@ -164,6 +178,12 @@ const positions = [
   'uniqueMasterStudents',
   'uniqueBachelorStudents'
 ];
+
+const preSort = [
+  { field: 'data.university.id', direction: 'asc' },
+  { field: 'data.labelFullName.en', direction: 'asc' }
+];
+
 const discliplines = ['physicist', 'engineer'];
 const genders = ['female', 'male', 'other'];
 const peopleCountColumns = computed(() => {
@@ -180,7 +200,6 @@ onMounted(async () => {
   const partOfIds = Array.from(
     new Set(data.value.map((d) => d.data.partOf.id))
   );
-
   expandedRowGroups.value = partOfIds;
   loading.value = false;
 });

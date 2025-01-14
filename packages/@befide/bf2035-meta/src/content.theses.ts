@@ -2,6 +2,8 @@ const __dirname = import.meta.dirname;
 import fs from 'node:fs';
 import path from 'node:path';
 const DATA_PATH = path.join(__dirname, 'data');
+import api from 'zotero-api-client';
+import type { Item } from 'zotero-types';
 
 import { csv2json } from 'csv42';
 
@@ -12,50 +14,74 @@ export const ThesesSchema = z.object({
   id: z.string(),
   title: z.string(),
   year: z.number(),
-  author: z.string(),
-  gender: z.string().default('male'),
+  author: z.object({
+    familyName: z.string(),
+    givenName: z.string(),
+    gender: z.string().default('male')
+  }),
   tags: z.string().optional(),
   degree: z.string().optional(),
+  type: reference('taxonomy').optional().nullable(),
   university: reference('formalOrganizations').optional().nullable(),
-  facility: reference('facilities').optional().nullable()
+  facilities: z.array(reference('facilities').optional().nullable())
 });
 
+export type Theses = z.infer<typeof ThesesSchema>;
+
 export const defineThesesCollection = defineCollection({
-  loader: () => {
-    const input = fs
-      .readFileSync(path.join(DATA_PATH, 'theses.csv'))
-      .toString();
-    const data = csv2json(input, {
-      nested: true
-    });
-    data.forEach((d: any) => {
-      console.log(d.tags.split(';'));
-      d.tags.split(';').forEach((t) => {
-        if (t.startsWith('#university')) {
-          d.university = t.replace('#university', '');
-          if (
-            d.university === '/tu-berlin' ||
-            d.university === '/btu-cottbus-senftenberg'
-          )
-            delete d.university;
+  loader: async () => {
+    const responsePages = [100, 200, 300];
+    const items = await Promise.all(
+      responsePages.flatMap(async (page) => {
+        try {
+          const response = await api
+            .default('XDG2xtjGo4SXskg2lj1eC0DN', {
+              start: page - 99,
+              limit: 100
+            })
+            .library('group', 2427722)
+            .items()
+            .get();
+          const data = await response.raw;
+          return data;
+        } catch (err) {
+          console.error(`I'm down, this time. ${err}`);
         }
-        if (t.startsWith('#gender')) {
-          d.gender = t.replace('#gender', '');
+      })
+    );
+
+    const data = items.flat().map((item: Item) => {
+      const dataItem: Theses = {
+        id: item.key,
+        title: item.data.title,
+        thesisType: item.data.thesisType,
+        year: Number(item.data.date?.substr(0, 4)),
+        facilities: [],
+        author: {
+          familyName: item.data.creators[0]?.lastName,
+          givenName: item.data.creators[0]?.firstName
         }
-        if (t.startsWith('#facility')) {
-          d.facility = t.replace('#facility', '');
+      };
+
+      item.data.tags.forEach(({ tag }: { tag: string }) => {
+        if (tag.startsWith('#information-content-entity/')) {
+          dataItem.type = tag.replace('#', '/');
         }
-        if (t.startsWith('#degree')) {
-          d.degree = t.replace('#degree', '');
+        if (tag.startsWith('#university')) {
+          dataItem.university = tag.replace('#university', '');
         }
-        {
-          d.degree = 'dr.rer.nat';
+        if (tag.startsWith('#person/gender/')) {
+          dataItem.author.gender = tag.replace('#person/gender/', '');
+        }
+        if (tag.startsWith('#facility/')) {
+          dataItem.facilities.push(tag.replace('#facility', ''));
         }
       });
+
+      return dataItem;
     });
+
     return data;
   },
   schema: ThesesSchema
 });
-
-export type Theses = z.infer<typeof ThesesSchema>;

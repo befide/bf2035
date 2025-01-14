@@ -1,8 +1,8 @@
 import {
   buildRolledUpContentCollectionTree,
   getParentPath
-} from '@/utils/content';
-import { circularReplacer } from '@/utils/jsonReplacer';
+} from '@/utils/content.ts';
+import { circularReplacer } from '@/utils/jsonReplacer.ts';
 import type { APIRoute } from 'astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 

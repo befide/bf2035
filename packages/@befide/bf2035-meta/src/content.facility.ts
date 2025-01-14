@@ -49,8 +49,8 @@ export const FacilitySchema = z.object({
     acronym: NullableLocalizedString
   }),
   definition: NullableLocalizedString,
-  isPartOf: reference('facilities').optional().nullable(),
-  isStageOf: reference('facilities').optional().nullable(),
+  isPartOf: z.string().optional().nullable(), //reference('facilities').optional().nullable(),
+  isSuccessorOf: z.string().optional().nullable(), //reference('facilities').optional().nullable(),
   acceleratorType: z.string().optional().nullable(),
   facilityType: z.string().optional().nullable(),
   facilityTypeParticles: z.string().optional().nullable(),
@@ -67,9 +67,9 @@ export const FacilitySchema = z.object({
 });
 
 export const defineFacilityCollection = defineCollection({
-  loader: () => {
+  loader: async () => {
     const input = fs
-      .readFileSync(path.join(DATA_PATH, 'facility.csv'))
+      .readFileSync(path.join(DATA_PATH, 'facilities.csv'))
       .toString();
     const data = csv2json(input, {
       nested: true

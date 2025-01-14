@@ -14,10 +14,21 @@
       sortMode="single"
     >
       <template #groupheader="slotProps">
-        <span class="align-middle ml-2 font-bold leading-normal">{{
-          slotProps.data.data.university.id
+        <span class="ml-2 font-bold">{{
+          slotProps.data.university.data.label.fullName.en
         }}</span>
       </template>
+      <Column
+        header="#"
+        headerStyle="text-align:right;"
+        bodyStyle="text-align:right;"
+      >
+        <template #body="slotProps">
+          <span style="align-self: end"> {{ slotProps.index + 1 }}</span>
+        </template>
+      </Column>
+      <template #empty> No working groups found. </template>
+      <template #loading> Loading working groups data. Please wait. </template>
 
       <Column header="Title" field="data.label.fullName.de"> </Column>
       <Column header="semester" field="data.semester"> </Column>

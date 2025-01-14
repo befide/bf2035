@@ -21,7 +21,7 @@
       :value="nodes"
       dataKey="id"
       v-model:expandedKeys="expandedKeys"
-      size="large"
+      size="small"
       sortField="data.fullName.en"
       :sortOrder="1"
     >
@@ -31,11 +31,17 @@
         :sortable="true"
         :expander="true"
         header="Label"
-        class="font-bold"
         style="width: 40%"
       >
         <template #body="data">
-          {{ data.node.data.data.label.fullName.en }}
+          <div>
+            <span class="font-bold">
+              {{ data.node.data.data.label.fullName.en }} </span
+            ><br />
+            <span>
+              {{ data.node.data.data.id }}
+            </span>
+          </div>
         </template>
       </Column>
 
@@ -47,9 +53,9 @@
       ></Column>
 
       <Column
-        field="data.descriptionDe"
+        field="data.definition.en"
         header="Beschreibung"
-        style="width: 50%"
+        style="width: 30%"
       >
       </Column>
     </TreeTable>
@@ -85,5 +91,8 @@ const expandAll = () => {
 };
 const collapseAll = () => {
   expandedKeys.value = null;
+};
+const handleRowClickEvent = (event) => {
+  console.log(event);
 };
 </script>
