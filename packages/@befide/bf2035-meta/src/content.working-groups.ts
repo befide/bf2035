@@ -45,7 +45,7 @@ export const workingGroupSchema = z.object({
   partOf: reference('formalOrganizations'),
   label: z.object({
     fullName: LocalizedString,
-    abbreviatedName: NullableLocalizedString,
+    short: NullableLocalizedString,
     acronym: NullableLocalizedString
   }),
   description: NullableLocalizedString,

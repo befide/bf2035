@@ -26,17 +26,6 @@ const NullableLocalizedString = z.object({
   en: z.string().nullable().optional()
 });
 
-const peopleCountGender = z.object({
-  male: z.number().optional().nullable(),
-  female: z.number().optional().nullable(),
-  other: z.number().optional().nullable()
-});
-const peopleCount = z.object({
-  physicist: peopleCountGender,
-  engineer: peopleCountGender,
-  other: peopleCountGender
-});
-
 export const FacilitySchema = z.object({
   id: z.string(),
   meta: z.object({
@@ -46,7 +35,7 @@ export const FacilitySchema = z.object({
   }),
   label: z.object({
     fullName: LocalizedString,
-    acronym: NullableLocalizedString
+    short: NullableLocalizedString
   }),
   definition: NullableLocalizedString,
   isPartOf: z.string().optional().nullable(), //reference('facilities').optional().nullable(),

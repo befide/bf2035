@@ -30,7 +30,8 @@ const taxonomySchema = z.object({
     parentId: z.string().nullable()
   }),
   label: z.object({
-    fullName: NullableLocalizedString
+    fullName: NullableLocalizedString,
+    short: NullableLocalizedString
   }),
   definition: NullableLocalizedString
 });

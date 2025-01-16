@@ -61,7 +61,7 @@ export const FormalOrganizationSchema = z.object({
   isPartOfCommunity: z.boolean(),
   label: z.object({
     fullName: LocalizedString,
-    abbreviatedName: LocalizedString,
+    short: LocalizedString,
     acronym: NullableLocalizedString
   }),
   description: NullableLocalizedString,
