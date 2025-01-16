@@ -23,11 +23,11 @@
       v-model:expandedKeys="expandedKeys"
       size="small"
       sortField="data.fullName.en"
-      :sortOrder="1"
+      :sortOrder="-1"
     >
       <template #header> </template>
       <Column
-        field="data.fullName.en"
+        field="data.label.fullName.en"
         :sortable="true"
         :expander="true"
         header="Label"
@@ -38,9 +38,7 @@
             <span class="font-bold">
               {{ data.node.data.data.label.fullName.en }} </span
             ><br />
-            <span>
-              {{ data.node.data.data.id }}
-            </span>
+            <span> </span>
           </div>
         </template>
       </Column>
