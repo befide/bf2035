@@ -1,7 +1,7 @@
 const __dirname = import.meta.dirname;
 import fs from 'node:fs';
 import path from 'node:path';
-const DATA_PATH = path.join(__dirname, 'data');
+const DATA_PATH = path.join(__dirname, 'data', 'airtable');
 
 import { csv2json } from 'csv42';
 
