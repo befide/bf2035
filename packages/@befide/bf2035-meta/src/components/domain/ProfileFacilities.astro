@@ -1,0 +1,14 @@
+---
+import { getFacilities, getFacilityRoots } from '@/utils/facilities';
+
+import ProfileFacilitiesTreeNode from './ProfileFacilitiesTreeNode.astro';
+
+let { hostId } = Astro.props;
+
+const facilities = await getFacilities(hostId);
+const facilityRoots = getFacilityRoots(facilities);
+---
+
+<ul>
+  {facilityRoots.map((root) => <ProfileFacilitiesTreeNode {root} />)}
+</ul>

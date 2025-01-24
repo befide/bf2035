@@ -1,0 +1,16 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+let { root } = Astro.props;
+---
+
+<li>
+  <span>{root.id}</span>
+  <ul>
+    {
+      root.children &&
+        root.children.length > 0 &&
+        root.children.map((child) => <Astro.self root={child} />)
+    }
+  </ul>
+</li>

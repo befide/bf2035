@@ -22,23 +22,24 @@
       dataKey="id"
       v-model:expandedKeys="expandedKeys"
       size="small"
-      sortField="data.fullName.en"
-      :sortOrder="-1"
+      sortField="data.term.full.en"
+      :sortOrder="1"
+      :indentation="2"
     >
       <template #header> </template>
       <Column
-        field="data.label.fullName.en"
+        field="data.term.full.en"
         :sortable="true"
         :expander="true"
-        header="Label"
+        header="Term"
         style="width: 40%"
       >
         <template #body="data">
           <div>
             <span class="font-bold">
-              {{ data.node.data.data.label.fullName.en }} </span
+              {{ data.node.data.data.term.full.en }} </span
             ><br />
-            <span> </span>
+            <span>{{ data.node.data.data.definition.en }} </span>
           </div>
         </template>
       </Column>
@@ -49,13 +50,6 @@
         header="#Einträge"
         style="width: 10%"
       ></Column>
-
-      <Column
-        field="data.definition.en"
-        header="Beschreibung"
-        style="width: 30%"
-      >
-      </Column>
     </TreeTable>
   </div>
 </template>
@@ -66,17 +60,24 @@ import Button from 'primevue/button';
 import Column from 'primevue/column';
 
 import { useTranslations } from 'src/i18n/utils';
-
 const t = useTranslations('de');
+
+const props = defineProps(['acceleratorResearchSpecific']);
+
 import { ref, onMounted } from 'vue';
 const nodes = ref();
 const expandedKeys = ref({});
 const keys = ref([]);
 
 onMounted(async () => {
-  const result = await fetch('/api/taxonomy-tree.json').then((response) =>
-    response.json()
-  );
+  const apiURL =
+    props.acceleratorResearchSpecific === undefined
+      ? '/api/taxonomy-tree.json'
+      : props.acceleratorResearchSpecific
+        ? '/api/taxonomy-tree__accelerator_research_specific.json'
+        : '/api/taxonomy-tree__not-accelerator_research_specific.json';
+  const result = await fetch(apiURL).then((response) => response.json());
+
   nodes.value = result.tree.children;
   keys.value = result.keys;
 });

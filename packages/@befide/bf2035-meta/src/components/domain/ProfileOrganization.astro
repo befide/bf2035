@@ -1,0 +1,16 @@
+---
+import { getOrganizationRoots, getOrganizations } from '@/utils/organizations';
+import ProfileOrganizationTreeNode from './ProfileOrganizationTreeNode.astro';
+
+let { rootId } = Astro.props;
+
+const organizations = await getOrganizations(rootId);
+
+const organizationRoots = getOrganizationRoots(organizations);
+
+console.log(organizationRoots);
+---
+
+<ul>
+  {organizationRoots.map((root) => <ProfileOrganizationTreeNode {root} />)}
+</ul>

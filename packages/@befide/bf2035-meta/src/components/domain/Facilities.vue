@@ -16,9 +16,10 @@
       <Column header="id" :sortable="true" field="id"> </Column>
       <Column header="Name" :sortable="true" field="data.label.fullName.en">
       </Column>
-      <Column header="Accelerator type" field="data.acceleratorType"> </Column>
-      <Column header="Facility type" field="data.facilityType"> </Column>
-      <Column header="Host" field="data.hasHost"> </Column>
+      <Column header="Accelerator type" field="data.employsAcceleratorTypes">
+      </Column>
+      <Column header="Facility type" field="data.isInstanceOf.id"> </Column>
+      <Column header="Host" field="data.hasHost.id"> </Column>
       <Column header="Review Status" field="data.meta.reviewStatus">
         <template #body="{ data }">
           <Tag

@@ -84,7 +84,7 @@ onMounted(async () => {
   );
 
   universities.value = Array.from(
-    new Set(data.value.map((d) => d.university.data.label.abbreviatedName.en))
+    new Set(data.value.map((d) => d.data.university))
   );
 
   loading.value = false;

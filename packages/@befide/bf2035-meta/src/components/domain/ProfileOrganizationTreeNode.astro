@@ -1,0 +1,15 @@
+---
+let { root } = Astro.props;
+---
+
+<li>
+  <span>{root.id}</span>
+  <span>{root.data.data.peopleCountSum.total}</span>
+  <ul>
+    {
+      root.children &&
+        root.children.length > 0 &&
+        root.children.map((child) => <Astro.self root={child} />)
+    }
+  </ul>
+</li>

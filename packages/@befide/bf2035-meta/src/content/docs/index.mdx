@@ -25,10 +25,19 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
   </Card>
   <Card title="DATA API" icon="open-book">
      
-     * [formal-organizations.json](/api/formal-organizations.json)
-     * [working-groups.json](/api/working-groups.json)
-     * [taxonomy.json](/api/taxonomy.json)
-     * [taxonomy-tree.json](/api/taxonomy-tree.json)
+     * Taxonomy
+        * terms as list [taxonomy.json](/api/taxonomy.json)
+        * terms as tree [taxonomy-tree.json](/api/taxonomy-tree.json)
+     * Organizations
+        * [organizations.json](/api/organizations.json)
+        * [community-top-level-organizations.json](/api/community-top-level-organizations.json)
+        * [community-organizations-tree.json](/api/community-organizations-tree.json)
+     * Facilities
+        * list of all facilities: [facilities.json](/api/facilities.json)
+        * tree of all facilities based on isPart relation  [facilities-tree.json](/api/facilities-tree.json)
+     * Teaching
+        * list of all teaching events / courses: [courses.json](/api/courses.json)
+        * list of all theses: [theses.json](/api/theses.json)
 
   </Card>
 </CardGrid>

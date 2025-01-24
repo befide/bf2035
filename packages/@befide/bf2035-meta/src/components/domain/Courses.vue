@@ -9,13 +9,13 @@
       tableStyle="min-width: 50rem"
       v-model:expandedRowGroups="expandedRowGroups"
       expandableRowGroups
-      groupRowsBy="data.university.id"
+      groupRowsBy="offeredByUniversity.id"
       rowGroupMode="subheader"
       sortMode="single"
     >
       <template #groupheader="slotProps">
         <span class="ml-2 font-bold">{{
-          slotProps.data.university.data.label.fullName.en
+          slotProps.data.offeredByUniversity.data.label.fullName.en
         }}</span>
       </template>
       <Column
@@ -50,11 +50,11 @@ onMounted(async () => {
     response.json()
   );
 
-  const universities = Array.from(
-    new Set(data.value.map((d) => d.data.university.id))
+  const universityIds = Array.from(
+    new Set(data.value.map((d) => d.offeredByUniversity.id))
   );
 
-  expandedRowGroups.value = universities;
+  expandedRowGroups.value = universityIds;
   loading.value = false;
 });
 </script>

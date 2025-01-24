@@ -2,14 +2,24 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 
 import { stratify } from 'd3-hierarchy';
 
-export const taxonomyEntries = async () => await getCollection('taxonomy');
+export const getTaxonomyEntries = async (
+  isAcceleratorResearchSpecific: boolean | undefined
+) =>
+  (await getCollection('taxonomy')).filter((d) =>
+    d.data.id === '/' || isAcceleratorResearchSpecific === undefined
+      ? true
+      : isAcceleratorResearchSpecific
+        ? d.data.isAcceleratorResearchSpecific
+        : !d.data.isAcceleratorResearchSpecific
+  );
 
-export const taxonomyRoot = (taxonomyEntries: any) => {
-  const root = stratify()
+export const getTaxonomyRoot = (
+  taxonomyEntries: CollectionEntry<'taxonomy'>[]
+) => {
+  const root = stratify<CollectionEntry<'taxonomy'>>()
     .id((d) => d.id)
     .parentId((d) => {
-      // console.log(d.data.meta.parentId);
-      return d.data.meta.parentId;
+      return d.data.isA?.id;
     })(taxonomyEntries);
 
   root.each((node: any) => {
