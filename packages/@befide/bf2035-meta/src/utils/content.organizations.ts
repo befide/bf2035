@@ -1,10 +1,8 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-import type { TreeNode } from './facilities';
+import type { TreeNode } from './content.facilities';
 
-export const getOrganizations = async (
-  topLevelOrganizationId: string | undefined
-) =>
+export const getOrganizations = async (topLevelOrganizationId?: string) =>
   (await getCollection('organizations'))
     .filter(
       (d) =>
@@ -13,6 +11,16 @@ export const getOrganizations = async (
         d.id === topLevelOrganizationId
     )
     .sort((a, b) => a.id.localeCompare(b.id));
+
+export const getCommunityOrganizations = async () => {
+  return (await getOrganizations()).filter((d) => d.data.isPartOfCommunity);
+};
+
+export const getCommunityTopLevelOrganizations = async () => {
+  return (await getOrganizations()).filter(
+    (d) => !d.data.hasTopLevelOrganization
+  );
+};
 
 export const getOrganizationRoots = (
   organizations: CollectionEntry<'organizations'>[]

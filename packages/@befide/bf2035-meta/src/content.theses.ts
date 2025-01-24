@@ -130,7 +130,7 @@ export const defineThesesCollection = defineCollection({
         }
       });
 
-      console.log(JSON.stringify({ item, dataItem }, null, 2));
+      // console.log(JSON.stringify({ item, dataItem }, null, 2));
       return dataItem;
     });
 

@@ -1,7 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { stratify } from 'd3-hierarchy';
 
-export const getFacilities = async (hostId: string | undefined) =>
+export const getFacilities = async (hostId?: string) =>
   (await getCollection('facilities'))
     .filter((d) => hostId === undefined || d.data.hasHost?.id === hostId)
     .sort((a, b) => a.id.localeCompare(b.id));

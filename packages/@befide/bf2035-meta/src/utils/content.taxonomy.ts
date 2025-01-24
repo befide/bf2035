@@ -3,7 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import { stratify } from 'd3-hierarchy';
 
 export const getTaxonomyEntries = async (
-  isAcceleratorResearchSpecific: boolean | undefined
+  isAcceleratorResearchSpecific?: boolean
 ) =>
   (await getCollection('taxonomy')).filter((d) =>
     d.data.id === '/' || isAcceleratorResearchSpecific === undefined

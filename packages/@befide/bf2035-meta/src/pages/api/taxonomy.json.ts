@@ -1,4 +1,4 @@
-import { getTaxonomyEntries } from '@/utils/taxonomy';
+import { getTaxonomyEntries } from '@/utils/';
 import type { APIRoute } from 'astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 

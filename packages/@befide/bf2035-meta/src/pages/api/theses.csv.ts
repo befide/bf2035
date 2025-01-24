@@ -1,9 +1,9 @@
 import type { APIRoute } from 'astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getTheses } from '@/utils/';
 
 import { csvFormat } from 'd3-dsv';
 
-const theses = await getCollection('theses');
+const theses = await getTheses();
 
 const csv = csvFormat(
   theses.map((d) => ({

@@ -1,5 +1,5 @@
 import { circularReplacer } from '@/utils/jsonReplacer.ts';
-import { getCommunityTopLevelOrganizations } from '@/utils/organizations';
+import { getCommunityTopLevelOrganizations } from '@/utils/';
 
 import type { APIRoute } from 'astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
