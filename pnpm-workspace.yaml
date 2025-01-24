@@ -1,6 +1,7 @@
 packages:
   - "packages/@befide/bf2035-report"
   - "packages/@befide/bf2035-meta"
+  - "packages/@befide/starlight-utils"
   # - "packages/@befide/bf2035-data-legacy"
   #- "packages/@befide/bf2035-data"
   #- "packages/@befide/bf2035-community-inventory"
