@@ -5,7 +5,7 @@ const theses = await getCollection('theses');
 
 theses.forEach(async (d) => {
   d.type = await getEntry('taxonomy', d.data.type.id);
-  d.university = await getEntry('formalOrganizations', d.data.university.id);
+  d.university = await getEntry('organizations', d.data.university.id);
 });
 
 export const GET: APIRoute = () => {

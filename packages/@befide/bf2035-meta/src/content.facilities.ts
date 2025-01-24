@@ -1,7 +1,7 @@
 const __dirname = import.meta.dirname;
 import fs from 'node:fs';
 import path from 'node:path';
-const DATA_PATH = path.join(__dirname, 'data', 'airtable');
+const DATA_PATH = path.join(__dirname, 'data', 'grist');
 
 import { csv2json } from 'csv42';
 
@@ -15,7 +15,7 @@ const enTranslation = useTranslations('en');
 import {
   ReviewStatus as MetaStatus,
   ReviewStatus
-} from './content.formal-organization';
+} from './content.organizations';
 const LocalizedString = z.object({
   de: z.string(),
   en: z.string()
@@ -38,15 +38,15 @@ export const FacilitySchema = z.object({
     short: NullableLocalizedString
   }),
   definition: NullableLocalizedString,
-  isPartOf: z.string().optional().nullable(), //reference('facilities').optional().nullable(),
-  isSuccessorOf: z.string().optional().nullable(), //reference('facilities').optional().nullable(),
-  acceleratorType: z.string().optional().nullable(),
-  facilityType: z.string().optional().nullable(),
+  isDirectPartOf: reference('facilities').optional().nullable(),
+  isSuccessorOf: reference('facilities').optional().nullable(),
+  employsAcceleratorTypes: z.string().optional().nullable(),
+  isInstanceOf: reference('taxonomy').optional().nullable(),
   facilityTypeParticles: z.string().optional().nullable(),
   lifeCycle: z.string().optional().nullable(),
   t0: z.number().optional().nullable(),
   t1: z.number().optional().nullable(),
-  hasHost: z.string().optional().nullable(), //reference('formalOrganisations').optional().nullable(),
+  hasHost: reference('organizations').optional().nullable(),
   isBmbfFis: z.string().optional().nullable(),
   primaryApplications: z.string().optional().nullable(),
   secondaryApplications: z.string().optional().nullable(),

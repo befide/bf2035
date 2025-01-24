@@ -1,13 +1,15 @@
 import { circularReplacer } from '@/utils/jsonReplacer.ts';
-import { getTaxonomyRoot, getTaxonomyEntries } from '@/utils/taxonomy';
+import { getCommunityOrganizationsRoot } from '@/utils/organizations';
 import type { APIRoute } from 'astro';
 
-const entries = await getTaxonomyEntries(undefined);
-const root = getTaxonomyRoot(entries);
+const root = await getCommunityOrganizationsRoot();
 
 const result = {
   tree: root,
-  keys: root.descendants().map((t) => t.data.id)
+  keys: root
+    .descendants()
+    .map((t) => t.data.id)
+    .sort()
 };
 
 export const GET: APIRoute = () => {

@@ -18,6 +18,8 @@ import { PrimeVueResolver } from '@primevue/auto-import-resolver';
 import rehypeMermaid from 'rehype-mermaid';
 import addMermaidClass from './src/utils/add-mermaid-classname';
 
+import starlightUtils from '@befide/starlight-utils';
+
 // https://astro.build/config
 export default defineConfig({
   site:
@@ -51,82 +53,91 @@ export default defineConfig({
 
       components: {
         Head: './src/components/Head.astro',
-        Search: './src/components/Search.astro'
+        Search: './src/components/Search.astro',
+        Badge: './src/components/Badge.astro'
       },
 
       customCss: ['./src/tailwind.css'],
       // Path to your Tailwind base styles:
 
       plugins: [
-        starlightSidebarTopics([
-          // A topic representing a guide section of your project.
-          {
-            label: 'Project',
-            icon: 'open-book',
-            // The page to link to when the topic is clicked.
-            link: '/project/',
-            // The sidebar configuration for the topic.
-            items: [
-              'project/objectives',
-              {
-                label: 'Methodology',
-                autogenerate: { directory: 'project/methodology' }
-              },
-              {
-                label: 'Deliverables',
-                autogenerate: { directory: 'project/deliverables' }
-              }
-            ]
-          },
-          {
-            label: 'Data',
-            icon: 'open-book',
-            // The page to link to when the topic is clicked.
-            link: '/data/',
-            // The sidebar configuration for the topic.
-            items: [
-              {
-                label: 'Review Process',
-                link: 'data/review-process'
-              },
-              {
-                label: 'Taxonomy',
-                link: 'data/taxonomy'
-              },
-              {
-                label: 'Organizations',
-                items: [
-                  'data/organization/organizations',
-                  'data/organization/working-groups'
-                ]
-              },
-              {
-                label: 'Facilities',
-                items: ['data/facilities/facilities']
-              },
-              {
-                label: 'Teaching',
-                items: [
-                  'data/teaching/universities',
-                  'data/teaching/courses',
-                  'data/teaching/theses'
-                ]
-              }
-            ]
+        starlightUtils({
+          multiSidebar: {
+            switcherStyle: 'horizontalList'
           }
-          // A topic redirecting to the Starlight documentation.
-          // {
-          //   label: 'Data',
-          //   icon: 'starlight',
-          //   // The URL to the external resource to link to.
-          //   link: '/data/',
-          //   items: [
-          //     'data/taxonomy',
-          //     'data/organizations',
-          //     'data/working-groups'
-          //   ]
-          // }
-        ])
+        })
+      ],
+      sidebar: [
+        // A topic representing a guide section of your project.
+        {
+          label: 'Project',
+          // icon: 'open-book',
+          // The page to link to when the topic is clicked.
+          // link: '/project/',
+          // The sidebar configuration for the topic.
+          items: [
+            { slug: 'project/objectives' },
+            {
+              label: 'Methodology',
+              autogenerate: { directory: 'project/methodology' }
+            },
+            {
+              label: 'Deliverables',
+              autogenerate: { directory: 'project/deliverables' }
+            }
+          ]
+        },
+        {
+          label: 'Profiles',
+          // icon: 'open-book',
+          // The page to link to when the topic is clicked.
+          // link: 'profiles',
+          // The sidebar configuration for the topic.
+          items: [
+            { slug: 'profiles' },
+            {
+              label: 'Entries',
+              autogenerate: { directory: 'profiles/profiles' }
+            }
+          ]
+        },
+
+        {
+          label: 'Data',
+          // icon: 'open-book',
+          // The page to link to when the topic is clicked.
+          // link: '/data/',
+          // The sidebar configuration for the topic.
+          items: [
+            {
+              label: 'Review Process',
+              link: 'data/review-process'
+            },
+            {
+              label: 'Taxonomy',
+              link: 'data/taxonomy'
+            },
+            {
+              label: 'Organizations',
+              items: [
+                'data/organization/organizations',
+                'data/organization/working-groups'
+              ]
+            },
+            {
+              label: 'Facilities',
+              items: [{ slug: 'data/facilities/facilities' }]
+            },
+            {
+              label: 'Teaching',
+              items: [
+                { slug: 'data/teaching/universities' },
+                { slug: 'data/teaching/courses' },
+                { slug: 'data/teaching/theses' }
+              ]
+            }
+          ]
+        }
       ]
     }),
     tailwind({
@@ -153,3 +164,88 @@ export default defineConfig({
     })
   ]
 });
+
+//   // starlightSidebarTopics([
+//   //   // A topic representing a guide section of your project.
+//   //   {
+//   //     label: 'Project',
+//   //     icon: 'open-book',
+//   //     // The page to link to when the topic is clicked.
+//   //     link: '/project/',
+//   //     // The sidebar configuration for the topic.
+//   //     items: [
+//   //       'project/objectives',
+//   //       {
+//   //         label: 'Methodology',
+//   //         autogenerate: { directory: 'project/methodology' }
+//   //       },
+//   //       {
+//   //         label: 'Deliverables',
+//   //         autogenerate: { directory: 'project/deliverables' }
+//   //       }
+//   //     ]
+//   //   },
+//   //   {
+//   //     label: 'Profiles',
+//   //     icon: 'open-book',
+//   //     // The page to link to when the topic is clicked.
+//   //     link: 'profiles',
+//   //     // The sidebar configuration for the topic.
+//   //     items: [
+//   //       'profiles',
+//   //       {
+//   //         label: 'Entries',
+//   //         autogenerate: { directory: 'profiles/profiles' }
+//   //       }
+//   //     ]
+//   //   },
+
+//   //   {
+//   //     label: 'Data',
+//   //     icon: 'open-book',
+//   //     // The page to link to when the topic is clicked.
+//   //     link: '/data/',
+//   //     // The sidebar configuration for the topic.
+//   //     items: [
+//   //       {
+//   //         label: 'Review Process',
+//   //         link: 'data/review-process'
+//   //       },
+//   //       {
+//   //         label: 'Taxonomy',
+//   //         link: 'data/taxonomy'
+//   //       },
+//   //       {
+//   //         label: 'Organizations',
+//   //         items: [
+//   //           'data/organization/organizations',
+//   //           'data/organization/working-groups'
+//   //         ]
+//   //       },
+//   //       {
+//   //         label: 'Facilities',
+//   //         items: ['data/facilities/facilities']
+//   //       },
+//   //       {
+//   //         label: 'Teaching',
+//   //         items: [
+//   //           'data/teaching/universities',
+//   //           'data/teaching/courses',
+//   //           'data/teaching/theses'
+//   //         ]
+//   //       }
+//   //     ]
+//   //   }
+//   //   // A topic redirecting to the Starlight documentation.
+//   //   // {
+//   //   //   label: 'Data',
+//   //   //   icon: 'starlight',
+//   //   //   // The URL to the external resource to link to.
+//   //   //   link: '/data/',
+//   //   //   items: [
+//   //   //     'data/taxonomy',
+//   //   //     'data/organizations',
+//   //   //     'data/working-groups'
+//   //   //   ]
+//   //   // }
+//   // ])

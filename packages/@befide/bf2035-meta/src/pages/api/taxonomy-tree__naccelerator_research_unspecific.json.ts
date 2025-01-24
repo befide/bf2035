@@ -2,7 +2,7 @@ import { circularReplacer } from '@/utils/jsonReplacer.ts';
 import { getTaxonomyRoot, getTaxonomyEntries } from '@/utils/taxonomy';
 import type { APIRoute } from 'astro';
 
-const entries = await getTaxonomyEntries(undefined);
+const entries = await getTaxonomyEntries(false);
 const root = getTaxonomyRoot(entries);
 
 const result = {

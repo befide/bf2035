@@ -1,8 +1,9 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, reference, z } from 'astro:content';
 const __dirname = import.meta.dirname;
 import fs from 'node:fs';
 import path from 'node:path';
-const DATA_PATH = path.join(__dirname, 'data', 'airtable');
+const DATA_PATH = path.join(__dirname, 'data', 'grist');
+const INPUT_FILE = path.join(DATA_PATH, 'taxonomy.csv');
 
 import { csv2json } from 'csv42';
 
@@ -22,25 +23,23 @@ export const MetaStatus = z.enum([
 
 const taxonomySchema = z.object({
   id: z.string(),
+  isA: reference('taxonomy').optional().nullable(),
+  isAcceleratorResearchSpecific: z.boolean(),
   meta: z.object({
     status: MetaStatus.optional(),
     reviewedBy: z.string().nullable().default(''),
-    changelog: z.string().nullable().default(''),
-    rootId: z.string().nullable(),
-    parentId: z.string().nullable()
+    changelog: z.string().nullable().default('')
   }),
-  label: z.object({
-    fullName: NullableLocalizedString,
+  term: z.object({
+    full: LocalizedString,
     short: NullableLocalizedString
   }),
   definition: NullableLocalizedString
 });
 
 export const defineTaxonomyCollection = defineCollection({
-  loader: () => {
-    const input = fs
-      .readFileSync(path.join(DATA_PATH, 'taxonomy.csv'))
-      .toString();
+  loader: async () => {
+    const input = fs.readFileSync(INPUT_FILE).toString();
     const data = csv2json(input, {
       nested: true
     });

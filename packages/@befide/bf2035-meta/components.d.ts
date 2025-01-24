@@ -11,6 +11,7 @@ declare module 'vue' {
     Checkbox: typeof import('primevue/checkbox')['default']
     Column: typeof import('primevue/column')['default']
     ColumnGroup: typeof import('primevue/columngroup')['default']
+    CommunityOrganizationsTree: typeof import('./src/components/domain/CommunityOrganizationsTree.vue')['default']
     copy: typeof import('./src/components/domain/FormalOrganizations copy.vue')['default']
     Courses: typeof import('./src/components/domain/Courses.vue')['default']
     DataTable: typeof import('primevue/datatable')['default']

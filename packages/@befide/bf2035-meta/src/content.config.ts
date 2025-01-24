@@ -2,10 +2,9 @@ import { docsLoader } from '@astrojs/starlight/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
 import { defineCollection, z } from 'astro:content';
 
-import { defineFormalOrganizationCollection } from './content.formal-organization';
-import { defineWorkingGroupsCollection } from './content.working-groups';
+import { defineOrganizationCollection } from './content.organizations';
 import { defineTaxonomyCollection } from './content.taxonomy';
-import { defineFacilityCollection } from './content.facility';
+import { defineFacilityCollection } from './content.facilities';
 import { defineCoursesCollection } from './content.courses';
 import { defineThesesCollection } from './content.theses';
 
@@ -16,14 +15,8 @@ export const LocalizedString = z.object({ de: z.string(), en: z.string() });
 export const collections = {
   docs,
   taxonomy: defineTaxonomyCollection,
-  formalOrganizations: defineFormalOrganizationCollection,
-  workingGroups: defineWorkingGroupsCollection,
-
+  organizations: defineOrganizationCollection,
   facilities: defineFacilityCollection,
   courses: defineCoursesCollection,
   theses: defineThesesCollection
-
-  // courses,
-  // programOfStudies,
-  // facilities
 };
