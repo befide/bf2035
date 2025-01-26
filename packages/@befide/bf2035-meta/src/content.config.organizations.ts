@@ -1,38 +1,47 @@
-const __dirname = import.meta.dirname;
-import fs from 'node:fs';
-import path from 'node:path';
-const DATA_PATH = path.join(__dirname, 'data', 'grist');
-const INPUT_FILE = path.join(DATA_PATH, 'organizations.csv');
+const INPUT_FILENAME = 'organizations.csv';
 
 import { csv2json } from 'csv42';
 
-import { defineCollection, reference } from 'astro:content';
-import { z } from 'zod';
+import { defineCollection, reference, z } from 'astro:content';
 
 import { useTranslations } from './i18n/utils';
-const LocalizedString = z.object({ de: z.string(), en: z.string() });
-const NullableLocalizedString = z
-  .object({
-    de: z.string().nullable().optional(),
-    en: z.string().nullable().optional()
-  })
-  .optional()
-  .nullable();
+import {
+  LocalizedString,
+  NullableLocalizedString,
+  readInputFile
+} from './content.config.common';
 
 const deTranslation = useTranslations('de');
 const enTranslation = useTranslations('en');
 
-export const ReviewStatus = z.enum(['01: in preparation', '02: in prereview']);
+export const genders = ['female', 'male', 'nonbinary'];
+export const careerLevels = [
+  'professor',
+  'seniorResearcher',
+  'postDoc',
+  'phdStudent',
+  'masterStudent',
+  'bachelorStudent'
+];
+export const disciplinaryProfessions = ['physicist', 'engineer', 'other'];
 
 const peopleCountGender = z.object({
   male: z.number().optional().nullable(),
   female: z.number().optional().nullable(),
   other: z.number().optional().nullable()
 });
-const peopleCount = z.object({
+const peopleCountDiscipline = z.object({
   physicist: peopleCountGender,
   engineer: peopleCountGender,
   other: peopleCountGender
+});
+const peopleCountAcademicCareerLevel = z.object({
+  professor: peopleCountDiscipline,
+  seniorResearcher: peopleCountDiscipline,
+  postDoc: peopleCountDiscipline,
+  phdStudent: peopleCountDiscipline,
+  masterStudent: peopleCountDiscipline,
+  bachelorStudent: peopleCountDiscipline
 });
 
 export const BefideOrganizationMetaOrganizationalLevel = z.enum([
@@ -66,7 +75,7 @@ export const OrganizationSchema = z.object({
   isDirectPartOf: reference('organizations').optional().nullable(),
   hasTopLevelOrganization: reference('organizations').optional().nullable(),
   meta: z.object({
-    reviewStatus: ReviewStatus.optional(),
+    reviewStatus: reference('reviewStatuses'),
     reviewedBy: z.string().optional().nullable(),
     reviewLog: z.string().nullable().default(''),
     organizationalLevel: BefideOrganizationMetaOrganizationalLevel.optional(),
@@ -79,7 +88,6 @@ export const OrganizationSchema = z.object({
   label: z.object({
     fullName: LocalizedString,
     short: NullableLocalizedString
-    // acronym: NullableLocalizedString
   }),
   description: NullableLocalizedString,
   links: z.object({
@@ -90,8 +98,7 @@ export const OrganizationSchema = z.object({
     .object({
       country: z
         .object({
-          code: z.string().optional().nullable(),
-          name: NullableLocalizedString
+          code: z.string().optional().nullable()
         })
         .optional()
         .nullable(),
@@ -102,56 +109,53 @@ export const OrganizationSchema = z.object({
     })
     .optional()
     .nullable(),
-  peopleCount: z.object({
-    uniqueProfessor: peopleCount,
-    uniqueSeniorResearcher: peopleCount,
-    uniquePostDoc: peopleCount,
-    uniquePhdStudent: peopleCount,
-    uniqueMasterStudent: peopleCount,
-    uniqueBachelorStudent: peopleCount
-  }),
-  peopleCountSum: z.object({
+  uniquePeopleCount: peopleCountAcademicCareerLevel,
+  uniquePeopleCountSum: z.object({
     total: z.number().optional().nullable(),
-    uniqueProfessor: z.number().optional().nullable(),
-    uniqueSeniorResearcher: z.number().optional().nullable(),
-    uniquePostDoc: z.number().optional().nullable(),
-    uniquePhdStudent: z.number().optional().nullable(),
-    uniqueMasterStudent: z.number().optional().nullable(),
-    uniqueBachelorStudent: z.number().optional().nullable(),
+
+    professor: z.number().optional().nullable(),
+    seniorResearcher: z.number().optional().nullable(),
+    postDoc: z.number().optional().nullable(),
+    phdStudent: z.number().optional().nullable(),
+    masterStudent: z.number().optional().nullable(),
+    bachelorStudent: z.number().optional().nullable(),
     female: z.number().optional().nullable(),
     male: z.number().optional().nullable(),
     nonbinary: z.number().optional().nullable(),
     physicist: z.number().optional().nullable(),
     engineer: z.number().optional().nullable(),
     other: z.number().optional().nullable()
-  })
+  }),
+  uniquePeopleCountRecursiveSum: z
+    .object({
+      total: z.number().optional().nullable(),
+      professor: z.number().optional().nullable(),
+      seniorResearcher: z.number().optional().nullable(),
+      postDoc: z.number().optional().nullable(),
+      phdStudent: z.number().optional().nullable(),
+      masterStudent: z.number().optional().nullable(),
+      bachelorStudent: z.number().optional().nullable(),
+      female: z.number().optional().nullable(),
+      male: z.number().optional().nullable(),
+      nonbinary: z.number().optional().nullable(),
+      physicist: z.number().optional().nullable(),
+      engineer: z.number().optional().nullable(),
+      other: z.number().optional().nullable()
+    })
+    .optional()
 });
 
 export const defineOrganizationCollection = defineCollection({
   loader: () => {
-    const input = fs.readFileSync(INPUT_FILE).toString();
-    const data = csv2json(input, {
+    const input = readInputFile(INPUT_FILENAME).toString();
+    const data = csv2json<Organization>(input, {
       nested: true
     });
-    // const communityTopLevelOrganizations = data.filter(
-    //   (d) =>
-    //     (d.meta.isA === '/organization/research-institution' ||
-    //       d.meta.isA === '/organization/university') &&
-    //     d.isPartOfCommunity
-    // );
-
-    // console.log(communityTopLevelOrganizations.map((d) => ({ id: d.id })));
 
     data.forEach((d: any) => {
       if (d.meta.befideOrganizationCategories) {
         d.meta.befideOrganizationCategoryArray =
           d.meta.befideOrganizationCategories?.split(/\s?,\s?/);
-      }
-      if (d.location.country.code) {
-        d.location.country.name = {
-          de: deTranslation('country.name.' + d.location.country.code),
-          en: enTranslation('country.name.' + d.location.country.code)
-        };
       }
     });
 

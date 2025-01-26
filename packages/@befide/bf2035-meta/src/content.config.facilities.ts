@@ -1,35 +1,19 @@
-const __dirname = import.meta.dirname;
-import fs from 'node:fs';
-import path from 'node:path';
-const DATA_PATH = path.join(__dirname, 'data', 'grist');
+const INPUT_FILE = 'facilities.csv';
 
 import { csv2json } from 'csv42';
 
-import { defineCollection, reference } from 'astro:content';
-import { z } from 'zod';
-
-import { useTranslations } from './i18n/utils';
-const deTranslation = useTranslations('de');
-const enTranslation = useTranslations('en');
+import { defineCollection, reference, z } from 'astro:content';
 
 import {
-  ReviewStatus as MetaStatus,
-  ReviewStatus
-} from './content.organizations';
-const LocalizedString = z.object({
-  de: z.string(),
-  en: z.string()
-});
-
-const NullableLocalizedString = z.object({
-  de: z.string().nullable().optional(),
-  en: z.string().nullable().optional()
-});
+  readInputFile,
+  LocalizedString,
+  NullableLocalizedString
+} from './content.config.common';
 
 export const FacilitySchema = z.object({
   id: z.string(),
   meta: z.object({
-    reviewStatus: ReviewStatus.optional(),
+    reviewStatus: reference('reviewStatuses'),
     reviewedBy: z.string().optional().nullable(),
     reviewLog: z.string().nullable().default('')
   }),
@@ -57,13 +41,10 @@ export const FacilitySchema = z.object({
 
 export const defineFacilityCollection = defineCollection({
   loader: async () => {
-    const input = fs
-      .readFileSync(path.join(DATA_PATH, 'facilities.csv'))
-      .toString();
-    const data = csv2json(input, {
+    const input = readInputFile(INPUT_FILE).toString();
+    const data = csv2json<Facility>(input, {
       nested: true
     });
-    data.forEach((d: any) => {});
     return data;
   },
   schema: FacilitySchema
