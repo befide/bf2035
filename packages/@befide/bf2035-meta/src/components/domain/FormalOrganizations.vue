@@ -38,7 +38,7 @@
         <template #body="{ data }">
           <Tag
             v-for="(item, key) in Object.values(
-              data.data.meta.befideOrganizationCategoryArray || []
+              data.data.meta.befideOrganizationCategories || []
             )"
             :value="item"
             :severity="getSeverity(item)"
@@ -128,9 +128,7 @@ onMounted(async () => {
     response.json()
   );
   befideOrganizationCategories.value = Array.from(
-    new Set(
-      data.value.flatMap((d) => d.data.meta.befideOrganizationCategoryArray)
-    )
+    new Set(data.value.flatMap((d) => d.data.meta.befideOrganizationCategories))
   );
   countryNames.value = Array.from(
     new Set(data.value.flatMap((d) => d.data.location.country.name.en))

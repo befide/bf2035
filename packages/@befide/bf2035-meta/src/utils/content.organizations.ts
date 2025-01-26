@@ -8,7 +8,8 @@ export const getOrganizations = async (topLevelOrganizationId?: string) =>
       (d) =>
         topLevelOrganizationId === undefined ||
         d.data.hasTopLevelOrganization?.id === topLevelOrganizationId ||
-        d.id === topLevelOrganizationId
+        d.id === topLevelOrganizationId ||
+        d.id === ':'
     )
     .sort((a, b) => a.id.localeCompare(b.id));
 
@@ -32,6 +33,7 @@ export const getOrganizationRoots = (
   const flatTreeNodes: TreeNode<CollectionEntry<'organizations'>>[] =
     organizations.map((organization) => ({
       id: organization.id,
+      depth: 0,
       parentId: organization.data.isDirectPartOf?.id,
       data: organization,
       children: []
@@ -47,10 +49,12 @@ export const getOrganizationRoots = (
 
   flatTreeNodes.forEach((item) => {
     if (!item.parentId) {
-      roots.push(flatTreeNodeMap[item.id]);
+      item.depth = 0;
+      roots.push({ ...flatTreeNodeMap[item.id] });
     } else {
       const parent = flatTreeNodeMap[item.parentId];
       if (parent) {
+        flatTreeNodeMap[item.id].depth = parent.depth + 1;
         parent.children.push(flatTreeNodeMap[item.id]);
       }
     }

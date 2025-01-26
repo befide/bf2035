@@ -3,7 +3,7 @@ let { root } = Astro.props;
 ---
 
 <li>
-  <span>{root.id}</span>
+  <span>{root.data.data.label.fullName.en}</span>
   <ul>
     {
       root.children &&

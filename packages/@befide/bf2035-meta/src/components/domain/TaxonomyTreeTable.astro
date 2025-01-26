@@ -1,0 +1,10 @@
+---
+import TaxonomyTreeVue from './TaxonomyTree.vue';
+
+const { acceleratorResearchSpecific } = Astro.props;
+---
+
+<TaxonomyTreeVue
+  client:only="true"
+  acceleratorResearchSpecific={acceleratorResearchSpecific}
+/>

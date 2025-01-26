@@ -1,0 +1,36 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+import { getCommunityTopLevelOrganizations } from '@/utils';
+import ProfileOrganizationTreeTable from '@/components/domain/ProfileOrganizationTreeTable.astro';
+import ProfileFacilities from '@/components/domain/ProfileFacilities.astro';
+import ProfileCourses from '@/components/domain/ProfileCourses.astro';
+import ProfileTheses from '@/components/domain/ProfileTheses.astro';
+
+export async function getStaticPaths() {
+  return (await getCommunityTopLevelOrganizations()).map((organization) => ({
+    params: { id: organization.id },
+    props: { organization }
+  }));
+}
+
+const { organization } = Astro.props;
+---
+
+<StarlightPage frontmatter={{ title: organization.data.label.fullName.en }}>
+  <h2>Working Groups</h2>
+
+  <ProfileOrganizationTreeTable rootId={organization.id} />
+
+  ## Facilities ### Test Facilities
+
+  <ProfileFacilities hostId={organization.id} />
+
+  ## Courses
+
+  <ProfileCourses universityId={organization.id} />
+
+  ## Doctoral Theses
+
+  <ProfileTheses universityId={organization.id} />
+</StarlightPage>

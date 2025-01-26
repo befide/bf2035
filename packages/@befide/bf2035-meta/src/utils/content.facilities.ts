@@ -8,6 +8,7 @@ export const getFacilities = async (hostId?: string) =>
 
 export interface TreeNode<Datum> {
   id: string;
+  depth: number;
   parentId: string | null;
   children: TreeNode<Datum>[];
   data: Datum;

@@ -77,12 +77,11 @@ export const OrganizationSchema = z.object({
   meta: z.object({
     reviewStatus: reference('reviewStatuses'),
     reviewedBy: z.string().optional().nullable(),
-    reviewLog: z.string().nullable().default(''),
-    organizationalLevel: BefideOrganizationMetaOrganizationalLevel.optional(),
-    befideOrganizationCategoryArray: z
-      .array(BefideOrganizationMetaBefideOrganizationCategories)
-      .optional(),
-    befideOrganizationCategories: z.string().optional()
+    reviewLog: z.string().optional().nullable(),
+    befideOrganizationCategories: z.preprocess(
+      (input) => (typeof input === 'string' ? input.split(/\s?,\s?/) : input),
+      z.array(BefideOrganizationMetaBefideOrganizationCategories).optional()
+    )
   }),
   isPartOfCommunity: z.boolean(),
   label: z.object({
@@ -150,13 +149,6 @@ export const defineOrganizationCollection = defineCollection({
     const input = readInputFile(INPUT_FILENAME).toString();
     const data = csv2json<Organization>(input, {
       nested: true
-    });
-
-    data.forEach((d: any) => {
-      if (d.meta.befideOrganizationCategories) {
-        d.meta.befideOrganizationCategoryArray =
-          d.meta.befideOrganizationCategories?.split(/\s?,\s?/);
-      }
     });
 
     return data;

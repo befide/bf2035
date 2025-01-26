@@ -24,7 +24,13 @@ export const ui = {
     'country.name.CH': 'Switzerland',
     'country.name.FR': 'France',
     'country.name.SE': 'Sweden',
-    'country.name.BE': 'Belgium'
+    'country.name.BE': 'Belgium',
+    'careerLevels.professor.short': 'professor',
+    'careerLevels.seniorResearcher.short': 'senior',
+    'careerLevels.postDoc.short': 'postDoc',
+    'careerLevels.phdStudent.short': 'phd',
+    'careerLevels.masterStudent.short': 'master',
+    'careerLevels.bachelorStudent.short': 'bachelor'
   },
   de: {
     'taxonomy.type.affiliation': 'Affiliation',
@@ -43,6 +49,13 @@ export const ui = {
     'country.name.CH': 'Schweiz',
     'country.name.FR': 'Frankreich',
     'country.name.SE': 'Schweden',
-    'country.name.BE': 'Belgien'
+    'country.name.BE': 'Belgien',
+
+    'careerLevel.professor.short': 'professor',
+    'careerLevel.seniorResearcher.short': 'senior',
+    'careerLevel.postDoc.short': 'postDoc',
+    'careerLevel.phdStudent.short': 'phd',
+    'careerLevel.masterStudent.short': 'master',
+    'careerLevel.bachelorStudent.short': 'bachelor'
   }
 } as const;

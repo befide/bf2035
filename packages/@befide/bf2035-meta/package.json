@@ -74,6 +74,7 @@
     "workbox-build": "7.3.0"
   },
   "devDependencies": {
+    "fast-cartesian": "9.0.0",
     "@astrojs/check": "0.9.4",
     "@astrojs/compiler": "2.10.3",
     "@astrojs/tailwind": "5.1.5",

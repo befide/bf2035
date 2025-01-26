@@ -1,0 +1,197 @@
+---
+import { get, getOrganizationRoots, getOrganizations } from '@/utils';
+import fastCartesian from 'fast-cartesian';
+import { getLangFromUrl, useTranslations } from 'src/i18n/utils';
+
+import MemberIcon from './MemberIcon.astro';
+
+import {
+  careerLevels,
+  genders,
+  disciplinaryProfessions
+} from '@/content.config.organizations';
+
+const t = useTranslations(getLangFromUrl(Astro.url));
+
+const product = fastCartesian([
+  [...careerLevels],
+  [...disciplinaryProfessions],
+  [...genders]
+]);
+const paths = product.map((d) => d.join('.'));
+
+let { rootId } = Astro.props;
+
+const organizations = await getOrganizations(rootId);
+const organizationRoots = getOrganizationRoots(organizations);
+
+function hasChildren(node) {
+  return (
+    typeof node === 'object' &&
+    typeof node.children !== 'undefined' &&
+    node.children.length > 0
+  );
+}
+
+// scroll to bottom
+function convertTreeToList(roots) {
+  var stack = [],
+    list = [],
+    hashMap = {};
+
+  stack.push(roots);
+
+  while (stack.length !== 0) {
+    var node = stack.pop();
+
+    if (hasChildren(node)) {
+      stack.push(...node.children);
+    }
+
+    visitNode(node, hashMap, list);
+  }
+
+  return list;
+}
+
+function visitNode(node, hashMap, list) {
+  console.log('visiting: ', node.id);
+  if (!hashMap[node.id]) {
+    hashMap[node.id] = true;
+    list.push(node);
+  }
+}
+const list = convertTreeToList(...organizationRoots);
+
+const flattenNodes = (nodes) => {
+  if (nodes === undefined) {
+    return undefined;
+  }
+  if (Array.isArray(nodes)) {
+    return nodes.flatMap((d) => flattenNodes(d));
+  }
+  if (Array.isArray(nodes)) {
+  }
+  return nodes.flatmap;
+};
+---
+
+<table>
+  <thead>
+    <tr>
+      <th></th><th></th>
+      <th>total</th>
+      {
+        careerLevels.map((d) => (
+          <th>
+            <span>{t(['careerLevel', d, 'short'].join('.'))}</span>
+            <MemberIcon careerLevel={d} />
+          </th>
+        ))
+      }
+      {
+        disciplinaryProfessions.map((d) => (
+          <th>
+            <span>{d}</span>
+            <MemberIcon disciplinaryProfession={d} />
+          </th>
+        ))
+      }
+      {
+        genders.map((d) => (
+          <th>
+            <span>{d}</span>
+            <MemberIcon gender={d} />
+          </th>
+        ))
+      }
+    </tr>
+
+    <tr>
+      <th>Name</th>
+      <th>members</th>
+      <th colspan="13">members recursive count</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      list.map((item) => (
+        <tr>
+          <td data-depth={item.depth}>
+            <div>{item.data.data.label.fullName.en}</div>
+          </td>
+          <td>
+            {product
+              .filter((p) => get(item.data.data.uniquePeopleCount, p.join('.')))
+              .map((p) =>
+                new Array(get(item.data.data.uniquePeopleCount, p.join('.')))
+                  .fill(0)
+                  .map(() => (
+                    <MemberIcon
+                      careerLevel={p[0]}
+                      disciplinaryProfession={p[1]}
+                      gender={p[2]}
+                    />
+                  ))
+              )}
+          </td>
+          <td class="number">{item.data.data.uniquePeopleCountSum.total}</td>
+          {careerLevels.map((d) => (
+            <td class="number">
+              {get(item.data.data.uniquePeopleCountSum, d)}
+            </td>
+          ))}
+
+          {disciplinaryProfessions.map((d) => (
+            <td class="number">
+              {get(item.data.data.uniquePeopleCountSum, d)}
+            </td>
+          ))}
+
+          {genders.map((d) => (
+            <td class="number">
+              {get(item.data.data.uniquePeopleCountSum, d)}
+            </td>
+          ))}
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+
+<style>
+  thead tr:first-child th {
+    position: relative;
+    height: 5rem;
+    vertical-align: bottom;
+  }
+  thead tr:first-child th span {
+    display: block;
+    transform-origin: left bottom;
+    position: absolute;
+    font-weight: 300;
+
+    transform: rotate(45deg) translate(calc(-100% - 1rem), 0rem);
+  }
+  td.number {
+    text-align: right;
+  }
+  td[data-depth='1'] > div {
+    padding-left: 1rem;
+  }
+  td[data-depth='2'] > div {
+    padding-left: 2rem;
+  }
+  td[data-depth='3'] > div {
+    padding-left: 3rem;
+  }
+  td[data-depth='4'] > div {
+    padding-left: 4rem;
+  }
+  td[data-depth='5'] > div {
+    padding-left: 5rem;
+  }
+  td[data-depth='6'] > div {
+    padding-left: 6rem;
+  }
+</style>

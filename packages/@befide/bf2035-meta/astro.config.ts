@@ -94,10 +94,13 @@ export default defineConfig({
           // link: 'profiles',
           // The sidebar configuration for the topic.
           items: [
-            { slug: 'profiles' },
             {
-              label: 'Entries',
-              autogenerate: { directory: 'profiles/profiles' }
+              label: 'KIT',
+              link: '/profiles/:kit'
+            },
+            {
+              label: 'TU Darmstadt',
+              link: '/profiles/:tu-darmstadt'
             }
           ]
         },

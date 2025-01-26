@@ -24,4 +24,10 @@ curl -X 'GET' \
   -H 'accept: text/csv' \
   -H 'Authorization: Bearer 839145cf5a7092364d1df58b0908952403ad9657' \
   > /Users/dirk/Projekte/kunde-KfB/@befide/bf2035/packages/@befide/bf2035-meta/src/data/grist/courses.csv
+
+curl -X 'GET' \
+  'https://befide.getgrist.com/api/docs/vGtqDxisUdjkKYGmpzAkDj/download/csv?tableId=ReviewStatus' \
+  -H 'accept: text/csv' \
+  -H 'Authorization: Bearer 839145cf5a7092364d1df58b0908952403ad9657' \
+  > /Users/dirk/Projekte/kunde-KfB/@befide/bf2035/packages/@befide/bf2035-meta/src/data/grist/review-statuses.csv
   

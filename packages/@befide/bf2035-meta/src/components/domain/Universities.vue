@@ -12,7 +12,7 @@
       v-model:filters="filters"
       filterDisplay="row"
       removableSort
-      sortField="data.label.longForm.en"
+      sortField="data.label.fullName.en"
       :sortOrder="1"
       @filter="handleFilterEvent"
     >
@@ -35,7 +35,7 @@
         <template #body="{ data }">
           <Tag
             v-for="(item, key) in Object.values(
-              data.data.meta.befideOrganizationCategoryArray || []
+              data.data.meta.befideOrganizationCategories || []
             )"
             :value="item"
             :severity="getSeverity(item)"
@@ -55,35 +55,6 @@
         </template>
       </Column>
 
-      <Column
-        header="Country"
-        sortable
-        field="data.location.country.name.en"
-        :showFilterMenu="false"
-      >
-        <template #body="{ data }">
-          <div class="flex items-center gap-2">
-            <span
-              alt="flag"
-              :class="`flag flag-${data.data.location.country.code}`"
-              style="width: 1rem; height: 1rem"
-            />
-            <span>{{ data.data.location.country.name.en }}</span>
-          </div>
-        </template>
-        <template #filter="{ filterModel, filterCallback }">
-          <Select
-            v-model="filterModel.value"
-            @change="filterCallback()"
-            :options="countryNames"
-            placeholder="Select One"
-            style="min-width: 12rem"
-            :showClear="true"
-          >
-            <template #option="{ option }">{{ option }} </template>
-          </Select>
-        </template>
-      </Column>
       <Column header="City" sortable field="data.location.city"> </Column>
       <Column header="Review Status" field="data.meta.reviewStatus">
         <template #body="{ data }">
@@ -117,19 +88,12 @@ const filters = ref({
   }
 });
 
-const countryNames = ref();
-
 onMounted(async () => {
   data.value = await fetch('/api/universities.json').then((response) =>
     response.json()
   );
   befideOrganizationCategories.value = Array.from(
-    new Set(
-      data.value.flatMap((d) => d.data.meta.befideOrganizationCategoryArray)
-    )
-  );
-  countryNames.value = Array.from(
-    new Set(data.value.flatMap((d) => d.data.location.country.name.en))
+    new Set(data.value.flatMap((d) => d.data.meta.befideOrganizationCategories))
   );
   loading.value = false;
 });
