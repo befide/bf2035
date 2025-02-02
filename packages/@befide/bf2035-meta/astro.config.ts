@@ -89,18 +89,160 @@ export default defineConfig({
         },
         {
           label: 'Profiles',
+
           // icon: 'open-book',
           // The page to link to when the topic is clicked.
           // link: 'profiles',
           // The sidebar configuration for the topic.
           items: [
+            { label: 'Index', link: '/profiles/' },
+            {
+              label: 'CERN',
+              link: '/profiles/:cern'
+            },
+            {
+              label: 'CFEL',
+              link: '/profiles/:cfel'
+            },
+            {
+              label: 'DESY',
+              link: '/profiles/:desy'
+            },
+            {
+              label: 'ESRF',
+              link: '/profiles/:esrf'
+            },
+            {
+              label: 'ESS',
+              link: '/profiles/:ess'
+            },
+            {
+              label: 'eu.XFEL',
+              link: '/profiles/:eu-xfel'
+            },
+            {
+              label: 'FAIR',
+              link: '/profiles/:fair'
+            },
+            {
+              label: 'FEP',
+              link: '/profiles/:fep'
+            },
+            {
+              label: 'FZJ',
+              link: '/profiles/:fz-juelich'
+            },
+            {
+              label: 'GSI',
+              link: '/profiles/:gsi'
+            },
+            {
+              label: 'HIJ',
+              link: '/profiles/:hij'
+            },
+            {
+              label: 'HIM',
+              link: '/profiles/:him'
+            },
+            {
+              label: 'HU Berlin',
+              link: '/profiles/:hu-berlin'
+            },
+            {
+              label: 'HZB',
+              link: '/profiles/:hzb'
+            },
+            {
+              label: 'HZDR',
+              link: '/profiles/:hzdr'
+            },
+            {
+              label: 'HZG',
+              link: '/profiles/:hzg'
+            },
+            {
+              label: 'KfB',
+              link: '/profiles/:kfb'
+            },
             {
               label: 'KIT',
               link: '/profiles/:kit'
             },
             {
+              label: 'MPIK',
+              link: '/profiles/:mpik'
+            },
+            {
+              label: 'MPP',
+              link: '/profiles/:mpp'
+            },
+            {
+              label: 'PTB',
+              link: '/profiles/:ptb'
+            },
+            {
+              label: 'RWTH Aachen',
+              link: '/profiles/:rwth-aachen'
+            },
+            {
               label: 'TU Darmstadt',
               link: '/profiles/:tu-darmstadt'
+            },
+            {
+              label: 'TU Dortmund',
+              link: '/profiles/:tu-dortmund'
+            },
+            {
+              label: 'TU Dresden',
+              link: '/profiles/:tu-dresden'
+            },
+            {
+              label: 'Uni Bonn',
+              link: '/profiles/:uni-bonn'
+            },
+            {
+              label: 'HHU',
+              link: '/profiles/:uni-düsseldorf'
+            },
+            {
+              label: 'Uni Erlangen',
+              link: '/profiles/:uni-erlangen'
+            },
+            {
+              label: 'Uni Frankfurt',
+              link: '/profiles/:uni-frankfurt'
+            },
+            {
+              label: 'Uni Göttingen',
+              link: '/profiles/:uni-goettingen'
+            },
+            {
+              label: 'Uni Hamburg',
+              link: '/profiles/:uni-hamburg'
+            },
+            {
+              label: 'Uni Jerna',
+              link: '/profiles/:uni-jena'
+            },
+            {
+              label: 'Uni Kassel',
+              link: '/profiles/:uni-kassel'
+            },
+            {
+              label: 'Uni Mainz',
+              link: '/profiles/:uni-mainz'
+            },
+            {
+              label: 'Uni Rostock',
+              link: '/profiles/:uni-rostock'
+            },
+            {
+              label: 'Uni Siegen',
+              link: '/profiles/:uni-siegen'
+            },
+            {
+              label: 'Uni Wuppertal',
+              link: '/profiles/:uni-wuppertal'
             }
           ]
         },

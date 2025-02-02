@@ -1,0 +1,71 @@
+---
+import { getFacilities, getFacilityRoots } from '@/utils/content.facilities';
+
+import { flattenTreeNodes } from '@/utils/content.tree';
+import { getEntry } from 'astro:content';
+
+let { hostId } = Astro.props;
+
+const facilities = await getFacilities(hostId);
+const facilityRoots = getFacilityRoots(facilities);
+const list = flattenTreeNodes(facilityRoots);
+---
+
+<table class="tree-table">
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>type</th>
+      <th>life cycle</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      list.map((item) => (
+        <tr
+          data-depth={item.depth}
+          data-child-index={item.childIndex}
+          data-has-children={item.children.length > 0}
+        >
+         <td class="tree-table__name tree-table__indent">
+            {(item.children.length > 0) && 
+            <input
+              id={'collapsible-' + item.depth + '-' + item.childIndex}
+              class="toggle"
+              checked="checked"
+              type="checkbox"
+            />
+            <label
+              for={'collapsible-' + item.depth + '-' + item.childIndex}
+              class="lbl-toggle"
+            >
+              <span>{item.data.label.fullName.en}</span>
+            </label>
+
+            }
+            {!(item.children.length > 0) && 
+              <span>{item.data.label.fullName.en}</span>
+            }
+           
+          </td>
+          <td>
+            <div>
+              {item.data.isInstanceOf &&
+                getEntry(item.data.isInstanceOf).then(
+                  (d) => d?.data?.term?.full?.en
+                )}
+            </div>
+          </td>
+          <td>
+            <div>
+              {item.data.lifeCycle &&
+                getEntry(item.data.lifeCycle).then(
+                  (d) => d?.data?.term?.full?.en
+                )}
+            </div>
+          </td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>

@@ -4,23 +4,20 @@ import { csv2json } from 'csv42';
 import {
   readInputFile,
   LocalizedString,
-  NullableLocalizedString
+  NullableLocalizedString,
+  ReviewSchema
 } from './content.config.common';
 
 const TaxonomySchema = z.object({
   id: z.string(),
-  isA: reference('taxonomy').optional().nullable(),
+  hasParent: reference('taxonomy').optional().nullable(),
   isAcceleratorResearchSpecific: z.boolean(),
-  meta: z.object({
-    status: reference('reviewStatuses').optional(),
-    reviewedBy: z.string().nullable().default(''),
-    changelog: z.string().nullable().default('')
-  }),
   term: z.object({
     full: LocalizedString,
     short: NullableLocalizedString
   }),
-  definition: NullableLocalizedString
+  definition: NullableLocalizedString,
+  review: ReviewSchema
 });
 
 export const defineTaxonomyCollection = defineCollection({

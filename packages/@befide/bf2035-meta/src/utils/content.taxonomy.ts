@@ -19,7 +19,7 @@ export const getTaxonomyRoot = (
   const root = stratify<CollectionEntry<'taxonomy'>>()
     .id((d) => d.id)
     .parentId((d) => {
-      return d.data.isA?.id;
+      return d.data.hasParent?.id;
     })(taxonomyEntries);
 
   root.each((node: any) => {

@@ -4,7 +4,8 @@ import { defineCollection, reference } from 'astro:content';
 import { z } from 'zod';
 import {
   NullableLocalizedString,
-  readInputFile
+  readInputFile,
+  ReviewSchema
 } from './content.config.common';
 
 export const CourseSchema = z.object({
@@ -15,11 +16,6 @@ export const CourseSchema = z.object({
     .optional()
     .nullable(),
   offeredByUniversity: reference('organizations').optional(),
-  meta: z.object({
-    reviewStatus: reference('reviewStatuses'),
-    reviewedBy: z.string().optional().nullable(),
-    reviewLog: z.string().nullable().default('')
-  }),
   label: z.object({
     fullName: NullableLocalizedString
   }),
@@ -30,7 +26,8 @@ export const CourseSchema = z.object({
   sws: z.number().nullable(),
   links: z.object({
     homepage: NullableLocalizedString
-  })
+  }),
+  review: ReviewSchema
 });
 
 export const defineCoursesCollection = defineCollection({

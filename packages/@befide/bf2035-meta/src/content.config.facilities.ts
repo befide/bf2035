@@ -7,27 +7,26 @@ import { defineCollection, reference, z } from 'astro:content';
 import {
   readInputFile,
   LocalizedString,
-  NullableLocalizedString
+  NullableLocalizedString,
+  ReviewSchema
 } from './content.config.common';
 
 export const FacilitySchema = z.object({
   id: z.string(),
-  meta: z.object({
-    reviewStatus: reference('reviewStatuses'),
-    reviewedBy: z.string().optional().nullable(),
-    reviewLog: z.string().nullable().default('')
-  }),
   label: z.object({
     fullName: LocalizedString,
     short: NullableLocalizedString
   }),
   definition: NullableLocalizedString,
-  isDirectPartOf: reference('facilities').optional().nullable(),
+  hasParent: reference('facilities').optional().nullable(),
   isSuccessorOf: reference('facilities').optional().nullable(),
   employsAcceleratorTypes: z.string().optional().nullable(),
   isInstanceOf: reference('taxonomy').optional().nullable(),
   facilityTypeParticles: z.string().optional().nullable(),
-  lifeCycle: z.string().optional().nullable(),
+  lifeCycle: reference('taxonomy')
+    .refine((d) => d.id.indexOf('/facility-life-cycle/') === 0)
+    .optional()
+    .nullable(),
   t0: z.number().optional().nullable(),
   t1: z.number().optional().nullable(),
   hasHost: reference('organizations').optional().nullable(),
@@ -36,7 +35,8 @@ export const FacilitySchema = z.object({
   secondaryApplications: z.string().optional().nullable(),
   link: z.object({
     homepage: NullableLocalizedString
-  })
+  }),
+  review: ReviewSchema
 });
 
 export const defineFacilityCollection = defineCollection({

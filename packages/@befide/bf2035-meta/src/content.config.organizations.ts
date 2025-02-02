@@ -8,7 +8,8 @@ import { useTranslations } from './i18n/utils';
 import {
   LocalizedString,
   NullableLocalizedString,
-  readInputFile
+  readInputFile,
+  ReviewSchema
 } from './content.config.common';
 
 const deTranslation = useTranslations('de');
@@ -24,6 +25,11 @@ export const careerLevels = [
   'bachelorStudent'
 ];
 export const disciplinaryProfessions = ['physicist', 'engineer', 'other'];
+export const peopleCountDiscriminators = [
+  ...careerLevels,
+  ...disciplinaryProfessions,
+  ...genders
+];
 
 const peopleCountGender = z.object({
   male: z.number().optional().nullable(),
@@ -72,17 +78,13 @@ export const BefideOrganizationMetaBefideOrganizationCategories = z
 export const OrganizationSchema = z.object({
   id: z.string(),
   isInstanceOf: reference('taxonomy').optional().nullable(),
-  isDirectPartOf: reference('organizations').optional().nullable(),
+  hasParent: reference('organizations').optional().nullable(),
   hasTopLevelOrganization: reference('organizations').optional().nullable(),
-  meta: z.object({
-    reviewStatus: reference('reviewStatuses'),
-    reviewedBy: z.string().optional().nullable(),
-    reviewLog: z.string().optional().nullable(),
-    befideOrganizationCategories: z.preprocess(
-      (input) => (typeof input === 'string' ? input.split(/\s?,\s?/) : input),
-      z.array(BefideOrganizationMetaBefideOrganizationCategories).optional()
-    )
-  }),
+  befideOrganizationCategories: z.preprocess(
+    (input) => (typeof input === 'string' ? input.split(/\s?,\s?/) : input),
+    z.array(BefideOrganizationMetaBefideOrganizationCategories).optional()
+  ),
+
   isPartOfCommunity: z.boolean(),
   label: z.object({
     fullName: LocalizedString,
@@ -110,38 +112,21 @@ export const OrganizationSchema = z.object({
     .nullable(),
   uniquePeopleCount: peopleCountAcademicCareerLevel,
   uniquePeopleCountSum: z.object({
-    total: z.number().optional().nullable(),
-
-    professor: z.number().optional().nullable(),
-    seniorResearcher: z.number().optional().nullable(),
-    postDoc: z.number().optional().nullable(),
-    phdStudent: z.number().optional().nullable(),
-    masterStudent: z.number().optional().nullable(),
-    bachelorStudent: z.number().optional().nullable(),
-    female: z.number().optional().nullable(),
-    male: z.number().optional().nullable(),
-    nonbinary: z.number().optional().nullable(),
-    physicist: z.number().optional().nullable(),
-    engineer: z.number().optional().nullable(),
-    other: z.number().optional().nullable()
+    total: z.preprocess((v) => v || 0, z.number()),
+    ...peopleCountDiscriminators.reduce((obj: any, value) => {
+      obj[value] = z.preprocess((v) => v || 0, z.number());
+      return obj;
+    }, {})
   }),
   uniquePeopleCountRecursiveSum: z
-    .object({
-      total: z.number().optional().nullable(),
-      professor: z.number().optional().nullable(),
-      seniorResearcher: z.number().optional().nullable(),
-      postDoc: z.number().optional().nullable(),
-      phdStudent: z.number().optional().nullable(),
-      masterStudent: z.number().optional().nullable(),
-      bachelorStudent: z.number().optional().nullable(),
-      female: z.number().optional().nullable(),
-      male: z.number().optional().nullable(),
-      nonbinary: z.number().optional().nullable(),
-      physicist: z.number().optional().nullable(),
-      engineer: z.number().optional().nullable(),
-      other: z.number().optional().nullable()
-    })
-    .optional()
+    .object(
+      peopleCountDiscriminators.reduce((obj: any, value) => {
+        obj[value] = z.number().optional().nullable();
+        return obj;
+      }, {})
+    )
+    .optional(),
+  review: ReviewSchema
 });
 
 export const defineOrganizationCollection = defineCollection({

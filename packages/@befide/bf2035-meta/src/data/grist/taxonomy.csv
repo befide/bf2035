@@ -1,4 +1,4 @@
-id,meta.reviewStatus,meta.reviewedBy,meta.changelog,meta.rootId,isA,term.full.de,term.full.en,term.short.de,term.short.en,definition.de,definition.en,isAcceleratorResearchSpecific
+id,review.status,review.reviewer,review.log,meta.rootId,hasParent,term.full.de,term.full.en,term.short.de,term.short.en,definition.de,definition.en,isAcceleratorResearchSpecific
 /,01: in preparation,,,,,_,_,,,,,false
 /accelerating-process/,01: in preparation,,,/,/,Beschleunigungsprozess,acceleration process,,,,,true
 /accelerating-process/electrodynamic-acceleration/,01: in preparation,,,/accelerating-process/,/accelerating-process/,Elektrodynamische Beschleunigung,electrodynamic acceleration,,,"Bei der elektrodynamischen (oder elektromagnetischen) Beschleunigung werden elektromagnetische Wechselfelder genutzt, um Energie auf Teilchen zu übertragen.",Electrodynamic (or electromagnetic) acceleration employs changing electromagnetic fields to accelerate particles.,true
@@ -170,3 +170,24 @@ id,meta.reviewStatus,meta.reviewedBy,meta.changelog,meta.rootId,isA,term.full.de
 /accelerator/erl,01: in preparation,,,/accelerator/,/accelerator/,Linearbeschleuniger mit Energierückgewinnung,energy recovery linac,,,,,true
 /accelerator/microtron/circular-microtron,01: in preparation,,,/accelerator/,/accelerator/microtron,Kreismikrotron,Circular microtron,,,"Ein Mikrotron, das mit einem einzigen großen Magneten Teilchenbahnen aus immer größer werdenden Kreisen erzeugt.",A microtron that uses a single large magnet to create particle paths made up of ever-larger circles.,true
 /accelerator/microtron/racetrack-microtron,01: in preparation,,,/accelerator/,/accelerator/microtron,Rennbahn-Mikrotron,Racetrack microtron,,,"Ein Mikrotron, das mit Hilfe von zwei Magneten Teilchenbahnen erzeugt, die immer größer werdenden Rennbahnen entsprechen. Dies ermöglicht größere Beschleunigungskomponenten und höhere Energien.","A microtron that uses two magnets to create particle paths made up of ever-larger racetracks, allowing for larger accelerating components and higher energies.",true
+/facility/facility-complex/,01: in preparation,,,/facility/,/facility/,Anlagenkomplex,facility complex,Gruppe von Anlagen,A group of facilities,,,true
+/facility/accelerator-based-facility/ion-beam-facility,01: in preparation,,,/facility/,/facility/,Ionenstrahl-Anlage,ion beam facility,"Anlage zur Erzeugung und Manipulation von Ionenstrahlen für wissenschaftliche und technologische Anwendungen in Bereichen wie Kernphysik, Mikroelektronik, Lebenswissenschaften und Umweltstudien.","Facility for the production and manipulation of ion beams with scientific and technological applications such as nuclear physics, microelectronics, life sciences and environmental studies.","Aktuelle oder in Konzeption befindliche Anlagen, die beschleunigerbasiert sind.",,true
+/facility-life-cycle/,01: in preparation,,,,,Lebenszyklusstadien,life cycle stages,,,,,false
+/facility-life-cycle/1_design,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,1. Entwurf,1. design,,,,,false
+/facility-life-cycle/1.1_conceptual_design,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,1.1 konzeptioneller Entwurf,1.1 conceptual design,,,,,false
+/facility-life-cycle/1.1.1_creating_conceptual_design,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,1.1.1 Erstellung des konzeptionellen Entwurfs,1.1.1 conceptual design creation,,,,,false
+/facility-life-cycle/1.1.2_conceptionally-designed,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,1.1.2 konzeptionell entworfen,1.1.2 conceptually designed,,,,,false
+/facility-life-cycle/1.2.2_technically-designed,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,1.2.2 technisch entworfen,1.2.2 technically designed,,,,,false
+/facility-life-cycle/1.2_technical_design,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,1.2 technischer Entwurf,1.2 technical design,,,,,false
+/facility-life-cycle/2_realization,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,2. Realisierung,2. realisation,,,,,false
+/facility-life-cycle/1.2.1_creating_technical_design,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,1.2.1 Erstellung des technischen Entwurfs,1.2.1 technical design creation,,,,,false
+/facility-life-cycle/2.1_preparation,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,2.1 Vorbereitung,2.1 preparation,,,,,false
+/facility-life-cycle/2.2_construction,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,2.2 Konstruktion,2.2 construction,,,,,false
+/facility-life-cycle/2.3_commissioning,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,2.3 Inbetriebnahme,2.3 commissioning,,,,,false
+/facility-life-cycle/3_operation_and_maintenance,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,3. Betrieb und Instandhaltung,3. operation and maintenance,,,,,false
+/facility-life-cycle/3.1_operation,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,3.1 Betrieb,3.1 operation,,,,,false
+/facility-life-cycle/3.2_maintenance,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,3.2 Instandhaltung,3.2 maintenance,,,,,false
+/facility-life-cycle/4_end_of_life,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,4. Ende der Lebensdauer,4. end of life,,,,,false
+/facility-life-cycle/4.1_replaced_by_upgrade,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,4.1 ersetzt durch ein Upgrade,4.1 replaced by upgrade,,,,,false
+/facility-life-cycle/4.2.1_decommissioning,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,4.2.1 Außerbetriebnahme,4.2.1 decommissioning,,,,,false
+/facility-life-cycle/4.2.2_decommissioned,01: in preparation,,,/facility-life-cycle/,/facility-life-cycle/,4.2.2 außer Betrieb genommen,4.2.2 decommissioned,,,,,false
