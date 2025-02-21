@@ -3,35 +3,31 @@ import path from 'node:path';
 import api from 'zotero-api-client';
 import type { Item } from 'zotero-types';
 
-const INPUT_FILEPATH = path.join('src', 'data', 'zotero', 'kfb_theses.json');
+const INPUT_FILEPATH = path.join(
+  'src',
+  'data',
+  'zotero',
+  'kfb_bf2035_used.json'
+);
 
 import { defineCollection, reference } from 'astro:content';
 import { z } from 'zod';
 
 export const ThesesSchema = z.object({
   id: z.string(),
+  'citation-key': z.string(),
 
-  author: z.object({
-    familyName: z.string(),
-    givenName: z.string(),
-    gender: z.string().optional().nullable()
-  }),
-  year: z.number(),
+  author: z.array(
+    z.union([
+      z.object({ family: z.string(), given: z.string() }),
+      z.object({ literal: z.string() })
+    ])
+  ),
   title: z.string(),
-  language: z.enum(['en', 'de']),
-  url: z.string().url().optional(),
-  thesisType: z.string(),
-  fulltextLink: z.string().url().optional(),
-  doi: z.string().optional(),
-  urn: z.string().optional(),
-  isbn: z.string().optional(),
-  abstract: z.string().optional().nullable(),
-  publisher: z.string(),
-  tags: z.array(z.string().optional()),
-  degree: z.string().optional(),
-  isA: reference('taxonomy').optional().nullable(),
-  universityRef: reference('organizations').optional().nullable(),
-  facilities: z.array(reference('facilities').optional().nullable())
+  issued: z.object({ 'date-parts': z.array(z.array(z.string())) }),
+  DOI: z.string().optional().nullable(),
+  language: z.string(),
+  tags: z.array(z.string().optional())
 });
 
 export type Theses = z.infer<typeof ThesesSchema>;
@@ -46,10 +42,9 @@ export const defineThesesCollection = defineCollection({
       const dataItem: Theses = {
         id: item.key,
         title: item.data.title,
-        language: item.data.language,
-        abstract: item.data.abstractNote,
-        thesisType: item.data.thesisType,
+        language: item.data.language || 'en',
         year: Number(item.data.date?.substr(0, 4)),
+        type: z.string(),
         publisher: item.data.publisher || item.data.university,
         url: item.data.url,
         author: {
