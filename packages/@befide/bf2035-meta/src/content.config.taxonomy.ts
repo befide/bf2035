@@ -1,16 +1,18 @@
-import { defineCollection, reference, z } from 'astro:content';
+const INPUT_FILE = 'taxonomy.csv'
 
-import { csv2json } from 'csv42';
+import { defineCollection, reference, z } from 'astro:content'
+
+import { csv2json } from 'csv42'
 import {
   readInputFile,
   LocalizedString,
   NullableLocalizedString,
   ReviewSchema
-} from './content.config.common';
+} from './content.config.common'
 
 const TaxonomySchema = z.object({
   id: z.string(),
-  hasParent: reference('taxonomy').optional().nullable(),
+  hasParent: reference('taxonomyItems').optional().nullable(),
   isAcceleratorResearchSpecific: z.boolean(),
   term: z.object({
     full: LocalizedString,
@@ -18,17 +20,17 @@ const TaxonomySchema = z.object({
   }),
   definition: NullableLocalizedString,
   review: ReviewSchema
-});
+})
 
-export const defineTaxonomyCollection = defineCollection({
+export const defineTaxonomyItemsCollection = defineCollection({
   loader: async () => {
-    const input = readInputFile('taxonomy.csv').toString();
-    const data = csv2json<Taxonomy>(input, {
+    const input = readInputFile(INPUT_FILE).toString()
+    const data = csv2json<TaxonomyItem>(input, {
       nested: true
-    });
-    return data as Taxonomy[];
+    })
+    return data
   },
-  schema: TaxonomySchema
-});
+  schema: TaxonomyItemSchema
+})
 
-export type Taxonomy = z.infer<typeof TaxonomySchema>;
+export type TaxonomyItem = z.infer<typeof TaxonomyItemSchema>

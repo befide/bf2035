@@ -1,10 +1,10 @@
-import type { APIRoute } from 'astro';
-import { getCollection, getEntry } from 'astro:content';
+import type { APIRoute } from 'astro'
+import { getCollection, getEntry } from 'astro:content'
 
-const theses = await getCollection('theses');
+const theses = await getCollection('theses')
 
 // theses.forEach(async (d) => {
-//   d.type = await getEntry('taxonomy', d.data.thesisTypetype.id);
+//   d.type = await getEntry('taxonomyItems', d.data.thesisTypetype.id);
 //   d.university = await getEntry('organizations', d.data.university.id);
 // });
 
@@ -13,5 +13,5 @@ export const GET: APIRoute = () => {
     headers: {
       'Content-Type': 'application/json; charset=utf-8'
     }
-  });
-};
+  })
+}

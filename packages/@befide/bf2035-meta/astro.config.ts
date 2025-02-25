@@ -1,24 +1,25 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
-import vue from '@astrojs/vue';
-import astroD2 from 'astro-d2';
-import type { ManifestOptions } from 'vite-plugin-pwa';
-import manifest from './webmanifest.json';
-import AstroPWA from '@vite-pwa/astro';
+import { defineConfig } from 'astro/config'
+import starlight from '@astrojs/starlight'
 
-import { purgecss } from '@zokki/astro-purgecss';
+import astroD2 from 'astro-d2'
+import type { ManifestOptions } from 'vite-plugin-pwa'
+import manifest from './webmanifest.json'
+import AstroPWA from '@vite-pwa/astro'
 
-import tailwind from '@astrojs/tailwind';
-import starlightSidebarTopics from 'starlight-sidebar-topics';
+import { purgecss } from '@zokki/astro-purgecss'
 
-import Components from 'unplugin-vue-components/vite';
-import { PrimeVueResolver } from '@primevue/auto-import-resolver';
+// import tailwind from '@astrojs/tailwind';
+import starlightSidebarTopics from 'starlight-sidebar-topics'
 
-import rehypeMermaid from 'rehype-mermaid';
-import addMermaidClass from './src/utils/add-mermaid-classname';
+import Components from 'unplugin-vue-components/vite'
+import { PrimeVueResolver } from '@primevue/auto-import-resolver'
 
-import starlightUtils from '@befide/starlight-utils';
+import rehypeMermaid from 'rehype-mermaid'
+import addMermaidClass from './src/utils/add-mermaid-classname'
+
+import starlightUtils from '@befide/starlight-utils'
+// import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
@@ -31,6 +32,7 @@ export default defineConfig({
       noExternal: []
     },
     plugins: [
+      // tailwindcss(),
       // @ts-ignore
       Components({
         resolvers: [PrimeVueResolver()]
@@ -45,19 +47,22 @@ export default defineConfig({
     ...(process.env.NODE_ENV === 'production'
       ? []
       : [astroD2({ inline: true })]),
-    tailwind(),
-    vue({ appEntrypoint: '/src/main', devtools: true }),
+    // tailwind(),
+    // vue({ appEntrypoint: '/src/main', devtools: true }),
     starlight({
       title: 'BF2035 Meta',
       disable404Route: true,
-
       components: {
         Head: './src/components/Head.astro',
         Search: './src/components/Search.astro',
+        LinkCard: './src/components/LinkCard.astro',
         Badge: './src/components/Badge.astro'
       },
 
-      customCss: ['./src/tailwind.css'],
+      customCss: [
+        // Relative path to your custom CSS file
+        './src/styles/custom.css'
+      ],
       // Path to your Tailwind base styles:
 
       plugins: [
@@ -285,10 +290,10 @@ export default defineConfig({
         }
       ]
     }),
-    tailwind({
-      // Disable the default base styles:
-      applyBaseStyles: false
-    }),
+    // tailwind({
+    //   // Disable the default base styles:
+    //   applyBaseStyles: false
+    // }),
     purgecss(),
     AstroPWA({
       workbox: {
@@ -308,7 +313,7 @@ export default defineConfig({
       manifest: manifest as Partial<ManifestOptions>
     })
   ]
-});
+})
 
 //   // starlightSidebarTopics([
 //   //   // A topic representing a guide section of your project.

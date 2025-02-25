@@ -1,0 +1,90 @@
+---
+import { Badge } from '@astrojs/starlight/components';
+
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends Omit<HTMLAttributes<'a'>, 'title'> {
+	title: string;
+	description?: string;
+	categories?: string[];
+}
+
+const { title, categories, description, ...attributes } = Astro.props;
+---
+
+<div class={'sl-link-card-2 ' + categories?.join(' ')}>
+	<span class="sl-link-card__categories">
+		{categories?.map((c) => <Badge text={c} name="note" size="small" class={'category--' + c} />)}
+	</span>
+
+	<span class="sl-link-card__body">
+		<a {...attributes}>
+			<span class="title" set:html={title} />
+		</a>
+		{description && <p class="description" set:html={description} />}
+	</span>
+</div>
+<style>
+	.sl-link-card__categories {
+		text-align: right;
+	}
+	.sl-link-card-2 {
+		display: grid;
+		position: relative;
+		grid-template-rows: 1fr auto !important;
+		gap: 0.5rem;
+		box-shadow: var(--sl-shadow-sm);
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.5rem;
+		padding: 1rem;
+	}
+
+	.category--international {
+		background-color: var(--color-kfb-gray);
+	}
+	.category--university {
+		background-color: var(--color-kfb-blue);
+	}
+	.category--hgf,
+	.category--mpg,
+	.category--fraunhofer {
+		background-color: var(--color-kfb-red);
+	}
+	.category--international {
+		background-color: var(--color-kfb-gray);
+	}
+
+	a {
+		line-height: var(--sl-line-height-headings);
+		text-decoration: none;
+	}
+
+	/* a11y fix for https://github.com/withastro/starlight/issues/487 */
+	a::before {
+		position: absolute;
+		inset: 0;
+		content: '';
+	}
+
+	.stack {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.title {
+		color: var(--sl-color-white);
+		font-weight: 600;
+		font-size: var(--sl-text-lg);
+	}
+
+	.description {
+		color: var(--sl-color-gray-3);
+		line-height: 1.5;
+	}
+
+	/* Hover state */
+	.sl-link-card-2:hover {
+		border-color: var(--sl-color-gray-2);
+		background: var(--sl-color-gray-7, var(--sl-color-gray-6));
+	}
+</style>

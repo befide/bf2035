@@ -1,10 +1,88 @@
 ---
-import TaxonomyTreeVue from './TaxonomyTree.vue';
+import { getTaxonomyItems, getTaxonomyRoots } from '@/utils/content.taxonomy';
 
-const { acceleratorResearchSpecific } = Astro.props;
+import { flattenTreeNodes } from '@/utils/content.tree';
+
+interface Props {
+  isAcceleratorResearchSpecific: boolean
+}
+
+
+const { isAcceleratorResearchSpecific } = Astro.props;
+
+const items = await getTaxonomyItems({ isAcceleratorResearchSpecific});
+const root = getTaxonomyRoots(items);
+const list = flattenTreeNodes(root);
+
+console.log(items)
+
 ---
+<table class="tree-table">
+  <thead>
+    <tr>
+      <th>name</th>
+      <th></th>
 
-<TaxonomyTreeVue
-  client:only="true"
-  acceleratorResearchSpecific={acceleratorResearchSpecific}
-/>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      list.map((item) => (
+        <tr
+          data-depth={item.depth}
+          data-child-index={item.childIndex}
+          data-has-children={item.children.length > 0}
+        >
+         <td class="tree-table__name tree-table__indent">
+            {(item.children.length > 0) &&
+            <input
+              id={'collapsible-' + item.depth + '-' + item.childIndex}
+              class="toggle"
+              checked="checked"
+              type="checkbox"
+            />
+            <label
+              for={'collapsible-' + item.depth + '-' + item.childIndex}
+              class="lbl-toggle"
+            >
+
+              {item.data.term.full.en}
+            </label>
+
+            }
+            {!(item.children.length > 0) &&
+
+              <div class="name">{item.data.term.full.en}</div>
+              <div class="">{item.data.definition.en}</div>
+              
+            }
+          </td>
+        <td>{item.data.isAcceleratorResearchSpecific ? "true" : "false"}</td>
+  </tr>
+  )
+)
+  } 
+</tbody>
+</table>
+
+<style>
+  .tree-table {
+    width: 100%;
+}
+.tree-table th:first-child {
+  width: 50%;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+.name {
+  font-weight: bold;
+  font-size: var(--sl-text-base);
+}
+.type {
+  font-style: italic;
+}
+
+
+</style>

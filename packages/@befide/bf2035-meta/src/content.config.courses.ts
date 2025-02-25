@@ -1,18 +1,18 @@
-const INPUT_FILE = 'courses.csv';
-import { csv2json } from 'csv42';
-import { defineCollection, reference } from 'astro:content';
-import { z } from 'zod';
+const INPUT_FILE = 'courses.csv'
+import { csv2json } from 'csv42'
+import { defineCollection, reference } from 'astro:content'
+import { z } from 'zod'
 import {
   NullableLocalizedString,
   readInputFile,
   ReviewSchema
-} from './content.config.common';
+} from './content.config.common'
 
 export const CourseSchema = z.object({
   id: z.string(),
-  isInstanceOfTeachingEvent: reference('taxonomy').optional(),
+  isInstanceOfTeachingEvent: reference('taxonomyItems').optional(),
   addressesProgrammeOfStudyLevels: z
-    .array(reference('taxonomy'))
+    .array(reference('taxonomyItems'))
     .optional()
     .nullable(),
   offeredByUniversity: reference('organizations').optional(),
@@ -28,23 +28,23 @@ export const CourseSchema = z.object({
     homepage: NullableLocalizedString
   }),
   review: ReviewSchema
-});
+})
 
 export const defineCoursesCollection = defineCollection({
   loader: () => {
-    const input = readInputFile(INPUT_FILE).toString();
+    const input = readInputFile(INPUT_FILE).toString()
     const data = csv2json<Course>(input, {
       nested: true
-    });
+    })
     data.forEach((d: any) => {
       if (d.addressesProgrammeOfStudyLevels) {
         d.addressesProgrammeOfStudyLevels =
-          d.addressesProgrammeOfStudyLevels.split(/\s?,\s?/);
+          d.addressesProgrammeOfStudyLevels.split(/\s?,\s?/)
       }
-    });
-    return data;
+    })
+    return data
   },
   schema: CourseSchema
-});
+})
 
-export type Course = z.infer<typeof CourseSchema>;
+export type Course = z.infer<typeof CourseSchema>

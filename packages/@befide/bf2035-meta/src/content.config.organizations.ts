@@ -1,21 +1,21 @@
-const INPUT_FILENAME = 'organizations.csv';
+const INPUT_FILENAME = 'organizations.csv'
 
-import { csv2json } from 'csv42';
+import { csv2json } from 'csv42'
 
-import { defineCollection, reference, z } from 'astro:content';
+import { defineCollection, reference, z } from 'astro:content'
 
-import { useTranslations } from './i18n/utils';
+import { useTranslations } from './i18n/utils'
 import {
   LocalizedString,
   NullableLocalizedString,
   readInputFile,
   ReviewSchema
-} from './content.config.common';
+} from './content.config.common'
 
-const deTranslation = useTranslations('de');
-const enTranslation = useTranslations('en');
+const deTranslation = useTranslations('de')
+const enTranslation = useTranslations('en')
 
-export const genders = ['female', 'male', 'nonbinary'];
+export const genders = ['female', 'male', 'nonbinary']
 export const careerLevels = [
   'professor',
   'seniorResearcher',
@@ -23,24 +23,24 @@ export const careerLevels = [
   'phdStudent',
   'masterStudent',
   'bachelorStudent'
-];
-export const disciplinaryProfessions = ['physicist', 'engineer', 'other'];
+]
+export const disciplinaryProfessions = ['physicist', 'engineer', 'other']
 export const peopleCountDiscriminators = [
   ...careerLevels,
   ...disciplinaryProfessions,
   ...genders
-];
+]
 
 const peopleCountGender = z.object({
   male: z.number().optional().nullable(),
   female: z.number().optional().nullable(),
   other: z.number().optional().nullable()
-});
+})
 const peopleCountDiscipline = z.object({
   physicist: peopleCountGender,
   engineer: peopleCountGender,
   other: peopleCountGender
-});
+})
 const peopleCountAcademicCareerLevel = z.object({
   professor: peopleCountDiscipline,
   seniorResearcher: peopleCountDiscipline,
@@ -48,7 +48,7 @@ const peopleCountAcademicCareerLevel = z.object({
   phdStudent: peopleCountDiscipline,
   masterStudent: peopleCountDiscipline,
   bachelorStudent: peopleCountDiscipline
-});
+})
 
 export const BefideOrganizationMetaOrganizationalLevel = z.enum([
   '00 Community',
@@ -58,32 +58,29 @@ export const BefideOrganizationMetaOrganizationalLevel = z.enum([
   '04 intermediate level',
   '05 working group',
   'other'
-]);
+])
 
-export const BefideOrganizationMetaBefideOrganizationCategories = z
-  .enum([
-    'fraunhofer',
-    'hgf',
-    'international',
-    'mpg',
-    'national',
-    'university',
-    'committee',
-    'funder',
-    'root',
-    'consortium'
-  ])
-  .optional();
+export const BefideOrganizationMetaBefideOrganizationCategories = z.enum([
+  'fraunhofer',
+  'hgf',
+  'international',
+  'mpg',
+  'government',
+  'university',
+  'committee',
+  'funder',
+  'root',
+  'consortium'
+])
 
 export const OrganizationSchema = z.object({
   id: z.string(),
-  isInstanceOf: reference('taxonomy').optional().nullable(),
+  isInstanceOf: reference('taxonomyItems').optional().nullable(),
   hasParent: reference('organizations').optional().nullable(),
   hasTopLevelOrganization: reference('organizations').optional().nullable(),
-  befideOrganizationCategories: z.preprocess(
-    (input) => (typeof input === 'string' ? input.split(/\s?,\s?/) : input),
-    z.array(BefideOrganizationMetaBefideOrganizationCategories).optional()
-  ),
+  befideOrganizationCategories: z.preprocess((input) => {
+    return typeof input === 'string' ? input.split(/\s?,\s?/) : input
+  }, z.array(BefideOrganizationMetaBefideOrganizationCategories)),
 
   isPartOfCommunity: z.boolean(),
   label: z.object({
@@ -114,31 +111,32 @@ export const OrganizationSchema = z.object({
   uniquePeopleCountSum: z.object({
     total: z.preprocess((v) => v || 0, z.number()),
     ...peopleCountDiscriminators.reduce((obj: any, value) => {
-      obj[value] = z.preprocess((v) => v || 0, z.number());
-      return obj;
+      obj[value] = z.preprocess((v) => v || 0, z.number())
+      return obj
     }, {})
   }),
   uniquePeopleCountRecursiveSum: z
     .object(
       peopleCountDiscriminators.reduce((obj: any, value) => {
-        obj[value] = z.number().optional().nullable();
-        return obj;
+        obj[value] = z.number().optional().nullable()
+        return obj
       }, {})
     )
     .optional(),
   review: ReviewSchema
-});
+})
 
 export const defineOrganizationCollection = defineCollection({
   loader: () => {
-    const input = readInputFile(INPUT_FILENAME).toString();
+    const input = readInputFile(INPUT_FILENAME).toString()
     const data = csv2json<Organization>(input, {
       nested: true
-    });
+    })
+    console.log(data.map((d) => d.befideOrganizationCategories))
 
-    return data;
+    return data
   },
   schema: OrganizationSchema
-});
+})
 
-export type Organization = z.infer<typeof OrganizationSchema>;
+export type Organization = z.infer<typeof OrganizationSchema>

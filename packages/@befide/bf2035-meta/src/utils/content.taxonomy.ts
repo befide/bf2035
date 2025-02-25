@@ -1,29 +1,20 @@
-import { getCollection, type CollectionEntry } from 'astro:content';
+import type { TaxonomyItem } from '@/content.config.taxonomy'
+import { type CollectionEntry, getCollection } from 'astro:content'
 
-import { stratify } from 'd3-hierarchy';
+import { getRoots } from './content.tree'
 
-export const getTaxonomyEntries = async (
-  isAcceleratorResearchSpecific?: boolean
-) =>
-  (await getCollection('taxonomy')).filter((d) =>
-    d.data.id === '/' || isAcceleratorResearchSpecific === undefined
-      ? true
-      : isAcceleratorResearchSpecific
-        ? d.data.isAcceleratorResearchSpecific
-        : !d.data.isAcceleratorResearchSpecific
-  );
+export const getTaxonomyItems = async (options: {
+  isAcceleratorResearchSpecific: boolean
+}) =>
+  (await getCollection('taxonomyItems'))
+    .filter(
+      (d) =>
+        options.isAcceleratorResearchSpecific === undefined ||
+        d.data.isAcceleratorResearchSpecific ==
+          options.isAcceleratorResearchSpecific
+    )
+    .map((d) => d.data)
 
-export const getTaxonomyRoot = (
-  taxonomyEntries: CollectionEntry<'taxonomy'>[]
-) => {
-  const root = stratify<CollectionEntry<'taxonomy'>>()
-    .id((d) => d.id)
-    .parentId((d) => {
-      return d.data.hasParent?.id;
-    })(taxonomyEntries);
-
-  root.each((node: any) => {
-    node.data.descendantsCount = node.descendants().length;
-  });
-  return root;
-};
+export const getTaxonomyRoots = (items: TaxonomyItem[]) => {
+  return getRoots<TaxonomyItem>(items)
+}

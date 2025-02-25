@@ -14,7 +14,7 @@ export const rollupContentCollectionTree = (
   i = 0,
   d = 0
 ) => {
-  let walk = true;
+  const walk = true;
 
   if (walk) {
     if (Array.isArray(tree)) {

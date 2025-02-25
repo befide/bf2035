@@ -81,11 +81,11 @@ export const defineThesesCollection = defineCollection({
             splittedExtraLine[1] !== 'none'
           ) {
             dataItem.fulltextLink = splittedExtraLine[1];
-          } else {
+          } else if (splittedExtraLine[0].toLowerCase() === 'citation key') {} else {}
             console.log({
               message: 'extra line not parsed',
-              extraLine,
-              id: item.key
+              extraLine
+              // id: item.key
             });
           }
         });

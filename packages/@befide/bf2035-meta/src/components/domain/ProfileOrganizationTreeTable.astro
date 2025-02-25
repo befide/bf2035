@@ -2,7 +2,7 @@
 import { get, getOrganizationRoots, getOrganizations } from '@/utils';
 import fastCartesian from 'fast-cartesian';
 import { getLangFromUrl, useTranslations } from 'src/i18n/utils';
-
+const t = useTranslations(getLangFromUrl(Astro.url));
 import MemberIcon from './MemberIcon.astro';
 
 import {
@@ -11,8 +11,6 @@ import {
   disciplinaryProfessions
 } from '@/content.config.organizations';
 import { flattenTreeNodes } from '@/utils/content.tree';
-
-const t = useTranslations(getLangFromUrl(Astro.url));
 
 const product = fastCartesian([
   [...careerLevels],
@@ -49,6 +47,7 @@ const list = flattenTreeNodes(organizationRoots);
         ))
       }
       {
+        
         genders.map((d) => (
           <th>
             <span>{d}</span>
@@ -60,7 +59,7 @@ const list = flattenTreeNodes(organizationRoots);
     <tr>
       <th>Name</th>
       <th>members</th>
-      <th colspan="13">members recursive count</th>
+      <th colspan="13" align="center">members recursive count</th>
     </tr>
   </thead>
   <tbody>
@@ -107,8 +106,8 @@ const list = flattenTreeNodes(organizationRoots);
                   ))
               )}
           </td>
-          <td class="number">
-            {item.data.uniquePeopleCountRecursiveSum.total}
+          <td class="number" >
+            <strong>{item.data.uniquePeopleCountRecursiveSum.total}</strong>
           </td>
           {careerLevels.map((d) => (
             <td class="number">
@@ -116,7 +115,8 @@ const list = flattenTreeNodes(organizationRoots);
             </td>
           ))}
 
-          {disciplinaryProfessions.map((d) => (
+          {
+          disciplinaryProfessions.map((d) => (
             <td class="number">
               {get(item.data.uniquePeopleCountRecursiveSum, d)}
             </td>
@@ -146,101 +146,5 @@ const list = flattenTreeNodes(organizationRoots);
     font-weight: 300;
 
     transform: rotate(45deg) translate(calc(-100% - 1rem), 0rem);
-  }
-</style>
-
-<style is:global>
-  .tree-table tr:has(:not([checked='checked'])) > td {
-  }
-  .lbl-toggle {
-    position: relative;
-  }
-
-  [data-has-children='true'] .lbl-toggle::before {
-    content: ' ';
-    display: inline-block;
-
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid currentColor;
-
-    vertical-align: middle;
-    margin-right: 0.25rem;
-    transform: translateY(-2px);
-    width: .5rem;
-    height: .5rem;
-
-    transition: transform 0.2s ease-out;
-    position: absolute;
-    top: .5rem;
-    left: -1rem;
-  }
-  .toggle:checked + .lbl-toggle::before {
-    transform: rotate(90deg) translateX(-3px);
-  }
-
-  .toggle:checked + .lbl-toggle {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .lbl-toggle:hover {
-    color: #7c5a0b;
-    cursor: pointer;
-  }
-  input[type='checkbox'] {
-    display: none;
-  }
-  .tree-table {
-    width: 100%;
-  }
-  td.tree-table__indent {
-      width: 60%;
-  }
-
-  .tree-table td.number {
-    text-align: right;
-  }
-  .tree-table tr[data-depth='1'] td {
-    background-color: hsl(0, 0%, 100%);
-  }
-  .tree-table tr[data-depth='2'] td {
-    background-color: hsl(0, 0%, 94%);
-  }
-  .tree-table tr[data-depth='3'] td {
-    background-color: hsl(0, 0%, 92%);
-  }
-  .tree-table tr[data-depth='4'] td {
-    background-color: hsl(0, 0%, 88%);
-  }
-  .tree-table tr[data-depth='5'] td {
-    background-color: hsl(0, 0%, 84%);
-  }
-  .tree-table tr[data-depth='6'] td {
-    background-color: hsl(0, 0%, 80%);
-  }
-  .tree-table tr[data-depth='0'] > td.tree-table__indent {
-    padding-left: 1rem;
-  }
-  .tree-table tr[data-depth='1'] > td.tree-table__indent {
-    padding-left: 2rem;
-  }
-
-  .tree-table tr[data-depth='2'] > td.tree-table__indent {
-    padding-left: 3rem;
-  }
-  .tree-table tr[data-depth='3'] > td.tree-table__indent {
-    padding-left: 4rem;
-  }
-  .tree-table tr[data-depth='4'] > td.tree-table__indent {
-    padding-left: 5rem;
-  }
-  .tree-table tr[data-depth='5'] > td.tree-table__indent {
-    padding-left: 6rem;
-  }
-  .tree-table tr[data-depth='6'] > td.tree-table__indent {
-    padding-left: 7rem;
-  }
-  .tree-table td {
-    padding-right: .5rem !important;
   }
 </style>

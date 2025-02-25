@@ -3,14 +3,12 @@ title: Taxonomy
 tableOfContents: false
 ---
 
-import { FileTree } from '@astrojs/starlight/components';
-
-import TaxonomyTree from 'src/components/domain/TaxonomyTree.astro';
+import TaxonomyTree from '@/components/domain/TaxonomyTree.astro';
 
 ## Accelerator research specific terms
 
-<TaxonomyTree acceleratorResearchSpecific={true} />
+<TaxonomyTree isAcceleratorResearchSpecific={undefined} />
 
 ## General terms
 
-<TaxonomyTree acceleratorResearchSpecific={false} />
+<TaxonomyTree isAcceleratorResearchSpecific={true} />

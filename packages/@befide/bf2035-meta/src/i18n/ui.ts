@@ -7,6 +7,13 @@ export const defaultLang = 'de';
 
 export const ui = {
   en: {
+    'organizationCategory.fraunhofer': 'Fraunhofer-Gesellschaft',
+    'organizationCategory.government': 'Government agencies',
+    'organizationCategory.hgf': 'Helmholtz Association (HGF)',
+    'organizationCategory.international': 'International facilities',
+    'organizationCategory.mpg': 'Max Planck Society (MPG)',
+    'organizationCategory.university': 'Universities',
+
     'taxonomy.type.affiliation': 'Affiliation',
     'taxonomy.type.accelerator-type': 'Affiliation',
     'taxonomy.type.project': 'Project',
@@ -33,6 +40,13 @@ export const ui = {
     'careerLevels.bachelorStudent.short': 'bachelor'
   },
   de: {
+    'organizationCategory.fraunhofer': 'Fraunhofer-Gesellschaft',
+    'organizationCategory.government': 'Government agencies',
+    'organizationCategory.hgf': 'Helmholtz Association (HGF)',
+    'organizationCategory.international': 'International facilities',
+    'organizationCategory.mpg': 'Max Planck Society (MPG)',
+    'organizationCategory.university': 'Universities',
+
     'taxonomy.type.affiliation': 'Affiliation',
     'taxonomy.type.organisation': 'Organisation',
     'taxonomy.type.project': 'Projekt',

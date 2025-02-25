@@ -1,24 +1,21 @@
 ---
-import CommunityOrganizationsTreeVue from './CommunityOrganizationsTree.vue';
-import { circularReplacer } from '@/utils/jsonReplacer';
+import CommunityOrganizationsTreeVue from './CommunityOrganizationsTree.vue'
+import { circularReplacer } from '@/utils/jsonReplacer'
 
-const organizations = await getCommunityOrganizations();
-const roots = getOrganizationRoots(organizations);
+const organizations = await getCommunityOrganizations()
+const roots = getOrganizationRoots(organizations)
 
 const data = {
   tree: roots[0],
-  keys: organizations.map((d) => d.id).sort()
-};
+  keys: organizations.map((d) => d.id).sort(),
+}
 
-const dataJSON = JSON.stringify(data, circularReplacer());
+const dataJSON = JSON.stringify(data, circularReplacer())
 
-import { getLangFromUrl } from '@/i18n/utils';
-import {
-  getCommunityOrganizations,
-  getOrganizationRoots
-} from '@/utils/content.organizations';
+import { getLangFromUrl } from '@/i18n/utils'
+import { getCommunityOrganizations, getOrganizationRoots } from '@/utils/content.organizations'
 
-const lang = getLangFromUrl(Astro.url);
+const lang = getLangFromUrl(Astro.url)
 ---
 
 <CommunityOrganizationsTreeVue client:only="true" dataJSON={dataJSON} />
