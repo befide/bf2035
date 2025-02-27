@@ -5,6 +5,6 @@ export * from './content.taxonomy';
 export * from './content.theses';
 
 export const get = (obj: any, path: string) => {
-  const keys = path.split('.');
-  return keys.reduce((currentObj, key) => currentObj[key], obj);
+	const keys = path.split('.');
+	return keys.reduce((currentObj, key) => currentObj[key], obj);
 };

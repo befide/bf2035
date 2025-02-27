@@ -1,175 +1,161 @@
 ---
-import { getTheses } from '@/utils/content.theses';
+import { allThesesForUniversity } from '@/utils/content.theses';
 
 import { groups } from 'd3-array';
 
 let { universityId } = Astro.props;
-const theses = await getTheses(universityId);
 
+const theses = allThesesForUniversity(universityId);
 const engineeringDegreeCount = theses.filter(
-  (d) => d.data.thesisType.indexOf('Dr. Ing.') > -1
+	(d) => d.data.thesisType.indexOf('Dr. Ing.') > -1
 ).length;
 const naturalScienceDegreeCount = theses.filter(
-  (d) => d.data.thesisType.indexOf('Dr. rer. nat.') > -1
+	(d) => d.data.thesisType.indexOf('Dr. rer. nat.') > -1
 ).length;
 
 const thesesGroupedByYear = groups(theses, (d) => d.data.year);
 ---
 
 <section>
-  <p>
-    There are {theses.length} doctoral theses listed in our database, of which
-    {naturalScienceDegreeCount} lead to a science degree and {
-      engineeringDegreeCount
-    } to an engineering degree.
-  </p>
-  <ul class="grouped-list">
-    {
-      thesesGroupedByYear.map((entry) => (
-        <li class="grouped-list-item">
-          <div class="grouped-list-item__body">
-            <h4 class="grouped-list-item__body-title">{entry[0]}</h4>
-            <span class="grouped-list-item__body-count">
-              ({entry[1].length} entries)
-            </span>
-          </div>
-          <ul class="grouped-list-item__items">
-            {entry[1].map((item) => (
-              <li class="grouped-list-item__item grouped-list-item__item--thesis">
-                <span class="thesis__author">
-                  <span class="thesis__author-given-name">
-                    {item.data.author.givenName}
-                  </span>
-                  <span class="thesis__author-family-name">
-                    {item.data.author.familyName}
-                  </span>
-                </span>
-                <span class="thesis__year">{item.data.year}</span>
-                <span class="thesis__title">{item.data.title}</span>
-                <span class="thesis__type">{item.data.thesisType}</span>
-                <ul class="thesis__links">
-                  {item.data.doi && (
-                    <li class="thesis__link">
-                      <a href={encodeURI('https://doi.org/' + item.data.doi)}>
-                        <img
-                          alt={'DOI: ' + item.data.doi}
-                          src={encodeURI(
-                            'https://img.shields.io/badge/doi-' +
-                              item.data.doi.replace('-', '--') +
-                              '-FAB70C?logo=doi'
-                          )}
-                        />
-                      </a>
-                    </li>
-                  )}
-                  {item.data.urn && (
-                    <li class="thesis__link">
-                      <a
-                        href={encodeURI(
-                          'https://nbn-resolving.de/' + item.data.urn
-                        )}
-                      >
-                        <img
-                          alt={'URN: ' + item.data.urn}
-                          src={encodeURI(
-                            'https://img.shields.io/badge/urn-' +
-                              item.data.urn.replace('-', '--') +
-                              '-blue'
-                          )}
-                        />
-                      </a>
-                    </li>
-                  )}
-                  {item.data.fulltextLink && (
-                    <li>
-                      <a href={item.data.fulltextLink}>
-                        <img
-                          alt="PDF"
-                          src="https://img.shields.io/badge/PDF-fulltext-white"
-                        />
-                      </a>
-                    </li>
-                  )}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </li>
-      ))
-    }
-  </ul>
+	<p>
+		There are {theses.length} doctoral theses listed in our database, of which
+		{naturalScienceDegreeCount} lead to a science degree and {engineeringDegreeCount} to an engineering
+		degree.
+	</p>
+	<ul class="grouped-list">
+		{
+			thesesGroupedByYear.map((entry) => (
+				<li class="grouped-list-item">
+					<div class="grouped-list-item__body">
+						<h4 class="grouped-list-item__body-title">{entry[0]}</h4>
+						<span class="grouped-list-item__body-count">({entry[1].length} entries)</span>
+					</div>
+					<ul class="grouped-list-item__items">
+						{entry[1].map((item) => (
+							<li class="grouped-list-item__item grouped-list-item__item--thesis">
+								<span class="thesis__author">
+									<span class="thesis__author-given-name">{item.data.author.givenName}</span>
+									<span class="thesis__author-family-name">{item.data.author.familyName}</span>
+								</span>
+								<span class="thesis__year">{item.data.year}</span>
+								<span class="thesis__title">{item.data.title}</span>
+								<span class="thesis__type">{item.data.thesisType}</span>
+								<ul class="thesis__links">
+									{item.data.doi && (
+										<li class="thesis__link">
+											<a href={encodeURI('https://doi.org/' + item.data.doi)}>
+												<img
+													alt={'DOI: ' + item.data.doi}
+													src={encodeURI(
+														'https://img.shields.io/badge/doi-' +
+															item.data.doi.replace('-', '--') +
+															'-FAB70C?logo=doi'
+													)}
+												/>
+											</a>
+										</li>
+									)}
+									{item.data.urn && (
+										<li class="thesis__link">
+											<a href={encodeURI('https://nbn-resolving.de/' + item.data.urn)}>
+												<img
+													alt={'URN: ' + item.data.urn}
+													src={encodeURI(
+														'https://img.shields.io/badge/urn-' +
+															item.data.urn.replace('-', '--') +
+															'-blue'
+													)}
+												/>
+											</a>
+										</li>
+									)}
+									{item.data.fulltextLink && (
+										<li>
+											<a href={item.data.fulltextLink}>
+												<img alt="PDF" src="https://img.shields.io/badge/PDF-fulltext-white" />
+											</a>
+										</li>
+									)}
+								</ul>
+							</li>
+						))}
+					</ul>
+				</li>
+			))
+		}
+	</ul>
 </section>
 
 <style is:global>
-  .grouped-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .grouped-list-item__body {
-    background-color: lightgray;
-    padding: 0.5rem;
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-  }
-  .grouped-list-item__items {
-    list-style: none;
-    padding: 0;
-    margin: 0 !important;
-  }
-  .grouped-list-item__item {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 1rem;
-    position: relative;
-    padding: 0.5rem;
-  }
-  grouped-list-item__body-title {
-    flex: 1;
-  }
-  grouped-list-item__body-title {
-    flex: 0;
-  }
-  .grouped-list-item__item:before {
-    display: block;
-    position: absolute;
-    content: ' ';
-    width: 100%;
-    height: 1px;
-    background-color: lightgray;
-    top: -0.5rem;
-    left: -0.5rem;
-  }
-  .grouped-list-item__item:first-child:before {
-    display: none;
-  }
+	.grouped-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.grouped-list-item__body {
+		background-color: lightgray;
+		padding: 0.5rem;
+		display: flex;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
+	.grouped-list-item__items {
+		list-style: none;
+		padding: 0;
+		margin: 0 !important;
+	}
+	.grouped-list-item__item {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1rem;
+		position: relative;
+		padding: 0.5rem;
+	}
+	grouped-list-item__body-title {
+		flex: 1;
+	}
+	grouped-list-item__body-title {
+		flex: 0;
+	}
+	.grouped-list-item__item:before {
+		display: block;
+		position: absolute;
+		content: ' ';
+		width: 100%;
+		height: 1px;
+		background-color: lightgray;
+		top: -0.5rem;
+		left: -0.5rem;
+	}
+	.grouped-list-item__item:first-child:before {
+		display: none;
+	}
 </style>
 <style>
-  .grouped-list-item__item--thesis .grouped-list-item__body {
-    font-weight: bold;
-  }
-  .thesis__year::before {
-    content: '(';
-  }
-  .thesis__year::after {
-    content: '): ';
-  }
-  .thesis__title {
-    display: block;
-  }
-  ul.thesis__links {
-    display: flex;
-    align-items: baseline;
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    gap: 0.5rem;
-  }
-  .thesis__link {
-    display: inline;
-  }
-  .thesis__author-family-name {
-    font-weight: bold;
-  }
+	.grouped-list-item__item--thesis .grouped-list-item__body {
+		font-weight: bold;
+	}
+	.thesis__year::before {
+		content: '(';
+	}
+	.thesis__year::after {
+		content: '): ';
+	}
+	.thesis__title {
+		display: block;
+	}
+	ul.thesis__links {
+		display: flex;
+		align-items: baseline;
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+		gap: 0.5rem;
+	}
+	.thesis__link {
+		display: inline;
+	}
+	.thesis__author-family-name {
+		font-weight: bold;
+	}
 </style>

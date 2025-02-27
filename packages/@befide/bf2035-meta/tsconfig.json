@@ -10,7 +10,7 @@
       "@assets/*": ["src/astro/assets/*"],
       "@layouts/*": ["src/astro/layouts/*"],
       "@utils/*": ["src/astro/utils/*"],
-      "@components/*": ["src/astro/components/*"],
+      "@components‡/*": ["src/astro/components/*"],
       "@ui/*": ["src/astro/components/ui/*"],
       "@styles/*": ["src/astro/styles/*"]
     }

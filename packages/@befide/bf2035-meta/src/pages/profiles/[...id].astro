@@ -1,14 +1,14 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 
-import { getCommunityTopLevelOrganizations, getFacilities } from '@/utils';
+import { allCommunityTopLevelOrganizations, getFacilities } from '@/utils';
 import ProfileOrganizationTreeTable from '@/components/domain/ProfileOrganizationTreeTable.astro';
 import ProfileFacilityTreeTable from '@/components/domain/ProfileFacilityTreeTable.astro';
 import ProfileCourses from '@/components/domain/ProfileCourses.astro';
 import ProfileTheses from '@/components/domain/ProfileTheses.astro';
 
 export async function getStaticPaths() {
-  return (await getCommunityTopLevelOrganizations()).map((organization) => ({
+  return (await allCommunityTopLevelOrganizations()).map((organization) => ({
     params: { id: organization.id },
     props: { organization }
   }));

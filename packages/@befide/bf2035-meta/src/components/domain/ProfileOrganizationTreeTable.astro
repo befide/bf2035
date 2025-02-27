@@ -1,8 +1,8 @@
 ---
-import { get, getOrganizationRoots, getOrganizations } from '@/utils';
+import { get, allOrganizationRoots, allOrganizationsForTopLevelOrganization } from '@/utils';
 import fastCartesian from 'fast-cartesian';
-import { getLangFromUrl, useTranslations } from 'src/i18n/utils';
-const t = useTranslations(getLangFromUrl(Astro.url));
+
+
 import MemberIcon from './MemberIcon.astro';
 
 import {
@@ -20,8 +20,8 @@ const product = fastCartesian([
 
 let { rootId } = Astro.props;
 
-const organizations = await getOrganizations(rootId);
-const organizationRoots = getOrganizationRoots(organizations);
+const organizations =  allOrganizationsForTopLevelOrganization(rootId);
+const organizationRoots = allOrganizationRoots(organizations);
 const list = flattenTreeNodes(organizationRoots);
 ---
 
@@ -33,7 +33,7 @@ const list = flattenTreeNodes(organizationRoots);
       {
         careerLevels.map((d) => (
           <th>
-            <span>{t(['careerLevel', d, 'short'].join('.'))}</span>
+            <span>{Astro.locals.t("careerLevel." + d  + ".short")}</span>
             <MemberIcon careerLevel={d} />
           </th>
         ))

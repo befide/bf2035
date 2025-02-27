@@ -1,19 +1,19 @@
 import { circularReplacer } from '@/utils/jsonReplacer.ts';
-import { getOrganizationRoots, getCommunityOrganizations } from '@/utils/';
+import { allOrganizationRoots, allCommunityOrganizations } from '@/utils/';
 import type { APIRoute } from 'astro';
 
-const organizations = await getCommunityOrganizations();
-const roots = getOrganizationRoots(organizations);
+const organizations = await allCommunityOrganizations();
+const roots = allOrganizationRoots(organizations);
 
 const result = {
-  tree: roots[0],
-  keys: organizations.map((d) => d.id).sort()
+	tree: roots[0],
+	keys: organizations.map((d) => d.id).sort(),
 };
 
 export const GET: APIRoute = () => {
-  return new Response(JSON.stringify(result, circularReplacer(), 2), {
-    headers: {
-      'Content-Type': 'application/json; charset=utf-8'
-    }
-  });
+	return new Response(JSON.stringify(result, circularReplacer(), 2), {
+		headers: {
+			'Content-Type': 'application/json; charset=utf-8',
+		},
+	});
 };

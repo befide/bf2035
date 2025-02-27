@@ -1,4 +1,13 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": ["node_modules/zotero-types"]
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
 }

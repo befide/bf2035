@@ -1,5 +1,5 @@
 ---
-import { getTaxonomyItems, getTaxonomyRoots } from '@/utils/content.taxonomy';
+import { getTaxonomyItems, allTaxonomyRoots } from '@/utils/content.taxonomy';
 
 import { flattenTreeNodes } from '@/utils/content.tree';
 
@@ -11,7 +11,7 @@ interface Props {
 const { isAcceleratorResearchSpecific } = Astro.props;
 
 const items = await getTaxonomyItems({ isAcceleratorResearchSpecific});
-const root = getTaxonomyRoots(items);
+const root = allTaxonomyRoots(items);
 const list = flattenTreeNodes(root);
 
 console.log(items)
