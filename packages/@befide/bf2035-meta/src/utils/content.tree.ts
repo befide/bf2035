@@ -1,6 +1,6 @@
 import type { Facility } from '@/content.config.facilities';
 import type { Organization } from '@/content.config.organizations';
-import type { TaxonomyItem } from '@/content.config.taxonomy';
+import type { TaxonomyItem } from '@/content.config.taxonomyItems';
 
 export interface TreeNode<Datum> {
 	id: string;

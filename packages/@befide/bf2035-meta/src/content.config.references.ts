@@ -1,7 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import api from 'zotero-api-client';
-import type { Item } from 'zotero-types';
+import type {Item} from 'zotero-types';
+import {defineCollection} from 'astro:content';
+import {z} from 'zod';
 
 const INPUT_FILEPATH = path.join(
   'src',
@@ -9,9 +10,6 @@ const INPUT_FILEPATH = path.join(
   'zotero',
   'kfb_bf2035_used.json'
 );
-
-import { defineCollection, reference } from 'astro:content';
-import { z } from 'zod';
 
 export const ThesesSchema = z.object({
   id: z.string(),

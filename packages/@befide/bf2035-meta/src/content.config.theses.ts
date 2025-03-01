@@ -1,12 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import api from 'zotero-api-client';
 import type { Item } from 'zotero-types';
-
-const INPUT_FILEPATH = path.join('src', 'data', 'zotero', 'kfb_theses.json');
-
 import { defineCollection, reference } from 'astro:content';
 import { z } from 'zod';
+
+const INPUT_FILEPATH = path.join('src', 'data', 'zotero', 'kfb_theses.json');
 
 export const ThesesSchema = z.object({
 	id: z.string(),
@@ -92,17 +90,17 @@ export const defineThesesCollection = defineCollection({
 					}
 				});
 
-			dataItem.tags.forEach((tag: string) => {
-				if (tag.startsWith('/information-content-entity/')) {
+			dataItem.tags.forEach((tag) => {
+				if (tag?.startsWith('/information-content-entity/')) {
 					dataItem.isARef = tag;
 				}
-				if (tag.startsWith('#befide/organization/')) {
+				if (tag?.startsWith('#befide/organization/')) {
 					dataItem.universityRef = tag.replace('#befide/organization/', '');
 				}
-				if (tag.startsWith('/person/gender/')) {
+				if (tag?.startsWith('/person/gender/')) {
 					dataItem.author.gender = tag.replace('/person/gender/', '');
 				}
-				if (tag.startsWith('#befide/facility/')) {
+				if (tag?.startsWith('#befide/facility/')) {
 					dataItem.facilities.push(tag.replace('#befide/facility/', ''));
 				}
 			});

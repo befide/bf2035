@@ -1,6 +1,6 @@
-import { visit, CONTINUE } from 'unist-util-visit';
+import { CONTINUE, visit } from 'unist-util-visit';
 import type { Plugin } from 'unified';
-import type { Root, Element } from 'hast';
+import type { Element, Root } from 'hast';
 
 const visitor = (node: any) => {
 	const dataLanguageMermaid = 'mermaid';

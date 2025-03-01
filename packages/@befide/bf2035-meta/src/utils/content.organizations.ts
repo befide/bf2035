@@ -1,38 +1,39 @@
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 
 import { getRoots, type TreeNode } from './content.tree';
-import { peopleCountDiscriminators, type Organization } from '@/content.config.organizations';
+import { type Organization, peopleCountDiscriminators } from '@/content.config.organizations';
 import { get } from './index';
 
-export const allOrganizations = (await getCollection(
-	'organizations'
-)) as CollectionEntry<'organizations'>[];
+export const allOrganizations = async () => (await getCollection(
+	'organizations', () => true
+));
 
-export const allOrganizationsForTopLevelOrganization = (topLevelOrganizationId: string) =>
-	allOrganizations.filter(({ data, id }) => {
+export const allOrganizationsForTopLevelOrganization = async (topLevelOrganizationId: string) =>
+	await getCollection(
+	'organizations', ({ data, id }) => {
 		return (
 			topLevelOrganizationId === undefined ||
 			data.hasTopLevelOrganization?.id === topLevelOrganizationId ||
 			id === topLevelOrganizationId ||
 			id === ':'
-		);
-	});
+		)})
 
-export const allCommunityOrganizations = allOrganizations.filter(
-	(entry) => entry.data.isPartOfCommunity
+
+
+export const allCommunityOrganizations = await getCollection(
+	'organizations', (entry) => entry.data.isPartOfCommunity
 );
 
-export const allCommunityTopLevelOrganizations = allCommunityOrganizations
-	.filter(
-		(entry) =>
+export const allCommunityTopLevelOrganizations = async () => await getCollection(
+	'organizations', (entry) =>
+		entry.data.isPartOfCommunity &&
 			!entry.data.hasTopLevelOrganization &&
 			entry.data.befideOrganizationCategories.indexOf('committee') !== 0
-	)
-	.sort((a, b) => a.label.short.en?.localeCompare(b.label.short.en));
 
-export const getOrganizationCategories = Array.from(
+)
+export const getOrganizationCategories = async () => Array.from(
 	new Set(
-		allCommunityTopLevelOrganizations.flatMap((entry) => entry.data.befideOrganizationCategories)
+		(await allCommunityTopLevelOrganizations()).flatMap((entry) => entry.data.befideOrganizationCategories)
 	)
 );
 

@@ -108,23 +108,21 @@ export const OrganizationSchema = z.object({
 		}, {}),
 	}),
 	uniquePeopleCountRecursiveSum: z.object(
-		peopleCountDiscriminators.reduce((obj: any, value) => {
-			obj[value] = z.number().optional().nullable();
-			return obj;
-		}, {})
-	),
+		peopleCountDiscriminators
+			.reduce((obj: any, value) => {
+				obj[value] = z.number().optional().nullable();
+				return obj;
+			}, {})
+	).optional(),
 	review: ReviewSchema,
 });
 
 export const defineOrganizationCollection = defineCollection({
 	loader: () => {
 		const input = readInputFile(INPUT_FILENAME).toString();
-		const data = csv2json<Organization>(input, {
+		return csv2json<Organization>(input, {
 			nested: true,
 		});
-		console.log(data.map((d) => d.befideOrganizationCategories));
-
-		return data;
 	},
 	schema: OrganizationSchema,
 });

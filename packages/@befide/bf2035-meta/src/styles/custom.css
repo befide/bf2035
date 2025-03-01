@@ -41,7 +41,7 @@
 	display: inline-block;
 	border: 1px solid var(--sl-color-border-badge);
 	border-radius: 0.25rem;
-	font-family: var(--sl-font-sans);
+	font-family: var(--sl-font-system), sans-serif;
 	line-height: normal;
 	color: var(--sl-color-text-badge);
 	background-color: var(--sl-color-bg-badge);

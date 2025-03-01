@@ -5,7 +5,7 @@ import { groups } from 'd3-array';
 
 let { universityId } = Astro.props;
 
-const theses = allThesesForUniversity(universityId);
+const theses = await allThesesForUniversity(universityId);
 const engineeringDegreeCount = theses.filter(
 	(d) => d.data.thesisType.indexOf('Dr. Ing.') > -1
 ).length;

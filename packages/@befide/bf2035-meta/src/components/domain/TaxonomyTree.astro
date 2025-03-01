@@ -1,5 +1,5 @@
 ---
-import { getTaxonomyItems, allTaxonomyRoots } from '@/utils/content.taxonomy';
+import {  allDomainTaxonomyItems, allGeneralTaxonomyItems } from '@/utils/content.taxonomyItems';
 
 import { flattenTreeNodes } from '@/utils/content.tree';
 
@@ -10,11 +10,12 @@ interface Props {
 
 const { isAcceleratorResearchSpecific } = Astro.props;
 
-const items = await getTaxonomyItems({ isAcceleratorResearchSpecific});
+const items = isAcceleratorResearchSpecific  ? await allGeneralTaxonomyItems() : await allDomainTaxonomyItems();
+console.log(items)
 const root = allTaxonomyRoots(items);
 const list = flattenTreeNodes(root);
 
-console.log(items)
+
 
 ---
 <table class="tree-table">

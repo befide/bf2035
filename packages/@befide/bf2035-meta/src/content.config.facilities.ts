@@ -5,9 +5,9 @@ import { csv2json } from 'csv42';
 import { defineCollection, reference, z } from 'astro:content';
 
 import {
-	readInputFile,
 	LocalizedString,
 	NullableLocalizedString,
+	readInputFile,
 	ReviewSchema,
 } from './content.config.common';
 
@@ -29,7 +29,7 @@ export const FacilitySchema = z.object({
 	employsAcceleratorTypes: z.string().optional().nullable(),
 
 	lifeCycle: reference('taxonomyItems')
-		.refine((d) => d.id.indexOf('/facility-life-cycle/') === 0)
+		// .refine((d: string) => d?.indexOf('/facility-life-cycle/') > -1)
 		.optional()
 		.nullable(),
 
@@ -74,10 +74,9 @@ export const FacilitySchema = z.object({
 export const defineFacilityCollection = defineCollection({
 	loader: async () => {
 		const input = readInputFile(INPUT_FILE).toString();
-		const data = csv2json<Facility>(input, {
+		return csv2json<Facility>(input, {
 			nested: true,
 		});
-		return data;
 	},
 	schema: FacilitySchema,
 });

@@ -1,5 +1,4 @@
+
+// Astro types, not necessary if you already have a tsconfig.json
 /// <reference path="../.astro/types.d.ts" />
-/// <reference types="astro/client" />
-/// <reference types="astro/content" />
-/// <reference types="vite-plugin-pwa/info" />
-/// <reference types="vite-plugin-pwa/vanillajs" />
+

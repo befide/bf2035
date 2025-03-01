@@ -1,6 +1,8 @@
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 
-export const allTheses = (await getCollection('theses')) as CollectionEntry<'theses'>[];
+export const allTheses = await getCollection('theses');
 
-export const allThesesForUniversity = (universityId: string) =>
-	allTheses.filter((entry) => entry.data.universityRef.id === universityId);
+export const allThesesForUniversity = async (universityId: string) => 
+	(await getCollection('theses', 
+		(entry) => entry.data.universityRef?.id === universityId));
+	
