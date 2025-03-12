@@ -1,16 +1,22 @@
 ---
-import { get, allOrganizationRoots, allOrganizationsForTopLevelOrganization } from '@/utils';
+import { get } from '@/utils';
 import fastCartesian from 'fast-cartesian';
-
-
 import MemberIcon from './MemberIcon.astro';
-
 import {
   careerLevels,
   genders,
-  disciplinaryProfessions
+  disciplinaryProfessions,
+  type Organization,
 } from '@/content.config.organizations';
-import { flattenTreeNodes } from '@/utils/content.tree';
+import { flattenTreeNodes, getRoots } from '@/utils/content.tree';
+import { getCollection } from 'astro:content';
+
+
+interface Props {
+  organizationId: string
+}
+let { organizationId } = Astro.props;
+
 
 const product = fastCartesian([
   [...careerLevels],
@@ -18,11 +24,17 @@ const product = fastCartesian([
   [...genders]
 ]);
 
-let { rootId } = Astro.props;
+const organizations = await getCollection(
+	'organizations', ({ data, id }) => (
+			organizationId === undefined ||
+			data.hasTopLevelOrganization?.id === organizationId ||
+			id === organizationId ||
+			id === ':'
+		))
 
-const organizations =  allOrganizationsForTopLevelOrganization(rootId);
-const organizationRoots = allOrganizationRoots(organizations);
-const list = flattenTreeNodes(organizationRoots);
+const organizationRoots = getRoots<Organization>(organizations.map(d => d.data));
+const list = flattenTreeNodes(organizationRoots)
+
 ---
 
 <table class="tree-table">
@@ -33,7 +45,7 @@ const list = flattenTreeNodes(organizationRoots);
       {
         careerLevels.map((d) => (
           <th>
-            <span>{Astro.locals.t("careerLevel." + d  + ".short")}</span>
+            <span>{d}</span>
             <MemberIcon careerLevel={d} />
           </th>
         ))
@@ -107,24 +119,25 @@ const list = flattenTreeNodes(organizationRoots);
               )}
           </td>
           <td class="number" >
-            <strong>{item.data.uniquePeopleCountRecursiveSum.total}</strong>
+            
+            <strong>{item.data.uniquePeopleCountRecursiveSum?.total}</strong>
           </td>
           {careerLevels.map((d) => (
             <td class="number">
-              {get(item.data.uniquePeopleCountRecursiveSum, d)}
+              {get(item.data.uniquePeopleCountRecursiveSum, d) || "-"}
             </td>
           ))}
 
           {
           disciplinaryProfessions.map((d) => (
             <td class="number">
-              {get(item.data.uniquePeopleCountRecursiveSum, d)}
+              {get(item.data.uniquePeopleCountRecursiveSum, d) || "-"}
             </td>
           ))}
 
           {genders.map((d) => (
             <td class="number">
-              {get(item.data.uniquePeopleCountRecursiveSum, d)}
+              {get(item.data.uniquePeopleCountRecursiveSum, d) || "-"}
             </td>
           ))}
         </tr>

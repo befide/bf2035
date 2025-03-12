@@ -1,83 +1,93 @@
 ---
-import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro"
+import type {InferGetStaticPropsType} from "astro"
 
-import { allOrganizations, getFacilities } from '@/utils/';
-import ProfileOrganizationTreeTable from '@/components/domain/ProfileOrganizationTreeTable.astro';
-import ProfileFacilityTreeTable from '@/components/domain/ProfileFacilityTreeTable.astro';
-import ProfileCourses from '@/components/domain/ProfileCourses.astro';
-import ProfileTheses from '@/components/domain/ProfileTheses.astro';
+import {getFacilities} from "@/utils/"
+import ProfileOrganizationTreeTable from "@/components/domain/ProfileOrganizationTreeTable.astro"
+import ProfileFacilityTreeTable from "@/components/domain/ProfileFacilityTreeTable.astro"
+import ProfileCourses from "@/components/domain/ProfileCourses.astro"
+import ProfileTheses from "@/components/domain/ProfileTheses.astro"
+import {getCollection} from "astro:content"
 
-console.log(await allOrganizations())
 
-export async function getStaticPaths() {
-  return (await allOrganizations()).map((organization) => ({
-    params: { id: organization.id },
-    props: { organization }
-  }));
+
+export async function getStaticPaths () {
+  return (await getCollection (
+      "organizations", (entry) => entry.data.isPartOfCommunity))
+      .map ((organization) => ({
+        params: {id: organization.data.id},
+        props: {organization}
+      }))
 }
 
-const { organization } = Astro.props;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const {organization} = Astro.props
 
-const userFacilitiesInDesign = await getFacilities();
-const userFacilitiesInConstruction = await getFacilities({
+
+const userFacilitiesInDesign = await getFacilities ({hostId: organization.data.id, lifeCycleCategory: 2})
+const userFacilitiesInConstruction = await getFacilities ({
   hostId: organization.id,
   isUserFacility: true,
   lifeCycleCategory: 2
-});
-const userFacilitiesInOperation = await getFacilities({
+})
+const userFacilitiesInOperation = await getFacilities ({
   hostId: organization.id,
   isUserFacility: true,
   lifeCycleCategory: 3
-});
-const testFacilities = await getFacilities({
+})
+const testFacilities = await getFacilities ({
   hostId: organization.id,
-  isUserFacility: false
-});
-
-
+  // isUserFacility: false,
+  lifeCycleCategory: 1
+})
 ---
 
-<StarlightPage frontmatter={{ title: organization.data.label.fullName.en }}>
-  <h2>Working Groups</h2>
+<StarlightPage frontmatter={{title: organization.data.label.fullName.en}}>
 
-  <ProfileOrganizationTreeTable rootId={organization.id} />
+    <h2>Staff per working Groups</h2>
 
-  <h2>Facilities</h2>
+  {
+      organization && (
+                  <ProfileOrganizationTreeTable organizationId={organization.data.id}/>
+      )
+  }
+
+
+    <h2>Facilities</h2>
 
   {userFacilitiesInOperation.length > 0 && (
-  <h3>User Facilities (in operation)</h3>
+          <h3>User Facilities (in operation)</h3>
 
-  <ProfileFacilityTreeTable
-    items={userFacilitiesInOperation}
-    
-  />)}
+          <ProfileFacilityTreeTable
+                  items={userFacilitiesInOperation}
+
+          />)}
 
   {userFacilitiesInConstruction.length && (
-  <h3>User Facilities (preparation/construction/commissinoning)</h3>
+          <h3>User Facilities (preparation/construction/commissinoning)</h3>
 
-  <ProfileFacilityTreeTable
-    items={userFacilitiesInConstruction}
-  />)}
+          <ProfileFacilityTreeTable
+                  items={userFacilitiesInConstruction}
+          />)}
 
   {userFacilitiesInDesign.length && (
-  <h3>User Facilities (design)</h3>
-  <ProfileFacilityTreeTable
-    items={userFacilitiesInDesign}
-  />
+          <h3>User Facilities (design)</h3>
+          <ProfileFacilityTreeTable
+                  items={userFacilitiesInDesign}
+          />
   )}
   {testFacilities.length && (
-  
-    <h3>Test Facilities</h3>
-    <ProfileFacilityTreeTable items={testFacilities} />
-    
+
+          <h3>Test Facilities</h3>
+          <ProfileFacilityTreeTable items={testFacilities}/>
+
   )}
 
+    <h2>Courses</h2>
 
-  <h2>Courses</h2>
+    <ProfileCourses universityId={organization.id}/>
 
-  <ProfileCourses universityId={organization.id} />
+    <h2>Doctoral Theses</h2>
 
-  <h2>Doctoral Theses</h2>
-
-  <ProfileTheses universityId={organization.id} />
+    <ProfileTheses universityId={organization.id}/>
 </StarlightPage>

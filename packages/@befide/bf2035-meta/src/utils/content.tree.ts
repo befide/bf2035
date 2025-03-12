@@ -18,7 +18,7 @@ export function getRoots<Datum extends Facility | TaxonomyItem | Organization>(
 
 	const flatTreeNodes: TreeNode<Datum>[] = items.map((item) => ({
 		id: item.id,
-		parentId: item.hasParent?.id || null,
+		parentId: (item.hasParent === null || typeof item.hasParent === "string") ? item.hasParent : item.hasParent?.id || null,
 		data: item,
 		childIndex: null,
 		children: [],

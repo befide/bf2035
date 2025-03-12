@@ -5,11 +5,14 @@ tableOfContents: false
 
 
 import TaxonomyTree from '@/components/domain/TaxonomyTree.astro';
+import {allDomainTaxonomyItems, allGeneralTaxonomyItems} from '@/utils/content.taxonomyItems';
+
 
 ## Accelerator research specific terms
 
-<TaxonomyTree isAcceleratorResearchSpecific={false} />
+<TaxonomyTree items={allDomainTaxonomyItems}/>
+
 
 ## General terms
 
-<TaxonomyTree isAcceleratorResearchSpecific={true} />
+<TaxonomyTree items={allGeneralTaxonomyItems}/>

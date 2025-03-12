@@ -5,24 +5,17 @@ import { type Organization, peopleCountDiscriminators } from '@/content.config.o
 import { get } from './index';
 
 export const allOrganizations = async () => (await getCollection(
-	'organizations', () => true
-));
+	'organizations')).map(({data}) => data);
 
-export const allOrganizationsForTopLevelOrganization = async (topLevelOrganizationId: string) =>
-	await getCollection(
-	'organizations', ({ data, id }) => {
-		return (
+export const allOrganizationsForTopLevelOrganization =  async (topLevelOrganizationId: string) => {
+	return await getCollection(
+	'organizations', ({ data, id }) => (
 			topLevelOrganizationId === undefined ||
 			data.hasTopLevelOrganization?.id === topLevelOrganizationId ||
 			id === topLevelOrganizationId ||
 			id === ':'
-		)})
-
-
-
-export const allCommunityOrganizations = await getCollection(
-	'organizations', (entry) => entry.data.isPartOfCommunity
-);
+		))
+}
 
 export const allCommunityTopLevelOrganizations = async () => await getCollection(
 	'organizations', (entry) =>
@@ -35,9 +28,14 @@ export const getOrganizationCategories = async () => Array.from(
 	new Set(
 		(await allCommunityTopLevelOrganizations()).flatMap((entry) => entry.data.befideOrganizationCategories)
 	)
-);
+)
 
-function rollupUniquePeopleCountSum(node: TreeNode<Organization>) {
+export const getOrganizationRoots = (items: Organization[]) => {
+	return getRoots<Organization>(items);
+};
+
+
+export function rollupUniquePeopleCountSum(node: TreeNode<Organization>) {
 	if (node.children.length === 0) {
 		node.data.uniquePeopleCountRecursiveSum = {
 			total: node.data.uniquePeopleCountSum.total,
@@ -64,10 +62,3 @@ function rollupUniquePeopleCountSum(node: TreeNode<Organization>) {
 		};
 	}
 }
-
-export const allOrganizationRoots = (organizations: Organization[]) => {
-	const roots = getRoots<Organization>(organizations);
-	rollupUniquePeopleCountSum(roots[0]);
-
-	return roots;
-};

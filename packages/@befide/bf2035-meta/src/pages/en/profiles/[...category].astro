@@ -4,7 +4,7 @@ import {
 	getOrganizationCategories,
 } from './../../../utils/content.organizations';
 
-import { CardGrid, Card, LinkButton } from '@astrojs/starlight/components';
+import { CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 
 const categories = await getOrganizationCategories();
@@ -32,7 +32,7 @@ const organizations = (await allCommunityTopLevelOrganizations()).filter(
 				categories.map((c) => (
 					<LinkButton
 						class={'category--' + c}
-						href={'/en/profiles/' + c}
+						href={c === category ? '/en/profiles/' : '/en/profiles/' + c}
 						icon={c === category ? 'approve-check' : undefined}
 					>
 						{'organizationCategory.' + c}
@@ -45,8 +45,8 @@ const organizations = (await allCommunityTopLevelOrganizations()).filter(
 		<CardGrid>
 			{
 				organizations.map((o) => (
-					<Card title={o.data.label.short.en || ''}>
-						<p>{o.data.description.en} </p>
+					<LinkCard title={o.data.label.short.en || ''}>
+						<p>{o.data.description.de} </p>
 						<ul class="list-none p-0 m-0">
 							<li class="flex items-center py-4 px-2 border-t border-surface flex-wrap">
 								<div class="text-surface-500 dark:text-surface-300 w-6/12 md:w-2/12 font-medium">
@@ -98,7 +98,7 @@ const organizations = (await allCommunityTopLevelOrganizations()).filter(
 						</ul>
 						description={o.data.label.fullName.en}
 						categories={o.data.befideOrganizationCategories}
-					</Card>
+					</LinkCard>
 				))
 			}
 		</CardGrid>

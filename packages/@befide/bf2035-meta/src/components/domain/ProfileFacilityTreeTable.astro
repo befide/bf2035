@@ -11,9 +11,11 @@ interface Props {
 }
 let { items } = Astro.props;
 
+
 const facilityRoots = getFacilityRoots(items);
 const list = flattenTreeNodes(facilityRoots);
 
+// console.log(JSON.stringify(list,  null, 2))
 ---
 
 <table class="tree-table">
@@ -47,17 +49,17 @@ const list = flattenTreeNodes(facilityRoots);
               class="lbl-toggle"
             >
 
-              <span class="name">{item.data.label.fullName.en}</span>
+              <span class="name">{item.data.label?.fullName?.en}</span>
             </label>
 
             }
             {!(item.children.length > 0) &&
 
-              <span class="name">{item.data.label.fullName.en}</span>
+              <span class="name">{item.data.data?.label?.fullName?.en}</span>
               <div class="type">
               {item.data.isInstanceOf &&
-                getEntries(item.data.isInstanceOf).then(
-                  (d) => d && d.data?.term?.full?.en
+                getEntries(item.data.data?.isInstanceOf).then(
+                  (d) => d && d.data.term?.full?.en
                 )}
             </div>
             }
@@ -77,7 +79,7 @@ const list = flattenTreeNodes(facilityRoots);
                 getEntry(entry).then(
                   (application) => (
                     application &&
-                    <Badge size="small" text={application.data?.term?.full?.en}/>)
+                    <Badge size="small" text={application.data?.term?.en}/>)
                 )))
               }
             </div>
@@ -86,7 +88,7 @@ const list = flattenTreeNodes(facilityRoots);
             <div class="nowrap">
               {item.data.lifeCycle &&
                 getEntry(item.data.lifeCycle).then(
-                  (d)=> d && d.data.term.full.en
+                  (d)=> d && d.data.term.en
                 )}
             </div>
           </td>

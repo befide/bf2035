@@ -11,6 +11,8 @@ import {
 	ReviewSchema,
 } from './content.config.common';
 
+import { getOrganizationRoots, rollupUniquePeopleCountSum } from './utils';
+
 export const genders = ['female', 'male', 'nonbinary'];
 export const careerLevels = [
 	'professor',
@@ -107,22 +109,30 @@ export const OrganizationSchema = z.object({
 			return obj;
 		}, {}),
 	}),
-	uniquePeopleCountRecursiveSum: z.object(
-		peopleCountDiscriminators
+	uniquePeopleCountRecursiveSum: z.object({
+		...peopleCountDiscriminators
 			.reduce((obj: any, value) => {
-				obj[value] = z.number().optional().nullable();
+				obj[value] = z.preprocess((v) => v || 0, z.number());
 				return obj;
 			}, {})
-	).optional(),
+	}).optional(),
 	review: ReviewSchema,
 });
 
 export const defineOrganizationCollection = defineCollection({
 	loader: () => {
 		const input = readInputFile(INPUT_FILENAME).toString();
-		return csv2json<Organization>(input, {
+		const organizations = csv2json<Organization>(input, {
 			nested: true,
 		});
+
+		const roots = getOrganizationRoots(organizations)
+		const communityRoot = roots.find((root) => (root.id === ":"))
+		if (communityRoot)
+			rollupUniquePeopleCountSum(communityRoot)
+	
+
+		return organizations
 	},
 	schema: OrganizationSchema,
 });

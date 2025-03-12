@@ -28,10 +28,21 @@ export const FacilitySchema = z.object({
 
 	employsAcceleratorTypes: z.string().optional().nullable(),
 
-	lifeCycle: reference('taxonomyItems')
-		// .refine((d: string) => d?.indexOf('/facility-life-cycle/') > -1)
-		.optional()
-		.nullable(),
+	lifeCycle: z.object({
+		currentStatus: reference('taxonomyItems').nullable(),
+		design: z.object({
+			startYear: z.number().nullable(),
+		}).optional(),
+		realization: z.object({
+			startYear: z.number().nullable(),
+		}).optional(),
+		operation: z.object({
+			startYear: z.number().nullable(),
+			endYear: z.number().nullable(),
+		}).optional(),
+		
+	}).optional().nullable(),
+		
 
 	primaryBeamParticles: z.preprocess((input) => {
 		return typeof input === 'string' ? input.split(/\s?,\s?/) : input;
