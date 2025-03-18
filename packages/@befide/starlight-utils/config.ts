@@ -1,59 +1,61 @@
-import { AstroError } from "astro/errors";
-import { z } from "astro/zod";
+import { AstroError } from 'astro/errors'
+import { z } from 'astro:content'
 
 const multiSidebarConfig = z
   .union([
     z.object({
       switcherStyle: z.union([
-        z.enum(["dropdown", "horizontalList", "hidden"]).default("horizontalList"),
+        z
+          .enum(['dropdown', 'horizontalList', 'hidden'])
+          .default('horizontalList'),
         z.boolean(),
       ]),
     }),
     z.boolean().transform((value) => {
       if (value) {
-        return { switcherStyle: "horizontalList" as const };
+        return { switcherStyle: 'horizontalList' as const }
       } else {
-        return undefined;
+        return undefined
       }
     }),
   ])
-  .optional();
+  .optional()
 
 const navLinksConfig = z
   .object({
     leading: z.object({ useSidebarLabelled: z.string() }).optional(),
   })
-  .optional();
+  .optional()
 
 export const configSchema = z
   .object({
     multiSidebar: multiSidebarConfig,
     navLinks: navLinksConfig,
   })
-  .optional();
+  .optional()
 
-export type StarlightUtilsConfig = z.infer<typeof configSchema>;
+export type StarlightUtilsConfig = z.infer<typeof configSchema>
 
 export function validateConfig(userConfig: unknown): StarlightUtilsConfig {
-  const config = configSchema.safeParse(userConfig);
+  const config = configSchema.safeParse(userConfig)
 
   if (!config.success) {
-    const errors = config.error.flatten();
+    const errors = config.error.flatten()
     throw new AstroError(
       `Invalid starlight-utils configuration:
 
             ${errors.formErrors
               .map((formError) => ` - ${formError}`)
-              .join("\n")}
+              .join('\n')}
             ${Object.entries(errors.fieldErrors)
               .map(
                 ([fieldName, fieldErrors]) =>
                   `- ${fieldName}: ${JSON.stringify(fieldErrors)}`
               )
-              .join("\n")}
+              .join('\n')}
             `
-    );
+    )
   }
 
-  return config.data;
+  return config.data
 }

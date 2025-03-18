@@ -1,0 +1,119 @@
+---
+import type { TreeNode } from '@/utils/content.tree';
+import  { getValue } from '@/utils/content';
+import type { TaxonomyItem } from '@/content.config.taxonomyItems';
+interface Props {
+	node: TreeNode<TaxonomyItem>;
+}
+let { node } = Astro.props;
+const { lang } = Astro.locals.starlightRoute;
+---
+
+<details
+	data-depth={node.depth}
+	data-children={node.children.length}
+	class:list={["tree-nav__item", ...(node.children.length ? 'is-expandable' : '')]}
+	open
+>
+	<summary class="tree-nav__item-title">
+		<span class="term">{getValue(node, "data.term." + lang)}</span>
+		<div class="definition">{getValue(node, "data.definition." + lang)}</div>
+	</summary>
+	
+		{node.children.map((child) => <Astro.self node={child} />)}
+	
+</details>
+
+<style is:global>
+	.sl-markdown-content details:not(:where(.not-content *)) {
+		--sl-details-border-color: var(--sl-color-gray-5);
+		--sl-details-border-color--hover: var(--sl-color-text-accent);
+		border-inline-start: none;
+		padding-inline-start: 1rem;
+		background-color: rgba(0, 0, 0, 0.1) !important;
+		margin-top: 1rem;
+		margin: 0 !important;
+	}
+	.sl-markdown-content details[open] > summary:not(:where(.not-content *)) {
+		margin-bottom: 0rem !important;
+	}
+	.sl-markdown-content details {
+		padding-top: 0 !important;
+		padding-left: 0rem;
+	}
+	.sl-markdown-content summary {
+		cursor: pointer;
+		margin-top: 0rem;
+		margin-left: 0rem;
+		padding-left: 0.5rem;
+	}
+	.sl-markdown-content details[data-depth='0']{
+		margin-bottom: 2rem !important;
+	}
+	.sl-markdown-content details[data-depth='1'] .tree-nav__item-title {
+		margin-left: 1.5rem;
+	}
+	.sl-markdown-content details[data-depth='2'] .tree-nav__item-title {
+		margin-left: 3rem;
+	}
+	.sl-markdown-content details[data-depth='3'] .tree-nav__item-title {
+		margin-left: 4.5rem;
+	}
+	.sl-markdown-content  details[data-children='0'] summary::before {
+		visibility: hidden;
+	}
+	.sl-markdown-content .term {
+		font-weight: bold;
+	}
+
+	.sl-markdown-content .definition {
+		font-weight: normal;
+		margin-left: 1.5rem !important;
+	}
+
+	.sl-markdown-content details {
+		background-color: rgba(0, 0, 0, 0.05) !important;
+		border-top: 1px dotted rgba(0, 0, 0, 0.5) !important;
+	}
+
+
+  .sl-markdown-content .tree-nav__item {
+  display: block;
+  
+  color: #ccc;
+  position: relative;
+}
+.sl-markdown-content .tree-nav__item.is-expandable::before {
+  border-left: 1px solid #333;
+  content: "";
+  height: 100%;
+  left: .8rem;
+  position: absolute;
+  /* top:12.4rem; */
+  height: calc(100% - 2.4rem);
+}
+.tree-nav__item.is-expandable > .tree-nav__item-title::before {
+  position: absolute;
+  will-change: transform;
+  transition: transform 300ms ease;
+  font-family: "ionicons";
+  color: #fff;
+  font-size: 1.1rem;
+  content: "\f125";
+  left: 0;
+  display: inline-block;
+  width: 1.6rem;
+  text-align: center;
+  
+}
+
+.tree-nav__item-title {
+  cursor: pointer;
+  display: block;
+  outline: 0;
+  color: #fff;
+  /* font-size: 1.5rem; */
+  /* line-height: 3.2rem; */
+}
+
+</style>

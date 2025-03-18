@@ -1,0 +1,164 @@
+---
+import { get } from '@/utils';
+import fastCartesian from 'fast-cartesian';
+import MemberIcon from './MemberIcon.astro';
+import {
+  careerLevels,
+  genders,
+  disciplinaryProfessions,
+  type Organization,
+} from '@/content.config.organizations';
+import { flattenTreeNodes, getRoots } from '@/utils/content.tree';
+import { getCollection } from 'astro:content';
+
+
+interface Props {
+  organizationId: string
+}
+let { organizationId } = Astro.props;
+
+
+const product = fastCartesian([
+  [...careerLevels],
+  [...disciplinaryProfessions],
+  [...genders]
+]);
+
+const organizations = await getCollection(
+  'organizations', ({ data }) => (
+    data.isPartOfCommunity &&
+    organizationId === undefined ||
+    data.hasTopLevelOrganization?.id === organizationId ||
+    data.id === organizationId ||
+    data.id === ':'
+  ))
+
+const organizationRoots = getRoots<Organization>(organizations.map(d => d.data));
+const list = flattenTreeNodes(organizationRoots)
+
+---
+
+<table class="tree-table">
+  <thead>
+    <tr>
+      <th></th><th></th>
+      <th>total</th>
+      {
+        careerLevels.map((d) => (
+          <th>
+            <span>{d}</span>
+            <MemberIcon careerLevel={d} />
+          </th>
+        ))
+      }
+      {
+        disciplinaryProfessions.map((d) => (
+          <th>
+            <span>{d}</span>
+            <MemberIcon disciplinaryProfession={d} />
+          </th>
+        ))
+      }
+      {
+        
+        genders.map((d) => (
+          <th>
+            <span>{d}</span>
+            <MemberIcon gender={d} />
+          </th>
+        ))
+      }
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>members</th>
+      <th colspan="13" align="center">members recursive count</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      list.map((item) => (
+        <tr
+          data-depth={item.depth}
+          data-child-index={item.childIndex}
+          data-has-children={item.children.length > 0}
+        >
+          <td class="tree-table__name tree-table__indent">
+            {(item.children.length > 0) && 
+            <input
+              id={'collapsible-' + item.depth + '-' + item.childIndex}
+              class="toggle"
+              checked="checked"
+              type="checkbox"
+            />
+            <label
+              for={'collapsible-' + item.depth + '-' + item.childIndex}
+              class="lbl-toggle"
+            >
+              <span>{item.data.label.fullName.en}</span>
+            </label>
+
+            }
+            {!(item.children.length > 0) && 
+              <span>{item.data.label.fullName.en}</span>
+            }
+           
+          </td>
+          <td>
+            {product
+              .filter((p) => get(item.data.uniquePeopleCount, p.join('.')))
+              .map((p) =>
+                new Array(get(item.data.uniquePeopleCount, p.join('.')))
+                  .fill(0)
+                  .map(() => (
+                    <MemberIcon
+                      careerLevel={p[0]}
+                      disciplinaryProfession={p[1]}
+                      gender={p[2]}
+                    />
+                  ))
+              )}
+          </td>
+          <td class="number" >
+            
+            <strong>{item.data.uniquePeopleCountRecursiveSum?.total}</strong>
+          </td>
+          {careerLevels.map((d) => (
+            <td class="number">
+              {get(item.data.uniquePeopleCountRecursiveSum, d) || "-"}
+            </td>
+          ))}
+
+          {
+          disciplinaryProfessions.map((d) => (
+            <td class="number">
+              {get(item.data.uniquePeopleCountRecursiveSum, d) || "-"}
+            </td>
+          ))}
+
+          {genders.map((d) => (
+            <td class="number">
+              {get(item.data.uniquePeopleCountRecursiveSum, d) || "-"}
+            </td>
+          ))}
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+
+<style>
+  thead tr:first-child th {
+    position: relative;
+    height: 5rem;
+    vertical-align: bottom;
+  }
+  thead tr:first-child th span {
+    display: block;
+    transform-origin: left bottom;
+    position: absolute;
+    font-weight: 300;
+
+    transform: rotate(45deg) translate(calc(-100% - 1rem), 0rem);
+  }
+</style>

@@ -1,36 +1,23 @@
 {
-  "semi": true,
+  "printWidth": 80,
+  "semi": false,
   "singleQuote": true,
-  "trailingComma": "none",
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "plugins": ["prettier-plugin-astro"],
   "overrides": [
     {
-      "files": "*.svg",
+      "files": [".*", "*.json", "*.md", "*.toml", "*.yml"],
       "options": {
-        "parser": "html"
+        "useTabs": false
       }
     },
     {
-      "files": "*.mdx",
+      "files": ["*.md", "*.mdx"],
       "options": {
-        "parser": "markdown"
-      }
-    },
-    {
-      "files": "*.astro",
-      "options": {
-        "parser": "astro"
-      }
-    },
-    {
-      "files": "*.svelte",
-      "options": {
-        "parser": "svelte"
+        "printWidth": 80
       }
     }
-  ],
-  "plugins": [
-    "prettier-plugin-svelte",
-    "prettier-plugin-astro",
-    "prettier-plugin-tailwindcss"
   ]
 }

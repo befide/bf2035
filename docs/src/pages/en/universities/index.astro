@@ -1,0 +1,126 @@
+---
+import {
+  allCommunityTopLevelOrganizations
+} from "../../../utils"
+
+import {CardGrid, Card} from "@astrojs/starlight/components"
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro"
+
+const category = "university"
+const organizations = (await allCommunityTopLevelOrganizations ()).filter ((o) =>
+    o.data.befideOrganizationCategories.includes (category)
+)
+---
+
+<StarlightPage frontmatter={{title: "University Index"}}>
+    <p>
+        This page lists all scientific institutions in Germany or, in the case of
+        significant German funding, abroad, where accelerator research is carried
+        out.
+
+
+    <div id="list-holder">
+        <CardGrid>
+
+          {
+            organizations.map ((o) => (
+                    <h2>{o.data.label.short.en}</h2>
+                    <Card title={o.data.label.short.en || ""}>
+                        <p class="bold">{o.data.label.fullName.en} </p>
+                        <p>{o.data.description.en} </p>
+                        <p>
+                          {o.data.location?.city || ""}, {o.data.location?.country?.code}
+                        </p>
+                        <p class="property-group-header">Organization</p>
+                        <dl class="property-group">
+                            <div class="property-group-entry">
+                                <dt>Research staff</dt>
+                                <dd>50</dd>
+                            </div>
+                            <div class="property-group-entry">
+                                <dt>Working groups</dt>
+                                <dd>2</dd>
+                            </div>
+                            <div class="property-group-entry">
+                                <dt>Research topics</dt>
+                                <dd>xxx, yyy</dd>
+                            </div>
+                        </dl>
+                        <p class="property-group-header">Facilities</p>
+
+                        <dl class="property-group">
+                            <div class="property-group-entry">
+                                <dt>Facilities for Accelerator Research</dt>
+                                <dd>5</dd>
+                            </div>
+                        </dl>
+                        <p class="property-group-header">Teaching</p>
+                        <dl class="property-group">
+                            <div class="property-group-entry">
+                                <dt>degree programmes</dt>
+                                <dd>Bachelor</dd>
+                            </div>
+                            <div class="property-group-entry">
+                                <dt>Teaching events</dt>
+                                <dd>5</dd>
+                            </div>
+                            <div class="property-group-entry">
+                                <dl class="property-group">
+                                    <dt>SWS</dt>
+                                    <dd>50</dd>
+                                </dl>
+                            </div>
+                            <div class="property-group-entry">
+                                <dl class="property-group">
+                                    <dt>Doctoral Theses</dt>
+                                    <dd>2</dd>
+                                </dl>
+                            </div>
+                        </dl>
+                    </Card>
+            ))
+          }
+        </CardGrid>
+    </div>
+
+    <style>
+        .property-group-header {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        dl div {
+            display: flex;
+            border-top: 1px dotted #787878;
+            line-height: 1.5rem;
+        }
+
+        dt {
+            display: flex;
+            flex: 1 1 auto;
+            margin: 0;
+            font-weight: normal !important;
+        }
+
+        dd {
+            flex: 0 1 auto;
+            margin: 0;
+        }
+
+        .sl-markdown-content dt:not(:where(.not-content *)) {
+            font-weight: normal;
+        }
+    </style>
+    <style is:global>
+        .card {
+            padding: 1rem;
+        }
+
+        #organization-category-filter-holder ul {
+            list-style: none;
+            display: flex;
+            margin-bottom: 2rem;
+        }
+    </style>
+
+</StarlightPage>

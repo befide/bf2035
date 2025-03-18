@@ -1,0 +1,21 @@
+---
+import {taxonomyItemRoots} from "@/utils/content.taxonomyItems"
+import TaxonomyTreeNode from "./TaxonomyTreeNode.astro"
+
+interface Props {
+  isDomainSpecific: boolean
+}
+let {isDomainSpecific} = Astro.props
+const { lang } = Astro.locals.starlightRoute;
+
+
+let roots = await taxonomyItemRoots(isDomainSpecific, lang)
+
+
+
+---
+{
+  roots.map ((root) => (
+    <TaxonomyTreeNode node={root} />   
+))
+}
