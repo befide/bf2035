@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+import Page from '@layouts/Page.astro';
+import PrimeVueDataTable from '@components/ui/PrimeVueDataTable.vue';
+
+const lang = 'de';
+
+const organizations = await getCollection('organizations');
+---
+
+<Page {lang} title="Tags">
+  <PrimeVueDataTable data={organizations} />
+</Page>

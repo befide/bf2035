@@ -1,29 +1,28 @@
-[data-print-preview="false"]
-  
-  .spread__page
-    padding-top var(--page__margin__top)
-    padding-bottom var(--page__margin__bottom)
-    padding-right var(--page__margin__x)
-    padding-left var(--page__margin__x)
-    
+[data-print-preview='false'] {
+  .spread__page {
+    padding-top: var(--page__margin__top);
+    padding-bottom: var(--page__margin__bottom);
+    padding-right: var(--page__margin__x);
+    padding-left: var(--page__margin__x);
+  }
 
-  .spread
+  .spread {
     // width 100%
     // height 100%
-    display flex
-    flex-direction: column
+    display: flex;
+    flex-direction: column;
+  }
 
-  .spread__page 
+  .spread__page {
     position: relative;
-    flex  1 1
-    display flex
-    background-size: cover
-    background-position: top center
+    flex: 1 1;
+    display: flex;
+    background-size: cover;
+    background-position: top center;
     background-image: none !important;
+  }
 
-  
-  
-
-  .spread__page.left .spread--right
-    display none !important
-
+  .spread__page.left .spread--right {
+    display: none !important;
+  }
+}

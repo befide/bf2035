@@ -1,27 +1,23 @@
 @import './mixins/index.styl';
 
 section.md {
-  margin-top: 1rem
-  
-
+  margin-bottom: 1rem;
 }
 
 h2.md, h3.md, h4.md, p.md, li.md {
-
   color: var(--color-text-base);
 }
 
 p.md {
+  // $baselined-typography(body-md);
   $baselined-typography(body-md);
-  hyphens: auto
-  
+  hyphens: auto;
 }
 
 h1.md, h2.md {
   $baselined-typography(body-xl);
   text-transform: uppercase;
   font-weight: var(--font-weight--bold);
-
 }
 
 h3.md {
@@ -41,7 +37,6 @@ hr.md {
   height: 1rem;
   border: 0;
 }
-
 
 ul.md, ol.md {
   $baselined-typography(body-md);
@@ -75,10 +70,11 @@ ul.md, ol.md {
 
 blockquote.md {
   // margin: 1rem 0
-  padding 1rem 1rem
-  margin 1rem 0rem
-  background linear-gradient(to bottom, hsla(280, 100%, 0, 0.1), hsla(280, 100%, 100%, 0.1) 1px, transparent 1px, transparent), linear-gradient(to bottom, hsla(280, 100%, 0, 0.1), hsla(280, 100%, 100%, 1) 1px, transparent 1px, transparent), rgba(#eee, .5)
+  padding: 1rem 1rem;
+  margin: 1rem 0rem;
+  background: linear-gradient(to bottom, hsla(280, 100%, 0, 0.1), hsla(280, 100%, 100%, 0.1) 1px, transparent 1px, transparent), linear-gradient(to bottom, hsla(280, 100%, 0, 0.1), hsla(280, 100%, 100%, 1) 1px, transparent 1px, transparent), rgba(#eee, 0.5);
   font-style: italic;
+
   cite {
     text-align: right;
   }
@@ -100,7 +96,7 @@ blockquote.md {
 
 ul.md li:before {
   position: absolute;
-  left: calc(-1 * var(--baseline-height));
+  left: -1rem;
   display: inline-block;
   width: 1rem;
   content: '—';
@@ -120,7 +116,7 @@ ol.md {
 
   li:before {
     position: absolute;
-    left: calc(-1 * var(--baseline-height));
+    left: -1rem;
     display: inline-block;
     width: 0.5rem;
     content: counter(ol-counter);
@@ -130,8 +126,9 @@ ol.md {
     font-variant: small-caps;
     opacity: 0.8;
   }
+
   li li:before {
-      left: calc(-2 * var(--baseline-height));
+    left: -2rem;
   }
 }
 
@@ -175,27 +172,20 @@ ol.md {
 }
 
 figure.md {
-  
   padding-bottom: 1rem;
-
-  +mq--gte-md() {
-    margin: 1rem 0;
-  }
-
+  // +mq--gte-md() {
+  // margin: 1rem 0;
+  // }
   overflow: hidden;
   max-width: calc(100vw - 1 * var(--padding__x));
+
   // background-image linear-gradient(0, #f0f0f0 48.08%, #ccc 48.08%, #ccc 50%, #f0f0f0 50%, #f0f0f0 98.08%, #ccc 98.08%, #ccc 100%)
   // background-size 100% 1rem
   // background-color: #eee;
-
-  > p {
+  figcaption > p {
     $baselined-typography(body-sm);
   }
 
-  figcaption {
-    $baselined-typography(body-sm);
-
-  }
 
   img {
     width: 100%;
@@ -208,40 +198,47 @@ figure.md {
   }
 }
 
-
 cite {
   line-height: 3;
   text-align: left;
 }
 
+.small {
+  ul.md {
+    $baselined-typography(body-sm);
+  }
 
-.small
+  h2.md {
+    $baselined-typography(body-md);
+  }
 
-  ul.md
-    $baselined-typography(body-sm)
-  
-  h2.md
-    $baselined-typography(body-md)
-  h3.md
-    $baselined-typography(body-md)
-  p.md
-    $baselined-typography(body-sm)
+  h3.md {
+    $baselined-typography(body-md);
+  }
 
-.large
+  p.md {
+    $baselined-typography(body-sm);
+  }
+}
 
-  ul.md
-    $baselined-typography(body-lg)
-  
-  h2.md
-    $baselined-typography(body-lg)
+.large {
+  ul.md {
+    $baselined-typography(body-lg);
+  }
 
-  h3.md
-    $baselined-typography(body-lg)
-  p.md
-    $baselined-typography(body-lg)
+  h2.md {
+    $baselined-typography(body-lg);
+  }
 
+  h3.md {
+    $baselined-typography(body-lg);
+  }
 
+  p.md {
+    $baselined-typography(body-lg);
+  }
+}
 
-
-label
-  font-size 16px
+label {
+  font-size: 16px;
+}

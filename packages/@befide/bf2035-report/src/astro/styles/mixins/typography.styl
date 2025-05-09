@@ -27,11 +27,12 @@ $set-baselined-typography($id = 'id', $font-size = 16px, $BASELINE-HEIGHT = 24px
 }
 
 $baselined-typography(id = 'ID') {
+  line-height: 1rem; 
   position: relative;
   top: s('var(--gap-top--%s)', id);
   margin: s('var(--margin--%s)', id);
   font-size: s('var(--font-size--%s)', id);
-  line-height: s('var(--line-height--%s)', id);
+  
 }
 
 nrem {

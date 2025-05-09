@@ -1,930 +1,1002 @@
 [
   {
-    "year": 1959,
-    "url": "https://accelconf.web.cern.ch/c59/INDEX.htm"
+      "name": "confeefact2022",
+      "year": 2022
   },
   {
-    "year": 1961,
-    "url": "https://accelconf.web.cern.ch/l61/"
+      "name": "confeefact2018",
+      "year": 2018
   },
   {
-    "year": 1962,
-    "url": "https://accelconf.web.cern.ch/l62/"
+      "name": "confeefact2016",
+      "year": 2016
   },
   {
-    "year": 1963,
-    "url": "https://accelconf.web.cern.ch/c63/INDEX.htm"
+      "name": "conffac08",
+      "year": 2008
   },
   {
-    "year": 1963,
-    "url": "https://accelconf.web.cern.ch/l63/"
+      "name": "confecloud2010",
+      "year": 2010
   },
   {
-    "year": 1964,
-    "url": "https://accelconf.web.cern.ch/l64/"
+      "name": "conferl2019",
+      "year": 2019
   },
   {
-    "year": 1965,
-    "url": "https://accelconf.web.cern.ch/p65/INDEX.HTM"
+      "name": "conferl2017",
+      "year": 2017
   },
   {
-    "year": 1966,
-    "url": "https://accelconf.web.cern.ch/c66/INDEX.HTM"
+      "name": "conferl2015",
+      "year": 2015
   },
   {
-    "year": 1966,
-    "url": "https://accelconf.web.cern.ch/l66/"
+      "name": "conferl2013",
+      "year": 2013
   },
   {
-    "year": 1967,
-    "url": "https://accelconf.web.cern.ch/p67/INDEX.HTM"
+      "name": "conferl2011",
+      "year": 2011
   },
   {
-    "year": 1968,
-    "url": "https://accelconf.web.cern.ch/l68/"
+      "name": "conferl2009",
+      "year": 2009
   },
   {
-    "year": 1969,
-    "url": "https://accelconf.web.cern.ch/c69/INDEX.HTM"
+      "name": "conferl07",
+      "year": 2007
   },
   {
-    "year": 1969,
-    "url": "https://accelconf.web.cern.ch/p69/INDEX.HTM"
+      "name": "conffls2023",
+      "year": 2023
   },
   {
-    "year": 1970,
-    "url": "https://accelconf.web.cern.ch/l70/"
+      "name": "conffls2018",
+      "year": 2018
   },
   {
-    "year": 1971,
-    "url": "https://accelconf.web.cern.ch/p71/INDEX.HTM"
+      "name": "conffls06",
+      "year": 2006
   },
   {
-    "year": 1972,
-    "url": "https://accelconf.web.cern.ch/c72/INDEX.HTM"
+      "name": "confhb2023",
+      "year": 2023
   },
   {
-    "year": 1972,
-    "url": "https://accelconf.web.cern.ch/l72/"
+      "name": "confhb2021",
+      "year": 2021
   },
   {
-    "year": 1973,
-    "url": "https://accelconf.web.cern.ch/p73/INDEX.HTM"
+      "name": "confhb2018",
+      "year": 2018
   },
   {
-    "year": 1975,
-    "url": "https://accelconf.web.cern.ch/c75/"
+      "name": "confhb2016",
+      "year": 2016
   },
   {
-    "year": 1975,
-    "url": "https://accelconf.web.cern.ch/p75/INDEX.HTM"
+      "name": "confhb2014",
+      "year": 2014
   },
   {
-    "year": 1976,
-    "url": "https://accelconf.web.cern.ch/l76/INDEX.htm"
+      "name": "confhb2012",
+      "year": 2012
   },
   {
-    "year": 1977,
-    "url": "https://accelconf.web.cern.ch/p77/INDEX.HTM"
+      "name": "confhb2010",
+      "year": 2010
   },
   {
-    "year": 1978,
-    "url": "https://accelconf.web.cern.ch/c78/"
+      "name": "confhb08",
+      "year": 2008
   },
   {
-    "year": 1979,
-    "url": "https://accelconf.web.cern.ch/l79/"
+      "name": "confhf2014",
+      "year": 2014
   },
   {
-    "year": 1979,
-    "url": "https://accelconf.web.cern.ch/p79/INDEX.HTM"
+      "name": "confa07",
+      "year": 2007
   },
   {
-    "year": 1980,
-    "url": "https://accelconf.web.cern.ch/srf80/INDEX.HTM"
+      "name": "confa04",
+      "year": 2004
   },
   {
-    "year": 1981,
-    "url": "https://accelconf.web.cern.ch/c81/"
+      "name": "confa01",
+      "year": 2001
   },
   {
-    "year": 1981,
-    "url": "https://accelconf.web.cern.ch/l81/"
+      "name": "confa98",
+      "year": 1998
   },
   {
-    "year": 1981,
-    "url": "https://accelconf.web.cern.ch/p81/INDEX.HTM"
+      "name": "confbiw2012",
+      "year": 2012
   },
   {
-    "year": 1983,
-    "url": "https://accelconf.web.cern.ch/p83/INDEX.HTM"
+      "name": "confbiw2010",
+      "year": 2010
   },
   {
-    "year": 1984,
-    "url": "https://accelconf.web.cern.ch/c84/"
+      "name": "confbiw2008",
+      "year": 2008
   },
   {
-    "year": 1984,
-    "url": "https://accelconf.web.cern.ch/l84/"
+      "name": "confcool2021",
+      "year": 2021
   },
   {
-    "year": 1984,
-    "url": "https://accelconf.web.cern.ch/srf84/INDEX.HTM"
+      "name": "confcool2019",
+      "year": 2019
   },
   {
-    "year": 1985,
-    "url": "https://accelconf.web.cern.ch/p85/INDEX.HTM"
+      "name": "confcool2017",
+      "year": 2017
   },
   {
-    "year": 1986,
-    "url": "https://accelconf.web.cern.ch/c86/"
+      "name": "confcool2015",
+      "year": 2015
   },
   {
-    "year": 1986,
-    "url": "https://accelconf.web.cern.ch/l86/"
+      "name": "confcool2013",
+      "year": 2013
   },
   {
-    "year": 1987,
-    "url": "https://accelconf.web.cern.ch/p87/INDEX.HTM"
+      "name": "confcool2011",
+      "year": 2011
   },
   {
-    "year": 1987,
-    "url": "https://accelconf.web.cern.ch/srf87/INDEX.HTM"
+      "name": "confcyc2022",
+      "year": 2022
   },
   {
-    "year": 1988,
-    "url": "https://accelconf.web.cern.ch/e88/Index.htm"
+      "name": "confcyc2019",
+      "year": 2019
   },
   {
-    "year": 1988,
-    "url": "https://accelconf.web.cern.ch/l88/index.htm"
+      "name": "confcyc2016",
+      "year": 2016
   },
   {
-    "year": 1989,
-    "url": "https://accelconf.web.cern.ch/c89/"
+      "name": "confcyc2013",
+      "year": 2013
   },
   {
-    "year": 1989,
-    "url": "https://accelconf.web.cern.ch/p89/INDEX.HTM"
+      "name": "confcyc2010",
+      "year": 2010
   },
   {
-    "year": 1989,
-    "url": "https://accelconf.web.cern.ch/SRF89/INDEX.htm"
+      "name": "confc07",
+      "year": 2007
   },
   {
-    "year": 1990,
-    "url": "https://accelconf.web.cern.ch/e90/Index.htm"
+      "name": "confc04",
+      "year": 2004
   },
   {
-    "year": 1990,
-    "url": "https://accelconf.web.cern.ch/l90/"
+      "name": "confc01",
+      "year": 2001
   },
   {
-    "year": 1991,
-    "url": "https://accelconf.web.cern.ch/p91/INDEX.HTM"
+      "name": "confc98",
+      "year": 1998
   },
   {
-    "year": 1991,
-    "url": "https://accelconf.web.cern.ch/SRF91/INDEX.htm"
+      "name": "confc95",
+      "year": 1995
   },
   {
-    "year": 1992,
-    "url": "https://accelconf.web.cern.ch/c92/"
+      "name": "confc92",
+      "year": 1992
   },
   {
-    "year": 1992,
-    "url": "https://accelconf.web.cern.ch/e92/Index.htm"
+      "name": "confc89",
+      "year": 1989
   },
   {
-    "year": 1992,
-    "url": "https://accelconf.web.cern.ch/l92/INDEX.htm"
+      "name": "confc86",
+      "year": 1986
   },
   {
-    "year": 1993,
-    "url": "https://accelconf.web.cern.ch/p93/INDEX.HTM"
+      "name": "confc84",
+      "year": 1984
   },
   {
-    "year": 1993,
-    "url": "https://accelconf.web.cern.ch/SRF93/INDEX.htm"
+      "name": "confc81",
+      "year": 1981
   },
   {
-    "year": 1994,
-    "url": "https://accelconf.web.cern.ch/e94/Index.htm"
+      "name": "confc78",
+      "year": 1978
   },
   {
-    "year": 1994,
-    "url": "https://accelconf.web.cern.ch/l94/"
+      "name": "confc75",
+      "year": 1975
   },
   {
-    "year": 1995,
-    "url": "https://accelconf.web.cern.ch/c95/"
+      "name": "confcyc1972",
+      "year": 1972
   },
   {
-    "year": 1995,
-    "url": "https://accelconf.web.cern.ch/p95/INDEX.HTML"
+      "name": "confcyc1969",
+      "year": 1969
   },
   {
-    "year": 1995,
-    "url": "https://accelconf.web.cern.ch/SRF95/INDEX.htm"
+      "name": "confcyc1966",
+      "year": 1966
   },
   {
-    "year": 1996,
-    "url": "https://accelconf.web.cern.ch/e96/contents.html"
+      "name": "confcyc1963",
+      "year": 1963
   },
   {
-    "year": 1996,
-    "url": "https://accelconf.web.cern.ch/l96/index.html"
+      "name": "confcyc1959",
+      "year": 1959
   },
   {
-    "year": 1997,
-    "url": "https://accelconf.web.cern.ch/pac97/papers/index.html"
+      "name": "confdipac2011",
+      "year": 2011
   },
   {
-    "year": 1997,
-    "url": "https://accelconf.web.cern.ch/SRF97/INDEX.htm"
+      "name": "confd09",
+      "year": 2009
   },
   {
-    "year": 1998,
-    "url": "https://accelconf.web.cern.ch/a98/proc.html"
+      "name": "confd07",
+      "year": 2007
   },
   {
-    "year": 1998,
-    "url": "https://accelconf.web.cern.ch/c98/"
+      "name": "confd05",
+      "year": 2005
   },
   {
-    "year": 1998,
-    "url": "https://accelconf.web.cern.ch/e98/contents.html"
+      "name": "confd03",
+      "year": 2003
   },
   {
-    "year": 1998,
-    "url": "https://accelconf.web.cern.ch/l98/Proceedings.html"
+      "name": "confd01",
+      "year": 2001
   },
   {
-    "year": 1999,
-    "url": "https://accelconf.web.cern.ch/d99/"
+      "name": "confd99",
+      "year": 1999
   },
   {
-    "year": 1999,
-    "url": "https://accelconf.web.cern.ch/ica99/proceedings.html"
+      "name": "confecris2020",
+      "year": 2020
   },
   {
-    "year": 1999,
-    "url": "https://accelconf.web.cern.ch/p99/PROCS.HTM"
+      "name": "confecris2018",
+      "year": 2018
   },
   {
-    "year": 1999,
-    "url": "https://accelconf.web.cern.ch/SRF99/INDEX.htm"
+      "name": "confecris2016",
+      "year": 2016
   },
   {
-    "year": 2000,
-    "url": "https://accelconf.web.cern.ch/e00/index.html"
+      "name": "confecris2014",
+      "year": 2014
   },
   {
-    "year": 2000,
-    "url": "https://accelconf.web.cern.ch/l00/index.html"
+      "name": "confecris2012",
+      "year": 2012
   },
   {
-    "year": 2001,
-    "url": "https://accelconf.web.cern.ch/a01/CONTENTS.HTM"
+      "name": "confecris2010",
+      "year": 2010
   },
   {
-    "year": 2001,
-    "url": "https://accelconf.web.cern.ch/c01/start.html"
+      "name": "confec08",
+      "year": 2008
   },
   {
-    "year": 2001,
-    "url": "https://accelconf.web.cern.ch/d01/"
+      "name": "confe08",
+      "year": 2008
   },
   {
-    "year": 2001,
-    "url": "https://accelconf.web.cern.ch/ica01/index.HTML"
+      "name": "confe06",
+      "year": 2006
   },
   {
-    "year": 2001,
-    "url": "https://accelconf.web.cern.ch/p01/INDEX.HTM"
+      "name": "confe04",
+      "year": 2004
   },
   {
-    "year": 2001,
-    "url": "https://accelconf.web.cern.ch/srf01/INDEX.htm"
+      "name": "confe02",
+      "year": 2002
   },
   {
-    "year": 2002,
-    "url": "https://accelconf.web.cern.ch/e02/default.htm"
+      "name": "confe00",
+      "year": 2000
   },
   {
-    "year": 2002,
-    "url": "https://accelconf.web.cern.ch/l02/INDEX.HTM"
+      "name": "confe98",
+      "year": 1998
   },
   {
-    "year": 2003,
-    "url": "https://accelconf.web.cern.ch/d03/"
+      "name": "confe96",
+      "year": 1996
   },
   {
-    "year": 2003,
-    "url": "https://accelconf.web.cern.ch/ica03/"
+      "name": "confe94",
+      "year": 1994
   },
   {
-    "year": 2003,
-    "url": "https://accelconf.web.cern.ch/p03/INDEX.HTM"
+      "name": "confe92",
+      "year": 1992
   },
   {
-    "year": 2003,
-    "url": "https://accelconf.web.cern.ch/SRF2003/INDEX.htm"
+      "name": "confe90",
+      "year": 1990
   },
   {
-    "year": 2004,
-    "url": "https://accelconf.web.cern.ch/a04/INDEX.HTM"
+      "name": "confe88",
+      "year": 1988
   },
   {
-    "year": 2004,
-    "url": "https://accelconf.web.cern.ch/c04/index.html"
+      "name": "conffel2022",
+      "year": 2022
   },
   {
-    "year": 2004,
-    "url": "https://accelconf.web.cern.ch/e04/default.htm"
+      "name": "conffel2019",
+      "year": 2019
   },
   {
-    "year": 2004,
-    "url": "https://accelconf.web.cern.ch/f04/"
+      "name": "conffel2017",
+      "year": 2017
   },
   {
-    "year": 2004,
-    "url": "https://accelconf.web.cern.ch/l04/"
+      "name": "conffel2015",
+      "year": 2015
   },
   {
-    "year": 2004,
-    "url": "https://accelconf.web.cern.ch/r04/"
+      "name": "conffel2014",
+      "year": 2014
   },
   {
-    "year": 2005,
-    "url": "https://accelconf.web.cern.ch/d05/"
+      "name": "conffel2013",
+      "year": 2013
   },
   {
-    "year": 2005,
-    "url": "https://accelconf.web.cern.ch/f05/"
+      "name": "conffel2012",
+      "year": 2012
   },
   {
-    "year": 2005,
-    "url": "https://accelconf.web.cern.ch/ica05/"
+      "name": "conffel2011",
+      "year": 2011
   },
   {
-    "year": 2005,
-    "url": "https://accelconf.web.cern.ch/p05/INDEX.HTML"
+      "name": "conffel2010",
+      "year": 2010
   },
   {
-    "year": 2005,
-    "url": "https://accelconf.web.cern.ch/SRF2005/index.htm"
+      "name": "conffel2009",
+      "year": 2009
   },
   {
-    "year": 2006,
-    "url": "https://accelconf.web.cern.ch/abdwhb06/indexloc.htm"
+      "name": "conffel2008",
+      "year": 2008
   },
   {
-    "year": 2006,
-    "url": "https://accelconf.web.cern.ch/fls06/index.htm"
+      "name": "conff07",
+      "year": 2007
   },
   {
-    "year": 2006,
-    "url": "https://accelconf.web.cern.ch/e06/INDEX.HTM"
+      "name": "conff06",
+      "year": 2006
   },
   {
-    "year": 2006,
-    "url": "https://accelconf.web.cern.ch/f06/"
+      "name": "conff05",
+      "year": 2005
   },
   {
-    "year": 2006,
-    "url": "https://accelconf.web.cern.ch/icap06/"
+      "name": "conff04",
+      "year": 2004
   },
   {
-    "year": 2006,
-    "url": "https://accelconf.web.cern.ch/l06/"
+      "name": "confhiat2022",
+      "year": 2022
   },
   {
-    "year": 2006,
-    "url": "https://accelconf.web.cern.ch/r06/INDEX.HTM"
+      "name": "confhiat2018",
+      "year": 2018
   },
   {
-    "year": 2007,
-    "url": "https://accelconf.web.cern.ch/erl07/INDEX.HTM"
+      "name": "confhiat2015",
+      "year": 2015
   },
   {
-    "year": 2007,
-    "url": "https://accelconf.web.cern.ch/a07/INDEX.HTM"
+      "name": "confhiat2012",
+      "year": 2012
   },
   {
-    "year": 2007,
-    "url": "https://accelconf.web.cern.ch/cl07/INDEX.HTM"
+      "name": "confhiat2009",
+      "year": 2009
   },
   {
-    "year": 2007,
-    "url": "https://accelconf.web.cern.ch/c07/index.htm"
+      "name": "confibic2023",
+      "year": 2023
   },
   {
-    "year": 2007,
-    "url": "https://accelconf.web.cern.ch/d07/index.htm"
+      "name": "confibic2022",
+      "year": 2022
   },
   {
-    "year": 2007,
-    "url": "https://accelconf.web.cern.ch/f07/INDEX.HTM"
+      "name": "confibic2021",
+      "year": 2021
   },
   {
-    "year": 2007,
-    "url": "https://accelconf.web.cern.ch/ica07/INDEX.HTM"
+      "name": "confibic2020",
+      "year": 2020
   },
   {
-    "year": 2007,
-    "url": "https://accelconf.web.cern.ch/p07/INDEX.HTML"
+      "name": "confibic2019",
+      "year": 2019
   },
   {
-    "year": 2007,
-    "url": "https://accelconf.web.cern.ch/srf2007/INDEX.HTML"
+      "name": "confibic2018",
+      "year": 2018
   },
   {
-    "year": 2008,
-    "url": "https://accelconf.web.cern.ch/HB2008/index.htm"
+      "name": "confibic2017",
+      "year": 2017
   },
   {
-    "year": 2008,
-    "url": "https://accelconf.web.cern.ch/fac08/INDEX.HTM"
+      "name": "confibic2016",
+      "year": 2016
   },
   {
-    "year": 2008,
-    "url": "https://accelconf.web.cern.ch/BIW2008/index.htm"
+      "name": "confibic2015",
+      "year": 2015
   },
   {
-    "year": 2008,
-    "url": "https://accelconf.web.cern.ch/ecris08/INDEX.HTM"
+      "name": "confibic2014",
+      "year": 2014
   },
   {
-    "year": 2008,
-    "url": "https://accelconf.web.cern.ch/e08/index.htm"
+      "name": "confibic2013",
+      "year": 2013
   },
   {
-    "year": 2008,
-    "url": "https://accelconf.web.cern.ch/FEL2008/INDEX.HTM"
+      "name": "confibic2012",
+      "year": 2012
   },
   {
-    "year": 2008,
-    "url": "https://accelconf.web.cern.ch/LINAC08/index.htm"
+      "name": "conficalepcs2023",
+      "year": 2023
   },
   {
-    "year": 2008,
-    "url": "https://accelconf.web.cern.ch/pc08/index.html"
+      "name": "conficalepcs2021",
+      "year": 2021
   },
   {
-    "year": 2008,
-    "url": "https://accelconf.web.cern.ch/r08/"
+      "name": "conficalepcs2019",
+      "year": 2019
   },
   {
-    "year": 2009,
-    "url": "https://accelconf.web.cern.ch/ERL2009/INDEX.HTM"
+      "name": "confica2017",
+      "year": 2017
   },
   {
-    "year": 2009,
-    "url": "https://accelconf.web.cern.ch/COOL2009/index.htm"
+      "name": "confica2015",
+      "year": 2015
   },
   {
-    "year": 2009,
-    "url": "https://accelconf.web.cern.ch/d09/index.htm"
+      "name": "confica2013",
+      "year": 2013
   },
   {
-    "year": 2009,
-    "url": "https://accelconf.web.cern.ch/FEL2009/index.htm"
+      "name": "confica2011",
+      "year": 2011
   },
   {
-    "year": 2009,
-    "url": "https://accelconf.web.cern.ch/HIAT2009/index.htm"
+      "name": "confica2009",
+      "year": 2009
   },
   {
-    "year": 2009,
-    "url": "https://accelconf.web.cern.ch/icalepcs2009/index.htm"
+      "name": "confi07",
+      "year": 2007
   },
   {
-    "year": 2009,
-    "url": "https://accelconf.web.cern.ch/ICAP2009/index.htm"
+      "name": "confi05",
+      "year": 2005
   },
   {
-    "year": 2009,
-    "url": "https://accelconf.web.cern.ch/PAC2009/index.htm"
+      "name": "confi03",
+      "year": 2003
   },
   {
-    "year": 2009,
-    "url": "https://accelconf.web.cern.ch/SRF2009/index.htm"
+      "name": "confi01",
+      "year": 2001
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/HB2010/index.htm"
+      "name": "confi99",
+      "year": 1999
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/ECLOUD2010/"
+      "name": "conficalepcs1991",
+      "year": 1991
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/BIW2010/index.htm"
+      "name": "conficap2018",
+      "year": 2018
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/Cyclotrons2010/index.htm"
+      "name": "conficap2015",
+      "year": 2015
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/ECRIS2010/index.htm"
+      "name": "conficap2012",
+      "year": 2012
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/FEL2010/index.htm"
+      "name": "conficap2009",
+      "year": 2009
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/IPAC10/index.htm"
+      "name": "conficap06",
+      "year": 2006
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/LINAC2010/index.htm"
+      "name": "confipac2024",
+      "year": 2024
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/pcapac2010/index.htm"
+      "name": "confipac2023",
+      "year": 2023
   },
   {
-    "year": 2010,
-    "url": "https://accelconf.web.cern.ch/r10/index.htm"
+      "name": "confipac2022",
+      "year": 2022
   },
   {
-    "year": 2011,
-    "url": "https://accelconf.web.cern.ch/ERL2011/"
+      "name": "confipac2021",
+      "year": 2021
   },
   {
-    "year": 2011,
-    "url": "https://accelconf.web.cern.ch/COOL2011/index.htm"
+      "name": "confipac2020",
+      "year": 2020
   },
   {
-    "year": 2011,
-    "url": "https://accelconf.web.cern.ch/DIPAC2011/index.htm"
+      "name": "confipac2019",
+      "year": 2019
   },
   {
-    "year": 2011,
-    "url": "https://accelconf.web.cern.ch/FEL2011/index.htm"
+      "name": "confipac2018",
+      "year": 2018
   },
   {
-    "year": 2011,
-    "url": "https://accelconf.web.cern.ch/icalepcs2011/index.htm"
+      "name": "confipac2017",
+      "year": 2017
   },
   {
-    "year": 2011,
-    "url": "https://accelconf.web.cern.ch/IPAC2011/index.htm"
+      "name": "confipac2016",
+      "year": 2016
   },
   {
-    "year": 2011,
-    "url": "https://accelconf.web.cern.ch/PAC2011/index.htm"
+      "name": "confipac2015",
+      "year": 2015
   },
   {
-    "year": 2011,
-    "url": "https://accelconf.web.cern.ch/SRF2011/index.htm"
+      "name": "confipac2014",
+      "year": 2014
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/HB2012/"
+      "name": "confipac2013",
+      "year": 2013
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/BIW2012/index.htm"
+      "name": "confipac2012",
+      "year": 2012
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/ECRIS2012/"
+      "name": "confipac2011",
+      "year": 2011
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/FEL2012/"
+      "name": "confipac2010",
+      "year": 2010
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/HIAT2012/index.htm"
+      "name": "conflinac2022",
+      "year": 2022
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/IBIC2012/"
+      "name": "conflinac2018",
+      "year": 2018
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/ICAP2012/index.htm"
+      "name": "conflinac2016",
+      "year": 2016
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/IPAC2012/index.htm"
+      "name": "conflinac2014",
+      "year": 2014
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/LINAC2012/index.htm"
+      "name": "conflinac2012",
+      "year": 2012
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/pcapac2012/"
+      "name": "conflinac2010",
+      "year": 2010
   },
   {
-    "year": 2012,
-    "url": "https://accelconf.web.cern.ch/rupac2012/index.htm"
+      "name": "conflinac2008",
+      "year": 2008
   },
   {
-    "year": 2013,
-    "url": "https://accelconf.web.cern.ch/ERL2013/"
+      "name": "confl06",
+      "year": 2006
   },
   {
-    "year": 2013,
-    "url": "https://accelconf.web.cern.ch/COOL2013/"
+      "name": "confl04",
+      "year": 2004
   },
   {
-    "year": 2013,
-    "url": "https://accelconf.web.cern.ch/CYCLOTRONS2013/"
+      "name": "confl02",
+      "year": 2002
   },
   {
-    "year": 2013,
-    "url": "https://accelconf.web.cern.ch/FEL2013/"
+      "name": "confl00",
+      "year": 2000
   },
   {
-    "year": 2013,
-    "url": "https://accelconf.web.cern.ch/IBIC2013/"
+      "name": "confl98",
+      "year": 1998
   },
   {
-    "year": 2013,
-    "url": "https://accelconf.web.cern.ch/ICALEPCS2013/"
+      "name": "confl96",
+      "year": 1996
   },
   {
-    "year": 2013,
-    "url": "https://accelconf.web.cern.ch/IPAC2013/"
+      "name": "confl94",
+      "year": 1994
   },
   {
-    "year": 2013,
-    "url": "https://accelconf.web.cern.ch/PAC2013/"
+      "name": "confl92",
+      "year": 1992
   },
   {
-    "year": 2013,
-    "url": "https://accelconf.web.cern.ch/SRF2013/"
+      "name": "confl90",
+      "year": 1990
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/HF2014/"
+      "name": "confl88",
+      "year": 1988
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/HB2014/"
+      "name": "confl86",
+      "year": 1986
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/ECRIS2014/"
+      "name": "confl84",
+      "year": 1984
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/FEL2014/"
+      "name": "confl81",
+      "year": 1981
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/IBIC2014/"
+      "name": "confl79",
+      "year": 1979
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/IPAC2014/"
+      "name": "confl76",
+      "year": 1976
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/LINAC2014/"
+      "name": "confl72",
+      "year": 1972
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/PCaPAC2014/"
+      "name": "confl70",
+      "year": 1970
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/rupac2014/"
+      "name": "confl68",
+      "year": 1968
   },
   {
-    "year": 2014,
-    "url": "https://accelconf.web.cern.ch/SAP2014/"
+      "name": "confl66",
+      "year": 1966
   },
   {
-    "year": 2015,
-    "url": "https://accelconf.web.cern.ch/ERL2015/"
+      "name": "confl64",
+      "year": 1964
   },
   {
-    "year": 2015,
-    "url": "https://accelconf.web.cern.ch/cool2015/"
+      "name": "confl63",
+      "year": 1963
   },
   {
-    "year": 2015,
-    "url": "https://accelconf.web.cern.ch/FEL2015/"
+      "name": "confl62",
+      "year": 1962
   },
   {
-    "year": 2015,
-    "url": "https://accelconf.web.cern.ch/HIAT2015/"
+      "name": "confl61",
+      "year": 1961
   },
   {
-    "year": 2015,
-    "url": "https://accelconf.web.cern.ch/IBIC2015/"
+      "name": "confmedsi2020",
+      "year": 2020
   },
   {
-    "year": 2015,
-    "url": "https://accelconf.web.cern.ch/ICALEPCS2015/"
+      "name": "confmedsi2018",
+      "year": 2018
   },
   {
-    "year": 2015,
-    "url": "https://accelconf.web.cern.ch/ICAP2015/"
+      "name": "confmedsi2016",
+      "year": 2016
   },
   {
-    "year": 2015,
-    "url": "https://accelconf.web.cern.ch/IPAC2015/"
+      "name": "confnapac2022",
+      "year": 2022
   },
   {
-    "year": 2015,
-    "url": "https://accelconf.web.cern.ch/SRF2015/"
+      "name": "confnapac2019",
+      "year": 2019
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/eefact2016/"
+      "name": "confnapac2016",
+      "year": 2016
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/hb2016/"
+      "name": "confpac2013",
+      "year": 2013
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/cyclotrons2016/"
+      "name": "confpac2011",
+      "year": 2011
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/ecris2016/"
+      "name": "confpac2009",
+      "year": 2009
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/ibic2016/"
+      "name": "confp07",
+      "year": 2007
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/ipac2016/"
+      "name": "confp05",
+      "year": 2005
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/linac2016/"
+      "name": "confp03",
+      "year": 2003
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/medsi2016/"
+      "name": "confp01",
+      "year": 2001
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/napac2016/"
+      "name": "confp99",
+      "year": 1999
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/pcapac2016/"
+      "name": "confp97",
+      "year": 1997
   },
   {
-    "year": 2016,
-    "url": "https://accelconf.web.cern.ch/rupac2016/"
+      "name": "confp95",
+      "year": 1995
   },
   {
-    "year": 2017,
-    "url": "https://accelconf.web.cern.ch/erl2017/"
+      "name": "confp93",
+      "year": 1993
   },
   {
-    "year": 2017,
-    "url": "https://accelconf.web.cern.ch/cool2017/"
+      "name": "confp91",
+      "year": 1991
   },
   {
-    "year": 2017,
-    "url": "https://accelconf.web.cern.ch/fel2017/"
+      "name": "confp89",
+      "year": 1989
   },
   {
-    "year": 2017,
-    "url": "https://accelconf.web.cern.ch/ibic2017/"
+      "name": "confp87",
+      "year": 1987
   },
   {
-    "year": 2017,
-    "url": "https://accelconf.web.cern.ch/icalepcs2017/"
+      "name": "confp85",
+      "year": 1985
   },
   {
-    "year": 2017,
-    "url": "https://accelconf.web.cern.ch/ipac2017/"
+      "name": "confp83",
+      "year": 1983
   },
   {
-    "year": 2017,
-    "url": "https://accelconf.web.cern.ch/sap2017/"
+      "name": "confp81",
+      "year": 1981
   },
   {
-    "year": 2017,
-    "url": "https://accelconf.web.cern.ch/srf2017/"
+      "name": "confp79",
+      "year": 1979
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/eefact2018/"
+      "name": "confp77",
+      "year": 1977
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/hb2018/"
+      "name": "confp75",
+      "year": 1975
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/fls2018/"
+      "name": "confp73",
+      "year": 1973
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/ecris2018/"
+      "name": "confp71",
+      "year": 1971
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/hiat2018/"
+      "name": "confp69",
+      "year": 1969
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/ibic2018/"
+      "name": "confp67",
+      "year": 1967
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/icap2018/"
+      "name": "confp65",
+      "year": 1965
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/ipac2018/"
+      "name": "confpcapac2022",
+      "year": 2022
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/linac2018/"
+      "name": "confpcapac2018",
+      "year": 2018
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/medsi2018/"
+      "name": "confpcapac2016",
+      "year": 2016
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/pcapac2018/"
+      "name": "confpcapac2014",
+      "year": 2014
   },
   {
-    "year": 2018,
-    "url": "https://accelconf.web.cern.ch/rupac2018/"
+      "name": "confpcapac2012",
+      "year": 2012
   },
   {
-    "year": 2019,
-    "url": "https://accelconf.web.cern.ch/erl2019/"
+      "name": "confpc10",
+      "year": 2010
   },
   {
-    "year": 2019,
-    "url": "https://accelconf.web.cern.ch/cool2019/"
+      "name": "confpc08",
+      "year": 2008
   },
   {
-    "year": 2019,
-    "url": "https://accelconf.web.cern.ch/cyclotrons2019/"
+      "name": "confrupac2021",
+      "year": 2021
   },
   {
-    "year": 2019,
-    "url": "https://accelconf.web.cern.ch/fel2019/"
+      "name": "confrupac2018",
+      "year": 2018
   },
   {
-    "year": 2019,
-    "url": "https://accelconf.web.cern.ch/ibic2019/"
+      "name": "confrupac2016",
+      "year": 2016
   },
   {
-    "year": 2019,
-    "url": "https://accelconf.web.cern.ch/icalepcs2019/"
+      "name": "confrupac2014",
+      "year": 2014
   },
   {
-    "year": 2019,
-    "url": "https://accelconf.web.cern.ch/ipac2019/"
+      "name": "confrupac2012",
+      "year": 2012
   },
   {
-    "year": 2019,
-    "url": "https://accelconf.web.cern.ch/napac2019/"
+      "name": "confru10",
+      "year": 2010
   },
   {
-    "year": 2019,
-    "url": "https://accelconf.web.cern.ch/srf2019/"
+      "name": "confru08",
+      "year": 2008
   },
   {
-    "year": 2020,
-    "url": "https://accelconf.web.cern.ch/ibic2020/"
+      "name": "confru06",
+      "year": 2006
   },
   {
-    "year": 2020,
-    "url": "https://accelconf.web.cern.ch/ipac2020/"
+      "name": "confr04",
+      "year": 2004
   },
   {
-    "year": 2020,
-    "url": "https://accelconf.web.cern.ch/medsi2020/"
+      "name": "confsap2017",
+      "year": 2017
   },
   {
-    "year": 2021,
-    "url": "https://accelconf.web.cern.ch/cool2021/"
+      "name": "confsap2014",
+      "year": 2014
   },
   {
-    "year": 2021,
-    "url": "https://accelconf.web.cern.ch/ibic2021/"
+      "name": "confsrf2023",
+      "year": 2023
   },
   {
-    "year": 2021,
-    "url": "https://accelconf.web.cern.ch/ipac2021/"
+      "name": "confsrf2021",
+      "year": 2021
   },
   {
-    "year": 2021,
-    "url": "https://accelconf.web.cern.ch/rupac2021/"
+      "name": "confsrf2019",
+      "year": 2019
+  },
+  {
+      "name": "confsrf2017",
+      "year": 2017
+  },
+  {
+      "name": "confsrf2015",
+      "year": 2015
+  },
+  {
+      "name": "confsrf2013",
+      "year": 2013
+  },
+  {
+      "name": "confsrf2011",
+      "year": 2011
+  },
+  {
+      "name": "confsrf2009",
+      "year": 2009
+  },
+  {
+      "name": "confsrf2007",
+      "year": 2007
+  },
+  {
+      "name": "confsrf2005",
+      "year": 2005
+  },
+  {
+      "name": "confsrf2003",
+      "year": 2003
+  },
+  {
+      "name": "confsrf01",
+      "year": 2001
+  },
+  {
+      "name": "confsrf99",
+      "year": 1999
+  },
+  {
+      "name": "confsrf97",
+      "year": 1997
+  },
+  {
+      "name": "confsrf95",
+      "year": 1995
+  },
+  {
+      "name": "confsrf93",
+      "year": 1993
+  },
+  {
+      "name": "confsrf91",
+      "year": 1991
+  },
+  {
+      "name": "confsrf89",
+      "year": 1989
+  },
+  {
+      "name": "confsrf87",
+      "year": 1987
+  },
+  {
+      "name": "confsrf84",
+      "year": 1984
+  },
+  {
+      "name": "confsrf80",
+      "year": 1980
   }
 ]

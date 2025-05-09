@@ -54,10 +54,10 @@ function updateFilter() {
   // });
   nodeElements
     .attr('fill-opacity', (d) =>
-      filter === '' || activeElements.has(d.data.path) ? 1 : 1,
+      filter === '' || activeElements.has(d.data.path) ? 1 : 1
     )
     .attr('fill', (d) =>
-      filter === '' || activeElements.has(d.data.path) ? color(d) : '#f0f0f0',
+      filter === '' || activeElements.has(d.data.path) ? color(d) : '#f0f0f0'
     );
 
   // nodeElements
@@ -96,7 +96,7 @@ const green = hsl(rgb('#009900'));
 function color(d: HierarchyNode<ResearchAgendaItem>) {
   return scaleOrdinal(
     ['topics', 'facilities', 'objectives'],
-    [red.toString(), blue.toString(), green.toString()],
+    [red.toString(), blue.toString(), green.toString()]
   )(d.data.ancestors[2]);
 }
 
@@ -113,7 +113,7 @@ function nameFixer(label = '') {
     .replace('Laser-Plasma-Beschleuniger', 'Laser-Plasma');
 }
 export type ResearchAgenda = ResearchAgendaItem[];
-let researchAgenda: ResearchAgendaItem[] = _data.map((d) => ({
+let researchAgenda: ResearchAgendaItem[] = Object.values(_data).map((d) => ({
   ...d,
   path: d.path.replaceAll('.', '/'),
   ancestors: d.path.split('.').reverse(),
@@ -152,7 +152,7 @@ researchAgenda.forEach((d) => {
 
 const stratified: HierarchyNode<ResearchAgendaItem> =
   stratify<ResearchAgendaItem>().path((d: ResearchAgendaItem) =>
-    d.path.replaceAll('.', '/'),
+    d.path.replaceAll('.', '/')
   )(researchAgenda);
 
 const clusterLayout = cluster<ResearchAgendaItem>()
@@ -168,11 +168,11 @@ const links = clusterLayout.leaves().flatMap((leaf) =>
     source: leaf.data.path,
     target: link,
     id: leaf.data.path + '-' + link,
-  })),
+  }))
 );
 
 const clusterLayoutLeavesByPath = new Map<string, any>(
-  clusterLayout.leaves().map((d) => [d.data.path, d]),
+  clusterLayout.leaves().map((d) => [d.data.path, d])
 );
 
 const { document } = new JSDOM().window;
@@ -198,22 +198,22 @@ const gradientElements = svg
   .attr(
     'x1',
     ({ source }) =>
-      radius * Math.cos(clusterLayoutLeavesByPath.get(source)?.x - Math.PI / 2),
+      radius * Math.cos(clusterLayoutLeavesByPath.get(source)?.x - Math.PI / 2)
   )
   .attr(
     'y1',
     ({ source }) =>
-      radius * Math.sin(clusterLayoutLeavesByPath.get(source)?.x - Math.PI / 2),
+      radius * Math.sin(clusterLayoutLeavesByPath.get(source)?.x - Math.PI / 2)
   )
   .attr(
     'x2',
     ({ target }) =>
-      radius * Math.cos(clusterLayoutLeavesByPath.get(target)?.x - Math.PI / 2),
+      radius * Math.cos(clusterLayoutLeavesByPath.get(target)?.x - Math.PI / 2)
   )
   .attr(
     'y2',
     ({ target }) =>
-      radius * Math.sin(clusterLayoutLeavesByPath.get(target)?.x - Math.PI / 2),
+      radius * Math.sin(clusterLayoutLeavesByPath.get(target)?.x - Math.PI / 2)
   );
 
 gradientElements
@@ -223,7 +223,7 @@ gradientElements
     'stop-color',
     ({ source }) =>
       clusterLayoutLeavesByPath.get(source) &&
-      color(clusterLayoutLeavesByPath.get(source)),
+      color(clusterLayoutLeavesByPath.get(source))
   );
 gradientElements
   .append('stop')
@@ -232,7 +232,7 @@ gradientElements
     'stop-color',
     ({ target }) =>
       clusterLayoutLeavesByPath.get(target) &&
-      color(clusterLayoutLeavesByPath.get(target)),
+      color(clusterLayoutLeavesByPath.get(target))
   );
 
 const defsElement = svg.append('defs');
@@ -250,7 +250,7 @@ const nodeElements = nodesElement
   .classed('node', true)
   .attr(
     'transform',
-    (d) => `rotate(${(d.x * 180) / Math.PI - 90}) translate(${d.y},0)`,
+    (d) => `rotate(${(d.x * 180) / Math.PI - 90}) translate(${d.y},0)`
   );
 
 const nodeElementsText = nodeElements
@@ -273,7 +273,7 @@ nodeElementsText
 nodeElementsText
   .append('tspan')
   .text((d) =>
-    d.x >= Math.PI ? nameFixer(d.data.group) : nameFixer(d.data.label),
+    d.x >= Math.PI ? nameFixer(d.data.group) : nameFixer(d.data.label)
   )
   // .classed('bold', ({ x }) => x > Math.PI)
   .attr('dx', 7)
@@ -402,8 +402,6 @@ updateFilter();
   .research-agenda svg {
     width: 100%;
     height: 100%;
-
-    background-color: red;
   }
 
   text {
@@ -415,7 +413,6 @@ updateFilter();
 
   figcaption {
     flex: 1 0 5rem;
-    background-color: green;
   }
   .link {
     mix-blend-mode: lighten;

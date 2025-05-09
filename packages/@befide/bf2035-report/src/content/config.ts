@@ -1,4 +1,6 @@
 import { z, defineCollection } from 'astro:content';
+import { glob, file } from 'astro/loaders';
+
 import spaceCommander from '@utils/space-commander';
 
 const tags = z.array(z.string()).optional();
@@ -9,8 +11,45 @@ export const ScopedTag = z.object({
 });
 export const ScopedTags = z.array(ScopedTag).optional();
 
-const sectionCollection = defineCollection({
-  type: 'content',
+const organizations = defineCollection({
+  loader: glob({
+    pattern: '**/*.*',
+    base: '/Users/dirk/Projekte/kunde-KfB/@befide/bf2035/packages/@befide/bf2035-community-inventory/03.output/inventory/organizations',
+  }),
+  schema: z.object({
+    id: z.string(),
+    befideInventoryOrganizationalLevelCategory: z.string(),
+    befideOrganizationCategories: z.array(z.string()),
+    homepage__de: z.string().nullable().optional(),
+    homepage__en: z.string().nullable().optional(),
+    label__de: z.string(),
+    label__en: z.string().nullable().optional(),
+    description__de: z.string().nullable().optional(),
+    description__en: z.string().nullable().optional(),
+    label__short: z.string().nullable().optional(),
+    isPartOfCommunity: z.boolean(),
+    location: z.object({
+      city: z.string().nullable().optional(),
+      country: z.string().nullable().optional().default('Germany'),
+      lat: z.number().nullable().optional(),
+      lng: z.number().nullable().optional(),
+    }),
+    peopleCount: z.object({
+      uniqueProfessors: z.number(),
+      uniqueSeniorResearchers: z.number(),
+      uniquePostDocs: z.number(),
+      uniquePhdStudents: z.number(),
+      uniqueWorkingStudents_MSC: z.number(),
+      uniqueWorkingStudents_BSC: z.number(),
+    }),
+    reviewedBy: z.string().nullable().optional(),
+    parentPath: z.string().nullable().optional(),
+    localName: z.string(),
+  }),
+});
+
+const sections = defineCollection({
+  loader: glob({ pattern: '**/*.*', base: './src/content/sections' }),
   schema: ({ image }) =>
     z
       .object({
@@ -43,10 +82,11 @@ const sectionCollection = defineCollection({
       .strict(),
 });
 
-const referenceCollection = defineCollection({
-  // type: 'data',
+const references = defineCollection({
+  loader: glob({ pattern: '**/*.*', base: './src/content/references' }),
   schema: z
     .object({
+      id: z.string(),
       tags: z.array(z.string()),
 
       bibTex: z.string(),
@@ -223,6 +263,8 @@ const referenceCollection = defineCollection({
 });
 
 export const collections = {
-  sections: sectionCollection,
-  references: referenceCollection,
+  sections,
+  references,
+  // ,
+  // organizations,
 };

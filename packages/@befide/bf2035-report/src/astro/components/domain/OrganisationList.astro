@@ -29,7 +29,7 @@ export interface Props {
 
 const { filter } = Astro.props;
 
-const filteredOrganisations = organisations.filter(filter);
+const filteredOrganisations = Object.values(organisations).filter(filter);
 ---
 
 <ol class="md">

@@ -1,17 +1,26 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import { render, type CollectionEntry } from 'astro:content';
 
-import { getImage } from 'astro:assets';
+import { getImage, Image } from 'astro:assets';
+
+import BibRef from '@components/ui/BibRef.astro';
+import TOC from '@components/ui/TOC.astro';
 
 export interface Props {
   section: CollectionEntry<'sections'>;
 }
-
 const { section } = Astro.props;
 
-const { title, sectionNumber, supertitle, subtitle, backgroundImageSrc } =
-  section.data;
-const { Content } = await section.render();
+const {
+  title,
+  sectionNumber,
+  supertitle,
+  subtitle,
+  sectionType = 'spread',
+  sectionClass = '',
+  backgroundImageSrc,
+} = section.data;
+const { Content } = await render(section);
 
 const optimizedBackground =
   backgroundImageSrc &&
@@ -25,7 +34,7 @@ const optimizedBackground =
     : backgroundImageSrc);
 ---
 
-<div class="part">
+<div class={'spread ' + sectionType + ' ' + sectionClass}>
   <div
     class="spread__page left"
     style={optimizedBackground
@@ -33,7 +42,7 @@ const optimizedBackground =
       : ``}
   >
     <div class="spread__page-grid debug-overlay">
-      <Content />
+      <Content components={{ Image, BibRef, TOC }} />
     </div>
   </div>
   <div
@@ -75,58 +84,7 @@ const optimizedBackground =
         }
       </header>
 
-      <Content />
+      <Content components={{ Image, BibRef, TOC }} />
     </div>
   </div>
 </div>
-
-<style lang="stylus">
- 
-.cover, .part
-
-  
-  .spread__header
-    grid-area: 1 / 4 / 11 / 13
-    text-align right
-
-
-  .spread__supertitle, .spread__subtitle, .spread__title
-    right 0rem
-
-
-    span
-      margin-right calc(-1 * var(--page__margin__outside) - 1 * var(--bleed))
-      margin-left 0
-      padding-right calc(1 * var(--page__margin__outside) - 1 * var(--bleed))
-      padding-left 1rem;
-      padding-top: 2px;
-      padding-bottom: 2px; 
-      border-right: 0
-      box-shadow 0px 0 2px 0px rgba(0, 0, 0, 0.5)
-      
-  .spread__sectionNumber {
-    display: none;
-  }
-
-  .spread__title {
-    top 2rem;
-    color white;
-    line-height 3rem;
-    font-size 2rem;
-    height: 3rem
-  }
-
-  .spread__supertitle, .spread__subtitle {
-    font-size 1.3rem;
-    line-height 2rem;
-  }
-  .spread__supertitle {
-    top 0rem;
-  }
-  .spread__subtitle {
-    top 5rem;
-   }
-
-
-
-  </style>

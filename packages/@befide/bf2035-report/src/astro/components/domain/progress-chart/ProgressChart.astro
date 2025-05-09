@@ -1,6 +1,6 @@
 ---
 import { JSDOM } from 'jsdom';
-import { axisBottom, axisRight } from 'd3-axis';
+import { axisBottom, axisLeft, axisRight } from 'd3-axis';
 
 import { format, formatLocale } from 'd3-format';
 import { scaleLinear, scaleLog } from 'd3-scale';
@@ -53,8 +53,8 @@ const height = gridUnits2BaselineCount(heightInGridUnits + 0) * baselineHeight;
 
 const width = gridUnits2BaselineCount(widthInGridUnits + 0) * baselineHeight;
 
-const t0 = 1925;
-const t1 = 2025;
+const t0 = 1935;
+const t1 = 2035;
 
 const x = scaleLinear().domain([t0, t1]).range([0, width]);
 
@@ -93,23 +93,23 @@ const xAxis = (g: any) =>
     .attr('transform', `translate(0,${height - baselineHeight})`)
     .call(
       axisBottom(x)
-        .tickValues([1920, 1940, 1960, 1980, 2000, 2020])
+        .tickValues([1925, 1925, 1950, 1975, 2000, 2025])
         .tickSize(0)
-        .tickFormat(format('.0f')),
+        .tickFormat(format('.0f'))
     )
     .call((g: any) => g.selectAll('.domain').remove());
 
 const yAxis =
   chartMeta.scale === 'linear'
     ? (g: any) => {
-        g.attr('transform', 'translate(0,0)')
+        g.attr('transform', `translate(${width},0)`)
           .call(
-            axisRight(y)
+            axisLeft(y)
               .tickSize(width)
               .ticks(5)
               .tickFormat(
-                (chartMeta && chartMeta.numberFormat) || format(',.0f'),
-              ),
+                (chartMeta && chartMeta.numberFormat) || format(',.0f')
+              )
           )
           .call((g: any) => g.selectAll('.domain').remove())
           .call((g: any) => {
@@ -117,7 +117,7 @@ const yAxis =
           });
 
         g.selectAll('.tick:last-child text').text('');
-        g.selectAll('.tick:nth-last-child(2) text').text('');
+        // g.selectAll('.tick:nth-last-child(2) text').text('');
       }
     : (g: any) =>
         g
@@ -156,6 +156,12 @@ svg
   .attr('height', height)
   .attr('viewBox', [0, 0, width, height].join(' '));
 
+svg
+  .append('style')
+  .text(
+    "@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');"
+  );
+
 const title = svg
   .append('g')
   .attr('class', 'title')
@@ -180,6 +186,25 @@ svg
   .append('text')
   .attr('class', 'quantity-name')
   .text(chartMeta.unit);
+svg
+  .append('g')
+  .attr('class', 'curve')
+  .append('path')
+  // .attr("stroke-width", (_, i) => 4 * i)
+  // .attr("stroke-opacity", (_, i) => 1 - i / 4)
+  .attr(
+    'd',
+    line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]))
+      .curve(chartMeta.curveGenerator || curveCardinal.tension(1))(
+      data.map(({ year, value, value_sum }) =>
+        chartMeta.cumulate ? [year, value_sum] : [year, value]
+      )
+    )
+  );
+svg.append('g').attr('class', 'x-axis').call(xAxis);
+svg.append('g').attr('class', 'y-axis').call(yAxis);
 
 const dataPoints = svg.append('g').attr('class', 'data-points');
 
@@ -203,30 +228,10 @@ chartMeta.cumulate &&
     .attr('y', ({ value }) => y(value))
     .attr('height', ({ value }) => -y(value) + y(0))
     .attr('width', 1);
-
-svg
-  .append('g')
-  .attr('class', 'curve')
-  .append('path')
-  // .attr("stroke-width", (_, i) => 4 * i)
-  // .attr("stroke-opacity", (_, i) => 1 - i / 4)
-  .attr(
-    'd',
-    line()
-      .x((d) => x(d[0]))
-      .y((d) => y(d[1]))
-      .curve(chartMeta.curveGenerator || curveCardinal.tension(1))(
-      data.map(({ year, value, value_sum }) =>
-        chartMeta.cumulate ? [year, value_sum] : [year, value],
-      ),
-    ),
-  );
-svg.append('g').attr('class', 'x-axis').call(xAxis);
-svg.append('g').attr('class', 'y-axis').call(yAxis);
 ---
 
 <figure class="progress-chart md">
-  <!-- <Fragment set:html={document.body.innerHTML} /> -->
+  <Fragment set:html={document.body.innerHTML} />
 
   <figcaption class="md">
     <slot />
@@ -234,24 +239,26 @@ svg.append('g').attr('class', 'y-axis').call(yAxis);
 </figure>
 
 <style lang="stylus" is:global>
-@import "./progress-chart"
+  @import './progress-chart.css' 
+    
+  svg {
+    background-color: rgba(white, 0.9);
+    font-family: 'Barlow Condensed';
+  }
 
-svg {
-  background-color rgba(white, .9);
-}
+  figure.md.progress-chart {
+    overflow: visible;
+    margin-top: 1rem;
+  }
 
-
-figure.md.progress-chart
-  overflow: visible
-
-.progress-chart::before
-  content " "
-  position: absolute
-  background-color: rgba(white, .5)
-  z-index: -1
-
-  top -.25rem
-  bottom -.25rem
-  left -.25rem
-  right -.25rem
+  .progress-chart::before {
+    content: ' ';
+    position: absolute;
+    background-color: rgba(white, 0.5);
+    z-index: -1;
+    top: -0.25rem;
+    bottom: -0.25rem;
+    left: -0.25rem;
+    right: -0.25rem;
+  }
 </style>

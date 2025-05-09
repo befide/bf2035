@@ -7,7 +7,7 @@ dist/
 .vscode/*
 
 
-packages/
+packages/@befide/bf2035-3d
 
 
 .DS_Store

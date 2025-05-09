@@ -1,6 +1,4 @@
 packages:
-  # - packages/@befide/starlight-utils
-  # - packages/@befide/starlight-dc-utils
   #  - packages/@befide/bf2035-report
+  #  - packages/@befide/bf2035-inventory
   - docs
-  # - packages/@befide/vue-dc-explorer

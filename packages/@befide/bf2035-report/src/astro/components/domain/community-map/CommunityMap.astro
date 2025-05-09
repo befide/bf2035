@@ -157,7 +157,7 @@ for (let x = -10; x <= 10; x++)
 //   .pathGenerator(geoPath().projection(projection))
 //   .hexRadius(radius);
 
-const facilities = fis
+const facilities = Object.values(fis)
   .filter((d) => d.acceleratorDriven === 'checked')
   .map(({ lat, lng, name, erumField }) => {
     return {

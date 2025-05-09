@@ -28,7 +28,7 @@ import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import _data from './research-agenda.json';
 
-let data: ResearchAgenda = _data;
+let data: ResearchAgenda = Object.values(_data);
 
 export interface Props {
   name: string;

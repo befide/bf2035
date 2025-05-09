@@ -5,12 +5,8 @@ subtitle: Eine kleine Gemeinschaft mit großem Hebel
 sectionNumber: A.1
 sectionType: spread
 sectionClass: spread--community
-backgroundImageSrc: "@assets/backgrounds/community.webp"
+backgroundImageSrc: '@assets/backgrounds/community.webp'
 ---
-
-import OrganisationList from "@components/domain/OrganisationList.astro";
-import FacilityList from "@components/domain/FacilityList.astro";
-import CommunityMap from "@components/domain/community-map/CommunityMap.astro";
 
 <div class="spread--left spread-area--intro">
 
@@ -47,9 +43,7 @@ Die Ausbildung des Nachwuchses für die Beschleunigerforschung an deutschen Univ
 
 ## Universitäre und außeruniversitäre Anbindung
 
-Beschleunigerforschung wird sowohl an Universitäten als auch an außeruniversitären Forschungszentren betrieben. Die akademische Beschleunigerforschung ist an 13 deutschen Universitäten mit insgesamt XY Professuren vertreten.[^2] Mehr
-als ein Drittel der 18 Helmholtz-Zentren sind in der Beschleunigerforschung aktiv.^03^ Darüber hinaus bestehen enge
-Verbindungen zu internationalen Forschungszentren wie CERN in Genf, ERSF in Grenoble und ESS in Lund, Schweden.[^4]
+Beschleunigerforschung wird sowohl an Universitäten als auch an außeruniversitären Forschungszentren betrieben. Die akademische Beschleunigerforschung ist an 13 deutschen Universitäten mit insgesamt XY Professuren vertreten[^2]. Mehr als ein Drittel der 18 Helmholtz-Zentren sind in der Beschleunigerforschung aktiv[^3]. Darüber hinaus bestehen enge Verbindungen zu internationalen Forschungszentren wie CERN in Genf, ERSF in Grenoble und ESS in Lund, Schweden[^4].
 
 </div>
 
@@ -57,7 +51,7 @@ Verbindungen zu internationalen Forschungszentren wie CERN in Genf, ERSF in Gren
 
 ## Fachliche Anbindung
 
-Die Beschleunigerforschung wird sowohl von Personen mit naturwissenschaftlichem als auch mit ingenieurwissenschaftlichem Hintergrund getragen. Drei der dreißig Professuren sind an einer ingenieurwissenschaftlichen Fakultät angesiedelt ( Rostock, Darmstadt).^01^ (N der 173 Dissertationen seit 20XX sind von Autoren mit ingenieurwissenschaftlichem
+Die Beschleunigerforschung wird sowohl von Personen mit naturwissenschaftlichem als auch mit ingenieurwissenschaftlichem Hintergrund getragen. Drei der dreißig Professuren sind an einer ingenieurwissenschaftlichen Fakultät angesiedelt (Rostock, Darmstadt)[^1]. (N der 173 Dissertationen seit 20XX sind von Autoren mit ingenieurwissenschaftlichem
 Hintergrund verfasst.[^5])
 
 </div>
@@ -66,7 +60,7 @@ Hintergrund verfasst.[^5])
 
 ## Universitäten
 
-<OrganisationList filter={({ type }) => type === "university"} />
+<OrganisationList filter={({ type }) => type === 'university'} />
 
 </div>
 
@@ -75,7 +69,7 @@ Hintergrund verfasst.[^5])
 ## Außeruniversitäre Einrichtungen
 
 <OrganisationList
-  filter={({ type }) => type === "non-university-research-organisation"}
+  filter={({ type }) => type === 'non-university-research-organisation'}
 />
 
 </div>
@@ -100,7 +94,7 @@ Hintergrund verfasst.[^5])
 
 ## Testanlagen
 
-<FacilityList filter={({ userGroup }) => userGroup === "accelerator-science"} />
+<FacilityList filter={({ userGroup }) => userGroup === 'accelerator-science'} />
 
 </div>
 
@@ -112,8 +106,7 @@ Hintergrund verfasst.[^5])
 
 ## Beschäftigte
 
-In der deutschen Beschleunigerforschung sind nnn Menschen im akademischen und nnn im technischen Bereich
-beschäftigt.[^1]
+In der deutschen Beschleunigerforschung sind nnn Menschen im akademischen und nnn im technischen Bereich beschäftigt[^1].
 
 </div>
 

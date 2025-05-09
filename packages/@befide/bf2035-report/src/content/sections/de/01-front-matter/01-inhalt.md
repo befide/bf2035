@@ -1,0 +1,14 @@
+---
+title: Inhalt
+backgroundImageSrc: '@assets/backgrounds/__.floor.1m.1.webp'
+sectionType: left
+sectionNumber: i
+---
+
+
+
+<div class="spread--left spread-area--c-1_1">
+
+<TOC />
+
+</div>

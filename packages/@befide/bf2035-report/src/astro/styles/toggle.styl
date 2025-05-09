@@ -1,73 +1,38 @@
 
-label.toggle 
-  flex 0 0 calc(10 * var(--ui__baseline-height));
-  display flex;
-  flex-direction: row
+label.toggle {
+  flex: 0 0 calc(10 * var(--ui__baseline-height));
+  display: flex;
+  flex-direction: row;
   // padding calc(0.5 * var(--ui__baseline-height));
-  border 1px solid white;
-  font-size var(--ui__font-size--sm);
-  line-height:  var(--ui__baseline-height);
-  justify-content: flex-start
-  align-items: center
-  cursor pointer;
+  border: 1px solid white;
+  font-size: var(--ui__font-size--sm);
+  line-height: var(--ui__baseline-height);
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
 
-
-
-  select, input 
-    display inline-block;
-    flex 0
-    font-family var(--ui__font-family)
-  
-  span.label-text
-    flex 1
-    padding calc(.5 * var(--ui__baseline-height));
-    white-space: nowrap
-
-  .state
-    
-    flex 1
-    padding calc(.5 * var(--ui__baseline-height));
-
-
-// label input[role="switch"] {
-// opacity: 0;
-// }
-
-// label input[role='switch'] ~ .state {
-//   user-select none;
-//   flex 0 0 var(--ui__font-size--sm);
-//   display flex;
-// }
-
-// label input[role='switch'] ~ .state > .switch-container {
-//   position relative;
-//   top 2px;
-//   display inline-block;
-//   border 2px solid black;
-//   border-radius 11px;
-//   // flex 40px;
-// }
-
-
-// .state > span.off, .state span.off {
-//   display block-inline;
-// }
-
-  label input[role='switch']:not(:checked) ~ .state span.on {
-    visibility hidden;
+  select, input {
+    display: inline-block;
+    flex: 0;
+    font-family: var(--ui__font-family);
   }
 
-  label input[role='switch']:checked ~ .state span.off {
-    visibility hidden;
+  span.label-text {
+    flex: 1;
+    padding: calc(0.5 * var(--ui__baseline-height));
+    white-space: nowrap;
   }
 
+  .state {
+    flex: 1;
+    padding: calc(0.5 * var(--ui__baseline-height));
+  }
+}
 
-// label::hover {
-//   outline none;
-//   background-color red
-  
-// }
+label input[role='switch']:not(:checked) ~ .state span.on {
+  visibility: hidden;
+}
 
-// label.focus span.switch-container, label:hover span.switch-container {
-//   background-color white;
-// }
+label input[role='switch']:checked ~ .state span.off {
+  visibility: hidden;
+}

@@ -1,5 +1,4 @@
 ---
-path: /01/forschungsagenda/schwerpunkte/materialien
 supertitle: Forschungsschwerpunkt
 title: Materialforschung
 sectionType: right

@@ -1,12 +1,10 @@
 ---
-path: /01/forschungsagenda/ziele
 supertitle: Forschungsagenda
 title: Forschungsziele
 sectionNumber: C.1
 sectionType: spread
 ---
 
-import ResearchAgenda from '@components/domain/research-agenda/ResearchAgenda.astro'
 
 <div class="spread--left spread-area--intro">
 
@@ -54,10 +52,10 @@ Um auch in Zukunft einen Beitrag der deutschen Beschleunigerforschung zur Realis
 
 ## Nutzer
 
-<ResearchAgenda filter="user.availability" />
+<ResearchAgenda filter="user.availability" client:idle />
 
-<ResearchAgenda filter="user.data-rate" />
+<ResearchAgenda filter="user.data-rate" client:idle />
 
-<ResearchAgenda filter="user.variable-pulse-structure" />
+<ResearchAgenda filter="user.variable-pulse-structure" client:idle />
 
 </div>

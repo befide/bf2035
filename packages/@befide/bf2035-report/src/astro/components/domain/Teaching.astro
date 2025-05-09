@@ -21,7 +21,7 @@ export interface Teaching {
   'link:professors': string;
   url: string;
 }
-const teachings: Teachings = _teachings;
+const teachings: Teachings = Object.values(_teachings);
 
 const teachingsByUniversities = rollups(
   teachings,
@@ -29,13 +29,13 @@ const teachingsByUniversities = rollups(
     entries: v,
     sws: sum(
       v,
-      (d) => d.lecture__sws + d.lab__sws + d.exercises__sws + d.seminar__sws,
+      (d) => d.lecture__sws + d.lab__sws + d.exercises__sws + d.seminar__sws
     ),
     lecture__sws: sum(v, (d) => d.lecture__sws),
     exercises__sws: sum(v, (d) => d.lab__sws + d.exercises__sws),
     seminar__sws: sum(v, (d) => d.seminar__sws),
   }),
-  (d) => d['link:university'],
+  (d) => d['link:university']
 );
 
 function fachbereich(university: string) {

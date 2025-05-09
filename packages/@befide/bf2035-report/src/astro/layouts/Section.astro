@@ -1,9 +1,11 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
 
 import { getImage, Image } from 'astro:assets';
 
 import BibRef from '@components/ui/BibRef.astro';
+import BibList from '@components/ui/BibList.astro';
+import TOC from '@components/ui/TOC.astro';
 
 export interface Props {
   section: CollectionEntry<'sections'>;
@@ -20,7 +22,7 @@ const {
   sectionClass = '',
   backgroundImageSrc,
 } = section.data;
-const { Content } = await section.render();
+const { Content } = await render(section);
 
 const optimizedBackground =
   backgroundImageSrc &&
@@ -36,7 +38,7 @@ const optimizedBackground =
 
 <div class={'spread ' + sectionType + ' ' + sectionClass}>
   {
-    (sectionType === 'spread' || sectionType === 'left') && (
+    (sectionType === 'cover' || sectionType === 'part' || sectionType === 'spread' || sectionType === 'left') && (
       <div
         class="spread__page left"
         style={
@@ -66,7 +68,7 @@ const optimizedBackground =
             )}
           </header>
 
-          <Content components={{ Image, BibRef }} />
+          <Content components={{ Image, BibRef, BibList, TOC }} />
         </div>
       </div>
     )
@@ -82,28 +84,45 @@ const optimizedBackground =
         }
       >
         <div class="spread__page-grid debug-overlay">
-          {sectionType === 'right' && (
+          {sectionType !== 'left'  && sectionType !== 'spread' && (
             <header class="spread__header">
-              {supertitle && (
-                <div class="spread__supertitle">
-                  <span>
-                    {sectionNumber}: {supertitle}
-                  </span>
-                </div>
-              )}
-              <h1 class="spread__title">
-                <span>{title}</span>
-              </h1>
-              {subtitle && (
-                <div class="spread__subtitle">
-                  <span>{subtitle}</span>
-                </div>
-              )}
+              {
+                sectionNumber && (
+                  <div class="spread__sectionNumber">
+                    <span set:html={sectionNumber} />
+                  </div>
+                )
+              }
+
+              {
+                supertitle && (
+                  <div class="spread__supertitle">
+                    <span set:html={supertitle} />
+                  </div>
+                )
+              }
+              {
+                title && (
+                  <h1 class="spread__title">
+                    <span set:html={title} />
+                  </h1>
+                )
+              }
+              {
+                subtitle && (
+                  <div class="spread__subtitle">
+                    <span set:html={subtitle} />
+                  </div>
+                )
+              }
             </header>
           )}
-          <Content components={{ Image, BibRef }} />
+          <Content components={{ Image, BibRef, BibList, TOC }} />
         </div>
       </div>
     )
   }
 </div>
+
+
+

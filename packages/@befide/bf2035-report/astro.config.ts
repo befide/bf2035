@@ -1,16 +1,21 @@
 import { defineConfig } from 'astro/config';
 
 import mdx from '@astrojs/mdx';
+import vue from '@astrojs/vue';
+import tailwind from '@astrojs/tailwind';
+import AutoImport from 'astro-auto-import';
 
 import AstroPWA from '@vite-pwa/astro';
+import { purgecss } from '@zokki/astro-purgecss';
 
 import rehypeAddClasses from 'rehype-add-classes';
 import rehypeCitation from 'rehype-citation';
 // import rehypeFigure from "rehype-figure"
 import rehypeRewrite from 'rehype-rewrite';
 import rehypeWidont from 'rehype-widont';
-import remarkNumberedFootnotes from 'remark-numbered-footnote-labels';
+// import remarkNumberedFootnotes from 'remark-numbered-footnote-labels';
 import sectionize from 'remark-sectionize';
+import remarkDirective from 'remark-directive';
 import spaceCommander from './src/astro/utils/space-commander.ts';
 
 import { dirname, resolve } from 'node:path';
@@ -46,6 +51,7 @@ export default defineConfig({
   redirects: {},
   markdown: {
     remarkPlugins: [
+      remarkDirective,
       remarkNumberedFootnotes,
       sectionize,
       //   [smartypants, {
@@ -58,13 +64,13 @@ export default defineConfig({
     rehypePlugins: [
       [rehypeWidont, {}],
       // [rehypeFigure, { className: "md" }],
-      [
-        rehypeCitation,
-        {
-          bibliography: 'src/kfb-bf2035_used.csl.json',
-          linkCitations: true,
-        },
-      ],
+      // [
+      //   rehypeCitation,
+      //   {
+      //     bibliography: 'src/kfb_bf2035__used.csl.json',
+      //     linkCitations: true,
+      //   },
+      // ],
 
       [
         rehypeAddClasses,
@@ -93,11 +99,30 @@ export default defineConfig({
   },
 
   integrations: [
+    AutoImport({
+      imports: [
+        // Import a component’s default export
+        // generates:
+        // import A from './src/components/A.astro';
+
+        './src/astro/components/domain/progress-chart/ProgressChart.astro',
+        './src/astro/components/domain/FacilityList.astro',
+        './src/astro/components/domain/OrganisationList.astro',
+        './src/astro/components/domain/Universities.astro',
+        './src/astro/components/domain/community-map/CommunityMap.astro',
+        './src/astro/components/domain/research-agenda/ResearchAgenda.astro',
+        './src/astro/components/ui/BibRef.astro',
+      ],
+    }),
+    // tailwind(),
+    vue({
+      appEntrypoint: '/src/_app.ts',
+      reactivityTransform: true,
+    }),
     mdx({
       gfm: true,
     }),
-    pagefind(),
-    // sitemap({}),
+    pagefind(), // sitemap({}),
 
     AstroPWA({
       mode: 'development',
@@ -124,6 +149,7 @@ export default defineConfig({
         navigateFallbackAllowlist: [/^\//],
       },
     }),
+    purgecss(),
   ],
   devToolbar: { enabled: false },
 });
