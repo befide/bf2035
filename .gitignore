@@ -1,7 +1,9 @@
-
+**/.astro/
 node_modules/
 dist/
+.venv/
 .history/
+.vscode/
 .idea/
 /.vscode/settings.json
 packages/@befide/bf2035-3d/
@@ -467,3 +469,7 @@ packages/@befide/.obsidian/plugins/safe-filename-linter/manifest.json
 packages/@befide/.obsidian/themes/Vicious/manifest.json
 packages/@befide/.obsidian/themes/Vicious/theme.css
 packages/@befide/bf2035-charts/dynamics-model.svg
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/tasks.json
+.eslintcache
