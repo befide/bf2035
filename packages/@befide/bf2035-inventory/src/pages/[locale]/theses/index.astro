@@ -1,0 +1,21 @@
+---
+
+import ThesesExplorer from "@/astro/components/dc/ThesesExplorer.astro"
+
+import DCExplorerLayout from "@/astro/layouts/DCExplorerLayout.astro"
+
+export async function getStaticPaths(): Promise<any> {
+  const locales = ["en", "de"]
+
+  return locales.map((locale) => ({
+    params: { locale },
+    props: {},
+  }))
+}
+---
+
+<DCExplorerLayout title="Abrechnung" description="Statements">
+  <main>
+    <ThesesExplorer />
+  </main></DCExplorerLayout
+>

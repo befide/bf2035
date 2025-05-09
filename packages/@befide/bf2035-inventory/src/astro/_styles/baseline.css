@@ -1,0 +1,16 @@
+/* Accepts "baseline-V" or "baseline-V/M" */
+@utility baseline-* {
+  /* Calculate shift based on --value(integer) */
+  --baseline-shift: calc(calc(calc(--value(integer) * var(--spacing)) - 1cap) / 2);
+
+  /* Default push of 1 if modifier not provided */
+  --baseline-push: calc(var(--spacing) - var(--baseline-shift));
+
+  /* Override with --modifier(integer) if provided */
+  --baseline-push: calc(calc(--modifier(integer) * var(--spacing)) - var(--baseline-shift));
+
+  /* ...and apply */
+  line-height: calc(--value(integer) * var(--spacing));
+  padding-top: var(--baseline-shift);
+  margin-bottom: var(--baseline-push);
+}

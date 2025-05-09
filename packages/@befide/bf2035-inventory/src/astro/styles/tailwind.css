@@ -1,0 +1,121 @@
+@import "tailwindcss";
+@import "./baseline.css";
+
+@theme {
+  --font-sans:
+    "Barlow Semi Condensed", ui-monospace, sfmono-regular, menlo, monaco, consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --font-serif: ui-serif, georgia, cambria, "Times New Roman", times, serif;
+  --font-mono:
+    ui-monospace, sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New",
+    monospace;
+  --text-xl: 24px;
+  --text-lg: 18px;
+  --text-base: 16px;
+  --text-sm: 14px;
+  --text-xs: 12px;
+  --line-height: 20px;
+  --spacing: 1rem;
+  --font-weight--bold: 600;
+  --pagedjs-margin-right: 20mm;
+  --pagedjs-margin-left: 25mm;
+}
+
+/* Accepts "baseline-V" or "baseline-V/M" */
+
+@layer base {
+  .baseline {
+    font-size: var(--text-base);
+    max-width: 70ch;
+  }
+
+  .baseline .small {
+    font-size: var(--text-sm);
+  }
+
+  .baseline p,
+  .baseline ul,
+  .baseline ol,
+  .baseline dl {
+    @apply baseline-1/1;
+    /* text-wrap: pretty; */
+  }
+
+  .baseline ul {
+    page-break-inside: avoid;
+    margin-left: 1.5rem;
+  }
+
+  .baseline ul li {
+    position: relative;
+  }
+
+  .baseline ul li::before {
+    position: absolute;
+    left: -1.5rem;
+    width: 1.5rem;
+    content: "–";
+    text-align: center;
+  }
+
+  .baseline ol {
+    list-style: decimal-leading-zero;
+    margin-left: 1.5rem;
+    page-break-inside: avoid;
+  }
+
+  .baseline a {
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+    text-decoration-style: dashed;
+  }
+
+  /*
+   * Apply to headings appropriately based on
+   * header sizes and desired spacing
+   */
+  .baseline h1 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight--bold);
+    @apply baseline-1/2;
+  }
+
+  .baseline hr {
+    @apply baseline-2/1;
+
+    /* margin-top: 1rem; */
+  }
+
+  .baseline h2 {
+    font-weight: var(--font-weight--bold);
+    font-size: var(--text-xl);
+    @apply baseline-2/1;
+  }
+
+  .baseline h3 {
+    font-weight: var(--font-weight--bold);
+    font-size: var(--text-lg);
+    @apply baseline-1/0;
+  }
+
+  .baseline h4 {
+    font-weight: var(--font-weight--bold);
+    font-size: var(--text-md);
+    @apply baseline-1/0;
+  }
+
+  .baseline h5 {
+    @apply baseline-1/0;
+    background-color: red;
+  }
+
+  .baseline h6 {
+    @apply baseline-2/0;
+    background-color: red;
+  }
+
+  .baseline dt {
+    font-weight: var(--font-weight--bold);
+  }
+}

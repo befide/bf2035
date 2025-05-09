@@ -1,0 +1,90 @@
+---
+import { allReferences } from "@utils/content.references";
+
+// import ThesesExplorer from "@components/dc/ThesesExplorer.astro"
+
+import Badge from "../Badge.astro";
+
+const references = await allReferences();
+
+// const getUniversity = async (thesis: CollectionEntry<"theses">) => {
+//   if (!thesis.data.universityRef) return null
+//   const university = await getEntry(thesis.data.universityRef)
+//   return university
+// }
+---
+
+<section>
+  <!-- <ThesesExplorer /> -->
+<p>{references.length}</p>
+  <table id="dc-table-graph">
+    <thead>
+      <tr class="table-header">
+        <th>type</th>
+        <th>year</th>
+        <th>author, title, links</th>
+        <th>key</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        references.map(async (reference) => (
+          <tr>
+            <td>
+              <div>{reference.data.itemType}</div>
+            </td>
+            <td>
+              <div>{reference.data.year}</div>
+            </td>
+            <td>
+              <ul class="reference__creators">
+              
+                {reference.data.creators.map( (creator) => (
+                  
+                  <li class="reference__creator">
+                    
+                    <span class="reference__creator__given-name">{creator.firstName}</span> <span class="reference__creator__family-name">{creator.lastName}</span><span class="reference__creator__name">{creator.name}</span>
+                  
+                    </li>
+                  
+                ))}
+              </ul>
+
+              <span class="reference__title">{reference.data.title}</span>
+              <ul class="reference__links">
+                {reference.data.doi && (
+                  <li class="reference__link">
+                    <a
+                      href={encodeURI("https://doi.org/" + reference.data.doi)}
+                    >
+                      <Badge
+                        prefix="doi"
+                        text={reference.data.doi}
+                        size="medium"
+                      />
+                    </a>
+                  </li>
+                )}
+                {/*                 
+                {reference.data.fulltextLink && (
+                  <li>
+                    <a href={reference.data.fulltextLink}>
+                      <Badge prefix="PDF" text="fulltext" size="medium" />
+                    </a>
+                  </li>
+                )} */}
+              </ul>
+            </td>
+            <td>{reference.data.citationKey}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</section>
+
+<style>
+  .reference__creator__name {
+    font-weight: bold;
+  }
+</style>

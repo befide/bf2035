@@ -1,0 +1,251 @@
+---
+import "@/astro/styles/dc-explorer.css"
+
+export type Theses = Thesis[]
+
+export interface Thesis {
+  title: string
+  author: Author
+  language: string
+  year: number
+  universityId?: string
+  organizationIds: string[]
+  facilityIds: string[]
+  degree: string
+}
+
+export interface Author {
+  familyName: string
+  givenName: string
+  gender: string
+}
+---
+
+<div>
+  <div class="row">
+    <div id="gain-loss-chart">
+      <strong>Days by Gain/Loss</strong>
+      <a
+        class="reset"
+        href="javascript:gainOrLossChart.filterAll();dc.redrawAll();"
+        style="display: none;">reset</a
+      >
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- create navigation buttons with bootstrap styles -->
+    <nav>
+      <ul class="pager">
+        <li class="pager-prev nasdaqTableFirstButton">
+          <a href="#"> First </a>
+        </li>
+        <li class="nasdaqTablePreviousButton">
+          <a href="#"> Previous </a>
+        </li>
+        <span>
+          <span class="nasdaqTableStartNumber">0</span>-<span class="nasdaqTableEndNumber">0</span>
+          of <span class="nasdaqTableTotalRowCount">0</span> records.
+        </span>
+        <li class="nasdaqTableNextButton">
+          <a href="#"> Next </a>
+        </li>
+        <li class="pager-next nasdaqTableLastButton">
+          <a href="#"> Last </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- create a table to host the dataTable -->
+    <table class="dc-data-table table table-hover"></table>
+  </div>
+  <!-- end row containing datatable -->
+</div>
+<!-- end container -->
+
+<script>
+  import { select } from "d3-selection"
+  import "dc/src/compat/d3v6"
+  import { utcParse, format } from "d3"
+  import { ascending } from "d3-array"
+  import * as dc from "dc"
+  import crossfilter from "crossfilter2"
+
+  import data from "./ndx.json"
+
+  var ndx = crossfilter(data) // this will be our CrossFilter variable
+
+  // this is the variable that holds the first pie chart (new!)
+  var gainOrLossChart = dc.pieChart("#gain-loss-chart")
+  var nasdaqTable = dc.dataTable(".dc-data-table")
+
+  // pagination controls for nasdaqTable
+  var nasdaqTableOffset = 0,
+    nasdaqTableItemsPerPage = 10
+
+  function nasdaqPaginationDisplay() {
+    // This function does the following:
+    // disable << First, Previous if already at 0
+    // disable >> Next, Last if already at last page
+    // display number of records shown
+
+    var totalRowCount = ndx.size()
+    // update numbers shown
+    select(".nasdaqTableTotalRowCount").text(totalRowCount)
+    select(".nasdaqTableStartNumber").text(nasdaqTableOffset + 1)
+    select(".nasdaqTableEndNumber").text(
+      Math.min(nasdaqTableOffset + nasdaqTableItemsPerPage, totalRowCount)
+    )
+    // disable first/previous buttons if we're at the start of the list
+    select(".nasdaqTableFirstButton").classed("disabled", nasdaqTableOffset <= 0)
+    select(".nasdaqTablePreviousButton").classed("disabled", nasdaqTableOffset <= 0)
+    // similarly with next/last buttons if we're at end of list
+    select(".nasdaqTableNextButton").classed(
+      "disabled",
+      nasdaqTableOffset >= ndx.size() - (ndx.size() % nasdaqTableItemsPerPage)
+    )
+    select(".nasdaqTableLastButton").classed(
+      "disabled",
+      nasdaqTableOffset >= ndx.size() - (ndx.size() % nasdaqTableItemsPerPage)
+    )
+    // attach click handlers to the buttons and set them to fire only when enabled
+    select(".nasdaqTableFirstButton").on("click", function () {
+      if (!select(this).classed("disabled")) {
+        nasdaqTableFirst()
+      }
+    })
+    select(".nasdaqTablePreviousButton").on("click", function () {
+      if (!select(this).classed("disabled")) {
+        nasdaqTablePrevious()
+      }
+    })
+    select(".nasdaqTableNextButton").on("click", function () {
+      if (!select(this).classed("disabled")) {
+        nasdaqTableNext()
+      }
+    })
+    select(".nasdaqTableLastButton").on("click", function () {
+      if (!select(this).classed("disabled")) {
+        nasdaqTableLast()
+      }
+    })
+  }
+  function nasdaqTableUpdate() {
+    // Given the current offset, redraw the table and reset pagination controls
+    // as necessary
+    nasdaqTable.beginSlice(nasdaqTableOffset)
+    nasdaqTable.endSlice(nasdaqTableOffset + nasdaqTableItemsPerPage)
+    nasdaqTable.redraw()
+    nasdaqPaginationDisplay()
+  }
+  function nasdaqTableFirst() {
+    // if "<< First" button clicked
+    nasdaqTableOffset = 0
+    nasdaqTableUpdate()
+  }
+  function nasdaqTablePrevious() {
+    // if "< Previous" button clicked
+    if (nasdaqTableOffset >= nasdaqTableItemsPerPage) {
+      nasdaqTableOffset -= nasdaqTableItemsPerPage
+      nasdaqTableUpdate()
+    }
+  }
+  function nasdaqTableNext() {
+    // if "> Next" button clicked
+    nasdaqTableOffset += nasdaqTableItemsPerPage
+    nasdaqTableUpdate()
+  }
+  function nasdaqTableLast() {
+    // if ">> Last" button clicked
+    nasdaqTableOffset = ndx.size() - (ndx.size() % nasdaqTableItemsPerPage)
+    // TODO: we'll have to change ndx.size() to the number of filtered items eventually
+    //       take care of that later
+    nasdaqTableUpdate()
+  }
+  // end nasdaqTable navigation controls
+
+  // load the data in from the CSV with d3
+
+  // coerce the data into the correct format (see Step 2)
+  var dateFormat = utcParse("%m/%d/%Y")
+  var numberFormat = format(".2f")
+
+  data.forEach(function (d) {
+    d.dd = dateFormat(d.date)
+    d.close = +d.close // coerce to number
+    d.open = +d.open
+    d.change = +d.change
+    d.volume = +d.volume
+  })
+
+  // load the data into CrossFilter
+
+  var all = ndx.groupAll()
+
+  // Create a data dimension
+  var dateDimension = ndx.dimension(function (d) {
+    return d.dd
+  })
+  // Create a categorical data dimension for gain/loss
+  var gainOrLoss = ndx.dimension(function (d) {
+    return d.open > d.close ? "Loss" : "Gain"
+  })
+  var gainOrLossGroup = gainOrLoss.group()
+
+  // create the gainOrLoss pie chart
+  gainOrLossChart
+    .width(180)
+    .height(180)
+    .radius(80)
+    .dimension(gainOrLoss)
+    .group(gainOrLossGroup) // all below are optional
+    .label(function (d) {
+      if (gainOrLossChart.hasFilter() && !gainOrLossChart.hasFilter(d.key)) {
+        return d.key + "(0%)"
+      }
+      var label = d.key
+      if (all.value()) {
+        // add in the percentage
+        label += "(" + Math.floor((d.value / all.value()) * 100) + "%)"
+      }
+      return label
+    })
+    .transitionDuration(500) // changes transition duration (default: 350 ms)
+
+  // create the dataTable
+  nasdaqTable
+    .dimension(dateDimension) // obligatory
+    // .group(function (d) {
+    //   // obligatory
+    //   return "All"
+    // })
+    .showSections(false)
+    .size(Infinity) // optional, default 25
+    .columns([
+      // obligatory
+      "date",
+      "open",
+      "close",
+      {
+        label: "Change", // use this as the column label
+        format: function (d) {
+          return numberFormat(d.close - d.open)
+        },
+      },
+      "volume",
+    ])
+    .sortBy(function (d) {
+      // optional
+      return d.dd
+    })
+    .order(
+      // optional
+      ascending
+    )
+
+  nasdaqTableUpdate() // make sure pagination kicks in for the datatable
+  // before the charts are loaded so we only display
+  // the first $nasdaqTableItemsPerPage rows
+  // render all charts (in this case just the datatable)
+  dc.renderAll()
+</script>

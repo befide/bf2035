@@ -1,0 +1,29 @@
+---
+import type { HTMLAttributes } from "astro/types"
+
+// use a `type`
+type Props = HTMLAttributes<"a">
+const { href, class: className } = Astro.props
+
+const classList =
+  "link-card rounded-sm border border-border bg-accent/70 text-card-foreground shadow-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 dark:bg-accent/30".split(
+    " ",
+  )
+if (className) {
+  classList.push(className)
+}
+---
+
+<div class="link-card__header"><slot /></div>
+
+<style is:global>
+  .link-card__header {
+    background-color: rgb(0 0 0 / 10%);
+    padding: 0.5rem;
+  }
+
+  .link-card__header h3 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-md);
+  }
+</style>

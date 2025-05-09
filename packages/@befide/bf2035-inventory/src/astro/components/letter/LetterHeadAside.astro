@@ -1,0 +1,42 @@
+---
+import type { Statement } from "@/lib/statements"
+import FormattedDate from "../FormattedDate.astro"
+import Prose from "./Prose.astro"
+type Props = {
+  statement?: Statement
+}
+const { statement } = Astro.props
+---
+
+<Prose>
+  <dl class="small">
+    <div>
+      <dt>Liegenschaft</dt>
+      <dd>Florastraße 11, 41334 Nettetal</dd>
+    </div>
+    {
+      statement && (
+        <div>
+          <dt>Abrechnungszeitraum</dt>
+          <dd>
+            <FormattedDate date={statement.billingPeriod.start} /> -{" "}
+            <FormattedDate date={statement.billingPeriod.end} />
+          </dd>
+        </div>
+      )
+    }
+
+    <div>
+      <dt>erstellt am:</dt>
+      <dd>
+        {statement ? <FormattedDate date={statement.date} /> : <FormattedDate date={new Date()} />}
+      </dd>
+    </div>
+    <div>
+      <dt>erstellt von:</dt>
+      <dd>
+        Dr. Dirk Rathje<br />Florastraße 11, 41334 Nettetal
+      </dd>
+    </div>
+  </dl>
+</Prose>

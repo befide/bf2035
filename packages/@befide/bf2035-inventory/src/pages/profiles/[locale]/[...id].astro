@@ -1,0 +1,123 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import type { InferGetStaticPropsType } from "astro";
+
+import { allCommunityTopLevelOrganizations } from "@utils/content.organizations";
+import { getFacilities } from "@utils/content.facilities";
+import ProfileOrganizationTreeTable from "@components/domain/ProfileOrganizationTreeTable.astro";
+import ProfileFacilityTreeTable from "@components/domain/ProfileFacilityTreeTable.astro";
+import CoursesTable from "@components/domain/CoursesTable.astro";
+import ThesesTable from "@components/domain/ThesesTable.astro";
+import fastCartesian from "fast-cartesian";
+
+export async function getStaticPaths() {
+  // const category = "university"
+
+  const communityTopLevelOrganizations =
+    await allCommunityTopLevelOrganizations();
+  const locales = ["en", "de"];
+  return fastCartesian([communityTopLevelOrganizations, locales]).map(
+    ([organization, locale]) => ({
+      params: { id: organization.id, locale },
+      props: { organization },
+    }),
+  );
+}
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const { organization } = Astro.props;
+
+const userFacilitiesInDesign = (
+  await getFacilities({
+    hostId: organization.data.id,
+    lifeCycleCategory: 2,
+  })
+).map((d) => d.data);
+const userFacilitiesInConstruction = (
+  await getFacilities({
+    hostId: organization.id,
+    isUserFacility: true,
+    lifeCycleCategory: 2,
+  })
+).map((d) => d.data);
+const userFacilitiesInOperation = (
+  await getFacilities({
+    hostId: organization.id,
+    isUserFacility: true,
+    lifeCycleCategory: 3,
+  })
+).map((d) => d.data);
+const testFacilities = (
+  await getFacilities({
+    hostId: organization.id,
+    // isUserFacility: false,
+    lifeCycleCategory: 1,
+  })
+).map((d) => d.data);
+---
+
+<StarlightPage frontmatter={{ title: organization.data.label.fullName.en }}>
+  <article>
+    <section>
+      <h2>Staff per working Groups</h2>
+
+      {
+        organization && (
+          <ProfileOrganizationTreeTable organizationId={organization.data.id} />
+        )
+      }
+    </section>
+
+    <section>
+      <h2>Facilities</h2>
+
+      {
+        userFacilitiesInOperation.length > 0 && (
+          <section>
+            <h3>User Facilities (in operation)</h3>
+            <ProfileFacilityTreeTable items={userFacilitiesInOperation} />
+          </section>
+        )
+      }
+
+      {
+        userFacilitiesInConstruction.length > 0 && (
+          <section>
+            <h3>User Facilities (preparation/construction/commissioning)</h3>
+            <ProfileFacilityTreeTable items={userFacilitiesInConstruction} />
+          </section>
+        )
+      }
+
+      {
+        userFacilitiesInDesign.length > 0 && (
+          <section>
+            <h3>User Facilities (design)</h3>
+            <ProfileFacilityTreeTable items={userFacilitiesInDesign} />
+          </section>
+        )
+      }
+      {
+        testFacilities.length > 0 && (
+          <section>
+            <h3>Test Facilities</h3>
+            <ProfileFacilityTreeTable items={testFacilities} />
+          </section>
+        )
+      }
+    </section>
+
+    <section>
+      <h2>Teaching</h2>
+
+      <section>
+        <h3>Courses</h3>
+        <CoursesTable universityId={organization.id} />
+      </section>
+      <section>
+        <h3>Doctoral Theses</h3>
+        <ThesesTable universityId={organization.id} />
+      </section>
+    </section>
+  </article>
+</StarlightPage>

@@ -1,0 +1,113 @@
+---
+import type { Organization } from "@/content/config.organizations"
+
+interface Props {
+  organization: Organization
+}
+
+let { organization } = Astro.props
+---
+
+<a class="link-card rounded-sm border border-border" href={organization.id || " "}>
+  <div class="link-card__head">
+    <h2>{organization.label.short.en}</h2>
+    <p>{organization.label.fullName.en}</p>
+    <p>
+      {organization.location?.city || ""}, {organization.location?.country?.code}
+    </p>
+  </div>
+  <div class="link-card__body">
+    <section>
+      <h3 class="property-group-header">Organization</h3>
+      <dl class="property-group">
+        <div class="property-group-entry">
+          <dt>Research staff</dt>
+          <dd>50</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>Working groups</dt>
+          <dd>2</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>Research topics</dt>
+          <dd>xxx, yyy</dd>
+        </div>
+      </dl>
+    </section>
+    <section>
+      <h3 class="property-group-header">Facilities</h3>
+
+      <dl class="property-group">
+        <div class="property-group-entry">
+          <dt>Facilities for Accelerator Research</dt>
+          <dd>5</dd>
+        </div>
+      </dl>
+      <h3 class="property-group-header">Teaching</h3>
+      <dl class="property-group">
+        <div class="property-group-entry">
+          <dt>degree programmes</dt>
+          <dd>Bachelor</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>Teaching events</dt>
+          <dd>5</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>SWS</dt>
+          <dd>50</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>Doctoral Theses</dt>
+          <dd>2</dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+</a>
+
+<style>
+  .link-card__head {
+    background-color: rgb(0 0 0 / 10%);
+    padding: 1rem 0.5rem;
+  }
+  .link-card__body {
+    padding: 1rem 0.5rem;
+  }
+
+  dl {
+    margin: 0;
+    background-color: rgba(255,0,0,.1);
+  }
+  dl div {
+    display: flex;
+    margin-top: 0;
+    font-size: var(--sl-text-sm);
+    position: relative;
+    height: 1rem;
+  }
+  dl div::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    left: 0;
+    bottom: 0;
+
+  }
+
+
+  dt {
+    display: inline-block;
+    flex: 1 1 75%;
+    margin: 0;
+  }
+
+  dd {
+    display: inline-block;
+    flex: 1 1 25%;
+    margin: 0;
+  }
+</style>

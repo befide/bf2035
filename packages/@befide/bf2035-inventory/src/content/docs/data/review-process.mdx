@@ -1,0 +1,105 @@
+---
+title: Review Process
+---
+
+```
+flowchart TB
+    subgraph s_01["01 Preparation"]
+        direction TB
+        s_01_01[create data draft]
+        s_01_02[assign reviewer]
+        s_01_03[data prepared]
+
+        s_01_01 --> s_01_02
+        s_01_02 --> s_01_03
+    end
+  subgraph "01 Prereview"
+        direction TB
+        s_01_01[create data draft]
+        s_01_02[assign reviewer]
+        s_01_03[data prepared]
+
+        s_01_01 --> s_01_02
+        s_01_02 --> s_01_03
+    end
+
+  subgraph "03 review initialization"
+
+    s_03_01[review request sent]
+    s_03_02[review request reminder sent]
+    s_03_03[excalation]
+
+
+    s_03_01 --> s_03_02[1st deadline passed]
+    s_03_02 --> s_03_03[2nd deadline passed]
+  end
+
+
+```
+
+```d2
+
+s_01: "01 Preparing data and review process" {
+
+Editor: {
+shape: person
+}
+
+label.near: outside-top-left
+s_01_01: create data draft
+s_01_02: assign reviewer
+s_01_03: ready for prereview
+
+s_01_01 -> s_01_02
+s_01_02 -> s_01_03
+}
+
+s_01 -> s_02
+
+s_02: "02 Prereview" {
+Product owner: {
+shape: person
+}
+label.near: outside-top-left
+
+s_02_01: review request sent
+s_02_02: prereview response received
+s_02_03: process prereview response
+s_02_04: previewed
+
+s_02_01 -> s_02_02
+s_02_02 -> s_02_03
+s_02_03 -> s_02_04
+
+}
+
+s_03: "03 review initialization" {
+label.near: outside-top-left
+s_03_01: review request sent
+s_03_02: review request reminder sent
+s_03_03: excalation
+
+s_03_01 -> s_03_02: deadline passed
+s_03_02 -> s_03_03: 2nd deadline passed
+
+}
+
+s_04: 04reviewer response processing {
+label.near: outside-top-left
+s_04_01: reviewer response received
+s_04_02: assign new reviewer
+s_04_03: "processing change requests\nwithout resubmission"
+s_04_04: "processing change requests\nwith resubmission"
+s_04_01 -> s_04_02: "review request rejected"
+s_04_01 -> s_04_03
+
+}
+
+s_02 -> s_03
+s_03 -> s_04
+
+```
+
+```
+
+```

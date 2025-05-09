@@ -1,4 +1,4 @@
 packages:
   #  - packages/@befide/bf2035-report
-  #  - packages/@befide/bf2035-inventory
+  - packages/@befide/bf2035-inventory
   - docs

@@ -1,0 +1,90 @@
+---
+import type { Contact } from "@/content.config"
+import type { Statement } from "@/lib/statements"
+import LetterHeadAside from "./LetterHeadAside.astro"
+import Prose from "./Prose.astro"
+
+type Props = {
+  statement?: Statement
+  contact: Contact
+}
+const { statement, contact } = Astro.props
+---
+
+<header class="letter__header">
+  <div class="letter__head">
+    <span class="line-1">Wohnungseigentümergemeinschaft</span><br />
+    <span class="line-2">FLORA11-WEG</span>
+  </div>
+  <div class="letter__header__address">
+    <div class="letter__header__address__sender">
+      <Prose>
+        <p class="small">Dr. Dirk Rathje // Florastraße 11 // 41334 Nettetal</p>
+      </Prose>
+    </div>
+    <div class="letter__header__address__receiver">
+      <Prose>
+        <p>
+          {contact?.name}
+          <br />
+          {contact.address?.street}&nbsp;{contact.address?.houseNumber}
+          <br />
+          {contact.address?.postalCode}&nbsp;{contact.address?.city}
+        </p>
+      </Prose>
+    </div>
+  </div>
+  <div class="letter__header__aside">
+    <LetterHeadAside {statement} />
+  </div>
+</header>
+<style>
+  .letter__header {
+    display: flex;
+    flex-flow: row wrap;
+    
+    width: 100%;
+    height: 19rem; /*calc(87mm-4rem);*/
+  }
+
+  .letter__head {
+    padding-top: 2rem;
+    width: 100%;
+    height: 8rem;
+    /* background-color: black; */
+  }
+
+  /* .letter__head {
+    line-height: 1rem;
+  } */
+  .line-1 {
+    font-size: 11px;
+  }
+
+  .line-2 {
+    font-size: 26px;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+  }
+
+  .letter__header__address {
+    flex: 0 0 85mm;
+    margin-right: 1rem;
+  }
+
+  .letter__header__address__sender {
+    height: 1rem;
+    font-size: var(--text-xs);
+  }
+
+  .letter__header__address__receiver {
+    margin-top: 3rem;
+    height: 27.3mm;
+
+  }
+
+  .letter__header__aside {
+    flex: 65mm;
+  }
+</style>
