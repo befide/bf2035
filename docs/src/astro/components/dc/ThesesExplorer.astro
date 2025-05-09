@@ -1,0 +1,306 @@
+---
+import "@/astro/styles/dc-explorer.css"
+
+export type Theses = Thesis[]
+
+export interface Thesis {
+  title: string
+  author: Author
+  language: string
+  year: number
+  universityId?: string
+  organizationIds: string[]
+  facilityIds: string[]
+  degree: string
+}
+
+export interface Author {
+  familyName: string
+  givenName: string
+  gender: string
+}
+---
+
+<div class="dc-explorer">
+  <p>Explorer</p>
+  <div class="dc-explorer__tiles">
+    <div class="dc-explorer__tile" id="dc-explorer__tile--count">
+      <div class="dc-explorer__tile__header">
+        <div class="dc-explorer__tile__title">Number of entries</div>
+        <div class="dc-explorer__tile__reset">
+          <button class="dc-explorer__reset">Reset All</button>
+        </div>
+      </div>
+      <div class="dc-explorer__tile__body">
+        <div id="dc-explorer__tile__chart--count">
+          <span class="filter-count"></span> selected out of <span class="total-count"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-explorer__tile" id="dc-explorer__tile--university">
+      <div class="dc-explorer__tile__header">
+        <div class="dc-explorer__tile__title">University</div>
+        <div class="dc-explorer__tile__reset">
+          <button class="dc-explorer__reset" data-chart="university">Reset</button>
+        </div>
+      </div>
+      <div class="dc-explorer__tile__body">
+        <div
+          id="dc-explorer__tile__chart--university"
+          class="dc-explorer__chart dc-explorer__chart--row"
+        >
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-explorer__tile" id="dc-explorer__tile--year">
+      <div class="dc-explorer__tile__header">
+        <div class="dc-explorer__tile__title">Year</div>
+        <div class="dc-explorer__tile__reset">
+          <button class="dc-explorer__reset" data-chart="year">Reset</button>
+        </div>
+      </div>
+      <div class="dc-explorer__tile__body">
+        <div id="dc-explorer__tile__chart--year" class="dc-explorer__chart dc-explorer__chart--bar">
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-explorer__tile" id="dc-explorer__tile--degree">
+      <div class="dc-explorer__tile__header">
+        <div class="dc-explorer__tile__title">Degree</div>
+        <div class="dc-explorer__tile__reset">
+          <button class="dc-explorer__reset" data-chart="degree">Reset</button>
+        </div>
+      </div>
+
+      <div class="dc-explorer__tile__body">
+        <div
+          id="dc-explorer__tile__chart--degree"
+          class="dc-explorer__chart dc-explorer__chart--row"
+        >
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-explorer__tile" id="dc-explorer__tile--gender">
+      <div class="dc-explorer__tile__header">
+        <div class="dc-explorer__tile__title">Gender</div>
+        <div class="dc-explorer__tile__reset">
+          <button class="dc-explorer__reset" data-chart="degree">Reset</button>
+        </div>
+      </div>
+
+      <div class="dc-explorer__tile__body">
+        <div
+          id="dc-explorer__tile__chart--gender"
+          class="dc-explorer__chart dc-explorer__chart--row"
+        >
+        </div>
+      </div>
+    </div>
+    <div class="dc-explorer__tile" id="dc-explorer__tile--language">
+      <div class="dc-explorer__tile__header">
+        <div class="dc-explorer__tile__title">Language</div>
+        <div class="dc-explorer__tile__reset">
+          <button class="dc-explorer__reset" data-chart="degree">Reset</button>
+        </div>
+      </div>
+
+      <div class="dc-explorer__tile__body">
+        <div
+          id="dc-explorer__tile__chart--language"
+          class="dc-explorer__chart dc-explorer__chart--row"
+        >
+        </div>
+      </div>
+    </div>
+    <!-- <div id="dc-explorer__universities">
+      <span class="filter-count"></span> selected out of <span
+        class="total-count"></span> | <button
+        class="reset"
+        id="dc-explorer__universities__reset">Reset All</button
+      >
+    </div> -->
+    <!-- <VDCTileCount data-tile="count" :loaded="loaded" :crossfilterIndex="idx" v-on:update="updateList"></VDCTileCount> -->
+    <!-- <VDCTileReset data-tile="reset" :loaded="loaded" :crossfilterIndex="idx" v-on:update="updateList"></VDCTileReset>
+    <VDCTileSearch data-tile="text" :loaded="loaded" :crossfilterIndex="idx" v-on:update="updateList"></VDCTileSearch>
+    <VDCTileBarChart data-tile="year" :loaded="loaded" :crossfilterIndex="idx" :baselineHeight="baselineHeight"></VDCTileBarChart>
+    <VDCTileRowChart data-tile="language" :loaded="loaded" :crossfilterIndex="idx" fieldName="language" :baselineHeight="baselineHeight"></VDCTileRowChart>
+    <VDCTileRowChart data-tile="gender" :loaded="loaded" :crossfilterIndex="idx" fieldName="gender" :baselineHeight="baselineHeight"></VDCTileRowChart>
+    <VDCTileRowChart data-tile="affiliation" :loaded="loaded" :crossfilterIndex="idx" fieldName="affiliationRef" :label="d =&gt; $store.getters['data/affiliationLabelShort'](d.key)"></VDCTileRowChart>
+    <VDCTileAffiliationLocation data-tile="affiliation-location" :loaded="loaded" :crossfilterIndex="idx"></VDCTileAffiliationLocation> -->
+  </div>
+  <!-- <div class="list-actions">
+    <div class="list-action"><span class="list-action__title">{{translate("view")}}</span><span class="list-action__options"><span class="list-action__option">
+          <button class="button--link" :class="{active: view === VIEWS.VIEW__LIST}" @click="setView(VIEWS.VIEW__LIST)">{{translate("view__list")}}</button></span><span class="list-action__option">
+          <button class="button--link" :class="{active: view === VIEWS.VIEW__COMPACT_TABLE}" @click="setView(VIEWS.VIEW__COMPACT_TABLE)">{{translate("view__compact_table")}}</button></span><span class="list-action__option">
+          <button class="button--link" :class="{active: view === VIEWS.VIEW__TABLE}" @click="setView(VIEWS.VIEW__TABLE)">{{translate("view__table")}}</button></span></span></div>
+    <div class="list-action"><span class="list-action__title">{{translate("action__export")}}</span><span class="list-action__options"><span class="list-action__option">
+          <button class="button--link" @click="downloadAsCSV('kfb-dissertations.csv')">{{translate("action__export__as_csv")}}</button></span><span class="list-action__option">
+          <button class="button--link" @click="downloadSelectionAsBibLaTeX('kfb-dissertations.bib')">{{translate("action__export__as_biblatex")}}</button></span></span></div>
+  </div>
+  <div class="vdc__main">
+    <keep-alive>
+      <VDCItemsList :loaded="loaded" v-if="view === VIEWS.VIEW__LIST" :groupedItems="groupedItems">
+        <template v-slot:summary="{item}">
+          <div class="bib-item__formatted" v-html="item.rendered.bibliography"></div>
+        </template>
+        <template v-slot:detail="{item}">
+          <p>xxx</p>
+          <div class="detail">
+            <div class="bib-item__actions">
+              <div class="bib-item__action" v-if="item.url"><a :href="item.url" rel="noopener noreferrer" target="_blank">{{translate('go to unversity library record')}}</a></div>
+            </div>
+          </div>
+        </template>
+      </VDCItemsList>
+      <VDCItemsTable :loaded="loaded" v-if="(view === VIEWS.VIEW__TABLE || view === VIEWS.VIEW__COMPACT_TABLE)" :compact="view === VIEWS.VIEW__COMPACT_TABLE" :tableColumns="tableColumns" :groupedItems="groupedItems" :sortColumn="sortField" :grouped="grouped" :hasDetails="hasDetails" :expanded="expanded" @change-sorting="changeSorting" @toggle-expanded="toggleExpanded" :baselineHeight="baselineHeight">
+        <template v-slot:detail="{item}">
+          <div class="detail padded">
+            <div class="bib-item__formatted" v-html="item.rendered.bibliography"></div>
+            <div class="bib-item__actions">
+              <div class="bib-item__action" v-if="item.url"><a class="button--link" :href="item.url" rel="noopener noreferrer" target="_blank">{{translate('go to unversity library record')}}</a></div>
+              <div class="bib-item__action">
+                <button @click="downloadAsBibLaTeX($event, item)">{{translate('downloadAsBibLaTeX')}}</button>
+              </div>
+            </div>
+          </div>
+        </template>
+      </VDCItemsTable>
+    </keep-alive>
+  </div> -->
+
+  <script>
+    import crossfilter from "crossfilter2"
+
+    import { format, scaleLinear } from "d3"
+
+    import { config, dataCount, rowChart, barChart, renderAll } from "dc"
+
+    const charts = new Map<String, any>()
+
+    // config.disableTransitions = true;
+    config.defaultColors(["schemeCategory10"])
+
+    function createRowChart(id: string, dimension: any, group: any) {
+      const containerElement = document.getElementById("dc-explorer__tile__chart--" + id)
+        ?.parentElement?.parentElement
+      const chart = rowChart("#dc-explorer__tile__chart--" + id)
+        .width(tileWidth)
+        .renderTitleLabel(true)
+        .transitionDuration(100)
+        .labelOffsetX(-tileWidth * (1 - rowBarRatio))
+        .titleLabelOffsetX(tileWidth * rowBarRatio + 0.25 * baselineHeight)
+        .title((d) => d.value)
+        .label((d) => d.key)
+        .margins({ ...margins, left: tileWidth * (1 - rowBarRatio) })
+        .height((group.all().length + 0.5) * baselineHeight)
+        .fixedBarHeight(0.75 * baselineHeight)
+        .gap(0.25 * baselineHeight)
+        .elasticX(true)
+        .dimension(dimension)
+        .group(group)
+
+      chart.on("renderlet", () => {
+        chart.hasFilter()
+          ? containerElement?.classList.add("filtered")
+          : containerElement?.classList.remove("filtered")
+      })
+
+      charts.set(id, chart)
+      return chart
+    }
+    function createBarChart(id: string, dimension: any, group: any) {
+      const containerElement = document.getElementById("dc-explorer__tile__chart--" + id)
+        ?.parentElement?.parentElement
+      const chart = barChart("#dc-explorer__tile__chart--" + id)
+        .x(
+          scaleLinear().domain([
+            (allYears[0] || 0) - 1,
+            (allYears[allYears.length - 1] || 2000) + 0.5,
+          ])
+        )
+        .elasticY(true)
+        .elasticX(false)
+        .centerBar(true)
+        .dimension(dimension)
+        .group(group)
+        .margins({
+          ...margins,
+          bottom: 2 * baselineHeight,
+          right: 1 * baselineHeight,
+        })
+        // .ordinalColors(["#f0f0f0"])
+        .renderHorizontalGridLines(true)
+        .transitionDuration(200)
+        .on("renderlet", () => {
+          chart.hasFilter()
+            ? containerElement?.classList.add("filtered")
+            : containerElement?.classList.remove("filtered")
+        })
+
+      chart.xAxis().ticks(5).tickFormat(format("2"))
+      chart.yAxis().ticks(3)
+
+      charts.set(id, chart)
+      return chart
+    }
+
+    const theses = await fetch("/api/theses.json").then((response) => response.json())
+
+    const idx = crossfilter(theses)
+
+    const universityDimension = idx.dimension((d: any) => d["universityId"] || "none")
+    const universityGroup = universityDimension.group().reduceCount()
+
+    const yearDimension = idx.dimension((d: any) => d.year)
+    const yearGroup = yearDimension.group().reduceCount()
+    const allYears = yearGroup
+      .top(Infinity)
+      .map((y) => +y.key)
+      // .filter((y) => y !== "")
+      .sort()
+
+    const degreeDimension = idx.dimension((d: any) => d.degree)
+    const degreeGroup = degreeDimension.group().reduceCount()
+
+    const genderDimension = idx.dimension((d: any) => d.author.gender)
+    const genderGroup = genderDimension.group().reduceCount()
+
+    const languageDimension = idx.dimension((d: any) => d.language)
+    const languageGroup = languageDimension.group().reduceCount()
+
+    const baselineHeight = 14
+    const tileWidth = 300
+    const rowBarRatio = 0.25
+
+    const margins = {
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: baselineHeight,
+    }
+    const countChart = dataCount("#dc-explorer__tile__chart--count")
+    countChart.dimension(idx).group(idx.groupAll())
+
+    createRowChart("university", universityDimension, universityGroup)
+    createBarChart("year", yearDimension, yearGroup)
+    createRowChart("degree", degreeDimension, degreeGroup)
+    createRowChart("gender", genderDimension, genderGroup)
+    createRowChart("language", languageDimension, languageGroup)
+
+    renderAll()
+
+    const resetButtons = document.querySelectorAll("button.dc-explorer__reset")
+    resetButtons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+        const chartId = (e.currentTarget as HTMLElement).getAttribute("data-chart")
+        if (chartId) charts.get(chartId)?.filterAll()
+        renderAll()
+        e.preventDefault()
+      })
+    })
+  </script>
+</div>

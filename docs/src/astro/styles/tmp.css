@@ -1,0 +1,74 @@
+    .card {
+      padding: 1rem;
+    }
+
+    #organization-category-filter-holder ul {
+      list-style: none;
+      display: flex;
+      margin-bottom: 2rem;
+    }
+
+    #organization-category-filter-holder ul li {
+      flex: 1;
+    }
+
+    .hide-international .sl-link-card-2.international {
+      display: none;
+    }
+
+    .hide-hgf .sl-link-card-2.hgf {
+      display: none;
+    }
+
+    .hide-university .sl-link-card-2.university {
+      display: none;
+    }
+
+    .hide-mpg .sl-link-card-2.mpg {
+      display: none;
+    }
+
+    .hide-national .sl-link-card-2.national {
+      display: none;
+    }
+
+    .hide-fraunhofer .sl-link-card-2.fraunhofer {
+      display: none;
+    }
+
+    .property-group-header {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    dl div {
+      display: flex;
+      border-top: 1px dotted #787878;
+      line-height: 1.5rem;
+    }
+
+    dt {
+      display: flex;
+      flex: 1 1 auto;
+      margin: 0;
+      font-weight: normal !important;
+    }
+
+    dd {
+      flex: 0 1 auto;
+      margin: 0;
+    }
+
+    .sl-markdown-content dt:not(:where(.not-content *)) {
+      font-weight: normal;
+    }
+
+    .card {
+      padding: 1rem;
+    }
+
+    #organization-category-filter-holder ul {
+      list-style: none;
+      display: flex;
+      margin-bottom: 2rem;
+    }

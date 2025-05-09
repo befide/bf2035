@@ -1,0 +1,140 @@
+---
+const { dir, pagination } = Astro.locals.starlightRoute;
+const { prev, next } = pagination;
+---
+
+<div class="header__pagination-links print:hidden" dir={dir}>
+  {
+    prev && (
+      <a
+        href={prev.href}
+        rel="prev"
+        class="header__pagination-link header__pagination-link--prev"
+        title={prev.label}
+      >
+        <span>
+          {Astro.locals.t("page.previousLink")}
+          <br />
+          {/* <span class="link-title">{prev.label}</span> */}
+        </span>
+        <kbd class="sl-hidden md:sl-flex" style="display: none;">
+          <kbd>Ctrl</kbd>
+          <kbd>Alt</kbd>
+          <kbd>←</kbd>
+        </kbd>
+      </a>
+    )
+  }
+  {
+    next && (
+      <a
+        href={next.href}
+        rel="next"
+        class="header__pagination-link header__pagination-link--next"
+        title={next.label}
+      >
+        <kbd class="sl-hidden md:sl-flex">
+          <kbd>Ctrl</kbd>
+          <kbd>Alt</kbd>
+          <kbd>→</kbd>
+        </kbd>
+        <span>
+          {Astro.locals.t("page.nextLink")}
+          <br />
+          {/* <span class="link-title">{next.label}</span> */}
+        </span>
+      </a>
+    )
+  }
+</div>
+
+<script is:inline>
+  function controlKeydown(event) {
+    if (event.defaultPrevented) {
+      return;
+    }
+    if (event.ctrlKey && event.altKey) {
+      if (event.code === "ArrowLeft") {
+        document.querySelector(".header__pagination-link--prev")?.click();
+      }
+      if (event.code === "ArrowRight") {
+        document.querySelector(".header__pagination-link--next")?.click();
+      }
+    }
+
+    event.preventDefault();
+  }
+  (() => {
+    const links = document.querySelectorAll("a.header__pagination-link");
+    window.addEventListener(
+      "keydown",
+      function (event) {
+        controlKeydown(event);
+      },
+      true
+    );
+    links.forEach((link) => {
+      const shortcut = link?.querySelector("kbd");
+      if (!link || !(shortcut instanceof HTMLElement)) return;
+      // const platformKey = shortcut.querySelector("kbd");
+      // if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+      //   platformKey.textContent = "⌥⌘";
+      //   link.setAttribute("aria-keyshortcuts", "Meta+K");
+      // }
+      shortcut.style.display = "";
+    });
+  })();
+</script>
+
+<style>
+  @layer my-overrides {
+    .header__pagination-links {
+      font-size: var(--sl-text-2xs);
+      /* display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+			gap: 1rem; */
+      display: flex;
+      flex-direction: row;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      height: 100%;
+      /* width: 8rem; */
+      flex-basis: calc(50% - 0.5rem);
+      flex-grow: 1;
+      border: 1px solid var(--sl-color-gray-5);
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: var(--sl-color-gray-2);
+      /* box-shadow: var(--sl-shadow-xs); */
+      /* overflow-wrap: anywhere; */
+      background-color: white;
+    }
+    [rel="next"] {
+      justify-content: end;
+      text-align: end;
+      /* flex-direction: row-reverse; */
+    }
+    a:hover {
+      border-color: var(--sl-color-gray-2);
+    }
+
+    a > kbd {
+      border-radius: 0.25rem;
+      font-size: var(--sl-text-2xs);
+      gap: 0.25em;
+      padding-inline: 0.375rem;
+      background-color: var(--sl-color-gray-6);
+      overflow: hidden;
+    }
+
+    kbd {
+      /* font-family: var(--__sl-font);  */
+    }
+  }
+</style>

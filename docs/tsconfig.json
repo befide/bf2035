@@ -1,0 +1,14 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "types": ["vite-plugin-pwa/info.d.ts", "vite-plugin-pwa/client.d.ts"],
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/astro/components/*"],
+      "@utils/*": ["src/astro/utils/*"]
+    },
+    "jsx": "preserve"
+  }
+}

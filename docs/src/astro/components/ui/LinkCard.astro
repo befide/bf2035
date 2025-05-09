@@ -1,0 +1,20 @@
+---
+import type { HTMLAttributes } from "astro/types"
+
+// use a `type`
+type Props = HTMLAttributes<"a">
+const { href, class: className } = Astro.props
+
+const classList = "link-card rounded-sm border border-border".split(" ")
+if (className) {
+  classList.push(className)
+}
+---
+
+<a {href} class:list={classList}><slot /> </a>
+
+<style>
+  .link-card {
+    flex: 1;
+  }
+</style>
