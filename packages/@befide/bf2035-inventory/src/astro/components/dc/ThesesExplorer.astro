@@ -93,7 +93,7 @@ const locale = Astro.currentLocale
       } else if (dcChartType === "row") {
         const dimension = idx.dimension(
           (d) => getValue(d, dcAccessorPath || dcDimension) || "other",
-          !dcDimensionMultiple
+          dcDimensionMultiple
         )
         const group = dimension.group().reduceCount()
 
@@ -103,9 +103,9 @@ const locale = Astro.currentLocale
         const dimension = idx.dimension(
           (d) => getValue(d, dcAccessorPath || dcDimension) || "other"
         )
-        console.log("rowChart", dimension.top(10))
+        
 
-        const group = dimension.group().reduceCount()
+        const group = dimension.group()
 
         const chart = createBarChart(dcDimension, dimension, group)
         chart.render()
