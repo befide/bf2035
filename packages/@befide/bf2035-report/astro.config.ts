@@ -12,7 +12,6 @@ import rehypeAddClasses from 'rehype-add-classes';
 import rehypeCitation from 'rehype-citation';
 // import rehypeFigure from "rehype-figure"
 import rehypeRewrite from 'rehype-rewrite';
-import rehypeWidont from 'rehype-widont';
 // import remarkNumberedFootnotes from 'remark-numbered-footnote-labels';
 import sectionize from 'remark-sectionize';
 import remarkDirective from 'remark-directive';
@@ -52,7 +51,7 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [
       remarkDirective,
-      remarkNumberedFootnotes,
+
       sectionize,
       //   [smartypants, {
       //     options: {
@@ -62,7 +61,7 @@ export default defineConfig({
       //   }],
     ],
     rehypePlugins: [
-      [rehypeWidont, {}],
+
       // [rehypeFigure, { className: "md" }],
       // [
       //   rehypeCitation,

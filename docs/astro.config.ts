@@ -12,7 +12,6 @@ import AstroPWA from "@vite-pwa/astro"
 import { purgecss } from "@zokki/astro-purgecss"
 
 import rehypeRewrite from "rehype-rewrite"
-import rehypeWidont from "rehype-widont"
 
 import sectionize from "remark-sectionize"
 import remarkDirective from "remark-directive"
@@ -46,22 +45,6 @@ export default defineConfig({
       //   }],
     ],
     rehypePlugins: [
-      [rehypeWidont, {}],
-      // [rehypeFigure, { className: "md" }],
-      // [
-      //   rehypeCitation,
-      //   {
-      //     bibliography: 'src/kfb_bf2035__used.csl.json',
-      //     linkCitations: true,
-      //   },
-      // ],
-
-      // [
-      //   rehypeAddClasses,
-      //   {
-      //     'img,figure,table,section,h1,h2,h3,h4,p,ol,ul,li,blockquote': 'md',
-      //   },
-      // ],
       [
         rehypeRewrite,
         {
@@ -86,7 +69,6 @@ export default defineConfig({
       disable404Route: true,
       components: {
         Sidebar: "@components/Sidebar.astro",
-        SidebarSublist: "@components/SidebarSublist.astro",
         Header: "@components/Header.astro",
       },
 
