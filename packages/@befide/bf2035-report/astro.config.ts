@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 
 import mdx from '@astrojs/mdx';
 import vue from '@astrojs/vue';
-import tailwind from '@astrojs/tailwind';
 import AutoImport from 'astro-auto-import';
 
 import AstroPWA from '@vite-pwa/astro';
@@ -17,6 +16,7 @@ import sectionize from 'remark-sectionize';
 import remarkDirective from 'remark-directive';
 import spaceCommander from './src/astro/utils/space-commander.ts';
 
+import tailwindcss from '@tailwindcss/vite';
 import { dirname, resolve } from 'node:path';
 
 import { fileURLToPath } from 'url';
@@ -31,6 +31,7 @@ process.env.NODE_ENV === 'production'
 
 export default defineConfig({
   vite: {
+    plugins: [tailwindcss()],
     css: {
       preprocessorOptions: {
         stylus: {
@@ -61,7 +62,6 @@ export default defineConfig({
       //   }],
     ],
     rehypePlugins: [
-
       // [rehypeFigure, { className: "md" }],
       // [
       //   rehypeCitation,
@@ -100,10 +100,6 @@ export default defineConfig({
   integrations: [
     AutoImport({
       imports: [
-        // Import a component’s default export
-        // generates:
-        // import A from './src/components/A.astro';
-
         './src/astro/components/domain/progress-chart/ProgressChart.astro',
         './src/astro/components/domain/FacilityList.astro',
         './src/astro/components/domain/OrganisationList.astro',
