@@ -1,5 +1,8 @@
 ---
 import "@/astro/styles/dc-explorer.css"
+import DCExplorerCount from "./DCExplorerCount.astro"
+import DCExplorerRowChart from "./DCExplorerRowChart.astro"
+import DCExplorerBarChart from "./DCExplorerBarChart .astro"
 
 export type Theses = Thesis[]
 
@@ -27,94 +30,15 @@ const locale = Astro.currentLocale
   <div class="filters">
     <details open>
       <summary>Filter</summary>
-      <section class="filter" id="explorer__tile--count">
-        <header class="filter__header">
-          <div class="filter__title">Number of items</div>
-          <div class="filter__reset">
-            <button class="reset">Reset All</button>
-          </div>
-        </header>
-        <div class="filter__body">
-          <div id="chart--count">
-            <span class="filter-count"></span> selected out of <span class="total-count"></span>
-          </div>
-        </div>
-      </section>
 
-      <section class="filter" id="explorer__tile--university">
-        <header class="filter__header">
-          <div class="filter__title">University</div>
-          <div class="filter__reset">
-            <button class="reset" data-chart="university">Reset</button>
-          </div>
-        </header>
-        <div class="filter__body">
-          <div id="chart--university" class="explorer__chart explorer__chart--row"></div>
-        </div>
-      </section>
+      <DCExplorerCount dimension="count" />
+      <DCExplorerBarChart dimension="year" title="Year" />
+      <DCExplorerRowChart dimension="degree" title="Degree" />
+      <DCExplorerRowChart dimension="gender" title="Gender" accessorPath="author.gender" />
+      <DCExplorerRowChart dimension="university" title="University" />
+      <DCExplorerRowChart dimension="facilities" title="Facility" multiple={true} />
 
-      <section class="filter" id="explorer__tile--year">
-        <header class="filter__header">
-          <div class="filter__title">Year</div>
-          <div class="filter__reset">
-            <button class="reset" data-chart="year">Reset</button>
-          </div>
-        </header>
-        <div class="filter__body">
-          <div id="chart--year" class="explorer__chart explorer__chart--bar"></div>
-        </div>
-      </section>
-
-      <section class="filter" id="explorer__tile--facility">
-        <header class="filter__header">
-          <div class="filter__title">Facility</div>
-          <div class="filter__reset">
-            <button class="reset" data-chart="degree">Reset</button>
-          </div>
-        </header>
-
-        <div class="filter__body">
-          <div id="chart--facility" class="explorer__chart explorer__chart--row"></div>
-        </div>
-      </section>
-
-      <section class="filter" id="explorer__tile--degree">
-        <header class="filter__header">
-          <div class="filter__title">Degree</div>
-          <div class="filter__reset">
-            <button class="reset" data-chart="degree">Reset</button>
-          </div>
-        </header>
-
-        <div class="filter__body">
-          <div id="chart--degree" class="explorer__chart explorer__chart--row"></div>
-        </div>
-      </section>
-
-      <section class="filter" id="explorer__tile--gender">
-        <header class="filter__header">
-          <div class="filter__title">Gender</div>
-          <div class="filter__reset">
-            <button class="reset" data-chart="degree">Reset</button>
-          </div>
-        </header>
-
-        <div class="filter__body">
-          <div id="chart--gender" class="explorer__chart explorer__chart--row"></div>
-        </div>
-      </section>
-      <section class="filter" id="explorer__tile--language">
-        <header class="filter__header">
-          <div class="filter__title">Language</div>
-          <div class="filter__reset">
-            <button class="reset" data-chart="degree">Reset</button>
-          </div>
-        </header>
-
-        <div class="filter__body">
-          <div id="chart--language" class="explorer__chart explorer__chart--row"></div>
-        </div>
-      </section>
+      <DCExplorerRowChart dimension="language" title="Language" />
     </details>
   </div>
   <div class="explorer__items">
@@ -128,264 +52,159 @@ const locale = Astro.currentLocale
           </tr>
         </thead>
       </table>
-      <!-- <div class="col-sm-12" id="paging">
-        Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span>
-        <input
-          id="Prev"
-          class="btn btn-secondary"
-          role="button"
-          type="button"
-          value="Prev"
-          onclick="javascript:prevPage()"
-        />
-        <input
-          id="Next"
-          class="btn btn-secondary"
-          role="button"
-          type="button"
-          value="Next"
-          onclick="javascript:nextPage()"
-        />
-      </div> -->
     </div>
   </div>
 </div>
 <script>
-  import crossfilter from "crossfilter2"
-
-  import { descending, format, scaleLinear, select } from "d3"
+  import { $thesesIndex } from "@/astro/store/thesesIndex"
+  import { descending, select, selectAll } from "d3"
   import "dc/src/compat/d3v6"
-  // import { createDataTable } from "./table"
 
-  import { config, dataCount, rowChart, barChart, dataTable, renderAll } from "dc"
+  import { config, dataTable, redrawAll } from "dc"
   import { ascending } from "d3-array"
-  // import { getLocalizedValue } from "@/astro/utils"
 
-  const baselineHeight = 20
-  const filterWidth = 250
-  const rowBarRatio = 0.9
+  import { charts, createBarChart, createRowChart, createCountChart } from "./dc-helpers"
 
-  const charts = new Map<String, any>()
-
-  // config.disableTransitions = true;
   config.defaultColors(["schemeCategory10"])
 
-  const locale = document.location.href.indexOf("/de/") > -1 ? "de" : "en"
+  export const getValue = (obj: any, path: string) => {
+    if (!obj) return
 
-  function createRowChart(id: string, dimension: any, group: any) {
-    const containerElement = document.getElementById("chart--" + id)?.parentElement?.parentElement
-    const chart = rowChart("#chart--" + id)
-      .width(filterWidth)
-      .renderTitleLabel(true)
-      .transitionDuration(50)
-      .labelOffsetX(baselineHeight * (1 - rowBarRatio))
-      .titleLabelOffsetX(filterWidth * rowBarRatio - 0.75 * baselineHeight)
-      .title((d) => d.value)
-      .label((d) => d.key)
-      .margins({ ...margins, left: filterWidth * (1 - rowBarRatio) })
-      .height(group.all().length * baselineHeight)
-      .fixedBarHeight(0.75 * baselineHeight)
-      .gap(0.25 * baselineHeight)
-      .elasticX(false)
-      .dimension(dimension)
-      .group(group)
-      .ordering(function (d) {
-        return d.label
-      })
+    const keys = path.split(".")
+    return keys.reduce((currentObj, key) => currentObj[key], obj)
+  }
 
-    chart.on("renderlet", () => {
-      chart.hasFilter()
-        ? containerElement?.classList.add("filtered")
-        : containerElement?.classList.remove("filtered")
+  $thesesIndex.listen(() => {
+    let idx = $thesesIndex.get()
+
+    const filters = document.getElementsByClassName("filter")
+
+    Array.from(filters).forEach((filter) => {
+      const {
+        dcChartType,
+        dcDimension,
+        dcAccessorPath,
+        dcDimensionMultiple = false,
+      } = filter.dataset
+
+      if (dcChartType === "count") {
+        const chart = createCountChart(dcDimension, idx)
+        chart.render()
+      } else if (dcChartType === "row") {
+        const dimension = idx.dimension(
+          (d) => getValue(d, dcAccessorPath || dcDimension) || "other",
+          !dcDimensionMultiple
+        )
+        const group = dimension.group().reduceCount()
+
+        const chart = createRowChart(dcDimension, dimension, group)
+        chart.render()
+      } else if (dcChartType === "bar") {
+        const dimension = idx.dimension(
+          (d) => getValue(d, dcAccessorPath || dcDimension) || "other"
+        )
+        console.log("rowChart", dimension.top(10))
+
+        const group = dimension.group().reduceCount()
+
+        const chart = createBarChart(dcDimension, dimension, group)
+        chart.render()
+      }
     })
 
-    charts.set(id, chart)
-    return chart
-  }
-  function createBarChart(id: string, dimension: any, group: any) {
-    const containerElement = document.getElementById("chart--" + id)?.parentElement?.parentElement
-    const chart = barChart("#chart--" + id)
-      .x(
-        scaleLinear().domain([
-          (allYears[0] || 0) - 0,
-          (allYears[allYears.length - 1] || 2000) + 0.5,
-        ])
-      )
-      .width(filterWidth)
-      .height(5 * baselineHeight)
-      .elasticY(false)
-      .elasticX(false)
-      .centerBar(true)
-      .dimension(dimension)
-      .group(group)
-      .margins({
-        ...margins,
-        bottom: 1 * baselineHeight,
-        left: 0,
+    const tableHeaderConfig = [
+      {
+        label: "University",
+        field_name: "university",
+        sortable: true,
+        format: function (d) {
+          return d.university
+        },
+      },
+      {
+        label: "Year",
+        field_name: "year",
+        sortable: true,
+        format: function (d) {
+          return d.year
+        },
+      },
+      {
+        label: "Title",
+        sortable: false,
+        format: function (d) {
+          return (
+            "<div class='name'><span class='givenName'>" +
+            d.author.givenName +
+            "</span> " +
+            "<span class='familyName'>" +
+            d.author.familyName +
+            "</span> <span class='gender'>" +
+            d.author.gender.substr(0, 1) +
+            "</span></div>" +
+            "<div class='title'>" +
+            d.title +
+            "</div>"
+          )
+        },
+      },
+    ]
+
+    const tableChart = dataTable("#dc-table-chart")
+
+    const tableHeader = select("#dc-table-chart .table-header").selectAll("th")
+
+    // enter() into virtual selection and create new <th> header elements for each table column
+    tableHeader
+      .data(tableHeaderConfig)
+      .enter()
+      .append("th")
+      .classed("sortable", (d) => d.sortable)
+      .text((d: any) => d.label) // Accessor function for header titles
+      .filter((d) => d.sortable)
+      .on("click", tableHeaderCallback)
+
+    function tableHeaderCallback(this: any, d: any) {
+      // Highlight column header being sorted and show bootstrap glyphicon
+
+      // sort_state = select(this).attr("class"d.sort_state === "ascending" ? "descending" : "ascending"
+      const sortState = select(this).attr("sort")
+
+      const newSortState = sortState === "ascending" ? "descending" : "ascending"
+
+      selectAll("#dc-table-chart th") // Disable all highlighting and icons
+        .attr("sort", null)
+
+      select(this).attr("sort", newSortState)
+      console.log(newSortState)
+
+      var isAscendingOrder = newSortState === "ascending"
+
+      tableChart.order(isAscendingOrder ? ascending : descending).sortBy(function (datum) {
+        return datum[d.field_name]
       })
-      // .ordinalColors(["#f0f0f0"])
-      .renderHorizontalGridLines(true)
-      .transitionDuration(200)
-      .on("renderlet", () => {
-        chart.hasFilter()
-          ? containerElement?.classList.add("filtered")
-          : containerElement?.classList.remove("filtered")
-      })
 
-    chart.xAxis().ticks(5).tickFormat(format("2"))
-    chart.yAxis().ticks(3)
-
-    charts.set(id, chart)
-    return chart
-  }
-
-  const theses = await fetch("/api/" + locale + "/theses.json").then((response) => response.json())
-
-  const idx = crossfilter(theses)
-
-  const referenceDimension = idx.dimension((d: any) => d.id)
-  const referenceGroup = referenceDimension.group().reduceCount()
-
-  const universityDimension = idx.dimension((d: any) => (d.university ? d.university : "other"))
-  const universityGroup = universityDimension.group().reduceCount()
-
-  const yearDimension = idx.dimension((d: any) => d.year)
-  const yearGroup = yearDimension.group().reduceCount()
-  const allYears = yearGroup
-    .top(Infinity)
-    .map((y) => +y.key)
-    // .filter((y) => y !== "")
-    .sort()
-
-  const degreeDimension = idx.dimension((d: any) => d.degree)
-  const degreeGroup = degreeDimension.group().reduceCount()
-
-  const genderDimension = idx.dimension((d: any) => d.author.gender)
-  const genderGroup = genderDimension.group().reduceCount()
-
-  const languageDimension = idx.dimension((d: any) => d.language)
-  const languageGroup = languageDimension.group().reduceCount()
-
-  const facilityDimension = idx.dimension((d: any) => d.facilities, true)
-  const facilityGroup = facilityDimension.group().reduceCount()
-
-  const margins = {
-    top: 0 * baselineHeight,
-    right: baselineHeight,
-    bottom: 0 * baselineHeight,
-    left: baselineHeight,
-  }
-  const countChart = dataCount("#chart--count")
-  countChart.crossfilter(idx).groupAll(idx.groupAll())
-
-  createRowChart("university", universityDimension, universityGroup)
-  createBarChart("year", yearDimension, yearGroup)
-  createRowChart("degree", degreeDimension, degreeGroup)
-  createRowChart("gender", genderDimension, genderGroup)
-  createRowChart("facility", facilityDimension, facilityGroup)
-  createRowChart("language", languageDimension, languageGroup)
-
-  const tableHeaderConfig = [
-    {
-      label: "University",
-      field_name: "university",
-      sort_state: "ascending",
-      format: function (d) {
-        return d.university
-      },
-    },
-    {
-      label: "Year",
-      field_name: "year",
-      sort_state: "ascending",
-      format: function (d) {
-        return d.year
-      },
-    },
-    {
-      label: "Title",
-      format: function (d) {
-        return (
-          "<div class='name'><span class='givenName'>" +
-          d.author.givenName +
-          "</span> " +
-          "<span class='familyName'>" +
-          d.author.familyName +
-          "</span> <span class='gender'>" +
-          d.author.gender.substr(0, 1) +
-          "</span></div>" +
-          "<div class='title'>" +
-          d.title +
-          "</div>"
-        )
-      },
-    },
-  ]
-
-  const tableChart = dataTable("#dc-table-chart")
-
-  const tableHeader = select("#dc-table-chart .table-header").selectAll("th")
-
-  // enter() into virtual selection and create new <th> header elements for each table column
-  tableHeader
-    .data(tableHeaderConfig)
-    .enter()
-    .append("th")
-    .text((d: any) => d.label) // Accessor function for header titles
-    .on("click", tableHeaderCallback)
-
-  function tableHeaderCallback(d: any) {
-    // Highlight column header being sorted and show bootstrap glyphicon
-    d.sort_state = d.sort_state === "ascending" ? "descending" : "ascending"
+      tableChart.redraw()
+    }
 
     tableChart
-      .selectAll("th") // Disable all highlighting and icons
-      .attr("class", (d) => "sorted-" + d.sort_state)
-    // .selectAll("span")
-    // .style("visibility", "hidden") // Hide glyphicon
+      .dimension(idx.dimension((d) => d.id))
+      // .section((d: any) => d.year)
+      .showSections(false)
+      .size(Infinity)
+      .columns(tableHeaderConfig.map((entry) => entry.format))
 
-    // const activeSpan = tableChart
-    //   .selectAll("th span") // Enable active highlight and icon for active column for sorting
-    //   .classed(activeClass, true) // Set bootstrap "info" class on active header for highlight
-    // .select("span")
-    // .style("visibility", "visible")
+    tableChart.render()
 
-    // Toggle sort order state to user desired state
+    const resetButtons = document.querySelectorAll("button.reset")
+    resetButtons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+        const chartId = (e.currentTarget as HTMLElement).getAttribute("data-chart")
+        if (chartId) charts.get(chartId)?.filterAll()
 
-    var isAscendingOrder = d.sort_state === "ascending"
-    tableChart.order(isAscendingOrder ? ascending : descending).sortBy(function (datum) {
-      return datum[d.field_name]
-    })
-    // activeSpan.classed(
-    //   isAscendingOrder
-    //     ? "glyphicon glyphicon-sort-by-attributes"
-    //     : "glyphicon glyphicon-sort-by-attributes-alt",
-    //   true
-    // )
-
-    tableChart.redraw()
-  }
-
-  tableChart
-    .dimension(referenceDimension)
-    // .section((d: any) => d.year)
-    .showSections(false)
-    .size(Infinity)
-
-    .columns(tableHeaderConfig.map((entry) => entry.format))
-
-  tableChart.render()
-
-  renderAll()
-
-  const resetButtons = document.querySelectorAll("button.reset")
-  resetButtons.forEach((button) => {
-    button.addEventListener("click", function (e) {
-      const chartId = (e.currentTarget as HTMLElement).getAttribute("data-chart")
-      if (chartId) charts.get(chartId)?.filterAll()
-
-      renderAll()
-      e.preventDefault()
+        redrawAll()
+        e.preventDefault()
+      })
     })
   })
 </script>
@@ -405,14 +224,12 @@ const locale = Astro.currentLocale
   #dc-table-chart .title {
     height: 1rem;
     display: inline-block;
-
     text-overflow: ellipsis;
     overflow-x: hidden;
   }
 
   #dc-table-chart thead th:nth-child(1) {
     min-width: 5rem;
-    background-color: red;
   }
   #dc-table-chart tbody td:nth-child(1) {
     white-space: nobreak;
@@ -423,71 +240,14 @@ const locale = Astro.currentLocale
     padding-top: 0.5rem;
   }
 
-  #dc-table-chart th:hover {
+  #dc-table-chart th.sortable:hover {
     background-color: rgba(0, 0, 0, 0.1);
     padding-top: 0.5rem;
   }
   #dc-table-chart td {
-    height: 3rem;
+    /* height: 3rem; */
     padding-top: 0.5rem;
   }
 </style>
 
-<style>
-  @utility baseline-* {
-    /* Calculate shift based on --value(integer) */
-    --baseline-shift: calc(calc(calc(--value(integer) * var(--spacing)) - 1cap) / 2);
-
-    /* Default push of 1 if modifier not provided */
-    --baseline-push: calc(var(--spacing) - var(--baseline-shift));
-
-    /* Override with --modifier(integer) if provided */
-    --baseline-push: calc(calc(--modifier(integer) * var(--spacing)) - var(--baseline-shift));
-
-    /* ...and apply */
-    line-height: calc(--value(integer) * var(--spacing));
-    padding-top: var(--baseline-shift);
-    margin-bottom: var(--baseline-push);
-  }
-
-  .filter {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-  }
-
-  .filter__header {
-    height: 1rem;
-    padding: 0 0.5rem;
-    display: flex;
-    border-bottom: 1px dotted gray;
-    /* margin-bottom: -1px; */
-  }
-
-  button {
-    border: none;
-    background-color: inherit;
-    background-color: transparent;
-    font-size: var(--text-xs);
-    cursor: pointer;
-    display: inline-block;
-    padding: 0;
-    text-decoration: dotted;
-  }
-
-  /* On mouse-over */
-  button:hover {
-  }
-
-  .filter .filter__reset {
-    opacity: 0;
-    transition: opacity;
-    transition-duration: 200ms;
-  }
-
-  .filtered .filter__reset {
-    opacity: 1;
-    transition: opacity;
-    transition-duration: 200ms;
-  }
-</style>
+<style></style>

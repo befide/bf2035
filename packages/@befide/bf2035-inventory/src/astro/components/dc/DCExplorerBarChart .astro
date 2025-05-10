@@ -1,0 +1,21 @@
+---
+const { dimension, title, accessorPath } = Astro.props
+---
+
+<section
+  class="filter"
+  id={"filter--" + dimension}
+  data-dc-dimension={dimension}
+  data-dc-accessor-path={accessorPath}
+  data-dc-chart-type="bar"
+>
+  <header class="filter__header">
+    <div class="filter__title">{title}</div>
+    <div class="filter__reset">
+      <button class="reset" data-chart={dimension}>Reset</button>
+    </div>
+  </header>
+  <div class="filter__body">
+    <div id={"chart--" + dimension} class="explorer__chart explorer__chart--row"></div>
+  </div>
+</section>

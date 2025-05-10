@@ -1,0 +1,22 @@
+---
+const { dimension } = Astro.props
+---
+
+<section
+  class="filter"
+  id={"filter--" + dimension}
+  data-dc-dimension={dimension}
+  data-dc-chart-type="count"
+>
+  <header class="filter__header">
+    <div class="filter__title">Number of items</div>
+    <div class="filter__reset">
+      <button class="reset">Reset All</button>
+    </div>
+  </header>
+  <div class="filter__body">
+    <div id="chart--count">
+      <span class="filter-count"></span> selected out of <span class="total-count"></span>
+    </div>
+  </div>
+</section>

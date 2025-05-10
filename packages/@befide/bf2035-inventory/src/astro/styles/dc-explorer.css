@@ -46,59 +46,6 @@
 
 }
 
-.explorer .bib-item__author {
-  font-variant: small-caps;
-  font-variant-caps: all-small-caps;
-}
-
-.explorer .bib-item__formatted,
-.explorer .bib-item__abstract p {
-  margin-bottom: 0;
-}
-
-.explorer .list .bib-item__title {
-  max-width: 50ch;
-}
-
-.explorer .list .bib-item__actions {
-  margin-bottom: 1rem;
-}
-
-.explorer .list .bib-item__actions .bib-item__action {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-.explorer table .bib-item__title {
-  max-width: 50ch;
-}
-
-.explorer table .bib-item__actions {
-  margin-bottom: 1rem;
-}
-
-.explorer table .bib-item__actions .bib-item__action {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-.explorer table div.detail {
-  padding-top: 1rem;
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  padding-bottom: 2rem;
-}
-
-.explorer table .bib-item__actions {
-  flex: 1 0 50%;
-}
-
-.explorer table .bib-item__abstracts {
-  flex: 1 0 100%;
-  display: flex;
-}
-
 
 
 .filter {
@@ -106,6 +53,7 @@
   flex-direction: column;
   gap: 0;
   margin: 0;
+  background-color: white;
   box-shadow:
     0 0 5px rgba(0, 0, 0, 0.1),
     0 0 1px rgba(0, 0, 0, 0.5);
@@ -118,6 +66,7 @@
   font-size: var(--text-xs);
   display: flex;
   flex-direction: row;
+  padding: 0 .5rem;
 }
 
 .filter__title {
@@ -130,27 +79,20 @@
   text-align: right;
 }
 
-/* .explorer__reset {
-  border: none;
-  background-color: inherit;
-  background-color: #bbb;
-  font-size: var(--sl-text-2xs);
+button.reset {
   cursor: pointer;
-  display: inline-block;
-} */
-
-/* On mouse-over */
-.btn:hover {
+}
+button.reset:hover {
   background: #eee;
 }
 
-.filter .explorer__reset {
+.filter .filter__reset {
   opacity: 0;
   transition: opacity;
   transition-duration: 200ms;
 }
 
-.filter.filtered .explorer__reset {
+.filter.filtered .filter__reset {
   opacity: 1;
   transition: opacity;
   transition-duration: 200ms;
@@ -233,13 +175,20 @@
   fill: var(--interaction__color--spot);
 }
 
-.explorer__chart--row g.axis {
+.explorer__chart .axis {
+  font-family: "Barlow Semi Condensed";
+}
+.explorer__chart .axis path.domain {
   display: none;
 }
-
-.explorer__chart--bar g.axis.y {
-  display: none !important;
+.explorer__chart .axis line {
+  opacity: .1;iu
 }
+
+.explorer__chart .axis text {
+  font-size: var(--text-xs);
+}
+
 
 
 .explorer__chart .deselected+text {
@@ -253,5 +202,65 @@
 
 .explorer__chart .tick text {
   font-weight: normal;
-  font-size: var(--text-2xs);
+  font-size: var(--text-xs);
+  fill: black;
 }
+
+.grid-line.horizontal {
+  stroke: black;
+  stroke-width: 1px;
+}
+
+/* 
+.explorer .bib-item__author {
+  font-variant: small-caps;
+  font-variant-caps: all-small-caps;
+}
+
+.explorer .bib-item__formatted,
+.explorer .bib-item__abstract p {
+  margin-bottom: 0;
+}
+
+.explorer .list .bib-item__title {
+  max-width: 50ch;
+}
+
+.explorer .list .bib-item__actions {
+  margin-bottom: 1rem;
+}
+
+.explorer .list .bib-item__actions .bib-item__action {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.explorer table .bib-item__title {
+  max-width: 50ch;
+}
+
+.explorer table .bib-item__actions {
+  margin-bottom: 1rem;
+}
+
+.explorer table .bib-item__actions .bib-item__action {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.explorer table div.detail {
+  padding-top: 1rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.explorer table .bib-item__actions {
+  flex: 1 0 50%;
+}
+
+.explorer table .bib-item__abstracts {
+  flex: 1 0 100%;
+  display: flex;
+} */
