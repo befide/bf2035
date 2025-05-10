@@ -39,7 +39,7 @@ export const CourseSchema = z.object({
 export const defineCoursesCollection = defineCollection({
   loader: file(INPUT_FILE_PATH, {
     parser: (input) => {
-      let data = csv2json<Course>(input, {
+      const data = csv2json<Course>(input, {
         nested: true,
       });
       data.forEach((d: any) => {

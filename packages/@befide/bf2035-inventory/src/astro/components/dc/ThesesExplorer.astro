@@ -7,13 +7,14 @@ import DCExplorerBarChart from "./DCExplorerBarChart .astro"
 export type Theses = Thesis[]
 
 export interface Thesis {
+  citationKey: string
   title: string
   author: Author
   language: string
   year: number
-  universityId?: string
-  organizationIds: string[]
-  facilityIds: string[]
+  university: string
+  organizations: string[]
+  facilities: string[]
   degree: string
 }
 
@@ -64,6 +65,7 @@ const locale = Astro.currentLocale
   import { ascending } from "d3-array"
 
   import { charts, createBarChart, createRowChart, createCountChart } from "./dc-helpers"
+import type { Thesis } from "./ThesesExplorer.astro"
 
   config.defaultColors(["schemeCategory10"])
 
@@ -75,7 +77,7 @@ const locale = Astro.currentLocale
   }
 
   $thesesIndex.listen(() => {
-    let idx = $thesesIndex.get()
+    const idx = $thesesIndex.get()
 
     const filters = document.getElementsByClassName("filter")
 
@@ -117,7 +119,7 @@ const locale = Astro.currentLocale
         label: "University",
         field_name: "university",
         sortable: true,
-        format: function (d) {
+        format: function (d: Thesis) {
           return d.university
         },
       },
@@ -125,14 +127,14 @@ const locale = Astro.currentLocale
         label: "Year",
         field_name: "year",
         sortable: true,
-        format: function (d) {
+        format: function (d: Thesis) {
           return d.year
         },
       },
       {
         label: "Title",
         sortable: false,
-        format: function (d) {
+        format: function (d: Thesis) {
           return (
             "<div class='name'><span class='givenName'>" +
             d.author.givenName +
@@ -178,7 +180,7 @@ const locale = Astro.currentLocale
       select(this).attr("sort", newSortState)
       console.log(newSortState)
 
-      var isAscendingOrder = newSortState === "ascending"
+      const isAscendingOrder = newSortState === "ascending"
 
       tableChart.order(isAscendingOrder ? ascending : descending).sortBy(function (datum) {
         return datum[d.field_name]
@@ -188,7 +190,7 @@ const locale = Astro.currentLocale
     }
 
     tableChart
-      .dimension(idx.dimension((d) => d.id))
+      .dimension(idx.dimension((d) => d))
       // .section((d: any) => d.year)
       .showSections(false)
       .size(Infinity)

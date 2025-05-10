@@ -9,17 +9,17 @@
     if (keyboardEvent.ctrlKey && keyboardEvent.shiftKey && keyboardEvent.code == "KeyP") {
       const previewer = new Previewer({})
 
-      let paged = new Previewer({})
-      let flow = paged.preview(document.getElementById("#content")).then((flow: any) => {
-        console.log(flow)
+      const paged = new Previewer({})
+      const flow = paged.preview(document.getElementById("#content")).then((flow: any) => {
+      console.log(flow)
 
-        // previewer.preview(
-        //   document.getElementById("content")!.innerHTML,
-        //   ["/src/styles/global.css"],
-        //   // document.getElementById("pagedjs__preview")
-        // )
-        // document.body.className += " pagedjs__preview"
-      })
+      // previewer.preview(
+      //   document.getElementById("content")!.innerHTML,
+      //   ["/src/styles/global.css"],
+      //   // document.getElementById("pagedjs__preview")
+      // )
+      // document.body.className += " pagedjs__preview"
+    })
     }
   })
 </script>

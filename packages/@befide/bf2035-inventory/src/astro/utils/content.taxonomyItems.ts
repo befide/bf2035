@@ -9,7 +9,7 @@ export const taxonomyItemRoots = async (
   lang = "en",
 ) => {
   console.log({ isDomainSpecific });
-  let items = (
+  const items = (
     await getCollection(
       "taxonomyItems",
       ({ data }) =>

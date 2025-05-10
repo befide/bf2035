@@ -55,7 +55,7 @@ export function createDataTable(id: string, dimension: any, group: any) {
 
   function tableHeaderCallback(d: any) {
     // Highlight column header being sorted and show bootstrap glyphicon
-    var activeClass = "info"
+    const activeClass = "info"
 
     table
       .selectAll("th") // Disable all highlighting and icons
@@ -72,7 +72,7 @@ export function createDataTable(id: string, dimension: any, group: any) {
     // Toggle sort order state to user desired state
     d.sort_state = d.sort_state === "ascending" ? "descending" : "ascending"
 
-    var isAscendingOrder = d.sort_state === "ascending"
+    const isAscendingOrder = d.sort_state === "ascending"
     table.order(isAscendingOrder ? ascending : descending).sortBy(function (datum) {
       return datum[d.field_name]
     })
@@ -128,7 +128,7 @@ export function createDataTable(id: string, dimension: any, group: any) {
   table.redraw()
 
   // Data Table Pagination
-  var tableOffset = 0,
+  let tableOffset = 0,
     tablePageSize = 10
 
   // updateTable calculates correct start and end indices for current page view

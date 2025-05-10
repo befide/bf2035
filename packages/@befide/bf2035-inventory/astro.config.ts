@@ -60,7 +60,7 @@ export default defineConfig({
       [
         rehypeRewrite,
         {
-          rewrite: (node: any) => {
+          rewrite: (node) => {
             if (node.type === "text") {
               node.value = spaceCommander(node.value)
             }
@@ -70,7 +70,7 @@ export default defineConfig({
     ],
   },
   integrations: [
-    ...(false && process.env.NODE_ENV === "production" ? [] : [astroD2({ inline: true })]),
+    ...(process.env.NODE_ENV === "production" ? [] : [astroD2({ inline: true })]),
     starlight({
       defaultLocale: "en",
       locales: {

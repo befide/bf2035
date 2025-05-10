@@ -12,6 +12,7 @@
     "dev": "astro dev",
     "lint": "pnpm lint:*",
     "lint:astro": "astro  check",
+    "lint:eslint": "eslint --fix",
     "lint:prettier": "prettier . --write",
     "preview": "astro preview",
     "start": "astro dev",

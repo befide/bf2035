@@ -1,7 +1,9 @@
+import type { Thesis } from "@/astro/store/theses"
+import type { Crossfilter, Dimension, Group } from "crossfilter2"
 import { format, scaleLinear, select } from "d3"
 import { barChart, dataCount, rowChart } from "dc"
 
-export const charts = new Map<String, any>()
+export const charts = new Map<string, any>()
 export const baselineHeight = 20
 export const filterWidth = 250
 
@@ -16,11 +18,11 @@ export const margins = {
   left: baselineHeight,
 }
 
-export function createCountChart(id: string, idx) {
-  const containerElement = document.getElementById("filter--" + id)
+export function createCountChart(id: string, idx: Crossfilter<Thesis>) {
+  // const containerElement = document.getElementById("filter--" + id)
   const chart = dataCount("#chart--" + id)
-    .crossfilter(idx)
-    .groupAll(idx.groupAll())
+    .dimension(idx)
+    .group(idx.groupAll())
   return chart
 }
 
@@ -48,19 +50,22 @@ export function createRowChart(id: string, dimension: any, group: any) {
     })
     // chart.xAxis().ticks(5).tickSizeInner(-height)
   chart.on("renderlet", () => {
-    chart.hasFilter()
-      ? containerElement?.classList.add("filtered")
-      : containerElement?.classList.remove("filtered")
+    if (chart.hasFilter()) {
+      containerElement!.classList.add("filtered")
+    } else {
+      containerElement!.classList.remove("filtered")
+    }
+     
   })
 
   charts.set(id, chart)
   return chart
 }
 
-export function createBarChart(id: string, dimension: any, group: any) {
+export function createBarChart(id: string, dimension: Dimension, group: Group) {
   const allYears = group
     .top(Infinity)
-    .map((y) => +y.key)
+    .map((y: {key: number}) => +y.key)
     // .filter((y) => y !== "")
     .sort()
 
