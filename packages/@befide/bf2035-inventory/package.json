@@ -18,7 +18,8 @@
     "sync": "astro sync"
   },
   "dependencies": {
-    "astro": "catalog:"
+    "astro": "catalog:",
+    "tailwindcss": "catalog:"
   },
   "devDependencies": {
     "@astrojs/check": "catalog:",
