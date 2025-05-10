@@ -1,5 +1,5 @@
 ---
-import ThesesExplorer from "@/astro/components/dc/ThesesExplorer.astro"
+import TaxonomyTree from "@/astro/components/domain/TaxonomyTree.astro"
 import DCExplorerLayout from "@/astro/layouts/DCExplorerLayout.astro"
 
 export async function getStaticPaths(): Promise<any> {
@@ -14,6 +14,6 @@ export async function getStaticPaths(): Promise<any> {
 
 <DCExplorerLayout title="Abrechnung" description="Statements">
   <main>
-    <ThesesExplorer />
+    <TaxonomyTree isDomainSpecific={true} />
   </main>
 </DCExplorerLayout>

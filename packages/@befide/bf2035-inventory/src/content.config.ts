@@ -10,9 +10,10 @@ import { defineCoursesCollection } from "./content/config.courses";
 import { defineThesesCollection } from "./content/config.theses";
 import { defineReferencesCollection } from "./content/config.references";
 
-// const docs = defineCollection({ loader: docsLoader(), schema: docsSchema() });
+const docs = defineCollection({ loader: docsLoader(), schema: docsSchema() });
 
 export const collections = {
+  docs,
   reviewStatuses: defineReviewStatusesCollection,
   taxonomyItems: defineTaxonomyItemsCollection,
   organizations: defineOrganizationCollection,

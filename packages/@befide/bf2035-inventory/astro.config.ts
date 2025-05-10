@@ -17,6 +17,7 @@ import sectionize from "remark-sectionize"
 import remarkDirective from "remark-directive"
 import spaceCommander from "./src/astro/utils/space-commander.ts"
 import tailwindcss from "@tailwindcss/vite"
+import UnpluginUnused from "unplugin-unused/vite"
 
 // https://astro.build/config
 export default defineConfig({
@@ -30,14 +31,32 @@ export default defineConfig({
     process.env.NODE_ENV === "production"
       ? "https://bf2035-meta.beschleunigerphysik.de"
       : "https://bf2035-meta.beschleunigerphysik.de",
-  vite: { plugins: [tailwindcss()] },
-  markdown: {
-    remarkPlugins: [
-      remarkDirective,
-      sectionize,
-    ],
-    rehypePlugins: [
+  vite: {
+    plugins: [
+      UnpluginUnused({
+        include: [/\.([cm]?[jt]sx?|vue)$/],
+        exclude: [/node_modules/],
+        level: "warning", // or 'error'
+        /**
+         * Ignore some dependencies.
+         */
+        ignore: {
+          peerDependencies: ["vue"],
+        },
+        // Or ignore all kinds of dependencies.
+        // ignore: ['vue'],
 
+        /**
+         * Dependency kinds to check.
+         */
+        depKinds: ["dependencies", "peerDependencies"],
+      }),
+      tailwindcss(),
+    ],
+  },
+  markdown: {
+    remarkPlugins: [remarkDirective, sectionize],
+    rehypePlugins: [
       [
         rehypeRewrite,
         {
@@ -53,11 +72,11 @@ export default defineConfig({
   integrations: [
     ...(false && process.env.NODE_ENV === "production" ? [] : [astroD2({ inline: true })]),
     starlight({
-      // defaultLocale: "en",
-      // locales: {
-      //   en: { label: "English" },
-      //   de: { label: "Deutsch", lang: "de" },
-      // },
+      defaultLocale: "en",
+      locales: {
+        en: { label: "English" },
+        de: { label: "Deutsch", lang: "de" },
+      },
       title: "BF2035 Meta",
       disable404Route: true,
       components: {
@@ -71,8 +90,7 @@ export default defineConfig({
         "@fontsource/barlow-semi-condensed/700.css",
       ],
 
-      plugins: [
-      ],
+      plugins: [],
       sidebar: [
         // A topic representing a guide section of your project.
         {
