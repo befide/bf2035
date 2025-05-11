@@ -15,3 +15,11 @@ html {
 
   background-size: 100% 1rem;
 }
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+.sc {
+  font-variant-caps: all-small-caps;
+  font-size: var(--text-base);
+}

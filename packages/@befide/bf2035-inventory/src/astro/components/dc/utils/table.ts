@@ -48,15 +48,14 @@ export function createTableChart(
       // Highlight column header being sorted and show bootstrap glyphicon
 
       // sort_state = select(this).attr("class"d.sort_state === "ascending" ? "descending" : "ascending"
-      const sortState = select(this).attr("sort")
-
+      const sortState = select(this).attr("data-sort")
       const newSortState = sortState === "ascending" ? "descending" : "ascending"
 
-      selectAll("#dc-table-chart th") // Disable all highlighting and icons
-        .attr("sort", null)
+      select(chartElementIdSelector + " .table-header")
+        .selectAll("th") // Disable all highlighting and icons
+        .attr("data-sort", null)
 
-      select(this).attr("sort", newSortState)
-      console.log(newSortState)
+      select(this).attr("data-sort", newSortState)
 
       const isAscendingOrder = newSortState === "ascending"
 
@@ -97,11 +96,13 @@ export const getTableConfig = (key) => {
             "<div class='name'><span class='givenName'>" +
             d.author.givenName +
             "</span> " +
-            "<span class='familyName'>" +
+            "<span class='familyName bold sc'>" +
             d.author.familyName +
-            "</span> <span class='gender'>" +
+            "</span> <span class='gender' data-gender-icon='" +
+            d.author.gender +
+            "'>(" +
             d.author.gender.substr(0, 1) +
-            "</span></div>" +
+            ")</span></div>" +
             "<div class='title'>" +
             d.title +
             "</div>"
