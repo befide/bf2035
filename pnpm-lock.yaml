@@ -105,6 +105,9 @@ catalogs:
     astro:
       specifier: 5.7.12
       version: 5.7.12
+    astro-breadcrumbs:
+      specifier: 3.3.1
+      version: 3.3.1
     astro-capo:
       specifier: 0.0.1
       version: 0.0.1
@@ -624,6 +627,9 @@ importers:
       astro:
         specifier: 'catalog:'
         version: 5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+      astro-breadcrumbs:
+        specifier: 'catalog:'
+        version: 3.3.1(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       tailwindcss:
         specifier: 'catalog:'
         version: 4.1.6
@@ -3486,6 +3492,11 @@ packages:
   astring@1.9.0:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
+
+  astro-breadcrumbs@3.3.1:
+    resolution: {integrity: sha512-O3wWzlc4HOU//ePefcwk2F4yQn830buVUVn6h7+sGmVq7+xvv9JmHTcmihU18ISte72ELnJlG2U8s58nIuPXfg==}
+    peerDependencies:
+      astro: ^2.0.0-beta.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
 
   astro-capo@0.0.1:
     resolution: {integrity: sha512-KyQD1mzgEQnbqrKpYdoIZMAYejkOcIJocdGuQBH9Yzr4KqGzIR8P2DDNbV/FQXaSyq900lCZwWJH45tBIQCG8w==}
@@ -11450,6 +11461,10 @@ snapshots:
   ast-types-flow@0.0.8: {}
 
   astring@1.9.0: {}
+
+  astro-breadcrumbs@3.3.1(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
+    dependencies:
+      astro: 5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
 
   astro-capo@0.0.1(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
     dependencies:

@@ -1,6 +1,8 @@
-import { docsLoader } from "@astrojs/starlight/loaders";
-import { docsSchema } from "@astrojs/starlight/schema";
-import { defineCollection } from "astro:content";
+import { defineCollection, z } from "astro:content";
+
+import { docsLoader, i18nLoader } from '@astrojs/starlight/loaders';
+import { docsSchema, i18nSchema } from '@astrojs/starlight/schema';
+
 
 import { defineReviewStatusesCollection } from "./content/config.reviewStatuses";
 import { defineOrganizationCollection } from "./content/config.organizations";
@@ -10,15 +12,24 @@ import { defineCoursesCollection } from "./content/config.courses";
 import { defineThesesCollection } from "./content/config.theses";
 import { defineReferencesCollection } from "./content/config.references";
 
-const docs = defineCollection({ loader: docsLoader(), schema: docsSchema() });
-
 export const collections = {
-  docs,
+  docs: defineCollection({ loader: docsLoader(), schema: docsSchema() }),
+  i18n: defineCollection({
+    loader: i18nLoader(),
+    schema: i18nSchema({
+      extend: z.object({
+        "dc-explorer.filters": z.string(),
+        "dc-explorer.filter.number-of-items": z.string(),
+        "dc-explorer.items": z.string(),
+
+      }),
+    }),
+  }),
   reviewStatuses: defineReviewStatusesCollection,
   taxonomyItems: defineTaxonomyItemsCollection,
   organizations: defineOrganizationCollection,
   facilities: defineFacilityCollection,
   courses: defineCoursesCollection,
   theses: defineThesesCollection,
-  references: defineReferencesCollection
-};
+  references: defineReferencesCollection,
+}

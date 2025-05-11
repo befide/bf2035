@@ -1,21 +1,27 @@
 ---
-import { Breadcrumbs } from "astro-breadcrumbs"
-
 import "astro-breadcrumbs/breadcrumbs.css"
 
-
+const locale = Astro.currentLocale
 ---
 
 <header class="border-b border-border bg-muted dark:bg-muted/30 print:hidden">
-  <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-1 p-2">
-    <div class="flex items-center">
+  <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-1 p-1">
+    <div class="flex flex-col">
       <a
         href="/"
         class="decoration-ring/50 underline-offset-2 focus-visible:underline focus-visible:outline-none"
       >
-        <h1 class="text-2xl font-bold leading-none">FLORA-WEG</h1>
+        <h1 class="text-xl font-bold leading-none">BF2035/Inventory</h1>
       </a>
-      <Breadcrumbs ustomizeListElements={[{ index: 0, remove: true }]} />
+      <ul class="flex gap-0.5 text-base">
+        <li><a href={"/" + locale + "/taxonomy"}>Taxonomy</a></li>
+        <li>
+          <a href={"/" + locale + "/theses"}>Theses</a>
+        </li>
+        <li><a href={"/" + locale + "/courses"}>Courses</a></li>
+        <li><a href={"/" + locale + "/organization"}>Organization</a></li>
+        <li><a href={"/" + locale + "/facilities"}>Facilities</a></li>
+      </ul>
     </div>
   </div>
 </header>

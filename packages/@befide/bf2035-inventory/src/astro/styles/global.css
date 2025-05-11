@@ -2,6 +2,7 @@
 @import "./table.css";
 @import "./print.css";
 @import "./property-list.css";
+@import "./my-overrides.css";
 /* @import "./dc-explorer.css"; */
 
 html {

@@ -4,6 +4,9 @@ import DCExplorerCount from "./DCExplorerCount.astro"
 import DCExplorerRowChart from "./DCExplorerRowChart.astro"
 import DCExplorerBarChart from "./DCExplorerBarChart .astro"
 import DCExplorerTable from "./DCExplorerTable.astro"
+import DCExplorer from "./DCExplorer.astro"
+import DCExplorerFilters from "./DCExplorerFilters.astro"
+import DCExplorerItems from "./DCExplorerItems.astro"
 
 export type Theses = Thesis[]
 
@@ -28,10 +31,11 @@ export interface Author {
 const locale = Astro.currentLocale
 ---
 
-<div id="explorer" class="explorer" data-locale={locale}>
+<DCExplorer>
   <div class="filters">
+    <!-- <h2>{Astro.locals.t("dc-explorer.filters")}</h2> -->
     <details open>
-      <summary>Filter</summary>
+      <summary>{Astro.locals.t("dc-explorer.filters")}</summary>
 
       <DCExplorerCount collection="theses" dimension="count" />
       <DCExplorerBarChart collection="theses" dimension="year" title="Year" />
@@ -54,81 +58,7 @@ const locale = Astro.currentLocale
     </details>
   </div>
   <div class="explorer__items">
-    <div class="table-responsive col-md-12">
-      <h4>Filtered Records</h4>
-      <DCExplorerTable collection="theses" dimension="id" />
-    </div>
+    <h2>{Astro.locals.t("dc-explorer.items")}</h2>
+    <DCExplorerTable collection="theses" dimension="id" />
   </div>
-</div>
-<script>
-  import { $thesesIndex } from "@/astro/store/thesesIndex"
-  import "dc/src/compat/d3v6"
-
-  import { config, redrawAll, renderAll } from "dc"
-
-  import {
-    charts,
-    createBarChart,
-    createRowChart,
-    createCountChart,
-    createTableChart,
-    getTableConfig,
-    getValue,
-  } from "./utils"
-
-  config.defaultColors(["schemeCategory10"])
-
-  $thesesIndex.listen(() => {
-    const idx = $thesesIndex.get()
-
-    const filters = document.getElementsByClassName("dc-explorer__tile")
-    Array.from(filters).forEach((filter) => {
-      const { dcTileType, dcCollection, dcDimension, dcAccessorPath, dcDimensionMultiple } =
-        filter.dataset
-
-      if (dcTileType === "count") {
-        /*something here*/
-
-        createCountChart(dcCollection, dcDimension, idx)
-      } else if (dcTileType === "row-chart") {
-        // something here
-
-        const dimension = idx.dimension(
-          (d) => getValue(d, dcAccessorPath || dcDimension) || "other",
-          dcDimensionMultiple
-        )
-        const group = dimension.group().reduceCount()
-
-        createRowChart(dcCollection, dcDimension, dimension, group)
-      } else if (dcTileType === "bar-chart") {
-        const dimension = idx.dimension(
-          (d) => getValue(d, dcAccessorPath || dcDimension) || "other"
-        )
-
-        const group = dimension.group()
-
-        createBarChart(dcCollection, dcDimension, dimension, group)
-      } else if (dcTileType === "table") {
-        const idDimension = idx.dimension((d) => d)
-        // const group = dimension.group()
-
-        createTableChart(dcCollection, dcDimension, getTableConfig("theses"), idDimension)
-      }
-    })
-
-    renderAll()
-
-    const resetButtons = document.querySelectorAll("button.reset")
-    resetButtons.forEach((button) => {
-      button.addEventListener("click", function (e) {
-        const chartId = (e.currentTarget as HTMLElement).getAttribute("data-chart")
-        console.log(chartId)
-        if (chartId) charts.get(chartId)?.filterAll()
-
-        redrawAll()
-        e.preventDefault()
-      })
-    })
-  })
-</script>
-
+</DCExplorer>

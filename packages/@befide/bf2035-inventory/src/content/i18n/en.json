@@ -26,5 +26,8 @@
   "careerLevels.postDoc.short": "postDoc",
   "careerLevels.phdStudent.short": "phd",
   "careerLevels.masterStudent.short": "master",
-  "careerLevels.bachelorStudent.short": "bachelor"
+  "careerLevels.bachelorStudent.short": "bachelor",
+  "dc-explorer.filters": "Filters",
+  "dc-explorer.filter.number-of-items": "Number of items",
+  "dc-explorer.items": "Selected items"
 }

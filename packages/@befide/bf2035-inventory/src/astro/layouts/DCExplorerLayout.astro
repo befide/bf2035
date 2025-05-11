@@ -3,7 +3,7 @@ import "@styles/global.css"
 
 import "@fontsource/barlow-semi-condensed/400.css"
 import "@fontsource/barlow-semi-condensed/700.css"
-
+import Navbar from "../components/ui/Navbar.astro"
 export type props = {
   title: string
   description?: string
@@ -29,51 +29,13 @@ const trimmedDescription =
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- global metadata and links -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="alternate" type="application/rss+xml" href="/index.xml" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-
-    <!-- primary meta tags -->
-    <title>{title}</title>
-    <meta name="title" content={title} />
-    <meta name="description" content={trimmedDescription} />
-    <link rel="canonical" href={canonicalURL} />
-    <meta name="keywords" content={keywords?.join(", ")} />
-
-    <!-- light/dark mode script -->
-    <script is:inline>
-      const media = window.matchMedia("(prefers-color-scheme: dark)")
-
-      // set theme before react loads to avoid flash of incorrect theme
-      const theme = localStorage.getItem("theme")
-
-      if (theme === "dark" || (!theme && media.matches)) {
-        document.documentElement.classList.add("dark")
-      }
-
-      // update class when user changes system theme
-      media.addEventListener("change", (e) => {
-        // if user has already set a theme, don't change it
-        if (localStorage.getItem("theme") !== null) return
-
-        if (e.matches) {
-          document.documentElement.classList.add("dark")
-        } else {
-          document.documentElement.classList.remove("dark")
-        }
-      })
-    </script>
+    
+    <!-- <link rel="stylesheet" href={printHref} media="print" /> -->
   </head>
 
   <body class="flex min-h-screen flex-col">
-    <!-- <Navbar parent={parent} /> -->
-    
-     <slot />
-    
+    <Navbar parent={parent} />
+
+    <slot />
   </body>
 </html>
-
