@@ -1,21 +1,30 @@
 ---
-const { dimension, title, accessorPath } = Astro.props
+import { barChartId, barChartTileId } from "./utils"
+
+const { collection, dimension, title, accessorPath, dimensionIsArray = false } = Astro.props
+
+const tileId = barChartTileId(collection, dimension)
+const chartId = barChartId(collection, dimension)
+
+const tileType = "bar-chart"
 ---
 
 <section
-  class="filter"
-  id={"filter--" + dimension}
+  class="dc-explorer__tile filter"
+  id={tileId}
+  data-dc-collection={collection}
   data-dc-dimension={dimension}
+  data-dc-dimension-is-array={dimensionIsArray}
   data-dc-accessor-path={accessorPath}
-  data-dc-chart-type="bar"
+  data-dc-tile-type={tileType}
 >
   <header class="filter__header">
     <div class="filter__title">{title}</div>
     <div class="filter__reset">
-      <button class="reset" data-chart={dimension}>Reset</button>
+      <button class="reset" data-chart={chartId}>Reset</button>
     </div>
   </header>
   <div class="filter__body">
-    <div id={"chart--" + dimension} class="explorer__chart explorer__chart--row"></div>
+    <div id={chartId} class="explorer__chart explorer__chart--row"></div>
   </div>
 </section>

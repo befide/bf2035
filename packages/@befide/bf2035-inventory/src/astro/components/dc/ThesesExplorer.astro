@@ -3,6 +3,7 @@ import "@/astro/styles/dc-explorer.css"
 import DCExplorerCount from "./DCExplorerCount.astro"
 import DCExplorerRowChart from "./DCExplorerRowChart.astro"
 import DCExplorerBarChart from "./DCExplorerBarChart .astro"
+import DCExplorerTable from "./DCExplorerTable.astro"
 
 export type Theses = Thesis[]
 
@@ -32,176 +33,96 @@ const locale = Astro.currentLocale
     <details open>
       <summary>Filter</summary>
 
-      <DCExplorerCount dimension="count" />
-      <DCExplorerBarChart dimension="year" title="Year" />
-      <DCExplorerRowChart dimension="degree" title="Degree" />
-      <DCExplorerRowChart dimension="gender" title="Gender" accessorPath="author.gender" />
-      <DCExplorerRowChart dimension="university" title="University" />
-      <DCExplorerRowChart dimension="facilities" title="Facility" multiple={true} />
+      <DCExplorerCount collection="theses" dimension="count" />
+      <DCExplorerBarChart collection="theses" dimension="year" title="Year" />
+      <DCExplorerRowChart collection="theses" dimension="degree" title="Degree" />
+      <DCExplorerRowChart
+        collection="theses"
+        dimension="gender"
+        title="Gender"
+        accessorPath="author.gender"
+      />
+      <DCExplorerRowChart collection="theses" dimension="university" title="University" />
+      <DCExplorerRowChart
+        collection="theses"
+        dimension="facilities"
+        title="Facility"
+        is-array={true}
+      />
 
-      <DCExplorerRowChart dimension="language" title="Language" />
+      <DCExplorerRowChart collection="theses" dimension="language" title="Language" />
     </details>
   </div>
   <div class="explorer__items">
     <div class="table-responsive col-md-12">
       <h4>Filtered Records</h4>
-
-      <table class="table table-hover table-striped table-bordered" id="dc-table-chart">
-        <thead>
-          <tr class="table-header">
-            <!-- Programmatically insert table headers here -->
-          </tr>
-        </thead>
-      </table>
+      <DCExplorerTable collection="theses" dimension="id" />
     </div>
   </div>
 </div>
 <script>
   import { $thesesIndex } from "@/astro/store/thesesIndex"
-  import { descending, select, selectAll } from "d3"
   import "dc/src/compat/d3v6"
 
-  import { config, dataTable, redrawAll } from "dc"
-  import { ascending } from "d3-array"
+  import { config, redrawAll, renderAll } from "dc"
 
-  import { charts, createBarChart, createRowChart, createCountChart } from "./dc-helpers"
-import type { Thesis } from "./ThesesExplorer.astro"
+  import {
+    charts,
+    createBarChart,
+    createRowChart,
+    createCountChart,
+    createTableChart,
+    getTableConfig,
+    getValue,
+  } from "./utils"
 
   config.defaultColors(["schemeCategory10"])
-
-  export const getValue = (obj: any, path: string) => {
-    if (!obj) return
-
-    const keys = path.split(".")
-    return keys.reduce((currentObj, key) => currentObj[key], obj)
-  }
 
   $thesesIndex.listen(() => {
     const idx = $thesesIndex.get()
 
-    const filters = document.getElementsByClassName("filter")
-
+    const filters = document.getElementsByClassName("dc-explorer__tile")
     Array.from(filters).forEach((filter) => {
-      const {
-        dcChartType,
-        dcDimension,
-        dcAccessorPath,
-        dcDimensionMultiple = false,
-      } = filter.dataset
+      const { dcTileType, dcCollection, dcDimension, dcAccessorPath, dcDimensionMultiple } =
+        filter.dataset
 
-      if (dcChartType === "count") {
-        const chart = createCountChart(dcDimension, idx)
-        chart.render()
-      } else if (dcChartType === "row") {
+      if (dcTileType === "count") {
+        /*something here*/
+
+        createCountChart(dcCollection, dcDimension, idx)
+      } else if (dcTileType === "row-chart") {
+        // something here
+
         const dimension = idx.dimension(
           (d) => getValue(d, dcAccessorPath || dcDimension) || "other",
           dcDimensionMultiple
         )
         const group = dimension.group().reduceCount()
 
-        const chart = createRowChart(dcDimension, dimension, group)
-        chart.render()
-      } else if (dcChartType === "bar") {
+        createRowChart(dcCollection, dcDimension, dimension, group)
+      } else if (dcTileType === "bar-chart") {
         const dimension = idx.dimension(
           (d) => getValue(d, dcAccessorPath || dcDimension) || "other"
         )
-        
 
         const group = dimension.group()
 
-        const chart = createBarChart(dcDimension, dimension, group)
-        chart.render()
+        createBarChart(dcCollection, dcDimension, dimension, group)
+      } else if (dcTileType === "table") {
+        const idDimension = idx.dimension((d) => d)
+        // const group = dimension.group()
+
+        createTableChart(dcCollection, dcDimension, getTableConfig("theses"), idDimension)
       }
     })
 
-    const tableHeaderConfig = [
-      {
-        label: "University",
-        field_name: "university",
-        sortable: true,
-        format: function (d: Thesis) {
-          return d.university
-        },
-      },
-      {
-        label: "Year",
-        field_name: "year",
-        sortable: true,
-        format: function (d: Thesis) {
-          return d.year
-        },
-      },
-      {
-        label: "Title",
-        sortable: false,
-        format: function (d: Thesis) {
-          return (
-            "<div class='name'><span class='givenName'>" +
-            d.author.givenName +
-            "</span> " +
-            "<span class='familyName'>" +
-            d.author.familyName +
-            "</span> <span class='gender'>" +
-            d.author.gender.substr(0, 1) +
-            "</span></div>" +
-            "<div class='title'>" +
-            d.title +
-            "</div>"
-          )
-        },
-      },
-    ]
-
-    const tableChart = dataTable("#dc-table-chart")
-
-    const tableHeader = select("#dc-table-chart .table-header").selectAll("th")
-
-    // enter() into virtual selection and create new <th> header elements for each table column
-    tableHeader
-      .data(tableHeaderConfig)
-      .enter()
-      .append("th")
-      .classed("sortable", (d) => d.sortable)
-      .text((d: any) => d.label) // Accessor function for header titles
-      .filter((d) => d.sortable)
-      .on("click", tableHeaderCallback)
-
-    function tableHeaderCallback(this: any, d: any) {
-      // Highlight column header being sorted and show bootstrap glyphicon
-
-      // sort_state = select(this).attr("class"d.sort_state === "ascending" ? "descending" : "ascending"
-      const sortState = select(this).attr("sort")
-
-      const newSortState = sortState === "ascending" ? "descending" : "ascending"
-
-      selectAll("#dc-table-chart th") // Disable all highlighting and icons
-        .attr("sort", null)
-
-      select(this).attr("sort", newSortState)
-      console.log(newSortState)
-
-      const isAscendingOrder = newSortState === "ascending"
-
-      tableChart.order(isAscendingOrder ? ascending : descending).sortBy(function (datum) {
-        return datum[d.field_name]
-      })
-
-      tableChart.redraw()
-    }
-
-    tableChart
-      .dimension(idx.dimension((d) => d))
-      // .section((d: any) => d.year)
-      .showSections(false)
-      .size(Infinity)
-      .columns(tableHeaderConfig.map((entry) => entry.format))
-
-    tableChart.render()
+    renderAll()
 
     const resetButtons = document.querySelectorAll("button.reset")
     resetButtons.forEach((button) => {
       button.addEventListener("click", function (e) {
         const chartId = (e.currentTarget as HTMLElement).getAttribute("data-chart")
+        console.log(chartId)
         if (chartId) charts.get(chartId)?.filterAll()
 
         redrawAll()

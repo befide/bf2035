@@ -1,12 +1,19 @@
 ---
-const { dimension } = Astro.props
+import { countChartId, countChartTileId } from "./utils"
+
+const { collection, dimension } = Astro.props
+
+const tileId = countChartTileId(collection, dimension)
+const chartId = countChartId(collection, dimension)
+const tileType = "count"
 ---
 
 <section
-  class="filter"
-  id={"filter--" + dimension}
+  class="dc-explorer__tile filter"
+  id={tileId}
+  data-dc-collection={collection}
   data-dc-dimension={dimension}
-  data-dc-chart-type="count"
+  data-dc-tile-type={tileType}
 >
   <header class="filter__header">
     <div class="filter__title">Number of items</div>
@@ -15,7 +22,7 @@ const { dimension } = Astro.props
     </div>
   </header>
   <div class="filter__body">
-    <div id="chart--count">
+    <div id={chartId}>
       <span class="filter-count"></span> selected out of <span class="total-count"></span>
     </div>
   </div>
