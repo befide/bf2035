@@ -1,34 +1,16 @@
 ---
 import "@/astro/styles/dc-explorer.css"
 
-export type Theses = Thesis[]
-
-export interface Thesis {
-  citationKey: string
-  title: string
-  author: Author
-  language: string
-  year: number
-  university: string
-  organizations: string[]
-  facilities: string[]
-  degree: string
-}
-
-export interface Author {
-  familyName: string
-  givenName: string
-  gender: string
-}
+const { collection } = Astro.props
 
 const locale = Astro.currentLocale
 ---
 
-<div id="explorer" class="explorer" data-locale={locale}>
+<dc-explorer class="explorer" data-collection={collection} data-locale={locale}>
   <slot />
-</div>
+</dc-explorer>
+
 <script>
-  import { $thesesIndex } from "@/astro/store/thesesIndex"
   import "dc/src/compat/d3v6"
 
   import { config, redrawAll, renderAll } from "dc"
@@ -41,59 +23,83 @@ const locale = Astro.currentLocale
     createTableChart,
     getTableConfig,
     getValue,
+    getLocale,
   } from "./utils"
+  import { getCollectionIndex } from "@/astro/store"
+  const locale = getLocale()
 
-  config.defaultColors(["schemeCategory10"])
+  class DCExplorer extends HTMLElement {
+    connectedCallback() {
+      config.defaultColors(["schemeCategory10"])
 
-  $thesesIndex.listen(() => {
-    const idx = $thesesIndex.get()
+      const collection = this.dataset.collection
 
-    const filters = document.getElementsByClassName("dc-explorer__tile")
-    Array.from(filters).forEach((filter) => {
-      const { dcTileType, dcCollection, dcDimension, dcAccessorPath, dcDimensionMultiple } =
-        filter.dataset
+      const $idx = getCollectionIndex(collection)
 
-      if (dcTileType === "count") {
-        /*something here*/
+      $idx?.listen(() => {
+        const idx = $idx.get()
 
-        createCountChart(dcCollection, dcDimension, idx)
-      } else if (dcTileType === "row-chart") {
-        // something here
+        const filters = document.getElementsByClassName("dc-explorer__tile")
+        Array.from(filters).forEach((filter) => {
+          const {
+            dcTileType,
+            dcCollection,
+            dcDimensionIsLocalized,
+            dcDimension,
+            dcAccessorPath,
+            dcDimensionIsArray,
+          } = filter.dataset
 
-        const dimension = idx.dimension(
-          (d) => getValue(d, dcAccessorPath || dcDimension) || "other",
-          dcDimensionMultiple
-        )
-        const group = dimension.group().reduceCount()
+          if (dcTileType === "count") {
+            /*something here*/
 
-        createRowChart(dcCollection, dcDimension, dimension, group)
-      } else if (dcTileType === "bar-chart") {
-        const dimension = idx.dimension(
-          (d) => getValue(d, dcAccessorPath || dcDimension) || "other"
-        )
+            createCountChart(dcCollection, dcDimension, idx)
+          } else if (dcTileType === "row-chart") {
+            // something here
 
-        const group = dimension.group()
+            const valuePath =
+              dcDimensionIsLocalized === "true"
+                ? (dcAccessorPath || dcDimension) 
+                : dcAccessorPath || dcDimension
 
-        createBarChart(dcCollection, dcDimension, dimension, group)
-      } else if (dcTileType === "table") {
-        const idDimension = idx.dimension((d) => d)
-       
-        createTableChart(dcCollection, dcDimension, getTableConfig("theses"), idDimension)
-      }
-    })
+            const dimension = idx.dimension(
+              (d) => getValue(d, valuePath) || "",
+              dcDimensionIsArray !== "false"
+            )
 
-    renderAll()
+            const group = dimension.group().reduceCount()
 
-    const resetButtons = document.querySelectorAll("button.reset")
-    resetButtons.forEach((button) => {
-      button.addEventListener("click", function (e) {
-        const chartId = (e.currentTarget as HTMLElement).getAttribute("data-chart")
-        console.log(chartId)
-        if (chartId) charts.get(chartId)?.filterAll()
+            createRowChart(dcCollection, dcDimension, dimension, group)
+          } else if (dcTileType === "bar-chart") {
+            const dimension = idx.dimension(
+              (d) => getValue(d, dcAccessorPath || dcDimension) || "other"
+            )
 
-        redrawAll()
-        e.preventDefault()
+            const group = dimension.group()
+
+            createBarChart(dcCollection, dcDimension, dimension, group)
+          } else if (dcTileType === "table") {
+            const idDimension = idx.dimension((d) => d)
+
+            createTableChart(dcCollection, dcDimension, getTableConfig(dcCollection), idDimension)
+          }
+        })
+
+        renderAll()
+
+        const resetButtons = document.querySelectorAll("button.reset")
+        resetButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            const chartId = (e.currentTarget as HTMLElement).getAttribute("data-chart")
+            console.log(chartId)
+            if (chartId) charts.get(chartId)?.filterAll()
+
+            redrawAll()
+            e.preventDefault()
+          })
+        })
       })
-    })
-  })
+    }
+  }
+  customElements.define("dc-explorer", DCExplorer)
 </script>

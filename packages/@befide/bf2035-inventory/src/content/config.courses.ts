@@ -26,7 +26,7 @@ export const CourseSchema = z.object({
     fullName: NullableLocalizedString,
   }),
   semester: z.string().nullable(),
-  language: z.string().nullable(),
+  language: z.array(z.string()).nullable(),
   objectives: NullableLocalizedString,
   contents: NullableLocalizedString,
   sws: z.number().nullable(),
@@ -46,6 +46,9 @@ export const defineCoursesCollection = defineCollection({
         if (d.addressesProgrammeOfStudyLevels) {
           d.addressesProgrammeOfStudyLevels =
             d.addressesProgrammeOfStudyLevels.split(/\s?,\s?/);
+        }
+        if (d.language) {
+          d.language = d.language.split(/\s?,\s?/)
         }
       });
       return data.toSorted((a, b) =>

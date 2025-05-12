@@ -55,7 +55,7 @@ export const thesesForeAPI = async (locale: "en" | "de") => {
         },
         language: translate(thesis.data.language, locale),
         year: thesis.data.year,
-        university: university?.label.short[locale],
+        university: university?.label.short,
         organizations: organizations?.map((d) => d.label.short[locale]),
         facilities: facilities?.map((d) => d.label.short[locale]),
 

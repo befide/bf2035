@@ -1,7 +1,14 @@
 ---
 import { rowChartId, rowChartTileId } from "./utils"
 
-const { collection, dimension, title, accessorPath, dimensionIsArray = false } = Astro.props
+const {
+  collection,
+  dimension,
+  title,
+  accessorPath,
+  dimensionIsLocalized = false,
+  dimensionIsArray = false,
+} = Astro.props
 
 const tileId = rowChartTileId(collection, dimension)
 const chartId = rowChartId(collection, dimension)
@@ -13,6 +20,7 @@ const tileType = "row-chart"
   id={tileId}
   data-dc-collection={collection}
   data-dc-dimension={dimension}
+  data-dc-dimension-is-localized={dimensionIsLocalized}
   data-dc-dimension-is-array={dimensionIsArray}
   data-dc-accessor-path={accessorPath}
   data-dc-tile-type={tileType}

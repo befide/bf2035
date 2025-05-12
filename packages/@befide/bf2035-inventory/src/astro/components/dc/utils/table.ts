@@ -2,6 +2,8 @@ import { select, selectAll } from "d3"
 import { ascending, descending } from "d3-array"
 import { dataTable } from "dc"
 import type { Thesis } from "./ThesesExplorer.astro"
+import type { output } from "astro:schema"
+import type { Course } from "@/astro/store/courses"
 
 export const tableTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension
@@ -107,6 +109,24 @@ export const getTableConfig = (key) => {
             d.title +
             "</div>"
           )
+        },
+      },
+    ]
+  } else if (key === "courses") {
+    return [
+      {
+        label: "University",
+        field_name: "university",
+        sortable: true,
+        format: function (d: Course) {
+          return d.university
+        },
+      },
+      {
+        label: "Title",
+        sortable: false,
+        format: function (d: Course) {
+          return d.title
         },
       },
     ]

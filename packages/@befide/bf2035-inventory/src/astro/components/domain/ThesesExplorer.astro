@@ -1,39 +1,15 @@
 ---
 import "@/astro/styles/dc-explorer.css"
-import DCExplorerCount from "./DCExplorerCount.astro"
-import DCExplorerRowChart from "./DCExplorerRowChart.astro"
-import DCExplorerBarChart from "./DCExplorerBarChart .astro"
-import DCExplorerTable from "./DCExplorerTable.astro"
-import DCExplorer from "./DCExplorer.astro"
-import DCExplorerFilters from "./DCExplorerFilters.astro"
-import DCExplorerItems from "./DCExplorerItems.astro"
-
-export type Theses = Thesis[]
-
-export interface Thesis {
-  citationKey: string
-  title: string
-  author: Author
-  language: string
-  year: number
-  university: string
-  organizations: string[]
-  facilities: string[]
-  degree: string
-}
-
-export interface Author {
-  familyName: string
-  givenName: string
-  gender: string
-}
-
-const locale = Astro.currentLocale
+import DCExplorerCount from "@components/dc/DCExplorerCount.astro"
+import DCExplorerRowChart from "@components/dc/DCExplorerRowChart.astro"
+import DCExplorerBarChart from "@components/dc/DCExplorerBarChart .astro"
+import DCExplorerTable from "@components/dc/DCExplorerTable.astro"
+import DCExplorer from "@components/dc/DCExplorer.astro"
 ---
 
-<DCExplorer>
+<DCExplorer collection="theses">
   <div class="filters">
-    <!-- <h2>{Astro.locals.t("dc-explorer.filters")}</h2> -->
+   
     <details open>
       <summary>{Astro.locals.t("dc-explorer.filters")}</summary>
 
@@ -46,7 +22,7 @@ const locale = Astro.currentLocale
         title="Gender"
         accessorPath="author.gender"
       />
-      <DCExplorerRowChart collection="theses" dimension="university" title="University" />
+      <DCExplorerRowChart collection="theses" dimension="university"  title="University" />
       <DCExplorerRowChart
         collection="theses"
         dimension="facilities"

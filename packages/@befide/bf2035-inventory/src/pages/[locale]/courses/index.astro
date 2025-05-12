@@ -1,5 +1,5 @@
 ---
-import ThesesExplorer from "@components/domain/ThesesExplorer.astro"
+import CoursesExplorer from "@components/domain/CoursesExplorer.astro"
 import DCExplorerLayout from "@/astro/layouts/DCExplorerLayout.astro"
 
 export async function getStaticPaths(): Promise<any> {
@@ -12,8 +12,8 @@ export async function getStaticPaths(): Promise<any> {
 }
 ---
 
-<DCExplorerLayout title="Theses Explorer" description="Theses Explorer">
+<DCExplorerLayout title="Courses Explorer" description="Courses Explorer">
   <main>
-    <ThesesExplorer />
+    <CoursesExplorer />
   </main>
 </DCExplorerLayout>

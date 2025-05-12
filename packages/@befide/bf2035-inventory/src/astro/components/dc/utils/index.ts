@@ -23,5 +23,6 @@ export const getValue = (obj: any, path: string) => {
   if (!obj) return
 
   const keys = path.split(".")
+
   return keys.reduce((currentObj, key) => currentObj[key], obj)
 }
