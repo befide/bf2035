@@ -1,31 +1,22 @@
-import type { TaxonomyItem } from "@/content/config.taxonomyItems";
-import { getCollection } from "astro:content";
+import type { TaxonomyItem } from "@/content/config.taxonomyItems"
+import { getCollection } from "astro:content"
 
-import { flattenTreeNodes, getRoots } from "./content.tree";
-import { getValue } from "./index";
+import { flattenTreeNodes, getRoots } from "./content.tree"
+import { getValue } from "./index"
 
-export const taxonomyItemRoots = async (
-  isDomainSpecific: boolean | null,
-  lang = "en",
-) => {
-  console.log({ isDomainSpecific });
+export const taxonomyItemRoots = async (isDomainSpecific: boolean | null, lang = "en") => {
+  
   const items = (
     await getCollection(
       "taxonomyItems",
-      ({ data }) =>
-        isDomainSpecific === null || data.isDomainSpecific === isDomainSpecific,
+      ({ data }) => isDomainSpecific === null || data.isDomainSpecific === isDomainSpecific,
     )
   )
     .map((d) => d.data)
-    .sort((a, b) =>
-      getValue(a, "term." + lang).localeCompare(
-        getValue(b, "term." + lang),
-        lang,
-      ),
-    );
+    .sort((a, b) => getValue(a, "term." + lang).localeCompare(getValue(b, "term." + lang), lang))
 
-  return getTaxonomyItemRoots(items);
-};
+  return getTaxonomyItemRoots(items)
+}
 
 // export const genericTaxonomyItemRoots = async () => {
 //   let items = (await (getCollection(
@@ -36,9 +27,8 @@ export const taxonomyItemRoots = async (
 //   // return flattenTreeNodes(roots)
 // }
 export const getTaxonomyItemRoots = (items: TaxonomyItem[]) => {
-  return getRoots<TaxonomyItem>(items);
-};
-
+  return getRoots<TaxonomyItem>(items)
+}
 
 export const taxonomyForAPI = async (locale?: string) => {
   const roots = await taxonomyItemRoots(null, locale)
@@ -48,15 +38,15 @@ export const taxonomyForAPI = async (locale?: string) => {
     depth: item.depth,
     height: item.children.length,
     parentId: item.parentId,
+    label: item.data.term[locale],
     term: item.data.term,
     definition: item.data.definition,
     synonyms: item.data.synonyms,
-    type: (item.id.indexOf(":") > -1) ? "instance" : "class",
+    type: item.id.indexOf(":") > -1 ? "instance" : "class",
     isDomainSpecific: !!item.data.isDomainSpecific,
     reviewStatus: item.data.review.status.id,
     reviewReviewer: item.data.review.reviewer,
   }))
-
 
   return list
 }

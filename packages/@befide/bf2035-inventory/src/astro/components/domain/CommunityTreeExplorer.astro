@@ -6,17 +6,19 @@ import DCExplorer from "@components/dc/DCExplorer.astro"
 import DCExplorerTreeDataTable from "../dc/DCExplorerTreeDataTable.astro"
 ---
 
-<DCExplorer collection="taxonomy">
+<DCExplorer collection="community">
   <div class="dc-explorer__filters">
-    <DCExplorerCount collection="taxonomy" dimension="count" />
-   
+    <DCExplorerCount collection="community" dimension="count" />
+
     <DCExplorerRowChart
-      collection="taxonomy"
-      dimension="isDomainSpecific"
-      title="isDomainSpecific"
+      collection="community"
+      dimension="befideOrganizationCategories"
+      title="befideOrganizationCategories"
+      is-array={true}
+    
     />
   </div>
   <div class="dc-explorer_items">
-    <DCExplorerTreeDataTable collection="taxonomy" dimension="id" />
+    <DCExplorerTreeDataTable collection="community" dimension="id" />
   </div>
 </DCExplorer>

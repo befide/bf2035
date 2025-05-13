@@ -19,25 +19,25 @@ import { baseMixin } from "dc"
 // }
 
 const tree = (entries) => {
-  const singleRootedEntries = entries
-    .map((d) => ({
-      ...d,
-      parentId: d.parentId ? d.parentId : "ROOT",
-    }))
-    .concat({ id: "ROOT", parentId: null, term: {"de": "ROOT", "en": "ROOT"} })
+  const roots = entries.filter((d) => !d.parentId)
+
+  const rootedEngtries =
+    roots.length === 1
+      ? entries
+      : entries
+          .map((d) => ({
+            ...d,
+            parentId: d.parentId ? d.parentId : ":",
+          }))
+          .concat({ id: ":", parentId: null, term: { de: "ROOT", en: "ROOT" } })
 
   const root = stratify()
     .id((d) => d.id)
-    .parentId((d) => d.parentId)(singleRootedEntries)
+    .parentId((d) => d.parentId)(rootedEngtries)
 
-    const tree = hierarchy(root, (d) => d.children).sum((d) => (d.children?.length > 0 ? 0 : 1));
+  const tree = hierarchy(root, (d) => d.children).sum((d) => (d.children?.length > 0 ? 0 : 1))
 
-    console.log({root, tree})
-
-
-    return tree
-
-    
+  return tree
 
   // // Index the nodes by id, in case they come out of order.
   // nodes.forEach(function (d) {
@@ -160,8 +160,6 @@ export default function (parent, chartGroup?) {
     return s
   }
 
-
-
   function treeEntries() {
     let entries
     if (_order === ascending) {
@@ -185,10 +183,18 @@ export default function (parent, chartGroup?) {
 
         const summary = details.append("summary")
         summary.classed("node-header", true)
-        summary.append("span").classed("tree-node__label", true).text(child.data.data.term.en)
-        // summary.append("span").classed("tree-node__type", true).text(child.data.data.type)
-        summary.append("span").classed("tree-node__height", true).text(child.value)
-          
+        _chart
+          .columns()
+          .forEach((column) => {
+
+            summary.append("span").classed(column.className, true).text(column.format(child))
+          })
+            
+         
+        // summary.append("span").classed("tree-node__label", true).text(child.data.data.label)
+        // // summary.append("span").classed("tree-node__type", true).text(child.data.data.type)
+        // summary.append("span").classed("tree-node__height", true).text(child.value)
+
         const ul = details.append("ul")
         ul.classed("tree-data-list", true)
 
@@ -197,9 +203,8 @@ export default function (parent, chartGroup?) {
       } else {
         const header = li.append("div")
         header.classed("node-header", true)
-        header.append("span").classed("tree-node__label", true).text(child.data.data.term.en)
-        // div.append("span").classed("tree-node__height", true).text(child.value)
-        // div.append("span").classed("tree-node__type", true).text(child.data.data.type)
+        _chart.columns().forEach((column) => header.append("span").classed(column.className, true).text(column.format(child)))
+
         const body = li.append("div")
         body.classed("node-body", true)
         body.text(child.data.data.definition?.en)
@@ -212,7 +217,7 @@ export default function (parent, chartGroup?) {
       .root()
       .append("ul") //root ul
       .classed("tree-data-list", true)
-
+    console.log(treeEntries())
     makeElements(rootNodes, treeEntries())
   }
 

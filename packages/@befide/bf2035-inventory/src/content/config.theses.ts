@@ -61,8 +61,6 @@ export const defineThesesCollection = defineCollection({
     const dataRaw = JSON.parse(fs.readFileSync(INPUT_FILEPATH).toString());
 
     return dataRaw.flat().map((item: any) => {
-      // console.log('\n\n');
-      // console.log(JSON.stringify({ item }, null, 2));
       const dataItem: Theses = {
         id: item.key,
         title: item.data.title,

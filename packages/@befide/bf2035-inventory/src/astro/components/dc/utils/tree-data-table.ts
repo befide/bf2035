@@ -3,7 +3,6 @@ import { ascending, descending } from "d3-array"
 
 import treeDataTable from "./../dc-tree-data-table"
 
-
 import type { Thesis } from "@/astro/store/theses"
 import type { Course } from "@/astro/store/courses"
 import type { TaxonmomyItem } from "@/astro/store/taxonomy"
@@ -25,201 +24,115 @@ export function createTreeDataTableChart(
   const chartElementIdSelector = "#" + treeDataTableId(collection, dimension)
 
   const treeDataTableChart = treeDataTable(chartElementIdSelector)
-  createTableHeader()
-
+  // createTableHeader()
+  
   treeDataTableChart
     .dimension(cfDimension)
     .showSections(false)
     // .section("parentId")
     .size(Infinity)
-    .columns(tableHeaderConfig.map((entry) => entry.format))
+    .columns(tableHeaderConfig)
 
   treeDataTableChart.render()
-  select(tileElementIdSelector).classed("loading", false)
 
-  function createTableHeader() {
-    const tableHeaderTHs = select(chartElementIdSelector + " .table-header").selectAll("th")
+  // select(tileElementIdSelector).classed("loading", false)
 
-    // enter() into virtual selection and create new <th> header elements for each table column
-    tableHeaderTHs
-      .data(tableHeaderConfig)
-      .enter()
-      .append("th")
-      .classed("sortable", (d) => d.sortable)
-      .text((d: any) => d.label) // Accessor function for header titles
-      .filter((d) => d.sortable)
-      .on("click", tableHeaderCallback)
+  // function createTableHeader() {
+  //   const tableHeaderTHs = select(chartElementIdSelector + " .table-header").selectAll("th")
 
-    function tableHeaderCallback(this: any, d: any) {
-      // Highlight column header being sorted and show bootstrap glyphicon
+  //   // enter() into virtual selection and create new <th> header elements for each table column
+  //   tableHeaderTHs
+  //     .data(tableHeaderConfig)
+  //     .enter()
+  //     .append("th")
+  //     .classed("sortable", (d) => d.sortable)
+  //     .text((d: any) => d.label) // Accessor function for header titles
+  //     .filter((d) => d.sortable)
+  //     .on("click", tableHeaderCallback)
 
-      // sort_state = select(this).attr("class"d.sort_state === "ascending" ? "descending" : "ascending"
-      const sortState = select(this).attr("data-sort")
-      const newSortState = sortState === "ascending" ? "descending" : "ascending"
+  //   function tableHeaderCallback(this: any, d: any) {
+  //     // Highlight column header being sorted and show bootstrap glyphicon
 
-      select(chartElementIdSelector + " .table-header")
-        .selectAll("th") // Disable all highlighting and icons
-        .attr("data-sort", null)
+  //     // sort_state = select(this).attr("class"d.sort_state === "ascending" ? "descending" : "ascending"
+  //     const sortState = select(this).attr("data-sort")
+  //     const newSortState = sortState === "ascending" ? "descending" : "ascending"
 
-      select(this).attr("data-sort", newSortState)
+  //     select(chartElementIdSelector + " .table-header")
+  //       .selectAll("th") // Disable all highlighting and icons
+  //       .attr("data-sort", null)
 
-      const isAscendingOrder = newSortState === "ascending"
+  //     select(this).attr("data-sort", newSortState)
 
-      treeDataTableChart.order(isAscendingOrder ? ascending : descending).sortBy(function (datum) {
-        return datum[d.field_name]
-      })
+  //     const isAscendingOrder = newSortState === "ascending"
 
-      treeDataTableChart.redraw()
-      select(tileElementIdSelector).classed("loading", false)
-    }
-  }
-  select(tileElementIdSelector + " .download").on("click", () => {
-    // if (select('#download-type input:checked').node().value === 'table') {
-    //   // collect the data displayed in the table as an array of arrays
-    //   const data = Array.from(
-    //     document.querySelector(chartElementIdSelector)?.querySelectorAll('tr')?
-    //   ).map(row =>
-    //     Array.from(row.querySelectorAll('th, td')).map(c => c.innerText)
-    //   );
+  //     treeDataTableChart.order(isAscendingOrder ? ascending : descending).sortBy(function (datum) {
+  //       return datum[d.field_name]
+  //     })
 
-    //   // convert to a raw string
-    //   rawData = csvFormatRows(data);
-    // } else {
-    // collect the data from Crossfilter
-    const data = cfDimension.top(Infinity)
+  //     treeDataTableChart.redraw()
+  //     select(tileElementIdSelector).classed("loading", false)
+  //   }
+  // }
+  // select(tileElementIdSelector + " .download").on("click", () => {
+  //   // if (select('#download-type input:checked').node().value === 'table') {
+  //   //   // collect the data displayed in the table as an array of arrays
+  //   //   const data = Array.from(
+  //   //     document.querySelector(chartElementIdSelector)?.querySelectorAll('tr')?
+  //   //   ).map(row =>
+  //   //     Array.from(row.querySelectorAll('th, td')).map(c => c.innerText)
+  //   //   );
 
-    // convert to raw string
-    const rawData = csvFormat(data)
-    const fileName = dimension + ".csv"
-    const file = new File([rawData], fileName, {
-      lastModified: Date.now(),
-      type: "text/csv;charset=utf-8",
-    })
-    const exportUrl = URL.createObjectURL(file)
-    window.location.assign(exportUrl)
-    URL.revokeObjectURL(exportUrl)
-    // const blob = new Blob([rawData], {
-    //   type: 'text/csv;charset=utf-8',
-    //   filename: dimension + ".csv"
-    // });
+  //   //   // convert to a raw string
+  //   //   rawData = csvFormatRows(data);
+  //   // } else {
+  //   // collect the data from Crossfilter
+  //   const data = cfDimension.top(Infinity)
 
-    // const link=window.URL.createObjectURL(blob);
-    // window.location = link;
+  //   // convert to raw string
+  //   const rawData = csvFormat(data)
+  //   const fileName = dimension + ".csv"
+  //   const file = new File([rawData], fileName, {
+  //     lastModified: Date.now(),
+  //     type: "text/csv;charset=utf-8",
+  //   })
+  //   const exportUrl = URL.createObjectURL(file)
+  //   window.location.assign(exportUrl)
+  //   URL.revokeObjectURL(exportUrl)
+  //   // const blob = new Blob([rawData], {
+  //   //   type: 'text/csv;charset=utf-8',
+  //   //   filename: dimension + ".csv"
+  //   // });
 
-    // use HTML5 save support viahttps://github.com/eligrey/FileSaver.js
-    // saveAs(blob, 'data.csv');
-  })
+  //   // const link=window.URL.createObjectURL(blob);
+  //   // window.location = link;
+
+  //   // use HTML5 save support viahttps://github.com/eligrey/FileSaver.js
+  //   // saveAs(blob, 'data.csv');
+  // })
 }
 
 export const getTreeTableConfig = (key, locale) => {
+  
   if (key === "taxonomy") {
+   
     return [
-     
       {
-        label: "Term / definition",
-        field_name: "term",
-        sortable: true,
-        format: function (d: TaxonmomyItem) {
-          return (
-            "<div data-type='" +
-            d.type +
-            "' data-depth='" +
-            d.depth +
-            "'>" +
-            d.term[locale] +
-            "</div>"
-          )
-        },
-      },
-
-      {
-        label: "domain?",
-        field_name: "isDomainSpecfic",
-        sortable: true,
-        format: function (d: TaxonmomyItem) {
-          return d.isDomainSpecific
-        },
+        label: "Label",
+        className: "tree-node__label",
+        format: (d) => d.data.data.label,
       },
     ]
-  } else if (key === "theses") {
+  } else if (key === "community") {
     return [
       {
-        label: "University",
-        field_name: "university",
-        sortable: true,
-        format: function (d: Thesis) {
-          return d.university
-        },
+        label: "Label",
+        className: "tree-node__label",
+        format: (d) => d.data.data.label,
       },
       {
-        label: "Year",
-        field_name: "year",
-        sortable: true,
-        format: function (d: Thesis) {
-          return d.year
-        },
-      },
-      {
-        label: "Title",
-        sortable: false,
-        format: function (d: Thesis) {
-          return (
-            "<div class='name'><span class='givenName'>" +
-            d.author.givenName +
-            "</span> " +
-            "<span class='familyName bold sc'>" +
-            d.author.familyName +
-            "</span> <span class='gender' data-gender-icon='" +
-            d.author.gender +
-            "'>(" +
-            d.author.gender.substr(0, 1) +
-            ")</span></div>" +
-            "<div class='title'>" +
-            d.title +
-            "</div>"
-          )
-        },
-      },
-    ]
-  } else if (key === "courses") {
-    return [
-      {
-        label: "University",
-        field_name: "university",
-        sortable: true,
-        format: function (d: Course) {
-          return d.university
-        },
-      },
-      {
-        label: "Title",
-        sortable: false,
-        format: function (d: Course) {
-          return d.title
-        },
-      },
-      {
-        label: "Art",
-        sortable: false,
-        format: function (d: Course) {
-          return d.instanceOfTeachingEvent
-        },
-      },
-      {
-        label: "SWS",
-        sortable: true,
-        field_name: "sws",
-        format: function (d: Course) {
-          return d.sws
-        },
-      },
-      {
-        label: "Link",
-        sortable: false,
-        field_name: "link",
-        format: function (d: Course) {
-          return "<a target='_blank' href=" + d.link + ">Link to university</a>"
-        },
+        label: "Label",
+        className: "tree-node__value",
+        format: (d) => d.data.data.uniquePeopleCountRecursiveSum.total
       },
     ]
   } else {

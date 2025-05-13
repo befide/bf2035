@@ -25,6 +25,7 @@ const locale = Astro.currentLocale
     getValue,
     getLocale,
     createTreeDataTableChart,
+    getTreeTableConfig,
   } from "./utils"
   import { getCollectionIndex } from "@/astro/store"
   const locale = getLocale()
@@ -87,7 +88,7 @@ const locale = Astro.currentLocale
           } else if (dcTileType === "tree-data-table") {
             const idDimension = idx.dimension((d) => d)
 
-            createTreeDataTableChart(dcCollection, dcDimension, getTableConfig(dcCollection, locale), idDimension)
+            createTreeDataTableChart(dcCollection, dcDimension, getTreeTableConfig(dcCollection, locale), idDimension)
           }
         })
 

@@ -1,6 +1,6 @@
-export type Taxonmomy = TaxonmomyItem[]
+export type Organizations = Organization[]
 
-export interface TaxonmomyItem {
+export interface Organization {
   id: string
   parentId: string
   depth: number
@@ -14,13 +14,12 @@ export interface TaxonmomyItem {
   reviewReviewer: string
 }
 
-import {  computed,  task } from "nanostores"
-
+import { computed, task } from "nanostores"
 import { $locale } from "./locale"
 
-export const $taxonomy = computed($locale, (locale) =>
+export const $community = computed($locale, (locale) =>
   task(async () => {
-    return await fetch("/api/" + locale + "/taxonomy.json").then((response) => {
+    return await fetch("/api/" + locale + "/community.json").then((response) => {
       return response.json()
     })
   }),

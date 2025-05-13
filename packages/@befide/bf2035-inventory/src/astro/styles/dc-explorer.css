@@ -335,6 +335,7 @@ div[data-depth='1'] {
 
 .tree-node__label {
   font-weight: bold;
+  padding-right: 1rem;
 }
 
 .tree summary::marker,
