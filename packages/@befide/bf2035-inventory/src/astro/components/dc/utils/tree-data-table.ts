@@ -114,7 +114,6 @@ export function createTreeDataTableChart(
 export const getTreeTableConfig = (key, locale) => {
   
   if (key === "taxonomy") {
-   
     return [
       {
         label: "Label",
@@ -132,8 +131,17 @@ export const getTreeTableConfig = (key, locale) => {
       {
         label: "Label",
         className: "tree-node__value",
-        format: (d) => d.data.data.uniquePeopleCountRecursiveSum.total
+        format: (d) => d.data.data.uniquePeopleCountRecursiveSum.total,
       },
+    ]
+  } else if (key === "facilities") {
+    return [
+      {
+        label: "Label",
+        className: "tree-node__label",
+        format: (d) => d.data.data.label,
+      },
+      
     ]
   } else {
     return []

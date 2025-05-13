@@ -217,8 +217,9 @@ export default function (parent, chartGroup?) {
       .root()
       .append("ul") //root ul
       .classed("tree-data-list", true)
-    console.log(treeEntries())
-    makeElements(rootNodes, treeEntries())
+      
+    // console.log({ children: [treeEntries()] })
+    makeElements(rootNodes, treeEntries() )
   }
 
   _chart._doRedraw = function () {
