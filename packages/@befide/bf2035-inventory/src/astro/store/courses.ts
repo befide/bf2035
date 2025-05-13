@@ -2,12 +2,11 @@ export type Courses = Course[]
 
 export interface Course {
   title: string
-  language: string  
+  language: string
   university: string
   degree: string
   link: string
 }
-
 
 import { atom, onMount, task } from "nanostores"
 

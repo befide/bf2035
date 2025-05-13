@@ -122,7 +122,7 @@ export const getTableConfig = (key, locale) => {
             "' data-depth='" +
             d.depth +
             "'>" +
-            d.term[locale] +
+            d.data.term[locale] +
             "</div>"
           )
         },

@@ -74,8 +74,6 @@ body {
   background-size: 100% 1rem;
 }
 
-
-
 .sl-markdown-content {
 
   max-width: 70ch;
@@ -93,22 +91,23 @@ body {
   /* text-wrap: pretty; */
 }
 
-.sl-markdown-content ul {
+.sl-markdown-content ul:not(.tree-data-list) {
   page-break-inside: avoid;
-  margin-left: 1.5rem;
+    margin-left: 1.5rem;
 }
-
-.sl-markdown-content ul li {
+.sl-markdown-content li:not(.tree-data-node) {
   position: relative;
 }
 
-.sl-markdown-content ul li::before {
+
+.sl-markdown-content ul li:not(.tree-data-node):before {
   position: absolute;
-  left: -1.5rem;
-  width: 1.5rem;
-  content: "–";
-  text-align: center;
+    left: -1.5rem;
+    width: 1.5rem;
+    content: "–";
+    text-align: center;
 }
+
 
 .sl-markdown-content ol {
   list-style: decimal-leading-zero;

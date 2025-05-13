@@ -1,20 +1,59 @@
+import { stratify, hierarchy } from "d3"
 import { ascending, descending, groups } from "d3-array"
 import { baseMixin } from "dc"
 
-const nester = ({ key, sortKeys, sortValues, entries }) => {
-  if (sortValues) {
-    entries = [...entries].sort(sortValues)
-  }
-  let out = groups(entries, key)
-  if (sortKeys) {
-    out = out.sort(sortKeys)
-  }
+// const nester = ({ key, sortKeys, sortValues, entries }) => {
+//   if (sortValues) {
+//     entries = [...entries].sort(sortValues)
+//   }
+//   let out = groups(entries, key)
+//   if (sortKeys) {
+//     out = out.sort(sortKeys)
+//   }
 
-  // remap to d3@v5 structure
-  return out.map((e) => ({
-    key: `${e[0]}`, // d3@v5 always returns key as string
-    values: e[1],
-  }))
+//   // remap to d3@v5 structure
+//   return out.map((e) => ({
+//     key: `${e[0]}`, // d3@v5 always returns key as string
+//     values: e[1],
+//   }))
+// }
+
+const tree = (entries) => {
+  const singleRootedEntries = entries
+    .map((d) => ({
+      ...d,
+      parentId: d.parentId ? d.parentId : "ROOT",
+    }))
+    .concat({ id: "ROOT", parentId: null, term: {"de": "ROOT", "en": "ROOT"} })
+
+  const root = stratify()
+    .id((d) => d.id)
+    .parentId((d) => d.parentId)(singleRootedEntries)
+
+    const tree = hierarchy(root, (d) => d.children).sum((d) => (d.children?.length > 0 ? 0 : 1));
+
+    console.log({root, tree})
+
+
+    return tree
+
+    
+
+  // // Index the nodes by id, in case they come out of order.
+  // nodes.forEach(function (d) {
+  //   nodeById[d.id] = d
+  // })
+
+  // // Lazily compute children.
+  // nodes.forEach(function (d) {
+  //   if ("manager" in d) {
+  //     var manager = nodeById[d.manager]
+  //     if (manager.children) manager.children.push(d)
+  //     else manager.children = [d]
+  //   }
+  // })
+
+  return root
 }
 
 /**
@@ -73,9 +112,9 @@ export default function (parent, chartGroup?) {
   _chart._mandatoryAttributes(["dimension"])
 
   _chart._doRender = function () {
-    _chart.selectAll("tbody").remove()
+    _chart.selectAll("ul").remove()
 
-    renderRows(renderSections())
+    renderRoot()
 
     return _chart
   }
@@ -121,68 +160,9 @@ export default function (parent, chartGroup?) {
     return s
   }
 
-  function renderSections() {
-    // The 'original' example uses all 'functions'.
-    // If all 'functions' are used, then don't remove/add a header, and leave
-    // the html alone. This preserves the functionality of earlier releases.
-    // A 2nd option is a string representing a field in the data.
-    // A third option is to supply an Object such as an array of 'information', and
-    // supply your own _doColumnHeaderFormat and _doColumnValueFormat functions to
-    // create what you need.
-    let bAllFunctions = true
-    _columns.forEach(function (f) {
-      bAllFunctions = bAllFunctions & (typeof f === "function")
-    })
 
-    if (!bAllFunctions) {
-      // ensure one thead
-      let thead = _chart.selectAll("thead").data([0])
-      thead.exit().remove()
-      thead = thead.enter().append("thead").merge(thead) // with one tr
 
-      let headrow = thead.selectAll("tr").data([0])
-      headrow.exit().remove()
-      headrow = headrow.enter().append("tr").merge(headrow) // with a th for each column
-
-      const headcols = headrow.selectAll("th").data(_columns)
-      headcols.exit().remove()
-      headcols
-        .enter()
-        .append("th")
-        .merge(headcols)
-        .attr("class", HEAD_CSS_CLASS)
-        .html(function (d) {
-          return _chart._doColumnHeaderFormat(d)
-        })
-    }
-
-    const sections = _chart
-      .root()
-      .selectAll("tbody")
-      .data(nestEntries(), function (d) {
-        return _chart.keyAccessor()(d)
-      })
-
-    const rowSection = sections.enter().append("tbody")
-
-    if (_showSections === true) {
-      rowSection
-        .append("tr")
-        .attr("class", SECTION_CSS_CLASS)
-        .append("td")
-        .attr("class", LABEL_CSS_CLASS)
-        .attr("colspan", _columns.length)
-        .html(function (d) {
-          return _chart.keyAccessor()(d)
-        })
-    }
-
-    sections.exit().remove()
-
-    return rowSection
-  }
-
-  function nestEntries() {
+  function treeEntries() {
     let entries
     if (_order === ascending) {
       entries = _chart.dimension().bottom(_size)
@@ -190,48 +170,50 @@ export default function (parent, chartGroup?) {
       entries = _chart.dimension().top(_size)
     }
 
-    return nester({
-      key: (d) => d.id,
-      sortKeys: undefined,
-      entries,
-      sortValues: function (a, b) {
-        return _order(_sortBy(a), _sortBy(b))
-      }}
-    )
-    
-    // groups(
-    //   entries
-    //     .sort(function (a, b) {
-    //       return _order(_sortBy(a), _sortBy(b))
-    //     })
-    //     .slice(_beginSlice, _endSlice),
-    //   (d) => d["id"],
-    // )
+    return tree(entries)
   }
 
-  function renderRows(sections) {
-    console.log(nestEntries())
-    const rows = sections
-      .order()
-      .selectAll("tr." + ROW_CSS_CLASS)
-      .data(function (d) {
-        return d.values
-      })
+  function makeElements(parentDOM, myData) {
+    myData.children?.forEach(function (child) {
+      //add li element
+      //if children then make ul
+      const li = parentDOM.append("li")
+      li.classed("tree-data-node", true)
+      if (child.children?.length > 0) {
+        const details = li.append("details")
+        details.attr("open", true)
 
-    const rowEnter = rows.enter().append("tr").attr("class", ROW_CSS_CLASS)
+        const summary = details.append("summary")
+        summary.classed("node-header", true)
+        summary.append("span").classed("tree-node__label", true).text(child.data.data.term.en)
+        // summary.append("span").classed("tree-node__type", true).text(child.data.data.type)
+        summary.append("span").classed("tree-node__height", true).text(child.value)
+          
+        const ul = details.append("ul")
+        ul.classed("tree-data-list", true)
 
-    _columns.forEach(function (v, i) {
-      rowEnter
-        .append("td")
-        .attr("class", COLUMN_CSS_CLASS + " _" + i)
-        .html(function (d) {
-          return _chart._doColumnValueFormat(v, d)
-        })
+        //recurse pass ul as parentDOM
+        makeElements(ul, child)
+      } else {
+        const header = li.append("div")
+        header.classed("node-header", true)
+        header.append("span").classed("tree-node__label", true).text(child.data.data.term.en)
+        // div.append("span").classed("tree-node__height", true).text(child.value)
+        // div.append("span").classed("tree-node__type", true).text(child.data.data.type)
+        const body = li.append("div")
+        body.classed("node-body", true)
+        body.text(child.data.data.definition?.en)
+      }
     })
+  }
 
-    rows.exit().remove()
+  function renderRoot() {
+    const rootNodes = _chart
+      .root()
+      .append("ul") //root ul
+      .classed("tree-data-list", true)
 
-    return rows
+    makeElements(rootNodes, treeEntries())
   }
 
   _chart._doRedraw = function () {

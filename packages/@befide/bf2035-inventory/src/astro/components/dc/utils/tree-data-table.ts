@@ -30,6 +30,7 @@ export function createTreeDataTableChart(
   treeDataTableChart
     .dimension(cfDimension)
     .showSections(false)
+    // .section("parentId")
     .size(Infinity)
     .columns(tableHeaderConfig.map((entry) => entry.format))
 

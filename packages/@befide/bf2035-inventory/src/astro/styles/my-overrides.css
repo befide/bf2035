@@ -95,22 +95,9 @@ body {
   /* text-wrap: pretty; */
 }
 
-.sl-markdown-content ul {
-  page-break-inside: avoid;
-  margin-left: 1.5rem;
-}
 
-.sl-markdown-content ul li {
-  position: relative;
-}
 
-.sl-markdown-content ul li::before {
-  position: absolute;
-  left: -1.5rem;
-  width: 1.5rem;
-  content: "–";
-  text-align: center;
-}
+
 
 .sl-markdown-content ol {
   list-style: decimal-leading-zero;

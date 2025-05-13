@@ -100,10 +100,6 @@ export default defineConfig({
           link: "/data/taxonomy",
         },
         {
-          label: "Taxonomy Tree",
-          link: "/data/taxonomy-tree",
-        },
-        {
           label: "Organizations",
           link: "/data/organizations",
         },
