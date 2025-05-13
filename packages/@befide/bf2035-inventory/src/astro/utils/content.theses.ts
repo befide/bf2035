@@ -2,26 +2,26 @@ import { getCollection, getEntry } from "astro:content"
 import { descending, ascending } from "d3-array"
 
 const translations: Record<string, Record<string, string>> = {
-    ":male": {
-      en: "male",
-      de: "männlich",
-    },
-    ":female": {
-      en: "female",
-      de: "weiblich",
-    },
-    en: {
-      en: "English",
-      de: "Englisch",
-    },
-    de: {
-      en: "German",
-      de: "Deutsch",
-    },
-  }
-  const translate = (key: string, locale: string) => {
-    return translations[key] ? translations[key][locale] : key
-  }
+  ":male": {
+    en: "male",
+    de: "männlich",
+  },
+  ":female": {
+    en: "female",
+    de: "weiblich",
+  },
+  en: {
+    en: "English",
+    de: "Englisch",
+  },
+  de: {
+    en: "German",
+    de: "Deutsch",
+  },
+}
+const translate = (key: string, locale: string) => {
+  return translations[key] ? translations[key][locale] : key
+}
 
 export const allTheses = async () =>
   (await getCollection("theses"))
@@ -35,15 +35,14 @@ export const thesesForeAPI = async (locale: "en" | "de") => {
     theses.map(async (thesis) => {
       const university =
         thesis.data.universityRef && (await getEntry(thesis.data.universityRef)).data
-      const organizations = (await Promise.all(
-        thesis.data.organizationRefs.map(async (d) => await getEntry(d)),
-      )).map((d) => d.data)
+      const organizations = (
+        await Promise.all(thesis.data.organizationRefs.map(async (d) => await getEntry(d)))
+      ).map((d) => d.data)
       const facilities = (
         await Promise.all(thesis.data.facilityRefs.map(async (d) => await getEntry(d)))
       )
         .filter((d) => !!d)
         .map((d) => d.data)
-      
 
       return {
         reference: thesis.data.citationKey,
@@ -55,7 +54,7 @@ export const thesesForeAPI = async (locale: "en" | "de") => {
         },
         language: translate(thesis.data.language, locale),
         year: thesis.data.year,
-        university: university?.label.short,
+        university: university?.label.short[locale],
         organizations: organizations?.map((d) => d.label.short[locale]),
         facilities: facilities?.map((d) => d.label.short[locale]),
 

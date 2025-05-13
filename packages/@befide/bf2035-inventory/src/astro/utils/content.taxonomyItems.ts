@@ -1,7 +1,7 @@
 import type { TaxonomyItem } from "@/content/config.taxonomyItems";
 import { getCollection } from "astro:content";
 
-import { getRoots } from "./content.tree";
+import { flattenTreeNodes, getRoots } from "./content.tree";
 import { getValue } from "./index";
 
 export const taxonomyItemRoots = async (
@@ -38,3 +38,25 @@ export const taxonomyItemRoots = async (
 export const getTaxonomyItemRoots = (items: TaxonomyItem[]) => {
   return getRoots<TaxonomyItem>(items);
 };
+
+
+export const taxonomyForAPI = async (locale?: string) => {
+  const roots = await taxonomyItemRoots(null, locale)
+
+  const list = flattenTreeNodes(roots).map((item) => ({
+    id: item.id,
+    depth: item.depth,
+    height: item.children.length,
+    parentId: item.parentId,
+    term: item.data.term,
+    definition: item.data.definition,
+    synonyms: item.data.synonyms,
+    type: (item.id.indexOf(":") > -1) ? "instance" : "class",
+    isDomainSpecific: !!item.data.isDomainSpecific,
+    reviewStatus: item.data.review.status.id,
+    reviewReviewer: item.data.review.reviewer,
+  }))
+
+
+  return list
+}

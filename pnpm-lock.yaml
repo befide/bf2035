@@ -364,23 +364,23 @@ importers:
     dependencies:
       astro:
         specifier: 'catalog:'
-        version: 5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+        version: 5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
     devDependencies:
       '@astrojs/check':
         specifier: 'catalog:'
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.8.3)
       '@astrojs/mdx':
         specifier: 'catalog:'
-        version: 4.2.6(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 4.2.6(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       '@astrojs/sitemap':
         specifier: 'catalog:'
         version: 3.3.1
       '@astrojs/starlight':
         specifier: 'catalog:'
-        version: 0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       '@astrojs/starlight-tailwind':
         specifier: 'catalog:'
-        version: 4.0.1(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)))(tailwindcss@4.1.6)
+        version: 4.0.1(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)))(tailwindcss@4.1.6)
       '@astrojs/ts-plugin':
         specifier: 'catalog:'
         version: 1.10.4
@@ -446,19 +446,19 @@ importers:
         version: 1.0.0
       '@vite-pwa/astro':
         specifier: 'catalog:'
-        version: 1.1.0(@vite-pwa/assets-generator@1.0.0)(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))(vite-plugin-pwa@1.0.0(@vite-pwa/assets-generator@1.0.0)(vite@6.3.5(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.64.0)(terser@5.39.0)(yaml@2.7.1))(workbox-build@7.3.0)(workbox-window@7.3.0))
+        version: 1.1.0(@vite-pwa/assets-generator@1.0.0)(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))(vite-plugin-pwa@1.0.0(@vite-pwa/assets-generator@1.0.0)(vite@6.3.5(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.64.0)(terser@5.39.0)(yaml@2.7.1))(workbox-build@7.3.0)(workbox-window@7.3.0))
       '@zokki/astro-purgecss':
         specifier: 'catalog:'
-        version: 1.0.4(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 1.0.4(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       astro-d2:
         specifier: 'catalog:'
-        version: 0.7.0(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 0.7.0(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       astro-icon:
         specifier: 'catalog:'
         version: 1.1.5
       astro-pagefind:
         specifier: 'catalog:'
-        version: 1.8.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 1.8.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       autoprefixer:
         specifier: 'catalog:'
         version: 10.4.21(postcss@8.5.3)
@@ -581,7 +581,7 @@ importers:
         version: 0.1.5
       starlight-sidebar-topics:
         specifier: 'catalog:'
-        version: 0.6.0(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)))
+        version: 0.6.0(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)))
       tailwind:
         specifier: 'catalog:'
         version: 4.0.0
@@ -626,10 +626,13 @@ importers:
     dependencies:
       astro:
         specifier: 'catalog:'
-        version: 5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+        version: 5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
       astro-breadcrumbs:
         specifier: 'catalog:'
-        version: 3.3.1(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 3.3.1(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+      starlight-fullview-mode:
+        specifier: ^0.2.3
+        version: 0.2.3(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)))
       tailwindcss:
         specifier: 'catalog:'
         version: 4.1.6
@@ -639,16 +642,16 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.8.3)
       '@astrojs/mdx':
         specifier: 'catalog:'
-        version: 4.2.6(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 4.2.6(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       '@astrojs/sitemap':
         specifier: 'catalog:'
         version: 3.3.1
       '@astrojs/starlight':
         specifier: 'catalog:'
-        version: 0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       '@astrojs/starlight-tailwind':
         specifier: 'catalog:'
-        version: 4.0.1(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)))(tailwindcss@4.1.6)
+        version: 4.0.1(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)))(tailwindcss@4.1.6)
       '@astrojs/ts-plugin':
         specifier: 'catalog:'
         version: 1.10.4
@@ -717,19 +720,19 @@ importers:
         version: 1.0.0
       '@vite-pwa/astro':
         specifier: 'catalog:'
-        version: 1.1.0(@vite-pwa/assets-generator@1.0.0)(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))(vite-plugin-pwa@1.0.0(@vite-pwa/assets-generator@1.0.0)(vite@6.3.5(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.64.0)(terser@5.39.0)(yaml@2.7.1))(workbox-build@7.3.0)(workbox-window@7.3.0))
+        version: 1.1.0(@vite-pwa/assets-generator@1.0.0)(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))(vite-plugin-pwa@1.0.0(@vite-pwa/assets-generator@1.0.0)(vite@6.3.5(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.64.0)(terser@5.39.0)(yaml@2.7.1))(workbox-build@7.3.0)(workbox-window@7.3.0))
       '@zokki/astro-purgecss':
         specifier: 'catalog:'
-        version: 1.0.4(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 1.0.4(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       astro-d2:
         specifier: 'catalog:'
-        version: 0.7.0(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 0.7.0(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       astro-icon:
         specifier: 'catalog:'
         version: 1.1.5
       astro-pagefind:
         specifier: 'catalog:'
-        version: 1.8.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 1.8.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       autoprefixer:
         specifier: 'catalog:'
         version: 10.4.21(postcss@8.5.3)
@@ -855,7 +858,7 @@ importers:
         version: 0.1.5
       starlight-sidebar-topics:
         specifier: 'catalog:'
-        version: 0.6.0(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)))
+        version: 0.6.0(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)))
       tailwind:
         specifier: 'catalog:'
         version: 4.0.0
@@ -2368,6 +2371,9 @@ packages:
   '@humanwhocodes/retry@0.4.2':
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/mdi@1.2.3':
+    resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
 
   '@iconify/tools@4.1.2':
     resolution: {integrity: sha512-q6NzLQYEN9zkDfcyBqD3vItHcZw97w/s++3H3TBxUORr57EfHxj6tOW6fyufDjMq+Vl56WXWaPx1csBPYlI5CA==}
@@ -7624,6 +7630,12 @@ packages:
   stack-trace@0.0.10:
     resolution: {integrity: sha512-KGzahc7puUKkzyMt+IqAep+TVNbKP+k2Lmwhub39m1AsTSkaDutx56aDCo+HLDzf/D26BIHTJWNiTG1KAJiQCg==}
 
+  starlight-fullview-mode@0.2.3:
+    resolution: {integrity: sha512-8sw/VKhWAtcD5eOUBz4T8U/rEtteOXXyKTp0QwNXlwAW4zgIb6qKsnRXOQearHMp3GTSUH/b+tISHrtz9+/ePQ==}
+    engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.32'
+
   starlight-sidebar-topics@0.6.0:
     resolution: {integrity: sha512-ysmOR7zaHYKtk18/mpW4MbEMDioR/ZBsisu9bdQrq0v9BlHWpW7gAdWlqFWO9zdv1P7l0Mo1WKd0wJ0UtqOVEQ==}
     engines: {node: '>=18'}
@@ -10221,6 +10233,10 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
+  '@iconify-json/mdi@1.2.3':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify/tools@4.1.2':
     dependencies:
       '@iconify/types': 2.0.0
@@ -11462,9 +11478,9 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-breadcrumbs@3.3.1(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
+  astro-breadcrumbs@3.3.1(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
     dependencies:
-      astro: 5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+      astro: 5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
 
   astro-capo@0.0.1(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
     dependencies:
@@ -16844,6 +16860,11 @@ snapshots:
       readable-stream: 3.6.2
 
   stack-trace@0.0.10: {}
+
+  starlight-fullview-mode@0.2.3(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))):
+    dependencies:
+      '@astrojs/starlight': 0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+      '@iconify-json/mdi': 1.2.3
 
   starlight-sidebar-topics@0.6.0(@astrojs/starlight@0.34.3(astro@5.7.12(@types/node@22.14.1)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@2.79.2)(stylus@0.64.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))):
     dependencies:

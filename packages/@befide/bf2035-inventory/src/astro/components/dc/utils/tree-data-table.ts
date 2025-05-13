@@ -1,36 +1,39 @@
 import { csvFormat, select } from "d3"
 import { ascending, descending } from "d3-array"
-import { dataTable } from "dc"
+
+import treeDataTable from "./../dc-tree-data-table"
+
+
 import type { Thesis } from "@/astro/store/theses"
 import type { Course } from "@/astro/store/courses"
 import type { TaxonmomyItem } from "@/astro/store/taxonomy"
 
-export const tableTileId = (collection: string, dimension: string) => {
+export const treeDataTableTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension
 }
-export const tableId = (collection: string, dimension: string) => {
-  return "dc-explorer__table--" + collection + "-" + dimension
+export const treeDataTableId = (collection: string, dimension: string) => {
+  return "dc-explorer__tree-table--" + collection + "-" + dimension
 }
 
-export function createTableChart(
+export function createTreeDataTableChart(
   collection: string,
   dimension: string,
   tableHeaderConfig: any,
   cfDimension: any,
 ) {
-  const tileElementIdSelector = "#" + tableTileId(collection, dimension)
-  const chartElementIdSelector = "#" + tableId(collection, dimension)
+  const tileElementIdSelector = "#" + treeDataTableTileId(collection, dimension)
+  const chartElementIdSelector = "#" + treeDataTableId(collection, dimension)
 
-  const tableChart = dataTable(chartElementIdSelector)
+  const treeDataTableChart = treeDataTable(chartElementIdSelector)
   createTableHeader()
 
-  tableChart
+  treeDataTableChart
     .dimension(cfDimension)
     .showSections(false)
     .size(Infinity)
     .columns(tableHeaderConfig.map((entry) => entry.format))
 
-  tableChart.render()
+  treeDataTableChart.render()
   select(tileElementIdSelector).classed("loading", false)
 
   function createTableHeader() {
@@ -61,11 +64,11 @@ export function createTableChart(
 
       const isAscendingOrder = newSortState === "ascending"
 
-      tableChart.order(isAscendingOrder ? ascending : descending).sortBy(function (datum) {
+      treeDataTableChart.order(isAscendingOrder ? ascending : descending).sortBy(function (datum) {
         return datum[d.field_name]
       })
 
-      tableChart.redraw()
+      treeDataTableChart.redraw()
       select(tileElementIdSelector).classed("loading", false)
     }
   }
@@ -107,7 +110,7 @@ export function createTableChart(
   })
 }
 
-export const getTableConfig = (key, locale) => {
+export const getTreeTableConfig = (key, locale) => {
   if (key === "taxonomy") {
     return [
      

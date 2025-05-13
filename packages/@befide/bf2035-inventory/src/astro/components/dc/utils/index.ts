@@ -2,6 +2,7 @@ export * from "./count-chart"
 export * from "./bar-chart"
 export * from "./row-chart"
 export * from "./table"
+export * from "./tree-data-table"
 
 
 export const charts = new Map<string, any>()

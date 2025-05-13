@@ -5,13 +5,10 @@ template: splash
 hero:
   title: Inventory
   tagline: Beschleunigerforschung 2035
-  actions:
-    - text: Get started
-      link: /project/
-      icon: right-arrow
-next:
-  link: /project/
-  label: Projekt
+  # actions:
+  #   - text: Get started
+  #     link: /project/
+  #     icon: right-arrow
 ---
 
 
@@ -19,9 +16,42 @@ import {Card, CardGrid} from '@astrojs/starlight/components';
 
 ## Next steps
 
+<ul class="tree">
+  <li>
+    <details open>
+      <summary>Giant planets</summary>
+      <ul>
+        <li>
+          <details>
+            <summary>Gas giants</summary>
+            <ul>
+              <li>Jupiter</li>
+              <li>Saturn</li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Ice giants</summary>
+            <ul>
+              <li>Uranus</li>
+              <li>Neptune</li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
 <CardGrid stagger>
-  <Card title="Get started" icon="seti:db">
-    Get started with a [project description.](/project)
+  <Card title="Explore the data" icon="seti:db">
+
+    * [Courses](/en/data/courses)
+    * [Theses](/en/data/theses)
+
+
+
   </Card>
   <Card title="View the keywords" icon="seti:db">
     In preparation for the strategy, we developed a [typed and nested

@@ -6,7 +6,7 @@ const { collection } = Astro.props
 const locale = Astro.currentLocale
 ---
 
-<dc-explorer class="explorer" data-collection={collection} data-locale={locale}>
+<dc-explorer class="dc-explorer" data-collection={collection} data-locale={locale}>
   <slot />
 </dc-explorer>
 
@@ -24,6 +24,7 @@ const locale = Astro.currentLocale
     getTableConfig,
     getValue,
     getLocale,
+    createTreeDataTableChart,
   } from "./utils"
   import { getCollectionIndex } from "@/astro/store"
   const locale = getLocale()
@@ -59,7 +60,7 @@ const locale = Astro.currentLocale
 
             const valuePath =
               dcDimensionIsLocalized === "true"
-                ? (dcAccessorPath || dcDimension) 
+                ? dcAccessorPath || dcDimension
                 : dcAccessorPath || dcDimension
 
             const dimension = idx.dimension(
@@ -81,13 +82,18 @@ const locale = Astro.currentLocale
           } else if (dcTileType === "table") {
             const idDimension = idx.dimension((d) => d)
 
-            createTableChart(dcCollection, dcDimension, getTableConfig(dcCollection), idDimension)
+            createTableChart(dcCollection, dcDimension, getTableConfig(dcCollection, locale), idDimension)
+          
+          } else if (dcTileType === "tree-data-table") {
+            const idDimension = idx.dimension((d) => d)
+
+            createTreeDataTableChart(dcCollection, dcDimension, getTableConfig(dcCollection, locale), idDimension)
           }
         })
 
         renderAll()
 
-        const resetButtons = document.querySelectorAll("button.reset")
+        const resetButtons = document.querySelectorAll(".dc-explorer__filter__reset button")
         resetButtons.forEach((button) => {
           button.addEventListener("click", function (e) {
             const chartId = (e.currentTarget as HTMLElement).getAttribute("data-chart")

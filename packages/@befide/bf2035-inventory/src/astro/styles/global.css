@@ -3,24 +3,3 @@
 @import "./print.css";
 @import "./property-list.css";
 @import "./my-overrides.css";
-/* @import "./dc-explorer.css"; */
-
-html {
-  font-size: var(--line-height);
-  line-height: 1rem;
-  background-image: linear-gradient(
-    rgba(160, 160, 160, 0.3) 0px,
-    transparent 1px,
-    transparent 100%
-  );
-
-  background-size: 100% 1rem;
-}
-
-.bold {
-  font-weight: var(--font-weight-bold);
-}
-.sc {
-  font-variant-caps: all-small-caps;
-  font-size: var(--text-base);
-}

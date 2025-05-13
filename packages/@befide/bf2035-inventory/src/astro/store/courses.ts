@@ -5,6 +5,7 @@ export interface Course {
   language: string  
   university: string
   degree: string
+  link: string
 }
 
 

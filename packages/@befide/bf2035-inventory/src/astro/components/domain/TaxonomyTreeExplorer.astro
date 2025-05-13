@@ -1,0 +1,22 @@
+---
+import "@/astro/styles/dc-explorer.css"
+import DCExplorerCount from "@components/dc/DCExplorerCount.astro"
+import DCExplorerRowChart from "@components/dc/DCExplorerRowChart.astro"
+import DCExplorer from "@components/dc/DCExplorer.astro"
+import DCExplorerTreeDataTable from "../dc/DCExplorerTreeDataTable.astro"
+---
+
+<DCExplorer collection="taxonomy">
+  <div class="dc-explorer__filters">
+    <DCExplorerCount collection="taxonomy" dimension="count" />
+    <DCExplorerRowChart collection="taxonomy" dimension="type" title="type" />
+    <DCExplorerRowChart
+      collection="taxonomy"
+      dimension="isDomainSpecific"
+      title="isDomainSpecific"
+    />
+  </div>
+  <div class="dc-explorer_items">
+    <DCExplorerTreeDataTable collection="taxonomy" dimension="id" />
+  </div>
+</DCExplorer>

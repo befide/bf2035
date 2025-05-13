@@ -25,13 +25,13 @@ const tileType = "row-chart"
   data-dc-accessor-path={accessorPath}
   data-dc-tile-type={tileType}
 >
-  <header class="filter__header">
-    <div class="filter__title">{title}</div>
-    <div class="filter__reset">
+  <header class="dc-explorer__tile__header">
+    <div class="dc-explorer__tile__title">{title}</div>
+    <div class="dc-explorer__filter__reset">
       <button class="reset" data-chart={chartId}>Reset</button>
     </div>
   </header>
-  <div class="filter__body">
+  <div class="dc-explorer__tile__body">
     <div id={chartId} class="explorer__chart explorer__chart--row"></div>
   </div>
 </section>

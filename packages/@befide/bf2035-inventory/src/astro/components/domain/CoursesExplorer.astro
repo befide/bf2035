@@ -7,9 +7,7 @@ import DCExplorerTable from "../dc/DCExplorerTable.astro"
 ---
 
 <DCExplorer collection="courses">
-  <div class="filters">
-    <details open>
-      <summary>{Astro.locals.t("dc-explorer.filters")}</summary>
+  <div class="dc-explorer__filters">
 
       <DCExplorerCount collection="courses" dimension="count" />
       <DCExplorerRowChart
@@ -42,10 +40,9 @@ import DCExplorerTable from "../dc/DCExplorerTable.astro"
         title="Language"
         dimensionIsArray={true}
       />
-    </details>
+   
   </div>
-  <div class="explorer__items">
-    <h2>{Astro.locals.t("dc-explorer.items")}</h2>
+  <div class="dc-explorer_items">
     <DCExplorerTable collection="courses" dimension="id" />
   </div>
 </DCExplorer>

@@ -19,6 +19,8 @@ import spaceCommander from "./src/astro/utils/space-commander.ts"
 import tailwindcss from "@tailwindcss/vite"
 import UnpluginUnused from "unplugin-unused/vite"
 
+import starlightFullViewMode from "starlight-fullview-mode"
+
 // https://astro.build/config
 export default defineConfig({
   devToolbar: {
@@ -77,12 +79,12 @@ export default defineConfig({
         en: { label: "English" },
         de: { label: "Deutsch", lang: "de" },
       },
-      title: "BF2035 Meta",
+      title: "BF2035 Inventory",
       disable404Route: true,
-      components: {
-        Sidebar: "@components/Sidebar.astro",
-        Header: "@components/Header.astro",
-      },
+      // components: {
+      //   Sidebar: "@components/Sidebar.astro",
+      //   Header: "@components/Header.astro",
+      // },
 
       customCss: [
         "@/astro/styles/global.css",
@@ -90,28 +92,32 @@ export default defineConfig({
         "@fontsource/barlow-semi-condensed/700.css",
       ],
 
-      plugins: [],
+      // plugins: [starlightFullViewMode({ rightSidebarEnabled: true, leftSidebarExpandedWidth: "200px" })],
       sidebar: [
         // A topic representing a guide section of your project.
         {
           label: "Taxonomy",
-          link: "/taxonomy",
+          link: "/data/taxonomy",
+        },
+        {
+          label: "Taxonomy Tree",
+          link: "/data/taxonomy-tree",
         },
         {
           label: "Organizations",
-          link: "/organizations",
+          link: "/data/organizations",
         },
         {
           label: "Facilities",
-          link: "/facilities",
+          link: "/data/facilities",
         },
         {
-          label: "Teaching",
-          link: "/teaching",
+          label: "Courses",
+          link: "/data/courses",
         },
         {
           label: "Theses",
-          link: "/theses",
+          link: "/data/theses",
         },
       ],
     }),

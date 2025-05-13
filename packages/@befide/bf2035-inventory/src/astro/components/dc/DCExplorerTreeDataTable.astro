@@ -1,11 +1,11 @@
 ---
-import { tableId, tableTileId } from "./utils/index"
+import { treeDataTableId, treeDataTableTileId } from "./utils/index"
 
 const { collection, dimension, title } = Astro.props
 
-const tileId = tableTileId(collection, dimension)
-const chartId = tableId(collection, dimension)
-const tileType = "table"
+const tileId = treeDataTableTileId(collection, dimension)
+const chartId = treeDataTableId(collection, dimension)
+const tileType = "tree-data-table"
 ---
 
 <section
@@ -16,6 +16,7 @@ const tileType = "table"
   data-dc-tile-type={tileType}
 >
   <div class="dc-explorer__tile__header">
+    <h2>{title}</h2>
     <button class="download">Download as csv</button>
   </div>
   <div class="dc-explorer__tile__body">

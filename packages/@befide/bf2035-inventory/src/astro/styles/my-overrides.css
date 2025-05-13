@@ -1,18 +1,22 @@
+@layer my-reset, starlight, my-overrides;
+
+
 @layer my-overrides {
 
   :root {
 
-    --sl-line-height: 1.25rem;
-    --sl-line-height-headings: 1.25rem;
+ 
+    --sl-line-height: 1rem;
+    --sl-line-height-headings: 1rem;
 
 
     --sl-text-2xs: 0.6rem;
     /* 12px */
-    --sl-text-xs: 0.65rem;
+    --sl-text-xs: 0.7rem;
     /* 13px */
-    --sl-text-sm: 0.7rem;
+    --sl-text-sm: 0.8rem;
     /* 14px */
-    --sl-text-base: 0.8rem;
+    --sl-text-base: 0.9rem;
     /* 16px */
     --sl-text-lg: 0.9rem;
     /* 18px */
@@ -21,13 +25,13 @@
     --sl-text-2xl: 1.2rem;
     /* 24px */
 
-    --sl-nav-height: 3.5rem;
+    --sl-nav-height: 2rem;
     --sl-nav-pad-x: 1rem;
     --sl-nav-pad-y: 0.75rem;
     --sl-mobile-toc-height: 3rem;
-    --sl-sidebar-width: 15rem;
+    --sl-sidebar-width: 10rem;
     --sl-sidebar-pad-x: .5rem;
-    --sl-content-width: 45rem;
+    --sl-content-width: 100%;
     --sl-content-pad-x: 1rem;
     --sl-menu-button-size: 1rem;
     --sl-nav-gap: var(--sl-content-pad-x);
@@ -37,13 +41,15 @@
     --sl-sidebar-item-padding-inline: .25rem;
 
     --sl-text-body: var(--sl-text-base);
-    --sl-text-body-sm: var(--sl-text-xs);
+    --sl-text-body-sm: var(--sl-text-sm);
     --sl-text-code: var(--sl-text-sm);
     --sl-text-code-sm: var(--sl-text-xs);
     --sl-text-h1: var(--sl-text-2xl);
     --sl-text-h2: var(--sl-text-xl);
     --sl-text-h3: var(--sl-text-lg);
     --sl-text-h4: var(--sl-text-base);
+
+    --sl-font: 'Barlow Semi Condensed', serif;
   }
 
   @media (min-width: 50em) {
@@ -74,13 +80,9 @@ body {
   background-size: 100% 1rem;
 }
 
-
-
-.sl-markdown-content {
-
-  max-width: 70ch;
+.sl-markdown-content * {
+  margin: 0;
 }
-
 .sl-markdown-content .small {
   font-size: var(--sl-text-sm);
 }
@@ -233,3 +235,16 @@ body {
   height: 3rem;
 }
 
+
+
+.content-panel {
+  padding: 0 1rem;
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+.sc {
+  font-variant-caps: all-small-caps;
+  font-size: var(--text-base);
+}
