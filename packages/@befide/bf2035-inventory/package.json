@@ -20,8 +20,6 @@
   },
   "dependencies": {
     "astro": "catalog:",
-    "astro-breadcrumbs": "catalog:",
-    "starlight-fullview-mode": "^0.2.3",
     "tailwindcss": "catalog:"
   },
   "devDependencies": {

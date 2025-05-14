@@ -4,6 +4,7 @@ import { dataTable } from "dc"
 import type { Thesis } from "@/astro/store/theses"
 import type { Course } from "@/astro/store/courses"
 import type { TaxonmomyItem } from "@/astro/store/taxonomy"
+import type { Organization } from "@/content/config.organizations"
 
 export const tableTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension
@@ -176,6 +177,18 @@ export const getTableConfig = (key, locale) => {
           )
         },
       },
+    ]
+  } else if (key === "organizations") {
+    return [
+      {
+        label: "label",
+        field_name: "label",
+        sortable: true,
+        format: function (d: Organization) {
+          return "<div class='fullName bold'>" + d.label__short +"</div>" + "<div class='fullName'>" + d.label__fullName +"</div>"
+        },
+      },
+    
     ]
   } else if (key === "courses") {
     return [

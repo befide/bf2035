@@ -43,6 +43,7 @@ export const taxonomyForAPI = async (locale?: string) => {
     definition: item.data.definition,
     synonyms: item.data.synonyms,
     type: item.id.indexOf(":") > -1 ? "instance" : "class",
+    domain: (item.data.isDomainSpecific) ? "domain" : "generic",
     isDomainSpecific: !!item.data.isDomainSpecific,
     reviewStatus: item.data.review.status.id,
     reviewReviewer: item.data.review.reviewer,

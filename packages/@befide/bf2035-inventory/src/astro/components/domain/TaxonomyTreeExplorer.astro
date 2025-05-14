@@ -9,11 +9,11 @@ import DCExplorerTreeDataTable from "../dc/DCExplorerTreeDataTable.astro"
 <DCExplorer collection="taxonomy">
   <div class="dc-explorer__filters">
     <DCExplorerCount collection="taxonomy" dimension="count" />
-   
+
     <DCExplorerRowChart
       collection="taxonomy"
-      dimension="isDomainSpecific"
-      title="isDomainSpecific"
+      dimension="domain"
+      title="Generic or domain specific"
     />
   </div>
   <div class="dc-explorer_items">

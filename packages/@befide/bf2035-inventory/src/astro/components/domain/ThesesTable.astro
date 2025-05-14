@@ -1,8 +1,5 @@
 ---
 import { allTheses, allThesesForUniversity } from "@utils/content.theses"
-
-import ThesesExplorer from "@components/dc/ThesesExplorer.astro"
-
 import Badge from "../Badge.astro"
 import { getEntry } from "astro:content"
 import type { CollectionEntry } from "astro:content"
@@ -30,9 +27,6 @@ const getUniversity = async (thesis: CollectionEntry<"theses">) => {
 ---
 
 <div class="explorer">
-  <div class="explorer__filters">
-    <ThesesExplorer />
-  </div>
   <div class="explorer__entries">
     <p>
       There are {theses.length} doctoral theses being published since 2010 listed in our database, of

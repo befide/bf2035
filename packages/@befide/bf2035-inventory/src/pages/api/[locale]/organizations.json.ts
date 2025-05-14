@@ -1,6 +1,7 @@
-import { communityForAPI } from "@/astro/utils"
+import { organizationsForAPI } from "@/astro/utils"
 
 import type { APIRoute, } from "astro"
+import { getCollection, getEntry } from "astro:content"
 
 export async function getStaticPaths() {
   const locales = ["en", "de"]
@@ -11,10 +12,15 @@ export async function getStaticPaths() {
   }))
 }
 
-export const GET: APIRoute = async ({ params }) => {
-  const { locale } = params
+export const GET: APIRoute = async (context) => {
+  const { locale } = context.params
+  
+  
 
-  const organizations = await communityForAPI(locale)
+  
+
+  
+  const organizations = await organizationsForAPI(locale)
 
   try {
     return new Response(JSON.stringify(organizations, null, 2))

@@ -77,7 +77,7 @@ export const OrganizationSchema = z.object({
   hasParent: reference("organizations").optional().nullable(),
   hasTopLevelOrganization: reference("organizations").optional().nullable(),
   befideOrganizationCategories: z.preprocess((input) => {
-    return typeof input === "string" ? input.split(/\s?,\s?/) : input;
+    return typeof input === "string" ? input.split(/\s?,\s?/).toSorted() : input;
   }, z.array(BefideOrganizationMetaBefideOrganizationCategories)),
 
   isPartOfCommunity: z.boolean(),
@@ -134,10 +134,7 @@ export const defineOrganizationCollection = defineCollection({
     const roots = getOrganizationRoots(organizations);
     const communityRoot = roots.find((root) => root.id === ":");
     if (communityRoot) rollupUniquePeopleCountSum(communityRoot);
-
-    // console.log(organizations)
-
-    
+    // console.log(organizations) 
 
     return organizations;
   },

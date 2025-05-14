@@ -1,4 +1,4 @@
-import { getCollection } from "astro:content"
+import { getCollection, getEntry } from "astro:content"
 
 import { flattenTreeNodes, getRoots, type TreeNode } from "./content.tree"
 import { type Organization, peopleCountDiscriminators } from "@/content/config.organizations"
@@ -91,7 +91,7 @@ export const getOrganizationsRoots = (items: Organization[]) => {
   return getRoots<Organization>(items)
 }
 
-export const organizationsForAPI = async (locale: string) => {
+export const communityForAPI = async (locale: string) => {
   const communityOrganizations = await allOrganizations()
 
   const roots = getOrganizationRoots(communityOrganizations)
@@ -101,7 +101,8 @@ export const organizationsForAPI = async (locale: string) => {
 
   const newRoot = rollupUniquePeopleCountSum(communityRoot)
 
-  // console.log(flattenTreeNodes(newRoot.children))
+  const i18n = await getEntry("i18n", locale)
+
 
   const list = flattenTreeNodes([newRoot])
     .toSorted((a, b) => ascending(a.id, b.id))
@@ -116,11 +117,50 @@ export const organizationsForAPI = async (locale: string) => {
       label__fullName: item.data.label.fullName[locale],
       label__short: item.data.label.short[locale],
       uniquePeopleCountRecursiveSum: item.data.uniquePeopleCountRecursiveSum,
-      befideOrganizationCategories: item.data.befideOrganizationCategories,
+      befideOrganizationCategories: item.data.befideOrganizationCategories.map(
+        (c) => i18n?.data["organizationCategory.full." + c],
+      ),
+
       instanceOf: item.data.isInstanceOf.id,
       location__country__code: item.data.location?.country?.code,
       location__city: item.data.location?.city,
     }))
 
   return list
+}
+
+
+export const organizationsForAPI = async (locale: string) => {
+
+  const i18n = await getEntry("i18n", locale)
+
+
+  const organizations = (await allCommunityTopLevelOrganizations())
+  return await Promise.all(organizations.map(async (o) => {
+
+    const instanceOf = o.data.isInstanceOf && (await getEntry(o.data.isInstanceOf)).data.term[locale]
+          
+    
+    return {
+      id: o.id,
+      instanceOf: instanceOf,
+      label: o.data.label.fullName[locale],
+      description: o.data.description[locale],
+      label__fullName: o.data.label.fullName[locale],
+      label__short: o.data.label.short[locale],
+      location__country: i18n?.data["country.name." + o.data.location?.country?.code],
+      location__city: o.data.location?.city,
+      befideOrganizationCategories: o.data.befideOrganizationCategories.map(
+        (c) => i18n?.data["organizationCategory.full." + c],
+      ),
+    }
+
+
+
+  }))
+  
+
+  return organizations
+
+
 }

@@ -1,11 +1,5 @@
-import { csvFormat, select } from "d3"
-import { ascending, descending } from "d3-array"
 
 import treeDataTable from "./../dc-tree-data-table"
-
-import type { Thesis } from "@/astro/store/theses"
-import type { Course } from "@/astro/store/courses"
-import type { TaxonmomyItem } from "@/astro/store/taxonomy"
 
 export const treeDataTableTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension
