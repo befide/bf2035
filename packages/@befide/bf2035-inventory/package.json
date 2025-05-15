@@ -19,8 +19,7 @@
     "sync": "astro sync"
   },
   "dependencies": {
-    "astro": "catalog:",
-    "tailwindcss": "catalog:"
+    "astro": "catalog:"
   },
   "devDependencies": {
     "@astrojs/check": "catalog:",
@@ -81,7 +80,7 @@
     "globals": "catalog:",
     "jsdom": "catalog:",
     "nanostores": "catalog:",
-    "pagedjs": "catalog:",
+ 
     "pagefind": "catalog:",
     "playwright": "catalog:",
     "postcss": "catalog:",
@@ -97,7 +96,7 @@
     "sharp": "catalog:",
     "sharp-ico": "catalog:",
     "starlight-sidebar-topics": "catalog:",
-    "tailwind": "catalog:",
+   
     "tiny-glob": "catalog:",
     "topojson-client": "catalog:",
     "tornis": "catalog:",

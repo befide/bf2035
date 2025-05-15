@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "astro": "catalog:"
+  
   },
   "devDependencies": {
     "@astrojs/check": "catalog:",
@@ -75,7 +76,6 @@
     "globals": "catalog:",
     "jsdom": "catalog:",
     "nanostores": "catalog:",
-    "pagedjs": "catalog:",
     "pagefind": "catalog:",
     "playwright": "catalog:",
     "postcss": "catalog:",
@@ -100,9 +100,7 @@
     "vite-plugin-pwa": "catalog:",
     "workbox-window": "catalog:",
     "zotero-api-client": "catalog:",
-    "rehype-rewrite": "catalog:",
-    "tailwind": "catalog:",
-    "@tailwindcss/vite": "catalog:",
-    "@astrojs/starlight-tailwind": "catalog:"
+    "rehype-rewrite": "catalog:"
+   
   }
 }
