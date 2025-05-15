@@ -6,17 +6,17 @@
   :root {
 
  
-    --sl-line-height: 1rem;
-    --sl-line-height-headings: 1rem;
+    --sl-line-height: 20px;
+    --sl-line-height-headings: 1.25rem;
 
 
     --sl-text-2xs: 0.6rem;
     /* 12px */
-    --sl-text-xs: 0.7rem;
+    --sl-text-xs: 0.65rem;
     /* 13px */
-    --sl-text-sm: 0.8rem;
+    --sl-text-sm: 0.7rem;
     /* 14px */
-    --sl-text-base: 0.9rem;
+    --sl-text-base: 0.8rem;
     /* 16px */
     --sl-text-lg: 0.9rem;
     /* 18px */
@@ -24,6 +24,14 @@
     /* 20px */
     --sl-text-2xl: 1.2rem;
     /* 24px */
+
+    --text-sm: var(--sl-text-sm);
+    --text-base: var(--sl-text-base);
+    --text-xs: var(--sl-text-xs);
+    --text-2xs: var(--sl-text-2xs);
+    --text-lg: var(--sl-text-lg);
+    --text-xl: var(--sl-text-xl);
+    --text-2xl: var(--sl-text-2xl);
 
     --sl-nav-height: 2rem;
     --sl-nav-pad-x: 1rem;

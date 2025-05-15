@@ -17,17 +17,20 @@ export interface Author {
   gender: string
 }
 
-import { atom, onMount, task } from "nanostores"
+import crossfilter from "crossfilter2"
+import { computed, task } from "nanostores"
+import { $locale } from "./locale"
 
-export const $theses = atom<Thesis[]>([])
-
-onMount($theses, () => {
+export const $theses = computed($locale, (locale) =>
   task(async () => {
-    console.log("fetching json")
-    $theses.set(
-      await fetch("/api/en/theses.json").then((response) => {
-        return response.json()
-      }),
-    )
-  })
-})
+    return await fetch("/api/" + locale + "/theses.json").then((response) => {
+      return response.json()
+    })
+  }),
+)
+
+export const $thesesIndex = computed($theses, (theses) =>
+  task(async () => {
+    return crossfilter(theses || [])
+  }),
+)

@@ -90,6 +90,8 @@ export default defineConfig({
         "@/astro/styles/global.css",
         "@fontsource/barlow-semi-condensed/400.css",
         "@fontsource/barlow-semi-condensed/700.css",
+        "@fontsource/barlow-condensed/400.css",
+        "@fontsource/barlow-condensed/700.css",
       ],
 
       // plugins: [starlightFullViewMode({ rightSidebarEnabled: true, leftSidebarExpandedWidth: "200px" })],

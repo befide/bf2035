@@ -8,39 +8,46 @@ import DCExplorerTable from "../dc/DCExplorerTable.astro"
 
 <DCExplorer collection="courses">
   <div class="dc-explorer__filters">
+    <DCExplorerCount collection="courses" dimension="count" />
+    <DCExplorerRowChart
+      collection="courses"
+      dimension="university"
+      accessorPath="university"
+      dimensionIsLocalized={true}
+      title={Astro.locals.t("dc-explorer.tiles.title.universities")}
+    />
+    <DCExplorerRowChart
+      collection="courses"
+      dimension="instanceOfTeachingEvent"
+      dimensionIsLocalized={true}
+      accessorPath="instanceOfTeachingEvent"
+      title={Astro.locals.t("dc-explorer.tiles.title.teaching-event")}
+    />
+    <DCExplorerRowChart
+      collection="courses"
+      dimension="addressesProgrammeOfStudyLevels"
+      dimensionIsLocalized={true}
+      dimensionIsArray={true}
+      title={Astro.locals.t("dc-explorer.tiles.title.study-levels")}
+    />
+    <DCExplorerRowChart
+      collection="courses"
+      dimension="semester"
+      title={Astro.locals.t("dc-explorer.tiles.title.semester")}
+    />
+    <DCExplorerRowChart
+      collection="courses"
+      dimension="sws"
+      title="SWS"
+      title={Astro.locals.t("dc-explorer.tiles.title.sws")}
+    />
 
-      <DCExplorerCount collection="courses" dimension="count" />
-      <DCExplorerRowChart
-        collection="courses"
-        dimension="university"
-        accessorPath="university"
-        dimensionIsLocalized={true}
-        title="University"
-      />
-      <DCExplorerRowChart
-        collection="courses"
-        dimension="instanceOfTeachingEvent"
-        dimensionIsLocalized={true}
-        accessorPath="instanceOfTeachingEvent"
-        title="Teaching event"
-      />
-      <DCExplorerRowChart
-        collection="courses"
-        dimension="addressesProgrammeOfStudyLevels"
-        dimensionIsLocalized={true}
-        dimensionIsArray={true}
-        title="Study level"
-      />
-      <DCExplorerRowChart collection="courses" dimension="semester" title="Semester" />
-      <DCExplorerRowChart collection="courses" dimension="sws" title="SWS" />
-
-      <DCExplorerRowChart
-        collection="courses"
-        dimension="language"
-        title="Language"
-        dimensionIsArray={true}
-      />
-   
+    <DCExplorerRowChart
+      collection="courses"
+      dimension="language"
+      title={Astro.locals.t("dc-explorer.tiles.title.languages")}
+      dimensionIsArray={true}
+    />
   </div>
   <div class="dc-explorer_items">
     <DCExplorerTable collection="courses" dimension="id" />

@@ -1,24 +1,17 @@
-export type Courses = Course[]
+import crossfilter from "crossfilter2"
+import { computed, task } from "nanostores"
+import { $locale } from "./locale"
 
-export interface Course {
-  title: string
-  language: string
-  university: string
-  degree: string
-  link: string
-}
-
-import { atom, onMount, task } from "nanostores"
-
-export const $courses = atom<Course[]>([])
-
-onMount($courses, () => {
+export const $courses = computed($locale, (locale) =>
   task(async () => {
-    console.log("fetching courses json")
-    $courses.set(
-      await fetch("/api/en/courses.json").then((response) => {
-        return response.json()
-      }),
-    )
-  })
-})
+    return await fetch("/api/" + locale + "/courses.json").then((response) => {
+      return response.json()
+    })
+  }),
+)
+
+export const $coursesIndex = computed($courses, (courses) =>
+  task(async () => {
+    return crossfilter(courses || [])
+  }),
+)

@@ -16,11 +16,18 @@ export interface Organization {
 
 import { computed, task } from "nanostores"
 import { $locale } from "./locale"
+import crossfilter from "crossfilter2"
 
 export const $community = computed($locale, (locale) =>
   task(async () => {
     return await fetch("/api/" + locale + "/community.json").then((response) => {
       return response.json()
     })
+  }),
+)
+
+export const $communityIndex = computed($community, (community) =>
+  task(async () => {
+    return crossfilter(community || [])
   }),
 )

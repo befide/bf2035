@@ -1,30 +1,24 @@
 import { organizationsForAPI } from "@/astro/utils"
+import type { APIRoute, GetStaticPaths, InferGetStaticPropsType } from "astro"
 
-import type { APIRoute, } from "astro"
-import { getCollection, getEntry } from "astro:content"
-
-export async function getStaticPaths() {
+export const getStaticPaths = (async () => {
   const locales = ["en", "de"]
 
   return locales.map((locale) => ({
     params: { locale },
     props: { locale },
   }))
-}
+}) satisfies GetStaticPaths
 
-export const GET: APIRoute = async (context) => {
-  const { locale } = context.params
-  
-  
+export const GET: APIRoute = async ({ props }) => {
+  type Props = InferGetStaticPropsType<typeof getStaticPaths>
+  const { locale } = props as Props
 
-  
-
-  
   const organizations = await organizationsForAPI(locale)
 
   try {
     return new Response(JSON.stringify(organizations, null, 2))
   } catch (e) {
-    throw new Error("Something went wrong in json-resource.json route!")
+    throw new Error("Something went wrong in json-resource.json route: " +  e)
   }
 }

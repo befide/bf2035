@@ -1,9 +1,9 @@
-import { $coursesIndex } from "./coursesIndex"
-import { $communityIndex } from "./communityIndex"
-import { $taxonomyIndex } from "./taxonomyIndex"
-import { $thesesIndex } from "./thesesIndex"
-import { $facilitiesIndex } from "./facilitiesIndex"
-import { $organizationsIndex } from "./organizationsIndex"
+import { $coursesIndex } from "./courses"
+import { $communityIndex } from "./community"
+import { $taxonomyIndex } from "./taxonomy"
+import { $thesesIndex } from "./theses"
+import { $facilitiesIndex } from "./facilities"
+import { $organizationsIndex } from "./organizations"
 
 export const getCollectionIndex = (collection: string | undefined) => {
   if (!collection) return null

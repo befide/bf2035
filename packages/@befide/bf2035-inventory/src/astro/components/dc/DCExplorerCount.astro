@@ -16,14 +16,19 @@ const tileType = "count"
   data-dc-tile-type={tileType}
 >
   <header class="dc-explorer__tile__header">
-    <div class="dc-explorer__tile__title">Number of items</div>
-    <div class="dc-explorer__filter__reset">
-      <button class="reset">Reset All</button>
+    <div class="dc-explorer__tile__title">
+      {Astro.locals.t("dc-explorer.tiles.title.count")}
+    </div>
+    <div class="dc-explorer__tile__actions">
+      <button class="reset-all-action"
+        >{Astro.locals.t("dc-explorer.actions.reset-all")}</button
+      >
     </div>
   </header>
   <div class="dc-explorer__tile__body">
     <div id={chartId}>
-      <span class="filter-count"></span> selected out of <span class="total-count"></span>
+      <span class="filter-count"></span> selected out of <span
+        class="total-count"></span>
     </div>
   </div>
 </section>

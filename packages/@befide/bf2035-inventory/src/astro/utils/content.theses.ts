@@ -28,7 +28,7 @@ export const allTheses = async () =>
     .sort((a, b) => ascending(a.data.author.familyName, b.data.author.familyName))
     .sort((a, b) => descending(a.data.year, b.data.year))
 
-export const thesesForeAPI = async (locale: "en" | "de") => {
+export const thesesForeAPI = async (locale = "en") => {
   const theses = await allTheses()
 
   return await Promise.all(

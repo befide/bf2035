@@ -13,7 +13,7 @@ import DCExplorerTreeDataTable from "../dc/DCExplorerTreeDataTable.astro"
     <DCExplorerRowChart
       collection="community"
       dimension="befideOrganizationCategories"
-      title="befideOrganizationCategories"
+      title={Astro.locals.t("dc-explorer.tiles.title.categories")}
       dimensionIsArray={true}
     />
   </div>

@@ -1,0 +1,103 @@
+.tree {
+  --tree-spacing: 1.5rem;
+  --radius: 10px;
+
+  line-height: 2rem;
+}
+
+.tree li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  font-size: var(--sl-text-md);
+  line-height: 1.5rem;
+  padding-left: calc(2 * var(--tree-spacing) - var(--radius) - 2px);
+}
+
+.tree ul {
+  margin: 0;
+  padding: 0;
+
+  margin-left: calc(var(--radius) - var(--tree-spacing));
+  padding-left: 0;
+}
+
+.tree ul li {
+  border-left: 2px solid #ddd;
+}
+
+.tree ul li:last-child {
+  border-color: transparent;
+}
+
+.tree ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(var(--tree-spacing) / -2);
+  left: -2px;
+  width: calc(var(--tree-spacing) + 2px);
+  height: calc(var(--tree-spacing) + 1px);
+  border: solid #ddd;
+  border-width: 0 0 2px 2px;
+}
+
+.tree .node-header {
+  display: flex;
+}
+
+.tree summary {
+
+  cursor: pointer;
+
+}
+
+.tree .tree-node__height {
+  flex: 1;
+  text-align: right;
+}
+
+.tree .tree-node__label {
+  flex: 1
+}
+
+.tree-node__label {
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.tree summary::marker,
+.tree summary::-webkit-details-marker {
+  display: none;
+}
+
+.tree summary:focus {
+  outline: none;
+}
+
+.tree summary:focus-visible {
+  outline: 1px dotted #000;
+}
+
+.tree li::after,
+.tree summary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(var(--tree-spacing) / 2 - var(--radius));
+  left: calc(var(--tree-spacing) - var(--radius) - 1px);
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.tree summary::before {
+  z-index: 1;
+  background: #696 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20'%3E%3Cg fill='%23fff'%3E%3Cpath d='m5 9h4v-4h2v4h4v2h-4v4h-2v-4h-4z'/%3E%3Cpath d='m25 9h10v2h-10z'/%3E%3C/g%3E%3C/svg%3E") 0 0;
+}
+
+.tree details[open]>summary::before {
+  background-position: calc(-2 * var(--radius)) 0;
+}

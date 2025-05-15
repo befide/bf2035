@@ -1,4 +1,4 @@
-import { getCollection, getEntry } from "astro:content"
+import { getCollection, getEntry, type CollectionEntry } from "astro:content"
 
 import { flattenTreeNodes, getRoots, type TreeNode } from "./content.tree"
 import { type Organization, peopleCountDiscriminators } from "@/content/config.organizations"
@@ -6,7 +6,7 @@ import { getValue } from "./index"
 import { ascending } from "d3-array"
 
 export const allOrganizations = async () =>
-  (await getCollection("organizations")).map(({ data }) => data)
+  (await getCollection('organizations')).map(({ data }) => data)
 
 export const allOrganizationsForTopLevelOrganization = async (topLevelOrganizationId: string) => {
   return await getCollection(
@@ -101,7 +101,7 @@ export const communityForAPI = async (locale: string) => {
 
   const newRoot = rollupUniquePeopleCountSum(communityRoot)
 
-  const i18n = await getEntry("i18n", locale)
+  const i18n  = await getEntry("i18n", locale)
 
 
   const list = flattenTreeNodes([newRoot])

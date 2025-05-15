@@ -1,6 +1,6 @@
-import { select, scaleLinear, format } from "d3"
+import { select, scaleLinear, format, type Axis } from "d3"
 import { barChart } from "dc"
-import { filterWidth, baselineHeight, margins, charts } from "."
+import { maxFilterWidth, baselineHeight, margins, charts, getChartWidth } from "."
 import { rowChartId } from "./row-chart"
 
 export const barChartTileId = (collection: string, dimension: string) => {
@@ -25,13 +25,14 @@ export function createBarChart(
     // .filter((y) => y !== "")
     .sort()
 
+  const filterWidth = getChartWidth(chartElementIdSelector)
   const tileElement = select(tileElementIdSelector)
   const chart = barChart(chartElementIdSelector)
     .x(
       scaleLinear().domain([(allYears[0] || 0) - 0, (allYears[allYears.length - 1] || 2000) + 0.5]),
     )
     .width(filterWidth)
-    .height(5 * baselineHeight)
+    .height(6 * baselineHeight)
     .elasticY(false)
     .elasticX(false)
     .centerBar(true)
@@ -39,8 +40,8 @@ export function createBarChart(
     .group(cfGroup)
     .margins({
       ...margins,
-      bottom: 1 * baselineHeight,
-      // left: 1 * baselineHeight,
+      
+      left: 2 * baselineHeight,
     })
     .renderHorizontalGridLines(true)
 
@@ -48,7 +49,10 @@ export function createBarChart(
       tileElement.classed("filtered", chart.hasFilter())
     })
 
-  chart.xAxis().ticks(4).tickFormat(format("2"))
+  const xAxis = chart.xAxis() as Axis<number>
+  
+  xAxis.ticks(4).tickFormat(format("2"))
+  
   chart.yAxis().ticks(2)
 
   charts.set(barChartId(collection, dimension), chart)

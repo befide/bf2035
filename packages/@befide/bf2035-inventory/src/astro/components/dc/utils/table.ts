@@ -22,6 +22,8 @@ export function createTableChart(
   const tileElementIdSelector = "#" + tableTileId(collection, dimension)
   const chartElementIdSelector = "#" + tableId(collection, dimension)
 
+  
+
   const tableChart = dataTable(chartElementIdSelector)
   createTableHeader()
 

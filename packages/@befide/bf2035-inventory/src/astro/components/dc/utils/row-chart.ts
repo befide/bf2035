@@ -1,6 +1,6 @@
 import { select } from "d3"
 import { rowChart } from "dc"
-import { baselineHeight, filterWidth, rowBarRatio, margins, charts } from "."
+import { baselineHeight, margins, charts, getChartWidth } from "."
 
 export const rowChartTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension
@@ -18,20 +18,23 @@ export function createRowChart(
   const tileElementIdSelector = "#" + rowChartTileId(collection, dimension)
   const chartElementIdSelector = "#" + rowChartId(collection, dimension)
 
+  const filterWidth = getChartWidth(chartElementIdSelector)
+  
   const tileElement = select(tileElementIdSelector)
   const height = (cfGroup.all().length + 1) * baselineHeight
   const chart = rowChart(chartElementIdSelector)
     .width(filterWidth)
+    .height(height)
     .renderTitleLabel(true)
     .transitionDuration(50)
-    .labelOffsetX(baselineHeight * (1 - rowBarRatio))
-    .titleLabelOffsetX(filterWidth * rowBarRatio - 0.75 * baselineHeight)
+    .labelOffsetX(0)
+    .titleLabelOffsetX(filterWidth - 2.5*baselineHeight)
     .title((d) => d.value)
     .label((d) => d.key)
-    .margins({ ...margins, left: filterWidth * (1 - rowBarRatio) })
-    .height(height)
-    .fixedBarHeight(0.75 * baselineHeight)
-    .gap(0.25 * baselineHeight)
+    .margins({ ...margins, left: 2*baselineHeight })
+
+    .fixedBarHeight(baselineHeight-5)
+    .gap(5)
     .elasticX(false)
     .dimension(cfDimension)
     .group(cfGroup)
@@ -43,7 +46,9 @@ export function createRowChart(
   chart.on("renderlet", () => {
     tileElement.classed("filtered", chart.hasFilter())
   })
+  chart.xAxis().ticks(5)
 
   charts.set(rowChartId(collection, dimension), chart)
   return chart
 }
+

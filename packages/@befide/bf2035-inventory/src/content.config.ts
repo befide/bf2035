@@ -1,16 +1,15 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, z } from "astro:content"
 
-import { docsLoader, i18nLoader } from '@astrojs/starlight/loaders';
-import { docsSchema, i18nSchema } from '@astrojs/starlight/schema';
+import { docsLoader, i18nLoader } from "@astrojs/starlight/loaders"
+import { docsSchema, i18nSchema } from "@astrojs/starlight/schema"
 
-
-import { defineReviewStatusesCollection } from "./content/config.reviewStatuses";
-import { defineOrganizationCollection } from "./content/config.organizations";
-import { defineTaxonomyItemsCollection } from "./content/config.taxonomyItems";
-import { defineFacilityCollection } from "./content/config.facilities";
-import { defineCoursesCollection } from "./content/config.courses";
-import { defineThesesCollection } from "./content/config.theses";
-import { defineReferencesCollection } from "./content/config.references";
+import { defineReviewStatusesCollection } from "./content/config.reviewStatuses"
+import { defineOrganizationCollection } from "./content/config.organizations"
+import { defineTaxonomyItemsCollection } from "./content/config.taxonomyItems"
+import { defineFacilityCollection } from "./content/config.facilities"
+import { defineCoursesCollection } from "./content/config.courses"
+import { defineThesesCollection } from "./content/config.theses"
+import { defineReferencesCollection } from "./content/config.references"
 
 export const collections = {
   docs: defineCollection({ loader: docsLoader(), schema: docsSchema() }),
@@ -18,10 +17,30 @@ export const collections = {
     loader: i18nLoader(),
     schema: i18nSchema({
       extend: z.object({
-        "dc-explorer.filters": z.string(),
         "dc-explorer.filter.number-of-items": z.string(),
+        "dc-explorer.filters": z.string(),
         "dc-explorer.items": z.string(),
-
+        "dc-explorer.tiles.title.categories": z.string(),
+        "dc-explorer.tiles.title.category": z.string(),
+        "dc-explorer.tiles.title.count": z.string(),
+        "dc-explorer.tiles.title.countries": z.string(),
+        "dc-explorer.tiles.title.country": z.string(),
+        "dc-explorer.tiles.title.degree": z.string(),
+        "dc-explorer.tiles.title.degrees": z.string(),
+        "dc-explorer.tiles.title.facilities": z.string(),
+        "dc-explorer.tiles.title.facility": z.string(),
+        "dc-explorer.tiles.title.gender": z.string(),
+        "dc-explorer.tiles.title.genders": z.string(),
+        "dc-explorer.tiles.title.items": z.string(),
+        "dc-explorer.tiles.title.language": z.string(),
+        "dc-explorer.tiles.title.languages": z.string(),
+        "dc-explorer.tiles.title.study-level": z.string(),
+        "dc-explorer.tiles.title.study-levels": z.string(),
+        "dc-explorer.tiles.title.sws": z.string(),
+        "dc-explorer.tiles.title.teaching-event": z.string(),
+        "dc-explorer.tiles.title.teaching-events": z.string(),
+        "dc-explorer.tiles.title.universities": z.string(),
+        "dc-explorer.tiles.title.university": z.string()
       }),
     }),
   }),

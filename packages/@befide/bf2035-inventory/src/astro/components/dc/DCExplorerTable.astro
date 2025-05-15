@@ -16,7 +16,12 @@ const tileType = "table"
   data-dc-tile-type={tileType}
 >
   <div class="dc-explorer__tile__header">
-    <button class="download">Download as csv</button>
+    <div class="dc-explorer__tile__title">{Astro.locals.t("dc-explorer.tiles.title.items")}</div>
+    <div class="dc-explorer__tile__actions">
+      <button class="download-action" data-chart={chartId}
+        >{Astro.locals.t("dc-explorer.actions.csv-export")}</button
+      >
+    </div>
   </div>
   <div class="dc-explorer__tile__body">
     <table class="table table-hover table-striped table-bordered" id={chartId}>

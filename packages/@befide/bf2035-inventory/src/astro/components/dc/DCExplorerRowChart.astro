@@ -27,8 +27,10 @@ const tileType = "row-chart"
 >
   <header class="dc-explorer__tile__header">
     <div class="dc-explorer__tile__title">{title}</div>
-    <div class="dc-explorer__filter__reset">
-      <button class="reset" data-chart={chartId}>Reset</button>
+    <div class="dc-explorer__tile__actions">
+      <button class="reset-action" data-chart={chartId}
+        >{Astro.locals.t("dc-explorer.actions.reset")}</button
+      >
     </div>
   </header>
   <div class="dc-explorer__tile__body">

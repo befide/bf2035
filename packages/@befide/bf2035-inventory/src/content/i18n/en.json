@@ -36,5 +36,31 @@
   "careerLevels.bachelorStudent.short": "bachelor",
   "dc-explorer.filters": "Filters",
   "dc-explorer.filter.number-of-items": "Number of items",
-  "dc-explorer.items": "Selected items"
+  "dc-explorer.items": "Selected items",
+  "dc-explorer.actions.reset": "Reset",
+  "dc-explorer.actions.reset-all": "Reset all",
+  "dc-explorer.actions.csv-export": "CSV Export",
+  "dc-explorer.tiles.title.categories": "Categories",
+  "dc-explorer.tiles.title.category": "Category",
+  "dc-explorer.tiles.title.count": "Number of items",
+  "dc-explorer.tiles.title.countries": "Countries",
+  "dc-explorer.tiles.title.country": "Country",
+  "dc-explorer.tiles.title.degrees": "Degrees",
+  "dc-explorer.tiles.title.degree": "Degree",
+  "dc-explorer.tiles.title.facilities": "Facilities",
+  "dc-explorer.tiles.title.facility": "Facility",
+  "dc-explorer.tiles.title.genders": "Gender",
+  "dc-explorer.tiles.title.gender": "Gender",
+  "dc-explorer.tiles.title.items": "Items",
+  "dc-explorer.tiles.title.language": "Language",
+  "dc-explorer.tiles.title.languages": "Languages",
+  "dc-explorer.tiles.title.study-level": "Study level",
+  "dc-explorer.tiles.title.study-levels": "Study levels",
+  "dc-explorer.tiles.title.sws": "Contact hours",
+  "dc-explorer.tiles.title.teaching-event": "Teaching event type",
+  "dc-explorer.tiles.title.teaching-events": "Teaching event types",
+  "dc-explorer.tiles.title.universities": "Universities",
+  "dc-explorer.tiles.title.university": "University"
+
+  
 }

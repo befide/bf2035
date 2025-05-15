@@ -1,3 +1,5 @@
+import { select } from "d3"
+
 export * from "./count-chart"
 export * from "./bar-chart"
 export * from "./row-chart"
@@ -7,13 +9,13 @@ export * from "./tree-data-table"
 
 export const charts = new Map<string, any>()
 export const baselineHeight = 20
-export const filterWidth = 250
+export const maxFilterWidth = 250
 
 export const rowBarRatio = 0.9
 
 export const margins = {
   top: 0 * baselineHeight,
-  right: baselineHeight,
+  right: 1 * baselineHeight,
   bottom: 1 * baselineHeight,
   left: baselineHeight,
 }
@@ -27,3 +29,6 @@ export const getValue = (obj: any, path: string) => {
 
   return keys.reduce((currentObj, key) => currentObj[key], obj)
 }
+
+
+export const getChartWidth = (containerSelector: any) => Number(select(containerSelector).style('width').slice(0, -2))
