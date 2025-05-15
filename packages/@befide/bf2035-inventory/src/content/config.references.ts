@@ -42,8 +42,6 @@ export const defineReferencesCollection = defineCollection({
       .flat()
       .filter((item: any) => item.data.itemType !== "attachment" && item.data.tags.map(({ tag }: { tag: string }) => tag).indexOf("_used") > -1)
       .map((item: any) => {
-        // console.log('\n\n');
-        // console.log(JSON.stringify({ item }, null, 2));
         const dataItem: Reference = {
           id: item.key,
           title: item.data.title,
@@ -97,11 +95,6 @@ export const defineReferencesCollection = defineCollection({
             ) {
               dataItem.fulltextLink = splittedExtraLine[1];
             } else {
-              // console.log({
-              //   message: 'extra line not parsed',
-              //   extraLine
-              //   // id: item.key
-              // });
             }
           });
 
@@ -143,8 +136,6 @@ export const defineReferencesCollection = defineCollection({
             });
           }
         });
-
-        // console.log(dataItem)
 
         return dataItem;
       });

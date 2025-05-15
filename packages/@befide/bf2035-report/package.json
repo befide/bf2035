@@ -106,7 +106,7 @@
     "sharp": "catalog:",
     "sharp-ico": "catalog:",
     "stylus": "catalog:",
-    "tiny-glob": "catalog:",
+    
     "typescript": "catalog:",
     "typescript-eslint-parser-for-extra-files": "catalog:"
   }

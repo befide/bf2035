@@ -14,8 +14,6 @@ export const allCourses = async () => await getCollection("courses")
 export const coursesForeAPI = async (locale = "en") => {
   const courses = await allCourses()
 
-  console.log(courses)
-
   return await Promise.all(
     courses.map(async (course) => {
       const university =

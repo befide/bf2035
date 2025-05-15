@@ -134,7 +134,6 @@ export const defineOrganizationCollection = defineCollection({
     const roots = getOrganizationRoots(organizations);
     const communityRoot = roots.find((root) => root.id === ":");
     if (communityRoot) rollupUniquePeopleCountSum(communityRoot);
-    // console.log(organizations) 
 
     return organizations;
   },

@@ -116,11 +116,6 @@ export const defineThesesCollection = defineCollection({
           ) {
             dataItem.fulltextLink = splittedExtraLine[1]
           } else {
-            // console.log({
-            //   message: 'extra line not parsed',
-            //   extraLine
-            //   // id: item.key
-            // });
           }
         });
 
@@ -171,8 +166,6 @@ export const defineThesesCollection = defineCollection({
           });
         }
       });
-
-      // console.log(dataItem)
 
       return dataItem;
     });

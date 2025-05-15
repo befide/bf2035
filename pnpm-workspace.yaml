@@ -101,10 +101,7 @@ catalog:
   remove-markdown: 0.6.2
   sharp: 0.34.1
   sharp-ico: 0.1.5
-  starlight-sidebar-topics: 0.6.0
-  stylus: 0.64.0
   tailwind: 4.0.0
-  tiny-glob: 0.2.9
   topojson-client: 3.1.0
   tornis: 0.3.6
   typescript: 5.8.3

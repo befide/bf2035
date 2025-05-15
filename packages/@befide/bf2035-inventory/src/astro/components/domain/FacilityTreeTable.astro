@@ -6,7 +6,6 @@ import {Badge} from "@astrojs/starlight/components"
 import {getEntry} from "astro:content"
 
 const items = await getFacilities({});
-console.log(items)
 const facilityRoots = getFacilityRoots(items.map(d => d.datax))
 const list = flattenTreeNodes (facilityRoots)
 ---
