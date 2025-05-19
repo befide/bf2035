@@ -11,6 +11,7 @@
     "dev": "pnpm --filter @befide/bf2035-report  dev",
     "format": "prettier --write .",
     "dev-docs": "pnpm --filter bf2035-docs dev",
+    "dev-inventory": "pnpm --filter bf2035-inventory dev",
     "lint:prettier": "prettier-package-json --write"
   },
   "devDependencies": {

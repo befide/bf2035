@@ -19,7 +19,8 @@
     "sync": "astro sync"
   },
   "dependencies": {
-    "astro": "catalog:"
+    "astro": "catalog:",
+    "pagedjs": "0.4.3"
   },
   "devDependencies": {
     "@astrojs/check": "catalog:",
@@ -28,7 +29,7 @@
     "@astrojs/starlight": "catalog:",
     "@astrojs/starlight-tailwind": "catalog:",
     "@astrojs/ts-plugin": "catalog:",
-    "@eslint/js": "^9.26.0",
+    "@eslint/js": "9.26.0",
     "@eslint/markdown": "catalog:",
     "@fontsource/barlow-condensed": "catalog:",
     "@fontsource/barlow-semi-condensed": "catalog:",
@@ -98,8 +99,7 @@
     
    
     
-    "topojson-client": "catalog:",
-    "tornis": "catalog:",
+
     "typescript": "catalog:",
     "typescript-eslint": "catalog:",
     "unified": "catalog:",

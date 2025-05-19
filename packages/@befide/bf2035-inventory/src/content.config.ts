@@ -4,11 +4,11 @@ import { docsLoader, i18nLoader } from "@astrojs/starlight/loaders"
 import { docsSchema, i18nSchema } from "@astrojs/starlight/schema"
 
 import { defineReviewStatusesCollection } from "./content/config.reviewStatuses"
-import { defineOrganizationCollection } from "./content/config.organizations"
-import { defineTaxonomyItemsCollection } from "./content/config.taxonomyItems"
-import { defineFacilityCollection } from "./content/config.facilities"
-import { defineCoursesCollection } from "./content/config.courses"
-import { defineThesesCollection } from "./content/config.theses"
+import { defineOrganizationCollection } from "./astro/domain/organizations/organizations.config"
+import { defineTaxonomyItemsCollection } from "./astro/domain/taxonomy/taxonomy.config"
+import { defineFacilityCollection } from "./astro/domain/facilities/facilities.config"
+import { defineCoursesCollection } from "./astro/domain/courses/courses.config"
+import { defineThesesCollection } from "./astro/domain/theses/theses.config"
 import { defineReferencesCollection } from "./content/config.references"
 
 export const collections = {
@@ -34,9 +34,10 @@ export const collections = {
         "dc-explorer.tiles.title.items": z.string(),
         "dc-explorer.tiles.title.language": z.string(),
         "dc-explorer.tiles.title.languages": z.string(),
+        "dc-explorer.tiles.title.semesters": z.string(),
         "dc-explorer.tiles.title.study-level": z.string(),
         "dc-explorer.tiles.title.study-levels": z.string(),
-        "dc-explorer.tiles.title.sws": z.string(),
+        "dc-explorer.tiles.title.weeklySemesterHours": z.string(),
         "dc-explorer.tiles.title.teaching-event": z.string(),
         "dc-explorer.tiles.title.teaching-events": z.string(),
         "dc-explorer.tiles.title.universities": z.string(),

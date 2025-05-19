@@ -1,8 +1,8 @@
 ---
-import type {Facility} from "@/content/config.facilities"
-import {getFacilityRoots} from "@utils/content.facilities"
+import type {Facility} from "@/astro/domain/facilities/facilities.config"
+import {getFacilityRoots} from "@/astro/domain/facilities/facilities"
 
-import {flattenTreeNodes} from "@utils/content.tree"
+import {flattenTreeNodes} from "@/astro/domain/content.tree"
 import {Badge} from "@astrojs/starlight/components"
 import {getEntry} from "astro:content"
 

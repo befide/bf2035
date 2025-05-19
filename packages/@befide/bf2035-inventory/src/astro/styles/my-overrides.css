@@ -5,12 +5,13 @@
 
   :root {
 
- 
+   
+  
     --sl-line-height: 20px;
     --sl-line-height-headings: 1.25rem;
 
 
-    --sl-text-2xs: 0.6rem;
+    --sl-text-2xs: 0.5rem;
     /* 12px */
     --sl-text-xs: 0.65rem;
     /* 13px */

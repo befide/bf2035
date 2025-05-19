@@ -1,0 +1,38 @@
+---
+import DCExplorerCount from "@components/dc-explorer/components/DCExplorerCount.astro"
+import DCExplorerRowChart from "@components/dc-explorer/components/DCExplorerRowChart.astro"
+import DCExplorer from "@components/dc-explorer/components/DCExplorer.astro"
+import DCExplorerTreeDataTable from "@components/dc-explorer/components/DCExplorerTreeDataTable.astro"
+---
+
+<DCExplorer collection="facilities">
+  <div class="dc-explorer__filters">
+    <DCExplorerCount collection="facilities" dimension="count" />
+
+    <DCExplorerRowChart
+      collection="facilities"
+      dimension="instanceOf"
+      title="instanceOf"
+    />
+    <DCExplorerRowChart
+      collection="facilities"
+      dimension="lifeCycle"
+      title="lifeCycle"
+    />
+    <DCExplorerRowChart
+      collection="facilities"
+      dimension="primaryBeamParticles"
+      title="primaryBeamParticles"
+      dimensionIsArray={true}
+    />
+    <DCExplorerRowChart
+      collection="facilities"
+      dimension="secondaryBeamParticles"
+      title="secondaryBeamParticles"
+      dimensionIsArray={true}
+    />
+  </div>
+  <div class="dc-explorer_items">
+    <DCExplorerTreeDataTable collection="facilities" dimension="id" />
+  </div>
+</DCExplorer>

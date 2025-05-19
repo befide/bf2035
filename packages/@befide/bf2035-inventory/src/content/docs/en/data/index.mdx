@@ -1,0 +1,139 @@
+--- 
+title: Data schema
+---
+
+
+
+``` d2 layout=elk 
+
+"taxonomy": {
+  shape: sql_table
+  id: string {constraint: primary_key}
+  parent_id: string {constraint: foreign_key} 
+  term: localizedString
+  definition: localizedString
+  synonyms: localizedString
+  review: review
+  
+}
+
+taxonomy.id -> taxonomy.parent_id
+
+
+courses: {
+  shape: sql_table
+  id: string {constraint: primary_key}
+  title: localizedString
+  objectives: localizedString
+  contents: localizedString
+  isInstanceOfTeachingEvent: string {constraint: foreign_key} 
+  academicYearStart: date(YYYY)
+  semester: enum(winter|summer)
+  weeklySemesterHours: int
+  languages: "enum(de|en)[]"
+  "links.homepage": localizedString
+  offeredByUniversity: string {constraint: foreign_key} 
+  addressesProgrammeOfStudyLevels: string {constraint: foreign_key} 
+  partOfProgramsOfStudy: "string[]"
+  review: review
+}
+
+courses.isInstanceOfTeachingEvent -> taxonomy.id
+courses.addressesProgrammeOfStudyLevels -> taxonomy.id
+
+
+organizations: {
+  shape: sql_table
+  id: string {constraint: primary_key}
+  parentId: string {constraint: foreign_key} 
+  topLevelOrganizationId: string {constraint: foreign_key} 
+  isInstanceOfOrganizationSubclass: "string[]" {constraint: foreign_key} 
+  "label.fullName": localizedString
+  "label.short": localizedString
+  "description": localizedString
+  "links.homepage": localizedString
+  "links.rorID": localizedString
+  "location.country.code": "string(2)"
+  "location.city": localizedString
+  "location.lat": localizedString
+  "location.lng": localizedString
+  uniquePeopleCount: uniquePeopleCount
+  review: review
+
+  
+}
+
+organizations.parentId -> organizations.id
+organizations.topLevelOrganizationId -> organizations.id
+organizations.isInstanceOfOrganizationSubclass -> taxonomy.id
+
+type.review: {
+  shape: sql_table
+  "review.status": enum()
+  "review.reviewer": string {constraint: foreign_key} 
+  "review.log": enum()
+}
+
+type.uniquePeopleCount {
+  shape: sql_table
+  "uniquePeopleCount.professor.physicist.female": int
+  "uniquePeopleCount.seniorResearcher.physicist.female": int
+  "uniquePeopleCount.postDoc.physicist.female": int
+  "uniquePeopleCount.phdStudent.physicist.female": int
+  "uniquePeopleCount.masterStudent.physicist.female": int
+  "uniquePeopleCount.bachelorStudent.physicist.female": int
+  "uniquePeopleCount.professor.physicist.male": int
+  "uniquePeopleCount.seniorResearcher.physicist.male": int
+  "uniquePeopleCount.postDoc.physicist.male": int
+  "uniquePeopleCount.phdStudent.physicist.male": int
+  "uniquePeopleCount.masterStudent.physicist.male": int
+  "uniquePeopleCount.bachelorStudent.physicist.male": int
+  "uniquePeopleCount.professor.physicist.nonbinary": int
+  "uniquePeopleCount.seniorResearcher.physicist.nonbinary": int
+  "uniquePeopleCount.postDoc.physicist.nonbinary": int
+  "uniquePeopleCount.phdStudent.physicist.nonbinary": int
+  "uniquePeopleCount.masterStudent.physicist.nonbinary": int
+  "uniquePeopleCount.bachelorStudent.physicist.nonbinary": int
+
+  "uniquePeopleCount.professor.other.female": int
+  "uniquePeopleCount.seniorResearcher.other.female": int
+  "uniquePeopleCount.postDoc.other.female": int
+  "uniquePeopleCount.phdStudent.other.female": int
+  "uniquePeopleCount.masterStudent.other.female": int
+  "uniquePeopleCount.bachelorStudent.other.female": int
+  "uniquePeopleCount.professor.other.male": int
+  "uniquePeopleCount.seniorResearcher.other.male": int
+  "uniquePeopleCount.postDoc.other.male": int
+  "uniquePeopleCount.phdStudent.other.male": int
+  "uniquePeopleCount.masterStudent.other.male": int
+  "uniquePeopleCount.bachelorStudent.other.male": int
+  "uniquePeopleCount.professor.other.nonbinary": int
+  "uniquePeopleCount.seniorResearcher.other.nonbinary": int
+  "uniquePeopleCount.postDoc.other.nonbinary": int
+  "uniquePeopleCount.phdStudent.other.nonbinary": int
+  "uniquePeopleCount.masterStudent.other.nonbinary": int
+  "uniquePeopleCount.bachelorStudent.other.nonbinary": int
+  
+  
+  "uniquePeopleCount.professor.other.female": int
+  "uniquePeopleCount.seniorResearcher.other.female": int
+  "uniquePeopleCount.postDoc.other.female": int
+  "uniquePeopleCount.phdStudent.other.female": int
+  "uniquePeopleCount.masterStudent.other.female": int
+  "uniquePeopleCount.bachelorStudent.other.female": int
+  "uniquePeopleCount.professor.other.male": int
+  "uniquePeopleCount.seniorResearcher.other.male": int
+  "uniquePeopleCount.postDoc.other.male": int
+  "uniquePeopleCount.phdStudent.other.male": int
+  "uniquePeopleCount.masterStudent.other.male": int
+  "uniquePeopleCount.bachelorStudent.other.male": int
+  "uniquePeopleCount.professor.other.nonbinary": int
+  "uniquePeopleCount.seniorResearcher.other.nonbinary": int
+  "uniquePeopleCount.postDoc.other.nonbinary": int
+  "uniquePeopleCount.phdStudent.other.nonbinary": int
+  "uniquePeopleCount.masterStudent.other.nonbinary": int
+  "uniquePeopleCount.bachelorStudent.other.nonbinary": int
+}
+
+
+```

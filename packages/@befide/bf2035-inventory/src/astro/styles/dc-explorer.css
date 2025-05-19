@@ -1,9 +1,0 @@
-@import "./dc-explorer.layout.css";
-@import "./dc-explorer.tiles.css";
-@import "./dc-explorer.charts.css";
-@import "./dc-explorer.tree.css";
-
-.dc-explorer {
-  --interaction__color--spot: orange;
-  --interaction__color--neutral--dark: #ccc;
-}

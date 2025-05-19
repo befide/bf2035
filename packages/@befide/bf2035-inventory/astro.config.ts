@@ -15,16 +15,15 @@ import rehypeRewrite from "rehype-rewrite"
 
 import sectionize from "remark-sectionize"
 import remarkDirective from "remark-directive"
-import spaceCommander from "./src/astro/utils/space-commander.ts"
+import spaceCommander from "./src/astro/domain/space-commander.ts"
 import tailwindcss from "@tailwindcss/vite"
 import UnpluginUnused from "unplugin-unused/vite"
 
-import starlightFullViewMode from "starlight-fullview-mode"
 
 // https://astro.build/config
 export default defineConfig({
   devToolbar: {
-    enabled: false,
+    enabled: true,
   },
   experimental: {
     contentIntellisense: true,
@@ -62,7 +61,7 @@ export default defineConfig({
       [
         rehypeRewrite,
         {
-          rewrite: (node) => {
+          rewrite: (node: any) => {
             if (node.type === "text") {
               node.value = spaceCommander(node.value)
             }
@@ -97,6 +96,10 @@ export default defineConfig({
       // plugins: [starlightFullViewMode({ rightSidebarEnabled: true, leftSidebarExpandedWidth: "200px" })],
       sidebar: [
         // A topic representing a guide section of your project.
+        {
+          label: "Data schema",
+          link: "/data/",
+        },
         {
           label: "Taxonomy",
           link: "/data/taxonomy",

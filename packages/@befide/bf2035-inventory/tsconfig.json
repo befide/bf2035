@@ -8,7 +8,10 @@
       "@/*": ["src/*"],
       "@components/*": ["src/astro/components/*"],
       "@styles/*": ["src/astro/styles/*"],
-      "@utils/*": ["src/astro/utils/*"]
+      "@utils/*": ["src/astro/domain/*"],
+      "@nanostore/*": ["src/astro/nanostore/*"],
+      "@domain/*": ["src/astro/domain/*"],
+      "@content/*": ["src/content/*"]
     },
     "jsx": "preserve"
   }

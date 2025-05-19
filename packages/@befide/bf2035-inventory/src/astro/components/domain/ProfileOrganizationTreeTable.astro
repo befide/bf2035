@@ -1,5 +1,5 @@
 ---
-import { getValue } from '@utils/index';
+import { getValue } from '@/astro/domain/index';
 import fastCartesian from 'fast-cartesian';
 import MemberIcon from './MemberIcon.astro';
 import {
@@ -7,8 +7,8 @@ import {
   genders,
   disciplinaryProfessions,
   type Organization,
-} from '@/content/config.organizations';
-import { flattenTreeNodes, getRoots } from '@utils/content.tree';
+} from '@/astro/domain/organizations/organizations.config';
+import { flattenTreeNodes, getRoots } from '@/astro/domain/content.tree';
 import { getCollection } from 'astro:content';
 
 
