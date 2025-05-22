@@ -12,7 +12,6 @@ export const $taxonomy = computed($locale, (locale) =>
 
 export const $taxonomyIndex = computed($taxonomy, (taxonomy) =>
   task(async () => {
-    debugger;
     return crossfilter((await taxonomy) || [])
   })
 )

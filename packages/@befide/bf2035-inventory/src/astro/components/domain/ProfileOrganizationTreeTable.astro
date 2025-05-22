@@ -6,7 +6,7 @@ import {
   careerLevels,
   genders,
   disciplinaryProfessions,
-  type Organization,
+  type OrganizationSchema,
 } from '@/astro/domain/organizations/organizations.config';
 import { flattenTreeNodes, getRoots } from '@/astro/domain/content.tree';
 import { getCollection } from 'astro:content';
@@ -28,12 +28,12 @@ const organizations = await getCollection(
   'organizations', ({ data }) => (
     data.isPartOfCommunity &&
     organizationId === undefined ||
-    data.hasTopLevelOrganization?.id === organizationId ||
+    data.topLevelOrganization_id?.id === organizationId ||
     data.id === organizationId ||
     data.id === ':'
   ))
 
-const organizationRoots = getRoots<Organization>(organizations.map(d => d.data));
+const organizationRoots = getRoots<OrganizationSchema>(organizations.map(d => d.data));
 const list = flattenTreeNodes(organizationRoots)
 
 ---

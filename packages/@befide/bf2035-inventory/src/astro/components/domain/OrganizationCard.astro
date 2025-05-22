@@ -1,8 +1,8 @@
 ---
-import type { Organization } from "@/astro/domain/organizations/organizations.config"
+import type { OrganizationSchema } from "@/astro/domain/organizations/organizations.config"
 
 interface Props {
-  organization: Organization
+  organization: OrganizationSchema
 }
 
 let { organization } = Astro.props

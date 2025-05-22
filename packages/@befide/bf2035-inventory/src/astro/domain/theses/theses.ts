@@ -1,6 +1,8 @@
 import { getCollection, getEntry } from "astro:content"
 import { descending, ascending } from "d3-array"
 import { getValueTranslation } from ".."
+import { getLocalizedValue } from "../content"
+import { cleanStores } from "nanostores"
 
 
 export const allTheses = async () =>
@@ -30,13 +32,22 @@ export const thesesForeAPI = async (locale = "en") => {
         author: {
           familyName: thesis.data.author.familyName,
           givenName: thesis.data.author.givenName,
-          gender: getValueTranslation(thesis.data.author.gender, locale)
+          gender:
+            thesis.data.author.gender &&
+            getValueTranslation(thesis.data.author.gender, locale)
         },
         language: getValueTranslation(thesis.data.language, locale),
         year: thesis.data.year,
-        university: university?.label.short[locale],
-        organizations: organizations?.map((d) => d.label.short[locale]),
-        facilities: facilities?.map((d) => d.label.short[locale]),
+        university:
+          (university &&
+            getLocalizedValue(university, "label.short", locale)) ||
+          getValueTranslation(thesis.data.publisher, locale),
+        organizations: organizations?.map((d) =>
+          getLocalizedValue(d, "label.short", locale)
+        ),
+        facilities: facilities?.map((d) =>
+          getLocalizedValue(d, "label", locale)
+        ),
 
         degree:
           thesis.data.thesisType.indexOf("Ing.") > -1

@@ -18,34 +18,28 @@ const INPUT_FILE_PATH = path.join(
   "taxonomy-items.csv",
 );
 
-export const TaxonomyItemSchema = z.object({
+const TaxonomyItemZodSchema = z.object({
   id: z.string(),
-  parentId: z.string().nullable(),
-  parent: reference("taxonomyItems").nullable(),
+  parent_id: z.string().nullable(),
+  // parent: reference("taxonomyItems").nullable(),
   taxonomyURI: z.string(),
   term: LocalizedString,
   definition: NullableLocalizedString,
   synonyms: NullableLocalizedString,
-  review: ReviewSchema,
-});
+  review: ReviewSchema
+})
 
-export type TaxonomyItem = z.infer<typeof TaxonomyItemSchema>;
+export type TaxonomyItemSchema = z.infer<typeof TaxonomyItemZodSchema>
 
 export const defineTaxonomyItemsCollection = defineCollection({
   loader: file(INPUT_FILE_PATH, {
     parser: (input) => {
-      const data = csv2json<TaxonomyItem>(input, {
-        nested: true,
+      const data = csv2json<TaxonomyItemSchema>(input, {
+        nested: true
       })
 
-      data.forEach(d => {
-
-        d.parent =  d.parentId
-      })
       return data
-    
-    
     }
   }),
-  schema: TaxonomyItemSchema,
-});
+  schema: TaxonomyItemZodSchema
+})

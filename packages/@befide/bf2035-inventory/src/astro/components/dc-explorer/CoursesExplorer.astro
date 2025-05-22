@@ -10,28 +10,24 @@ import DCExplorerTable from "@components/dc-explorer/components/DCExplorerTable.
     <DCExplorerCount collection="courses" dimension="count" />
     <DCExplorerRowChart
       collection="courses"
-      dimension="university"
-      accessorPath="university"
+      dimension="university_label"
       dimensionIsLocalized={true}
       title={Astro.locals.t("dc-explorer.tiles.title.universities")}
     />
     <DCExplorerRowChart
       collection="courses"
-      dimension="instanceOfTeachingEvent"
-      dimensionIsLocalized={true}
-      accessorPath="instanceOfTeachingEvent"
+      dimension="teachingEventTaxon_label"
       title={Astro.locals.t("dc-explorer.tiles.title.teaching-event")}
     />
     <DCExplorerRowChart
       collection="courses"
-      dimension="addressesProgrammesOfStudyLevels"
-      dimensionIsLocalized={true}
+      dimension="studyLevelTaxons_label"
       dimensionIsArray={true}
       title={Astro.locals.t("dc-explorer.tiles.title.study-levels")}
     />
     <DCExplorerRowChart
       collection="courses"
-      dimension="semsters"
+      dimension="semesters"
       dimensionIsArray={true}
       title={Astro.locals.t("dc-explorer.tiles.title.semesters")}
     />

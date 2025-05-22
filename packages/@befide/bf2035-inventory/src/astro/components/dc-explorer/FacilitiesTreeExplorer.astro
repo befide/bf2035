@@ -11,24 +11,24 @@ import DCExplorerTreeDataTable from "@components/dc-explorer/components/DCExplor
 
     <DCExplorerRowChart
       collection="facilities"
-      dimension="instanceOf"
+      dimension="instanceOf_label"
       title="instanceOf"
     />
     <DCExplorerRowChart
       collection="facilities"
-      dimension="lifeCycle"
+      dimension="currentStatus_label"
       title="lifeCycle"
     />
-    <DCExplorerRowChart
+      <DCExplorerRowChart
       collection="facilities"
       dimension="primaryBeamParticles"
-      title="primaryBeamParticles"
+      title={Astro.locals.t("dc-explorer.tiles.title.primaryBeamParticles")}
       dimensionIsArray={true}
     />
     <DCExplorerRowChart
       collection="facilities"
       dimension="secondaryBeamParticles"
-      title="secondaryBeamParticles"
+      title={Astro.locals.t("dc-explorer.tiles.title.secondaryBeamParticles")}
       dimensionIsArray={true}
     />
   </div>

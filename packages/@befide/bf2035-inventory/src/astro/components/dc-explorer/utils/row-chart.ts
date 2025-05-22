@@ -1,8 +1,6 @@
 import { select } from "d3"
 import { rowChart } from "dc"
 import { baselineHeight, margins, charts, getChartWidth } from "."
-import { isPartOfTypeOnlyImportOrExportDeclaration } from "typescript"
-
 export const rowChartTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension
 }

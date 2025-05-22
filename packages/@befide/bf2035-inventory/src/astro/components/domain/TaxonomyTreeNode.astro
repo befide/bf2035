@@ -1,6 +1,6 @@
 ---
 import type { TreeNode } from '@/astro/domain/content.tree'
-import { getValue2 } from '@/astro/domain/content'
+import { getValue } from '@/astro/domain/content'
 import type { TaxonomyItem } from '@/astro/domain/taxonomy/taxonomy.config'
 interface Props {
   node: TreeNode<TaxonomyItem>
@@ -22,12 +22,12 @@ const { lang } = Astro.locals.starlightRoute
     >
       <summary>
         <div class="tree-nav__item-title">
-          <span class="term">{getValue2(node, 'data.term.' + lang)}</span>
+          <span class="term">{getValue(node, 'data.term.' + lang)}</span>
           <span class="children-count">{node.children.length}</span>
         </div>
 
         <div class="tree-nav__item-body">
-          {getValue2(node, 'data.definition.' + lang)}
+          {getValue(node, 'data.definition.' + lang)}
         </div>
       </summary>
 
@@ -48,11 +48,11 @@ const { lang } = Astro.locals.starlightRoute
       ]}
     >
       <div class="tree-nav__item-title">
-        <span class="term">{getValue2(node, 'data.term.' + lang)}</span>
+        <span class="term">{getValue(node, 'data.term.' + lang)}</span>
       </div>
       <div class="tree-nav__item-body">
         <div class="definition">
-          {getValue2(node, 'data.definition.' + lang)}
+          {getValue(node, 'data.definition.' + lang)}
         </div>
       </div>
     </div>

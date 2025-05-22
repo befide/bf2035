@@ -60,5 +60,9 @@
   "dc-explorer.tiles.title.teaching-event": "Kurstyp",
   "dc-explorer.tiles.title.teaching-events": "Kurstypen",
   "dc-explorer.tiles.title.universities": "Universitäten",
-  "dc-explorer.tiles.title.university": "Universität"
+  "dc-explorer.tiles.title.university": "Universität",
+  "dc-explorer.tiles.title.primaryBeamParticles": "Primärstrahl-Teilchen",
+  "dc-explorer.tiles.title.secondaryBeamParticles": "Seknundärstrahl-Teilchen"
+
+  
 }

@@ -15,7 +15,7 @@ export const allOrganizationsForTopLevelOrganization = async (
     "organizations",
     ({ data, id }) =>
       topLevelOrganizationId === undefined ||
-      data.hasTopLevelOrganization?.id === topLevelOrganizationId ||
+      data.topLevelOrganization_id?.id === topLevelOrganizationId ||
       id === topLevelOrganizationId ||
       id === ":"
   )
@@ -26,7 +26,7 @@ export const allCommunityTopLevelOrganizations = async () =>
     "organizations",
     (entry) =>
       entry.data.isPartOfCommunity &&
-      !entry.data.hasTopLevelOrganization &&
+      !entry.data.topLevelOrganization_id &&
       entry.data.befideOrganizationCategories.indexOf("committee") !== 0
   )
 
@@ -117,7 +117,7 @@ export const communityForAPI = async (locale: string) => {
 
       depth: item.depth,
       height: item.children.length,
-      parentId: item.parentId,
+      parent_id: item.parent_id,
 
       label: item.data.label.fullName[locale],
       label__fullName: item.data.label.fullName[locale],
@@ -169,7 +169,7 @@ export type Organizations = Organization[]
 
 export interface Organization {
   id: string
-  parentId: string
+  parent_id: string
   depth: number
   height: number
   isDomainSpecific: boolean

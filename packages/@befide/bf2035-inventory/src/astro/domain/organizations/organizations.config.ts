@@ -71,15 +71,17 @@ export const BefideOrganizationMetaBefideOrganizationCategories = z.enum([
   "consortium",
 ]);
 
-export const OrganizationSchema = z.object({
+export const OrganizationZodSchema = z.object({
   id: z.string(),
-  isInstanceOf: z.preprocess((input) => {
-    return (input+"").split(/\s?,\s?/).toSorted()
-  }, z.array(reference("taxonomyItems"))),
-  parentId: reference("organizations").optional().nullable(),
-  hasTopLevelOrganization: reference("organizations").optional().nullable(),
+  parent_id: z.string().nullable(),
+  // parent_id: reference("organizations").optional().nullable(),
+  topLevelOrganization_id: z.string().nullable(), //reference("organizations").optional().nullable(),
+  instanceTaxons_id: z.preprocess((input) => {
+    return (input + "").split(/\s?,\s?/).toSorted()
+  }, z.array(z.string())),
+
   befideOrganizationCategories: z.preprocess((input) => {
-    return (input+"").split(/\s?,\s?/).toSorted()
+    return (input + "").split(/\s?,\s?/).toSorted()
   }, z.array(BefideOrganizationMetaBefideOrganizationCategories)),
 
   isPartOfCommunity: z.boolean(),
@@ -129,7 +131,7 @@ export const OrganizationSchema = z.object({
 export const defineOrganizationCollection = defineCollection({
   loader: () => {
     const input = readInputFile(INPUT_FILENAME).toString();
-    const organizations = csv2json<Organization>(input, {
+    const organizations = csv2json<OrganizationSchema>(input, {
       nested: true,
     });
 
@@ -139,7 +141,7 @@ export const defineOrganizationCollection = defineCollection({
 
     return organizations;
   },
-  schema: OrganizationSchema,
+  schema: OrganizationZodSchema,
 });
 
-export type Organization = z.infer<typeof OrganizationSchema>;
+export type OrganizationSchema = z.infer<typeof OrganizationZodSchema>;

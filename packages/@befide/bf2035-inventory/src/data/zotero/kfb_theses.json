@@ -1,5 +1,289 @@
 [
   {
+    "key": "7U46XZKL",
+    "version": 2656,
+    "library": {
+      "type": "group",
+      "id": 2427722,
+      "name": "kfb_dissertations",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/kfb_dissertations",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/2427722/items/7U46XZKL",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/kfb_dissertations/items/7U46XZKL",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2172757,
+        "username": "drkrthj",
+        "name": "Dirk Rathje",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/drkrthj",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Morgenroth",
+      "parsedDate": "2024",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "7U46XZKL",
+      "version": 2656,
+      "itemType": "thesis",
+      "title": "S-EBIT commissioning",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Tino",
+          "lastName": "Morgenroth"
+        },
+        {
+          "creatorType": "contributor",
+          "firstName": "Thomas",
+          "lastName": "Stöhlker"
+        },
+        {
+          "creatorType": "contributor",
+          "firstName": "Dariusz",
+          "lastName": "Banaś"
+        },
+        {
+          "creatorType": "contributor",
+          "firstName": "Richard",
+          "lastName": "Wilhelm"
+        }
+      ],
+      "abstractNote": "The GSI Helmholtzzentrum für Schwerionenforschung GmbH (GSI) in Darmstadt is a large-scale facility for basic research on and with highly charged ions in various physics fields, such as atomic and quantum physics. The amount of beamtime requested for experiments at the GSI accelerator complex significantly exceeds the amount available. At the research installations for low energetic ions, such as HITRAP and CRYRING@ESR, local ion sources can help to reduce this discrepancy. S-EBIT II is an electron beam ion trap (EBIT), which is planned to be used as a local ion source at HITRAP. EBITs are versatile tools, as they can provide ions for other experiments and can be used as independent experiments for spectroscopic measurements with highly charged ions. In the course of this work, S-EBIT II was set up and put into operation at the HITRAP platform at GSI. Successful commissioning was demonstrated through the measurement of an x-ray spectrum, which exhibits the K-Alpha and K-Beta emissions of trapped highly charged argon ions. Subsequently, measurements of KLL dielectronic recombination resonances of carbon-like to helium-like argon were carried out, based on which charge state abundances within the EBIT could be estimated.",
+      "thesisType": "",
+      "university": "Friedrich-Schiller-Universität Jena",
+      "place": "",
+      "date": "2024",
+      "numPages": "",
+      "language": "en",
+      "shortTitle": "",
+      "url": "https://www.db-thueringen.de/receive/dbt_mods_00064495",
+      "accessDate": "2025-05-20T05:37:15Z",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "callNumber": "",
+      "rights": "Creative Commons Attribution 4.0 International",
+      "extra": "DOI: 10.22032/DBT.64495",
+      "tags": [
+        {
+          "tag": "#academic-degree/doctoral-degree/:dr.rer.nat."
+        },
+        {
+          "tag": "#befide/organization/:uni-mainz"
+        },
+        {
+          "tag": "#person/gender/:male"
+        }
+      ],
+      "collections": [
+        "54EE97HD"
+      ],
+      "relations": {
+        "dc:replaces": "http://zotero.org/groups/2427722/items/DKBD9WPG"
+      },
+      "dateAdded": "2025-05-20T05:34:21Z",
+      "dateModified": "2025-05-20T05:40:46Z"
+    }
+  },
+  {
+    "key": "6A678H6N",
+    "version": 2654,
+    "library": {
+      "type": "group",
+      "id": 2427722,
+      "name": "kfb_dissertations",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/kfb_dissertations",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/2427722/items/6A678H6N",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/kfb_dissertations/items/6A678H6N",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2172757,
+        "username": "drkrthj",
+        "name": "Dirk Rathje",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/drkrthj",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Reuter",
+      "parsedDate": "2018",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "6A678H6N",
+      "version": 2654,
+      "itemType": "thesis",
+      "title": "Characterisation of a laser wakefield accelerator with ultra-short probe pulses",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Maria",
+          "lastName": "Reuter"
+        }
+      ],
+      "abstractNote": "Within the frame of this thesis, aspects of the acceleration of electrons with high-intensity laser pulses inside an underdense plasma were investigated. The basic acceleration mechanism, which is referred to as laser wakefield acceleration relies on the generation of a plasma wave by an intense laser pulse. Since the plasma wave co-propagates with the laser pulse, its longitudinally alternating electric field moves with a velocity close to the speed of light and electrons trapped in the accelerating phase of the wave can be accelerated to relativistic energies. While basic principles such as the generation of a plasma wave, the injection of electrons into the accelerating phase of the wave and limits to the acceleration process are known, the exact processes occurring during the nonlinear interaction of laser pulse and plasma wave still need to be explored in more detail. The consequence of those nonlinear processes is a drastic change of the electron parameters – e.g. final electron energy, bandwidth and pointing – through slight changes in the initial conditions. In this context, the position in the plasma at which electrons are injected into the plasma wave plays a key role for the maximum achievable electron energy. Therefore, the injection of electrons at a defined position is a possibility to reduce shot-to-shot fluctuations and might make the electron pulses applicable, e.g. as a stable source of secondary radiation for temporally and spatially highly resolving imaging techniques. The investigation of controlled injection of electrons at an electron density transition demonstrated a correlation of electron pulse parameters such as electron energy gain and accelerated charge to the properties of the transition, and thus, might be a promising method to generate custom designed electron pulses. Nevertheless, shot-to-shot fluctuations in the electron parameters were still observed and are most likely caused by the nonlinear evolution of the laser pulse inside the plasma. To further reduce instabilities, deeper insight into these nonlinear processes is required and hence, a method to observe the plasma wave and the laser pulse. Combining an ultra short probe pulse with a highly resolving imaging system as successfully implemented at the institute of Optics and Quantumelectronics in Jena, more light can be shed on these processes, which take place on femtosecond and micrometer scales. With that system, characteristics of the magnetic fields inextricably connected to the acceleration process could be studied in unprecedented detail. This deeper insight allowed to observe signatures of the magnetic field of the driving laser pulse for the first time, which paves the way for the indirect observation of the main laser pulse during the interaction.",
+      "thesisType": "Doctoral thesis (Dr. rer. nat.)",
+      "university": "Friedrich-Schiller-Universität Jena",
+      "place": "",
+      "date": "2018",
+      "numPages": "",
+      "language": "en",
+      "shortTitle": "",
+      "url": "https://doi.org/10.22032/DBT.38073",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "fulltext-url: https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00044194/Diss_reuter.pdf\nCitation Key: reuter__2018__characterisation",
+      "tags": [
+        {
+          "tag": "#academic-degree/doctoral-degree/:dr.rer.nat."
+        },
+        {
+          "tag": "#befide/accelerating-process/plasma-based-acceleration/plasma-based_laser-driven_acceleration"
+        },
+        {
+          "tag": "#befide/organization/:uni-jena"
+        },
+        {
+          "tag": "#person/gender/:female"
+        }
+      ],
+      "collections": [
+        "54EE97HD"
+      ],
+      "relations": {},
+      "dateAdded": "2025-01-19T06:42:20Z",
+      "dateModified": "2025-05-20T05:39:12Z"
+    }
+  },
+  {
+    "key": "K9763222",
+    "version": 2641,
+    "library": {
+      "type": "group",
+      "id": 2427722,
+      "name": "kfb_dissertations",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/kfb_dissertations",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/2427722/items/K9763222",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/kfb_dissertations/items/K9763222",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2172757,
+        "username": "drkrthj",
+        "name": "Dirk Rathje",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/drkrthj",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Fitterer",
+      "parsedDate": "2013",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "K9763222",
+      "version": 2641,
+      "itemType": "thesis",
+      "title": "Design Study of the Large Hadron Electron Collider and a Rapid Cycling Synchrotron as Alternative to the PS Booster Upgrade at {CERN}",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Miriam",
+          "lastName": "Fitterer"
+        }
+      ],
+      "abstractNote": "",
+      "thesisType": "Doctoral thesis (Dr. rer. nat.)",
+      "university": "Karlsruher Institut für Technologie",
+      "place": "",
+      "date": "2013",
+      "numPages": "",
+      "language": "en",
+      "shortTitle": "",
+      "url": "https://doi.org/10.5445/IR/1000035142",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "fulltext-url: https://publikationen.bibliothek.kit.edu/1000035142/2624738",
+      "tags": [
+        {
+          "tag": "#academic-degree/doctoral-degree/:dr.rer.nat."
+        },
+        {
+          "tag": "#befide/facility/:cac/ps"
+        },
+        {
+          "tag": "#befide/organization/:kit"
+        },
+        {
+          "tag": "#person/gender/:female"
+        }
+      ],
+      "collections": [
+        "4M497SWC"
+      ],
+      "relations": {},
+      "dateAdded": "2023-02-15T05:36:53Z",
+      "dateModified": "2025-05-10T21:03:45Z"
+    }
+  },
+  {
     "key": "B6PXR472",
     "version": 2639,
     "library": {
@@ -10686,100 +10970,6 @@
       ],
       "relations": {},
       "dateAdded": "2025-01-19T06:42:45Z",
-      "dateModified": "2025-05-09T14:01:07Z"
-    }
-  },
-  {
-    "key": "6A678H6N",
-    "version": 2583,
-    "library": {
-      "type": "group",
-      "id": 2427722,
-      "name": "kfb_dissertations",
-      "links": {
-        "alternate": {
-          "href": "https://www.zotero.org/groups/kfb_dissertations",
-          "type": "text/html"
-        }
-      }
-    },
-    "links": {
-      "self": {
-        "href": "https://api.zotero.org/groups/2427722/items/6A678H6N",
-        "type": "application/json"
-      },
-      "alternate": {
-        "href": "https://www.zotero.org/groups/kfb_dissertations/items/6A678H6N",
-        "type": "text/html"
-      }
-    },
-    "meta": {
-      "createdByUser": {
-        "id": 2172757,
-        "username": "drkrthj",
-        "name": "Dirk Rathje",
-        "links": {
-          "alternate": {
-            "href": "https://www.zotero.org/drkrthj",
-            "type": "text/html"
-          }
-        }
-      },
-      "creatorSummary": "Reuter",
-      "parsedDate": "2018",
-      "numChildren": 0
-    },
-    "data": {
-      "key": "6A678H6N",
-      "version": 2583,
-      "itemType": "thesis",
-      "title": "Characterisation of a laser wakefield accelerator with ultra-short probe pulses",
-      "creators": [
-        {
-          "creatorType": "author",
-          "firstName": "Maria",
-          "lastName": "Reuter"
-        },
-        {
-          "creatorType": "contributor",
-          "name": "Thüringer Universitäts- Und Landesbibliothek Jena"
-        }
-      ],
-      "abstractNote": "Within the frame of this thesis, aspects of the acceleration of electrons with high-intensity laser pulses inside an underdense plasma were investigated. The basic acceleration mechanism, which is referred to as laser wakefield acceleration relies on the generation of a plasma wave by an intense laser pulse. Since the plasma wave co-propagates with the laser pulse, its longitudinally alternating electric field moves with a velocity close to the speed of light and electrons trapped in the accelerating phase of the wave can be accelerated to relativistic energies. While basic principles such as the generation of a plasma wave, the injection of electrons into the accelerating phase of the wave and limits to the acceleration process are known, the exact processes occurring during the nonlinear interaction of laser pulse and plasma wave still need to be explored in more detail. The consequence of those nonlinear processes is a drastic change of the electron parameters – e.g. final electron energy, bandwidth and pointing – through slight changes in the initial conditions. In this context, the position in the plasma at which electrons are injected into the plasma wave plays a key role for the maximum achievable electron energy. Therefore, the injection of electrons at a defined position is a possibility to reduce shot-to-shot fluctuations and might make the electron pulses applicable, e.g. as a stable source of secondary radiation for temporally and spatially highly resolving imaging techniques. The investigation of controlled injection of electrons at an electron density transition demonstrated a correlation of electron pulse parameters such as electron energy gain and accelerated charge to the properties of the transition, and thus, might be a promising method to generate custom designed electron pulses. Nevertheless, shot-to-shot fluctuations in the electron parameters were still observed and are most likely caused by the nonlinear evolution of the laser pulse inside the plasma. To further reduce instabilities, deeper insight into these nonlinear processes is required and hence, a method to observe the plasma wave and the laser pulse. Combining an ultra short probe pulse with a highly resolving imaging system as successfully implemented at the institute of Optics and Quantumelectronics in Jena, more light can be shed on these processes, which take place on femtosecond and micrometer scales. With that system, characteristics of the magnetic fields inextricably connected to the acceleration process could be studied in unprecedented detail. This deeper insight allowed to observe signatures of the magnetic field of the driving laser pulse for the first time, which paves the way for the indirect observation of the main laser pulse during the interaction.",
-      "thesisType": "Doctoral thesis (Dr. rer. nat.)",
-      "university": "Friedrich-Schiller-Universität Jena",
-      "place": "",
-      "date": "2018",
-      "numPages": "",
-      "language": "en",
-      "shortTitle": "",
-      "url": "https://doi.org/10.22032/DBT.38073",
-      "accessDate": "",
-      "archive": "",
-      "archiveLocation": "",
-      "libraryCatalog": "",
-      "callNumber": "",
-      "rights": "",
-      "extra": "fulltext-url: https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00044194/Diss_reuter.pdf\nCitation Key: reuter__2018__characterisation",
-      "tags": [
-        {
-          "tag": "#academic-degree/doctoral-degree/:dr.rer.nat."
-        },
-        {
-          "tag": "#befide/accelerating-process/plasma-based-acceleration/plasma-based_laser-driven_acceleration"
-        },
-        {
-          "tag": "#befide/organization/:uni-jena"
-        },
-        {
-          "tag": "#person/gender/:female"
-        }
-      ],
-      "collections": [
-        "54EE97HD"
-      ],
-      "relations": {},
-      "dateAdded": "2025-01-19T06:42:20Z",
       "dateModified": "2025-05-09T14:01:07Z"
     }
   },

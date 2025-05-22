@@ -1,61 +1,42 @@
-import { stratify, hierarchy } from "d3"
+import { stratify, hierarchy, select } from "d3"
 import { ascending } from "d3-array"
 import { baseMixin } from "dc"
 
-// const nester = ({ key, sortKeys, sortValues, entries }) => {
-//   if (sortValues) {
-//     entries = [...entries].sort(sortValues)
-//   }
-//   let out = groups(entries, key)
-//   if (sortKeys) {
-//     out = out.sort(sortKeys)
-//   }
+const treeNode = (items, selectedItems) => {
+  const selectedItemIds = selectedItems
+    ? selectedItems.map((d) => d.id)
+    : items.map((d) => d.id)
 
-//   // remap to d3@v5 structure
-//   return out.map((e) => ({
-//     key: `${e[0]}`, // d3@v5 always returns key as string
-//     values: e[1],
-//   }))
-// }
+  const decoratedItems = items.map((item) => ({
+    ...item,
+    isSelected: selectedItemIds.indexOf(item.id) > -1
+  }))
 
-const tree = (entries) => {
-  const roots = entries.filter((d) => !d.parentId)
+  const roots = decoratedItems.filter((d) => !d.parent_id)
 
-  const rootedEngtries =
+  const rootedEntries =
     roots.length === 1
-      ? entries
-      : entries
+      ? decoratedItems
+      : decoratedItems
           .map((d) => ({
             ...d,
-            parentId: d.parentId ? d.parentId : ":"
+            parent_id: d.parent_id ? d.parent_id : ":"
           }))
-          .concat({ id: ":", parentId: null, term: { de: "ROOT", en: "ROOT" } })
+          .concat({
+            id: ":",
+            parent_id: null,
+            label: "ROOT"
+          })
 
   const root = stratify()
     .id((d) => d.id)
-    .parentId((d) => d.parentId)(rootedEngtries)
+    .parentId((d) => d.parent_id)(rootedEntries)
 
   const tree = hierarchy(root, (d) => d.children).sum((d) =>
     d.children?.length > 0 ? 0 : 1
   )
 
   return tree
-
-  // // Index the nodes by id, in case they come out of order.
-  // nodes.forEach(function (d) {
-  //   nodeById[d.id] = d
-  // })
-
-  // // Lazily compute children.
-  // nodes.forEach(function (d) {
-  //   if ("manager" in d) {
-  //     var manager = nodeById[d.manager]
-  //     if (manager.children) manager.children.push(d)
-  //     else manager.children = [d]
-  //   }
-  // })
-
-  return root
 }
 
 /**
@@ -99,6 +80,10 @@ export default function (parent, chartGroup?) {
 
   const _chart = baseMixin({})
 
+  let _allEntries
+  let _entriesMap = {}
+  let _ancestorsMap = {}
+  let _allEntriesTree
   let _size = 25
   let _columns = []
   let _sortBy = function (d) {
@@ -162,52 +147,146 @@ export default function (parent, chartGroup?) {
     return s
   }
 
-  function treeEntries() {
-    let entries
-    if (_order === ascending) {
-      entries = _chart.dimension().bottom(_size)
-    } else {
-      entries = _chart.dimension().top(_size)
-    }
+  function treeRoot() {
+    const selectedEntries =
+      _order === ascending
+        ? _chart.dimension().top(_size)
+        : _chart.dimension().bottom(_size)
 
-    return tree(entries)
+    const uniqueSelectedEntries = new Set(
+      selectedEntries.map((entry) => entry.id)
+    )
+    const selectedEntriesAndAncestorIds = selectedEntries.flatMap((entry) => [
+      entry.id,
+      ..._ancestorsMap[entry.id]
+    ])
+    const uniqueSelectedEntriesAndAncestorIds = Array.from(
+      new Set(selectedEntriesAndAncestorIds)
+    )
+
+    const selectedEntriesAndAncestors = uniqueSelectedEntriesAndAncestorIds
+      .map((id) => _entriesMap[id])
+      .filter((d) => !!d)
+
+    selectedEntriesAndAncestors.sort((a, b) => a.label.localeCompare(b.label))
+
+    return treeNode(selectedEntriesAndAncestors, selectedEntries)
   }
 
-  function makeElements(parentDOM, myData) {
-    myData.children?.forEach(function (child) {
-      //add li element
-      //if children then make ul
-      const li = parentDOM.append("li")
-      li.classed("tree-data-node", true)
-      if (child.children?.length > 0) {
-        const details = li.append("details")
-        details.attr("open", true)
+  // function makeElements(parentDOM, myData) {
+  //   myData.children?.forEach(function (child) {
+  //     //add li element
+  //     //if children then make ul
+  //     const li = parentDOM.append("li")
+  //     li.classed("tree-data-node", true)
 
-        const summary = details.append("summary")
-        summary.classed("node-header", true).html(_chart.columns()[0].format(child))
-        
-        const ul = details.append("ul")
-        ul.classed("tree-data-list", true)
+  //     if (child.children?.length > 0) {
+  //       const details = li.append("details")
+  //       details.attr("open", true)
 
-        //recurse pass ul as parentDOM
-        makeElements(ul, child)
-      } else {
-        const header = li.append("div")
-        header.classed("node-header", true)
-        header
-          .classed("node-header", true)
-          .html(_chart.columns()[0].format(child))
-        
-      }
-    })
+  //       const summary = details.append("summary")
+  //       summary
+  //         .classed("node-header", true)
+  //         .classed("is-selected", child.data.data.isSelected)
+  //         .html(_chart.columns()[0].format(child))
+
+  //       const ul = details.append("ul")
+  //       ul.classed("tree-data-list", true)
+
+  //       //recurse pass ul as parentDOM
+  //       makeElements(ul, child)
+  //     } else {
+  //       const header = li.append("div")
+  //       header.classed("node-header", true)
+  //       header.classed("is-selected", child.data.data.isSelected)
+  //       header
+  //         .classed("node-header", true)
+  //         .html(_chart.columns()[0].format(child))
+  //     }
+  //   })
+  // }
+
+  function makeTree(selection) {
+    selection
+      .append("ul") //root ul
+      .classed("tree-data-list", true)
+      .classed("tree-root", true)
+  }
+
+  function renderNode(selection, node) {
+    // selection
+    //   .append("input")
+    //   .attr("type", "checkbox")
+    //   .on("change", function () {
+    //     select("#selected").text('checkboxValues(d3.select("#view"))')
+    //   })
+    if (node.children?.length > 0) {
+            const details = selection.append("details")
+            details.attr("open", true)
+    
+            const summary = details.append("summary")
+            summary
+              .classed("node-header", true)
+              // .classed("is-selected", node.data.isSelected)
+              .html(_chart.columns()[0].format(node))
+    
+            
+    
+            //recurse pass ul as parentDOM
+            
+          } else {
+            const header = selection.append("div")
+            header.classed("node-header", true)
+            // header.classed("is-selected",  node.data.data.isSelected)
+            header
+              .classed("node-header", true)
+              .html(_chart.columns()[0].format(node))
+          }
+    // selection.append("span").text(node.data.label)
+  }
+
+  // Recursively append child nodes
+  function updateNextLevel(selection, node) {
+    // const label = selection.append("span")
+    // const arrow = label.append("span").classed("arrow", true)
+
+    selection.call(renderNode, node.data)
+    if (!node.hasOwnProperty("children")) return
+    const items = selection
+      .append("ul")
+      .selectAll("li")
+      .data(node.children, (d) => d.id)
+    items.exit().remove()
+    items
+      .enter()
+      .append("li")
+      .classed("tree-data-node", true)
+      .merge(items)
+      .each(function (d) {
+        select(this).call(updateNextLevel, d)
+      })
+    // label
+    //   .select(".arrow")
+    //   .text("▼ ")
+    //   .on("click", function () {
+    //     // Collapse on click
+    //     const childList = selection.select("ul")
+    //     if (!childList.size()) return
+    //     const expanded = childList.style("display") !== "none"
+    //     select(this).text(expanded ? "▶ " : "▼ ")
+    //     childList.style("display", expanded ? "none" : "inherit")
+    //   })
+  }
+
+  function updateTree(selection, root) {
+    selection.select(".tree-root").call(updateNextLevel, treeRoot())
+    // selection.select(".tree-root > .node-header > span").remove()
   }
 
   function renderRoot() {
-    const rootNodes = _chart
-      .root()
-      .append("ul") //root ul
-      .classed("tree-data-list", true)
-    makeElements(rootNodes, treeEntries())
+    const rootNodes = _chart.root().call(makeTree).call(updateTree, treeRoot())
+
+    // makeElements(rootNodes, treeEntries())
   }
 
   _chart._doRedraw = function () {
@@ -299,85 +378,7 @@ export default function (parent, chartGroup?) {
     }
     _endSlice = endSlice
     return _chart
-  } /**
-   * Get or set column functions. The data table widget supports several methods of specifying the
-   * columns to display.
-   *
-   * The original method uses an array of functions to generate dynamic columns. Column functions
-   * are simple javascript functions with only one input argument `d` which represents a row in
-   * the data set. The return value of these functions will be used to generate the content for
-   * each cell. However, this method requires the HTML for the table to have a fixed set of column
-   * headers.
-   *
-   * <pre><code>chart.columns([
-   *     function(d) { return d.date; },
-   *     function(d) { return d.open; },
-   *     function(d) { return d.close; },
-   *     function(d) { return numberFormat(d.close - d.open); },
-   *     function(d) { return d.volume; }
-   * ]);
-   * </code></pre>
-   *
-   * In the second method, you can list the columns to read from the data without specifying it as
-   * a function, except where necessary (ie, computed columns).  Note the data element name is
-   * capitalized when displayed in the table header. You can also mix in functions as necessary,
-   * using the third `{label, format}` form, as shown below.
-   *
-   * <pre><code>chart.columns([
-   *     "date",    // d["date"], ie, a field accessor; capitalized automatically
-   *     "open",    // ...
-   *     "close",   // ...
-   *     {
-   *         label: "Change",
-   *         format: function (d) {
-   *             return numberFormat(d.close - d.open);
-   *         }
-   *     },
-   *     "volume"   // d["volume"], ie, a field accessor; capitalized automatically
-   * ]);
-   * </code></pre>
-   *
-   * In the third example, we specify all fields using the `{label, format}` method:
-   * <pre><code>chart.columns([
-   *     {
-   *         label: "Date",
-   *         format: function (d) { return d.date; }
-   *     },
-   *     {
-   *         label: "Open",
-   *         format: function (d) { return numberFormat(d.open); }
-   *     },
-   *     {
-   *         label: "Close",
-   *         format: function (d) { return numberFormat(d.close); }
-   *     },
-   *     {
-   *         label: "Change",
-   *         format: function (d) { return numberFormat(d.close - d.open); }
-   *     },
-   *     {
-   *         label: "Volume",
-   *         format: function (d) { return d.volume; }
-   *     }
-   * ]);
-   * </code></pre>
-   *
-   * You may wish to override the dataTable functions `_doColumnHeaderCapitalize` and
-   * `_doColumnHeaderFnToString`, which are used internally to translate the column information or
-   * function into a displayed header. The first one is used on the "string" column specifier; the
-   * second is used to transform a stringified function into something displayable. For the Stock
-   * example, the function for Change becomes the table header **d.close - d.open**.
-   *
-   * Finally, you can even specify a completely different form of column definition. To do this,
-   * override `_chart._doColumnHeaderFormat` and `_chart._doColumnValueFormat` Be aware that
-   * fields without numberFormat specification will be displayed just as they are stored in the
-   * data, unformatted.
-   * @method columns
-   * @memberof dc.dataTable
-   * @instance
-   * @param {Array<Function>} [columns=[]]
-   * @returns {Array<Function>}|dc.dataTable}
-   */
+  }
 
   _chart.columns = function (columns) {
     if (!arguments.length) {
@@ -452,6 +453,28 @@ export default function (parent, chartGroup?) {
    * @param {Boolean} [showGroups=true]
    * @returns {Boolean|dc.dataTable}
    */
+
+  _chart.allEntries = function (allEntries: any) {
+    if (!arguments.length) {
+      return _allEntries
+    }
+    _allEntries = allEntries
+    _entriesMap = allEntries.reduce(function (map, obj) {
+      map[obj.id] = obj
+      return map
+    }, {})
+
+    _allEntriesTree = treeNode(_allEntries)
+    _allEntriesTree.each(
+      (node) =>
+        (_ancestorsMap[node.data.data.id] = node
+          .ancestors()
+          .map((d) => d.data.data.id))
+    )
+
+    console.log(_ancestorsMap)
+    return _chart
+  }
 
   return _chart.anchor(parent, chartGroup)
 }

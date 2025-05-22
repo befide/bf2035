@@ -1,3 +1,5 @@
+import type { CourseSchema } from "@/astro/domain/courses"
+
 export const getTableConfig = (key, locale) => {
   if (key === "taxonomy") {
     return [
@@ -31,10 +33,10 @@ export const getTableConfig = (key, locale) => {
     return [
       {
         label: "University",
-        field_name: "university",
+        field_name: "university_label",
         sortable: true,
         format: function (d: Thesis) {
-          return d.university
+          return d.university_label
         }
       },
       {
@@ -89,10 +91,10 @@ export const getTableConfig = (key, locale) => {
     return [
       {
         label: "University",
-        field_name: "university",
+        field_name: "university_label",
         sortable: true,
-        format: function (d: Course) {
-          return d.university
+        format: function (d) {
+          return d.university_label
         }
       },
       {
@@ -106,7 +108,7 @@ export const getTableConfig = (key, locale) => {
         label: "Art",
         sortable: false,
         format: function (d: Course) {
-          return d.instanceOfTeachingEvent
+          return d.teachingEventTaxon_label
         }
       },
       {
@@ -114,7 +116,7 @@ export const getTableConfig = (key, locale) => {
         sortable: true,
         field_name: "sws",
         format: function (d: Course) {
-          return d.sws
+          return d.weeklySemesterHours
         }
       },
       {
@@ -136,16 +138,15 @@ export const getTreeTableConfig = (key, locale) => {
     return [
       {
         label: "Label",
-        
         format: (d) => {
           return (
             "<span class='tree-node__label'>" +
-            d.data.data.label +
+            d.data.label +
             "</span>" +
-           ( d.data.data.definition ? 
-            "<span class='tree-node__definition'>" +
-            d.data.data.definition || "" +
-            "</span>" : "")
+            (d.data.definition
+              ? "<span class='tree-node__definition'>" +
+                  d.data.definition || "" + "</span>"
+              : "")
           )
         }
       }
@@ -155,20 +156,32 @@ export const getTreeTableConfig = (key, locale) => {
       {
         label: "Label",
         className: "tree-node__label",
-        format: (d) => d.data.data.label
+        format: (d) => d.data.label
       },
       {
         label: "Label",
         className: "tree-node__value",
-        format: (d) => d.data.data.uniquePeopleCountRecursiveSum.total
+        format: (d) => d
       }
     ]
   } else if (key === "facilities") {
     return [
       {
         label: "Label",
-        className: "tree-node__label",
-        format: (d) => d.data.data.label
+        format: (d) => {
+          return (
+            "<span class='tree-node__label'>" +
+            d.data.label +
+            "</span>" +
+            "<span class='tree-node__operation'>(" +
+            [d.data.operation_startYear || "", 
+            d.data.operation_endYear || ""].join(" - ") +
+            ")</span>" +
+            (d.data.tagLine
+              ? "<span class='tree-node__definition'>" + d.data.tagLine + "</span>"
+              : "")
+          )
+        }
       }
     ]
   } else {

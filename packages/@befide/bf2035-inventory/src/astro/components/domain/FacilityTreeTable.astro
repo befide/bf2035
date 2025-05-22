@@ -48,8 +48,8 @@ const list = flattenTreeNodes (facilityRoots)
 
                             <span class="name">{item.data.label?.fullName?.en}</span>
                             <div class="type">
-                              {item.data.isInstanceOf &&
-                                  getEntry (item.data.isInstanceOf!).then (
+                              {item.data.isInstanceOfId &&
+                                  getEntry (item.data.isInstanceOfId!).then (
                                       (d) => d && d.data.term?.en
                                   )}
                             </div>

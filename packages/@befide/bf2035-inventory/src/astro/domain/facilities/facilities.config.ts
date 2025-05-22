@@ -1,89 +1,88 @@
-const INPUT_FILE = "facilities.csv";
+const INPUT_FILE = "facilities.csv"
 
-import { csv2json } from "csv42";
+import { csv2json } from "csv42"
 
-import { defineCollection, reference, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content"
 
 import {
   LocalizedString,
   NullableLocalizedString,
   readInputFile,
-  ReviewSchema,
-} from "../../../content/config.common";
+  ReviewSchema
+} from "../../../content/config.common"
 
-export const FacilitySchema = z.object({
+export const FacilityZodSchema = z.object({
   id: z.string(),
-  label: z.object({
-    fullName: LocalizedString,
-    short: NullableLocalizedString
-  }),
+  parent_id: z.string().nullable(),
+  partOf_id: z.string().optional().nullable(),
+  versionOf_id: z.string().optional().nullable(),
+  host_id: z.string().nullable(),
+
+  // parent: reference("facilities").optional().nullable(),
+  // predecessor: reference("facilities").optional().nullable(),
+  // host: reference("organizations").optional().nullable(),
+
+  label: LocalizedString,
+  tagLine: NullableLocalizedString,
   definition: NullableLocalizedString,
-  isBmbfFis: z.string().optional().nullable(),
+
+  isBMBF_FIS: z.boolean(),
   isUserFacility: z.boolean(),
-  hasHost: reference("organizations").optional().nullable(),
-  isInstanceOf: reference("taxonomyItems").optional().nullable(),
 
-  parentId: reference("facilities").optional().nullable(),
-  isSuccessorOf: reference("facilities").optional().nullable(),
+  instanceOfTaxon_id: z.string().nullable(),
 
-  employsAcceleratorTypes: z.string().optional().nullable(),
+  lifeCycle: z.object({
+    currentStatusTaxon_id: z.string().nullable(),
+    design: z
+      .object({
+        startYear: z.number().nullable()
+      })
+      .optional(),
+    realization: z
+      .object({
+        startYear: z.number().nullable()
+      })
+      .optional(),
+    operation: z
+      .object({
+        startYear: z.number().nullable(),
+        endYear: z.number().nullable()
+      })
+      .optional()
+  }),
 
-  lifeCycle: z
-    .object({
-      currentStatus: reference("taxonomyItems").nullable(),
-      design: z
-        .object({
-          startYear: z.number().nullable()
-        })
-        .optional(),
-      realization: z
-        .object({
-          startYear: z.number().nullable()
-        })
-        .optional(),
-      operation: z
-        .object({
-          startYear: z.number().nullable(),
-          endYear: z.number().nullable()
-        })
-        .optional()
-    })
-    .optional()
-    .nullable(),
-
-  primaryBeamParticles: z.preprocess((input) => {
-    return typeof input === "string" ? input.split(/\s?,\s?/) : input
-  }, z.array(z.string()).nullable()),
-  secondaryBeamParticles: z.preprocess((input) => {
-    return typeof input === "string" ? input.split(/\s?,\s?/) : input
-  }, z.array(z.string()).nullable()),
-
-  primaryApplications: z.preprocess(
-    (input) => {
-      return typeof input === "string" ? input.split(/\s?,\s?/) : input
-    },
-    z.array(reference("taxonomyItems")).nullable()
+  primaryApplicationTaxons_id: z.preprocess(
+    (input) => (input ? (input + "").split(/\s?,\s?/).filter((d) => !!d) : []),
+    z.array(z.string())
   ),
-  secondaryApplications: z.preprocess(
-    (input) => {
-      return typeof input === "string" ? input.split(/\s?,\s?/) : input
-    },
-    z.array(reference("taxonomyItems")).nullable()
+
+  secondaryApplicationTaxons_id: z.preprocess(
+    (input) => (input ? (input + "").split(/\s?,\s?/).filter((d) => !!d) : []),
+    z.array(z.string())
   ),
+
   parameters: z.object({
+    primaryBeamParticles: z.preprocess(
+      (input) =>
+        input ? (input + "").split(/\s?,\s?/).filter((d) => !!d) : [],
+      z.array(z.string()).nullable()
+    ),
+    secondaryBeamParticles: z.preprocess(
+      (input) =>
+        input ? (input + "").split(/\s?,\s?/).filter((d) => !!d) : [],
+      z.array(z.string()).nullable()
+    ),
     length__m: z.number().optional().nullable(),
-    E_0__eV: z.number().optional().nullable(),
-    E_1__eV: z.number().optional().nullable(),
+    E0__eV: z.number().optional().nullable(),
+    E1__eV: z.number().optional().nullable(),
     emittance__mrad: z.number().optional().nullable(),
     powerConsumption__W: z.number().optional().nullable(),
-    srPowerLoss__w: z.number().optional().nullable(),
-    yearOfOperationStart: z.number().optional().nullable(),
-    yearOfOperationEnd: z.number().optional().nullable()
+    srPowerLoss__W: z.number().optional().nullable()
   }),
   links: z.object({
     homepage: NullableLocalizedString,
     references: z.preprocess((input) => {
-      return typeof input === "string" ? input.split(/\s?,\s?/) : input
+      return (input + "").split(/\s?,\s?/)
     }, z.array(z.string()).nullable())
   }),
   review: ReviewSchema
@@ -91,12 +90,36 @@ export const FacilitySchema = z.object({
 
 export const defineFacilityCollection = defineCollection({
   loader: async () => {
-    const input = readInputFile(INPUT_FILE).toString();
-    return csv2json<Facility>(input, {
-      nested: true,
-    });
-  },
-  schema: FacilitySchema,
-});
+    const input = readInputFile(INPUT_FILE).toString()
+    const data = csv2json<FacilitySchema>(input, {
+      nested: true
+    })
 
-export type Facility = z.infer<typeof FacilitySchema>;
+    data.forEach(item => {
+      item.parent_id = (item.partOf_id || item.versionOf_id) || null
+    })
+    return data
+  },
+  schema: FacilityZodSchema
+})
+
+export type FacilitySchema = z.infer<typeof FacilityZodSchema>
+
+export type Facility = {
+  label: string
+  tagLine: string[]
+  description: string
+  host_label: string
+  instanceOf_label: string
+  isBMBF_FIS: boolean
+  isUserFacility: boolean
+  primaryApplicationTaxons_label: string[]
+  secondaryApplicationTaxons_label: string[]
+  parameters: {
+    primaryBeamParticles: string[]
+    secondaryBeamParticles: string[]
+  }
+  links: {
+    homepage: string
+  }
+}

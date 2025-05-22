@@ -4,7 +4,7 @@ import { dataTable } from "dc"
 import type { Thesis } from "@/astro/domain/theses/theses.stores"
 import type { Course } from "@/astro/nanostore/courses"
 import type { TaxonmomyItem } from "@/astro/domain/taxonomy/taxonomy"
-import type { Organization } from "@/astro/domain/organizations/organizations.config"
+import type { OrganizationSchema } from "@/astro/domain/organizations/organizations.config"
 
 export const tableTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension
@@ -65,7 +65,7 @@ export function createTableChart(
 
       const isAscendingOrder = newSortState === "ascending"
       const fieldName = this.__data__.field_name
-      console.log(fieldName, fieldName)
+
       tableChart
         .order(isAscendingOrder ? ascending : descending)
         .sortBy(function (datum) {

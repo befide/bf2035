@@ -1,4 +1,4 @@
-import { reference, z } from "astro:content";
+import {  z } from "astro:content";
 import path from "node:path";
 import fs from "node:fs";
 
@@ -15,7 +15,7 @@ export const readInputFile = (filename: string) =>
   fs.readFileSync(path.join(DATA_PATH, filename));
 
 export const ReviewSchema = z.object({
-  status: reference("reviewStatuses"),
+  status_id: z.string().optional().nullable(),
   reviewer: z.string().optional().nullable(),
-  log: z.string().optional().nullable(),
-});
+  log: z.string().optional().nullable()
+})

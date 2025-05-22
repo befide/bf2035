@@ -67,6 +67,65 @@ organizations.parentId -> organizations.id
 organizations.topLevelOrganizationId -> organizations.id
 organizations.isInstanceOfOrganizationSubclass -> taxonomy.id
 
+facilities: {
+  shape: sql_table
+  id: string {constraint: primary_key}
+  parentId: string {constraint: foreign_key} 
+  predecessorId: string {constraint: foreign_key} 
+  hostId: string {constraint: foreign_key} 
+  "label": localizedString
+  "tagLine": localizedString
+  "description": localizedString
+  "links.homepage": localizedString
+  "links.references": "string[]" {constraint: foreign_key} 
+  isInstanceOf: string {constraint: foreign_key} 
+  "isBMBF_FIS": boolean
+  employsAcceleratorTypes: string {constraint: foreign_key} 
+  primaryBeamParticles: "string[]"
+  secondaryBeamParticles: "string[]"
+  "parameters.supraconductingTechnology": boolean
+  "parameters.length__m": float
+  "parameters.electricGradient__V_m": float
+  "parameters.magneticField__T": float
+  "parameters.E0__eV": float  
+  "parameters.E1__eV": float
+  "parameters.cmEnergy__eV": float
+  "parameters.srPowerLoss__W": float
+  "parameters.repetitionRate__Hz": float
+  "parameters.bunchLength__m": float
+  "parameters.pulseDuration__s": float
+  "parameters.powerConsumption__W": float
+  "parameters.emittance__mrad": float
+  "parameters.averageBrilliance": float
+  "parameters.peakBrilliance": float
+  "cost.construction__euro": float
+  "cost.construction__inflationReferenceYear": float
+  "cost.operation__euroPerYear": float
+  "cost.operation__inflationReferenceYear": float
+  "parameters.peakBrilliance": float
+  
+  "lifeCycle.currentStatus": string {constraint: foreign_key} 
+  "lifeCycle.design.startYear": int
+  "lifeCycle.design.endYear": int
+  "lifeCycle.realization.startYear": int
+  "lifeCycle.realization.endYear": int
+  "lifeCycle.operation.startYear": int
+  "lifeCycle.operation.endYear": int
+  "primaryApplications": "string[]" {constraint: foreign_key} 
+  "secondaryApplications": "string[]" {constraint: foreign_key} 
+
+}
+
+
+facilities.parentId -> facilities.id
+facilities.predecessorId -> facilities.id
+facilities.hostId -> organizations.id
+facilities.isInstanceOf -> taxonomy.id
+facilities.employsAcceleratorTypes -> taxonomy.id
+facilities."lifeCycle.currentStatus" -> taxonomy.id
+facilities."links.references" -> references.id
+
+
 type.review: {
   shape: sql_table
   "review.status": enum()

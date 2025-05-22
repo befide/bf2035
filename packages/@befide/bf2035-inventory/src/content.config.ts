@@ -41,7 +41,10 @@ export const collections = {
         "dc-explorer.tiles.title.teaching-event": z.string(),
         "dc-explorer.tiles.title.teaching-events": z.string(),
         "dc-explorer.tiles.title.universities": z.string(),
-        "dc-explorer.tiles.title.university": z.string()
+        "dc-explorer.tiles.title.university": z.string(),
+        "dc-explorer.tiles.title.primaryBeamParticles": z.string(),
+        "dc-explorer.tiles.title.secondaryBeamParticles": z.string()
+        
       }),
     }),
   }),

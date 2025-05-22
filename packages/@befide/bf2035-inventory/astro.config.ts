@@ -73,6 +73,7 @@ export default defineConfig({
   integrations: [
     ...(process.env.NODE_ENV === "production" ? [] : [astroD2({ inline: true })]),
     starlight({
+      pagefind: false,
       defaultLocale: "en",
       locales: {
         en: { label: "English" },
