@@ -4,7 +4,7 @@ export default {
   semi: false,
   tabWidth: 2,
   useTabs: false,
-  trailingComma: "none",
+  trailingComma: "es5",
   plugins: [
     "prettier-plugin-astro",
     "prettier-plugin-packagejson"

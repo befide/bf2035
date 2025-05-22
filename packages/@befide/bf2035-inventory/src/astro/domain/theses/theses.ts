@@ -4,10 +4,11 @@ import { getValueTranslation } from ".."
 import { getLocalizedValue } from "../content"
 import { cleanStores } from "nanostores"
 
-
 export const allTheses = async () =>
   (await getCollection("theses"))
-    .sort((a, b) => ascending(a.data.author.familyName, b.data.author.familyName))
+    .sort((a, b) =>
+      ascending(a.data.author.familyName, b.data.author.familyName)
+    )
     .sort((a, b) => descending(a.data.year, b.data.year))
 
 export const thesesForeAPI = async (locale = "en") => {
@@ -16,12 +17,28 @@ export const thesesForeAPI = async (locale = "en") => {
   return await Promise.all(
     theses.map(async (thesis) => {
       const university =
-        thesis.data.universityRef && (await getEntry(thesis.data.universityRef)).data
+        thesis.data.university_organizationsId &&
+        (
+          await getEntry(
+            "organizations",
+            thesis.data.university_organizationsId
+          )
+        )?.data
       const organizations = (
-        await Promise.all(thesis.data.organizationRefs.map(async (d) => await getEntry(d)))
-      ).map((d) => d.data)
+        await Promise.all(
+          thesis.data.organizations__organizationsIds.map(
+            async (d) => await getEntry("organizations", d)
+          )
+        )
+      )
+        .filter((d) => !!d)
+        .map((organization) => organization.data)
       const facilities = (
-        await Promise.all(thesis.data.facilityRefs.map(async (d) => await getEntry(d)))
+        await Promise.all(
+          thesis.data.facilities_facilitiesIds.map(
+            async (id: string) => await getEntry("facilities", id)
+          )
+        )
       )
         .filter((d) => !!d)
         .map((d) => d.data)
@@ -38,14 +55,14 @@ export const thesesForeAPI = async (locale = "en") => {
         },
         language: getValueTranslation(thesis.data.language, locale),
         year: thesis.data.year,
-        university:
+        university_label:
           (university &&
             getLocalizedValue(university, "label.short", locale)) ||
           getValueTranslation(thesis.data.publisher, locale),
-        organizations: organizations?.map((d) =>
+        organizations_label: organizations?.map((d) =>
           getLocalizedValue(d, "label.short", locale)
         ),
-        facilities: facilities?.map((d) =>
+        facilities_label: facilities?.map((d) =>
           getLocalizedValue(d, "label", locale)
         ),
 
@@ -54,7 +71,7 @@ export const thesesForeAPI = async (locale = "en") => {
             ? "Dr.-Ing."
             : "Dr. rer. nat."
       }
-    }),
+    })
   )
 }
 
@@ -62,8 +79,10 @@ export const allThesesForUniversity = async (universityId: string) =>
   (
     await getCollection(
       "theses",
-      (entry) => entry.data.organizationRefs.map((o) => o?.id).indexOf(universityId) > -1,
+      (entry) => entry.data.university_organizationsId === universityId
     )
   )
-    .sort((a, b) => ascending(a.data.author.familyName, b.data.author.familyName))
+    .sort((a, b) =>
+      ascending(a.data.author.familyName, b.data.author.familyName)
+    )
     .sort((a, b) => descending(a.data.year, b.data.year))

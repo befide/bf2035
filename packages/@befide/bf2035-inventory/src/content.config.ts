@@ -34,19 +34,19 @@ export const collections = {
         "dc-explorer.tiles.title.items": z.string(),
         "dc-explorer.tiles.title.language": z.string(),
         "dc-explorer.tiles.title.languages": z.string(),
+        "dc-explorer.tiles.title.primaryBeamParticles": z.string(),
+        "dc-explorer.tiles.title.secondaryBeamParticles": z.string(),
         "dc-explorer.tiles.title.semesters": z.string(),
         "dc-explorer.tiles.title.study-level": z.string(),
         "dc-explorer.tiles.title.study-levels": z.string(),
-        "dc-explorer.tiles.title.weeklySemesterHours": z.string(),
         "dc-explorer.tiles.title.teaching-event": z.string(),
         "dc-explorer.tiles.title.teaching-events": z.string(),
         "dc-explorer.tiles.title.universities": z.string(),
         "dc-explorer.tiles.title.university": z.string(),
-        "dc-explorer.tiles.title.primaryBeamParticles": z.string(),
-        "dc-explorer.tiles.title.secondaryBeamParticles": z.string()
-        
-      }),
-    }),
+        "dc-explorer.tiles.title.weeklySemesterHours": z.string(),
+        "dc-explorer.tiles.title.year": z.string()
+      })
+    })
   }),
   reviewStatuses: defineReviewStatusesCollection,
   taxonomyItems: defineTaxonomyItemsCollection,
@@ -54,5 +54,5 @@ export const collections = {
   facilities: defineFacilityCollection,
   courses: defineCoursesCollection,
   theses: defineThesesCollection,
-  references: defineReferencesCollection,
+  references: defineReferencesCollection
 }

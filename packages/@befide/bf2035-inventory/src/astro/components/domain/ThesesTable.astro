@@ -20,8 +20,8 @@ const naturalScienceDegreeCount = theses.filter(
 ).length
 
 const getUniversity = async (thesis: CollectionEntry<"theses">) => {
-  if (!thesis.data.universityRef) return null
-  const university = await getEntry(thesis.data.universityRef)
+  if (!thesis.data.university_organizationsId) return null
+  const university = await getEntry(thesis.data.university_organizationsId)
   return university
 }
 ---

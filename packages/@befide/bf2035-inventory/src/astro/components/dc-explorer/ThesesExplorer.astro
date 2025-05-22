@@ -1,5 +1,4 @@
 ---
-
 import DCExplorerCount from "@components/dc-explorer/components/DCExplorerCount.astro"
 import DCExplorerRowChart from "@components/dc-explorer/components/DCExplorerRowChart.astro"
 import DCExplorerBarChart from "@components/dc-explorer/components/DCExplorerBarChart .astro"
@@ -9,59 +8,43 @@ import DCExplorer from "@components/dc-explorer/components/DCExplorer.astro"
 
 <DCExplorer collection="theses">
   <div class="dc-explorer__filters">
-    <DCExplorerCount
-      collection="theses"
-      dimension="count"
-    />
+    <DCExplorerCount collection="theses" dimension="count" />
     <DCExplorerBarChart
       collection="theses"
       dimension="year"
-      title="Year"
+      title={Astro.locals.t("dc-explorer.tiles.title.year")}
     />
     <DCExplorerRowChart
       collection="theses"
       dimension="degree"
-      title={Astro.locals.t(
-        "dc-explorer.tiles.title.degree"
-      )}
+      title={Astro.locals.t("dc-explorer.tiles.title.degree")}
     />
     <DCExplorerRowChart
       collection="theses"
       dimension="gender"
-      title={Astro.locals.t(
-        "dc-explorer.tiles.title.gender"
-      )}
+      title={Astro.locals.t("dc-explorer.tiles.title.gender")}
       accessorPath="author.gender"
     />
     <DCExplorerRowChart
       collection="theses"
-      dimension="university"
-      title={Astro.locals.t(
-        "dc-explorer.tiles.title.university"
-      )}
+      dimension="university_label"
+      title={Astro.locals.t("dc-explorer.tiles.title.university")}
     />
     <DCExplorerRowChart
       collection="theses"
-      dimension="facilities"
-      title={Astro.locals.t(
-        "dc-explorer.tiles.title.facilities"
-      )}
+      dimension="facilities_label"
+      title={Astro.locals.t("dc-explorer.tiles.title.facilities")}
       dimensionIsArray={true}
     />
 
     <DCExplorerRowChart
       collection="theses"
       dimension="language"
-      title={Astro.locals.t(
-        "dc-explorer.tiles.title.language"
-      )}
+      title={Astro.locals.t("dc-explorer.tiles.title.language")}
     />
     <!-- </details> -->
   </div>
   <div class="dc-explorer__items">
-    <DCExplorerTable
-      collection="theses"
-      dimension="id"
-    />
+    <DCExplorerTable collection="theses" dimension="id" />
   </div>
 </DCExplorer>
