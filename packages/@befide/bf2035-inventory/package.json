@@ -29,7 +29,7 @@
     "@astrojs/starlight": "catalog:",
     "@astrojs/starlight-tailwind": "catalog:",
     "@astrojs/ts-plugin": "catalog:",
-    "@eslint/js": "9.26.0",
+    "@eslint/js": "catalog:",
     "@eslint/markdown": "catalog:",
     "@fontsource/barlow-condensed": "catalog:",
     "@fontsource/barlow-semi-condensed": "catalog:",
@@ -74,14 +74,14 @@
     "dc": "catalog:",
     "eslint": "catalog:",
     "eslint-plugin-astro": "catalog:",
-    "eslint-plugin-jsx-a11y": "catalog:",
+
     "eslint-plugin-prettier": "catalog:",
+    "prettier-plugin-astro": "catalog:",
     "fast-cartesian": "catalog:",
     "file-saver": "catalog:",
     "globals": "catalog:",
     "jsdom": "catalog:",
     "nanostores": "catalog:",
- 
     "pagefind": "catalog:",
     "playwright": "catalog:",
     "postcss": "catalog:",
@@ -96,15 +96,11 @@
     "remark-sectionize": "catalog:",
     "sharp": "catalog:",
     "sharp-ico": "catalog:",
-    
-   
-    
-
     "typescript": "catalog:",
     "typescript-eslint": "catalog:",
     "unified": "catalog:",
     "unist-util-visit": "catalog:",
-    "unplugin-unused": "0.5.0",
+    "unplugin-unused": "catalog:",
     "vite-plugin-pwa": "catalog:",
     "workbox-window": "catalog:",
     "zotero-api-client": "catalog:"

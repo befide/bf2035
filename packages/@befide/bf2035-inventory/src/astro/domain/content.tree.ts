@@ -1,9 +1,4 @@
-import type {
-  
-  FacilitySchema
-} from "@/astro/domain/facilities/facilities.config"
-import type { OrganizationSchema } from "@/astro/domain/organizations/organizations.config"
-import type { TaxonomyItemSchema } from "@/astro/domain/taxonomy/taxonomy.config"
+import type { NestedDomainObjectSchema } from "@/content/config.common"
 
 export interface TreeNode<Datum> {
   id: string
@@ -16,7 +11,7 @@ export interface TreeNode<Datum> {
 }
 
 export function getRoots<
-  Datum extends FacilitySchema | TaxonomyItemSchema | OrganizationSchema
+  Datum extends NestedDomainObjectSchema
 >(items: Array<Datum>) {
   const roots: TreeNode<Datum>[] = []
 

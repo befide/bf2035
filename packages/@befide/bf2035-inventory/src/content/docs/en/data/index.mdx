@@ -17,39 +17,39 @@ title: Data schema
   
 }
 
-taxonomy.id -> taxonomy.parent_id
+taxonomy.parent_id -> taxonomy.id
 
 
 courses: {
   shape: sql_table
   id: string {constraint: primary_key}
+  teachingEvent_taxonId: string {constraint: foreign_key} 
+  university_organizationsId: string {constraint: foreign_key} 
+  studyLevels_taxonId: string {constraint: foreign_key} 
   title: localizedString
   objectives: localizedString
   contents: localizedString
-  isInstanceOfTeachingEvent: string {constraint: foreign_key} 
   academicYearStart: date(YYYY)
   semester: enum(winter|summer)
   weeklySemesterHours: int
   languages: "enum(de|en)[]"
   "links.homepage": localizedString
-  offeredByUniversity: string {constraint: foreign_key} 
-  addressesProgrammeOfStudyLevels: string {constraint: foreign_key} 
   partOfProgramsOfStudy: "string[]"
   review: review
 }
 
-courses.isInstanceOfTeachingEvent -> taxonomy.id
-courses.addressesProgrammeOfStudyLevels -> taxonomy.id
+courses.teachingEvent_taxonId -> taxonomy.id
+courses.studyLevels_taxonId -> taxonomy.id
 
 
 organizations: {
   shape: sql_table
   id: string {constraint: primary_key}
-  parentId: string {constraint: foreign_key} 
-  topLevelOrganizationId: string {constraint: foreign_key} 
-  isInstanceOfOrganizationSubclass: "string[]" {constraint: foreign_key} 
-  "label.fullName": localizedString
-  "label.short": localizedString
+  parent_id: string {constraint: foreign_key} 
+  topLevel_id: string {constraint: foreign_key} 
+  isA_taxonIds: "string[]" {constraint: foreign_key} 
+  "label": localizedString
+  "tagLine": localizedString
   "description": localizedString
   "links.homepage": localizedString
   "links.rorID": localizedString
@@ -59,30 +59,28 @@ organizations: {
   "location.lng": localizedString
   uniquePeopleCount: uniquePeopleCount
   review: review
-
-  
+ 
 }
 
-organizations.parentId -> organizations.id
-organizations.topLevelOrganizationId -> organizations.id
-organizations.isInstanceOfOrganizationSubclass -> taxonomy.id
+organizations.parent_id -> organizations.id
+organizations.topLevel_id -> organizations.id
+organizations.isA_taxonIds -> taxonomy.id
 
 facilities: {
   shape: sql_table
   id: string {constraint: primary_key}
-  parentId: string {constraint: foreign_key} 
-  predecessorId: string {constraint: foreign_key} 
-  hostId: string {constraint: foreign_key} 
+  partOf_id: string {constraint: foreign_key} 
+  versionOf_id: string {constraint: foreign_key} 
+  host_organizationsId: string {constraint: foreign_key} 
   "label": localizedString
   "tagLine": localizedString
   "description": localizedString
   "links.homepage": localizedString
   "links.references": "string[]" {constraint: foreign_key} 
-  isInstanceOf: string {constraint: foreign_key} 
+  isA_taxonId: string {constraint: foreign_key} 
   "isBMBF_FIS": boolean
-  employsAcceleratorTypes: string {constraint: foreign_key} 
-  primaryBeamParticles: "string[]"
-  secondaryBeamParticles: "string[]"
+  "parameters.primaryBeamParticles": "string[]"
+  "parameters.secondaryBeamParticles": "string[]"
   "parameters.supraconductingTechnology": boolean
   "parameters.length__m": float
   "parameters.electricGradient__V_m": float
@@ -104,7 +102,7 @@ facilities: {
   "cost.operation__inflationReferenceYear": float
   "parameters.peakBrilliance": float
   
-  "lifeCycle.currentStatus": string {constraint: foreign_key} 
+  "lifeCycle.currentStatus_taxonId": string {constraint: foreign_key} 
   "lifeCycle.design.startYear": int
   "lifeCycle.design.endYear": int
   "lifeCycle.realization.startYear": int
@@ -117,14 +115,20 @@ facilities: {
 }
 
 
-facilities.parentId -> facilities.id
-facilities.predecessorId -> facilities.id
-facilities.hostId -> organizations.id
-facilities.isInstanceOf -> taxonomy.id
-facilities.employsAcceleratorTypes -> taxonomy.id
-facilities."lifeCycle.currentStatus" -> taxonomy.id
+facilities.partOf_id -> facilities.id
+facilities.versionOf_id -> facilities.id
+facilities.host_organizationsId -> organizations.id
+facilities.isA_taxonId -> taxonomy.id
+facilities."lifeCycle.currentStatus_taxonId" -> taxonomy.id
 facilities."links.references" -> references.id
 
+
+type.review: {
+  shape: sql_table
+  "review.status": enum()
+  "review.reviewer": string {constraint: foreign_key} 
+  "review.log": enum()
+}
 
 type.review: {
   shape: sql_table
@@ -153,7 +157,6 @@ type.uniquePeopleCount {
   "uniquePeopleCount.phdStudent.physicist.nonbinary": int
   "uniquePeopleCount.masterStudent.physicist.nonbinary": int
   "uniquePeopleCount.bachelorStudent.physicist.nonbinary": int
-
   "uniquePeopleCount.professor.other.female": int
   "uniquePeopleCount.seniorResearcher.other.female": int
   "uniquePeopleCount.postDoc.other.female": int
@@ -171,9 +174,7 @@ type.uniquePeopleCount {
   "uniquePeopleCount.postDoc.other.nonbinary": int
   "uniquePeopleCount.phdStudent.other.nonbinary": int
   "uniquePeopleCount.masterStudent.other.nonbinary": int
-  "uniquePeopleCount.bachelorStudent.other.nonbinary": int
-  
-  
+  "uniquePeopleCount.bachelorStudent.other.nonbinary": int 
   "uniquePeopleCount.professor.other.female": int
   "uniquePeopleCount.seniorResearcher.other.female": int
   "uniquePeopleCount.postDoc.other.female": int

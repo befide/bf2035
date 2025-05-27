@@ -18,6 +18,7 @@ import remarkDirective from "remark-directive"
 import spaceCommander from "./src/astro/domain/space-commander.ts"
 import tailwindcss from "@tailwindcss/vite"
 import UnpluginUnused from "unplugin-unused/vite"
+import type { Root, RootContent } from "hast"
 
 
 // https://astro.build/config
@@ -61,7 +62,7 @@ export default defineConfig({
       [
         rehypeRewrite,
         {
-          rewrite: (node: any) => {
+          rewrite: (node:  Root | RootContent) => {
             if (node.type === "text") {
               node.value = spaceCommander(node.value)
             }

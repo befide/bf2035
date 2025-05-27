@@ -3,27 +3,27 @@ import DCExplorerCount from "@components/dc-explorer/components/DCExplorerCount.
 import DCExplorerRowChart from "@components/dc-explorer/components/DCExplorerRowChart.astro"
 import DCExplorerTable from "@components/dc-explorer/components/DCExplorerTable.astro"
 import DCExplorer from "@components/dc-explorer/components/DCExplorer.astro"
+import DCExplorerBarChart from "./components/DCExplorerBarChart .astro"
 ---
 
 <DCExplorer collection="organizations">
   <div class="dc-explorer__filters">
     <DCExplorerCount collection="organizations" dimension="count" />
     <DCExplorerRowChart
-      collection="community"
-      dimension="befideOrganizationCategories"
+      collection="organizations"
+      dimension="instanceOfs__term"
       title="Category"
-      dimensionIsArray={true}
-    />
-    <DCExplorerRowChart
-      collection="community"
-      dimension="instanceOf"
-      title="instanceOf"
       dimensionIsArray={true}
     />
     <DCExplorerRowChart
       collection="organizations"
       dimension="location__country"
       title="Country"
+    />
+    <DCExplorerRowChart
+      collection="organizations"
+      dimension="theses_number"
+      title="theses_number"
     />
 
     <!-- </details> -->

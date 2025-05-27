@@ -4,6 +4,7 @@ import path from "node:path";
 import { csv2json } from "csv42";
 import {
   LocalizedString,
+  NestedDomainObjectZodSchema,
   NullableLocalizedString,
   ReviewSchema,
 } from "../../../content/config.common";
@@ -18,10 +19,7 @@ const INPUT_FILE_PATH = path.join(
   "taxonomy-items.csv",
 );
 
-const TaxonomyItemZodSchema = z.object({
-  id: z.string(),
-  parent_id: z.string().nullable(),
-  // parent: reference("taxonomyItems").nullable(),
+const TaxonomyItemZodSchema = NestedDomainObjectZodSchema.extend({
   taxonomyURI: z.string(),
   term: LocalizedString,
   definition: NullableLocalizedString,

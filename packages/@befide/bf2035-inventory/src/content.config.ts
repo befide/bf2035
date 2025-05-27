@@ -3,13 +3,16 @@ import { defineCollection, z } from "astro:content"
 import { docsLoader, i18nLoader } from "@astrojs/starlight/loaders"
 import { docsSchema, i18nSchema } from "@astrojs/starlight/schema"
 
-import { defineReviewStatusesCollection } from "./content/config.reviewStatuses"
-import { defineOrganizationCollection } from "./astro/domain/organizations/organizations.config"
-import { defineTaxonomyItemsCollection } from "./astro/domain/taxonomy/taxonomy.config"
-import { defineFacilityCollection } from "./astro/domain/facilities/facilities.config"
-import { defineCoursesCollection } from "./astro/domain/courses/courses.config"
-import { defineThesesCollection } from "./astro/domain/theses/theses.config"
+import { defineCoursesCollection, type CourseSchema } from "./astro/domain/courses/courses.config"
+import { defineFacilityCollection, type FacilitySchema } from "./astro/domain/facilities/facilities.config"
+import { defineOrganizationCollection, type OrganizationSchema } from "./astro/domain/organizations/organizations.config"
 import { defineReferencesCollection } from "./content/config.references"
+import { defineReviewStatusesCollection } from "./content/config.reviewStatuses"
+import { defineTaxonomyItemsCollection, type TaxonomyItemSchema } from "./astro/domain/taxonomy/taxonomy.config"
+import { defineThesesCollection, type ThesisSchema } from "./astro/domain/theses/theses.config.api"
+
+
+export type DomainObject = CourseSchema | OrganizationSchema | TaxonomyItemSchema | FacilitySchema | ThesisSchema
 
 export const collections = {
   docs: defineCollection({ loader: docsLoader(), schema: docsSchema() }),

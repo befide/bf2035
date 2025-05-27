@@ -82,7 +82,7 @@ export default function (parent, chartGroup?) {
 
   let _allEntries
   let _entriesMap = {}
-  let _ancestorsMap = {}
+  const _ancestorsMap = {}
   let _allEntriesTree
   let _size = 25
   let _columns = []

@@ -27,13 +27,17 @@ const locale = Astro.currentLocale
     createTableChart,
     getValue,
     getLocale,
-    createTreeDataTableChart
+    createTreeDataTableChart,
   } from "@components/dc-explorer/utils"
   import { getCollectionIndex } from "@nanostore/index"
   import {
     getTableConfig,
-    getTreeTableConfig
+    getTreeTableConfig,
   } from "@components/dc-explorer/config"
+  import type {
+    DomainObjectSchema,
+    NestedDomainObjectSchema,
+  } from "@/content/config.common"
   const locale = getLocale()
 
   class DCExplorer extends HTMLElement {
@@ -47,8 +51,6 @@ const locale = Astro.currentLocale
       $idx?.listen(() => {
         const idx = $idx.get()
 
-        
-
         if (idx) {
           const filters = document.getElementsByClassName(
             "dc-explorer__tile"
@@ -60,7 +62,7 @@ const locale = Astro.currentLocale
               dcDimensionIsLocalized,
               dcDimension,
               dcAccessorPath,
-              dcDimensionIsArray
+              dcDimensionIsArray,
             } = filter.dataset
 
             if (!dcTileType || !dcCollection || !dcDimension) return
@@ -92,9 +94,11 @@ const locale = Astro.currentLocale
 
               const group = dimension.group()
 
+              console.log(group)
+
               createBarChart(dcCollection, dcDimension, dimension, group)
             } else if (dcTileType === "table") {
-              const idDimension = idx.dimension((d) => (d.id ? "" + d.id : ""))
+              const idDimension = idx.dimension((d: DomainObject) => d.id)
 
               createTableChart(
                 dcCollection,
@@ -103,7 +107,10 @@ const locale = Astro.currentLocale
                 idDimension
               )
             } else if (dcTileType === "tree-data-table") {
-              const idDimension = idx.dimension((d: any) => d.id)
+              const idDimension = idx.dimension(
+                (nestedDomnainObject: NestedDomainObjectSchema) =>
+                  nestedDomnainObject.id
+              )
 
               createTreeDataTableChart(
                 dcCollection,

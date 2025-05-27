@@ -1,21 +1,4 @@
-export type Theses = Thesis[]
 
-export interface Thesis {
-  title: string
-  author: Author
-  language: string
-  year: number
-  university: string
-  organizations: string[]
-  facilities: string[]
-  degree: string
-}
-
-export interface Author {
-  familyName: string
-  givenName: string
-  gender: string
-}
 
 import crossfilter from "crossfilter2"
 import { computed, task } from "nanostores"

@@ -27,12 +27,18 @@ import DCExplorer from "@components/dc-explorer/components/DCExplorer.astro"
     />
     <DCExplorerRowChart
       collection="theses"
-      dimension="university_label"
+      dimension="university__label_short"
       title={Astro.locals.t("dc-explorer.tiles.title.university")}
     />
     <DCExplorerRowChart
       collection="theses"
-      dimension="facilities_label"
+      dimension="facilities__label_short"
+      title={Astro.locals.t("dc-explorer.tiles.title.facilities")}
+      dimensionIsArray={true}
+    />
+    <DCExplorerRowChart
+      collection="theses"
+      dimension="organizations__label_short"
       title={Astro.locals.t("dc-explorer.tiles.title.facilities")}
       dimensionIsArray={true}
     />

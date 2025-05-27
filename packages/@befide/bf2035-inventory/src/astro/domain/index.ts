@@ -1,7 +1,7 @@
-export * from "./courses/courses"
-export * from "./facilities/facilities"
-export * from "./organizations/organizations"
-export * from "./theses/theses"
+export * from "./courses"
+export * from "./facilities"
+export * from "./organizations"
+export * from "./theses"
 
 export const getValue = (obj: any, path: string) => {
   if (!obj) return

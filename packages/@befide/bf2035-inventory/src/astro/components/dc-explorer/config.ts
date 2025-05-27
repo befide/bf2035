@@ -1,56 +1,61 @@
-import type { CourseSchema } from "@/astro/domain/courses"
+import type { Organization, OrganizationDto } from "@/astro/domain"
+import type { TreeNode } from "@/astro/domain/content.tree"
+import type { Facility } from "@/astro/domain/facilities"
+import type { TaxonmomyItem } from "@/astro/domain/taxonomy"
+import type { ThesisDto } from "@/astro/domain/theses"
 
-export const getTableConfig = (key, locale) => {
-  if (key === "taxonomy") {
-    return [
-      {
-        label: "Term / definition",
-        field_name: "term",
-        sortable: true,
-        format: function (d: TaxonmomyItem) {
-          return (
-            "<div data-type='" +
-            d.type +
-            "' data-depth='" +
-            d.depth +
-            "'>" +
-            d.data.term[locale] +
-            "</div>"
-          )
-        }
-      },
+export const getTableConfig = (key: string) => {
+  // if (key === "taxonomy") {
+  //   return [
+  //     {
+  //       label: "Term / definition",
+  //       field_name: "term",
+  //       sortable: true,
+  //       format: function (d: TaxonmomyItem) {
+  //         return (
+  //           "<div data-type='" +
+  //           d.type +
+  //           "' data-depth='" +
+  //           d.depth +
+  //           "'>" +
+  //           d.term  +
+  //           "</div>"
+  //         )
+  //       }
+  //     },
 
-      {
-        label: "domain?",
-        field_name: "isDomainSpecfic",
-        sortable: true,
-        format: function (d: TaxonmomyItem) {
-          return d.isDomainSpecific
-        }
-      }
-    ]
-  } else if (key === "theses") {
+  //     {
+  //       label: "domain?",
+  //       field_name: "isDomainSpecfic",
+  //       sortable: true,
+  //       format: function (d: TaxonmomyItem) {
+  //         return d.isDomainSpecific
+  //       }
+  //     }
+  //   ]
+  // } else 
+  if (key === "theses") {
     return [
       {
         label: "University",
         field_name: "university_label",
         sortable: true,
-        format: function (d: Thesis) {
-          return d.university_label
+        format: function (d: ThesisDto) {
+          return d.university__label_short
         }
       },
       {
         label: "Year",
         field_name: "year",
         sortable: true,
-        format: function (d: Thesis) {
+        format: function (d: ThesisDto) {
           return d.year
         }
       },
       {
         label: "Title",
         sortable: false,
-        format: function (d: Thesis) {
+        format: function (d: ThesisDto) {
           return (
             "<div class='name'><span class='givenName'>" +
             d.author.givenName +
@@ -60,7 +65,7 @@ export const getTableConfig = (key, locale) => {
             "</span> <span class='gender' data-gender-icon='" +
             d.author.gender +
             "'>(" +
-            d.author.gender.substr(0, 1) +
+            d.author.gender+
             ")</span></div>" +
             "<div class='title'>" +
             d.title +
@@ -75,13 +80,13 @@ export const getTableConfig = (key, locale) => {
         label: "label",
         field_name: "label",
         sortable: true,
-        format: function (d: Organization) {
+        format: function (d: OrganizationDto) {
           return (
             "<div class='fullName bold'>" +
             d.label__short +
             "</div>" +
             "<div class='fullName'>" +
-            d.label__fullName +
+            d.label__fullName + d.theses_count +
             "</div>"
           )
         }
@@ -156,19 +161,19 @@ export const getTreeTableConfig = (key, locale) => {
       {
         label: "Label",
         className: "tree-node__label",
-        format: (d) => d.data.label
+        format: (d: TreeNode<Organization>) => d.data.label
       },
       {
         label: "Label",
         className: "tree-node__value",
-        format: (d) => d
+        format: (d: TreeNode<Organization>) => d
       }
     ]
   } else if (key === "facilities") {
     return [
       {
         label: "Label",
-        format: (d) => {
+        format: (d: TreeNode<Facility>) => {
           return (
             "<span class='tree-node__label'>" +
             d.data.label +

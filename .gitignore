@@ -4,11 +4,10 @@ dist/
 .venv/
 .history/
 .idea/
-.vscode/*
+.vscode/
 
 
 packages/@befide/bf2035-3d
-packages/@befide/flora-weg
 
 
 .DS_Store

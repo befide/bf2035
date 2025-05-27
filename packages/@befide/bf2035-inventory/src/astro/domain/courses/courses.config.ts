@@ -3,7 +3,7 @@ import { csv2json } from "csv42"
 import { file } from "astro/loaders"
 import { defineCollection } from "astro:content"
 import { z } from "astro:content"
-import { NullableLocalizedString, ReviewSchema } from "@/content/config.common"
+import { DomainObjectZodSchema, NullableLocalizedString, ReviewSchema } from "@/content/config.common"
 
 const INPUT_FILE_PATH = path.join(
   import.meta.dirname,
@@ -15,8 +15,7 @@ const INPUT_FILE_PATH = path.join(
   "courses.csv"
 )
 
-export const CourseZodSchema = z.object({
-  id: z.string(),
+export const CourseZodSchema = DomainObjectZodSchema.extend({
   title: NullableLocalizedString,
   teachingEventTaxon_id: z.string(),
   studyLevelTaxons_id: z.preprocess(

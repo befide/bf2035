@@ -2,25 +2,20 @@ const INPUT_FILE = "facilities.csv"
 
 import { csv2json } from "csv42"
 
-import { defineCollection, reference, z } from "astro:content"
+import { defineCollection, z } from "astro:content"
 
 import {
   LocalizedString,
+  NestedDomainObjectZodSchema,
   NullableLocalizedString,
   readInputFile,
   ReviewSchema
 } from "../../../content/config.common"
 
-export const FacilityZodSchema = z.object({
-  id: z.string(),
-  parent_id: z.string().nullable(),
+export const FacilityZodSchema = NestedDomainObjectZodSchema.extend({
   partOf_id: z.string().optional().nullable(),
   versionOf_id: z.string().optional().nullable(),
   host_id: z.string().nullable(),
-
-  // parent: reference("facilities").optional().nullable(),
-  // predecessor: reference("facilities").optional().nullable(),
-  // host: reference("organizations").optional().nullable(),
 
   label: LocalizedString,
   tagLine: NullableLocalizedString,
@@ -114,7 +109,9 @@ export type Facility = {
   isBMBF_FIS: boolean
   isUserFacility: boolean
   primaryApplicationTaxons_label: string[]
-  secondaryApplicationTaxons_label: string[]
+  secondaryApplicationTaxons_label: string[],
+  operation_startYear: number | undefined,
+  operation_endYear: number | undefined,
   parameters: {
     primaryBeamParticles: string[]
     secondaryBeamParticles: string[]

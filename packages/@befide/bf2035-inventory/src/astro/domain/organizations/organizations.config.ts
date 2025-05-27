@@ -6,6 +6,7 @@ import { defineCollection, reference, z } from "astro:content";
 
 import {
   LocalizedString,
+  NestedDomainObjectZodSchema,
   NullableLocalizedString,
   readInputFile,
   ReviewSchema,
@@ -71,12 +72,9 @@ export const BefideOrganizationMetaBefideOrganizationCategories = z.enum([
   "consortium",
 ]);
 
-export const OrganizationZodSchema = z.object({
-  id: z.string(),
-  parent_id: z.string().nullable(),
-  // parent_id: reference("organizations").optional().nullable(),
-  topLevelOrganization_id: z.string().nullable(), //reference("organizations").optional().nullable(),
-  instanceTaxons_id: z.preprocess((input) => {
+export const OrganizationZodSchema = NestedDomainObjectZodSchema.extend({
+  topLevel_organizationId: z.string().nullable(), //reference("organizations").optional().nullable(),
+  instanceOf_taxonId: z.preprocess((input) => {
     return (input + "").split(/\s?,\s?/).toSorted()
   }, z.array(z.string())),
 
@@ -87,25 +85,25 @@ export const OrganizationZodSchema = z.object({
   isPartOfCommunity: z.boolean(),
   label: z.object({
     fullName: LocalizedString,
-    short: NullableLocalizedString
+    short: NullableLocalizedString,
   }),
   description: NullableLocalizedString,
   links: z.object({
     homepage: NullableLocalizedString,
-    rorId: z.string().optional().nullable()
+    rorId: z.string().optional().nullable(),
   }),
   location: z
     .object({
       country: z
         .object({
-          code: z.string().optional().nullable()
+          code: z.string().optional().nullable(),
         })
         .optional()
         .nullable(),
 
       city: z.string().optional().nullable(),
       lat: z.number().optional().nullable(),
-      lng: z.number().optional().nullable()
+      lng: z.number().optional().nullable(),
     })
     .optional()
     .nullable(),
@@ -115,17 +113,17 @@ export const OrganizationZodSchema = z.object({
     ...peopleCountDiscriminators.reduce((obj: any, value) => {
       obj[value] = z.preprocess((v) => v || 0, z.number())
       return obj
-    }, {})
+    }, {}),
   }),
   uniquePeopleCountRecursiveSum: z
     .object({
       ...peopleCountDiscriminators.reduce((obj: any, value) => {
         obj[value] = z.preprocess((v) => v || 0, z.number())
         return obj
-      }, {})
+      }, {}),
     })
     .optional(),
-  review: ReviewSchema
+  review: ReviewSchema,
 })
 
 export const defineOrganizationCollection = defineCollection({

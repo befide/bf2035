@@ -1,5 +1,5 @@
 import type {
-  Facility,
+  
   FacilitySchema
 } from "@/astro/domain/facilities/facilities.config"
 import { getCollection, getEntry } from "astro:content"

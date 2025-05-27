@@ -1,0 +1,62 @@
+---
+id: muller__2009__bestimmung
+type: thesis
+title: Bestimmung von photo-neutron-wirkungsquerschnitten in kernen der seltenen erden für den astrophysikalischen p-prozess mit bremsstrahlung am s-DALINAC
+issued:
+  date-parts:
+    - - 2009
+URL: http://tubiblio.ulb.tu-darmstadt.de/36613/
+publisher: Technische Universität Darmstadt
+language: en
+tags:
+  - reference
+author:
+  - family: Müller
+    given: Sebastian Hermann
+    literal: ""
+genre: Doctoral thesis (Dr. rer. nat.)
+citation-label: muller__2009__bestimmung
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:s-dalinac,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+year: "2009"
+dateCreated: 2025-05-27
+reading-status: to-read
+attachment: []
+keywords:
+  - "#academic-degree/doctoral-degree/:dr.rer.nat."
+  - "#befidesh/facility/:s-dalinac"
+  - "#befidesh/organization/:tu-darmstadt"
+  - "#person/gender/:male"
+---
+
+# Bestimmung von photo-neutron-wirkungsquerschnitten in kernen der seltenen erden für den astrophysikalischen p-prozess mit bremsstrahlung am s-DALINAC
+
+> [!info] Metadata
+> - **Authors**: ["Sebastian Hermann Müller"]
+> - **Year**: 2009
+> - **Journal**: 
+> - **DOI**: 
+
+> [!abstract] Abstract
+> 
+
+> [!quote] Key Quotes
+> 
+
+> [!note] Notes
+> 
+
+> [!example] Examples
+> 
+
+> [!success] Strengths
+> 
+
+> [!failure] Weaknesses
+> 
+
+> [!question] Questions
+> 
+
+> [!tip] Applications
+> 
+

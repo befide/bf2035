@@ -1,22 +1,24 @@
-import { getCollection, getEntries, getEntry } from "astro:content"
+import { getCollection, getEntry } from "astro:content"
 
 import { flattenTreeNodes, getRoots, type TreeNode } from "../content.tree"
-import { peopleCountDiscriminators } from "@/astro/domain/organizations/organizations.config"
+import { peopleCountDiscriminators, type OrganizationSchema } from "@/astro/domain/organizations/organizations.config"
 import { getValue } from "../index"
 import { ascending } from "d3-array"
+import { Organization } from "./organization"
+import { getLocalizedValue } from "../content"
 
 export const allOrganizations = async () =>
   (await getCollection("organizations")).map(({ data }) => data)
 
 export const allOrganizationsForTopLevelOrganization = async (
-  topLevelOrganizationId: string
+  topLevel_organizationId: string
 ) => {
   return await getCollection(
     "organizations",
     ({ data, id }) =>
-      topLevelOrganizationId === undefined ||
-      data.topLevelOrganization_id?.id === topLevelOrganizationId ||
-      id === topLevelOrganizationId ||
+      topLevel_organizationId === undefined ||
+      data.topLevel_organizationId === topLevel_organizationId ||
+      id === topLevel_organizationId ||
       id === ":"
   )
 }
@@ -26,7 +28,7 @@ export const allCommunityTopLevelOrganizations = async () =>
     "organizations",
     (entry) =>
       entry.data.isPartOfCommunity &&
-      !entry.data.topLevelOrganization_id &&
+      !entry.data.topLevel_organizationId &&
       entry.data.befideOrganizationCategories.indexOf("committee") !== 0
   )
 
@@ -49,20 +51,20 @@ export const getOrganizationCategories = async () =>
     )
   )
 
-export const getOrganizationRoots = (items: Organization[]) => {
-  return getRoots<Organization>(items)
+export const getOrganizationRoots = (items: OrganizationSchema[]) => {
+  return getRoots<OrganizationSchema>(items)
 }
 
-export function rollupUniquePeopleCountSum(node: TreeNode<Organization>) {
+export function rollupUniquePeopleCountSum(node: TreeNode<OrganizationSchema>) {
   if (node.children.length === 0) {
     node.data.uniquePeopleCountRecursiveSum = {
       total: node.data.uniquePeopleCountSum.total,
       ...Object.fromEntries(
         peopleCountDiscriminators.map((d) => [
           d,
-          getValue(node.data.uniquePeopleCountSum, d)
+          getValue(node.data.uniquePeopleCountSum, d),
         ])
-      )
+      ),
     }
   } else {
     node.children.forEach((child) => rollupUniquePeopleCountSum(child))
@@ -79,9 +81,9 @@ export function rollupUniquePeopleCountSum(node: TreeNode<Organization>) {
             (sum, child) =>
               sum + getValue(child.data.uniquePeopleCountRecursiveSum, d),
             getValue(node.data.uniquePeopleCountSum, d)
-          )
+          ),
         ])
-      )
+      ),
     }
   }
 
@@ -94,8 +96,8 @@ export const organizationsItemRoots = async () => {
   return getOrganizationsRoots(items)
 }
 
-export const getOrganizationsRoots = (items: Organization[]) => {
-  return getRoots<Organization>(items)
+export const getOrganizationsRoots = (items: OrganizationSchema[]) => {
+  return getRoots<OrganizationSchema>(items)
 }
 
 export const communityForAPI = async (locale: string) => {
@@ -119,9 +121,9 @@ export const communityForAPI = async (locale: string) => {
       height: item.children.length,
       parent_id: item.parent_id,
 
-      label: item.data.label.fullName[locale],
-      label__fullName: item.data.label.fullName[locale],
-      label__short: item.data.label.short[locale],
+      
+      label__fullName: getLocalizedValue(item.data, "label.fullName", locale),
+      label__short: getLocalizedValue(item.data, "label.short", locale),
       uniquePeopleCountRecursiveSum: item.data.uniquePeopleCountRecursiveSum,
       befideOrganizationCategories: item.data.befideOrganizationCategories.map(
         (c) => i18n?.data["organizationCategory.full." + c]
@@ -129,54 +131,18 @@ export const communityForAPI = async (locale: string) => {
 
       instanceOf: item.data.isInstanceOf,
       location__country__code: item.data.location?.country?.code,
-      location__city: item.data.location?.city
+      location__city: item.data.location?.city,
     }))
 
   return list
 }
 
 export const organizationsForAPI = async (locale: string) => {
-  const i18n = await getEntry("i18n", locale)
-
   const organizations = await allCommunityTopLevelOrganizations()
   return await Promise.all(
-    organizations.map(async (o) => {
-      
-      const instanceOf = o.data.isInstanceOf &&
-        (await getEntries(o.data.isInstanceOf)).map(d => d.data.term[locale])
-
-      return {
-        id: o.id,
-        instanceOf: instanceOf,
-        label: o.data.label.fullName[locale],
-        description: o.data.description[locale],
-        label__fullName: o.data.label.fullName[locale],
-        label__short: o.data.label.short[locale],
-        location__country:
-          i18n?.data["country.name." + o.data.location?.country?.code],
-        location__city: o.data.location?.city,
-        befideOrganizationCategories: o.data.befideOrganizationCategories.map(
-          (c) => i18n?.data["organizationCategory.full." + c]
-        )
-      }
-    })
+    organizations.map(
+      async (organization) =>
+        await new Organization(organization.data).getDto(locale)
+    )
   )
-
-  return organizations
-}
-
-export type Organizations = Organization[]
-
-export interface Organization {
-  id: string
-  parent_id: string
-  depth: number
-  height: number
-  isDomainSpecific: boolean
-  type: "class" | "instance"
-  term: { de: string; en: string }
-  definition: { de: string; en: string }
-  synonyms: { de: string; en: string }
-  reviewStatus: string
-  reviewReviewer: string
 }

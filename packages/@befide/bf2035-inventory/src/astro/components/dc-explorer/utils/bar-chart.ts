@@ -24,13 +24,15 @@ export function createBarChart(
     // .filter((y) => y !== "")
     .sort()
 
+    console.log(allYears)
+
   const filterWidth = getChartWidth(chartElementIdSelector)
   const tileElement = select(tileElementIdSelector)
   const chart = barChart(chartElementIdSelector)
     .x(
       scaleLinear().domain([
         (allYears[0] || 0) - 0,
-        (allYears[allYears.length - 1] || 2000) + 0.5
+        (allYears[allYears.length - 1] ) + 0.5
       ])
     )
     .width(filterWidth)

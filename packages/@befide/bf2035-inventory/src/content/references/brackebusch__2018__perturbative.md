@@ -1,0 +1,35 @@
+---
+id: brackebusch__2018__perturbative
+type: thesis
+title: Perturbative methods for the computation of resonant cavity eigenmodes subject to geometric variations
+issued:
+  date-parts:
+    - - 2018
+URL: https://doi.org/10.18453/rosdok_id00002062
+publisher: Universität Rostock
+language: en
+tags:
+  - reference
+author:
+  - family: Brackebusch
+    given: Korinna
+    literal: ""
+genre: Doctoral thesis (Dr. Ing.)
+citation-label: brackebusch__2018__perturbative
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/organization/:uni-rostock,#person/gender/:female"
+year: "2018"
+dateCreated: 2025-05-26
+reading-status: to-read
+aliases:
+  - Perturbative methods for the computation of resonant cavity eigenmodes subject to geometric variations
+author-links:
+  - "[[Author/Korinna Brackebusch]]"
+attachment: []
+related:
+  - []
+---
+
+# Perturbative methods for the computation of resonant cavity eigenmodes subject to geometric variations 
+
+ _Notes_
+
