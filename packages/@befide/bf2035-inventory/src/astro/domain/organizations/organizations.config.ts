@@ -1,8 +1,8 @@
-const INPUT_FILENAME = "organizations.csv";
+const INPUT_FILENAME = "organizations.csv"
 
-import { csv2json } from "csv42";
+import { csv2json } from "csv42"
 
-import { defineCollection, reference, z } from "astro:content";
+import { defineCollection, z } from "astro:content"
 
 import {
   LocalizedString,
@@ -10,11 +10,14 @@ import {
   NullableLocalizedString,
   readInputFile,
   ReviewSchema,
-} from "@content/config.common";
+} from "@content/config.common"
 
-import { getOrganizationRoots, rollupUniquePeopleCountSum } from "@/astro/domain/organizations/organizations"
+import {
+  getOrganizationRoots,
+  rollupUniquePeopleCountSum,
+} from "@/astro/domain/organizations/organizations"
 
-export const genders = ["female", "male", "nonbinary"];
+export const genders = ["female", "male", "nonbinary"]
 export const careerLevels = [
   "professor",
   "seniorResearcher",
@@ -22,24 +25,24 @@ export const careerLevels = [
   "phdStudent",
   "masterStudent",
   "bachelorStudent",
-];
-export const disciplinaryProfessions = ["physicist", "engineer", "other"];
+]
+export const disciplinaryProfessions = ["physicist", "engineer", "other"]
 export const peopleCountDiscriminators = [
   ...careerLevels,
   ...disciplinaryProfessions,
   ...genders,
-];
+]
 
 const peopleCountGender = z.object({
   male: z.number().optional().nullable(),
   female: z.number().optional().nullable(),
   other: z.number().optional().nullable(),
-});
+})
 const peopleCountDiscipline = z.object({
   physicist: peopleCountGender,
   engineer: peopleCountGender,
   other: peopleCountGender,
-});
+})
 const peopleCountAcademicCareerLevel = z.object({
   professor: peopleCountDiscipline,
   seniorResearcher: peopleCountDiscipline,
@@ -47,7 +50,7 @@ const peopleCountAcademicCareerLevel = z.object({
   phdStudent: peopleCountDiscipline,
   masterStudent: peopleCountDiscipline,
   bachelorStudent: peopleCountDiscipline,
-});
+})
 
 // export const BefideOrganizationMetaOrganizationalLevel = z.enum([
 // 	'00 Community',
@@ -70,7 +73,7 @@ export const BefideOrganizationMetaBefideOrganizationCategories = z.enum([
   "funder",
   "root",
   "consortium",
-]);
+])
 
 export const OrganizationZodSchema = NestedDomainObjectZodSchema.extend({
   topLevel_organizationId: z.string().nullable(), //reference("organizations").optional().nullable(),
@@ -128,18 +131,18 @@ export const OrganizationZodSchema = NestedDomainObjectZodSchema.extend({
 
 export const defineOrganizationCollection = defineCollection({
   loader: () => {
-    const input = readInputFile(INPUT_FILENAME).toString();
+    const input = readInputFile(INPUT_FILENAME).toString()
     const organizations = csv2json<OrganizationSchema>(input, {
       nested: true,
-    });
+    })
 
-    const roots = getOrganizationRoots(organizations);
-    const communityRoot = roots.find((root) => root.id === ":");
-    if (communityRoot) rollupUniquePeopleCountSum(communityRoot);
+    // const roots = getOrganizationRoots(organizations)
+    // const communityRoot = roots.find((root) => root.id === ":")
+    // if (communityRoot) rollupUniquePeopleCountSum(communityRoot)
 
-    return organizations;
+    return organizations
   },
   schema: OrganizationZodSchema,
-});
+})
 
-export type OrganizationSchema = z.infer<typeof OrganizationZodSchema>;
+export type OrganizationSchema = z.infer<typeof OrganizationZodSchema>

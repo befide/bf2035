@@ -20,7 +20,6 @@ import tailwindcss from "@tailwindcss/vite"
 import UnpluginUnused from "unplugin-unused/vite"
 import type { Root, RootContent } from "hast"
 
-
 // https://astro.build/config
 export default defineConfig({
   devToolbar: {
@@ -62,7 +61,7 @@ export default defineConfig({
       [
         rehypeRewrite,
         {
-          rewrite: (node:  Root | RootContent) => {
+          rewrite: (node: Root | RootContent) => {
             if (node.type === "text") {
               node.value = spaceCommander(node.value)
             }
@@ -72,7 +71,9 @@ export default defineConfig({
     ],
   },
   integrations: [
-    ...(process.env.NODE_ENV === "production" ? [] : [astroD2({ inline: true })]),
+    ...(process.env.NODE_ENV === "production"
+      ? []
+      : [astroD2({ inline: true })]),
     starlight({
       pagefind: false,
       defaultLocale: "en",
@@ -107,8 +108,21 @@ export default defineConfig({
           link: "/data/taxonomy",
         },
         {
-          label: "Organizations",
-          link: "/data/organizations",
+          label: "Organization",
+          items: [
+            {
+              label: "Institutions",
+              link: "/data/organization/institutions",
+            },
+            {
+              label: "Work groups",
+              link: "/data/organization/institions",
+            },
+            {
+              label: "People",
+              link: "/data/organization/people",
+            },
+          ],
         },
         {
           label: "Community",

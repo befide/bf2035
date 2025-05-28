@@ -33,7 +33,7 @@ export const getTableConfig = (key: string) => {
   //       }
   //     }
   //   ]
-  // } else 
+  // } else
   if (key === "theses") {
     return [
       {
@@ -42,7 +42,7 @@ export const getTableConfig = (key: string) => {
         sortable: true,
         format: function (d: ThesisDto) {
           return d.university__label_short
-        }
+        },
       },
       {
         label: "Year",
@@ -50,7 +50,7 @@ export const getTableConfig = (key: string) => {
         sortable: true,
         format: function (d: ThesisDto) {
           return d.year
-        }
+        },
       },
       {
         label: "Title",
@@ -65,14 +65,14 @@ export const getTableConfig = (key: string) => {
             "</span> <span class='gender' data-gender-icon='" +
             d.author.gender +
             "'>(" +
-            d.author.gender+
+            d.author.gender +
             ")</span></div>" +
             "<div class='title'>" +
             d.title +
             "</div>"
           )
-        }
-      }
+        },
+      },
     ]
   } else if (key === "organizations") {
     return [
@@ -86,11 +86,28 @@ export const getTableConfig = (key: string) => {
             d.label__short +
             "</div>" +
             "<div class='fullName'>" +
-            d.label__fullName + d.theses_count +
+            d.label__fullName +
+            d.theses_count +
             "</div>"
           )
-        }
-      }
+        },
+      },
+      {
+        label: "theses",
+        field_name: "theses_count",
+        sortable: true,
+        format: function (d: OrganizationDto) {
+          return d.theses_count
+        },
+      },
+      {
+        label: "facilties",
+        field_name: "facilities_count",
+        sortable: true,
+        format: function (d: OrganizationDto) {
+          return d.facilities_count
+        },
+      },
     ]
   } else if (key === "courses") {
     return [
@@ -100,21 +117,21 @@ export const getTableConfig = (key: string) => {
         sortable: true,
         format: function (d) {
           return d.university_label
-        }
+        },
       },
       {
         label: "Title",
         sortable: false,
         format: function (d: Course) {
           return d.title
-        }
+        },
       },
       {
         label: "Art",
         sortable: false,
         format: function (d: Course) {
           return d.teachingEventTaxon_label
-        }
+        },
       },
       {
         label: "SWS",
@@ -122,7 +139,7 @@ export const getTableConfig = (key: string) => {
         field_name: "sws",
         format: function (d: Course) {
           return d.weeklySemesterHours
-        }
+        },
       },
       {
         label: "Link",
@@ -130,8 +147,8 @@ export const getTableConfig = (key: string) => {
         field_name: "link",
         format: function (d: Course) {
           return "<a target='_blank' href=" + d.link + ">Link to university</a>"
-        }
-      }
+        },
+      },
     ]
   } else {
     return []
@@ -149,25 +166,25 @@ export const getTreeTableConfig = (key, locale) => {
             d.data.label +
             "</span>" +
             (d.data.definition
-              ? "<span class='tree-node__definition'>" +
-                  d.data.definition || "" + "</span>"
+              ? "<span class='tree-node__definition'>" + d.data.definition ||
+                "" + "</span>"
               : "")
           )
-        }
-      }
+        },
+      },
     ]
   } else if (key === "community") {
     return [
       {
         label: "Label",
         className: "tree-node__label",
-        format: (d: TreeNode<Organization>) => d.data.label
+        format: (d: TreeNode<OrganizationDto>) => d.data.label__fullName,
       },
       {
         label: "Label",
         className: "tree-node__value",
-        format: (d: TreeNode<Organization>) => d
-      }
+        format: (d: TreeNode<Organization>) => d,
+      },
     ]
   } else if (key === "facilities") {
     return [
@@ -179,15 +196,19 @@ export const getTreeTableConfig = (key, locale) => {
             d.data.label +
             "</span>" +
             "<span class='tree-node__operation'>(" +
-            [d.data.operation_startYear || "", 
-            d.data.operation_endYear || ""].join(" - ") +
+            [
+              d.data.operation_startYear || "",
+              d.data.operation_endYear || "",
+            ].join(" - ") +
             ")</span>" +
             (d.data.tagLine
-              ? "<span class='tree-node__definition'>" + d.data.tagLine + "</span>"
+              ? "<span class='tree-node__definition'>" +
+                d.data.tagLine +
+                "</span>"
               : "")
           )
-        }
-      }
+        },
+      },
     ]
   } else {
     return []
