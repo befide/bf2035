@@ -1,15 +1,20 @@
-import { stratify, hierarchy, select } from "d3"
-import { ascending } from "d3-array"
+import type { TreeNode } from "@/astro/domain/content.tree"
+import type { NestableDomainObjectSchema } from "@/content/config.common"
+import { stratify, hierarchy, select, type Selection } from "d3"
+import { descending, ascending } from "d3-array"
 import { baseMixin } from "dc"
 
-const treeNode = (items, selectedItems) => {
+const treeNode = (
+  items: TreeNode<NestableDomainObjectSchema>[],
+  selectedItems: TreeNode<NestableDomainObjectSchema>[]
+) => {
   const selectedItemIds = selectedItems
     ? selectedItems.map((d) => d.id)
     : items.map((d) => d.id)
 
   const decoratedItems = items.map((item) => ({
     ...item,
-    isSelected: selectedItemIds.indexOf(item.id) > -1
+    isSelected: selectedItemIds.indexOf(item.id) > -1,
   }))
 
   const roots = decoratedItems.filter((d) => !d.parent_id)
@@ -20,13 +25,14 @@ const treeNode = (items, selectedItems) => {
       : decoratedItems
           .map((d) => ({
             ...d,
-            parent_id: d.parent_id ? d.parent_id : ":"
+            parent_id: d.parent_id ? d.parent_id : ":",
           }))
-          .concat({
-            id: ":",
-            parent_id: null,
-            label: "ROOT"
-          })
+          .concat([
+            {
+              id: ":",
+              parent_id: null,
+            },
+          ])
 
   const root = stratify()
     .id((d) => d.id)
@@ -149,16 +155,16 @@ export default function (parent, chartGroup?) {
 
   function treeRoot() {
     const selectedEntries =
-      _order === ascending
+      _order === descending
         ? _chart.dimension().top(_size)
         : _chart.dimension().bottom(_size)
 
-    const uniqueSelectedEntries = new Set(
-      selectedEntries.map((entry) => entry.id)
-    )
+    // const uniqueSelectedEntries = new Set(
+    //   selectedEntries.map((entry) => entry.id)
+    // )
     const selectedEntriesAndAncestorIds = selectedEntries.flatMap((entry) => [
       entry.id,
-      ..._ancestorsMap[entry.id]
+      ..._ancestorsMap[entry.id],
     ])
     const uniqueSelectedEntriesAndAncestorIds = Array.from(
       new Set(selectedEntriesAndAncestorIds)
@@ -168,125 +174,86 @@ export default function (parent, chartGroup?) {
       .map((id) => _entriesMap[id])
       .filter((d) => !!d)
 
-    selectedEntriesAndAncestors.sort((a, b) => a.label.localeCompare(b.label))
+    //selectedEntriesAndAncestors.sort((a, b) => a.label.localeCompare(b.label))
 
     return treeNode(selectedEntriesAndAncestors, selectedEntries)
   }
 
-  // function makeElements(parentDOM, myData) {
-  //   myData.children?.forEach(function (child) {
-  //     //add li element
-  //     //if children then make ul
-  //     const li = parentDOM.append("li")
-  //     li.classed("tree-data-node", true)
-
-  //     if (child.children?.length > 0) {
-  //       const details = li.append("details")
-  //       details.attr("open", true)
-
-  //       const summary = details.append("summary")
-  //       summary
-  //         .classed("node-header", true)
-  //         .classed("is-selected", child.data.data.isSelected)
-  //         .html(_chart.columns()[0].format(child))
-
-  //       const ul = details.append("ul")
-  //       ul.classed("tree-data-list", true)
-
-  //       //recurse pass ul as parentDOM
-  //       makeElements(ul, child)
-  //     } else {
-  //       const header = li.append("div")
-  //       header.classed("node-header", true)
-  //       header.classed("is-selected", child.data.data.isSelected)
-  //       header
-  //         .classed("node-header", true)
-  //         .html(_chart.columns()[0].format(child))
-  //     }
-  //   })
-  // }
-
   function makeTree(selection) {
     selection
-      .append("ul") //root ul
-      .classed("tree-data-list", true)
-      .classed("tree-root", true)
+      .append("ul")
+      .classed("tree", true)
+      .append("li")
+      .attr("depth", 0)
+      .classed("collapsible", false)
+      .classed("tree-node", true)
+  }
+  function updateTree(selection, root) {
+    selection.select("li.tree-node").call(updateNextLevel, treeRoot())
+    // selection.select(".tree > .tree-node__row > span").remove()
   }
 
   function renderNode(selection, node) {
-    // selection
-    //   .append("input")
-    //   .attr("type", "checkbox")
-    //   .on("change", function () {
-    //     select("#selected").text('checkboxValues(d3.select("#view"))')
-    //   })
     if (node.children?.length > 0) {
-            const details = selection.append("details")
-            details.attr("open", true)
-    
-            const summary = details.append("summary")
-            summary
-              .classed("node-header", true)
-              // .classed("is-selected", node.data.isSelected)
-              .html(_chart.columns()[0].format(node))
-    
-            
-    
-            //recurse pass ul as parentDOM
-            
-          } else {
-            const header = selection.append("div")
-            header.classed("node-header", true)
-            // header.classed("is-selected",  node.data.data.isSelected)
-            header
-              .classed("node-header", true)
-              .html(_chart.columns()[0].format(node))
-          }
-    // selection.append("span").text(node.data.label)
+      const details = selection.append("details")
+      details.attr("open", true)
+
+      const row = details.append("summary")
+      row.classed("tree-node__row", true)
+
+      const cells = row
+        .selectAll(".tree-node__cell")
+        .data(Array(_chart.columns().length).fill(node))
+      cells
+        .enter()
+        .append("div")
+        .classed("tree-node__cell", true)
+        .html((d, i) =>
+          node.parent
+            ? _chart.columns()[i].format(d)
+            : _chart.columns()[i].label
+        )
+
+      //recurse pass ul as parentDOM
+    } else {
+      const row = selection.append("div")
+      row.classed("tree-node__row", true)
+
+      const cells = row
+        .selectAll(".tree-node__cell")
+        .data(Array(_chart.columns().length).fill(node))
+      cells
+        .enter()
+        .append("div")
+        .classed("tree-node__cell", true)
+        .html((d, i) => _chart.columns()[i].format(d))
+    }
   }
 
   // Recursively append child nodes
   function updateNextLevel(selection, node) {
-    // const label = selection.append("span")
-    // const arrow = label.append("span").classed("arrow", true)
-
     selection.call(renderNode, node.data)
     if (!node.hasOwnProperty("children")) return
     const items = selection
       .append("ul")
+      .classed("tree", true)
       .selectAll("li")
       .data(node.children, (d) => d.id)
     items.exit().remove()
     items
       .enter()
       .append("li")
-      .classed("tree-data-node", true)
+      .classed("tree-node", true)
+      .classed("has-children", node.children)
+      .attr("depth", (d) => d.depth)
       .merge(items)
       .each(function (d) {
         select(this).call(updateNextLevel, d)
       })
-    // label
-    //   .select(".arrow")
-    //   .text("▼ ")
-    //   .on("click", function () {
-    //     // Collapse on click
-    //     const childList = selection.select("ul")
-    //     if (!childList.size()) return
-    //     const expanded = childList.style("display") !== "none"
-    //     select(this).text(expanded ? "▶ " : "▼ ")
-    //     childList.style("display", expanded ? "none" : "inherit")
-    //   })
-  }
-
-  function updateTree(selection, root) {
-    selection.select(".tree-root").call(updateNextLevel, treeRoot())
-    // selection.select(".tree-root > .node-header > span").remove()
   }
 
   function renderRoot() {
-    const rootNodes = _chart.root().call(makeTree).call(updateTree, treeRoot())
-
-    // makeElements(rootNodes, treeEntries())
+    _chart.root().call(makeTree).call(updateTree, treeRoot())
   }
 
   _chart._doRedraw = function () {
@@ -355,30 +322,30 @@ export default function (parent, chartGroup?) {
        * @param {Number} [beginSlice=0]
        * @returns {Number|dc.dataTable}
        */
-
-  _chart.beginSlice = function (beginSlice) {
-    if (!arguments.length) {
-      return _beginSlice
-    }
-    _beginSlice = beginSlice
-    return _chart
-  } /**
-   * Get or set the index of the end slice which determines which entries get displayed by the
-   * widget. Useful when implementing pagination. See {@link dc.dataTable#beginSlice `beginSlice`} for more information.
-   * @method endSlice
-   * @memberof dc.dataTable
-   * @instance
-   * @param {Number|undefined} [endSlice=undefined]
-   * @returns {Number|dc.dataTable}
-   */
-
-  _chart.endSlice = function (endSlice) {
-    if (!arguments.length) {
-      return _endSlice
-    }
-    _endSlice = endSlice
-    return _chart
-  }
+  //
+  // _chart.beginSlice = function (beginSlice) {
+  //   if (!arguments.length) {
+  //     return _beginSlice
+  //   }
+  //   _beginSlice = beginSlice
+  //   return _chart
+  // } /**
+  //  * Get or set the index of the end slice which determines which entries get displayed by the
+  //  * widget. Useful when implementing pagination. See {@link dc.dataTable#beginSlice `beginSlice`} for more information.
+  //  * @method endSlice
+  //  * @memberof dc.dataTable
+  //  * @instance
+  //  * @param {Number|undefined} [endSlice=undefined]
+  //  * @returns {Number|dc.dataTable}
+  //  */
+  //
+  // _chart.endSlice = function (endSlice) {
+  //   if (!arguments.length) {
+  //     return _endSlice
+  //   }
+  //   _endSlice = endSlice
+  //   return _chart
+  // }
 
   _chart.columns = function (columns) {
     if (!arguments.length) {
@@ -472,7 +439,6 @@ export default function (parent, chartGroup?) {
           .map((d) => d.data.data.id))
     )
 
-    console.log(_ancestorsMap)
     return _chart
   }
 

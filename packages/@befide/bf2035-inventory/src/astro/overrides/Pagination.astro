@@ -1,0 +1,112 @@
+---
+import { Icon } from "@astrojs/starlight/components"
+
+const { dir, pagination } = Astro.locals.starlightRoute
+
+const { prev, next } = pagination
+const isRtl = dir === "rtl"
+---
+
+{
+  (prev || next) && (
+    <div class="pagination-links" dir={dir}>
+      <div>
+        {prev && (
+          <a href={prev.href} rel="prev">
+            <div>
+              <Icon
+                name={isRtl ? "right-arrow" : "left-arrow"}
+                size="0.75rem"
+              />
+              {prev.label}
+            </div>
+          </a>
+        )}
+      </div>
+      <div>
+        {next && (
+          <a href={next.href} rel="next">
+            <div>
+              {next.label}{" "}
+              <Icon
+                name={isRtl ? "left-arrow" : "right-arrow"}
+                size="0.75rem"
+              />
+            </div>
+          </a>
+        )}
+      </div>
+    </div>
+  )
+}
+
+<style>
+  @layer my-overrides {
+    .pagination-links {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0rem;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      margin-bottom: -1px;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+
+      margin-bottom: -1px;
+
+      /* display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      width: 100%;
+      flex-basis: calc(50% - 0.5rem);
+      flex-grow: 1;
+      
+      border-radius: 0.5rem;
+      padding: 1rem;
+      
+      color: var(--sl-color-gray-2);
+      box-shadow: var(--sl-shadow-md);
+      overflow-wrap: anywhere; */
+    }
+    [rel="next"] {
+      border-bottom: 1px dotted gray;
+      justify-content: end;
+
+      text-align: end;
+      flex-direction: row;
+    }
+    a:hover {
+      border-color: var(--sl-color-gray-2);
+      text-decoration: dotted;
+    }
+    /* 
+    p.link-title {
+      color: var(--sl-color-white);
+      font-size: var(--sl-text-sm);
+      line-height: 0.5rem;
+      font-weight: normal;
+    } */
+
+    svg {
+      flex-shrink: 0;
+    }
+    .pagination-links div {
+      /* align-items: center; */
+      /* column-gap: 0.15rem;
+      row-gap: 0.15rem; */
+      /* color: var(--sl-color-gray-3); */
+      display: flex;
+      line-height: 1rem;
+      font-size: var(--sl-text-xs);
+      /* font-weight: bold; */
+      height: 1rem;
+      line-height: 0.5rem;
+    }
+  }
+</style>

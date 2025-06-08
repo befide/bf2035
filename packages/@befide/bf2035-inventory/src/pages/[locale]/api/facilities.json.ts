@@ -1,4 +1,4 @@
-import { facilitiesForAPI } from "@domain/facilities"
+import { facilitiesForAPI, facilitiesForAPI2 } from "@domain/facilities"
 import type { APIRoute, GetStaticPaths, InferGetStaticPropsType } from "astro"
 
 export const getStaticPaths = (async () => {
@@ -14,11 +14,11 @@ export const GET: APIRoute = async ({ props }) => {
   type Props = InferGetStaticPropsType<typeof getStaticPaths>
   const { locale } = props as Props
 
-  const facilities = await facilitiesForAPI(locale)
+  const facilities = await facilitiesForAPI2(locale)
 
   try {
     return new Response(JSON.stringify(facilities, null, 2))
   } catch (e) {
-    throw new Error("Something went wrong in json-resource.json route: " +  e)
+    throw new Error("Something went wrong in json-resource.json route: " + e)
   }
 }

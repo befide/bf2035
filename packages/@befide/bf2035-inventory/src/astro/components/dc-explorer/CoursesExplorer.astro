@@ -10,18 +10,18 @@ import DCExplorerTable from "@components/dc-explorer/components/DCExplorerTable.
     <DCExplorerCount collection="courses" dimension="count" />
     <DCExplorerRowChart
       collection="courses"
-      dimension="university_label"
+      dimension="university__label_short"
       dimensionIsLocalized={true}
       title={Astro.locals.t("dc-explorer.tiles.title.universities")}
     />
     <DCExplorerRowChart
       collection="courses"
-      dimension="teachingEventTaxon_label"
+      dimension="teachingEvent__term"
       title={Astro.locals.t("dc-explorer.tiles.title.teaching-event")}
     />
     <DCExplorerRowChart
       collection="courses"
-      dimension="studyLevelTaxons_label"
+      dimension="studyLevel__terms"
       dimensionIsArray={true}
       title={Astro.locals.t("dc-explorer.tiles.title.study-levels")}
     />
@@ -44,7 +44,7 @@ import DCExplorerTable from "@components/dc-explorer/components/DCExplorerTable.
       dimensionIsArray={true}
     />
   </div>
-  <div class="dc-explorer_items">
+  <div class="dc-explorer__items">
     <DCExplorerTable collection="courses" dimension="id" />
   </div>
 </DCExplorer>

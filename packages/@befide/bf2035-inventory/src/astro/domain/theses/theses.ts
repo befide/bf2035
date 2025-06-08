@@ -1,6 +1,6 @@
 import { getCollection } from "astro:content"
 import { ascending, descending } from "d3-array"
-import { Thesis } from "./thesis"
+import { Thesis, type ThesisDto } from "./thesis"
 
 export const allTheses = async () =>
   (await getCollection("theses"))
@@ -9,11 +9,11 @@ export const allTheses = async () =>
     )
     .sort((a, b) => descending(a.data.year, b.data.year))
 
-export const thesesForeAPI: Promise<Thesis[]> = async (locale = "en") => {
+export async function thesesForeAPI(locale = "en"): Promise<ThesisDto[]> {
   const theses = await allTheses()
 
   return await Promise.all(
-    theses.map(async thesis => await (new Thesis(thesis.data)).getDto(locale))
+    theses.map(async (thesis) => await new Thesis(thesis.data).getDto(locale))
   )
 }
 

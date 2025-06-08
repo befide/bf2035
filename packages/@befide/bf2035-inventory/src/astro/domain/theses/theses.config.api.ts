@@ -25,7 +25,7 @@ const UNIVERSITY_IDS = [
   ":uni-mainz",
   ":uni-rostock",
   ":uni-siegen",
-  ":uni-wuppertal"
+  ":uni-wuppertal",
 ]
 
 export const ThesisZodSchema = DomainObjectZodSchema.extend({
@@ -34,7 +34,7 @@ export const ThesisZodSchema = DomainObjectZodSchema.extend({
   author: z.object({
     familyName: z.string(),
     givenName: z.string(),
-    gender: z.string().optional().nullable()
+    gender: z.string().optional().nullable(),
   }),
   year: z.number(),
   title: z.string(),
@@ -50,9 +50,9 @@ export const ThesisZodSchema = DomainObjectZodSchema.extend({
   tags: z.array(z.string().optional()),
   degree: z.string().optional(),
   isA_taxonId: z.string().optional(), //reference("taxonomyItems").optional().nullable(),
-  university_organizationsId: z.string().optional(), //reference("organizations").optional().nullable(),
+  university_organizationsId: z.string().nullable(), //reference("organizations").optional().nullable(),
   organizations__organizationsIds: z.array(z.string()), // z.array(reference("organizations").optional().nullable()),
-  facilities_facilitiesIds: z.array(z.string()) //z.array(reference("facilities").optional().nullable()),
+  facilities_facilitiesIds: z.array(z.string()), //z.array(reference("facilities").optional().nullable()),
 })
 
 export type ThesisSchema = z.infer<typeof ThesisZodSchema>
@@ -74,11 +74,13 @@ export const defineThesesCollection = defineCollection({
         url: item.data.url,
         author: {
           familyName: item.data.creators[0]?.lastName,
-          givenName: item.data.creators[0]?.firstName
+          givenName: item.data.creators[0]?.firstName,
         },
         tags: item.data.tags.map(({ tag }: { tag: string }) => tag),
         organizations__organizationsIds: [],
-        facilities_facilitiesIds: []
+        facilities_facilitiesIds: [],
+        citationKey: item.data.citationKey,
+        university_organizationsId: null,
       }
 
       if (item.data.url?.startsWith("https://doi.org/")) {
@@ -116,11 +118,10 @@ export const defineThesesCollection = defineCollection({
             splittedExtraLine[1] !== "none"
           ) {
             dataItem.fulltextLink = splittedExtraLine[1]
-          } 
+          }
         })
 
       dataItem.tags.forEach(async (tag = "") => {
-        
         if (tag?.startsWith("#academic-degree/doctoral-degree/:dr.rer.nat.")) {
           dataItem.isA_taxonId = "/academic-degree/doctoral-degree/:dr.rer.nat."
         } else if (
@@ -140,20 +141,16 @@ export const defineThesesCollection = defineCollection({
         }
         if (tag?.startsWith("#person/gender/")) {
           dataItem.author.gender = tag.replace("#person/gender/", "")
-          
         }
         if (tag?.startsWith("#befidesh/facility/")) {
           dataItem.facilities_facilitiesIds.push(
             tag.replace("#befidesh/facility/", "")
           )
-
-          console.log(tag.replace("#befidesh/facility/", ""))
         }
       })
-      // console.log(dataItem)
 
       return dataItem
     })
   },
-  schema: ThesisZodSchema
+  schema: ThesisZodSchema,
 })

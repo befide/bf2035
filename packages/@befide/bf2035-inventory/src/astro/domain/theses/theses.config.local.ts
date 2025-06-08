@@ -27,10 +27,10 @@ const UNIVERSITY_IDS = [
   ":uni-mainz",
   ":uni-rostock",
   ":uni-siegen",
-  ":uni-wuppertal"
+  ":uni-wuppertal",
 ]
 const cslDatePartsSchema = z.object({
-  "date-parts": z.array(z.array(z.union([z.number(), z.string()])))
+  "date-parts": z.array(z.array(z.union([z.number(), z.string()]))),
 })
 
 export const ThesisZodSchema = DomainObjectZodSchema.extend({
@@ -59,7 +59,7 @@ export const ThesisZodSchema = DomainObjectZodSchema.extend({
       z.object({
         given: z.string().optional(),
         family: z.string().optional(),
-        literal: z.string().optional()
+        literal: z.string().optional(),
       })
     )
     .optional(),
@@ -68,7 +68,7 @@ export const ThesisZodSchema = DomainObjectZodSchema.extend({
       z.object({
         given: z.string().optional(),
         family: z.string().optional(),
-        literal: z.string().optional()
+        literal: z.string().optional(),
       })
     )
     .optional(),
@@ -77,7 +77,7 @@ export const ThesisZodSchema = DomainObjectZodSchema.extend({
       z.object({
         given: z.string().optional(),
         family: z.string().optional(),
-        literal: z.string().optional()
+        literal: z.string().optional(),
       })
     )
     .optional(),
@@ -86,19 +86,18 @@ export const ThesisZodSchema = DomainObjectZodSchema.extend({
       z.object({
         given: z.string().optional(),
         family: z.string().optional(),
-        literal: z.string().optional()
+        literal: z.string().optional(),
       })
     )
     .optional(),
 
-  
   tags: z.array(z.string().optional()),
   degree: z.string().optional(),
-  
+
   isA_taxonId: z.string().optional(), //reference("taxonomyItems").optional().nullable(),
   university_organizationsId: z.string().optional(), //reference("organizations").optional().nullable(),
   organizations__organizationsIds: z.array(z.string()), // z.array(reference("organizations").optional().nullable()),
-  facilities_facilitiesIds: z.array(z.string()) //z.array(reference("facilities").optional().nullable()),
+  facilities_facilitiesIds: z.array(z.string()), //z.array(reference("facilities").optional().nullable()),
 })
 
 export type ThesisSchema = z.infer<typeof ThesisZodSchema>
@@ -108,14 +107,14 @@ export const defineThesesCollection = defineCollection({
     pattern: "**/*.md",
     base: "./src/content/theses",
     parser: async (entry) => {
-      const { id, data } = entry
+      // const { id, data } = entry
 
       // if (!data.date) {
       //   // cast the data object to keep TypeScript happy
       //   ;(data as { date?: string }).date = id.match(/^\d{4}-\d{2}-\d{2}/)?.[0]
       // }
 
-      console.log({id,data})
+      // console.log({id,data})
 
       return entry
     },

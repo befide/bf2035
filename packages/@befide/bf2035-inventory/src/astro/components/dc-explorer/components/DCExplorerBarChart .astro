@@ -2,14 +2,14 @@
 import {
   barChartId,
   barChartTileId,
-} from "@components/dc-explorer/utils"
+} from "@/astro/components/dc-explorer/components"
 
 const {
   collection,
   dimension,
   title,
   accessorPath,
-  dimensionIsArray = false
+  dimensionIsArray = false,
 } = Astro.props
 
 const tileId = barChartTileId(collection, dimension)

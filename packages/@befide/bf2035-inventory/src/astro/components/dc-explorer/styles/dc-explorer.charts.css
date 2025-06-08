@@ -1,8 +1,11 @@
-
+.explorer__chart svg {
+  display: inline-block;
+  /* background-color: gray; */
+}
 
 .explorer__chart text {
   font-size: var(--text-sm);
- 
+
   font-variant-numeric: tabular-nums;
   filter: drop-shadow(0px 0px 5px white) drop-shadow(0px 0px 3px white);
 }
@@ -30,9 +33,13 @@
   fill: var(--interaction__color--neutral--dark);
 }
 
+.explorer__chart--row .axis {
+  display: none;
+}
+
 .explorer__chart--row g.row rect {
   cursor: pointer;
-  fill-opacity: .9;
+  fill-opacity: 0.9;
   fill: var(--color-kfb-yellow);
   stroke: var(--color-kfb-yellow);
   stroke-width: 1px;
@@ -82,7 +89,7 @@
   font-size: var(--text-2xs);
 }
 
-.explorer__chart .deselected+text {
+.explorer__chart .deselected + text {
   opacity: 0.8;
 }
 
@@ -94,7 +101,7 @@
 .explorer__chart .tick text {
   font-weight: normal;
   font-size: var(--text-2xs);
-  fill: black;
+  fill: #999999;
 }
 
 .grid-line.horizontal {

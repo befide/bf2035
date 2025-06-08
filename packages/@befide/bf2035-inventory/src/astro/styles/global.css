@@ -1,8 +1,16 @@
-@import "./tailwind.css";
-@import "./table.css";
+/* @import "./table.css";
 @import "./print.css";
 @import "./property-list.css";
-@import "./my-overrides.css";
+
+
+@import "./card.css"; */
+
+@import "./my-overrides.config.css";
+@import "./baseline.css";
+@import "./my-overrides.content-panel.css";
+@import "./my-overrides.typography.css";
+@import "./my-overrides.table.css";
+@import "./my-overrides.tree.css";
 
 :root {
   --color-kfb-red: #c53228;
@@ -10,4 +18,9 @@
   --color-kfb-blue: #2174a8;
   --color-kfb-yellow: #edc500;
   --color-kfb-gray: #757575;
+  --sl-font: "Barlow Semi Condensed", serif;
+}
+
+@view-transition {
+  navigation: auto;
 }

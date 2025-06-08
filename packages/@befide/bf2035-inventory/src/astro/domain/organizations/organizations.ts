@@ -1,7 +1,10 @@
 import { getCollection, getEntry } from "astro:content"
 
 import { flattenTreeNodes, getRoots, type TreeNode } from "../content.tree"
-import { peopleCountDiscriminators, type OrganizationSchema } from "@/astro/domain/organizations/organizations.config"
+import {
+  peopleCountDiscriminators,
+  type OrganizationSchema,
+} from "@/astro/domain/organizations/organizations.config"
 import { getValue } from "../index"
 import { ascending } from "d3-array"
 import { Organization } from "./organization"
@@ -100,49 +103,14 @@ export const getOrganizationsRoots = (items: OrganizationSchema[]) => {
   return getRoots<OrganizationSchema>(items)
 }
 
-export const communityForAPI = async (locale: string) => {
-  const communityOrganizations = await allOrganizations()
-
-  const roots = getOrganizationRoots(communityOrganizations)
-
-  const communityRoot = roots.find((root) => root.id === ":")
-  if (!communityRoot) return []
-
-  const newRoot = rollupUniquePeopleCountSum(communityRoot)
-
-  const i18n = await getEntry("i18n", locale)
-
-  const list = flattenTreeNodes([newRoot])
-    .toSorted((a, b) => ascending(a.id, b.id))
-    .map((item) => ({
-      id: item.id,
-
-      depth: item.depth,
-      height: item.children.length,
-      parent_id: item.parent_id,
-
-      
-      label__fullName: getLocalizedValue(item.data, "label.fullName", locale),
-      label__short: getLocalizedValue(item.data, "label.short", locale),
-      uniquePeopleCountRecursiveSum: item.data.uniquePeopleCountRecursiveSum,
-      befideOrganizationCategories: item.data.befideOrganizationCategories.map(
-        (c) => i18n?.data["organizationCategory.full." + c]
-      ),
-
-      instanceOf: item.data.isInstanceOf,
-      location__country__code: item.data.location?.country?.code,
-      location__city: item.data.location?.city,
-    }))
-
-  return list
-}
-
 export const organizationsForAPI = async (locale: string) => {
   const organizations = await allCommunityTopLevelOrganizations()
   return await Promise.all(
-    organizations.map(
-      async (organization) =>
-        await new Organization(organization.data).getDto(locale)
-    )
+    organizations
+      .filter((o) => o.id !== ":")
+      .map(
+        async (organization) =>
+          await new Organization(organization.data).getDto(locale)
+      )
   )
 }

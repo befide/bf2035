@@ -11,3 +11,4 @@ packages/@befide/bf2035-3d
 
 
 .DS_Store
+/.run/inventory run.run.xml

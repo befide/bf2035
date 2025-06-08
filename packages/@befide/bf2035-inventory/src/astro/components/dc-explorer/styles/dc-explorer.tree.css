@@ -1,92 +1,58 @@
-.tree {
-  --tree-spacing: 1rem;
-  --radius: .25rem;
-
-  line-height: 1rem;
-}
-
-.tree li {
-  font-family: "Barlow Semi Condensed";
-  margin: 0;
-  padding: 0;
-  display: block;
-  position: relative;
-  font-size: var(--sl-text-sm);
-  line-height: 1rem;
-  padding-left: calc(2 * var(--tree-spacing) - var(--radius) - 2px);
-  max-width: 70ch;
-}
-.tree {
-  width: 100%;
-}
-.tree ul {
-  margin: 0;
-  padding: 0;
-
-  margin-left: calc(var(--radius) - var(--tree-spacing));
-  padding-left: 0;
-}
-
-.tree ul li {
-  border-left: 2px solid #ddd;
-}
-
-.tree ul li:last-child {
-  border-color: transparent;
-}
-
-.tree ul li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: calc(var(--tree-spacing) / -2);
-  left: -2px;
-  width: calc(var(--tree-spacing) + 2px);
-  height: calc(var(--tree-spacing) + 1px);
-  border: solid #ddd;
-  border-width: 0 0 2px 2px;
-}
-
-.tree .node-header {
-
+.tree-node__row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0.25rem 0;
+}
+.tree-node__cell {
+  line-height: 0.5rem;
+  padding: 0 0.25rem;
+  height: 1rem;
+  position: relative;
+}
+
+.tree-node__cell:after {
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  /* background-color: gray; */
+  border-bottom: 1px dotted black;
+  position: absolute;
+  bottom: -0.25rem;
+}
+
+.tree-node[depth="0"] .tree-node__row > .tree-node__cell:nth-child(1) {
+  flex: 0 0 calc(70ch - 0rem);
+}
+.tree-node[depth="1"] .tree-node__row > .tree-node__cell:nth-child(1) {
+  flex: 0 0 calc(70ch - 1rem);
+}
+.tree-node[depth="2"] .tree-node__row > .tree-node__cell:nth-child(1) {
+  flex: 0 0 calc(70ch - 1.5rem);
+}
+.tree-node[depth="3"] .tree-node__row > .tree-node__cell:nth-child(1) {
+  flex: 0 0 calc(70ch - 2rem);
+}
+.tree-node[depth="4"] .tree-node__row > .tree-node__cell:nth-child(1) {
+  flex: 0 0 calc(70ch - 2.5rem);
+}
+.tree-node__cell:nth-child(2) {
+  flex: 0 0 30ch;
+}
+.tree-node__cell:nth-child(3) {
+  flex: 0 0 8ch;
+}
+.tree-node__cell:nth-child(3) {
+  flex: 0 0 12ch;
+}
+.tree-node__cell:nth-child(4) {
+  flex: 0 0 12ch;
 }
 
 .tree summary {
-
   cursor: pointer;
-
-}
-
-.tree .tree-node__height {
-  flex: 1;
-  text-align: right;
-}
-
-.tree .tree-node__label {
-  flex: 1 1 90%;
-}
-
-.tree .tree-node__operation {
-  flex: 1 1 10%;
-  text-align: left;
-}
-
-.tree .tree-node__label {
-  font-weight: bold;
-  padding-right: 1rem;
-}
-.tree .tree-node__definition {
-  
-  flex: 100%;
-  padding-right: 1rem;
-}
-
-.tree summary::marker,
-.tree summary::-webkit-details-marker {
-  display: none;
 }
 
 .tree summary:focus {
@@ -95,47 +61,4 @@
 
 .tree summary:focus-visible {
   outline: 1px dotted #000;
-}
-
-.tree li::after,
-.tree summary::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: calc(var(--tree-spacing) / 2 - var(--radius));
-  left: calc(var(--tree-spacing) - var(--radius) - 1px);
-  width: calc(2 * var(--radius));
-  height: calc(2 * var(--radius));
-  border-radius: 50%;
-  background: #ddd;
-}
-
-.tree summary::before {
-  z-index: 1;
-  background: #696;
-  background-position: 50% 50%;
-  background-size: 75%;
-  background-repeat: no-repeat;
-}
-
-.tree details>summary::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-plus-icon lucide-plus'%3E%3Cpath d='M5 12h14'/%3E%3Cpath d='M12 5v14'/%3E%3C/svg%3E");
-}
-.tree details[open]>summary::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-minus-icon lucide-minus'%3E%3Cpath d='M5 12h14'/%3E%3C/svg%3E");
-}
-
-/* .tree .node-header {
-  opacity: .2;
-}
-.tree .node-header.is-selected {
-  opacity: 1;
-} */
-
-.tree-root > details > .node-header > span {
-  display: none;
-}
-
-.tree .tree-root {
-  margin-left: 1rem;
 }

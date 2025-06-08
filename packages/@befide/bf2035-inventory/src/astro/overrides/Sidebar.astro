@@ -1,0 +1,30 @@
+---
+import SiteTitle from "@astrojs/starlight/components/SiteTitle.astro"
+import MobileMenuFooter from "@astrojs/starlight/components/MobileMenuFooter.astro"
+
+import Pagination from "./Pagination.astro"
+import SidebarPersister from "@astrojs/starlight/components/SidebarPersister.astro"
+import SidebarSublist from "./SidebarSublist.astro"
+
+const { sidebar } = Astro.locals.starlightRoute
+---
+
+<div class="sidebar-top">
+  <div class="title-wrapper">
+    <SiteTitle />
+  </div>
+
+  <Pagination />
+
+  <!-- <MobileMenuFooter /> -->
+</div>
+
+<SidebarPersister>
+  <div class="not-content">
+    <SidebarSublist sublist={sidebar} />
+  </div>
+</SidebarPersister>
+
+<div class="md:sl-hidden">
+  <MobileMenuFooter />
+</div>

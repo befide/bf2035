@@ -1,18 +1,17 @@
-import type { NestedDomainObjectSchema } from "@/content/config.common"
+import type { NestableDomainObjectSchema } from "@/content/config.common"
 
-export interface TreeNode<Datum> {
+export interface TreeNode<Datum extends NestableDomainObjectSchema> {
   id: string
   parent_id: string | null
   depth: number
   childIndex: number | null
-
-  data: Datum
   children: TreeNode<Datum>[]
+  data: Datum
 }
 
-export function getRoots<
-  Datum extends NestedDomainObjectSchema
->(items: Array<Datum>) {
+export function getRoots<Datum extends NestableDomainObjectSchema>(
+  items: Array<Datum>
+) {
   const roots: TreeNode<Datum>[] = []
 
   const flatTreeNodes: TreeNode<Datum>[] = items.map((item) => ({
@@ -22,7 +21,7 @@ export function getRoots<
     data: item,
     childIndex: null,
     children: [],
-    depth: 0
+    depth: 0,
   }))
 
   const flatTreeNodeMap: {
@@ -51,7 +50,7 @@ export function getRoots<
   return roots
 }
 
-export function flattenTreeNode<Datum>(
+export function flattenTreeNode<Datum extends NestableDomainObjectSchema>(
   node: TreeNode<Datum>
 ): TreeNode<Datum>[] {
   return node.children.length > 0
@@ -59,6 +58,8 @@ export function flattenTreeNode<Datum>(
     : [node]
 }
 
-export function flattenTreeNodes<Datum>(nodes: TreeNode<Datum>[]) {
+export function flattenTreeNodes<Datum extends NestableDomainObjectSchema>(
+  nodes: TreeNode<Datum>[]
+) {
   return nodes.flatMap(flattenTreeNode)
 }

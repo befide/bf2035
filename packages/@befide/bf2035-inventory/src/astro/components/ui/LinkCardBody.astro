@@ -2,36 +2,4 @@
 
 ---
 
-<div class="link-card__body"><slot /></div>
-
-<style is:global>
-  .link-card__body {
-    padding: 0.5rem;
-    font-size: var(--text-sm);
-  }
-
-  .link-card__body__section {
-    /* padding: 1rem 0.5rem; */
-  }
-
-  .link-card__body__section h4 {
-    font-weight: var(--font-weight-bold);
-    font-size: var(--text-sm);
-  }
-
-  .link-card__body__section ul li {
-    margin-top: -1px;
-    border-top: 1px dotted gray;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 1rem;
-  }
-
-  .link-card__body__section ul li:first-child {
-    border-top: 1px solid gray;
-  }
-
-  .link-card__body__section ul li:last-child {
-    border-bottom: 1px solid gray;
-  }
-</style>
+<div class="card__body">&nbsp;<slot /></div>

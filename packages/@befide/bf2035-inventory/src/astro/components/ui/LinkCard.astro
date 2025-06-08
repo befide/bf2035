@@ -1,28 +1,19 @@
 ---
 import type { HTMLAttributes } from "astro/types"
+import LinkCardHeader from "./LinkCardHeader.astro"
+import LinkCardBody from "./LinkCardBody.astro"
 
 // use a `type`
 type Props = HTMLAttributes<"a">
-const { href, class: className } = Astro.props
+const { href, title, class: className } = Astro.props
 
-const classList =
-  "link-card rounded-sm border border-border bg-accent/70 text-card-foreground shadow-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 dark:bg-accent/30".split(
-    " ",
-  )
+const classList = "card card--link".split(" ")
 if (className) {
   classList.push(className)
 }
 ---
 
-<a {href} class:list={classList}><slot /> </a>
-
-<style is:global>
-  .link-card {
-    flex: 1;
-  }
-
-  .link-card__header h3 {
-    font-weight: var(--font-weight-bold);
-    font-size: var(--text-md);
-  }
-</style>
+<a {href} class:list={classList}
+  ><LinkCardHeader>{title}</LinkCardHeader>
+  <LinkCardBody><slot /></LinkCardBody>
+</a>

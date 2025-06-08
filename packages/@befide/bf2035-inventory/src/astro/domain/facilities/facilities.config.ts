@@ -6,15 +6,16 @@ import { defineCollection, z } from "astro:content"
 
 import {
   LocalizedString,
-  NestedDomainObjectZodSchema,
+  NestableDomainObjectZodSchema,
   NullableLocalizedString,
   readInputFile,
-  ReviewSchema
-} from "../../../content/config.common"
+  ReviewSchema,
+  ZodStringArrayFromString,
+} from "@content/config.common.ts"
 
-export const FacilityZodSchema = NestedDomainObjectZodSchema.extend({
-  partOf_id: z.string().optional().nullable(),
-  versionOf_id: z.string().optional().nullable(),
+export const FacilityZodSchema = NestableDomainObjectZodSchema.extend({
+  partOf_id: z.string().nullable(),
+  successorOf_id: z.string().nullable(),
   host_id: z.string().nullable(),
 
   label: LocalizedString,
@@ -24,78 +25,55 @@ export const FacilityZodSchema = NestedDomainObjectZodSchema.extend({
   isBMBF_FIS: z.boolean(),
   isUserFacility: z.boolean(),
 
-  instanceOfTaxon_id: z.string().nullable(),
+  instanceOf_taxonId: z.string().nullable(),
 
   lifeCycle: z.object({
-    currentStatusTaxon_id: z.string().nullable(),
-    design: z
-      .object({
-        startYear: z.number().nullable()
-      })
-      .optional(),
-    realization: z
-      .object({
-        startYear: z.number().nullable()
-      })
-      .optional(),
-    operation: z
-      .object({
-        startYear: z.number().nullable(),
-        endYear: z.number().nullable()
-      })
-      .optional()
+    currentStatus_taxonId: z.string().nullable(),
+    design: z.object({
+      startYear: z.number().nullable(),
+    }),
+    realization: z.object({
+      startYear: z.number().nullable(),
+    }),
+    operation: z.object({
+      startYear: z.number().nullable(),
+      endYear: z.number().nullable(),
+    }),
   }),
 
-  primaryApplicationTaxons_id: z.preprocess(
-    (input) => (input ? (input + "").split(/\s?,\s?/).filter((d) => !!d) : []),
-    z.array(z.string())
-  ),
-
-  secondaryApplicationTaxons_id: z.preprocess(
-    (input) => (input ? (input + "").split(/\s?,\s?/).filter((d) => !!d) : []),
-    z.array(z.string())
-  ),
+  primaryApplication_taxonIds: ZodStringArrayFromString,
+  secondaryApplication_taxonIds: ZodStringArrayFromString,
 
   parameters: z.object({
-    primaryBeamParticles: z.preprocess(
-      (input) =>
-        input ? (input + "").split(/\s?,\s?/).filter((d) => !!d) : [],
-      z.array(z.string()).nullable()
-    ),
-    secondaryBeamParticles: z.preprocess(
-      (input) =>
-        input ? (input + "").split(/\s?,\s?/).filter((d) => !!d) : [],
-      z.array(z.string()).nullable()
-    ),
-    length__m: z.number().optional().nullable(),
-    E0__eV: z.number().optional().nullable(),
-    E1__eV: z.number().optional().nullable(),
-    emittance__mrad: z.number().optional().nullable(),
-    powerConsumption__W: z.number().optional().nullable(),
-    srPowerLoss__W: z.number().optional().nullable()
+    primaryBeamParticles: ZodStringArrayFromString,
+    secondaryBeamParticles: ZodStringArrayFromString,
+    length__m: z.number().nullable(),
+    E0__eV: z.number().nullable(),
+    E1__eV: z.number().nullable(),
+    emittance__mrad: z.number().nullable(),
+    powerConsumption__W: z.number().nullable(),
+    srPowerLoss__W: z.number().nullable(),
   }),
   links: z.object({
     homepage: NullableLocalizedString,
-    references: z.preprocess((input) => {
-      return (input + "").split(/\s?,\s?/)
-    }, z.array(z.string()).nullable())
+    references: ZodStringArrayFromString,
   }),
-  review: ReviewSchema
+  review: ReviewSchema,
 })
 
 export const defineFacilityCollection = defineCollection({
   loader: async () => {
     const input = readInputFile(INPUT_FILE).toString()
     const data = csv2json<FacilitySchema>(input, {
-      nested: true
+      nested: true,
     })
 
-    data.forEach(item => {
-      item.parent_id = (item.partOf_id || item.versionOf_id) || null
+    data.forEach((item) => {
+      item.parent_id = item.partOf_id || item.successorOf_id || null
     })
     return data
   },
-  schema: FacilityZodSchema
+  schema: FacilityZodSchema,
 })
 
 export type FacilitySchema = z.infer<typeof FacilityZodSchema>
@@ -109,9 +87,9 @@ export type Facility = {
   isBMBF_FIS: boolean
   isUserFacility: boolean
   primaryApplicationTaxons_label: string[]
-  secondaryApplicationTaxons_label: string[],
-  operation_startYear: number | undefined,
-  operation_endYear: number | undefined,
+  secondaryApplicationTaxons_label: string[]
+  operation_startYear: number | undefined
+  operation_endYear: number | undefined
   parameters: {
     primaryBeamParticles: string[]
     secondaryBeamParticles: string[]

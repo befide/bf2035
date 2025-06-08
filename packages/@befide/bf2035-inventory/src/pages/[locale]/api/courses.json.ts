@@ -6,7 +6,7 @@ export const getStaticPaths = (async () => {
 
   return locales.map((locale) => ({
     params: { locale },
-    props: { locale }
+    props: { locale },
   }))
 }) satisfies GetStaticPaths
 
@@ -15,8 +15,6 @@ export const GET: APIRoute = async ({ props }) => {
   const { locale } = props as Props
 
   const courses = await coursesForAPI(locale)
-  console.log(courses.map((c) => c.studyLevelTaxons_label))
-
   try {
     return new Response(JSON.stringify(courses, null, 2))
   } catch (e) {

@@ -11,7 +11,8 @@
       "@utils/*": ["src/astro/domain/*"],
       "@nanostore/*": ["src/astro/nanostore/*"],
       "@domain/*": ["src/astro/domain/*"],
-      "@content/*": ["src/content/*"]
+      "@content/*": ["src/content/*"],
+      "@assets/*": ["src/content/assets/*"]
     },
     "jsx": "preserve"
   }

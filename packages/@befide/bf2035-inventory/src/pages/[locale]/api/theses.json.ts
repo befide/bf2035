@@ -1,4 +1,4 @@
-import {  thesesForeAPI } from "@domain/theses"
+import { thesesForeAPI } from "@domain/theses"
 import type { APIRoute, GetStaticPaths, InferGetStaticPropsType } from "astro"
 
 export const getStaticPaths = (async () => {

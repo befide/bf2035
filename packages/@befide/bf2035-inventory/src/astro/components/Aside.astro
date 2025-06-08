@@ -1,0 +1,61 @@
+---
+import { Icon } from "@astrojs/starlight/components"
+import { AstroError } from "astro/errors"
+
+const asideVariants = ["table", "note", "tip", "caution", "danger"] as const
+const icons = {
+  table: "table",
+  note: "information",
+  tip: "rocket",
+  caution: "warning",
+  danger: "error",
+} as const
+
+interface Props {
+  type?: (typeof asideVariants)[number]
+  title?: string
+}
+
+let { type = "table", title } = Astro.props
+
+if (!asideVariants.includes(type)) {
+  throw new AstroError(
+    "Invalid `type` prop passed to the `<Aside>` component.\n",
+    `Received: ${JSON.stringify(type)}\n` +
+      `Expected one of ${asideVariants.map((i) => JSON.stringify(i)).join(", ")}`
+  )
+}
+
+if (!title) {
+  title = Astro.locals.t(`aside.${type}`)
+}
+---
+
+<aside aria-label={title} class={`aside aside--${type}`}>
+  <p class="aside__title" aria-hidden="true">
+    <span class={"icon icon--" + type}></span>
+    <span class="title">{title}</span>
+  </p>
+  <div class="aside__content">
+    <slot />
+  </div>
+</aside>
+
+<style>
+  @layer my-overrides {
+    .aside__title {
+      height: 1rem;
+      background-color: red;
+    }
+    .icon {
+      /* color: var(--sl-icon-color); */
+      font-size: 1rem;
+      width: 1rem;
+      height: 1rem;
+      background-size: contain;
+    }
+    .icon--table {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXRhYmxlLWljb24gbHVjaWRlLXRhYmxlIj48cGF0aCBkPSJNMTIgM3YxOCIvPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgeD0iMyIgeT0iMyIgcng9IjIiLz48cGF0aCBkPSJNMyA5aDE4Ii8+PHBhdGggZD0iTTMgMTVoMTgiLz48L3N2Zz4=");
+    }
+  }
+</style>

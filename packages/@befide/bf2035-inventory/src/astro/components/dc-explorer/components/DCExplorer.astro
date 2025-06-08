@@ -7,7 +7,7 @@ const locale = Astro.currentLocale
 ---
 
 <dc-explorer
-  class="dc-explorer"
+  class="dc-explorer not-content"
   data-collection={collection}
   data-locale={locale}
 >
@@ -17,7 +17,7 @@ const locale = Astro.currentLocale
 <script>
   import "dc/src/compat/d3v6"
 
-  import { config, redrawAll, renderAll } from "dc"
+  import { config, filterAll, redrawAll, renderAll } from "dc"
 
   import {
     charts,
@@ -28,16 +28,14 @@ const locale = Astro.currentLocale
     getValue,
     getLocale,
     createTreeDataTableChart,
-  } from "@components/dc-explorer/utils"
+  } from "."
   import { getCollectionIndex } from "@nanostore/index"
   import {
-    getTableConfig,
-    getTreeTableConfig,
+    tableConfigMap,
+    treeTableConfigMap,
   } from "@components/dc-explorer/config"
-  import type {
-    DomainObjectSchema,
-    NestedDomainObjectSchema,
-  } from "@/content/config.common"
+  import type { NestableDomainObjectSchema } from "@content/config.common"
+
   const locale = getLocale()
 
   class DCExplorer extends HTMLElement {
@@ -69,8 +67,10 @@ const locale = Astro.currentLocale
 
             if (dcTileType === "count") {
               /*something here*/
+              const dimension = idx.dimension((d) => d.id)
+              const group = dimension.group().reduceCount()
 
-              createCountChart(dcCollection, dcDimension, idx)
+              createCountChart(dcCollection, dcDimension, idx, dimension, group)
             } else if (dcTileType === "row-chart") {
               // something here
 
@@ -94,8 +94,6 @@ const locale = Astro.currentLocale
 
               const group = dimension.group()
 
-              console.log(group)
-
               createBarChart(dcCollection, dcDimension, dimension, group)
             } else if (dcTileType === "table") {
               const idDimension = idx.dimension((d: DomainObject) => d.id)
@@ -103,19 +101,19 @@ const locale = Astro.currentLocale
               createTableChart(
                 dcCollection,
                 dcDimension,
-                getTableConfig(dcCollection, locale),
+                tableConfigMap(dcCollection, locale),
                 idDimension
               )
             } else if (dcTileType === "tree-data-table") {
               const idDimension = idx.dimension(
-                (nestedDomnainObject: NestedDomainObjectSchema) =>
-                  nestedDomnainObject.id
+                (nestableDomainObject: NestableDomainObjectSchema) =>
+                  nestableDomainObject.id
               )
 
               createTreeDataTableChart(
                 dcCollection,
                 dcDimension,
-                getTreeTableConfig(dcCollection, locale),
+                treeTableConfigMap(dcCollection, locale),
                 idDimension
               )
             }
@@ -135,9 +133,7 @@ const locale = Astro.currentLocale
               if (chartId) {
                 charts.get(chartId)?.filterAll()
               } else {
-                charts.forEach(function (chart) {
-                  chart.filter(null)
-                })
+                filterAll()
               }
 
               redrawAll()

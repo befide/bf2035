@@ -6,10 +6,11 @@ import { defineCollection, z } from "astro:content"
 
 import {
   LocalizedString,
-  NestedDomainObjectZodSchema,
+  NestableDomainObjectZodSchema,
   NullableLocalizedString,
   readInputFile,
   ReviewSchema,
+  ZodStringArrayFromString,
 } from "@content/config.common"
 
 import {
@@ -75,11 +76,9 @@ export const BefideOrganizationMetaBefideOrganizationCategories = z.enum([
   "consortium",
 ])
 
-export const OrganizationZodSchema = NestedDomainObjectZodSchema.extend({
+export const OrganizationZodSchema = NestableDomainObjectZodSchema.extend({
   topLevel_organizationId: z.string().nullable(), //reference("organizations").optional().nullable(),
-  instanceOf_taxonId: z.preprocess((input) => {
-    return (input + "").split(/\s?,\s?/).toSorted()
-  }, z.array(z.string())),
+  instanceOf_taxonId: ZodStringArrayFromString,
 
   befideOrganizationCategories: z.preprocess((input) => {
     return (input + "").split(/\s?,\s?/).toSorted()

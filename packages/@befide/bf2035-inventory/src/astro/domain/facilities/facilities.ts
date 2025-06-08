@@ -1,12 +1,10 @@
-import type {
-  
-  FacilitySchema
-} from "@/astro/domain/facilities/facilities.config"
+import type { FacilitySchema } from "@/astro/domain/facilities/facilities.config"
 import { getCollection, getEntry } from "astro:content"
 
 import { flattenTreeNodes, getRoots } from "../content.tree"
 import { ascending } from "d3"
 import { getLocalizedValue } from "../content"
+import { Facility, type FacilityDto } from "./facility"
 
 export const getFacilities = async (options: {
   hostId?: string
@@ -19,8 +17,8 @@ export const getFacilities = async (options: {
       (options.isUserFacility === undefined ||
         data.isUserFacility === options.isUserFacility) &&
       (options.lifeCycleCategory === undefined ||
-        !data.lifeCycle?.currentStatusTaxon_id ||
-        data.lifeCycle?.currentStatusTaxon_id.indexOf(
+        !data.lifeCycle?.currentStatus_taxonId ||
+        data.lifeCycle?.currentStatus_taxonId.indexOf(
           "/" + options.lifeCycleCategory
         ) > -1)
     )
@@ -45,25 +43,25 @@ export const facilitiesForAPI = async (locale: string) => {
           locale
         ),
       instanceOf_label:
-        facility.instanceOfTaxon_id &&
+        facility.instanceOf_taxonId &&
         getLocalizedValue(
-          await getEntry("taxonomyItems", facility.instanceOfTaxon_id),
+          await getEntry("taxonomyItems", facility.instanceOf_taxonId),
           "data.term",
           locale
         ),
       currentStatus_label:
-        facility.lifeCycle.currentStatusTaxon_id &&
+        facility.lifeCycle.currentStatus_taxonId &&
         getLocalizedValue(
           await getEntry(
             "taxonomyItems",
-            facility.lifeCycle.currentStatusTaxon_id
+            facility.lifeCycle.currentStatus_taxonId
           ),
           "data.term",
           locale
         ),
       lifeCycle: {
-        ...facility.lifeCycle
-      }
+        ...facility.lifeCycle,
+      },
     }))
   )
 
@@ -87,8 +85,18 @@ export const facilitiesForAPI = async (locale: string) => {
       isUserFacility: item.data.isUserFacility,
       isBMBF_FIS: item.data.isBMBF_FIS,
 
-      ...item.data.parameters
+      ...item.data.parameters,
     }))
 
   return list
+}
+
+export async function facilitiesForAPI2(locale = "en"): Promise<FacilityDto[]> {
+  const facilities = await getFacilities({})
+
+  return await Promise.all(
+    facilities.map(
+      async (facility) => await new Facility(facility.data).getDto(locale)
+    )
+  )
 }

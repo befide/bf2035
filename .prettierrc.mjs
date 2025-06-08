@@ -7,14 +7,16 @@ export default {
   trailingComma: "es5",
   plugins: [
     "prettier-plugin-astro",
-    "prettier-plugin-packagejson"
+    "stylelint-prettier",
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-packagejson",
   ],
   overrides: [
     {
       files: "*.astro",
       options: {
-        parser: "astro"
-      }
-    }
-  ]
+        parsxer: "astro",
+      },
+    },
+  ],
 }

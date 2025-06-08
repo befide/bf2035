@@ -1,6 +1,6 @@
 import { getEntry } from "astro:content"
 import { getValueTranslation } from ".."
-import { getLocalizedValue } from "../content"
+import { getLocalizedValue, getReferencesLocalizedValue } from "../content"
 import type { ThesisSchema } from "./theses.config.api"
 
 export type Theses = Thesis[]
@@ -23,7 +23,6 @@ export interface Author {
 
 export class Thesis {
   _data: ThesisSchema
-
   constructor(data: ThesisSchema) {
     this._data = data
   }
@@ -41,27 +40,19 @@ export class Thesis {
         )) ||
       getValueTranslation(this._data.publisher, locale)
 
-    const organizations__label_short = (
-      await Promise.all(
-        this._data.organizations__organizationsIds.map(
-          async (d) => await getEntry("organizations", d)
-        )
-      )
+    const organizations__label_short = await getReferencesLocalizedValue(
+      "organizations",
+      this._data.organizations__organizationsIds,
+      "data.label.short",
+      locale
     )
-      .filter((organization) => !!organization)
-      .map((organization) =>
-        getLocalizedValue(organization, "data.label.short", locale)
-      )
 
-    const facilities__label_short = (
-      await Promise.all(
-        this._data.facilities_facilitiesIds.map(
-          async (id: string) => await getEntry("facilities", id)
-        )
-      )
+    const facilities__label_short = await getReferencesLocalizedValue(
+      "facilities",
+      this._data.facilities_facilitiesIds,
+      "data.label",
+      locale
     )
-      .filter((facility) => !!facility)
-      .map((facility) => getLocalizedValue(facility, "data.label", locale))
 
     return {
       id: this._data.id,
@@ -84,5 +75,4 @@ export class Thesis {
           : "Dr. rer. nat.",
     }
   }
-  
 }

@@ -1,5 +1,62 @@
 ---
-title: Data schema
+title: Inventory
 ---
 
+import CardGrid from "@components/ui/CardContainer.astro"
+import LinkCard from "@components/ui/LinkCard.astro"
 
+{/* ## What is this? */}
+
+<CardGrid>
+  <LinkCard title="Introduction" icon="seti:db" href="/about/00-introduction"></LinkCard>
+
+  <LinkCard title="Review Process" icon="seti:db"  href="/about/01-review-process">
+  </LinkCard>
+   <LinkCard
+   title="Data schema" icon="list-format"
+    href="/about/02-data-schema"
+  ></LinkCard>
+</CardGrid>
+
+## Taxonomy
+
+<CardGrid>
+  <LinkCard title="Taxonomy" icon="seti:db" href="/data/taxonomy"></LinkCard>
+</CardGrid>
+
+## Organization
+
+<CardGrid>
+  <LinkCard
+    title="Reseach institutions and universities"
+    icon="seti:db"
+    href="/data/organization/institutions"
+  ></LinkCard>
+  <LinkCard
+    title="Research groups"
+    icon="seti:db"
+    href="/data/organization/work-groups"
+  ></LinkCard>
+  <LinkCard
+    title="People"
+    icon="seti:db"
+    href="/data/organization/people"
+  ></LinkCard>
+</CardGrid>
+
+## Facilities
+
+<CardGrid>
+  <LinkCard
+    title="Facilities"
+    icon="seti:db"
+    href="/data/facilities"
+  ></LinkCard>
+</CardGrid>
+
+## Teaching
+
+<CardGrid>
+  <LinkCard title="Courses" icon="seti:db" href="/data/courses"></LinkCard>
+  <LinkCard title="Theses" icon="seti:db" href="/data/theses"></LinkCard>
+</CardGrid>

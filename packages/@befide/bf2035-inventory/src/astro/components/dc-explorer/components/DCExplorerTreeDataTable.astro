@@ -1,5 +1,8 @@
 ---
-import { treeDataTableId, treeDataTableTileId } from "@components/dc-explorer/utils/index"
+import {
+  treeDataTableId,
+  treeDataTableTileId,
+} from "@/astro/components/dc-explorer/components/index"
 
 const { collection, dimension, title } = Astro.props
 
@@ -17,10 +20,8 @@ const tileType = "tree-data-table"
 >
   <div class="dc-explorer__tile__header">
     <h2>{title}</h2>
-    
   </div>
   <div class="dc-explorer__tile__body">
-    <div class="tree not-content" id={chartId}>
-    </div>
+    <div class="not-content" id={chartId}></div>
   </div>
 </section>

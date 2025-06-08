@@ -1,5 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config"
+import starlightThemeObsidian from "starlight-theme-obsidian"
+import starlightImageZoom from "starlight-image-zoom"
 
 import starlight from "@astrojs/starlight"
 
@@ -19,6 +21,7 @@ import spaceCommander from "./src/astro/domain/space-commander.ts"
 import tailwindcss from "@tailwindcss/vite"
 import UnpluginUnused from "unplugin-unused/vite"
 import type { Root, RootContent } from "hast"
+import starlightAutoSidebar from "starlight-auto-sidebar"
 
 // https://astro.build/config
 export default defineConfig({
@@ -30,26 +33,15 @@ export default defineConfig({
   },
   site:
     process.env.NODE_ENV === "production"
-      ? "https://bf2035-meta.beschleunigerphysik.de"
-      : "https://bf2035-meta.beschleunigerphysik.de",
+      ? "https://inventory.beschleunigerphysik.de"
+      : "https://inventory.beschleunigerphysik.de",
   vite: {
     plugins: [
       UnpluginUnused({
         include: [/\.([cm]?[jt]sx?|vue)$/],
         exclude: [/node_modules/],
         level: "warning", // or 'error'
-        /**
-         * Ignore some dependencies.
-         */
-        ignore: {
-          peerDependencies: ["vue"],
-        },
-        // Or ignore all kinds of dependencies.
-        // ignore: ['vue'],
 
-        /**
-         * Dependency kinds to check.
-         */
         depKinds: ["dependencies", "peerDependencies"],
       }),
       tailwindcss(),
@@ -75,17 +67,44 @@ export default defineConfig({
       ? []
       : [astroD2({ inline: true })]),
     starlight({
+      plugins: [
+        starlightAutoSidebar(),
+        starlightThemeObsidian({}),
+        starlightImageZoom({
+          // Configuration options go here.
+        }),
+      ],
+
       pagefind: false,
-      defaultLocale: "en",
-      locales: {
-        en: { label: "English" },
-        de: { label: "Deutsch", lang: "de" },
-      },
-      title: "BF2035 Inventory",
+      // defaultLocale: "root",
+      // locales: {
+      //   root: {
+      //     label: "English",
+      //     lang: "en", // lang is required for root locales
+      //   },
+
+      //   de: { label: "Deutsch", lang: "de" },
+      // },
+      title: "Community Inventory",
       disable404Route: true,
+      tableOfContents: false,
+
+      social: [
+        // {
+        //   icon: "github",
+        //   label: "GitHub",
+        //   href: "https://github.com/withastro/starlight",
+        // },
+      ],
+      components: {
+        // Override the theme's `Sidebar` component.
+        Sidebar: "./src/astro/overrides/Sidebar.astro",
+        // SidebarSublist: "./src/astro/overrides/SidebarSublist.astro",
+        Pagination: "./src/astro/overrides/Pagination.astro",
+      },
       // components: {
-      //   Sidebar: "@components/Sidebar.astro",
-      //   Header: "@components/Header.astro",
+      //   Aside: "@/overrides/Aside.astro",
+      //   //   Header: "@components/Header.astro",
       // },
 
       customCss: [
@@ -100,45 +119,51 @@ export default defineConfig({
       sidebar: [
         // A topic representing a guide section of your project.
         {
-          label: "Data schema",
-          link: "/data/",
+          label: "About",
+          autogenerate: { directory: "about" },
         },
         {
-          label: "Taxonomy",
-          link: "/data/taxonomy",
-        },
-        {
-          label: "Organization",
-          items: [
-            {
-              label: "Institutions",
-              link: "/data/organization/institutions",
-            },
-            {
-              label: "Work groups",
-              link: "/data/organization/institions",
-            },
-            {
-              label: "People",
-              link: "/data/organization/people",
-            },
-          ],
-        },
-        {
-          label: "Community",
-          link: "/data/community",
-        },
-        {
-          label: "Facilities",
-          link: "/data/facilities",
-        },
-        {
-          label: "Courses",
-          link: "/data/courses",
-        },
-        {
-          label: "Theses",
-          link: "/data/theses",
+          label: "Data",
+          autogenerate: { directory: "data" },
+          // items: [
+          //   {
+          //     label: "Taxonomy",
+          //     link: "/data/taxonomy",
+          //   },
+          //   {
+          //     label: "Organization",
+          //     items: [
+          //       {
+          //         label: "Institutions",
+          //         link: "/data/organization/institutions",
+          //       },
+          //       {
+          //         label: "Work groups",
+          //         link: "/data/organization/institions",
+          //       },
+          //       {
+          //         label: "People",
+          //         link: "/data/organization/people",
+          //       },
+          //     ],
+          //   },
+          //   {
+          //     label: "Community",
+          //     link: "/data/community",
+          //   },
+          //   {
+          //     label: "Facilities",
+          //     link: "/data/facilities",
+          //   },
+          //   {
+          //     label: "Courses",
+          //     link: "/data/courses",
+          //   },
+          //   {
+          //     label: "Theses",
+          //     link: "/data/theses",
+          //   },
+          // ],
         },
       ],
     }),

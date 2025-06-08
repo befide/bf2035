@@ -11,15 +11,20 @@ import DCExplorerTreeDataTable from "@components/dc-explorer/components/DCExplor
 
     <DCExplorerRowChart
       collection="facilities"
-      dimension="instanceOf_label"
+      dimension="host__label_short"
+      title="host"
+    />
+    <DCExplorerRowChart
+      collection="facilities"
+      dimension="instanceOf__term"
       title="instanceOf"
     />
     <DCExplorerRowChart
       collection="facilities"
-      dimension="currentStatus_label"
+      dimension="currentStatus__term"
       title="lifeCycle"
     />
-      <DCExplorerRowChart
+    <DCExplorerRowChart
       collection="facilities"
       dimension="primaryBeamParticles"
       title={Astro.locals.t("dc-explorer.tiles.title.primaryBeamParticles")}
@@ -32,7 +37,7 @@ import DCExplorerTreeDataTable from "@components/dc-explorer/components/DCExplor
       dimensionIsArray={true}
     />
   </div>
-  <div class="dc-explorer_items">
+  <div class="dc-explorer__items">
     <DCExplorerTreeDataTable collection="facilities" dimension="id" />
   </div>
 </DCExplorer>

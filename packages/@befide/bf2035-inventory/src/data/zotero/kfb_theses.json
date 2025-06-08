@@ -1,5 +1,108 @@
 [
   {
+    "key": "4IC6HKUZ",
+    "version": 2757,
+    "library": {
+      "type": "group",
+      "id": 2427722,
+      "name": "kfb_dissertations",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/kfb_dissertations",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/2427722/items/4IC6HKUZ",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/kfb_dissertations/items/4IC6HKUZ",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2172757,
+        "username": "drkrthj",
+        "name": "Dirk Rathje",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/drkrthj",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Schäfer",
+      "parsedDate": "2024-02-16",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "4IC6HKUZ",
+      "version": 2757,
+      "itemType": "thesis",
+      "title": "Feasibility studies for a transverse deflecting structure measurement at FLUTE",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Jens",
+          "lastName": "Schäfer"
+        },
+        {
+          "creatorType": "contributor",
+          "firstName": "Anke-Susanne",
+          "lastName": "Müller"
+        },
+        {
+          "creatorType": "contributor",
+          "firstName": "Guido",
+          "lastName": "Drexlin"
+        }
+      ],
+      "abstractNote": "This thesis discusses the commissioning of the Transverse Deflecting Structure (TDS) experiment, conducted at the Ferninfrarot Linac- und Test-Experiment at the Karlsruhe Institute of Technology, Germany. The TDS experiment is a novel approach for measuring ultra-short electron bunch lengths in the femto-seconds regime. This endeavor supports a world-wide trend in accelerator facilities of optimizing towards ever-shorter bunches. As the laser-induced streaking field oscillates with around 0.3 THz, a higher measurement resolution compared to conventional RF-based streaking methods is possible. This work encompasses a theoretical examination of the streaking field, extensive simulations on the beam dynamics for different scenarios, and first experimental findings.The strategies developed on this topic lay the groundwork for transforming the TDS experiment into a routine measurement tool.",
+      "thesisType": "Doctoral thesis (Dr. rer. nat.)",
+      "university": "Karlsruher Institut für Technologie (KIT)",
+      "place": "",
+      "date": "2024-02-16",
+      "numPages": "",
+      "language": "en",
+      "shortTitle": "",
+      "url": "https://doi.org/10.5445/IR/1000170357",
+      "accessDate": "2025-01-23T05:19:28Z",
+      "archive": "INSPIRE",
+      "archiveLocation": "2789692",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "callNumber": "",
+      "rights": "Open Access, KITopen License",
+      "extra": "fulltext-url: https://publikationen.bibliothek.kit.edu/1000170357/152862414\nCitation Key: schafer__2024__feasibility",
+      "tags": [
+        {
+          "tag": "#academic-degree/doctoral-degree/:dr.rer.nat."
+        },
+        {
+          "tag": "#befidesh/accelerator-research-subfield/beam-dynamics"
+        },
+        {
+          "tag": "#befidesh/facility/:kit-atp/flute"
+        },
+        {
+          "tag": "#befidesh/organization/:kit"
+        },
+        {
+          "tag": "#person/gender/:male"
+        }
+      ],
+      "collections": [
+        "4M497SWC"
+      ],
+      "relations": {},
+      "dateAdded": "2025-01-23T05:19:28Z",
+      "dateModified": "2025-05-27T17:06:06Z"
+    }
+  },
+  {
     "key": "7JU78LW4",
     "version": 2757,
     "library": {
@@ -6387,90 +6490,6 @@
       ],
       "relations": {},
       "dateAdded": "2023-02-15T05:36:53Z",
-      "dateModified": "2025-05-25T19:48:54Z"
-    }
-  },
-  {
-    "key": "F9JVDFHX",
-    "version": 2724,
-    "library": {
-      "type": "group",
-      "id": 2427722,
-      "name": "kfb_dissertations",
-      "links": {
-        "alternate": {
-          "href": "https://www.zotero.org/groups/kfb_dissertations",
-          "type": "text/html"
-        }
-      }
-    },
-    "links": {
-      "self": {
-        "href": "https://api.zotero.org/groups/2427722/items/F9JVDFHX",
-        "type": "application/json"
-      },
-      "alternate": {
-        "href": "https://www.zotero.org/groups/kfb_dissertations/items/F9JVDFHX",
-        "type": "text/html"
-      }
-    },
-    "meta": {
-      "createdByUser": {
-        "id": 2172757,
-        "username": "drkrthj",
-        "name": "Dirk Rathje",
-        "links": {
-          "alternate": {
-            "href": "https://www.zotero.org/drkrthj",
-            "type": "text/html"
-          }
-        }
-      },
-      "creatorSummary": "Scheuren",
-      "parsedDate": "2024",
-      "numChildren": 0
-    },
-    "data": {
-      "key": "F9JVDFHX",
-      "version": 2724,
-      "itemType": "thesis",
-      "title": "Comprehensive characterization of laser-driven neutron sources and a pathway towards miniaturization",
-      "creators": [
-        {
-          "creatorType": "author",
-          "firstName": "Stefan",
-          "lastName": "Scheuren"
-        }
-      ],
-      "abstractNote": "",
-      "thesisType": "Doctoral thesis (Dr. rer. nat.)",
-      "university": "Uni Darmstadt",
-      "place": "",
-      "date": "2024",
-      "numPages": "152",
-      "language": "en",
-      "shortTitle": "",
-      "url": "https://repository.gsi.de/record/357186",
-      "accessDate": "2025-05-20T05:46:51Z",
-      "archive": "",
-      "archiveLocation": "",
-      "libraryCatalog": "DOI.org (Datacite)",
-      "callNumber": "",
-      "rights": "",
-      "extra": "Artwork Size: pages xii, 152 Seiten\nDOI: 10.15120/GSI-2025-00330\nPages: pages xii, 152 Seiten\nPublication Title: Dissertation\nVolume: Technical University of Darmstadt\nCitation Key: scheuren__2024__comprehensive",
-      "tags": [
-        {
-          "tag": "#academic-degree/doctoral-degree/:dr.rer.nat."
-        },
-        {
-          "tag": "#befidesh/accelerating-process/plasma-based-acceleration/plasma-based_laser-driven_acceleration"
-        }
-      ],
-      "collections": [
-        "8ZTLQ4MZ"
-      ],
-      "relations": {},
-      "dateAdded": "2025-05-20T05:46:51Z",
       "dateModified": "2025-05-25T19:48:54Z"
     }
   },

@@ -6,6 +6,7 @@ import {
   getOrganizationRoots,
   rollupUniquePeopleCountSum,
 } from "./organizations"
+import { sum } from "d3-array"
 
 export type OrganizationDto = Pick<
   OrganizationSchema,
@@ -20,6 +21,8 @@ export type OrganizationDto = Pick<
   location__city: string
   theses_count: number
   facilities_count: number
+  userFacilities_count: number
+  weeklySemesterHours_count: number
 }
 
 export class Organization {
@@ -56,6 +59,17 @@ export class Organization {
       ({ data }) => data.host_id === this._data.id
     )
   }
+  async getUserFacilities() {
+    return (await this.getFacilities()).filter(
+      ({ data }) => data.isUserFacility
+    )
+  }
+  async getTeachingEvents() {
+    return await getCollection(
+      "courses",
+      ({ data }) => data.university_organizationId === this._data.id
+    )
+  }
 
   async getDto(locale: string): Promise<OrganizationDto> {
     const i18n = await getEntry("i18n", locale)
@@ -72,19 +86,26 @@ export class Organization {
 
     const theses_count = (await this.getTheses()).length
     const facilities_count = (await this.getFacilities()).length
+    const userFacilities_count = (await this.getUserFacilities()).length
+    const teachingEvents = (await this.getTeachingEvents()).map((d) => d.data)
+    const weeklySemesterHours_count = sum(
+      teachingEvents.map((d) => d.weeklySemesterHours)
+    )
     // const facilties =
     return {
       id: this._data.id,
       instanceOfs__term,
       theses_count,
       facilities_count,
+      userFacilities_count,
+      weeklySemesterHours_count,
       parent_id: this._data.parent_id,
       label__short: getLocalizedValue(this._data, "label.short", locale),
       label__fullName: getLocalizedValue(this._data, "label.fullName", locale),
       location__country: i18n?.data[
         "country.name." + this._data.location?.country?.code
       ] as string,
-      location__city: this._data.location.city as string,
+      location__city: this._data.location?.city as string,
     }
   }
 }
