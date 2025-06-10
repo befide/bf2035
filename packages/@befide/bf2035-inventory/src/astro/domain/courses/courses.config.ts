@@ -1,13 +1,10 @@
 import path from "node:path"
-import { csv2json } from "csv42"
-import { file, glob } from "astro/loaders"
-import { defineCollection } from "astro:content"
-import { z } from "astro:content"
+import { glob } from "astro/loaders"
+import { defineCollection, z } from "astro:content"
 import {
   DomainObjectZodSchema,
   NullableLocalizedString,
   ReviewSchema,
-  ZodStringArrayFromString,
 } from "@/content/config.common"
 
 const INPUT_FILE_PATH = path.join(

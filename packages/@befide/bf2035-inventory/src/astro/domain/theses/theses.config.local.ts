@@ -1,9 +1,7 @@
-import fs from "node:fs"
 import path from "node:path"
 
 import { defineCollection, z } from "astro:content"
 import { DomainObjectZodSchema } from "@/content/config.common"
-import { glob } from "astro/loaders"
 import { globWithParser } from "@/content/loader.globWIthParser"
 
 const INPUT_FILEPATH = path.join("src", "data", "zotero", "kfb_theses.json")

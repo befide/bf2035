@@ -1,9 +1,5 @@
 import { glob } from "astro/loaders"
 
-const INPUT_FILE = "facilities.csv"
-
-import { csv2json } from "csv42"
-
 import { defineCollection, z } from "astro:content"
 
 import {
@@ -11,8 +7,9 @@ import {
   NestableDomainObjectZodSchema,
   NullableLocalizedString,
   ReviewSchema,
-  ZodStringArrayFromString,
 } from "@content/config.common.ts"
+
+const INPUT_FILE = "facilities.csv"
 
 export const FacilityZodSchema = NestableDomainObjectZodSchema.extend({
   partOf__id: z.string().nullable(),

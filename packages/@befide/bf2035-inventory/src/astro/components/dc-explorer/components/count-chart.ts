@@ -1,6 +1,5 @@
 import { format, formatSpecifier, precisionFixed, select } from "d3"
 import { numberDisplay } from "dc"
-import { idText, isModuleExportName } from "typescript"
 
 const templates = {
   de: {

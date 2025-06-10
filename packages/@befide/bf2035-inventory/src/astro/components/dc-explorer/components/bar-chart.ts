@@ -1,6 +1,6 @@
-import { select, scaleLinear, format, type Axis } from "d3"
+import { type Axis, format, scaleLinear, select } from "d3"
 import { barChart } from "dc"
-import { baselineHeight, margins, charts, getChartWidth } from "."
+import { baselineHeight, charts, getChartWidth, margins } from "."
 
 export const barChartTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension

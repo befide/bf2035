@@ -1,4 +1,4 @@
-import { facilitiesForAPI, facilitiesForAPI2 } from "@domain/facilities"
+import { facilitiesForAPI2 } from "@domain/facilities"
 import type { APIRoute, GetStaticPaths, InferGetStaticPropsType } from "astro"
 
 export const getStaticPaths = (async () => {

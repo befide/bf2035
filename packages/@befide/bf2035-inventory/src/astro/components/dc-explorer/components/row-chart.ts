@@ -1,7 +1,7 @@
 import { select } from "d3"
 import { rowChart } from "dc"
-import { baselineHeight, margins, charts, getChartWidth } from "."
-import { ContentSchemaContainsSlugError } from "node_modules/astro/dist/core/errors/errors-data"
+import { baselineHeight, charts, getChartWidth, margins } from "."
+
 export const rowChartTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension
 }

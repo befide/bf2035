@@ -19,6 +19,6 @@ export const GET: APIRoute = async ({ props }) => {
   try {
     return new Response(JSON.stringify(organizations, null, 2))
   } catch (e) {
-    throw new Error("Something went wrong in json-resource.json route: " +  e)
+    throw new Error("Something went wrong in json-resource.json route: " + e)
   }
 }

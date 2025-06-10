@@ -1,7 +1,7 @@
 import type { TreeNode } from "@/astro/domain/content.tree"
 import type { NestableDomainObjectSchema } from "@/content/config.common"
-import { stratify, hierarchy, select, type Selection } from "d3"
-import { descending, ascending } from "d3-array"
+import { hierarchy, select, type Selection, stratify } from "d3"
+import { ascending, descending } from "d3-array"
 import { baseMixin } from "dc"
 
 const treeNode = (

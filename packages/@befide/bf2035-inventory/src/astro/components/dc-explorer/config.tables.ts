@@ -1,4 +1,4 @@
-import type { ThesisDto, OrganizationDto } from "@/astro/domain"
+import type { OrganizationDto, ThesisDto } from "@/astro/domain"
 import type { CourseDto } from "@/astro/domain/courses/course"
 import { numberFormat, oneLineFormat } from "./config"
 

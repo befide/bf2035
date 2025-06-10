@@ -4,8 +4,8 @@ import { docsLoader, i18nLoader } from "@astrojs/starlight/loaders"
 import { docsSchema, i18nSchema } from "@astrojs/starlight/schema"
 
 import {
-  defineCoursesCollection,
   type CourseSchema,
+  defineCoursesCollection,
 } from "./astro/domain/courses/courses.config"
 import {
   defineFacilityCollection,

@@ -1,8 +1,4 @@
-import {
-  type CollectionEntry,
-  type CollectionKey,
-  getEntry,
-} from "astro:content"
+import { type CollectionKey, getEntry } from "astro:content"
 
 export function getValue(obj: any, path: string) {
   const pathParts = path.split(".")
