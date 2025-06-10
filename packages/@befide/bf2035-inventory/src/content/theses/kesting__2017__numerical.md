@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: kesting__2017__numerical
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:fair/sis100,#befidesh/organization/:uni-frankfurt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:fair/sis100,#befidesh/02-organization/:uni-frankfurt,#person/gender/:male"
 year: "2017"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -24,7 +24,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
   - "#befidesh/facility/:fair/sis100"
-  - "#befidesh/organization/:uni-frankfurt"
+  - "#befidesh/02-organization/:uni-frankfurt"
   - "#person/gender/:male"
 ---
 

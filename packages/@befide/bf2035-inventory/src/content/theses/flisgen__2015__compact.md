@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: flisgen__2015__compact
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/acceleration/accelerating-process/electrodynamic-acceleration/cavity-based-acceleration/cavity-based_radiofrequency-driven_acceleration/,#befidesh/accelerator-research-method/simulation-and-modelling,#befidesh/organization/:uni-rostock,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/acceleration/accelerating-process/electrodynamic-acceleration/cavity-based-acceleration/cavity-based_radiofrequency-driven_acceleration/,#befidesh/accelerator-research-method/simulation-and-modelling,#befidesh/02-organization/:uni-rostock,#person/gender/:male"
 year: "2015"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -26,7 +26,7 @@ keywords:
   - "#academic-degree/doctoral-degree/:dr.ing."
   - "#befidesh/acceleration/accelerating-process/electrodynamic-acceleration/cavity-based-acceleration/cavity-based_radiofrequency-driven_acceleration/"
   - "#befidesh/accelerator-research-method/simulation-and-modelling"
-  - "#befidesh/organization/:uni-rostock"
+  - "#befidesh/02-organization/:uni-rostock"
   - "#person/gender/:male"
 ---
 

@@ -18,7 +18,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: greschner__2013__aufbau
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:tu-dresden,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:tu-dresden,#person/gender/:male"
 year: "2013"
 dateCreated: 2025-05-26
 reading-status: to-read

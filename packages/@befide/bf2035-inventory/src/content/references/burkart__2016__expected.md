@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: burkart__2016__expected
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:cac/lhc,#befidesh/organization/:uni-frankfurt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:cac/lhc,#befidesh/02-organization/:uni-frankfurt,#person/gender/:male"
 year: "2016"
 dateCreated: 2025-05-26
 reading-status: to-read

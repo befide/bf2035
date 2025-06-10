@@ -1,8 +1,8 @@
-import { type CollectionEntry, getCollection, getEntry } from "astro:content"
+import { getCollection, getEntry } from "astro:content"
 
-import { getLocalizedValue } from "../content"
-import type { OrganizationSchema } from "./organizations.config"
-import { getOrganizationTree } from "./organizations"
+import { getLocalizedValue, getTaxonomyReferencesTerm } from "../content"
+import type { OrganizationSchema } from "@/astro/domain"
+
 import { sum } from "d3-array"
 
 export type OrganizationDto = Pick<
@@ -28,10 +28,6 @@ export class Organization {
 
   constructor(data: OrganizationSchema) {
     this._data = data
-  }
-
-  async getOrganizationTree() {
-    return await getOrganizationTree(this._data.id)
   }
 
   async getTheses() {
@@ -62,18 +58,6 @@ export class Organization {
   async getDto(locale: string): Promise<OrganizationDto> {
     const i18n = await getEntry("i18n", locale)
 
-    const instanceOfs__term = (
-      (await Promise.all(
-        this._data.instanceOfs__taxonomyId.map(
-          async (d) => await getEntry("taxonomyItems", d)
-        )
-      )) as CollectionEntry<"taxonomyItems">[]
-    )
-      .filter((taxon: CollectionEntry<"taxonomyItems">) => !!taxon)
-      .map((taxon: CollectionEntry<"taxonomyItems">) =>
-        getLocalizedValue(taxon, "data.term", locale)
-      )
-
     const theses_count = (await this.getTheses()).length
     const facilities_count = (await this.getFacilities()).length
     const userFacilities_count = (await this.getUserFacilities()).length
@@ -84,7 +68,10 @@ export class Organization {
 
     return {
       id: this._data.id,
-      instanceOfs__term,
+      instanceOfs__term: await getTaxonomyReferencesTerm(
+        this._data.instanceOfs__taxonomyId,
+        locale
+      ),
       theses_count,
       facilities_count,
       userFacilities_count,
@@ -96,9 +83,7 @@ export class Organization {
         "country.name." + this._data.location?.country?.code
       ] as string,
       location__city: this._data.location?.city as string,
-      people_count: await this.getOrganizationTree().then(
-        (d) => d.data.uniquePeopleCountRecursiveSum?.total
-      ),
+      people_count: this._data.uniquePeopleCountRecursiveSum?.total || 0,
     }
   }
 }

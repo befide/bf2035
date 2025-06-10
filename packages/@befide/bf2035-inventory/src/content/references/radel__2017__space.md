@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: radel__2017__space
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/organization/:hu-berlin,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/02-organization/:hu-berlin,#person/gender/:female"
 year: "2017"
 dateCreated: 2025-05-26
 reading-status: to-read

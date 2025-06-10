@@ -1,9 +1,7 @@
 ---
-title: Data schema
+title: Overview
 ---
 
-
-import Aside from "@/astro/components/Aside.astro"
 
 import {Image} from "astro:assets"
 import inventoryERD from "@/content/assets/inventory-erd.svg"
@@ -30,18 +28,6 @@ This approach allows for both hierarchical classification and complex inter-enti
 
 ##
 
-<Aside type="table" title="Taxonomy">
-
-| field         | type              |     | comment                                                  |
-| :------------ | :---------------- | :-- | :------------------------------------------------------- |
-| id            | string            | PK  |                                                          |
-| parent__id     | string            | FK  | id of the organizational unit directly above current one |
-| term          | localizedString   |     | id of the formal organization this unit belongsto        |
-| definition    | localizedString[] |     | taxons this unit is an instance of                       |
-| abbreviations | localizedString[] |     |                                                          |
-| synonyms      | localizedString[] |     |                                                          |
-
-</Aside>
 
 ## Organization
 

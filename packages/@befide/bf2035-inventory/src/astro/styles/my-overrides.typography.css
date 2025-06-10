@@ -3,8 +3,10 @@
 @layer my-overrides {
   .site-title,
   .site-title span {
-    font-size: var(--text-xl);
+    font-size: var(--text-2xl);
     color: var(--color-kfb-blue);
+    text-transform: uppercase;
+    white-space: normal;
   }
   .bold {
     font-weight: bold;
@@ -18,24 +20,26 @@
   .sl-container p {
     @apply baseline-1/0;
   }
-
+  .sl-markdown-content {
+    line-height: 1rem !important;
+  }
   .sl-markdown-content section {
     margin-bottom: 1rem;
   }
-
-  :where(:not(.not-content)) li {
+  .sl-markdown-content ul {
+    margin: 0;
+    padding: 0;
+  }
+  .sl-markdown-content ul li {
+    padding: 0;
+    margin: 0 0 0 0.75rem;
     @apply baseline-1/0;
   }
-
-  :where(:not(.not-content)) ul {
-    list-style: none;
-    margin-left: 0.5rem;
-    page-break-inside: avoid;
-  }
-  ol:not(:where(.not-content)) {
+  .sl-markdown-content ol {
     list-style: decimal-leading-zero;
     margin-left: 0.25rem;
     page-break-inside: avoid;
+    @apply baseline-1/1;
   }
 
   .sl-container a {
@@ -49,7 +53,7 @@
     font-size: var(--sl-text-h1);
     font-weight: bold;
     text-transform: uppercase;
-    @apply baseline-1/1;
+    @apply baseline-3/2;
   }
 
   .level-h2 {
@@ -70,6 +74,9 @@
 } */
   /*  */
 
+  p + section {
+    margin-top: 1rem !important;
+  }
   .sl-container hr {
     @apply baseline-2/1;
 
@@ -78,7 +85,8 @@
 
   .sl-container h3 {
     font-weight: bold;
-    font-size: var(--sl-text-lg);
+    text-transform: uppercase;
+    font-size: var(--sl-text-md);
     @apply baseline-1/1;
   }
 
@@ -102,5 +110,17 @@
 
   .no-break {
     white-space: nowrap;
+  }
+
+  .sl-markdown-content code:not(:where(.not-content *)) {
+    font-size: var(--text-xs);
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    max-height: .8rem;
+
+  }
+  .sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
+    margin-top: 0;
   }
 }

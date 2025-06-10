@@ -57,6 +57,13 @@
     --sl-text-h3: var(--sl-text-base);
     --sl-text-h4: var(--sl-text-base);
 
+    --color-kfb-red: #c53228;
+    --color-kfb-green: #009900;
+    --color-kfb-blue: #2174a8;
+    --color-kfb-yellow: #edc500;
+    --color-kfb-gray: #757575;
+    --sl-font: "Barlow Semi Condensed", serif;
+
     --sl-color-text-accent: var(--color-kfb-blue);
 
     --sl-color-hairline-light: hsl(224, 20%, 80%);

@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: fritzsche__2011__aufbau
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:s-dalinac,#befidesh/organization/:tu-darmstadt,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:s-dalinac,#befidesh/02-organization/:tu-darmstadt,#person/gender/:female"
 year: "2011"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -24,7 +24,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
   - "#befidesh/facility/:s-dalinac"
-  - "#befidesh/organization/:tu-darmstadt"
+  - "#befidesh/02-organization/:tu-darmstadt"
   - "#person/gender/:female"
 ---
 

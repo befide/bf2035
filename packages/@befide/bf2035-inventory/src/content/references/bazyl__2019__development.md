@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: bazyl__2019__development
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/facility/:s-dalinac,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/facility/:s-dalinac,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2019"
 dateCreated: 2025-05-26
 reading-status: to-read

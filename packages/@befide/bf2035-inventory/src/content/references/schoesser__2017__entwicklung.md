@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: schoesser__2017__entwicklung
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:s-dalinac,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:s-dalinac,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2017"
 dateCreated: 2025-05-26
 reading-status: to-read

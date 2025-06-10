@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: maag__2018__influence
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:eu-xfel,#befidesh/organization/:uni-hamburg,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:eu-xfel,#befidesh/02-organization/:uni-hamburg,#person/gender/:male"
 year: "2018"
 dateCreated: 2025-05-26
 reading-status: to-read

@@ -17,14 +17,14 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: fuersch__2014__lebensdauerverbesserung
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:tu-dortmund,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:tu-dortmund,#person/gender/:male"
 year: "2014"
 dateCreated: 2025-05-27
 reading-status: to-read
 attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
-  - "#befidesh/organization/:tu-dortmund"
+  - "#befidesh/02-organization/:tu-dortmund"
   - "#person/gender/:male"
 ---
 

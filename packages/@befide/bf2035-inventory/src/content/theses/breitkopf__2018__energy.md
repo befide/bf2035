@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: breitkopf__2018__energy
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerating-process/plasma-based-acceleration/plasma-based_laser-driven_acceleration,#befidesh/organization/:uni-jena,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerating-process/plasma-based-acceleration/plasma-based_laser-driven_acceleration,#befidesh/02-organization/:uni-jena,#person/gender/:male"
 year: "2018"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -25,7 +25,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
   - "#befidesh/accelerating-process/plasma-based-acceleration/plasma-based_laser-driven_acceleration"
-  - "#befidesh/organization/:uni-jena"
+  - "#befidesh/02-organization/:uni-jena"
   - "#person/gender/:male"
 ---
 

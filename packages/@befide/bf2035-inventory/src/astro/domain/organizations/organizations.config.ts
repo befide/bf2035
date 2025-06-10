@@ -28,7 +28,7 @@ export const peopleCountDiscriminators = [
 const peopleCountGender = z.object({
   male: z.number().optional().nullable(),
   female: z.number().optional().nullable(),
-  other: z.number().optional().nullable(),
+  nonbinary: z.number().optional().nullable(),
 })
 const peopleCountDiscipline = z.object({
   physicist: peopleCountGender,

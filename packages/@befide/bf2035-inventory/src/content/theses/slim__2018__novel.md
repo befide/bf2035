@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: slim__2018__novel
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:cosy,#befidesh/organization/:rwth-aachen,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:cosy,#befidesh/02-organization/:rwth-aachen,#person/gender/:male"
 year: "2018"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -25,7 +25,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
   - "#befidesh/facility/:cosy"
-  - "#befidesh/organization/:rwth-aachen"
+  - "#befidesh/02-organization/:rwth-aachen"
   - "#person/gender/:male"
 ---
 

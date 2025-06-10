@@ -22,7 +22,7 @@ accessed:
       - 10
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: hallilingaiah__2022__investigation
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/facility/:elbe,#befidesh/organization/:uni-rostock,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/facility/:elbe,#befidesh/02-organization/:uni-rostock,#person/gender/:male"
 year: "2022"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -30,7 +30,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.ing."
   - "#befidesh/facility/:elbe"
-  - "#befidesh/organization/:uni-rostock"
+  - "#befidesh/02-organization/:uni-rostock"
   - "#person/gender/:male"
 ---
 

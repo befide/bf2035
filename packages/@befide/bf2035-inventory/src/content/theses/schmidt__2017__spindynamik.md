@@ -17,14 +17,14 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: schmidt__2017__spindynamik
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:uni-bonn,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:uni-bonn,#person/gender/:male"
 year: "2017"
 dateCreated: 2025-05-27
 reading-status: to-read
 attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
-  - "#befidesh/organization/:uni-bonn"
+  - "#befidesh/02-organization/:uni-bonn"
   - "#person/gender/:male"
 ---
 

@@ -22,7 +22,7 @@ accessed:
       - 19
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: glukhov__2022__multipass
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2022"
 dateCreated: 2025-05-26
 reading-status: to-read

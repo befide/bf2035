@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: proft__2018__optimierung
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:elsa,#befidesh/organization/:uni-bonn,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:elsa,#befidesh/02-organization/:uni-bonn,#person/gender/:male"
 year: "2018"
 dateCreated: 2025-05-26
 reading-status: to-read

@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: romano__2018__electron
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/organization/:tu-darmstadt,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/02-organization/:tu-darmstadt,#person/gender/:female"
 year: "2018"
 dateCreated: 2025-05-26
 reading-status: to-read

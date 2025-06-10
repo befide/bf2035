@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: petenev__2014__analysis
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/organization/:hu-berlin,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/02-organization/:hu-berlin,#person/gender/:male"
 year: "2014"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -25,7 +25,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
   - "#befidesh/accelerator/erl"
-  - "#befidesh/organization/:hu-berlin"
+  - "#befidesh/02-organization/:hu-berlin"
   - "#person/gender/:male"
 ---
 

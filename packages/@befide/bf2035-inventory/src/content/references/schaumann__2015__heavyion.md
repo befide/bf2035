@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: schaumann__2015__heavyion
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:cac/lhc,#befidesh/organization/:rwth-aachen,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:cac/lhc,#befidesh/02-organization/:rwth-aachen,#person/gender/:female"
 year: "2015"
 dateCreated: 2025-05-26
 reading-status: to-read

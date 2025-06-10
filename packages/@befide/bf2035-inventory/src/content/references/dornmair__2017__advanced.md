@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: dornmair__2017__advanced
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:uni-hamburg,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:uni-hamburg,#person/gender/:female"
 year: "2017"
 dateCreated: 2025-05-26
 reading-status: to-read

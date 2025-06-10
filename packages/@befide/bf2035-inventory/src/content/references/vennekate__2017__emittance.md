@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: vennekate__2017__emittance
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/organization/:tu-dresden,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/02-organization/:tu-dresden,#person/gender/:male"
 year: "2017"
 dateCreated: 2025-05-26
 reading-status: to-read

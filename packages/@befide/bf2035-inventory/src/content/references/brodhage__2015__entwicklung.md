@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: brodhage__2015__entwicklung
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:fair,#befidesh/organization/:uni-frankfurt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:fair,#befidesh/02-organization/:uni-frankfurt,#person/gender/:male"
 year: "2015"
 dateCreated: 2025-05-26
 reading-status: to-read

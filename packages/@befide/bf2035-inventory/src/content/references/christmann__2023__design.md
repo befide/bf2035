@@ -18,7 +18,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: christmann__2023__design
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/organization/:uni-mainz,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/02-organization/:uni-mainz,#person/gender/:male"
 year: "2023"
 dateCreated: 2025-05-26
 reading-status: to-read

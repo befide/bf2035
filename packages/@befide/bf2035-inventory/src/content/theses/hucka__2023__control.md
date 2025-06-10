@@ -18,7 +18,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: hucka__2023__control
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:fair/super-frs,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:fair/super-frs,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2023"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -26,7 +26,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
   - "#befidesh/facility/:fair/super-frs"
-  - "#befidesh/organization/:tu-darmstadt"
+  - "#befidesh/02-organization/:tu-darmstadt"
   - "#person/gender/:male"
 ---
 

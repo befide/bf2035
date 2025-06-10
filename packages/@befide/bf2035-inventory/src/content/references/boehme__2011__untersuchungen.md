@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: boehme__2011__untersuchungen
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:tu-dortmund,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:tu-dortmund,#person/gender/:male"
 year: "2011"
 dateCreated: 2025-05-26
 reading-status: to-read

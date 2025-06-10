@@ -18,7 +18,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: bruker__2016__untersuchung
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/facility/:cosy,#befidesh/facility/:fair,#befidesh/organization/:him,#befidesh/organization/:uni-mainz,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/facility/:cosy,#befidesh/facility/:fair,#befidesh/02-organization/:him,#befidesh/02-organization/:uni-mainz,#person/gender/:male"
 year: "2016"
 dateCreated: 2025-05-26
 reading-status: to-read

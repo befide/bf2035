@@ -17,14 +17,14 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: niebuhr__2018__entwicklung
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:uni-frankfurt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:uni-frankfurt,#person/gender/:male"
 year: "2018"
 dateCreated: 2025-05-27
 reading-status: to-read
 attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
-  - "#befidesh/organization/:uni-frankfurt"
+  - "#befidesh/02-organization/:uni-frankfurt"
   - "#person/gender/:male"
 ---
 

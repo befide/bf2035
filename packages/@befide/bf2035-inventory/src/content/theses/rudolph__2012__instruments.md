@@ -16,14 +16,14 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: rudolph__2012__instruments
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/organization/:uni-rostock,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/02-organization/:uni-rostock,#person/gender/:female"
 year: "2012"
 dateCreated: 2025-05-27
 reading-status: to-read
 attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.ing."
-  - "#befidesh/organization/:uni-rostock"
+  - "#befidesh/02-organization/:uni-rostock"
   - "#person/gender/:female"
 ---
 

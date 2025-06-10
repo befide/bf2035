@@ -23,7 +23,13 @@ import DCExplorerTable from "@components/dc-explorer/components/DCExplorerTable.
       collection="courses"
       dimension="studyLevels__term"
       dimensionIsArray={true}
-      title={Astro.locals.t("dc-explorer.tiles.title.study-levels__term")}
+      title={Astro.locals.t("dc-explorer.tiles.title.study-levels")}
+    />
+    <DCExplorerRowChart
+      collection="courses"
+      dimension="partOfProgrammesOfStudy"
+      dimensionIsArray={true}
+      title={Astro.locals.t("dc-explorer.tiles.title.programmes-of-study")}
     />
     <DCExplorerRowChart
       collection="courses"

@@ -18,7 +18,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: guastalla__2014__shell
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:tu-darmstadt,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:tu-darmstadt,#person/gender/:female"
 year: "2014"
 dateCreated: 2025-05-26
 reading-status: to-read

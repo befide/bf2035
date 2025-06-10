@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: ries__2014__nonlinear
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:hu-berlin,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:hu-berlin,#person/gender/:male"
 year: "2014"
 dateCreated: 2025-05-26
 reading-status: to-read

@@ -135,15 +135,15 @@ export default defineConfig({
           //     items: [
           //       {
           //         label: "Institutions",
-          //         link: "/data/organization/institutions",
+          //         link: "/data/02-organization/institutions",
           //       },
           //       {
           //         label: "Work groups",
-          //         link: "/data/organization/institions",
+          //         link: "/data/02-organization/institions",
           //       },
           //       {
           //         label: "People",
-          //         link: "/data/organization/people",
+          //         link: "/data/02-organization/people",
           //       },
           //     ],
           //   },

@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: szwangruber__2017__quench
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2017"
 dateCreated: 2025-05-26
 reading-status: to-read

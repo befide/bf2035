@@ -130,8 +130,8 @@ export const defineThesesCollection = defineCollection({
           dataItem.isA_taxonId = "/academic-degree/doctoral-degree/:dr.ing."
         }
 
-        if (tag?.startsWith("#befidesh/organization/")) {
-          const organizationId = tag.replace("#befidesh/organization/", "")
+        if (tag?.startsWith("#befidesh/02-organization/:")) {
+          const organizationId = tag.replace("#befidesh/organization/:", "")
 
           dataItem.organizations__organizationsId.push(organizationId)
 
@@ -142,9 +142,9 @@ export const defineThesesCollection = defineCollection({
         if (tag?.startsWith("#person/gender/")) {
           dataItem.author.gender = tag.replace("#person/gender/", "")
         }
-        if (tag?.startsWith("#befidesh/facility/")) {
+        if (tag?.startsWith("#befidesh/facility/:")) {
           dataItem.facilities__facilityId.push(
-            tag.replace("#befidesh/facility/", "")
+            tag.replace("#befidesh/facility/:", "")
           )
         }
       })

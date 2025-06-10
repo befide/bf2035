@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: wesch__2012__echtzeitbestimmung
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:uni-hamburg,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:uni-hamburg,#person/gender/:male"
 year: "2012"
 dateCreated: 2025-05-26
 reading-status: to-read

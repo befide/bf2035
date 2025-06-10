@@ -69,6 +69,7 @@ export const collections = {
         "dc-explorer.tiles.title.semesters": z.string(),
         "dc-explorer.tiles.title.study-level": z.string(),
         "dc-explorer.tiles.title.study-levels": z.string(),
+        "dc-explorer.tiles.title.programmes-of-study": z.string(),
         "dc-explorer.tiles.title.teaching-event": z.string(),
         "dc-explorer.tiles.title.teaching-events": z.string(),
         "dc-explorer.tiles.title.universities": z.string(),

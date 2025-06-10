@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: koopmans__2022__twodimensional
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:bessy-2,#befidesh/organization/:hu-berlin,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:bessy-2,#befidesh/02-organization/:hu-berlin,#person/gender/:male"
 year: "2022"
 dateCreated: 2025-05-26
 reading-status: to-read

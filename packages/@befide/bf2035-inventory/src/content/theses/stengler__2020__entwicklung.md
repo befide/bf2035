@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: stengler__2020__entwicklung
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/facility/:mesa,#befidesh/organization/:uni-mainz,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerator/erl,#befidesh/facility/:mesa,#befidesh/02-organization/:uni-mainz,#person/gender/:male"
 year: "2020"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -25,7 +25,7 @@ keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
   - "#befidesh/accelerator/erl"
   - "#befidesh/facility/:mesa"
-  - "#befidesh/organization/:uni-mainz"
+  - "#befidesh/02-organization/:uni-mainz"
   - "#person/gender/:male"
 ---
 

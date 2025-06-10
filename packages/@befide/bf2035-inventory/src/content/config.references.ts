@@ -119,7 +119,7 @@ export const defineReferencesCollection = defineCollection({
           //   };
           // }
 
-          if (tag?.startsWith("#befide/organization/")) {
+          if (tag?.startsWith("#befide/02-organization/")) {
             const organizationId = tag.replace("#befide/organization/", "")
 
             dataItem.organizationRefs.push({
@@ -127,10 +127,10 @@ export const defineReferencesCollection = defineCollection({
               id: organizationId,
             })
 
-            // const university = await getEntry("organizations", tag.replace("#befide/organization/", ""))
+            // const university = await getEntry("organizations", tag.replace("#befide/02-organization/", ""))
 
-            // if (university && university.data.isInstanceOf?.id.startsWith("/organization/university")) {
-            //   dataItem.universityRef = { collection: "organizations", id: tag.replace("#befide/organization/", "") }
+            // if (university && university.data.isInstanceOf?.id.startsWith("/02-organization/university")) {
+            //   dataItem.universityRef = { collection: "organizations", id: tag.replace("#befide/02-organization/", "") }
 
             // }
           }

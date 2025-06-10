@@ -18,7 +18,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: simon__2023__carbonbased
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/facility/:fair/unilac,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/facility/:fair/unilac,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2023"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -26,7 +26,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.ing."
   - "#befidesh/facility/:fair/unilac"
-  - "#befidesh/organization/:tu-darmstadt"
+  - "#befidesh/02-organization/:tu-darmstadt"
   - "#person/gender/:male"
 ---
 

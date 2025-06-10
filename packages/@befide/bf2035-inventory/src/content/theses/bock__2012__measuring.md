@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: bock__2012__measuring
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:flash,#befidesh/organization/:uni-hamburg,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:flash,#befidesh/02-organization/:uni-hamburg,#person/gender/:female"
 year: "2012"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -24,7 +24,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
   - "#befidesh/facility/:flash"
-  - "#befidesh/organization/:uni-hamburg"
+  - "#befidesh/02-organization/:uni-hamburg"
   - "#person/gender/:female"
 ---
 

@@ -14,6 +14,7 @@ export type CourseDto = Pick<CourseSchema, "id" | "weeklySemesterHours"> & {
   semesters: string[]
   link: string
   studyLevels__term: string[]
+  partOfProgrammesOfStudy: string[]
 }
 
 export class Course {
@@ -61,6 +62,7 @@ export class Course {
       semesters: this._data.semesters.map((d) =>
         getValueTranslation(d, locale)
       ),
+      partOfProgrammesOfStudy: this._data.partOfProgrammesOfStudy,
     }
   }
 }

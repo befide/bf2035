@@ -17,14 +17,14 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: titze__2020__space
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:hu-berlin,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:hu-berlin,#person/gender/:male"
 year: "2020"
 dateCreated: 2025-05-27
 reading-status: to-read
 attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
-  - "#befidesh/organization/:hu-berlin"
+  - "#befidesh/02-organization/:hu-berlin"
   - "#person/gender/:male"
 ---
 

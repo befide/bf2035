@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: schmidt__2016__radiation
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2016"
 dateCreated: 2025-05-26
 reading-status: to-read

@@ -18,7 +18,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: bauer__2013__level
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2013"
 dateCreated: 2025-05-26
 reading-status: to-read

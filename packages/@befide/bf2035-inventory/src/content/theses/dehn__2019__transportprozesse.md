@@ -16,14 +16,14 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: dehn__2019__transportprozesse
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:uni-mainz,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:uni-mainz,#person/gender/:female"
 year: "2019"
 dateCreated: 2025-05-27
 reading-status: to-read
 attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
-  - "#befidesh/organization/:uni-mainz"
+  - "#befidesh/02-organization/:uni-mainz"
   - "#person/gender/:female"
 ---
 

@@ -12,14 +12,7 @@
 @import "./my-overrides.table.css";
 @import "./my-overrides.tree.css";
 
-:root {
-  --color-kfb-red: #c53228;
-  --color-kfb-green: #009900;
-  --color-kfb-blue: #2174a8;
-  --color-kfb-yellow: #edc500;
-  --color-kfb-gray: #757575;
-  --sl-font: "Barlow Semi Condensed", serif;
-}
+
 
 @view-transition {
   navigation: auto;

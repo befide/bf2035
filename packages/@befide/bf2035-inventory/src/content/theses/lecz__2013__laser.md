@@ -16,14 +16,14 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: lecz__2013__laser
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2013"
 dateCreated: 2025-05-27
 reading-status: to-read
 attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.ing."
-  - "#befidesh/organization/:tu-darmstadt"
+  - "#befidesh/02-organization/:tu-darmstadt"
   - "#person/gender/:male"
 ---
 

@@ -185,8 +185,8 @@ export const defineThesesCollection = defineCollection({
   //         dataItem.isA_taxonId = "/academic-degree/doctoral-degree/:dr.ing."
   //       }
 
-  //       if (tag?.startsWith("#befidesh/organization/")) {
-  //         const organizationId = tag.replace("#befidesh/organization/", "")
+  //       if (tag?.startsWith("#befidesh/02-organization/")) {
+  //         const organizationId = tag.replace("#befidesh/02-organization/", "")
 
   //         dataItem.organizations__organizationsId.push(organizationId)
 

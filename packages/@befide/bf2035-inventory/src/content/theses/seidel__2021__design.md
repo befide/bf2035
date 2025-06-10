@@ -17,14 +17,14 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: seidel__2021__design
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:hu-berlin,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:hu-berlin,#person/gender/:female"
 year: "2021"
 dateCreated: 2025-05-27
 reading-status: to-read
 attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
-  - "#befidesh/organization/:hu-berlin"
+  - "#befidesh/02-organization/:hu-berlin"
   - "#person/gender/:female"
 ---
 

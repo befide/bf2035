@@ -1,7 +1,9 @@
-import { getEntry } from "astro:content"
 import { getValueTranslation } from ".."
-import { getLocalizedValue, getReferencesLocalizedValue } from "../content"
-import type { ThesisSchema } from "./theses.config.api"
+import {
+  getFacilitiesReferencesLabel,
+  getOrganizationsReferencesShortLabel,
+} from "@domain/content.ts"
+import type { ThesisSchema } from "@/astro/domain"
 
 export type Theses = Thesis[]
 
@@ -28,29 +30,23 @@ export class Thesis {
   }
 
   async getDto(locale: string): Promise<ThesisDto> {
-    const university__label_short =
-      (this._data.university__organizationsId &&
-        getLocalizedValue(
-          await getEntry(
-            "organizations",
-            this._data.university__organizationsId
-          ),
-          "data.label.short",
+    const university__label_short = this._data.university__organizationsId
+      ? await getOrganizationsReferencesShortLabel(
+          [this._data.university__organizationsId],
           locale
-        )) ||
-      getValueTranslation(this._data.publisher, locale)
+        )
+      : getValueTranslation(this._data.publisher, locale)
 
-    const organizations__label_short = await getReferencesLocalizedValue(
-      "organizations",
-      this._data.organizations__organizationsId,
-      "data.label.short",
-      locale
-    )
+    console.log(this._data.university__organizationsId)
 
-    const facilities__label_short = await getReferencesLocalizedValue(
-      "facilities",
+    const organizations__label_short =
+      await getOrganizationsReferencesShortLabel(
+        this._data.organizations__organizationsId,
+        locale
+      )
+
+    const facilities__label_short = await getFacilitiesReferencesLabel(
       this._data.facilities__facilityId,
-      "data.label",
       locale
     )
 
@@ -67,6 +63,7 @@ export class Thesis {
       language: this._data.language,
       year: this._data.year,
       university__label_short,
+
       organizations__label_short,
       facilities__label_short,
       degree:

@@ -18,7 +18,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: stahl__2015__new
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:tu-darmstadt,#person/gender/:male,lifetime measurement"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male,lifetime measurement"
 year: "2015"
 dateCreated: 2025-05-26
 reading-status: to-read

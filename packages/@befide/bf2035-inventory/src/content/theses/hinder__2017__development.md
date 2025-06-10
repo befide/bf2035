@@ -17,14 +17,14 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: hinder__2017__development
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:rwth-aachen,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:rwth-aachen,#person/gender/:male"
 year: "2017"
 dateCreated: 2025-05-27
 reading-status: to-read
 attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
-  - "#befidesh/organization/:rwth-aachen"
+  - "#befidesh/02-organization/:rwth-aachen"
   - "#person/gender/:male"
 ---
 

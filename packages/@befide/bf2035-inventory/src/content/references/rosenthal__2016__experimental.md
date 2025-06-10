@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: rosenthal__2016__experimental
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:cosy,#befidesh/organization/:rwth-aachen,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:cosy,#befidesh/02-organization/:rwth-aachen,#person/gender/:male"
 year: "2016"
 dateCreated: 2025-05-26
 reading-status: to-read

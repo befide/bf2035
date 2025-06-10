@@ -15,5 +15,10 @@
       "@assets/*": ["src/content/assets/*"]
     },
     "jsx": "preserve"
+  },
+  "ts-node": {
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    "esm": true,
   }
 }

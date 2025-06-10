@@ -16,7 +16,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. Ing.)
 citation-label: beck__2018__numerical
-keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/facility/:cac/sps,#befidesh/organization/:uni-rostock,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.ing.,#befidesh/facility/:cac/sps,#befidesh/02-organization/:uni-rostock,#person/gender/:male"
 year: "2018"
 dateCreated: 2025-05-26
 reading-status: to-read

@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: almassarani__2024__subpicosecond
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerating-process/plasma-based-acceleration/plasma-based_laser-driven_acceleration,#befidesh/organization/:uni-jena,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/accelerating-process/plasma-based-acceleration/plasma-based_laser-driven_acceleration,#befidesh/02-organization/:uni-jena,#person/gender/:male"
 year: "2024"
 dateCreated: 2025-05-26
 reading-status: to-read

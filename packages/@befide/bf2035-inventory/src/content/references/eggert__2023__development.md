@@ -23,7 +23,7 @@ accessed:
       - 3
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: eggert__2023__development
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/organization/:tu-darmstadt,#person/gender/:male"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/02-organization/:tu-darmstadt,#person/gender/:male"
 year: "2023"
 dateCreated: 2025-05-26
 reading-status: to-read

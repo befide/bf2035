@@ -17,7 +17,7 @@ author:
     literal: ""
 genre: Doctoral thesis (Dr. rer. nat.)
 citation-label: eberhardt__2010__messung
-keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:elsa,#befidesh/organization/:uni-bonn,#person/gender/:female"
+keyword: "#academic-degree/doctoral-degree/:dr.rer.nat.,#befidesh/facility/:elsa,#befidesh/02-organization/:uni-bonn,#person/gender/:female"
 year: "2010"
 dateCreated: 2025-05-27
 reading-status: to-read
@@ -25,7 +25,7 @@ attachment: []
 keywords:
   - "#academic-degree/doctoral-degree/:dr.rer.nat."
   - "#befidesh/facility/:elsa"
-  - "#befidesh/organization/:uni-bonn"
+  - "#befidesh/02-organization/:uni-bonn"
   - "#person/gender/:female"
 ---
 
