@@ -23,10 +23,9 @@ export function createTreeDataTableChart(
     .allEntries(cfDimension.filter().bottom(Infinity))
     .dimension(cfDimension)
     .showSections(false)
-    // .section("parent_id")
+    // .section("parent__id")
     .size(Infinity)
     .columns(tableHeaderConfig)
 
   treeDataTableChart.render()
-
 }

@@ -1,6 +1,6 @@
 import path from "node:path"
 import { csv2json } from "csv42"
-import { file } from "astro/loaders"
+import { file, glob } from "astro/loaders"
 import { defineCollection } from "astro:content"
 import { z } from "astro:content"
 import {
@@ -22,12 +22,12 @@ const INPUT_FILE_PATH = path.join(
 
 export const CourseZodSchema = DomainObjectZodSchema.extend({
   title: NullableLocalizedString,
-  teachingEvent_taxonId: z.string(),
-  university_organizationId: z.string(),
-  semesters: ZodStringArrayFromString,
-  studyLevel_taxonIds: ZodStringArrayFromString,
-  partOfProgrammesOfStudy: ZodStringArrayFromString,
-  languages: ZodStringArrayFromString,
+  teachingEvent__taxonomyId: z.string(),
+  university__organizationsId: z.string(),
+  semesters: z.array(z.string()),
+  studyLevels__taxonomyId: z.array(z.string()),
+  partOfProgrammesOfStudy: z.array(z.string()),
+  languages: z.array(z.string()),
   objectives: NullableLocalizedString,
   contents: NullableLocalizedString,
   weeklySemesterHours: z.number(),
@@ -38,14 +38,9 @@ export const CourseZodSchema = DomainObjectZodSchema.extend({
 })
 
 export const defineCoursesCollection = defineCollection({
-  loader: file(INPUT_FILE_PATH, {
-    parser: (input) => {
-      const data = csv2json<CourseSchema>(input, {
-        nested: true,
-      })
-
-      return data
-    },
+  loader: glob({
+    pattern: "**/*.(md|mdx)",
+    base: "./src/content/domain/courses",
   }),
   schema: CourseZodSchema,
 })

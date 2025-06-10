@@ -17,7 +17,7 @@ const treeNode = (
     isSelected: selectedItemIds.indexOf(item.id) > -1,
   }))
 
-  const roots = decoratedItems.filter((d) => !d.parent_id)
+  const roots = decoratedItems.filter((d) => !d.parent__id)
 
   const rootedEntries =
     roots.length === 1
@@ -25,18 +25,18 @@ const treeNode = (
       : decoratedItems
           .map((d) => ({
             ...d,
-            parent_id: d.parent_id ? d.parent_id : ":",
+            parent__id: d.parent__id ? d.parent__id : ":",
           }))
           .concat([
             {
               id: ":",
-              parent_id: null,
+              parent__id: null,
             },
           ])
 
   const root = stratify()
     .id((d) => d.id)
-    .parentId((d) => d.parent_id)(rootedEntries)
+    .parentId((d) => d.parent__id)(rootedEntries)
 
   const tree = hierarchy(root, (d) => d.children).sum((d) =>
     d.children?.length > 0 ? 0 : 1

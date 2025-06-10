@@ -1,6 +1,4 @@
-const INPUT_FILENAME = "organizations.csv"
-
-import { csv2json } from "csv42"
+import { glob } from "astro/loaders"
 
 import { defineCollection, z } from "astro:content"
 
@@ -8,15 +6,8 @@ import {
   LocalizedString,
   NestableDomainObjectZodSchema,
   NullableLocalizedString,
-  readInputFile,
   ReviewSchema,
-  ZodStringArrayFromString,
 } from "@content/config.common"
-
-import {
-  getOrganizationRoots,
-  rollupUniquePeopleCountSum,
-} from "@/astro/domain/organizations/organizations"
 
 export const genders = ["female", "male", "nonbinary"]
 export const careerLevels = [
@@ -53,16 +44,6 @@ const peopleCountAcademicCareerLevel = z.object({
   bachelorStudent: peopleCountDiscipline,
 })
 
-// export const BefideOrganizationMetaOrganizationalLevel = z.enum([
-// 	'00 Community',
-// 	'01 formal-organisation',
-// 	'02 intermediate level',
-// 	'03 working group cluster',
-// 	'04 intermediate level',
-// 	'05 working group',
-// 	'other',
-// ]);
-
 export const BefideOrganizationMetaBefideOrganizationCategories = z.enum([
   "fraunhofer",
   "hgf",
@@ -77,9 +58,8 @@ export const BefideOrganizationMetaBefideOrganizationCategories = z.enum([
 ])
 
 export const OrganizationZodSchema = NestableDomainObjectZodSchema.extend({
-  topLevel_organizationId: z.string().nullable(), //reference("organizations").optional().nullable(),
-  instanceOf_taxonId: ZodStringArrayFromString,
-
+  topLevel__id: z.string().nullable(),
+  instanceOfs__taxonomyId: z.array(z.string()),
   befideOrganizationCategories: z.preprocess((input) => {
     return (input + "").split(/\s?,\s?/).toSorted()
   }, z.array(BefideOrganizationMetaBefideOrganizationCategories)),
@@ -119,6 +99,7 @@ export const OrganizationZodSchema = NestableDomainObjectZodSchema.extend({
   }),
   uniquePeopleCountRecursiveSum: z
     .object({
+      total: z.number(),
       ...peopleCountDiscriminators.reduce((obj: any, value) => {
         obj[value] = z.preprocess((v) => v || 0, z.number())
         return obj
@@ -129,18 +110,10 @@ export const OrganizationZodSchema = NestableDomainObjectZodSchema.extend({
 })
 
 export const defineOrganizationCollection = defineCollection({
-  loader: () => {
-    const input = readInputFile(INPUT_FILENAME).toString()
-    const organizations = csv2json<OrganizationSchema>(input, {
-      nested: true,
-    })
-
-    // const roots = getOrganizationRoots(organizations)
-    // const communityRoot = roots.find((root) => root.id === ":")
-    // if (communityRoot) rollupUniquePeopleCountSum(communityRoot)
-
-    return organizations
-  },
+  loader: glob({
+    pattern: "**/*.(md|mdx)",
+    base: "./src/content/domain/organizations",
+  }),
   schema: OrganizationZodSchema,
 })
 

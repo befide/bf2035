@@ -1,6 +1,6 @@
-import { getEntry } from "astro:content"
+import { type CollectionEntry, getEntry } from "astro:content"
 
-import { getLocalizedValue } from "../content"
+import { getLocalizedValue, getReferenceLocalizedValue } from "../content"
 import type { CourseSchema } from "@/astro/domain"
 import { getValueTranslation } from ".."
 
@@ -13,7 +13,7 @@ export type CourseDto = Pick<CourseSchema, "id" | "weeklySemesterHours"> & {
   languages: string[]
   semesters: string[]
   link: string
-  studyLevel__terms: string[]
+  studyLevels__term: string[]
 }
 
 export class Course {
@@ -24,43 +24,40 @@ export class Course {
   }
 
   async getDto(locale: string): Promise<CourseDto> {
-    const university__label_short =
-      this._data.university_organizationId &&
-      getLocalizedValue(
-        await getEntry("organizations", this._data.university_organizationId),
-        "data.label.short",
-        locale
-      )
-    const teachingEvent__term =
-      this._data.teachingEvent_taxonId &&
-      getLocalizedValue(
-        await getEntry("taxonomyItems", this._data.teachingEvent_taxonId),
-        "data.term",
-        locale
-      )
-
-    const studyLevel__terms = await Promise.all(
-      this._data.studyLevel_taxonIds.map(
-        async (d: string) => await getEntry("taxonomyItems", d)
-      )
+    const studyLevels__term = (
+      (await Promise.all(
+        this._data.studyLevels__taxonomyId.map(
+          async (d) => await getEntry("taxonomyItems", d)
+        )
+      )) as CollectionEntry<"taxonomyItems">[]
     )
-    // .filter((item: CollectionEntry<"taxonomyItems">) => !!item)
-    // .map((taxon: CollectionEntry<"taxonomyItems">) =>
-    //   getLocalizedValue(taxon, "data.term", locale)
-    // )
+      .filter((taxon: CollectionEntry<"taxonomyItems">) => !!taxon)
+      .map((taxon: CollectionEntry<"taxonomyItems">) =>
+        getLocalizedValue(taxon, "data.term", locale)
+      )
 
     return {
       id: this._data.id,
       weeklySemesterHours: this._data.weeklySemesterHours,
       title: getLocalizedValue(this._data, "title", locale),
-      teachingEvent__term,
+      teachingEvent__term: await getReferenceLocalizedValue(
+        "taxonomyItems",
+        this._data.teachingEvent__taxonomyId,
+        "data.term",
+        locale
+      ),
       languages: this._data.languages.map((d) =>
         getValueTranslation(d, locale)
       ),
-      studyLevel__terms: studyLevel__terms,
+      studyLevels__term,
       link: (getLocalizedValue(this._data, "links.homepage", locale) ||
         this._data.links.homepage.de) as string,
-      university__label_short,
+      university__label_short: await getReferenceLocalizedValue(
+        "organizations",
+        this._data.university__organizationsId,
+        "data.label.short",
+        locale
+      ),
       semesters: this._data.semesters.map((d) =>
         getValueTranslation(d, locale)
       ),

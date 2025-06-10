@@ -26,6 +26,19 @@ export function getLocalizedValue(obj: any, path: string, locale = "en") {
   return obj as string
 }
 
+export async function getReference(collection: CollectionKey, id: string) {
+  return await getEntry(collection, id)
+}
+
+export async function getReferenceLocalizedValue(
+  collection: CollectionKey,
+  id: string,
+  path: string,
+  locale = "en"
+) {
+  return getLocalizedValue(await getReference(collection, id), path, locale)
+}
+
 export async function getReferences(collection: CollectionKey, ids: string[]) {
   return (
     await Promise.all(
@@ -34,14 +47,13 @@ export async function getReferences(collection: CollectionKey, ids: string[]) {
   ).filter((item: unknown) => !!item)
 }
 
-export async function getReferencesLocalizedValue(
-  collection: CollectionKey,
-  ids: string[],
-  path: string,
-  locale = "en"
-) {
-  return (await getReferences(collection, ids)).map(
-    (referencedObject: CollectionEntry<collection>) =>
-      getLocalizedValue(referencedObject, path, locale)
-  )
-}
+// export async function getReferencesLocalizedValue<T extends CollectionEntry>(
+//   collection: CollectionKey,
+//   ids: string[],
+//   path: string,
+//   locale = "en"
+// ): string {
+//   return (await getReferences(collection, ids)).map((referencedObject: T) =>
+//     getLocalizedValue(referencedObject, path, locale)
+//   )
+// }

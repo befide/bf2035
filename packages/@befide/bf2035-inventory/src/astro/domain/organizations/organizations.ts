@@ -1,27 +1,25 @@
-import { getCollection, getEntry } from "astro:content"
+import { getCollection } from "astro:content"
 
-import { flattenTreeNodes, getRoots, type TreeNode } from "../content.tree"
+import { getRoots, type TreeNode } from "../content.tree"
 import {
-  peopleCountDiscriminators,
   type OrganizationSchema,
+  peopleCountDiscriminators,
 } from "@/astro/domain/organizations/organizations.config"
 import { getValue } from "../index"
-import { ascending } from "d3-array"
 import { Organization } from "./organization"
-import { getLocalizedValue } from "../content"
 
 export const allOrganizations = async () =>
   (await getCollection("organizations")).map(({ data }) => data)
 
 export const allOrganizationsForTopLevelOrganization = async (
-  topLevel_organizationId: string
+  topLevel__id: string
 ) => {
   return await getCollection(
     "organizations",
     ({ data, id }) =>
-      topLevel_organizationId === undefined ||
-      data.topLevel_organizationId === topLevel_organizationId ||
-      id === topLevel_organizationId ||
+      topLevel__id === undefined ||
+      data.topLevel__id === topLevel__id ||
+      id === topLevel__id ||
       id === ":"
   )
 }
@@ -31,7 +29,7 @@ export const allCommunityTopLevelOrganizations = async () =>
     "organizations",
     (entry) =>
       entry.data.isPartOfCommunity &&
-      !entry.data.topLevel_organizationId &&
+      !entry.data.topLevel__id &&
       entry.data.befideOrganizationCategories.indexOf("committee") !== 0
   )
 
@@ -54,8 +52,17 @@ export const getOrganizationCategories = async () =>
     )
   )
 
-export const getOrganizationRoots = (items: OrganizationSchema[]) => {
-  return getRoots<OrganizationSchema>(items)
+export const getOrganizationTree = async (rootId: string) => {
+  const orgs = (
+    await getCollection(
+      "organizations",
+      ({ data, id }) => data.topLevel__id === rootId || id === rootId
+    )
+  ).map((d) => d.data)
+
+  const roots = getRoots<OrganizationSchema>(await allCommunityOrganizations())
+  console.log({ orgs, roots })
+  return rollupUniquePeopleCountSum(roots[0])
 }
 
 export function rollupUniquePeopleCountSum(node: TreeNode<OrganizationSchema>) {
@@ -93,15 +100,15 @@ export function rollupUniquePeopleCountSum(node: TreeNode<OrganizationSchema>) {
   return node
 }
 
-export const organizationsItemRoots = async () => {
-  const items = (await getCollection("organizations")).map((d) => d.data)
-
-  return getOrganizationsRoots(items)
-}
-
-export const getOrganizationsRoots = (items: OrganizationSchema[]) => {
-  return getRoots<OrganizationSchema>(items)
-}
+// export const organizationsItemRoots = async () => {
+//   const items = (await getCollection("organizations")).map((d) => d.data)
+//
+//   return getOrganizationsRoots(items)
+// }
+//
+// export const getOrganizationsRoots = (items: OrganizationSchema[]) => {
+//   return getRoots<OrganizationSchema>(items)
+// }
 
 export const organizationsForAPI = async (locale: string) => {
   const organizations = await allCommunityTopLevelOrganizations()

@@ -1,3 +1,5 @@
+import { glob } from "astro/loaders"
+
 const INPUT_FILE = "facilities.csv"
 
 import { csv2json } from "csv42"
@@ -8,15 +10,14 @@ import {
   LocalizedString,
   NestableDomainObjectZodSchema,
   NullableLocalizedString,
-  readInputFile,
   ReviewSchema,
   ZodStringArrayFromString,
 } from "@content/config.common.ts"
 
 export const FacilityZodSchema = NestableDomainObjectZodSchema.extend({
-  partOf_id: z.string().nullable(),
-  successorOf_id: z.string().nullable(),
-  host_id: z.string().nullable(),
+  partOf__id: z.string().nullable(),
+  successorOf__id: z.string().nullable(),
+  host__organizationsId: z.string().nullable(),
 
   label: LocalizedString,
   tagLine: NullableLocalizedString,
@@ -25,10 +26,10 @@ export const FacilityZodSchema = NestableDomainObjectZodSchema.extend({
   isBMBF_FIS: z.boolean(),
   isUserFacility: z.boolean(),
 
-  instanceOf_taxonId: z.string().nullable(),
+  instanceOf__taxonomyId: z.string().nullable(),
 
   lifeCycle: z.object({
-    currentStatus_taxonId: z.string().nullable(),
+    currentStatus__taxonomyId: z.string().nullable(),
     design: z.object({
       startYear: z.number().nullable(),
     }),
@@ -41,12 +42,12 @@ export const FacilityZodSchema = NestableDomainObjectZodSchema.extend({
     }),
   }),
 
-  primaryApplication_taxonIds: ZodStringArrayFromString,
-  secondaryApplication_taxonIds: ZodStringArrayFromString,
+  primaryApplications__taxonomyId: z.array(z.string()),
+  secondaryApplications__taxonomyId: z.array(z.string()),
 
   parameters: z.object({
-    primaryBeamParticles: ZodStringArrayFromString,
-    secondaryBeamParticles: ZodStringArrayFromString,
+    primaryBeamParticles: z.array(z.string()),
+    secondaryBeamParticles: z.array(z.string()),
     length__m: z.number().nullable(),
     E0__eV: z.number().nullable(),
     E1__eV: z.number().nullable(),
@@ -56,45 +57,38 @@ export const FacilityZodSchema = NestableDomainObjectZodSchema.extend({
   }),
   links: z.object({
     homepage: NullableLocalizedString,
-    references: ZodStringArrayFromString,
   }),
+  references: z.array(z.string()),
   review: ReviewSchema,
 })
 
 export const defineFacilityCollection = defineCollection({
-  loader: async () => {
-    const input = readInputFile(INPUT_FILE).toString()
-    const data = csv2json<FacilitySchema>(input, {
-      nested: true,
-    })
-
-    data.forEach((item) => {
-      item.parent_id = item.partOf_id || item.successorOf_id || null
-    })
-    return data
-  },
+  loader: glob({
+    pattern: "**/*.(md|mdx)",
+    base: "./src/content/domain/facilities",
+  }),
   schema: FacilityZodSchema,
 })
 
 export type FacilitySchema = z.infer<typeof FacilityZodSchema>
-
-export type Facility = {
-  label: string
-  tagLine: string[]
-  description: string
-  host_label: string
-  instanceOf_label: string
-  isBMBF_FIS: boolean
-  isUserFacility: boolean
-  primaryApplicationTaxons_label: string[]
-  secondaryApplicationTaxons_label: string[]
-  operation_startYear: number | undefined
-  operation_endYear: number | undefined
-  parameters: {
-    primaryBeamParticles: string[]
-    secondaryBeamParticles: string[]
-  }
-  links: {
-    homepage: string
-  }
-}
+//
+// export type Facility = {
+//   label: string
+//   tagLine: string[]
+//   description: string
+//   host_label: string
+//   instanceOf_label: string
+//   isBMBF_FIS: boolean
+//   isUserFacility: boolean
+//   primaryApplicationTaxons_label: string[]
+//   secondaryApplicationTaxons_label: string[]
+//   operation_startYear: number | undefined
+//   operation_endYear: number | undefined
+//   parameters: {
+//     primaryBeamParticles: string[]
+//     secondaryBeamParticles: string[]
+//   }
+//   links: {
+//     homepage: string
+//   }
+// }

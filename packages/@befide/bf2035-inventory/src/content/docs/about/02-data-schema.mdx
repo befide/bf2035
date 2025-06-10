@@ -34,7 +34,7 @@ This approach allows for both hierarchical classification and complex inter-enti
 | field         | type              |     | comment                                                  |
 | :------------ | :---------------- | :-- | :------------------------------------------------------- |
 | id            | string            | PK  |                                                          |
-| parent_id     | string            | FK  | id of the organizational unit directly above current one |
+| parent__id     | string            | FK  | id of the organizational unit directly above current one |
 | term          | localizedString   |     | id of the formal organization this unit belongsto        |
 | definition    | localizedString[] |     | taxons this unit is an instance of                       |
 | abbreviations | localizedString[] |     |                                                          |
@@ -47,8 +47,8 @@ This approach allows for both hierarchical classification and complex inter-enti
 | field        | type     | comment                                                  |
 | :----------- | :------- | :------------------------------------------------------- |
 | id           | string   |                                                          |
-| parent_id    | string   | id of the organizational unit directly above current one |
-| topLevel_id  | string   | id of the formal organization this unit belongsto        |
+| parent__id    | string   | id of the organizational unit directly above current one |
+| topLevel__id  | string   | id of the formal organization this unit belongsto        |
 | isA_taxonIds | string[] | taxons this unit is an instance of                       |
 |              |          |                                                          |
 |              |          |                                                          |
@@ -58,7 +58,7 @@ This approach allows for both hierarchical classification and complex inter-enti
 "taxonomy": {
   shape: sql_table
   id: string {constraint: primary_key}
-  parent_id: string {constraint: foreign_key}
+  parent__id: string {constraint: foreign_key}
   term: localizedString
   definition: localizedString
   synonyms: localizedString
@@ -66,14 +66,14 @@ This approach allows for both hierarchical classification and complex inter-enti
 
 }
 
-taxonomy.parent_id -> taxonomy.id
+taxonomy.parent__id -> taxonomy.id
 
 
 courses: {
   shape: sql_table
   id: string {constraint: primary_key}
-  teachingEvent_taxonId: string {constraint: foreign_key}
-  university_organizationsId: string {constraint: foreign_key}
+  teachingEvent__taxonomyId: string {constraint: foreign_key}
+  university__organizationsId: string {constraint: foreign_key}
   studyLevels_taxonId: string {constraint: foreign_key}
   title: localizedString
   objectives: localizedString
@@ -87,15 +87,15 @@ courses: {
   review: review
 }
 
-courses.teachingEvent_taxonId -> taxonomy.id
+courses.teachingEvent__taxonomyId -> taxonomy.id
 courses.studyLevels_taxonId -> taxonomy.id
 
 
 organizations: {
   shape: sql_table
   id: string {constraint: primary_key}
-  parent_id: string {constraint: foreign_key}
-  topLevel_id: string {constraint: foreign_key}
+  parent__id: string {constraint: foreign_key}
+  topLevel__id: string {constraint: foreign_key}
   isA_taxonIds: "string[]" {constraint: foreign_key}
   "label": localizedString
   "tagLine": localizedString
@@ -111,15 +111,15 @@ organizations: {
 
 }
 
-organizations.parent_id -> organizations.id
-organizations.topLevel_id -> organizations.id
+organizations.parent__id -> organizations.id
+organizations.topLevel__id -> organizations.id
 organizations.isA_taxonIds -> taxonomy.id
 
 facilities: {
   shape: sql_table
   id: string {constraint: primary_key}
-  partOf_id: string {constraint: foreign_key}
-  successorOf_id: string {constraint: foreign_key}
+  partOf__id: string {constraint: foreign_key}
+  successorOf__id: string {constraint: foreign_key}
   host_organizationsId: string {constraint: foreign_key}
   "label": localizedString
   "tagLine": localizedString
@@ -151,7 +151,7 @@ facilities: {
   "cost.operation__inflationReferenceYear": float
   "parameters.peakBrilliance": float
 
-  "lifeCycle.currentStatus_taxonId": string {constraint: foreign_key}
+  "lifeCycle.currentStatus__taxonomyId": string {constraint: foreign_key}
   "lifeCycle.design.startYear": int
   "lifeCycle.design.endYear": int
   "lifeCycle.realization.startYear": int
@@ -164,11 +164,11 @@ facilities: {
 }
 
 
-facilities.partOf_id -> facilities.id
-facilities.successorOf_id -> facilities.id
+facilities.partOf__id -> facilities.id
+facilities.successorOf__id -> facilities.id
 facilities.host_organizationsId -> organizations.id
 facilities.isA_taxonId -> taxonomy.id
-facilities."lifeCycle.currentStatus_taxonId" -> taxonomy.id
+facilities."lifeCycle.currentStatus__taxonomyId" -> taxonomy.id
 facilities."links.references" -> references.id
 
 

@@ -29,11 +29,11 @@ export class Thesis {
 
   async getDto(locale: string): Promise<ThesisDto> {
     const university__label_short =
-      (this._data.university_organizationsId &&
+      (this._data.university__organizationsId &&
         getLocalizedValue(
           await getEntry(
             "organizations",
-            this._data.university_organizationsId
+            this._data.university__organizationsId
           ),
           "data.label.short",
           locale
@@ -42,14 +42,14 @@ export class Thesis {
 
     const organizations__label_short = await getReferencesLocalizedValue(
       "organizations",
-      this._data.organizations__organizationsIds,
+      this._data.organizations__organizationsId,
       "data.label.short",
       locale
     )
 
     const facilities__label_short = await getReferencesLocalizedValue(
       "facilities",
-      this._data.facilities_facilitiesIds,
+      this._data.facilities__facilityId,
       "data.label",
       locale
     )

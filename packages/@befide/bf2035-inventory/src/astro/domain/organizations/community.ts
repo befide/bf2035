@@ -17,7 +17,7 @@ export const communityForAPI = async (locale: string) => {
 
       depth: item.depth,
       height: item.children.length,
-      parent_id: item.parent_id,
+      parent__id: item.parent__id,
 
       label__fullName: getLocalizedValue(item.data, "label.fullName", locale),
       label__short: getLocalizedValue(item.data, "label.short", locale),

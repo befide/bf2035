@@ -148,6 +148,14 @@ export const tableConfigMap = (key: string) => {
         },
       },
       {
+        label: "Semesters",
+        sortable: true,
+        field_name: "sws",
+        format: function (d: CourseDto) {
+          return oneLineFormat(d.semesters.join(", "))
+        },
+      },
+      {
         label: "Link",
         sortable: false,
         field_name: "link",

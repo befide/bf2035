@@ -33,7 +33,7 @@
 
 
 
-  a {
+  .tree-node a {
     display: block;
     text-decoration: none;
     color: var(--sl-color-gray-2);

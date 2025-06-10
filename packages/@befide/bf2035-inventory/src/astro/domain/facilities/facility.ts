@@ -12,7 +12,7 @@ export type FacilityDto = Pick<FacilitySchema, "id"> & {
   host__label_short: string
   // languages: string[]
   // semesters: string[]
-  parent_id: string | null
+  parent__id: string | null
   instanceOf__term: string
   currentStatus__term: string
   operation_startYear: number | null
@@ -33,28 +33,28 @@ export class Facility {
 
   async getDto(locale: string): Promise<FacilityDto> {
     const instanceOf__term =
-      (this._data.instanceOf_taxonId &&
+      (this._data.instanceOf__taxonomyId &&
         getLocalizedValue(
-          await getEntry("taxonomyItems", this._data.instanceOf_taxonId),
+          await getEntry("taxonomyItems", this._data.instanceOf__taxonomyId),
           "data.term",
           locale
         )) ||
       ""
     const host__label_short =
-      (this._data.host_id &&
+      (this._data.host__organizationsId &&
         getLocalizedValue(
-          await getEntry("organizations", this._data.host_id),
+          await getEntry("organizations", this._data.host__organizationsId),
           "data.label.short",
           locale
         )) ||
       ""
 
     const currentStatus__term =
-      (this._data.lifeCycle.currentStatus_taxonId &&
+      (this._data.lifeCycle.currentStatus__taxonomyId &&
         getLocalizedValue(
           await getEntry(
             "taxonomyItems",
-            this._data.lifeCycle.currentStatus_taxonId
+            this._data.lifeCycle.currentStatus__taxonomyId
           ),
           "data.term",
           locale
@@ -63,7 +63,7 @@ export class Facility {
 
     return {
       id: this._data.id,
-      parent_id: this._data.parent_id,
+      parent__id: this._data.parent__id,
       label: getLocalizedValue(this._data, "label", locale),
       tagLine: getLocalizedValue(this._data, "tagLine", locale),
       host__label_short,

@@ -22,6 +22,7 @@ const templates = {
 }
 
 const numberFormat = format(
+  // @ts-ignore
   Object.assign(formatSpecifier("f"), {
     precision: precisionFixed(0),
   })

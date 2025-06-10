@@ -35,7 +35,7 @@ export const taxonomyForAPI = async (locale = "en") => {
   //   id: item.id,
   //   depth: item.depth,
   //   height: item.children.length,
-  //   parent_id: item.data.parent_id,
+  //   parent__id: item.data.parent__id,
   //   label: getLocalizedValue(item, "data.term", locale),
   //   definition: getLocalizedValue(item, "data.definition", locale),
   //   synonyms: item.data.synonyms,

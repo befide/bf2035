@@ -2,7 +2,7 @@ import type { NestableDomainObjectSchema } from "@/content/config.common"
 
 export interface TreeNode<Datum extends NestableDomainObjectSchema> {
   id: string
-  parent_id: string | null
+  parent__id: string | null
   depth: number
   childIndex: number | null
   children: TreeNode<Datum>[]
@@ -11,13 +11,12 @@ export interface TreeNode<Datum extends NestableDomainObjectSchema> {
 
 export function getRoots<Datum extends NestableDomainObjectSchema>(
   items: Array<Datum>
-) {
+): TreeNode<Datum>[] {
   const roots: TreeNode<Datum>[] = []
 
   const flatTreeNodes: TreeNode<Datum>[] = items.map((item) => ({
     id: item.id,
-    parent_id: item.parent_id,
-    // item.hasParent === null ? item.hasParent : item.hasParent?.id || null,
+    parent__id: item.parent__id,
     data: item,
     childIndex: null,
     children: [],
@@ -33,12 +32,12 @@ export function getRoots<Datum extends NestableDomainObjectSchema>(
   })
 
   flatTreeNodes.forEach((item) => {
-    if (item.parent_id === null) {
+    if (item.parent__id === null) {
       if (flatTreeNodeMap[item.id] !== undefined) {
         roots.push(flatTreeNodeMap[item.id]!)
       }
     } else {
-      const parent = flatTreeNodeMap[item.parent_id]
+      const parent = flatTreeNodeMap[item.parent__id]
       if (parent) {
         flatTreeNodeMap[item.id]!.depth = parent.depth + 1
         flatTreeNodeMap[item.id]!.childIndex = parent.children.length

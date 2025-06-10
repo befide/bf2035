@@ -17,8 +17,8 @@ export const getFacilities = async (options: {
       (options.isUserFacility === undefined ||
         data.isUserFacility === options.isUserFacility) &&
       (options.lifeCycleCategory === undefined ||
-        !data.lifeCycle?.currentStatus_taxonId ||
-        data.lifeCycle?.currentStatus_taxonId.indexOf(
+        !data.lifeCycle?.currentStatus__taxonomyId ||
+        data.lifeCycle?.currentStatus__taxonomyId.indexOf(
           "/" + options.lifeCycleCategory
         ) > -1)
     )
@@ -43,18 +43,18 @@ export const facilitiesForAPI = async (locale: string) => {
           locale
         ),
       instanceOf_label:
-        facility.instanceOf_taxonId &&
+        facility.instanceOf__taxonomyId &&
         getLocalizedValue(
-          await getEntry("taxonomyItems", facility.instanceOf_taxonId),
+          await getEntry("taxonomyItems", facility.instanceOf__taxonomyId),
           "data.term",
           locale
         ),
       currentStatus_label:
-        facility.lifeCycle.currentStatus_taxonId &&
+        facility.lifeCycle.currentStatus__taxonomyId &&
         getLocalizedValue(
           await getEntry(
             "taxonomyItems",
-            facility.lifeCycle.currentStatus_taxonId
+            facility.lifeCycle.currentStatus__taxonomyId
           ),
           "data.term",
           locale
@@ -73,7 +73,7 @@ export const facilitiesForAPI = async (locale: string) => {
       id: item.id,
       depth: item.depth,
       height: item.children.length,
-      parent_id: item.data.parent_id,
+      parent__id: item.data.parent__id,
       predecessor_id: item.data.predecessor_id,
 
       label: getLocalizedValue(item, "data.label", locale),

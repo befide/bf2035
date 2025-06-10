@@ -14,11 +14,11 @@ export type DomainObjectSchema = {
 }
 
 export const NestableDomainObjectZodSchema = DomainObjectZodSchema.extend({
-  parent_id: z.string().nullable(),
+  parent__id: z.string().nullable(),
 })
 export type NestableDomainObjectSchema = DomainObjectSchema & {
   id: string
-  parent_id: string | null
+  parent__id: string | null
 }
 // export type NestableDomainObjectSchema = z.infer<
 //   typeof NestableDomainObjectZodSchema
@@ -34,8 +34,8 @@ export const readInputFile = (filename: string) =>
   fs.readFileSync(path.join(DATA_PATH, filename))
 
 export const ReviewSchema = z.object({
-  status_id: z.string().optional().nullable(),
-  reviewer_contactId: z.string().optional().nullable(),
+  status__id: z.string().optional().nullable(),
+  reviewer__contactId: z.string().optional().nullable(),
   log: z.string().optional().nullable(),
 })
 

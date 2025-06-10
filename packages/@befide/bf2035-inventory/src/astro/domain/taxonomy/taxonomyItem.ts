@@ -8,7 +8,7 @@ import type { NestableDomainObjectSchema } from "@content/config.common.ts"
 
 export type TaxonomyItemDto = NestableDomainObjectSchema & {
   id: string
-  parent_id: string | null
+  parent__id: string | null
   term: string
   definition: string
   abbreviations: string[]
@@ -32,7 +32,7 @@ export class TaxonomyItem {
   async getDto(locale: string): Promise<TaxonomyItemDto> {
     return {
       id: this._data.id,
-      parent_id: this._data.parent_id,
+      parent__id: this._data.parent__id,
       term: getLocalizedValue(this._data, "term", locale),
       definition: getLocalizedValue(this._data, "definition", locale),
       synonyms: this._data.synonyms[locale],

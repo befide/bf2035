@@ -95,9 +95,9 @@ export const ThesisZodSchema = DomainObjectZodSchema.extend({
   degree: z.string().optional(),
 
   isA_taxonId: z.string().optional(), //reference("taxonomyItems").optional().nullable(),
-  university_organizationsId: z.string().optional(), //reference("organizations").optional().nullable(),
-  organizations__organizationsIds: z.array(z.string()), // z.array(reference("organizations").optional().nullable()),
-  facilities_facilitiesIds: z.array(z.string()), //z.array(reference("facilities").optional().nullable()),
+  university__organizationsId: z.string().optional(), //reference("organizations").optional().nullable(),
+  organizations__organizationsId: z.array(z.string()), // z.array(reference("organizations").optional().nullable()),
+  facilities__facilityId: z.array(z.string()), //z.array(reference("facilities").optional().nullable()),
 })
 
 export type ThesisSchema = z.infer<typeof ThesisZodSchema>
@@ -136,8 +136,8 @@ export const defineThesesCollection = defineCollection({
   //         givenName: item.data.creators[0]?.firstName
   //       },
   //       tags: item.data.tags.map(({ tag }: { tag: string }) => tag),
-  //       organizations__organizationsIds: [],
-  //       facilities_facilitiesIds: []
+  //       organizations__organizationsId: [],
+  //       facilities__facilityId: []
   //     }
 
   //     if (item.data.url?.startsWith("https://doi.org/")) {
@@ -190,17 +190,17 @@ export const defineThesesCollection = defineCollection({
   //       if (tag?.startsWith("#befidesh/organization/")) {
   //         const organizationId = tag.replace("#befidesh/organization/", "")
 
-  //         dataItem.organizations__organizationsIds.push(organizationId)
+  //         dataItem.organizations__organizationsId.push(organizationId)
 
   //         if (UNIVERSITY_IDS.indexOf(organizationId) > -1) {
-  //           dataItem.university_organizationsId = organizationId
+  //           dataItem.university__organizationsId = organizationId
   //         }
   //       }
   //       if (tag?.startsWith("#person/gender/")) {
   //         dataItem.author.gender = tag.replace("#person/gender/", "")
   //       }
   //       if (tag?.startsWith("#befidesh/facility/")) {
-  //         dataItem.facilities_facilitiesIds.push(
+  //         dataItem.facilities__facilityId.push(
   //           tag.replace("#befidesh/facility/", "")
   //         )
   //       }

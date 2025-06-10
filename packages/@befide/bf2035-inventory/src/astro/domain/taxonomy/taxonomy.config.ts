@@ -1,24 +1,12 @@
-import { defineCollection, reference, z } from "astro:content"
-import { file } from "astro/loaders"
-import path from "node:path"
-import { csv2json } from "csv42"
+import { defineCollection, z } from "astro:content"
+import { glob } from "astro/loaders"
+
 import {
   LocalizedString,
   NestableDomainObjectZodSchema,
   NullableLocalizedString,
   ReviewSchema,
-  ZodStringArrayFromString,
-} from "../../../content/config.common"
-
-const INPUT_FILE_PATH = path.join(
-  import.meta.dirname,
-  "..",
-  "..",
-  "..",
-  "data",
-  "grist",
-  "taxonomy-items.csv"
-)
+} from "@content/config.common.ts"
 
 const TaxonomyItemZodSchema = NestableDomainObjectZodSchema.extend({
   id: z.string(),
@@ -26,27 +14,24 @@ const TaxonomyItemZodSchema = NestableDomainObjectZodSchema.extend({
   term: LocalizedString,
   definition: NullableLocalizedString,
   abbreviations: z.object({
-    de: ZodStringArrayFromString,
-    en: ZodStringArrayFromString,
+    de: z.array(z.string()),
+    en: z.array(z.string()),
   }),
   synonyms: z.object({
-    de: ZodStringArrayFromString,
-    en: ZodStringArrayFromString,
+    de: z.array(z.string()),
+    en: z.array(z.string()),
   }),
+  iris: z.array(z.string()),
   review: ReviewSchema,
 })
 
 export type TaxonomyItemSchema = z.infer<typeof TaxonomyItemZodSchema>
 
 export const defineTaxonomyItemsCollection = defineCollection({
-  loader: file(INPUT_FILE_PATH, {
-    parser: (input) => {
-      const data = csv2json<TaxonomyItemSchema>(input, {
-        nested: true,
-      })
-
-      return data
-    },
+  loader: glob({
+    pattern: "**/*.(md|mdx)",
+    base: "./src/content/domain/taxonomy-items",
   }),
+
   schema: TaxonomyItemZodSchema,
 })

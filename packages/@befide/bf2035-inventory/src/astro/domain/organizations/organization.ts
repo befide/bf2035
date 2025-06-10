@@ -1,11 +1,8 @@
-import { getCollection, getEntry } from "astro:content"
+import { type CollectionEntry, getCollection, getEntry } from "astro:content"
 
 import { getLocalizedValue } from "../content"
 import type { OrganizationSchema } from "./organizations.config"
-import {
-  getOrganizationRoots,
-  rollupUniquePeopleCountSum,
-} from "./organizations"
+import { getOrganizationTree } from "./organizations"
 import { sum } from "d3-array"
 
 export type OrganizationDto = Pick<
@@ -13,7 +10,7 @@ export type OrganizationDto = Pick<
   "uniquePeopleCountRecursiveSum"
 > & {
   id: string
-  parent_id: string | null
+  parent__id: string | null
   instanceOfs__term: string[]
   label__fullName: string
   label__short: string
@@ -23,6 +20,7 @@ export type OrganizationDto = Pick<
   facilities_count: number
   userFacilities_count: number
   weeklySemesterHours_count: number
+  people_count: number
 }
 
 export class Organization {
@@ -33,30 +31,20 @@ export class Organization {
   }
 
   async getOrganizationTree() {
-    const children = (
-      await getCollection(
-        "organizations",
-        ({ data, id }) =>
-          data.topLevel_organizationId === this._data.topLevel_organizationId ||
-          id === this._data.id
-      )
-    ).map((d) => d.data)
-
-    const root = getOrganizationRoots(children)
-    rollupUniquePeopleCountSum(root)
+    return await getOrganizationTree(this._data.id)
   }
 
   async getTheses() {
     return await getCollection(
       "theses",
-      ({ data }) => data.university_organizationsId === this._data.id
+      ({ data }) => data.university__organizationsId === this._data.id
     )
   }
 
   async getFacilities() {
     return await getCollection(
       "facilities",
-      ({ data }) => data.host_id === this._data.id
+      ({ data }) => data.host__organizationsId === this._data.id
     )
   }
   async getUserFacilities() {
@@ -67,7 +55,7 @@ export class Organization {
   async getTeachingEvents() {
     return await getCollection(
       "courses",
-      ({ data }) => data.university_organizationId === this._data.id
+      ({ data }) => data.university__organizationsId === this._data.id
     )
   }
 
@@ -75,14 +63,16 @@ export class Organization {
     const i18n = await getEntry("i18n", locale)
 
     const instanceOfs__term = (
-      await Promise.all(
-        this._data.instanceOf_taxonId.map(
+      (await Promise.all(
+        this._data.instanceOfs__taxonomyId.map(
           async (d) => await getEntry("taxonomyItems", d)
         )
-      )
+      )) as CollectionEntry<"taxonomyItems">[]
     )
-      .filter((taxon) => !!taxon)
-      .map((taxon) => getLocalizedValue(taxon, "data.term", locale))
+      .filter((taxon: CollectionEntry<"taxonomyItems">) => !!taxon)
+      .map((taxon: CollectionEntry<"taxonomyItems">) =>
+        getLocalizedValue(taxon, "data.term", locale)
+      )
 
     const theses_count = (await this.getTheses()).length
     const facilities_count = (await this.getFacilities()).length
@@ -91,7 +81,7 @@ export class Organization {
     const weeklySemesterHours_count = sum(
       teachingEvents.map((d) => d.weeklySemesterHours)
     )
-    // const facilties =
+
     return {
       id: this._data.id,
       instanceOfs__term,
@@ -99,13 +89,16 @@ export class Organization {
       facilities_count,
       userFacilities_count,
       weeklySemesterHours_count,
-      parent_id: this._data.parent_id,
+      parent__id: this._data.parent__id,
       label__short: getLocalizedValue(this._data, "label.short", locale),
       label__fullName: getLocalizedValue(this._data, "label.fullName", locale),
       location__country: i18n?.data[
         "country.name." + this._data.location?.country?.code
       ] as string,
       location__city: this._data.location?.city as string,
+      people_count: await this.getOrganizationTree().then(
+        (d) => d.data.uniquePeopleCountRecursiveSum?.total
+      ),
     }
   }
 }
