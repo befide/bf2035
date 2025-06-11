@@ -86,6 +86,15 @@ export const tableConfigMap = (key: string) => {
         },
       },
       {
+        label: "people",
+        field_name: "people_count",
+        className: "number",
+        sortable: true,
+        format: function (d: OrganizationDto) {
+          return numberFormat(d.people_count)
+        },
+      },
+      {
         label: "sws",
         field_name: "weeklySemesterHours_count",
         className: "number",

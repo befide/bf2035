@@ -2,11 +2,11 @@
 title: Inventory
 ---
 
-
 import CardGrid from "@components/ui/CardContainer.astro"
 import LinkCard from "@components/ui/LinkCard.astro"
+import Card from "@components/ui/Card.astro"
 
-{/* ## What is this? */}
+## About
 
 <CardGrid>
   <LinkCard title="Introduction" icon="seti:db" href="/about/00-introduction"></LinkCard>
@@ -19,30 +19,30 @@ import LinkCard from "@components/ui/LinkCard.astro"
   ></LinkCard>
 </CardGrid>
 
-## Taxonomy
+## Data
 
 <CardGrid>
-  <LinkCard title="Taxonomy" icon="seti:db" href="/data/taxonomy"></LinkCard>
-</CardGrid>
+  <Card title="Taxonomy" icon="seti:db" href="/data/taxonomy">
+      * [Taxonomy](/data/01-taxonomy)
 
-## Organization
+  </Card>
+  <Card title="Facilities" >
+      * [Facilities](/data/03-facilities)
 
-<CardGrid>
-  <LinkCard
-    title="Reseach institutions and universities"
-    icon="seti:db"
-    href="/data/organization/institutions"
-  ></LinkCard>
-  <LinkCard
-    title="Research groups"
-    icon="seti:db"
-    href="/data/organization/work-groups"
-  ></LinkCard>
-  <LinkCard
-    title="People"
-    icon="seti:db"
-    href="/data/organization/people"
-  ></LinkCard>
+  </Card>
+
+  <Card title="Organization">
+      * [Reseach institutions and universities](/data/02-organization/formal-organizations)
+      * [Reseach groups](/data/02-organization/research-groups)
+      * [People](/data/02-organization/people)
+
+  </Card>
+    <Card    title="Teaching"  >
+        * [Courses](/data/04-teaching/courses)
+        * [Dissertations](/data/04-teaching/theses)
+
+    </Card>
+
 </CardGrid>
 
 ## Facilities

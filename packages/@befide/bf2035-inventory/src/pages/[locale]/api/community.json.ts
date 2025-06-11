@@ -1,4 +1,4 @@
-import { organizationsForAPI } from "@domain/organizations"
+import { communityForAPI, organizationsForAPI } from "@domain/organizations"
 import type { APIRoute, GetStaticPaths, InferGetStaticPropsType } from "astro"
 
 export const getStaticPaths = (async () => {
@@ -14,7 +14,7 @@ export const GET: APIRoute = async ({ props }) => {
   type Props = InferGetStaticPropsType<typeof getStaticPaths>
   const { locale } = props as Props
 
-  const community = await organizationsForAPI(locale)
+  const community = await communityForAPI(locale)
 
   try {
     return new Response(JSON.stringify(community, null, 2))

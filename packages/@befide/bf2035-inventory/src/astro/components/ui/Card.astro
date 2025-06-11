@@ -1,0 +1,19 @@
+---
+import type { HTMLAttributes } from "astro/types"
+import LinkCardHeader from "./LinkCardHeader.astro"
+import LinkCardBody from "./LinkCardBody.astro"
+
+// use a `type`
+type Props = HTMLAttributes<"a">
+const { href, title, class: className } = Astro.props
+
+const classList = "card card--link".split(" ")
+if (className) {
+  classList.push(className)
+}
+---
+
+<div class:list={classList}
+  ><LinkCardHeader>{title}</LinkCardHeader>
+  <LinkCardBody><slot /></LinkCardBody>
+</div>

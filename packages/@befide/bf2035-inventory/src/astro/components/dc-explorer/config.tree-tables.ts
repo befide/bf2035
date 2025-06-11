@@ -17,8 +17,8 @@ export const treeTableConfigMap = (key: string) => {
     return [
       {
         label: "Label",
-        className: "tree-node__label",
-        format: (d: TreeNode<OrganizationDto>) => d.data.label__fullName,
+        format: (d: TreeNode<OrganizationDto>) =>
+          `<div>${oneLineFormat(d.data.label_short)}</div>`,
       },
       {
         label: "Label",

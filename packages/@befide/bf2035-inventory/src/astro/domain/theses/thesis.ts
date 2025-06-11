@@ -34,7 +34,7 @@ export class Thesis {
       ? await getOrganizationsReferencesShortLabel(
           [this._data.university__organizationsId],
           locale
-        )
+        )[0]
       : getValueTranslation(this._data.publisher, locale)
 
     console.log(this._data.university__organizationsId)

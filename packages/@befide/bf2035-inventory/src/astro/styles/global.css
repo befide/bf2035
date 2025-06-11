@@ -3,7 +3,7 @@
 @import "./property-list.css";
 
 
-@import "./card.css"; */
+@import "./my-overrides.card.css"; */
 
 @import "./my-overrides.config.css";
 @import "./baseline.css";
@@ -11,6 +11,7 @@
 @import "./my-overrides.typography.css";
 @import "./my-overrides.table.css";
 @import "./my-overrides.tree.css";
+@import "./my-overrides.card.css";
 
 
 
