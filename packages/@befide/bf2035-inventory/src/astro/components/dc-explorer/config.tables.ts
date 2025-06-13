@@ -7,7 +7,8 @@ export const tableConfigMap = (key: string) => {
     return [
       {
         label: "Author",
-        sortable: false,
+        sortAccessor: (d: ThesisDto) => d.author.familyName,
+        className: "author",
         format: function (d: ThesisDto) {
           return `<div class='one-line'><div class='name'><span class='givenName'>${d.author.givenName}</span> <span class='familyName bold sc'>${d.author.familyName}</span></div>`
         },
@@ -15,8 +16,7 @@ export const tableConfigMap = (key: string) => {
       {
         label: "Gender",
         className: "gender",
-        field_name: "year",
-        sortable: true,
+        sortAccessor: (d: ThesisDto) => d.author.gender,
         format: function (d: ThesisDto) {
           return `<div class='one-line'><span data-gender-icon='${d.author.gender}'>${d.author.gender}</span></div>`
         },
@@ -24,8 +24,7 @@ export const tableConfigMap = (key: string) => {
       {
         label: "Year",
         className: "number",
-        field_name: "year",
-        sortable: true,
+        sortAccessor: (d: ThesisDto) => d.year,
         format: function (d: ThesisDto) {
           return numberFormat(d.year)
         },
@@ -33,7 +32,7 @@ export const tableConfigMap = (key: string) => {
       {
         label: "Degree",
         className: "one-line",
-        field_name: "degree",
+        sortAccessor: (d: ThesisDto) => d.degree,
         sortable: true,
         format: function (d: ThesisDto) {
           return oneLineFormat(d.degree)

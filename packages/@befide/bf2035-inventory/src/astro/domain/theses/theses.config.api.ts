@@ -7,25 +7,25 @@ import { DomainObjectZodSchema } from "@/content/config.common"
 const INPUT_FILEPATH = path.join("src", "data", "zotero", "kfb_theses.json")
 
 const UNIVERSITY_IDS = [
-  ":hu-berlin",
-  ":kit",
-  ":rwth-aachen",
-  ":tu-berlin",
-  ":tu-darmstadt",
-  ":tu-dortmund",
-  ":tu-dresden",
-  ":uni-bonn",
-  ":uni-düsseldorf",
-  ":uni-erlangen",
-  ":uni-frankfurt",
-  ":uni-goettingen",
-  ":uni-hamburg",
-  ":uni-jena",
-  ":uni-kassel",
-  ":uni-mainz",
-  ":uni-rostock",
-  ":uni-siegen",
-  ":uni-wuppertal",
+  "hu-berlin",
+  "kit",
+  "rwth-aachen",
+  "tu-berlin",
+  "tu-darmstadt",
+  "tu-dortmund",
+  "tu-dresden",
+  "uni-bonn",
+  "uni-duesseldorf",
+  "uni-erlangen",
+  "uni-frankfurt",
+  "uni-goettingen",
+  "uni-hamburg",
+  "uni-jena",
+  "uni-kassel",
+  "uni-mainz",
+  "uni-rostock",
+  "uni-siegen",
+  "uni-wuppertal",
 ]
 
 export const ThesisZodSchema = DomainObjectZodSchema.extend({
@@ -48,11 +48,17 @@ export const ThesisZodSchema = DomainObjectZodSchema.extend({
   abstract: z.string().optional().nullable(),
   publisher: z.string(),
   tags: z.array(z.string().optional()),
-  degree: z.string().optional(),
-  isA_taxonId: z.string().optional(), //reference("taxonomyItems").optional().nullable(),
-  university__organizationsId: z.string().nullable(), //reference("organizations").optional().nullable(),
-  organizations__organizationsId: z.array(z.string()), // z.array(reference("organizations").optional().nullable()),
-  facilities__facilityId: z.array(z.string()), //z.array(reference("facilities").optional().nullable()),
+  degree: z.object({
+    title: z.string(),
+    level: z.string(),
+    grantedBy__organizationsId: z.string().optional(),
+  }),
+  employsMethod: z.string().optional(),
+  hasAffiliation__organizationsId: z.array(z.string()), // z.array(reference("organizations").optional().nullable()),
+  isAbout: z.object({
+    facility__facilitiesId: z.array(z.string()),
+    accelerationProcess__taxonomyId: z.array(z.string().optional()),
+  }),
 })
 
 export type ThesisSchema = z.infer<typeof ThesisZodSchema>
@@ -63,6 +69,7 @@ export const defineThesesCollection = defineCollection({
 
     return dataRaw.flat().map((item: any) => {
       const dataItem: ThesisSchema = {
+        citationKey: item.data.citationKey,
         id: item.key,
         title: item.data.title,
         language: item.data.language,
@@ -76,11 +83,17 @@ export const defineThesesCollection = defineCollection({
           familyName: item.data.creators[0]?.lastName,
           givenName: item.data.creators[0]?.firstName,
         },
+        degree: {
+          title: "",
+          level: "doctoral",
+        },
         tags: item.data.tags.map(({ tag }: { tag: string }) => tag),
-        organizations__organizationsId: [],
-        facilities__facilityId: [],
-        citationKey: item.data.citationKey,
-        university__organizationsId: null,
+        hasAffiliation__organizationsId: [],
+
+        isAbout: {
+          facility__facilitiesId: [],
+          accelerationProcess__taxonomyId: [],
+        },
       }
 
       if (item.data.url?.startsWith("https://doi.org/")) {
@@ -122,29 +135,31 @@ export const defineThesesCollection = defineCollection({
         })
 
       dataItem.tags.forEach(async (tag = "") => {
-        if (tag?.startsWith("#academic-degree/doctoral-degree/:dr.rer.nat.")) {
-          dataItem.isA_taxonId = "/academic-degree/doctoral-degree/:dr.rer.nat."
-        } else if (
-          tag?.startsWith("#academic-degree/doctoral-degree/:dr.ing.")
-        ) {
-          dataItem.isA_taxonId = "/academic-degree/doctoral-degree/:dr.ing."
+        if (tag?.startsWith("#degree/title/:")) {
+          dataItem.degree.title = tag.replace("#degree/title/:", "")
+        }
+        if (tag?.startsWith("#degree/granted-by/:")) {
+          dataItem.degree.grantedBy__organizationsId = tag.replace(
+            "#degree/granted-by/:",
+            ""
+          )
         }
 
-        if (tag?.startsWith("#befidesh/02-organization/:")) {
-          const organizationId = tag.replace("#befidesh/organization/:", "")
-
-          dataItem.organizations__organizationsId.push(organizationId)
-
-          if (UNIVERSITY_IDS.indexOf(organizationId) > -1) {
-            dataItem.university__organizationsId = organizationId
-          }
+        if (tag?.startsWith("#has-affiliation/:")) {
+          const organizationId = tag.replace("#has-affiliation/:", "")
+          dataItem.hasAffiliation__organizationsId.push(organizationId)
         }
-        if (tag?.startsWith("#person/gender/")) {
-          dataItem.author.gender = tag.replace("#person/gender/", "")
+        if (tag?.startsWith("#author/gender/:")) {
+          dataItem.author.gender = tag.replace("#author/gender/:", "")
         }
-        if (tag?.startsWith("#befidesh/facility/:")) {
-          dataItem.facilities__facilityId.push(
-            tag.replace("#befidesh/facility/:", "")
+        if (tag?.startsWith("#is-about/facility/:")) {
+          dataItem.isAbout.facility__facilitiesId.push(
+            tag.replace("#is-about/facility/:", "")
+          )
+        }
+        if (tag?.startsWith("#is-about/acceleration-process/:")) {
+          dataItem.isAbout.accelerationProcess__taxonomyId.push(
+            tag.replace("#is-about/acceleration-process/:", "")
           )
         }
       })

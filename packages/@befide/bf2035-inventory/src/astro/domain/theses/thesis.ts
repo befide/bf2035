@@ -12,9 +12,9 @@ export type ThesisDto = Pick<
   "id" | "title" | "year" | "fulltextLink" | "author" | "language"
 > & {
   university__label_short: string
-  organizations__label_short: string[]
+  affiliations__label_short: string[]
   facilities__label_short: string[]
-  degree: string
+  degreeTitle: string
 }
 
 export interface Author {
@@ -30,23 +30,24 @@ export class Thesis {
   }
 
   async getDto(locale: string): Promise<ThesisDto> {
-    const university__label_short = this._data.university__organizationsId
-      ? await getOrganizationsReferencesShortLabel(
-          [this._data.university__organizationsId],
-          locale
+    console.log(this._data.degree)
+    const university__label_short = this._data.degree.grantedBy__organizationsId
+      ? (
+          await getOrganizationsReferencesShortLabel(
+            [this._data.degree.grantedBy__organizationsId],
+            locale
+          )
         )[0]
       : getValueTranslation(this._data.publisher, locale)
 
-    console.log(this._data.university__organizationsId)
-
     const organizations__label_short =
       await getOrganizationsReferencesShortLabel(
-        this._data.organizations__organizationsId,
+        this._data.hasAffiliation__organizationsId,
         locale
       )
 
     const facilities__label_short = await getFacilitiesReferencesLabel(
-      this._data.facilities__facilityId,
+      this._data.isAbout.facility__facilitiesId,
       locale
     )
 
@@ -64,12 +65,11 @@ export class Thesis {
       year: this._data.year,
       university__label_short,
 
-      organizations__label_short,
+      affiliations__label_short: organizations__label_short,
       facilities__label_short,
-      degree:
-        this._data.thesisType.indexOf("Ing.") > -1
-          ? "Dr.-Ing."
-          : "Dr. rer. nat.",
+      degreeTitle: this._data.degree.title
+        .replaceAll("dr.rer.nat.", "Dr. rer. nat.")
+        .replaceAll("dr.-ing.", "Dr.-Ing."),
     }
   }
 }

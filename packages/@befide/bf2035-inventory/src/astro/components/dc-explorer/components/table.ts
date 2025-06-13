@@ -39,38 +39,39 @@ export function createTableChart(
       .data(tableHeaderConfig)
       .enter()
       .append("th")
+      .attr("class", (d) => (d.className || d.sortable ? " sortable" : ""))
       .append("div")
-      .attr("class", (d) => d.className || "")
+      .attr("class", (d) => (d.className || d.sortable ? " sortable" : ""))
       .text((d: any) => d.label) // Accessor function for header titles
-    // .filter((d) => d.sortable)
-    // .on("click", tableHeaderCallback)
+      .filter((d) => d.sortable)
+      .on("click", tableHeaderCallback)
 
-    // function tableHeaderCallback(this: any, d: any) {
-    //   // Highlight column header being sorted and show bootstrap glyphicon
+    function tableHeaderCallback(this: any, d: any) {
+      // Highlight column header being sorted and show bootstrap glyphicon
 
-    //   // sort_state = select(this).attr("class"d.sort_state === "ascending" ? "descending" : "ascending"
-    //   const sortState = select(this).attr("data-sort")
-    //   const newSortState =
-    //     sortState === "ascending" ? "descending" : "ascending"
+      // sort_state = select(this).attr("class"d.sort_state === "ascending" ? "descending" : "ascending"
+      const sortState = select(this).attr("data-sort")
+      const newSortState =
+        sortState === "ascending" ? "descending" : "ascending"
 
-    //   select(chartElementIdSelector + " .table-header")
-    //     .selectAll("th") // Disable all highlighting and icons
-    //     .attr("data-sort", null)
+      select(chartElementIdSelector + " .table-header")
+        .selectAll("th") // Disable all highlighting and icons
+        .attr("data-sort", null)
 
-    //   select(this).attr("data-sort", newSortState)
+      select(this).attr("data-sort", newSortState)
 
-    //   const isAscendingOrder = newSortState === "ascending"
-    //   const fieldName = this.__data__.field_name
+      const isAscendingOrder = newSortState === "ascending"
+      const fieldName = this.__data__.field_name
 
-    //   tableChart
-    //     .order(isAscendingOrder ? ascending : descending)
-    //     .sortBy(function (datum) {
-    //       return datum[fieldName]
-    //     })
+      tableChart
+        .order(isAscendingOrder ? ascending : descending)
+        .sortBy(function (datum) {
+          return datum[fieldName]
+        })
 
-    //   tableChart.render()
-    //   select(tileElementIdSelector).classed("loading", false)
-    // }
+      tableChart.render()
+      select(tileElementIdSelector).classed("loading", false)
+    }
   }
   select(tileElementIdSelector + " .download").on("click", () => {
     // if (select('#download-type input:checked').node().value === 'table') {
