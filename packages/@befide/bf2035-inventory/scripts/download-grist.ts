@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { csv2json } from "csv42"
 import fs from "fs"
 import path from "path"
@@ -37,7 +38,13 @@ function stringToArray(d = "") {
   return d ? d.split(/\s?,\s?/).filter((d) => !!d) : []
 }
 
-async function doTable(collectionKey, tableId, idMapper, mapper, postprocess) {
+async function doTable(
+  collectionKey: "organizations" | "taxonomy-items" | "facilities" | "courses",
+  tableId: string,
+  idMapper,
+  mapper,
+  postprocess?
+) {
   const outputFolder = path.join(
     __dirname,
     "../src/content/domain/",
@@ -79,27 +86,30 @@ async function doTable(collectionKey, tableId, idMapper, mapper, postprocess) {
   })
 }
 
+const courseIdGenerator = ({
+  university__organizationsId,
+  title,
+}: {
+  university__organizationsId: string
+  title: { de: string; en: string }
+}) => slug(university__organizationsId + "/" + title.de)
+
 const doCourses = async () =>
-  await doTable(
-    "courses",
-    "Courses",
-    (d) => slug(d.university__organizationsId + "/" + d.title.de),
-    (d) => ({
-      id: slug(d.university__organizationsId + "/" + d.title.de),
-      teachingEvent__taxonomyId: d.teachingEvent__taxonomyId,
-      university__organizationsId: d.university__organizationsId,
-      studyLevels__taxonomyId: stringToArray(d.studyLevels__taxonomyId),
-      weeklySemesterHours: d.weeklySemesterHours,
-      semesters: stringToArray(d.semesters),
-      title: d.title,
-      objectives: d.objectives,
-      contents: d.contents,
-      languages: stringToArray(d.languages),
-      partOfProgrammesOfStudy: stringToArray(d.partOfProgrammesOfStudy),
-      links: d.links,
-      review: d.review,
-    })
-  )
+  await doTable("courses", "Courses", courseIdGenerator, (d: any) => ({
+    id: courseIdGenerator(d),
+    teachingEvent__taxonomyId: d.teachingEvent__taxonomyId,
+    university__organizationsId: d.university__organizationsId,
+    studyLevels__taxonomyId: stringToArray(d.studyLevels__taxonomyId),
+    weeklySemesterHours: d.weeklySemesterHours,
+    semesters: stringToArray(d.semesters),
+    title: d.title,
+    objectives: d.objectives,
+    contents: d.contents,
+    languages: stringToArray(d.languages),
+    partOfProgrammesOfStudy: stringToArray(d.partOfProgrammesOfStudy),
+    links: d.links,
+    review: d.review,
+  }))
 
 const doTaxonomy = async () =>
   await doTable(
@@ -131,7 +141,7 @@ const doOrganizations = async () =>
   await doTable(
     "organizations",
     "Organizations",
-    (d) => slug(d.id),
+    ({ id }: { id: string }) => slug(id),
     (d) => ({
       slug: d.id,
       id: d.id,
@@ -169,7 +179,7 @@ const doFacilities = async () =>
   await doTable(
     "facilities",
     "Facilities",
-    (d) => slug(d.id),
+    ({ id }: { id: string }) => slug(id),
     (d) => ({
       id: d.id,
       slug: d.id,
@@ -203,8 +213,6 @@ const doFacilities = async () =>
       review: d.review,
     })
   )
-
-await doOrganizations()
 
 function getValue(obj: any, path: string) {
   const pathParts = path.split(".")
@@ -249,3 +257,8 @@ function rollupUniquePeopleCountSum(node: any) {
 
   return node
 }
+
+await doOrganizations()
+await doTaxonomy()
+await doFacilities()
+await doCourses()

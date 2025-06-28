@@ -1,5 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { csvFormat, select } from "d3"
 import { dataTable } from "dc"
+import type { TableConfigEntry } from "../config.tables"
+import { ascending, descending } from "d3-array"
 
 export const tableTileId = (collection: string, dimension: string) => {
   return "dc-explorer__tile--" + collection + "-" + dimension
@@ -8,16 +11,40 @@ export const tableId = (collection: string, dimension: string) => {
   return "dc-explorer__table--" + collection + "-" + dimension
 }
 
+const map = new Map<string, string>()
+map.set("number", "1fr")
+map.set("icon", "1fr")
+map.set("text-short", "2fr")
+map.set("text-long", "5fr")
+
+const columnTypeToRatioMap = (className: string) => {
+  return map.get(className) || "1fr"
+}
+const columnWidth = (d: TableConfigEntry) => {
+  if (d.width) return d.width
+
+  return (
+    "minmax(" +
+    (d.width ? d.width : "10ch") +
+    ", " +
+    columnTypeToRatioMap(d.className) +
+    ")"
+  )
+}
+
 export function createTableChart(
   collection: string,
   dimension: string,
-  tableHeaderConfig: any,
+  tableHeaderConfig: TableConfigEntry[],
   cfDimension: any
 ) {
   const tileElementIdSelector = "#" + tableTileId(collection, dimension)
   const chartElementIdSelector = "#" + tableId(collection, dimension)
 
+  // if (!document.getElementById(chartElementIdSelector)) return
+
   const tableChart = dataTable(chartElementIdSelector)
+
   createTableHeader()
 
   tableChart
@@ -34,18 +61,32 @@ export function createTableChart(
       chartElementIdSelector + " .table-header"
     ).selectAll("th")
 
+    select(chartElementIdSelector).attr(
+      "style",
+      "grid-template-columns: " +
+        tableHeaderConfig.map((d) => columnWidth(d)).join(" ")
+    )
+
     // enter() into virtual selection and create new <th> header elements for each table column
     tableHeaderTHs
       .data(tableHeaderConfig)
       .enter()
       .append("th")
-      .attr("class", (d) => (d.className || d.sortable ? " sortable" : ""))
-      .append("div")
-      .attr("class", (d) => (d.className || d.sortable ? " sortable" : ""))
-      .text((d: any) => d.label) // Accessor function for header titles
-      .filter((d) => d.sortable)
-      .on("click", tableHeaderCallback)
+      .attr("class", (d) => d.className)
+      .classed("sortable", (d) => d.sortAccessor !== undefined)
 
+    tableHeaderTHs.append("span").text((d) => d.label) // Accessor function for header titles
+
+    const sortableHeaders = tableHeaderTHs.filter(
+      (d: unknown) => d.sortAccessor !== undefined
+    )
+
+    sortableHeaders.append("span").classed("sort-state", true).text(" ")
+    sortableHeaders.on("click", tableHeaderCallback)
+
+    // tableHeaderTHs.append("span").classed("resize-handle", true)
+
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     function tableHeaderCallback(this: any, d: any) {
       // Highlight column header being sorted and show bootstrap glyphicon
 
@@ -61,13 +102,11 @@ export function createTableChart(
       select(this).attr("data-sort", newSortState)
 
       const isAscendingOrder = newSortState === "ascending"
-      const fieldName = this.__data__.field_name
+      const sortAccessor = this.__data__.sortAccessor
 
       tableChart
         .order(isAscendingOrder ? ascending : descending)
-        .sortBy(function (datum) {
-          return datum[fieldName]
-        })
+        .sortBy(sortAccessor)
 
       tableChart.render()
       select(tileElementIdSelector).classed("loading", false)

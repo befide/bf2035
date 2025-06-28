@@ -15,6 +15,7 @@
   ul:not(:where(.not-content *)),
   ol:not(:where(.not-content *)) {
     font-size: var(--sl-text-body);
+    max-width: 90ch;
   }
 
   .sl-container p {
@@ -117,10 +118,11 @@
     padding: 0;
     margin: 0;
     display: inline-block;
-    max-height: .8rem;
-
+    max-height: 0.8rem;
   }
-  .sl-markdown-content :not(a, strong, em, del, span, input, code, br) + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
+  .sl-markdown-content
+    :not(a, strong, em, del, span, input, code, br)
+    + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
     margin-top: 0;
   }
 }

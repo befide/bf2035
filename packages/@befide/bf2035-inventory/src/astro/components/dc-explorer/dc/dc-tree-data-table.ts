@@ -96,7 +96,7 @@ export default function (parent, chartGroup?) {
     return d
   }
   let _order = ascending
-  let _beginSlice = 0
+  const _beginSlice = 0
   let _endSlice
   let _showSections = true
   let _section = function () {

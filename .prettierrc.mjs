@@ -15,7 +15,7 @@ export default {
     {
       files: "*.astro",
       options: {
-        parsxer: "astro",
+        parser: "astro",
       },
     },
   ],

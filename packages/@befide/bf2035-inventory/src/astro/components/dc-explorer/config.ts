@@ -11,3 +11,7 @@ export function numberFormat(value: number | null) {
 export function oneLineFormat(value = "") {
   return "<div class='one-line'>" + (value ? value : "") + "</div>"
 }
+
+export function pillFormat(value = "") {
+  return "<div class='pill'>" + (value ? value : "") + "</div>"
+}

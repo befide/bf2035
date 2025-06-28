@@ -1,9 +1,9 @@
 ---
-import { BadgeComponentSchema, type BadgeComponentProps } from "./badge";
-import { parseWithFriendlyErrors } from "../../../../../../docs/node_modules/@astrojs/starlight/utils/error-map";
-import type { HTMLAttributes } from "astro/types";
+import { BadgeComponentSchema, type BadgeComponentProps } from "./badge"
+import { parseWithFriendlyErrors } from "./../../../node_modules/@astrojs/starlight/utils/error-map.ts"
+import type { HTMLAttributes } from "astro/types"
 
-type Props = BadgeComponentProps & HTMLAttributes<"span">;
+type Props = BadgeComponentProps & HTMLAttributes<"span">
 
 const {
   text,
@@ -16,7 +16,7 @@ const {
   BadgeComponentSchema,
   Astro.props,
   "Invalid prop passed to the `<Badge/>` component."
-);
+)
 ---
 
 <span class:list={["sl-prefixed-badge", variant, size, customClass]} {...attrs}

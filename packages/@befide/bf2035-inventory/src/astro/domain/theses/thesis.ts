@@ -30,7 +30,6 @@ export class Thesis {
   }
 
   async getDto(locale: string): Promise<ThesisDto> {
-    console.log(this._data.degree)
     const university__label_short = this._data.degree.grantedBy__organizationsId
       ? (
           await getOrganizationsReferencesShortLabel(

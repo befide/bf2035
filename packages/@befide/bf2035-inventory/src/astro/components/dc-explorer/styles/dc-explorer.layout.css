@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media print, @media (max-width: 600px) {
   .dc-explorer {
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 601px) {
+@media screen and (min-width: 601px) {
   .dc-explorer {
     display: flex;
     flex-direction: row-reverse;

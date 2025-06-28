@@ -35,4 +35,5 @@
     transparent 1px
   );
   background-size: 1px 1rem;
+  background-position-y: -0.25rem;
 }

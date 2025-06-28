@@ -1,24 +1,50 @@
 import type { OrganizationDto, ThesisDto } from "@/astro/domain"
 import type { CourseDto } from "@/astro/domain/courses/course"
-import { numberFormat, oneLineFormat } from "./config"
+import { numberFormat, oneLineFormat, pillFormat } from "./config"
 
-export const tableConfigMap = (key: string) => {
+export type TableConfigEntry = {
+  label: string
+  className: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  sortAccessor?: (d: any) => string | number
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  format: (a: any) => string
+  width?: string
+}
+
+export function tableConfigMap(key: string): TableConfigEntry[] {
   if (key === "theses") {
     return [
       {
+        label: "University",
+        className: "text-short",
+        sortAccessor: (d: ThesisDto) => d.university__label_short,
+        format: function (d: ThesisDto) {
+          return pillFormat(d.university__label_short)
+        },
+      },
+      {
         label: "Author",
         sortAccessor: (d: ThesisDto) => d.author.familyName,
-        className: "author",
+        className: "text-short",
         format: function (d: ThesisDto) {
           return `<div class='one-line'><div class='name'><span class='givenName'>${d.author.givenName}</span> <span class='familyName bold sc'>${d.author.familyName}</span></div>`
         },
       },
       {
         label: "Gender",
-        className: "gender",
-        sortAccessor: (d: ThesisDto) => d.author.gender,
+        className: "icon",
+        sortAccessor: (d: ThesisDto) => d.author.gender as string,
         format: function (d: ThesisDto) {
-          return `<div class='one-line'><span data-gender-icon='${d.author.gender}'>${d.author.gender}</span></div>`
+          return `<div class='pillFormat'><span data-gender-icon='${d.author.gender}'>${d.author.gender}</span></div>`
+        },
+      },
+      {
+        label: "Title",
+        className: "text-long",
+        sortAccessor: (d: ThesisDto) => d.title,
+        format: function (d: ThesisDto) {
+          return "<div class='title truncable one-line'>" + d.title + "</div>"
         },
       },
       {
@@ -31,29 +57,18 @@ export const tableConfigMap = (key: string) => {
       },
       {
         label: "Degree",
-        className: "one-line",
-        sortAccessor: (d: ThesisDto) => d.degree,
-        sortable: true,
+        className: "text-short",
+        sortAccessor: (d: ThesisDto) => d.degreeTitle,
         format: function (d: ThesisDto) {
-          return oneLineFormat(d.degree)
+          return pillFormat(d.degreeTitle)
         },
       },
       {
-        label: "Title",
-        className: "one-line",
-        sortable: false,
+        label: "language",
+        className: "text-short",
+        sortAccessor: (d: ThesisDto) => d.language,
         format: function (d: ThesisDto) {
-          return "<div class='title one-line'>" + d.title + "</div>"
-        },
-      },
-      {
-        label: "University",
-        field_name: "university_label",
-        sortable: true,
-        format: function (d: ThesisDto) {
-          return (
-            "<div class='name one-line'>" + d.university__label_short + "</div>"
-          )
+          return pillFormat(d.language)
         },
       },
     ]
@@ -61,61 +76,56 @@ export const tableConfigMap = (key: string) => {
     return [
       {
         label: "short name",
-        field_name: "label__short",
-        sortable: true,
+        className: "text-short",
+        sortAccessor: (d: OrganizationDto) => d.label__short,
         format: function (d: OrganizationDto) {
           return `<div class='one-line bold'>${d.label__short}</div>`
         },
       },
       {
         label: "full name",
-        field_name: "label__fullName",
-        sortable: true,
+        className: "text-long",
+        sortAccessor: (d: OrganizationDto) => d.label__fullName,
         format: function (d: OrganizationDto) {
           return `<div class='one-line'>${d.label__fullName}</div>`
         },
       },
       {
         label: "theses",
-        field_name: "theses_count",
         className: "number",
-        sortable: true,
+        sortAccessor: (d: OrganizationDto) => d.theses_count,
         format: function (d: OrganizationDto) {
           return numberFormat(d.theses_count)
         },
       },
       {
         label: "people",
-        field_name: "people_count",
         className: "number",
-        sortable: true,
+        sortAccessor: (d: OrganizationDto) => d.people_count,
         format: function (d: OrganizationDto) {
           return numberFormat(d.people_count)
         },
       },
       {
         label: "sws",
-        field_name: "weeklySemesterHours_count",
+        sortAccessor: (d: OrganizationDto) => d.weeklySemesterHours_count,
         className: "number",
-        sortable: true,
         format: function (d: OrganizationDto) {
           return numberFormat(d.weeklySemesterHours_count)
         },
       },
       {
         label: "facilties",
-        field_name: "facilities_count",
         className: "number",
-        sortable: true,
+        sortAccessor: (d: OrganizationDto) => d.facilities_count,
         format: function (d: OrganizationDto) {
           return numberFormat(d.facilities_count)
         },
       },
       {
         label: "user facilties",
-        field_name: "userFacilities_count",
         className: "number",
-        sortable: true,
+        sortAccessor: (d: OrganizationDto) => d.userFacilities_count,
         format: function (d: OrganizationDto) {
           return numberFormat(d.userFacilities_count)
         },
@@ -125,48 +135,47 @@ export const tableConfigMap = (key: string) => {
     return [
       {
         label: "University",
-        field_name: "university__label_short",
-        sortable: true,
+        className: "text-short",
+        sortAccessor: (d: CourseDto) => d.university__label_short,
         format: function (d: CourseDto) {
-          return oneLineFormat(d.university__label_short)
+          return pillFormat(d.university__label_short)
         },
       },
       {
         label: "Title",
-        sortable: false,
-        className: "bold",
-        field_name: "title",
+        className: "text-long",
+        sortAccessor: (d: CourseDto) => d.title,
         format: function (d: CourseDto) {
           return oneLineFormat(d.title)
         },
       },
       {
         label: "Art",
-        sortable: false,
+        className: "text-short",
+        sortAccessor: (d: CourseDto) => d.teachingEvent__term,
         format: function (d: CourseDto) {
-          return oneLineFormat(d.teachingEvent__term)
+          return pillFormat(d.teachingEvent__term)
         },
       },
       {
-        label: "SWS",
-        sortable: true,
-        field_name: "sws",
+        label: "Weekly hours",
+        className: "number",
+        sortAccessor: (d: CourseDto) => d.weeklySemesterHours,
         format: function (d: CourseDto) {
           return numberFormat(d.weeklySemesterHours)
         },
       },
       {
         label: "Semesters",
-        sortable: true,
-        field_name: "sws",
+        className: "text-short",
         format: function (d: CourseDto) {
           return oneLineFormat(d.semesters.join(", "))
         },
       },
       {
         label: "Link",
-        sortable: false,
-        field_name: "link",
+        className: "text-short",
+        width: "10ch",
         format: function (d: CourseDto) {
           return (
             "<div class='one-line'><a target='_blank' href=" +

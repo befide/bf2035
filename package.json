@@ -21,19 +21,19 @@
     "eslint-plugin-prettier": "catalog:",
     "globals": "catalog:",
     "prettier": "catalog:",
-    "prettier-eslint": "16.4.2",
+    "prettier-eslint": "catalog:",
     "prettier-plugin-astro": "catalog:",
     "prettier-plugin-packagejson": "catalog:",
-    "prettier-plugin-tailwindcss": "0.6.12",
-    "stylelint": "16.20.0",
-    "stylelint-config-prettier": "9.0.5",
-    "stylelint-config-standard": "38.0.0",
-    "stylelint-config-tailwindcss": "1.0.0",
-    "stylelint-prettier": "5.0.3",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "stylelint": "catalog:",
+    "stylelint-config-prettier": "catalog:",
+    "stylelint-config-standard": "catalog:",
+    "stylelint-config-tailwindcss": "catalog:",
+    "stylelint-prettier": "catalog:",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:"
   },
-  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac",
+  "packageManager": "pnpm@10.12.2+sha512.a32540185b964ee30bb4e979e405adc6af59226b438ee4cc19f9e8773667a66d302f5bfee60a39d3cac69e35e4b96e708a71dd002b7e9359c4112a1722ac323f",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [

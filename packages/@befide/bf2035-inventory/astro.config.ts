@@ -41,7 +41,6 @@ export default defineConfig({
         include: [/\.([cm]?[jt]sx?|vue)$/],
         exclude: [/node_modules/],
         level: "warning", // or 'error'
-
         depKinds: ["dependencies", "peerDependencies"],
       }),
       tailwindcss(),
@@ -99,13 +98,11 @@ export default defineConfig({
       components: {
         // Override the theme's `Sidebar` component.
         Sidebar: "./src/astro/overrides/Sidebar.astro",
-        // SidebarSublist: "./src/astro/overrides/SidebarSublist.astro",
+        MarkdownContent: "./src/astro/overrides/MarkdownContent.astro",
+        PageFrame: "./src/astro/overrides/PageFrame.astro",
+
         Pagination: "./src/astro/overrides/Pagination.astro",
       },
-      // components: {
-      //   Aside: "@/overrides/Aside.astro",
-      //   //   Header: "@components/Header.astro",
-      // },
 
       customCss: [
         "@/astro/styles/global.css",

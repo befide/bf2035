@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { format, formatSpecifier, precisionFixed, select } from "d3"
 import { numberDisplay } from "dc"
 
@@ -21,10 +23,9 @@ const templates = {
 }
 
 const numberFormat = format(
-  // @ts-ignore
   Object.assign(formatSpecifier("f"), {
     precision: precisionFixed(0),
-  })
+  }).toString()
 )
 
 export const countChartTileId = (collection: string, dimension: string) => {
@@ -38,8 +39,7 @@ export function createCountChart(
   collection: string,
   dimension: string,
   cf: any,
-  cfDimension: any,
-  cfGroup: any
+  cfDimension: any
 ) {
   const tileElementIdSelector = "#" + countChartTileId(collection, dimension)
   const tileElement = select(tileElementIdSelector)

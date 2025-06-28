@@ -33,7 +33,7 @@ export class Organization {
   async getTheses() {
     return await getCollection(
       "theses",
-      ({ data }) => data.university__organizationsId === this._data.id
+      ({ data }) => data.degree.grantedBy__organizationsId === this._data.id
     )
   }
 
