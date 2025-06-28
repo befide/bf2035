@@ -2,6 +2,7 @@ import { defineCollection, z } from "astro:content"
 import { glob } from "astro/loaders"
 
 import {
+  Locales,
   LocalizedString,
   NestableDomainObjectZodSchema,
   NullableLocalizedString,
@@ -13,14 +14,8 @@ const TaxonomyItemZodSchema = NestableDomainObjectZodSchema.extend({
   taxonomyURI: z.string(),
   term: LocalizedString,
   definition: NullableLocalizedString,
-  abbreviations: z.object({
-    de: z.array(z.string()),
-    en: z.array(z.string()),
-  }),
-  synonyms: z.object({
-    de: z.array(z.string()),
-    en: z.array(z.string()),
-  }),
+  abbreviations: z.record(Locales, z.array(z.string())),
+  synonyms: z.record(Locales, z.array(z.string())),
   iris: z.array(z.string()),
   review: ReviewSchema,
 })

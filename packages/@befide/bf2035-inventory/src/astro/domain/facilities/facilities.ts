@@ -13,7 +13,8 @@ export const getFacilities = async (options: {
 }) =>
   await getCollection("facilities", ({ data }) => {
     return (
-      (options.hostId === undefined || data.host_id === options.hostId) &&
+      (options.hostId === undefined ||
+        data.host__organizationsId === options.hostId) &&
       (options.isUserFacility === undefined ||
         data.isUserFacility === options.isUserFacility) &&
       (options.lifeCycleCategory === undefined ||
@@ -36,9 +37,9 @@ export const facilitiesForAPI = async (locale: string) => {
       ...facility,
       // isInstanceOf_id: facility.isInstanceOf_id,
       host_label:
-        facility.host_id &&
+        facility.host__organizationsId &&
         getLocalizedValue(
-          await getEntry("organizations", facility.host_id),
+          await getEntry("organizations", facility.host__organizationsId),
           "data.label.short",
           locale
         ),
@@ -74,14 +75,14 @@ export const facilitiesForAPI = async (locale: string) => {
       depth: item.depth,
       height: item.children.length,
       parent__id: item.data.parent__id,
-      predecessor_id: item.data.predecessor_id,
+      successorOf__id: item.data.successorOf__id,
 
       label: getLocalizedValue(item, "data.label", locale),
       tagLine: getLocalizedValue(item, "data.tagLine", locale),
-      currentStatus_label: item.data.currentStatus_label,
+      currentStatus_label,
       operation_startYear: item.data.lifeCycle.operation?.startYear,
       operation_endYear: item.data.lifeCycle.operation?.endYear,
-      instanceOf_label: item.data.instanceOf_label,
+      instanceOf_label: expandedFacilities,
       isUserFacility: item.data.isUserFacility,
       isBMBF_FIS: item.data.isBMBF_FIS,
 

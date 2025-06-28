@@ -87,13 +87,13 @@
   .sl-container h3 {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: var(--sl-text-md);
+    font-size: var(--text-base);
     @apply baseline-1/1;
   }
 
   .sl-container h4 {
     font-weight: var(--font-weight--bold);
-    font-size: var(--sl-text-base);
+    font-size: var(--text-base);
     @apply baseline-1/0;
   }
 
@@ -113,16 +113,16 @@
     white-space: nowrap;
   }
 
-  .sl-markdown-content code:not(:where(.not-content *)) {
-    font-size: var(--text-xs);
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    max-height: 0.8rem;
-  }
-  .sl-markdown-content
-    :not(a, strong, em, del, span, input, code, br)
-    + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
-    margin-top: 0;
-  }
+  /*.sl-markdown-content code:not(:where(.not-content *)) {*/
+  /*  font-size: var(--text-xs);*/
+  /*  padding: 0;*/
+  /*  margin: 0;*/
+  /*  display: inline-block;*/
+  /*  max-height: 0.8rem;*/
+  /*}*/
+  /*.sl-markdown-content*/
+  /*  :not(a, strong, em, del, span, input, code, br)*/
+  /*  + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {*/
+  /*  margin-top: 0;*/
+  /*}*/
 }

@@ -3,7 +3,7 @@ import { csv2json } from "csv42"
 import fs from "fs"
 import path from "path"
 import YAML from "yaml"
-import { getRoots } from "./../src/astro/domain/content.tree"
+import { getRoots } from "@utils/content.tree.ts"
 
 export const genders = ["female", "male", "nonbinary"]
 const careerLevels = [

@@ -5,6 +5,8 @@ import fs from "node:fs"
 const __dirname = import.meta.dirname
 export const DATA_PATH = path.join(__dirname, "..", "data", "grist")
 
+export const Locales = z.string()
+
 export const DomainObjectZodSchema = z.object({
   id: z.string(),
 })

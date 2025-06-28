@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-@media print, @media (max-width: 600px) {
+@media print, screen and (max-width: 600px) {
   .dc-explorer {
     display: flex;
     flex-direction: column;

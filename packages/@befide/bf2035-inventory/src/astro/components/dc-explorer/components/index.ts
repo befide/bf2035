@@ -14,9 +14,9 @@ export const maxFilterWidth = 250
 export const rowBarRatio = 0.9
 
 export const margins = {
-  top: 1 * baselineHeight,
+  top: baselineHeight,
   right: 0.5 * baselineHeight,
-  bottom: 1 * baselineHeight,
+  bottom: baselineHeight,
   left: 0.25 * baselineHeight,
 }
 

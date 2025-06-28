@@ -91,7 +91,7 @@ export function tableConfigMap(key: string): TableConfigEntry[] {
         },
       },
       {
-        label: "theses",
+        label: "#theses",
         className: "number",
         sortAccessor: (d: OrganizationDto) => d.theses_count,
         format: function (d: OrganizationDto) {
@@ -99,7 +99,7 @@ export function tableConfigMap(key: string): TableConfigEntry[] {
         },
       },
       {
-        label: "people",
+        label: "#people",
         className: "number",
         sortAccessor: (d: OrganizationDto) => d.people_count,
         format: function (d: OrganizationDto) {
@@ -107,7 +107,7 @@ export function tableConfigMap(key: string): TableConfigEntry[] {
         },
       },
       {
-        label: "sws",
+        label: "#sws",
         sortAccessor: (d: OrganizationDto) => d.weeklySemesterHours_count,
         className: "number",
         format: function (d: OrganizationDto) {
@@ -115,7 +115,7 @@ export function tableConfigMap(key: string): TableConfigEntry[] {
         },
       },
       {
-        label: "facilties",
+        label: "#facilties",
         className: "number",
         sortAccessor: (d: OrganizationDto) => d.facilities_count,
         format: function (d: OrganizationDto) {
@@ -123,7 +123,7 @@ export function tableConfigMap(key: string): TableConfigEntry[] {
         },
       },
       {
-        label: "user facilties",
+        label: "#user facilties",
         className: "number",
         sortAccessor: (d: OrganizationDto) => d.userFacilities_count,
         format: function (d: OrganizationDto) {

@@ -1,32 +1,30 @@
-import path from "node:path"
-
 import { defineCollection, z } from "astro:content"
 import { DomainObjectZodSchema } from "@/content/config.common"
 import { globWithParser } from "@/content/loader.globWIthParser"
 
-const INPUT_FILEPATH = path.join("src", "data", "zotero", "kfb_theses.json")
-
-const UNIVERSITY_IDS = [
-  ":hu-berlin",
-  ":kit",
-  ":rwth-aachen",
-  ":tu-berlin",
-  ":tu-darmstadt",
-  ":tu-dortmund",
-  ":tu-dresden",
-  ":uni-bonn",
-  ":uni-düsseldorf",
-  ":uni-erlangen",
-  ":uni-frankfurt",
-  ":uni-goettingen",
-  ":uni-hamburg",
-  ":uni-jena",
-  ":uni-kassel",
-  ":uni-mainz",
-  ":uni-rostock",
-  ":uni-siegen",
-  ":uni-wuppertal",
-]
+// const INPUT_FILEPATH = path.join("src", "data", "zotero", "kfb_theses.json")
+//
+// const UNIVERSITY_IDS = [
+//   ":hu-berlin",
+//   ":kit",
+//   ":rwth-aachen",
+//   ":tu-berlin",
+//   ":tu-darmstadt",
+//   ":tu-dortmund",
+//   ":tu-dresden",
+//   ":uni-bonn",
+//   ":uni-düsseldorf",
+//   ":uni-erlangen",
+//   ":uni-frankfurt",
+//   ":uni-goettingen",
+//   ":uni-hamburg",
+//   ":uni-jena",
+//   ":uni-kassel",
+//   ":uni-mainz",
+//   ":uni-rostock",
+//   ":uni-siegen",
+//   ":uni-wuppertal",
+// ]
 const cslDatePartsSchema = z.object({
   "date-parts": z.array(z.array(z.union([z.number(), z.string()]))),
 })

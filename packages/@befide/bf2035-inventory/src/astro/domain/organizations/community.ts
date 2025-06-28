@@ -1,3 +1,5 @@
+import { getLocalizedValue } from "../content"
+
 export const communityForAPI = async (locale: string) => {
   const communityOrganizations = await allOrganizations()
 

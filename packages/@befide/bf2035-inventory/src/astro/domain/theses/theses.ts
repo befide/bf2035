@@ -21,7 +21,7 @@ export const allThesesForUniversity = async (universityId: string) =>
   (
     await getCollection(
       "theses",
-      (entry) => entry.data.university__organizationsId === universityId
+      (entry) => entry.data.degree.grantedBy__organizationsId === universityId
     )
   )
     .sort((a, b) =>
