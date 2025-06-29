@@ -64,7 +64,7 @@ export function createTableChart(
     select(chartElementIdSelector).attr(
       "style",
       "grid-template-columns: " +
-        tableHeaderConfig.map((d) => columnWidth(d)).join(" ")
+        tableHeaderConfig.map((d: TableConfigEntry) => columnWidth(d)).join(" ")
     )
 
     // enter() into virtual selection and create new <th> header elements for each table column
@@ -75,10 +75,10 @@ export function createTableChart(
       .attr("class", (d) => d.className)
       .classed("sortable", (d) => d.sortAccessor !== undefined)
 
-    tableHeaderTHs.append("span").text((d) => d.label) // Accessor function for header titles
+    tableHeaderTHs.append("span").text((d: TableConfigEntry) => d.label) // Accessor function for header titles
 
     const sortableHeaders = tableHeaderTHs.filter(
-      (d: unknown) => d.sortAccessor !== undefined
+      (d: TableConfigEntry) => d.sortAccessor !== undefined
     )
 
     sortableHeaders.append("span").classed("sort-state", true).text(" ")
@@ -86,7 +86,6 @@ export function createTableChart(
 
     // tableHeaderTHs.append("span").classed("resize-handle", true)
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     function tableHeaderCallback(this: any, d: any) {
       console.log(d)
       // Highlight column header being sorted and show bootstrap glyphicon

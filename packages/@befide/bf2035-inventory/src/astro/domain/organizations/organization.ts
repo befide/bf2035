@@ -17,9 +17,13 @@ export type OrganizationDto = Pick<
   location__country: string
   location__city: string
   theses_count: number
+  with_theses: boolean
   facilities_count: number
+  with_facilities: boolean
   userFacilities_count: number
+  with_userFacilities: boolean
   weeklySemesterHours_count: number
+  with_teachingEvents: boolean
   people_count: number
 }
 
@@ -73,9 +77,13 @@ export class Organization {
         locale
       ),
       theses_count,
+      with_theses: theses_count > 0,
       facilities_count,
+      with_facilities: facilities_count > 0,
       userFacilities_count,
+      with_userFacilities: userFacilities_count > 0,
       weeklySemesterHours_count,
+      with_teachingEvents: weeklySemesterHours_count > 0,
       parent__id: this._data.parent__id,
       label__short: getLocalizedValue(this._data, "label.short", locale),
       label__fullName: getLocalizedValue(this._data, "label.fullName", locale),

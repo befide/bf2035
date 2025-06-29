@@ -1,6 +1,6 @@
 ---
 import { BadgeComponentSchema, type BadgeComponentProps } from "./badge"
-import { parseWithFriendlyErrors } from "./../../../node_modules/@astrojs/starlight/utils/error-map.ts"
+import { parseWithFriendlyErrors } from "@astrojs/starlight/utils/error-map"
 import type { HTMLAttributes } from "astro/types"
 
 type Props = BadgeComponentProps & HTMLAttributes<"span">
@@ -63,7 +63,7 @@ const {
   .sl-prefixed-badge {
     display: inline-flex;
     line-height: normal;
-    font-family: var(--sl-font-system-mono), monospaceo;
+    font-family: var(--sl-font-system-mono),ui-monospace;
     overflow-wrap: anywhere;
   }
 

@@ -90,14 +90,7 @@ export function tableConfigMap(key: string): TableConfigEntry[] {
           return `<div class='one-line'>${d.label__fullName}</div>`
         },
       },
-      {
-        label: "#theses",
-        className: "number",
-        sortAccessor: (d: OrganizationDto) => d.theses_count,
-        format: function (d: OrganizationDto) {
-          return numberFormat(d.theses_count)
-        },
-      },
+
       {
         label: "#people",
         className: "number",
@@ -106,14 +99,7 @@ export function tableConfigMap(key: string): TableConfigEntry[] {
           return numberFormat(d.people_count)
         },
       },
-      {
-        label: "#sws",
-        sortAccessor: (d: OrganizationDto) => d.weeklySemesterHours_count,
-        className: "number",
-        format: function (d: OrganizationDto) {
-          return numberFormat(d.weeklySemesterHours_count)
-        },
-      },
+
       {
         label: "#facilties",
         className: "number",
@@ -128,6 +114,22 @@ export function tableConfigMap(key: string): TableConfigEntry[] {
         sortAccessor: (d: OrganizationDto) => d.userFacilities_count,
         format: function (d: OrganizationDto) {
           return numberFormat(d.userFacilities_count)
+        },
+      },
+      {
+        label: "#sws",
+        sortAccessor: (d: OrganizationDto) => d.weeklySemesterHours_count,
+        className: "number",
+        format: function (d: OrganizationDto) {
+          return numberFormat(d.weeklySemesterHours_count)
+        },
+      },
+      {
+        label: "#theses",
+        className: "number",
+        sortAccessor: (d: OrganizationDto) => d.theses_count,
+        format: function (d: OrganizationDto) {
+          return numberFormat(d.theses_count)
         },
       },
     ]

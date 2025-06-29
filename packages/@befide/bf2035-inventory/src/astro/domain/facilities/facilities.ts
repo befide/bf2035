@@ -68,7 +68,7 @@ export const facilitiesForAPI = async (locale: string) => {
 
   const roots = getFacilityRoots(expandedFacilities)
 
-  const list = flattenTreeNodes(roots)
+  return flattenTreeNodes(roots)
     .toSorted((a, b) => ascending(a.id, b.id))
     .map((item) => ({
       id: item.id,
@@ -88,8 +88,6 @@ export const facilitiesForAPI = async (locale: string) => {
 
       ...item.data.parameters,
     }))
-
-  return list
 }
 
 export async function facilitiesForAPI2(locale = "en"): Promise<FacilityDto[]> {

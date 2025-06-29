@@ -20,11 +20,30 @@ import DCExplorerBarChart from "./components/DCExplorerBarChart .astro"
       dimension="location__country"
       title="Country"
     />
+
     <DCExplorerRowChart
       collection="organizations"
-      dimension="theses_number"
-      title="theses_number"
+      dimension="with_userFacilities"
+      title="with_userFacilities"
     />
+
+
+    <DCExplorerRowChart
+      collection="organizations"
+      dimension="with_facilities"
+      title="with_facilities"
+    />
+    <DCExplorerRowChart
+      collection="organizations"
+      dimension="with_theses"
+      title="with_theses"
+    />
+    <DCExplorerRowChart
+      collection="organizations"
+      dimension="with_teachingEvents"
+      title="with_teachingEvents"
+    />
+
 
     <!-- </details> -->
   </div>

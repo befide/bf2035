@@ -63,6 +63,7 @@
     --color-kfb-blue: #2174a8;
     --color-kfb-yellow: #edc500;
     --color-kfb-gray: #757575;
+    --sl-font-system-mono: monospace;
     --sl-font: "Barlow Semi Condensed", serif;
 
     --sl-color-text-accent: var(--color-kfb-blue);

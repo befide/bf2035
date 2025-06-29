@@ -5,7 +5,7 @@ import { numberFormat, oneLineFormat } from "./config"
 import type { TaxonomyItemDto } from "@utils/taxonomy/taxonomyItem.ts"
 
 export const treeTableConfigMap = (key: string) => {
-  if (key === "taxonomy") {
+  if (key === "domainTaxonomy" || key === "genericTaxonomy") {
     return [
       {
         label: "Label",

@@ -1,21 +1,20 @@
 ---
 import DCExplorerCount from "@components/dc-explorer/components/DCExplorerCount.astro"
-import DCExplorerRowChart from "@components/dc-explorer/components/DCExplorerRowChart.astro"
 import DCExplorer from "@components/dc-explorer/components/DCExplorer.astro"
 import DCExplorerTreeDataTable from "@components/dc-explorer/components/DCExplorerTreeDataTable.astro"
+
+interface Props {
+  collection: string
+}
+
+const { collection } = Astro.props
 ---
 
-<DCExplorer collection="taxonomy">
+<DCExplorer {collection}>
   <div class="dc-explorer__filters">
-    <DCExplorerCount collection="taxonomy" dimension="count" />
-
-    <DCExplorerRowChart
-      collection="taxonomy"
-      dimension="taxonomyURI"
-      title="taxonomyURI"
-    />
+    <DCExplorerCount {collection} dimension="count" />
   </div>
   <div class="dc-explorer__items">
-    <DCExplorerTreeDataTable collection="taxonomy" dimension="id" />
+    <DCExplorerTreeDataTable {collection} dimension="id" />
   </div>
 </DCExplorer>
