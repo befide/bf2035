@@ -1,11 +1,11 @@
 ---
-import { allReferences } from "@/astro/domain/content.references";
+import { allReferences } from "@/astro/domain/content.references"
 
 // import ThesesExplorer from "@components/dc/ThesesExplorer.astro"
 
-import Badge from "../Badge.astro";
+import Badge from "../Badge.astro"
 
-const references = await allReferences();
+const references = await allReferences()
 
 // const getUniversity = async (thesis: CollectionEntry<"theses">) => {
 //   if (!thesis.data.universityRef) return null
@@ -16,7 +16,7 @@ const references = await allReferences();
 
 <section>
   <!-- <ThesesExplorer /> -->
-<p>{references.length}</p>
+  <p>{references.length}</p>
   <table id="dc-table-graph">
     <thead>
       <tr class="table-header">
@@ -38,15 +38,16 @@ const references = await allReferences();
             </td>
             <td>
               <ul class="reference__creators">
-              
-                {reference.data.creators.map( (creator) => (
-                  
+                {reference.data.creators.map((creator) => (
                   <li class="reference__creator">
-                    
-                    <span class="reference__creator__given-name">{creator.firstName}</span> <span class="reference__creator__family-name">{creator.lastName}</span><span class="reference__creator__name">{creator.name}</span>
-                  
-                    </li>
-                  
+                    <span class="reference__creator__given-name">
+                      {creator.firstName}
+                    </span>{" "}
+                    <span class="reference__creator__family-name">
+                      {creator.lastName}
+                    </span>
+                    <span class="reference__creator__name">{creator.name}</span>
+                  </li>
                 ))}
               </ul>
 

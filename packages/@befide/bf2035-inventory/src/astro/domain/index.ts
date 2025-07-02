@@ -13,32 +13,32 @@ export const getValue = (obj: any, path: string) => {
 const translations: Record<string, Record<string, string>> = {
   ":male": {
     en: "male",
-    de: "männlich"
+    de: "männlich",
   },
   ":female": {
     en: "female",
-    de: "weiblich"
+    de: "weiblich",
   },
   en: {
     en: "English",
-    de: "Englisch"
+    de: "Englisch",
   },
   de: {
     en: "German",
-    de: "Deutsch"
+    de: "Deutsch",
   },
   summer: {
     en: "2. Summer semester",
-    de: "2. Sommer-Semester"
+    de: "2. Sommer-Semester",
   },
   winter: {
     en: "1. Winter semester",
-    de: "1. Winter-Semester"
+    de: "1. Winter-Semester",
   },
   "Brandenburgisch Technische Universität Cottbus-Senftenberg": {
     en: "BTU Cottbus-Senftenberg",
     de: "BTU Cottbus-Senftenberg",
-  }
+  },
 }
 
 export const getValueTranslation = (key: string, locale: string) => {

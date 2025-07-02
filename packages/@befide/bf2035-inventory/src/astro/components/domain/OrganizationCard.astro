@@ -8,12 +8,17 @@ interface Props {
 let { organization } = Astro.props
 ---
 
-<a class="link-card rounded-sm border border-border" href={organization.id || " "}>
+<a
+  class="link-card border-border rounded-sm border"
+  href={organization.id || " "}
+>
   <div class="link-card__head">
     <h2>{organization.label.short.en}</h2>
     <p>{organization.label.fullName.en}</p>
     <p>
-      {organization.location?.city || ""}, {organization.location?.country?.code}
+      {organization.location?.city || ""}, {
+        organization.location?.country?.code
+      }
     </p>
   </div>
   <div class="link-card__body">
@@ -65,4 +70,3 @@ let { organization } = Astro.props
     </section>
   </div>
 </a>
-

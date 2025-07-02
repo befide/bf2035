@@ -13,8 +13,9 @@ const { sublist } = Astro.props
 
 <ul class:list={["tree", "not-content"]}>
   {
-    sublist.map((entry) => ((entry.type === "link") ? (
-        <li class="tree-node ">
+    sublist.map((entry) =>
+      entry.type === "link" ? (
+        <li class="tree-node">
           <a
             title={entry.label}
             href={entry.href}
@@ -42,7 +43,7 @@ const { sublist } = Astro.props
           >
             <SidebarRestorePoint />
             <summary class="group">
-              <span class="marker"></span>
+              <span class="marker" />
               <span class="label">{entry.label}</span>
               {entry.badge && (
                 <Badge
@@ -51,24 +52,18 @@ const { sublist } = Astro.props
                   text={entry.badge.text}
                 />
               )}
-
-
             </summary>
             <Astro.self sublist={entry.entries} />
           </details>
         </li>
-
       )
-    ))
+    )
   }
-
 </ul>
-
 
 <style>
   [aria-current="page"] {
     background-color: var(--sl-color-text-accent);
     color: white;
   }
-  
 </style>
