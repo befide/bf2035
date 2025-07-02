@@ -1,4 +1,3 @@
-// @ts-check
 import { defineConfig } from "astro/config"
 import starlightThemeObsidian from "starlight-theme-obsidian"
 import starlightImageZoom from "starlight-image-zoom"
@@ -11,7 +10,7 @@ import manifest from "./webmanifest.json"
 
 import AstroPWA from "@vite-pwa/astro"
 
-import { purgecss } from "@zokki/astro-purgecss"
+// import { purgecss } from "@zokki/astro-purgecss"
 
 import rehypeRewrite from "rehype-rewrite"
 

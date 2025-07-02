@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { csv2json } from "csv42"
 import fs from "fs"
 import path from "path"
@@ -41,9 +40,92 @@ function stringToArray(d = "") {
 async function doTable(
   collectionKey: "organizations" | "taxonomy-items" | "facilities" | "courses",
   tableId: string,
-  idMapper,
-  mapper,
-  postprocess?
+  idMapper: {
+    ({
+      university__organizationsId,
+      title,
+    }: {
+      university__organizationsId: string
+      title: { de: string; en: string }
+    }): string
+    (d: any): string
+    ({ id }: { id: string }): string
+    ({ id }: { id: string }): string
+    (arg0: any): any
+  },
+  mapper: {
+    (d: any): {
+      id: string
+      teachingEvent__taxonomyId: any
+      university__organizationsId: any
+      studyLevels__taxonomyId: string[]
+      weeklySemesterHours: any
+      semesters: string[]
+      title: any
+      objectives: any
+      contents: any
+      languages: string[]
+      partOfProgrammesOfStudy: string[]
+      links: any
+      review: any
+    }
+    (d: any): {
+      slug: any
+      taxonomyURI: any
+      id: any
+      parent__id: any
+      term: any
+      definition: any
+      abbreviations: { en: string[]; de: string[] }
+      synonyms: { en: string[]; de: string[] }
+      iris: string[]
+      review: any
+    }
+    (d: any): {
+      slug: any
+      id: any
+      parent__id: any
+      topLevel__id: any
+      isPartOfCommunity: any
+      instanceOfs__taxonomyId: string[]
+      befideOrganizationCategories: string[]
+      label: any
+      description: any
+      head: any
+      headLiteral: any
+      location: any
+      links: any
+      uniquePeopleCount: any
+      uniquePeopleCountSum: any
+      uniquePeopleCountRecursiveSum: any
+      review: any
+    }
+    (d: any): {
+      id: any
+      slug: any
+      instanceOf__taxonomyId: any
+      partOf__id: any
+      host__organizationsId: any
+      successorOf__id: any
+      parent__id: any
+      isUserFacility: any
+      isBMBF_FIS: any
+      label: any
+      tagLine: any
+      definition: any
+      primaryApplications__taxonomyId: string[]
+      secondaryApplications__taxonomyId: string[]
+      lifeCycle: any
+      parameters: any
+      links: any
+      references: string[]
+      review: any
+    }
+    (arg0: any): any
+  },
+  postprocess?:
+    | { (data: any): void; (arg0: void | unknown[]): void }
+    | undefined
 ) {
   const outputFolder = path.join(
     __dirname,
@@ -74,7 +156,7 @@ async function doTable(
 
   if (postprocess) postprocess(data)
 
-  data.forEach((d) => {
+  data.forEach((d: any) => {
     const id = idMapper(d)
     const filePath = path.join(outputFolder, id + ".mdx")
 
@@ -115,8 +197,18 @@ const doTaxonomy = async () =>
   await doTable(
     "taxonomy-items",
     "Taxonomy_items",
-    (d) => slug(d.id),
-    (d) => ({
+    (d: { id: string }) => slug(d.id),
+    (d: {
+      id: any
+      taxonomyURI: any
+      parent__id: any
+      term: any
+      definition: any
+      abbreviations: { en: string | undefined; de: string | undefined }
+      synonyms: { en: string | undefined; de: string | undefined }
+      iris: string | undefined
+      review: any
+    }) => ({
       slug: d.id,
       taxonomyURI: d.taxonomyURI,
       id: d.id,
@@ -142,7 +234,24 @@ const doOrganizations = async () =>
     "organizations",
     "Organizations",
     ({ id }: { id: string }) => slug(id),
-    (d) => ({
+    (d: {
+      id: any
+      parent__id: any
+      topLevel__id: any
+      isPartOfCommunity: any
+      instanceOfs__taxonomyId: string | undefined
+      befideOrganizationCategories: string | undefined
+      label: any
+      description: any
+      head: any
+      headLiteral: any
+      location: any
+      links: any
+      uniquePeopleCount: any
+      uniquePeopleCountSum: any
+      uniquePeopleCountRecursiveSum: any
+      review: any
+    }) => ({
       slug: d.id,
       id: d.id,
       parent__id: d.parent__id,
@@ -163,9 +272,12 @@ const doOrganizations = async () =>
       uniquePeopleCountRecursiveSum: d.uniquePeopleCountRecursiveSum,
       review: d.review,
     }),
-    (data) => {
+    (data: any[]) => {
       const communityOrganizations = data.filter(
-        (d) =>
+        (d: {
+          isPartOfCommunity: any
+          befideOrganizationCategories: string | string[]
+        }) =>
           d.isPartOfCommunity &&
           d.befideOrganizationCategories.indexOf("committee") !== 0
       )
@@ -180,7 +292,28 @@ const doFacilities = async () =>
     "facilities",
     "Facilities",
     ({ id }: { id: string }) => slug(id),
-    (d) => ({
+    (d: {
+      id: any
+      instanceOf__taxonomyId: any
+      partOf__id: any
+      host__organizationsId: any
+      successorOf__id: any
+      isUserFacility: any
+      isBMBF_FIS: any
+      label: any
+      tagLine: any
+      definition: any
+      primaryApplications__taxonomyId: string | undefined
+      secondaryApplications__taxonomyId: string | undefined
+      lifeCycle: any
+      parameters: {
+        primaryBeamParticles: string | undefined
+        secondaryBeamParticles: string | undefined
+      }
+      links: any
+      references: string | undefined
+      review: any
+    }) => ({
       id: d.id,
       slug: d.id,
       instanceOf__taxonomyId: d.instanceOf__taxonomyId,
@@ -235,10 +368,10 @@ function rollupUniquePeopleCountSum(node: any) {
       ),
     }
   } else {
-    node.children.forEach((child) => rollupUniquePeopleCountSum(child))
+    node.children.forEach((child: any) => rollupUniquePeopleCountSum(child))
     node.data.uniquePeopleCountRecursiveSum = {
       total: node.children.reduce(
-        (sum, child) =>
+        (sum: any, child: { data: { uniquePeopleCountRecursiveSum: any } }) =>
           sum + getValue(child.data.uniquePeopleCountRecursiveSum, "total"),
         getValue(node.data.uniquePeopleCountSum, "total")
       ),
@@ -246,8 +379,10 @@ function rollupUniquePeopleCountSum(node: any) {
         peopleCountDiscriminators.map((d) => [
           d,
           node.children.reduce(
-            (sum, child) =>
-              sum + getValue(child.data.uniquePeopleCountRecursiveSum, d),
+            (
+              sum: any,
+              child: { data: { uniquePeopleCountRecursiveSum: any } }
+            ) => sum + getValue(child.data.uniquePeopleCountRecursiveSum, d),
             getValue(node.data.uniquePeopleCountSum, d)
           ),
         ])

@@ -5,7 +5,7 @@ import LinkCardBody from "./LinkCardBody.astro"
 
 // use a `type`
 type Props = HTMLAttributes<"a">
-const { href, title, class: className } = Astro.props
+const { title, class: className } = Astro.props
 
 const classList = "card card--link".split(" ")
 if (className) {

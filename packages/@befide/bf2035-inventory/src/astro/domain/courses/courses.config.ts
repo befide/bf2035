@@ -1,21 +1,10 @@
-import path from "node:path"
-import { glob } from "astro/loaders"
-import { defineCollection, z } from "astro:content"
 import {
   DomainObjectZodSchema,
   NullableLocalizedString,
   ReviewSchema,
 } from "@/content/config.common"
-
-const INPUT_FILE_PATH = path.join(
-  import.meta.dirname,
-  "..",
-  "..",
-  "..",
-  "data",
-  "grist",
-  "courses.csv"
-)
+import { glob } from "astro/loaders"
+import { defineCollection, z } from "astro:content"
 
 export const CourseZodSchema = DomainObjectZodSchema.extend({
   title: NullableLocalizedString,
