@@ -22,6 +22,7 @@ export const allCommunityTopLevelOrganizations = async () =>
     "organizations",
     (entry) =>
       entry.data.isPartOfCommunity &&
+      entry.data.parent__id &&
       !entry.data.topLevel__id &&
       entry.data.befideOrganizationCategories.indexOf("committee") !== 0
   )
@@ -56,7 +57,7 @@ export const organizationsForAPI = async (locale: string) => {
   )
 }
 export const communityForAPI = async (locale: string) => {
-  const organizations = await allCommunityOrganizations()
+  const organizations = await allCommunityTopLevelOrganizations()
 
   return await Promise.all(
     organizations

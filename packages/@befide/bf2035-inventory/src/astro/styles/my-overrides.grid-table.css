@@ -40,7 +40,8 @@
 
   .grid-table th,
   .grid-table td {
-    padding: 00.25rem;
+    justify-content: center;
+    padding: 0 var(--table-cell--padding);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -64,7 +65,10 @@
     opacity: 0.5;
   }
 
-  .grid-table div {
+  .grid-table td > div {
+    /* width: 100%;*/
+    height: 100%;
+    padding-top: 0.25rem;
   }
   .grid-table th:hover .resize-handle {
     opacity: 0.3;

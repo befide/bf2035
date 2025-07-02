@@ -64,7 +64,9 @@
   "dc-explorer.tiles.title.university": "Universität",
   "dc-explorer.tiles.title.year": "Jahr",
   "dc-explorer.tiles.title.primaryBeamParticles": "Primärstrahl-Teilchen",
-  "dc-explorer.tiles.title.secondaryBeamParticles": "Seknundärstrahl-Teilchen"
-
-  
+  "dc-explorer.tiles.title.secondaryBeamParticles": "Seknundärstrahl-Teilchen",
+  "dc-explorer.tiles.title.with_userFacilities": "with user facilities",
+  "dc-explorer.tiles.title.with_facilities": "with facilities",
+  "dc-explorer.tiles.title.with_theses": "with doctoral theses",
+  "dc-explorer.tiles.title.with_teachingEvents": "with teaching events"
 }

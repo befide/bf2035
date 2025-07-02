@@ -10,8 +10,6 @@ export type FacilityDto = Pick<FacilitySchema, "id"> & {
   label: string
   tagLine: string
   host__label_short: string
-  // languages: string[]
-  // semesters: string[]
   parent__id: string | null
   instanceOf__term: string
   currentStatus__term: string

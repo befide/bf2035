@@ -99,8 +99,8 @@ export default defineConfig({
         // Override the theme's `Sidebar` component.
         Sidebar: "./src/astro/overrides/Sidebar.astro",
         MarkdownContent: "./src/astro/overrides/MarkdownContent.astro",
+        Header: "./src/astro/overrides/Header.astro",
         PageFrame: "./src/astro/overrides/PageFrame.astro",
-
         Pagination: "./src/astro/overrides/Pagination.astro",
       },
 
@@ -164,7 +164,7 @@ export default defineConfig({
         },
       ],
     }),
-    purgecss(),
+    // purgecss(),
     AstroPWA({
       workbox: {
         skipWaiting: true,

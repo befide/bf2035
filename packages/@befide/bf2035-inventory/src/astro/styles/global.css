@@ -1,11 +1,7 @@
-/* @import "./table.css";
-/*  */
-@import "./property-list.css";
-
+@import "./baseline.css";
+@import "./my-overrides.config.css";
 @import "./my-overrides.card.css";
 
-@import "./my-overrides.config.css";
-@import "./baseline.css";
 @import "./my-overrides.content-panel.css";
 @import "./my-overrides.typography.css";
 @import "./my-overrides.table.css";

@@ -6,7 +6,7 @@
   .dc-explorer {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: var(--sl-content-pad-x);
   }
 }
 
@@ -14,9 +14,10 @@
   .dc-explorer {
     display: flex;
     flex-direction: row-reverse;
-    gap: 0.25rem;
-    width: calc(100% + 1rem);
+    gap: var(--sl-content-pad-x);
+    width: calc(100%);
     margin: 0 -0.5rem;
+    margin-left: 0;
   }
 
   .dc-explorer__filters {
@@ -43,5 +44,8 @@
     font-size: var(--text-sm);
 
     overflow-y: scroll;
+
+    height: calc(100vh - 10rem);
+    background-color: red;
   }
 }

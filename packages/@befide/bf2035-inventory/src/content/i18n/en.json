@@ -11,7 +11,7 @@
   "organizationCategory.full.international": "International facilities",
   "organizationCategory.full.mpg": "Max Planck Society (MPG)",
   "organizationCategory.full.university": "Universities",
-  
+
   "taxonomy.type.affiliation": "Affiliation",
   "taxonomy.type.accelerator-type": "Affiliation",
   "taxonomy.type.project": "Project",
@@ -65,7 +65,9 @@
   "dc-explorer.tiles.title.university": "University",
   "dc-explorer.tiles.title.year": "Year",
   "dc-explorer.tiles.title.primaryBeamParticles": "Primary Beam Particles",
-  "dc-explorer.tiles.title.secondaryBeamParticles": "Secondary Beam Particles"
-
-  
+  "dc-explorer.tiles.title.secondaryBeamParticles": "Secondary Beam Particles",
+  "dc-explorer.tiles.title.with_userFacilities": "with user facilities",
+  "dc-explorer.tiles.title.with_facilities": "with facilities",
+  "dc-explorer.tiles.title.with_theses": "with doctoral theses",
+  "dc-explorer.tiles.title.with_teachingEvents": "with teaching events"
 }

@@ -45,7 +45,6 @@ const locale = Astro.currentLocale
       const collection = this.dataset.collection
 
       const $idx = getCollectionIndex(collection)
-      console.log($idx)
 
       $idx?.listen(() => {
         const idx = $idx.get()
