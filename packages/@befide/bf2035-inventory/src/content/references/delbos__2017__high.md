@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# High repetition rate laser-plasma accelerator: 5 hz electron beam generation and advanced target design 
+# High repetition rate laser-plasma accelerator: 5 hz electron beam generation and advanced target design
 
- _Notes_
-
+_Notes_

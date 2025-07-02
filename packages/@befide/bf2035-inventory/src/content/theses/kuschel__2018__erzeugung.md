@@ -32,32 +32,25 @@ keywords:
 # Erzeugung dichter elektronenpulse mit laser-plasma-beschleunigern für QED experimente in hohen feldern
 
 > [!info] Metadata
+>
 > - **Authors**: ["Stephan Kuschel"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > Die Entwicklung von Laser-Plasma getriebenen Beschleunigern (LWFA) ist eine vergleichsweise neue Entwicklung. Durch die enormen Felder, die das Plasma zur Verfügung stellen kann, ist es möglich, ultrakurze und dichte Elektronenpulse über sehr kurze Strecken zu beschleunigen. In dieser Arbeit wird gezeigt, dass die Gasdynamik auf einer $\sim 10\einh{\mu m}$-Skala, die bisher nicht gemessen werden konnte, großen Einfluss auf den LWFA-Beschleunigungsprozess hat. Dichtemodulationen auf einer Skala von $10\einh{\mu m}$ wurden mithilfe eines ultrakurzen Laserpulses in Plasmen vermessen, die durch die Fokussierung des Hochintensitätslasers in einen Gasjet erzeugt wurden. Es wird gezeigt, dass diese Dichtemodulationen die Selbstinjektion in diesem Plasma auslösen. Die Resultate werden sowohl durch ein analytisches Modell sowie Particle-in-Cell (PIC) Simulationen bestätigt. Diese Erkenntnisse ebnen den Weg zu einem Plasmabeschleuniger bei dem Injektions- und Beschleunigsprozess unabhängig voneinander kontrolliert werden können. Darüber hinaus wurde in dieser Arbeit ein neues Kriterium für die Homogenität der Plasmadichte eingeführt, das auch in einem allgemeineren Kontext für Plasmabeschleuniger gilt. Im zweiten Teil der Dissertation wird untersucht, inwiefern kurze Elektronenpulse in Plasmen fokussiert werden können. In dieser Arbeit wird erstmalig das Konzept der passiven Plasmalinse mit ultrakurzen LWFA-Elektronenpulsen untersucht. Sowohl Experimente als auch Simulationen demonstrieren den Effekt der passiven Plasmalinse. Es wurde zudem ein analytisches Modell entwickelt, welches die experimentellen Ergebnisse beschreibt. Es ist hervorzuheben, dass die gemessene Fokussierstärke die eines konventionellen Quadrupolmagneten deutlich übersteigt. Das Modell sagt des Weiteren eine Steigerung der Fokussierstärke für Elektronenpulse mit größerer Ladung voraus.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

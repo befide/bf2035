@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Development and application of a universal distributed data acquisition systemfor orbit feedback applicationson electron and hadron synchrotrons 
+# Development and application of a universal distributed data acquisition systemfor orbit feedback applicationson electron and hadron synchrotrons
 
- _Notes_
-
+_Notes_

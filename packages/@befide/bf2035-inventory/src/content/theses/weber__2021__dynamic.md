@@ -30,32 +30,24 @@ keywords:
 # Dynamic modelling of incidents for the protection of helium cryostats against excessive pressure
 
 > [!info] Metadata
+>
 > - **Authors**: ["Christina Weber"]
 > - **Year**: 2021
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

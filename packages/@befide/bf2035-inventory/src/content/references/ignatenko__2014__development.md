@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Development of Beam Halo Monitors for the European XFEL using radiation hard sensors and demonstration of the technology at FLASH 
+# Development of Beam Halo Monitors for the European XFEL using radiation hard sensors and demonstration of the technology at FLASH
 
- _Notes_
-
+_Notes_

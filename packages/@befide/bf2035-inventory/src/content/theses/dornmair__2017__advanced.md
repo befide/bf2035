@@ -30,32 +30,24 @@ keywords:
 # Advanced beam dynamics and diagnostics concepts for laser-plasma accelerators
 
 > [!info] Metadata
+>
 > - **Authors**: ["Irene Dornmair"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

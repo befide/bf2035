@@ -30,32 +30,24 @@ keywords:
 # Determination of beam coupling impedance in the frequency domain
 
 > [!info] Metadata
+>
 > - **Authors**: ["Uwe Niedermayer"]
 > - **Year**: 2016
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

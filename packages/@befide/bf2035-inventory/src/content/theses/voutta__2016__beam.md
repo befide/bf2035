@@ -30,32 +30,24 @@ keywords:
 # Beam heat load investigations with a cold vacuum chamber for diagnostics in a synchrotron light source
 
 > [!info] Metadata
+>
 > - **Authors**: ["Robert Voutta"]
 > - **Year**: 2016
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

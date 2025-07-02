@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Excitation strengths and transition radii differences of one-phonon quadrupole excitations from electron scattering on 92,94Zr and 94Mo 
+# Excitation strengths and transition radii differences of one-phonon quadrupole excitations from electron scattering on 92,94Zr and 94Mo
 
- _Notes_
-
+_Notes_

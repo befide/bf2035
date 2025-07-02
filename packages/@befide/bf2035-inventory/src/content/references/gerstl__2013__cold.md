@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# A COLD vacuum chamber for beam heat load DIAGnostics (COLDDIAG) 
+# A COLD vacuum chamber for beam heat load DIAGnostics (COLDDIAG)
 
- _Notes_
-
+_Notes_

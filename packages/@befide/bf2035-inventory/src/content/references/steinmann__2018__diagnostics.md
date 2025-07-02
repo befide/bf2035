@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Diagnostics of short electron bunches with THz detectors in particle accelerators 
+# Diagnostics of short electron bunches with THz detectors in particle accelerators
 
- _Notes_
-
+_Notes_

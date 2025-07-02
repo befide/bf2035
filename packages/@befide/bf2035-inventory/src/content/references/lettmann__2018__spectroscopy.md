@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Spectroscopy of neutron-rich germanium and krypton isotopes - a quest of triaxiality 
+# Spectroscopy of neutron-rich germanium and krypton isotopes - a quest of triaxiality
 
- _Notes_
-
+_Notes_

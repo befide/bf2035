@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Methods for the design and analysis of higher-order mode couplers applied to superconducting accelerating structures 
+# Methods for the design and analysis of higher-order mode couplers applied to superconducting accelerating structures
 
- _Notes_
-
+_Notes_

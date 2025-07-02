@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Shaping of laser-accelerated ion beams for applications in high energy density physics 
+# Shaping of laser-accelerated ion beams for applications in high energy density physics
 
- _Notes_
-
+_Notes_

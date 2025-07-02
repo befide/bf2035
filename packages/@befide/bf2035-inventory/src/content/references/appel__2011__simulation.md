@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Simulation und Messung longitudinaler Raumladungseffekte in intensiven Ionenstrahlen im SIS18 Synchrotron. 
+# Simulation und Messung longitudinaler Raumladungseffekte in intensiven Ionenstrahlen im SIS18 Synchrotron.
 
- _Notes_
-
+_Notes_

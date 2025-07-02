@@ -31,32 +31,24 @@ keywords:
 # Measuring the electron bunch timing with femtosecond resolution at FLASH
 
 > [!info] Metadata
+>
 > - **Authors**: ["Marie Kristin Bock"]
 > - **Year**: 2012
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

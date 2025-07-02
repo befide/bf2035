@@ -31,32 +31,24 @@ keywords:
 # A robust fibre laser system for electro-optic electron bunch profile measurements at FLASH
 
 > [!info] Metadata
+>
 > - **Authors**: ["Laurens-Georg Wißmann"]
 > - **Year**: 2012
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

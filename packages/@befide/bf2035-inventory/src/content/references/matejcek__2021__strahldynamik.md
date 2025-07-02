@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Strahldynamik der Niederenergie-Strahlführung von MESA unter Berücksichtigung von Raumladung und Multipol-Beiträgen höherer Ordnung 
+# Strahldynamik der Niederenergie-Strahlführung von MESA unter Berücksichtigung von Raumladung und Multipol-Beiträgen höherer Ordnung
 
- _Notes_
-
+_Notes_

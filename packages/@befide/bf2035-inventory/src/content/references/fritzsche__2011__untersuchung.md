@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Untersuchung der pygmy dipol resonanz in 60ni 
+# Untersuchung der pygmy dipol resonanz in 60ni
 
- _Notes_
-
+_Notes_

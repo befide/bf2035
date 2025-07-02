@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Simulation und Messung der Hochfrequenzeigenschaften einer supraleitenden Photo-Elektronenquelle 
+# Simulation und Messung der Hochfrequenzeigenschaften einer supraleitenden Photo-Elektronenquelle
 
- _Notes_
-
+_Notes_

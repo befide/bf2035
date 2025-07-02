@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Feldkorrekturregelung für dynamische Prozesse in normalleitenden Magneten 
+# Feldkorrekturregelung für dynamische Prozesse in normalleitenden Magneten
 
- _Notes_
-
+_Notes_

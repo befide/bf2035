@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Numerical simulation of electromagnetic fields in complex multi-cavity superconducting radio frequency resonators 
+# Numerical simulation of electromagnetic fields in complex multi-cavity superconducting radio frequency resonators
 
- _Notes_
-
+_Notes_

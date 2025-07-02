@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Intermediate-energy coulomb excitation with the PreSPEC-AGATA setup 
+# Intermediate-energy coulomb excitation with the PreSPEC-AGATA setup
 
- _Notes_
-
+_Notes_

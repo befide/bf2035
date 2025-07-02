@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Spindynamik von Elektronenstrahlen in Kreisbeschleunigern 
+# Spindynamik von Elektronenstrahlen in Kreisbeschleunigern
 
- _Notes_
-
+_Notes_

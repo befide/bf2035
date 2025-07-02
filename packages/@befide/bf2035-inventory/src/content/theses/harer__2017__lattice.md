@@ -31,32 +31,24 @@ keywords:
 # Lattice Design and Beam Optics Calculations for the New Large-Scale Electron-Positron Collider FCC-ee
 
 > [!info] Metadata
+>
 > - **Authors**: ["Bastian Härer"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

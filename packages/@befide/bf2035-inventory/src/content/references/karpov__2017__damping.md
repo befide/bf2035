@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Damping of coherent oscillations in intense ion beams 
+# Damping of coherent oscillations in intense ion beams
 
- _Notes_
-
+_Notes_

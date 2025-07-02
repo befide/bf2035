@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Interaction Region Design for a 100 TeV Proton-Proton Collider 
+# Interaction Region Design for a 100 TeV Proton-Proton Collider
 
- _Notes_
-
+_Notes_

@@ -31,32 +31,24 @@ keywords:
 # Entwicklung und Aufbau der ersten gekoppelten CH-Struktur für den neuen Protoneninjektor an der Facility for Antiproton and Ion Research
 
 > [!info] Metadata
+>
 > - **Authors**: ["Robert Brodhage"]
 > - **Year**: 2015
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

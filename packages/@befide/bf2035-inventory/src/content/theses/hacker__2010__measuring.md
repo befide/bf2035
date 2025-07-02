@@ -30,32 +30,24 @@ keywords:
 # Measuring the electron beam energy in a magnetic bunch compressor
 
 > [!info] Metadata
+>
 > - **Authors**: ["Kirsten Hacker"]
 > - **Year**: 2010
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -30,32 +30,24 @@ keywords:
 # Dielectrically lined rectangular waveguides as wakefield based dechirper structures
 
 > [!info] Metadata
+>
 > - **Authors**: ["Franziska Reimann"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

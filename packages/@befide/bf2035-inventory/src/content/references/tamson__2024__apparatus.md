@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Apparatus for the measurement of physical properties of cryogenic fluid mixtures 
+# Apparatus for the measurement of physical properties of cryogenic fluid mixtures
 
- _Notes_
-
+_Notes_

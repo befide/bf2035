@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Entwicklung eines Multi-Leaf Faraday Cups zur Strahldiagnose in der Augentumortherapie 
+# Entwicklung eines Multi-Leaf Faraday Cups zur Strahldiagnose in der Augentumortherapie
 
- _Notes_
-
+_Notes_

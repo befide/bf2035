@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Auslegung, Planung und Aufbau einer dritten Rezirkulation mit ERL-Modus für den S-DALINAC 
+# Auslegung, Planung und Aufbau einer dritten Rezirkulation mit ERL-Modus für den S-DALINAC
 
- _Notes_
-
+_Notes_

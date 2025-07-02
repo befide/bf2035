@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Optimierung des Beschleunigerbetriebs für Experimente zur Hadronen- und Detektorphysik an der Elektronen-Stretcher-Anlage ELSA 
+# Optimierung des Beschleunigerbetriebs für Experimente zur Hadronen- und Detektorphysik an der Elektronen-Stretcher-Anlage ELSA
 
- _Notes_
-
+_Notes_

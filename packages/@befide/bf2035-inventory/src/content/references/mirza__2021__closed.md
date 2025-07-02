@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Closed orbit feedback system for the fast ramping hadron synchrotrons 
+# Closed orbit feedback system for the fast ramping hadron synchrotrons
 
- _Notes_
-
+_Notes_

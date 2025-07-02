@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Lattice Design and Beam Optics Calculations for the New Large-Scale Electron-Positron Collider FCC-ee 
+# Lattice Design and Beam Optics Calculations for the New Large-Scale Electron-Positron Collider FCC-ee
 
- _Notes_
-
+_Notes_

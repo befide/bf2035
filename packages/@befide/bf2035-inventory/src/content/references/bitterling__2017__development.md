@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Development of radiation-tolerant components for the quench detection system at the CERN large hadron collider 
+# Development of radiation-tolerant components for the quench detection system at the CERN large hadron collider
 
- _Notes_
-
+_Notes_

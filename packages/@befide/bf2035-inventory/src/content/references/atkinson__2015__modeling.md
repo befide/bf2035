@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Modeling of magnetic optic for the short pulse mode operation of Energy Recovery Linac based light sources 
+# Modeling of magnetic optic for the short pulse mode operation of Energy Recovery Linac based light sources
 
- _Notes_
-
+_Notes_

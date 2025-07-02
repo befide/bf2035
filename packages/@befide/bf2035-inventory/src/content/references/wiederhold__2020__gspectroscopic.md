@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# γ-spectroscopic determination of mean lifetimes and magnetic moments of excited nuclear states 
+# γ-spectroscopic determination of mean lifetimes and magnetic moments of excited nuclear states
 
- _Notes_
-
+_Notes_

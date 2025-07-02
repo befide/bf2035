@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Gamma-ray spectroscopy of 92,94Se isomeric decay 
+# Gamma-ray spectroscopy of 92,94Se isomeric decay
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Polarization measurement and manipulation for electric dipole moment measurements in storage rings 
+# Polarization measurement and manipulation for electric dipole moment measurements in storage rings
 
- _Notes_
-
+_Notes_

@@ -31,32 +31,24 @@ keywords:
 # Transverse emittance measurement and preservation at the LHC
 
 > [!info] Metadata
+>
 > - **Authors**: ["Maria Kuhn"]
 > - **Year**: 2016
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Probing nuclear structure relevant for neutrinoless double-beta decay with nuclear resonance fluorescence 
+# Probing nuclear structure relevant for neutrinoless double-beta decay with nuclear resonance fluorescence
 
- _Notes_
-
+_Notes_

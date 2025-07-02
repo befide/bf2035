@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Petawatt-class laser optimization and ultrashort probe pulse generation for relativistic laser-plasma interactions 
+# Petawatt-class laser optimization and ultrashort probe pulse generation for relativistic laser-plasma interactions
 
- _Notes_
-
+_Notes_

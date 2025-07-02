@@ -30,32 +30,24 @@ keywords:
 # Electrical-Field Sensitive Yba2cu3o(7-X) Detectors for Real-Time Monitoring of Picosecond Thz Pulses
 
 > [!info] Metadata
+>
 > - **Authors**: ["Juliane Raasch"]
 > - **Year**: 2019
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

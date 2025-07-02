@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Entwicklung eines TM110-HF-Deflektors zur longitudinal aufgelösten transversalen Strahldiagnose von Pikosekunden-Elektronenbunchen im MeV-Bereich 
+# Entwicklung eines TM110-HF-Deflektors zur longitudinal aufgelösten transversalen Strahldiagnose von Pikosekunden-Elektronenbunchen im MeV-Bereich
 
- _Notes_
-
+_Notes_

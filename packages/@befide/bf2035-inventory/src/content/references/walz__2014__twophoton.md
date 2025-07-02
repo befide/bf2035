@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# The two-photon decay of the 11/2- isomer of 137Ba and mixed-symmetry states of 92,94Zr and 94Mo 
+# The two-photon decay of the 11/2- isomer of 137Ba and mixed-symmetry states of 92,94Zr and 94Mo
 
- _Notes_
-
+_Notes_

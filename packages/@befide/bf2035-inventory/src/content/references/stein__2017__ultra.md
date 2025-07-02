@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Ultra fast beam loss mechanisms at the LHC and their detection for use in machine protection 
+# Ultra fast beam loss mechanisms at the LHC and their detection for use in machine protection
 
- _Notes_
-
+_Notes_

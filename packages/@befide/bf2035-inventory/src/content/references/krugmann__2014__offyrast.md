@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Off-yrast low-spin structure of deformed nuclei at mass number a≈150 
+# Off-yrast low-spin structure of deformed nuclei at mass number a≈150
 
- _Notes_
-
+_Notes_

@@ -30,32 +30,24 @@ keywords:
 # Design study of a laser-driven x-ray source for medical fluorescence imaging
 
 > [!info] Metadata
+>
 > - **Authors**: ["Theresa Brümmer"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

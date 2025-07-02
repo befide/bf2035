@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Untersuchungen zur Profilmessung von Hadronenstrahlen mittels Restgaslumineszenz und -ionisation 
+# Untersuchungen zur Profilmessung von Hadronenstrahlen mittels Restgaslumineszenz und -ionisation
 
- _Notes_
-
+_Notes_

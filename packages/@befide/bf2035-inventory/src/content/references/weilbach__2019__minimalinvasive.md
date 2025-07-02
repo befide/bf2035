@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Minimal-invasive strahldiagnose für hoch intensive Elektronenstrahlen 
+# Minimal-invasive strahldiagnose für hoch intensive Elektronenstrahlen
 
- _Notes_
-
+_Notes_

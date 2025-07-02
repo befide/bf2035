@@ -32,32 +32,24 @@ keywords:
 # Entwicklung eines supraleitenden Beschleunigermoduls für den rezirkulierenden Betrieb am Mainz Energy-Recovering Superconducting Accelerator (MESA)
 
 > [!info] Metadata
+>
 > - **Authors**: ["Timo U. Stengler"]
 > - **Year**: 2020
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Quench study for FAIR magnets 
+# Quench study for FAIR magnets
 
- _Notes_
-
+_Notes_

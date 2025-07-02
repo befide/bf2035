@@ -36,7 +36,6 @@ related:
   - []
 ---
 
-# Feasibility studies for a transverse deflecting structure measurement at FLUTE 
+# Feasibility studies for a transverse deflecting structure measurement at FLUTE
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Messung und Korrektur der Arbeitspunkte während der Energierampe am Stretcherring von ELSA 
+# Messung und Korrektur der Arbeitspunkte während der Energierampe am Stretcherring von ELSA
 
- _Notes_
-
+_Notes_

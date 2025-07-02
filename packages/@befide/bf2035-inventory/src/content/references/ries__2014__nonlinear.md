@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Nonlinear momentum compaction and coherent synchrotron radiation at the Metrology Light Source 
+# Nonlinear momentum compaction and coherent synchrotron radiation at the Metrology Light Source
 
- _Notes_
-
+_Notes_

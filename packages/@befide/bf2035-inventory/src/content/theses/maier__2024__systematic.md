@@ -37,32 +37,25 @@ keywords:
 # Systematic Studies of the Micro-Bunching Instability with an Additional Corrugated Structure Impedance at KARA
 
 > [!info] Metadata
+>
 > - **Authors**: ["Sebastian Maier"]
 > - **Year**: 2024
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > Die Mikrobündelungs-Instabilität (engl. micro-bunching instability) ist eine Barriere auf dem Weg zu Synchrotron-Lichtquellen und Elektronen-Speicherringen mit höherer Brillanz und Spitzenleistung. Um die Entstehung der Substrukturen im longitudinalen Phasenraum und Bunch-Profil zu untersuchen, zu verstehen und zu kontrollieren wird eine zusätzliche und austauschbare Impedanz in den KIT-Speicherring KARA eingebaut. In dieser Arbeit wird ein Plattenpaar mit periodischen und rechteckigen Vertiefungen als zusätzliche Impedanzquelle untersucht. Die Untersuchungen behandeln den Einfluss der unterschiedlichen Parameter der Vertiefungen auf deren Impedanz, den Einfluss der zusätzlichen Impedanz auf die longitudinale Strahldynamik und die Ermittlung des Einflusses der Maschinen- und Strahlparameter auf die effektivste Impedanz. Letzteres ermöglicht Einblicke in die Mechanismen, die der Mikrobündelungs-Instabilität zugrunde liegen. Darüber hinaus werden verschiedene Fertigungsverfahren und die Produktion erster Prototypen präsentiert.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

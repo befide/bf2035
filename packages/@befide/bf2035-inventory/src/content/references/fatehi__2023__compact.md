@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Compact high-temperature superconducting magnets for laser-plasma accelerator beam capture and transport 
+# Compact high-temperature superconducting magnets for laser-plasma accelerator beam capture and transport
 
- _Notes_
-
+_Notes_

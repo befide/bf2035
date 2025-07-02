@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Investigation on the transport of high-intensity beams using particle-in-cell simulations 
+# Investigation on the transport of high-intensity beams using particle-in-cell simulations
 
- _Notes_
-
+_Notes_

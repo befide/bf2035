@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Inelastic scattering of Ni and Zn isotopes off a proton target 
+# Inelastic scattering of Ni and Zn isotopes off a proton target
 
- _Notes_
-
+_Notes_

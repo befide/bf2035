@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Simulation and First Experimental Tests of an Electron Beam Transport System for a Laser Wakefield Accelerator 
+# Simulation and First Experimental Tests of an Electron Beam Transport System for a Laser Wakefield Accelerator
 
- _Notes_
-
+_Notes_

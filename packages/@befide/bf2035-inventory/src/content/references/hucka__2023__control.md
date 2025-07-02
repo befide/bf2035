@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Control System for the Next Generation In-flight Separator Super-FRS applied to New Isotope Search with the FRS. 
+# Control System for the Next Generation In-flight Separator Super-FRS applied to New Isotope Search with the FRS.
 
- _Notes_
-
+_Notes_

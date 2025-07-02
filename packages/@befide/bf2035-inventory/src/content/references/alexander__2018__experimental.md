@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Experimental Investigation of the Beam Dynamics of the MESA Photoinjector 
+# Experimental Investigation of the Beam Dynamics of the MESA Photoinjector
 
- _Notes_
-
+_Notes_

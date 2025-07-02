@@ -31,32 +31,24 @@ keywords:
 # Influence of Pulsed Heat Load on the Performance of Diamond Bragg Mirrors for an Xfel-Oscillator
 
 > [!info] Metadata
+>
 > - **Authors**: ["Christoph Maag"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

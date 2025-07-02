@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Numerical and experimental studies to model and reduce the impedance in the CERN Super Proton Synchrotron (SPS) 
+# Numerical and experimental studies to model and reduce the impedance in the CERN Super Proton Synchrotron (SPS)
 
- _Notes_
-
+_Notes_

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Electron clouds in high energy hadron accelerators. 
+# Electron clouds in high energy hadron accelerators.
 
- _Notes_
-
+_Notes_

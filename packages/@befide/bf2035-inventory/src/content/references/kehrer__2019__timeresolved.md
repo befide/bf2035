@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Time-resolved studies of the micro-bunching instability at KARA 
+# Time-resolved studies of the micro-bunching instability at KARA
 
- _Notes_
-
+_Notes_

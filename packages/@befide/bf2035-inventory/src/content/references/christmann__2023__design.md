@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Design studies for the beam-dump experiment DarkMESA 
+# Design studies for the beam-dump experiment DarkMESA
 
- _Notes_
-
+_Notes_

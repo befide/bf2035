@@ -30,32 +30,24 @@ keywords:
 # Simulation and measurement of the dynamics of ultra-short electron bunch profiles for the generation of coherent THz radiation
 
 > [!info] Metadata
+>
 > - **Authors**: ["Patrick Schönfeldt"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

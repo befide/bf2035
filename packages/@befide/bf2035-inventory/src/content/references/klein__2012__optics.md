@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Optics calculations and simulations of longitudinal beam dynamics for the low-alpha mode at ANKA 
+# Optics calculations and simulations of longitudinal beam dynamics for the low-alpha mode at ANKA
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Lifetime measurements in the neutron-rich 148Ce nuclide at the low-Z boundary of the N=90 shape-phase transition 
+# Lifetime measurements in the neutron-rich 148Ce nuclide at the low-Z boundary of the N=90 shape-phase transition
 
- _Notes_
-
+_Notes_

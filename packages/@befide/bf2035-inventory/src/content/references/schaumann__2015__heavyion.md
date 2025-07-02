@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Heavy-ion performance of the LHC and future colliders 
+# Heavy-ion performance of the LHC and future colliders
 
- _Notes_
-
+_Notes_

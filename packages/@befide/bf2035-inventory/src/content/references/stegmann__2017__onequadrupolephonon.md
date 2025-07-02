@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# One-quadrupole-phonon states of heavy vibrational nuclei studied in coulomb excitation 
+# One-quadrupole-phonon states of heavy vibrational nuclei studied in coulomb excitation
 
- _Notes_
-
+_Notes_

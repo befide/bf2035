@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# A superfluid liquid helium target for electron scattering experiments at the S-DALINAC 
+# A superfluid liquid helium target for electron scattering experiments at the S-DALINAC
 
- _Notes_
-
+_Notes_

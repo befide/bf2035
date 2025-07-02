@@ -30,32 +30,24 @@ keywords:
 # Diagnostics of short electron bunches with THz detectors in particle accelerators
 
 > [!info] Metadata
+>
 > - **Authors**: ["Johannes Steinmann"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Influence of Pulsed Heat Load on the Performance of Diamond Bragg Mirrors for an Xfel-Oscillator 
+# Influence of Pulsed Heat Load on the Performance of Diamond Bragg Mirrors for an Xfel-Oscillator
 
- _Notes_
-
+_Notes_

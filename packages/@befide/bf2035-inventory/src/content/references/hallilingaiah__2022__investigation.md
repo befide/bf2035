@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Investigation and development of a transverse deflecting structure 
+# Investigation and development of a transverse deflecting structure
 
- _Notes_
-
+_Notes_

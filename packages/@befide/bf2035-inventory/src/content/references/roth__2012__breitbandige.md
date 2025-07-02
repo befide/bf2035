@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Breitbandige Feedback-Systeme zur Dämpfung kohärenter Strahlinstabilitäten am Stretcherring ELSA 
+# Breitbandige Feedback-Systeme zur Dämpfung kohärenter Strahlinstabilitäten am Stretcherring ELSA
 
- _Notes_
-
+_Notes_

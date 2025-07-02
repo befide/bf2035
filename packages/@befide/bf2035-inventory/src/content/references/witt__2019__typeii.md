@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Type-II shell evolution in 98zr 
+# Type-II shell evolution in 98zr
 
- _Notes_
-
+_Notes_

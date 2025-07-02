@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Erzeugung dichter elektronenpulse mit laser-plasma-beschleunigern für QED experimente in hohen feldern 
+# Erzeugung dichter elektronenpulse mit laser-plasma-beschleunigern für QED experimente in hohen feldern
 
- _Notes_
-
+_Notes_

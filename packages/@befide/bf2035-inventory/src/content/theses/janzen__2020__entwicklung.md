@@ -30,32 +30,24 @@ keywords:
 # Entwicklung eines neuen Messverfahrens zur Durchflussmessung in der Kryotechnik
 
 > [!info] Metadata
+>
 > - **Authors**: ["Andreas Janzen"]
 > - **Year**: 2020
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

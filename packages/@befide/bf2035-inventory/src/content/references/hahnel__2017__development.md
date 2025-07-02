@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Development of an IH-type linac for the acceleration of high current heavy ion beams 
+# Development of an IH-type linac for the acceleration of high current heavy ion beams
 
- _Notes_
-
+_Notes_

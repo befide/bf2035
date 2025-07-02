@@ -30,32 +30,24 @@ keywords:
 # Echtzeitbestimmung longitudinaler Elektronenstrahlparameter mittels absoluter Intensitäts- und Spektralmessung einzelner kohärenter THz Strahlungspulse
 
 > [!info] Metadata
+>
 > - **Authors**: ["Stephan Wesch"]
 > - **Year**: 2012
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

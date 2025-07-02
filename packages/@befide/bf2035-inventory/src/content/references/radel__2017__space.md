@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# On space charge driven microbunching instability in bERLinPro 
+# On space charge driven microbunching instability in bERLinPro
 
- _Notes_
-
+_Notes_

@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Level lifetimes and quadrupole moments from projectile coulomb excitation of A<code>126</code>130 nuclei 
+# Level lifetimes and quadrupole moments from projectile coulomb excitation of A<code>126</code>130 nuclei
 
- _Notes_
-
+_Notes_

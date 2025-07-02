@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Micro-Bunching Control at Electron Storage Rings with Reinforcement Learning 
+# Micro-Bunching Control at Electron Storage Rings with Reinforcement Learning
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Spindynamik in Elektronensynchrotronen 
+# Spindynamik in Elektronensynchrotronen
 
- _Notes_
-
+_Notes_

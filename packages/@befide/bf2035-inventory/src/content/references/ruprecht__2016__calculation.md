@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Calculation of coupled bunch effects in the synchrotron light source BESSY VSR 
+# Calculation of coupled bunch effects in the synchrotron light source BESSY VSR
 
- _Notes_
-
+_Notes_

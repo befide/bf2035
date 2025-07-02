@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Dielectrically lined rectangular waveguides as wakefield based dechirper structures 
+# Dielectrically lined rectangular waveguides as wakefield based dechirper structures
 
- _Notes_
-
+_Notes_

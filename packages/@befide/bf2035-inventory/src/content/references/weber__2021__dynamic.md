@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Dynamic modelling of incidents for the protection of helium cryostats against excessive pressure 
+# Dynamic modelling of incidents for the protection of helium cryostats against excessive pressure
 
- _Notes_
-
+_Notes_

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Advanced beam dynamics and diagnostics concepts for laser-plasma accelerators 
+# Advanced beam dynamics and diagnostics concepts for laser-plasma accelerators
 
- _Notes_
-
+_Notes_

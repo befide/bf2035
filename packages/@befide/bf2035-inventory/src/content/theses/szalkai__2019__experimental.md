@@ -30,32 +30,24 @@ keywords:
 # Experimental investigations for development of an innovative SiC sensor for spectrometry of neutrons under harsh environmental conditions
 
 > [!info] Metadata
+>
 > - **Authors**: ["Dora Szalkai"]
 > - **Year**: 2019
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

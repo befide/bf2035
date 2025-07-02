@@ -32,7 +32,6 @@ related:
   - []
 ---
 
-# Collective phenomena in (multi)strange-hadron production at high µB: performance of the CBM experiment at FAIR 
+# Collective phenomena in (multi)strange-hadron production at high µB: performance of the CBM experiment at FAIR
 
- _Notes_
-
+_Notes_

@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Fast scintillating ZnO ceramics for relativistic heavy-ion beam diagnostics 
+# Fast scintillating ZnO ceramics for relativistic heavy-ion beam diagnostics
 
- _Notes_
-
+_Notes_

@@ -31,32 +31,25 @@ keywords:
 # Simulation und Messung der Hochfrequenzeigenschaften einer supraleitenden Photo-Elektronenquelle
 
 > [!info] Metadata
+>
 > - **Authors**: ["André́ Arnold"]
 > - **Year**: 2012
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > Der Erfolg zukünftiger Synchrotronstrahlungsquellen und Hochleistungs-IR-FELs wird eng mit der Entwicklung einer geeigneten Elektronenquelle verbunden sein. Einen vielversprechenden Ansatz, die dafür erforderliche Brillanz und den hohen mittleren Strom zu erzeugen, stellt der supraleitende Hochfrequenz-Photoinjektor (SRF-Gun) dar. Im Rahmen dieser Arbeit konnte die bislang einzige, an einem Elektronen-Linearbeschleuniger betriebene Quelle dieses Typs erfolgreich in Betrieb genommen sowie wesentliche Eigenschaften theoretisch und praktisch untersucht werden
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

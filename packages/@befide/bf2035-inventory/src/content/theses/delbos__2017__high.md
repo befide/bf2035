@@ -30,32 +30,24 @@ keywords:
 # High repetition rate laser-plasma accelerator: 5 hz electron beam generation and advanced target design
 
 > [!info] Metadata
+>
 > - **Authors**: ["Niels Matthias Delbos"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

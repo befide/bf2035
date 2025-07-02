@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Measuring the electron beam energy in a magnetic bunch compressor 
+# Measuring the electron beam energy in a magnetic bunch compressor
 
- _Notes_
-
+_Notes_

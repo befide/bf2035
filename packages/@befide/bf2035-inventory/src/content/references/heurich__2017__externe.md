@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Die externe Strahlführung für Detektortests X3ed an der Elektronen-Stretcher-Anlage ELSA 
+# Die externe Strahlführung für Detektortests X3ed an der Elektronen-Stretcher-Anlage ELSA
 
- _Notes_
-
+_Notes_

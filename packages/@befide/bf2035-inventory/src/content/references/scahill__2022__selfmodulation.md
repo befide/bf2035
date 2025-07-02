@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Self-modulation of photoemitted bunches at the picosecond timescale 
+# Self-modulation of photoemitted bunches at the picosecond timescale
 
- _Notes_
-
+_Notes_

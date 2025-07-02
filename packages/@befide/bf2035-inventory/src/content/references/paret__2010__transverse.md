@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Transverse Schottky spectra and beam transfer functions of coasting ion beams with space charge 
+# Transverse Schottky spectra and beam transfer functions of coasting ion beams with space charge
 
- _Notes_
-
+_Notes_

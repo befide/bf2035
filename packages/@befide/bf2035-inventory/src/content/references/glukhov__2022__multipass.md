@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Multipass beam breakup instability countermeasures in energy recovery linacs 
+# Multipass beam breakup instability countermeasures in energy recovery linacs
 
- _Notes_
-
+_Notes_

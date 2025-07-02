@@ -30,32 +30,24 @@ keywords:
 # Experimental investigations on the influence of the photocathode laser pulse parameters on the electron bunch quality in an RF - photoelectron source
 
 > [!info] Metadata
+>
 > - **Authors**: ["Marc Hänel"]
 > - **Year**: 2010
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

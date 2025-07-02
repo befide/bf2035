@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Lifetime measurement of the yrast 2⁺ state of ?⁹⁰W 
+# Lifetime measurement of the yrast 2⁺ state of ?⁹⁰W
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# B(E2)-stärke des 2+1-zustandes von 12C aus (e,e?)-daten & neuplanung des vieldraht-driftkammer detektors am QCLAM-spektrometer 
+# B(E2)-stärke des 2+1-zustandes von 12C aus (e,e?)-daten & neuplanung des vieldraht-driftkammer detektors am QCLAM-spektrometer
 
- _Notes_
-
+_Notes_

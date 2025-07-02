@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Characterization and control of femtosecond electron and x-ray beams at free-electron lasers 
+# Characterization and control of femtosecond electron and x-ray beams at free-electron lasers
 
- _Notes_
-
+_Notes_

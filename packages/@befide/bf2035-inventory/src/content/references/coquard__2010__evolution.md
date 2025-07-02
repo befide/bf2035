@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Evolution of the one-quadrupole phonon 2+_1,ms mixed-symmetry state in 124,126,128,130,132xe 
+# Evolution of the one-quadrupole phonon 2+\_1,ms mixed-symmetry state in 124,126,128,130,132xe
 
- _Notes_
-
+_Notes_

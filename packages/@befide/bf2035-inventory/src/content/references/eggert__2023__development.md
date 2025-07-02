@@ -36,7 +36,6 @@ related:
   - []
 ---
 
-# Development of a Cryogenic DC Photoelectron Gun for GaAs Cathodes with Increased Charge Lifetime 
+# Development of a Cryogenic DC Photoelectron Gun for GaAs Cathodes with Increased Charge Lifetime
 
- _Notes_
-
+_Notes_

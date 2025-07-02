@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Characterization of laser-driven proton acceleration with contrast-enhanced laser pulses 
+# Characterization of laser-driven proton acceleration with contrast-enhanced laser pulses
 
- _Notes_
-
+_Notes_

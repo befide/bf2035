@@ -31,32 +31,24 @@ keywords:
 # Development of an SRF reduced-beta cavity for the injector of the s-dalinac
 
 > [!info] Metadata
+>
 > - **Authors**: ["Dmitry Bazyl"]
 > - **Year**: 2019
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

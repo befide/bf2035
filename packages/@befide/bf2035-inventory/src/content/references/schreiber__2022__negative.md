@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Negative momentum compaction operation and its effect on the beam dynamics at the accelerator test facility KARA 
+# Negative momentum compaction operation and its effect on the beam dynamics at the accelerator test facility KARA
 
- _Notes_
-
+_Notes_

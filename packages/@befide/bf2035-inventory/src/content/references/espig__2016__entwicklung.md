@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Entwicklung, Aufbau und Charakterisierung einer variabel repetierenden, spinpolarisierten Elektronenkanone mit invertierter Isolatorgeometrie 
+# Entwicklung, Aufbau und Charakterisierung einer variabel repetierenden, spinpolarisierten Elektronenkanone mit invertierter Isolatorgeometrie
 
- _Notes_
-
+_Notes_

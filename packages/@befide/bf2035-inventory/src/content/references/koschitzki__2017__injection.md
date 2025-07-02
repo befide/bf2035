@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Injection mechanisms in laser wakefield acceleration 
+# Injection mechanisms in laser wakefield acceleration
 
- _Notes_
-
+_Notes_

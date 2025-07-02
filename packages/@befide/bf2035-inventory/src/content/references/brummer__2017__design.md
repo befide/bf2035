@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Design study of a laser-driven x-ray source for medical fluorescence imaging 
+# Design study of a laser-driven x-ray source for medical fluorescence imaging
 
- _Notes_
-
+_Notes_

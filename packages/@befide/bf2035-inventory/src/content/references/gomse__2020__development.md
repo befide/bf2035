@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Development of Heat Exchanger Technology for Cryogenic Mixed Refrigerant Cycles 
+# Development of Heat Exchanger Technology for Cryogenic Mixed Refrigerant Cycles
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Development of a 325 MHz ladder RFQ 
+# Development of a 325 MHz ladder RFQ
 
- _Notes_
-
+_Notes_

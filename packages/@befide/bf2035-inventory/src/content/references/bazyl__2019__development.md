@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Development of an SRF reduced-beta cavity for the injector of the s-dalinac 
+# Development of an SRF reduced-beta cavity for the injector of the s-dalinac
 
- _Notes_
-
+_Notes_

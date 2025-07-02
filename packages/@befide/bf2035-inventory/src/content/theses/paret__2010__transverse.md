@@ -30,32 +30,24 @@ keywords:
 # Transverse Schottky spectra and beam transfer functions of coasting ion beams with space charge
 
 > [!info] Metadata
+>
 > - **Authors**: ["Stefan Paret"]
 > - **Year**: 2010
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

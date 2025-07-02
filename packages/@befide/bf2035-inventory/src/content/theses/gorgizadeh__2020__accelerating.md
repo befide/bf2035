@@ -36,32 +36,25 @@ keywords:
 # Accelerating cavity and higher order mode coupler design for the future circular collider
 
 > [!info] Metadata
+>
 > - **Authors**: ["Shahnam Gorgi Zadeh"]
 > - **Year**: 2020
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > This thesis takes the first steps towards a detailed design for the large RF system of the lepton collider version of the Future Circular Collider (FCC-ee). First, this thesis investigates a suitable baseline option for the RF system of FCC-ee. This includes the search for an appropriate RF frequency and number-of-cells per cavity for each working point of FCC-ee. RF accelerating cavities and higher order mode (HOM) couplers are then designed based on the requirements of each operation energy. The performances of the HOM damped cavities are finally evaluated using various numerical methods.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

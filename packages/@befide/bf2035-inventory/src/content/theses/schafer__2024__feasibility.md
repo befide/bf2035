@@ -38,32 +38,25 @@ keywords:
 # Feasibility studies for a transverse deflecting structure measurement at FLUTE
 
 > [!info] Metadata
+>
 > - **Authors**: ["Jens Schäfer"]
 > - **Year**: 2024
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > This thesis discusses the commissioning of the Transverse Deflecting Structure (TDS) experiment, conducted at the Ferninfrarot Linac- und Test-Experiment at the Karlsruhe Institute of Technology, Germany. The TDS experiment is a novel approach for measuring ultra-short electron bunch lengths in the femto-seconds regime. This endeavor supports a world-wide trend in accelerator facilities of optimizing towards ever-shorter bunches. As the laser-induced streaking field oscillates with around 0.3 THz, a higher measurement resolution compared to conventional RF-based streaking methods is possible. This work encompasses a theoretical examination of the streaking field, extensive simulations on the beam dynamics for different scenarios, and first experimental findings.The strategies developed on this topic lay the groundwork for transforming the TDS experiment into a routine measurement tool.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

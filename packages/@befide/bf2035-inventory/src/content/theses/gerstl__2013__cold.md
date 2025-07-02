@@ -30,32 +30,24 @@ keywords:
 # A COLD vacuum chamber for beam heat load DIAGnostics (COLDDIAG)
 
 > [!info] Metadata
+>
 > - **Authors**: ["Stefan Gerstl"]
 > - **Year**: 2013
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

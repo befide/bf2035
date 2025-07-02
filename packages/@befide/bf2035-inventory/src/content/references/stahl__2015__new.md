@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# New methods for the γ-ray spectroscopy with position-sensitive detector systems 
+# New methods for the γ-ray spectroscopy with position-sensitive detector systems
 
- _Notes_
-
+_Notes_

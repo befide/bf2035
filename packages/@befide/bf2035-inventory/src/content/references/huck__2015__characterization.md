@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Characterization of VUV pulses from the short-pulse facility at DELTA and steps towards pump-probe experiments 
+# Characterization of VUV pulses from the short-pulse facility at DELTA and steps towards pump-probe experiments
 
- _Notes_
-
+_Notes_

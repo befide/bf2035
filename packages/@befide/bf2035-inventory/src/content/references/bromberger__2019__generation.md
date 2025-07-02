@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Generation and characterization of a pulsed, intense neutron- and gamma-beam to be used in air cargo interrogation 
+# Generation and characterization of a pulsed, intense neutron- and gamma-beam to be used in air cargo interrogation
 
- _Notes_
-
+_Notes_

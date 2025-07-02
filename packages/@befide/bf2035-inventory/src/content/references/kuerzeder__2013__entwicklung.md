@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Entwicklung, Aufbau und Test eines neuen Kryostatmoduls für den S-DALINAC 
+# Entwicklung, Aufbau und Test eines neuen Kryostatmoduls für den S-DALINAC
 
- _Notes_
-
+_Notes_

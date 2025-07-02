@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# A novel waveguide RF Wien filter for electric dipole moment measurements of deuterons and protons at the COoler SYnchrotron (COSY)/Jülich 
+# A novel waveguide RF Wien filter for electric dipole moment measurements of deuterons and protons at the COoler SYnchrotron (COSY)/Jülich
 
- _Notes_
-
+_Notes_

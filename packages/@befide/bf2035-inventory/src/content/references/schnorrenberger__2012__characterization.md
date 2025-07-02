@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Characterization of gamma-ray detectors with tagged photons 
+# Characterization of gamma-ray detectors with tagged photons
 
- _Notes_
-
+_Notes_

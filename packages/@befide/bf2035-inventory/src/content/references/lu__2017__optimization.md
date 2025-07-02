@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Optimization of an SRF gun for high bunch charge applications at ELBE 
+# Optimization of an SRF gun for high bunch charge applications at ELBE
 
- _Notes_
-
+_Notes_

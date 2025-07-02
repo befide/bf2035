@@ -31,32 +31,24 @@ keywords:
 # Numerical noise in particle-in-cell tracking: generation and propagation
 
 > [!info] Metadata
+>
 > - **Authors**: ["Frederik Kesting"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

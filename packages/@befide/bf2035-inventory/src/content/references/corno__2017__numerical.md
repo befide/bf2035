@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Numerical methods for the estimation of the impact of geometric uncertainties on the performance of electromagnetic devices 
+# Numerical methods for the estimation of the impact of geometric uncertainties on the performance of electromagnetic devices
 
- _Notes_
-
+_Notes_

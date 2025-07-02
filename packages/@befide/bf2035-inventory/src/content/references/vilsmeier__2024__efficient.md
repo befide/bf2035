@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Efficient modeling and mitigation of quadrupole errors in synchrotrons and their beam transfer lines 
+# Efficient modeling and mitigation of quadrupole errors in synchrotrons and their beam transfer lines
 
- _Notes_
-
+_Notes_

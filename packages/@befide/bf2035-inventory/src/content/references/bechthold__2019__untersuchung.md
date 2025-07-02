@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Untersuchung von Multi-Alkali-Verbindungen im Hinblick auf ihre Eignung zur Erzeugung hochbrillanter Elektronenpulse 
+# Untersuchung von Multi-Alkali-Verbindungen im Hinblick auf ihre Eignung zur Erzeugung hochbrillanter Elektronenpulse
 
- _Notes_
-
+_Notes_

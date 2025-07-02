@@ -30,32 +30,24 @@ keywords:
 # Numerical methods for the estimation of the impact of geometric uncertainties on the performance of electromagnetic devices
 
 > [!info] Metadata
+>
 > - **Authors**: ["Jacopo Corno"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

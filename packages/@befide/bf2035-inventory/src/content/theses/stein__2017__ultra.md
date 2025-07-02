@@ -31,32 +31,24 @@ keywords:
 # Ultra fast beam loss mechanisms at the LHC and their detection for use in machine protection
 
 > [!info] Metadata
+>
 > - **Authors**: ["Oliver Stein"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Determination of beam coupling impedance in the frequency domain 
+# Determination of beam coupling impedance in the frequency domain
 
- _Notes_
-
+_Notes_

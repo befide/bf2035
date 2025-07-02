@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Target induced halo formation and collimation following MAGIX at MESA 
+# Target induced halo formation and collimation following MAGIX at MESA
 
- _Notes_
-
+_Notes_

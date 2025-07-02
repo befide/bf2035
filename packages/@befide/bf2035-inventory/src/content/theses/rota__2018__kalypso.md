@@ -30,32 +30,24 @@ keywords:
 # KALYPSO, a novel detector system for high-repetition rate and real-time beam diagnostics
 
 > [!info] Metadata
+>
 > - **Authors**: ["Lorenzo Rota"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

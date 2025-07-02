@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Precise determination of the electron beam energy with Compton backscattered laser photons at ANKA 
+# Precise determination of the electron beam energy with Compton backscattered laser photons at ANKA
 
- _Notes_
-
+_Notes_

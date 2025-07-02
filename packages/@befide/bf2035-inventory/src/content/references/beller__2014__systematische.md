@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Systematische untersuchung exotischer zerfallskanäle der scherenmode in gadoliniumisotopen 
+# Systematische untersuchung exotischer zerfallskanäle der scherenmode in gadoliniumisotopen
 
- _Notes_
-
+_Notes_

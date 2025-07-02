@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Two-Dimensional Bunch-Resolved Optical Diagnostics at BESSY II 
+# Two-Dimensional Bunch-Resolved Optical Diagnostics at BESSY II
 
- _Notes_
-
+_Notes_

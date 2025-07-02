@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Transportprozesse in Photokathoden und ihr Beitrag zum longitudinalen Halo von Elektronenbeschleunigern 
+# Transportprozesse in Photokathoden und ihr Beitrag zum longitudinalen Halo von Elektronenbeschleunigern
 
- _Notes_
-
+_Notes_

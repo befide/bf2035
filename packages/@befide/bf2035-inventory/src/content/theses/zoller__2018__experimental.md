@@ -30,32 +30,24 @@ keywords:
 # Experimental Investigation and Modelling of Incidents in Liquid Helium Cryostats
 
 > [!info] Metadata
+>
 > - **Authors**: ["Carolin Zoller"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

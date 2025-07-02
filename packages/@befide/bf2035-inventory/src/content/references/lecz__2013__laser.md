@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Laser ion acceleration from a double-layer metal foil. 
+# Laser ion acceleration from a double-layer metal foil.
 
- _Notes_
-
+_Notes_

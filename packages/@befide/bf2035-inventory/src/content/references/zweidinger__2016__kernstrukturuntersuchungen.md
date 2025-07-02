@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Kernstrukturuntersuchungen in mittelschweren atomkernen mit der methode der kernresonanzfluoreszenz 
+# Kernstrukturuntersuchungen in mittelschweren atomkernen mit der methode der kernresonanzfluoreszenz
 
- _Notes_
-
+_Notes_

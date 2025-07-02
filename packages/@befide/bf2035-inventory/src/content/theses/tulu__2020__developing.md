@@ -36,32 +36,25 @@ keywords:
 # Developing an electron multipacting-free cathode unit of the superconducting radio frequency photoinjector
 
 > [!info] Metadata
+>
 > - **Authors**: ["Eden Tafa Tulu"]
 > - **Year**: 2020
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > Future light sources such as synchrotron radiation sources have in common that they require injectors, which provide high-brilliance, high-current electron beams in almost continuous operation. Superconducting radio frequency photoinjector (SRF gun) provided a promising approach. However, some limitations occur caused by electron multipacting in the cathode vicinity, which prevent the superconducting radio frequency photoinjector (SRF gun) from maximum productivity. The aim of this thesis is to develop a new design of the photocathode channel.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

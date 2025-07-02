@@ -15,32 +15,24 @@ attachment: []
 # Error parsing entry
 
 > [!info] Metadata
-> - **Authors**: 
-> - **Year**: 
-> - **Journal**: 
-> - **DOI**: 
+>
+> - **Authors**:
+> - **Year**:
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -30,32 +30,24 @@ keywords:
 # Kopplung von 4-Rod-RFQ und IH-DTL für das FRANZ-Projekt
 
 > [!info] Metadata
+>
 > - **Authors**: ["Manuel Heilmann"]
 > - **Year**: 2016
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

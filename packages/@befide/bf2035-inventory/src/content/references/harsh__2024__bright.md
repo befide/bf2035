@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Bright and stable betatron beams from laser-driven plasma wakefield 
+# Bright and stable betatron beams from laser-driven plasma wakefield
 
- _Notes_
-
+_Notes_

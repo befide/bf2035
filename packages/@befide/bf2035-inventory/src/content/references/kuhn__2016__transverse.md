@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Transverse emittance measurement and preservation at the LHC 
+# Transverse emittance measurement and preservation at the LHC
 
- _Notes_
-
+_Notes_

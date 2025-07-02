@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Development and Testing of Self‒Powered Detectors for Nuclear Measurements in Fusion Reactors 
+# Development and Testing of Self‒Powered Detectors for Nuclear Measurements in Fusion Reactors
 
- _Notes_
-
+_Notes_

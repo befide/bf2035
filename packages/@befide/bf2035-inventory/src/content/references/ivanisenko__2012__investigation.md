@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Investigation of slice emittance using an energy-chirped electron beam in a dispersive section for photo injector characterization at PITZ 
+# Investigation of slice emittance using an energy-chirped electron beam in a dispersive section for photo injector characterization at PITZ
 
- _Notes_
-
+_Notes_

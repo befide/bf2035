@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Lebensdauerverbesserung und Strahlstabilisierung durch longitudinale Phasenmodulation am Elektronenspeicherring DELTA 
+# Lebensdauerverbesserung und Strahlstabilisierung durch longitudinale Phasenmodulation am Elektronenspeicherring DELTA
 
- _Notes_
-
+_Notes_

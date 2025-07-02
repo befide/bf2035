@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Spectral phase manipulation of optical pump pulses for mJ-Level narrowband terahertz generation in PPLN 
+# Spectral phase manipulation of optical pump pulses for mJ-Level narrowband terahertz generation in PPLN
 
- _Notes_
-
+_Notes_

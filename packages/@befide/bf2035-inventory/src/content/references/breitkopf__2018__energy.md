@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Energy scaling by stacking of ultrashort pulses in a passive enhancement cavity 
+# Energy scaling by stacking of ultrashort pulses in a passive enhancement cavity
 
- _Notes_
-
+_Notes_

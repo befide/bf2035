@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Employing γ-ray tracking as an event-discrimination technique for γ-spectroscopy with AGATA 
+# Employing γ-ray tracking as an event-discrimination technique for γ-spectroscopy with AGATA
 
- _Notes_
-
+_Notes_

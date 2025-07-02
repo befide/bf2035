@@ -31,32 +31,24 @@ keywords:
 # Numerical and experimental studies to model and reduce the impedance in the CERN Super Proton Synchrotron (SPS)
 
 > [!info] Metadata
+>
 > - **Authors**: ["Mario Beck"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

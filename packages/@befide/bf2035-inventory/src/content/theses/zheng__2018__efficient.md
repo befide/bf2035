@@ -30,32 +30,24 @@ keywords:
 # Efficient algorithms for the fast computation of space charge effects caused by charged particles in particle accelerators
 
 > [!info] Metadata
+>
 > - **Authors**: ["Dawei Zheng"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

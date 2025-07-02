@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Aufbau und Inbetriebnahme einer Quelle polarisierter Elektronen am supraleitenden Darmstädter Elektronenlinearbeschleuniger S-DALINAC 
+# Aufbau und Inbetriebnahme einer Quelle polarisierter Elektronen am supraleitenden Darmstädter Elektronenlinearbeschleuniger S-DALINAC
 
- _Notes_
-
+_Notes_

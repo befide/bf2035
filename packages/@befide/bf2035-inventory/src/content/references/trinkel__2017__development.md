@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Development of a Rogowski coil beam position monitor for electric dipole moment measurements at storage rings 
+# Development of a Rogowski coil beam position monitor for electric dipole moment measurements at storage rings
 
- _Notes_
-
+_Notes_

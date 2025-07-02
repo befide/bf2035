@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Entwicklung und Erforschung eines neuartigen Injektionssystems für einen toroidalen Hochstromspeicherring 
+# Entwicklung und Erforschung eines neuartigen Injektionssystems für einen toroidalen Hochstromspeicherring
 
- _Notes_
-
+_Notes_

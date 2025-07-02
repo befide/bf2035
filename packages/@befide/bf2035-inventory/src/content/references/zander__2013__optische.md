@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Optische Strahldiagnose an der Elektronen-Stretcher-Anlage ELSA 
+# Optische Strahldiagnose an der Elektronen-Stretcher-Anlage ELSA
 
- _Notes_
-
+_Notes_

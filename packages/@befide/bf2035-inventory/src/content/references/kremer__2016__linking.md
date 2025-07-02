@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Linking partial and quasi dynamical symmetries in rotational nuclei and shell evolution in 96-Zr 
+# Linking partial and quasi dynamical symmetries in rotational nuclei and shell evolution in 96-Zr
 
- _Notes_
-
+_Notes_

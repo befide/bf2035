@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# The Bilinear-Exponential Closed-Orbit Model and its Application to Storage Ring Beam Diagnostics 
+# The Bilinear-Exponential Closed-Orbit Model and its Application to Storage Ring Beam Diagnostics
 
- _Notes_
-
+_Notes_

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Echtzeitbestimmung longitudinaler Elektronenstrahlparameter mittels absoluter Intensitäts- und Spektralmessung einzelner kohärenter THz Strahlungspulse 
+# Echtzeitbestimmung longitudinaler Elektronenstrahlparameter mittels absoluter Intensitäts- und Spektralmessung einzelner kohärenter THz Strahlungspulse
 
- _Notes_
-
+_Notes_

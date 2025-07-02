@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Der neue RFQ für den Hochladungsinjektor der GSI 
+# Der neue RFQ für den Hochladungsinjektor der GSI
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Kernstrukturuntersuchungen bis zur teilchenseparationsschwelle mit der methode der kernresonanzfluoreszenz 
+# Kernstrukturuntersuchungen bis zur teilchenseparationsschwelle mit der methode der kernresonanzfluoreszenz
 
- _Notes_
-
+_Notes_

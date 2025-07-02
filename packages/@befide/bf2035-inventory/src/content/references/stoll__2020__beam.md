@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Beam dynamical behaviour of the MESA SRF structures under recirculating operation 
+# Beam dynamical behaviour of the MESA SRF structures under recirculating operation
 
- _Notes_
-
+_Notes_

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Design Study of the Large Hadron Electron Collider and a Rapid Cycling Synchrotron as Alternative to the PS Booster Upgrade at {CERN} 
+# Design Study of the Large Hadron Electron Collider and a Rapid Cycling Synchrotron as Alternative to the PS Booster Upgrade at {CERN}
 
- _Notes_
-
+_Notes_

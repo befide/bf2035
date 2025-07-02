@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Characterisation of a laser wakefield accelerator with ultra-short probe pulses 
+# Characterisation of a laser wakefield accelerator with ultra-short probe pulses
 
- _Notes_
-
+_Notes_

@@ -30,32 +30,24 @@ keywords:
 # Entwicklung, Aufbau und Charakterisierung einer variabel repetierenden, spinpolarisierten Elektronenkanone mit invertierter Isolatorgeometrie
 
 > [!info] Metadata
+>
 > - **Authors**: ["Martin Espig"]
 > - **Year**: 2016
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Kohärente Smith-Purcell-Strahlung zur minimal invasiven Bunchlängenmessung Im Subpikosekundenbereich 
+# Kohärente Smith-Purcell-Strahlung zur minimal invasiven Bunchlängenmessung Im Subpikosekundenbereich
 
- _Notes_
-
+_Notes_

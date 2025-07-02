@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Development of beam diagnostic systems for electric dipole moment measurements at particle accelerators 
+# Development of beam diagnostic systems for electric dipole moment measurements at particle accelerators
 
- _Notes_
-
+_Notes_

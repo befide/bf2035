@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Electromagnetic Design, Implementation and Test of a Superconducting Undulator with a Transverse Gradient Field Amplitude 
+# Electromagnetic Design, Implementation and Test of a Superconducting Undulator with a Transverse Gradient Field Amplitude
 
- _Notes_
-
+_Notes_

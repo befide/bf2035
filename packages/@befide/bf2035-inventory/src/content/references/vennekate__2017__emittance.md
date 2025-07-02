@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Emittance compensation for SRF photoinjectors 
+# Emittance compensation for SRF photoinjectors
 
- _Notes_
-
+_Notes_

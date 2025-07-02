@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Superradiant Terahertz Sources and Their Applications in Accelerator Diagnostics and Ultra-Fast Science 
+# Superradiant Terahertz Sources and Their Applications in Accelerator Diagnostics and Ultra-Fast Science
 
- _Notes_
-
+_Notes_

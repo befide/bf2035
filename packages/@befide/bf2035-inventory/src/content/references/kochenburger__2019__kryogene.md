@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Kryogene Gemischkältekreisläufe für Hochtemperatursupraleiter-Anwendungen 
+# Kryogene Gemischkältekreisläufe für Hochtemperatursupraleiter-Anwendungen
 
- _Notes_
-
+_Notes_

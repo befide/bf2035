@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Novel decay properties of positive-parity low-spin states of deformed gadolinium and dysprosium nuclei 
+# Novel decay properties of positive-parity low-spin states of deformed gadolinium and dysprosium nuclei
 
- _Notes_
-
+_Notes_

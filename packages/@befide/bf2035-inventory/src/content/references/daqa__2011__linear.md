@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Linear Betatron coupling studies with space charge effects in the SIS18 
+# Linear Betatron coupling studies with space charge effects in the SIS18
 
- _Notes_
-
+_Notes_

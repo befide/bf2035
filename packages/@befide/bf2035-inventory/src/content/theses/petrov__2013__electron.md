@@ -30,32 +30,24 @@ keywords:
 # Electron clouds in high energy hadron accelerators.
 
 > [!info] Metadata
+>
 > - **Authors**: ["Fedor Petrov"]
 > - **Year**: 2013
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

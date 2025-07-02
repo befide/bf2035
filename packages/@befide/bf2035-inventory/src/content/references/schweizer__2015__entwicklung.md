@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Entwicklung einer effizienten Hochstrom-Ionenquelle für das FRANZ-Projekt zur Produktion intensiver, hochbrillanter Protonenstrahlen 
+# Entwicklung einer effizienten Hochstrom-Ionenquelle für das FRANZ-Projekt zur Produktion intensiver, hochbrillanter Protonenstrahlen
 
- _Notes_
-
+_Notes_

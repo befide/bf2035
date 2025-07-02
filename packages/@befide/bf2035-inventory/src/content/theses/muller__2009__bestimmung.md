@@ -31,32 +31,24 @@ keywords:
 # Bestimmung von photo-neutron-wirkungsquerschnitten in kernen der seltenen erden für den astrophysikalischen p-prozess mit bremsstrahlung am s-DALINAC
 
 > [!info] Metadata
+>
 > - **Authors**: ["Sebastian Hermann Müller"]
 > - **Year**: 2009
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

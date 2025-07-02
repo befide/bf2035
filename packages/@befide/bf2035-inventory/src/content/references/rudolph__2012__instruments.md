@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Instruments and techniques for analysing the time-resolved transverse phase space distribution of high-brightness electron beams 
+# Instruments and techniques for analysing the time-resolved transverse phase space distribution of high-brightness electron beams
 
- _Notes_
-
+_Notes_

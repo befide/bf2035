@@ -31,32 +31,24 @@ keywords:
 # Simulation und Messung longitudinaler Raumladungseffekte in intensiven Ionenstrahlen im SIS18 Synchrotron.
 
 > [!info] Metadata
+>
 > - **Authors**: ["Sabrina Appel"]
 > - **Year**: 2011
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

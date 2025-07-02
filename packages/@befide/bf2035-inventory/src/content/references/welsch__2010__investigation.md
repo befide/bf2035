@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Investigation and optimization of transverse non-linear beam dynamics in the high-energy storage ring HESR 
+# Investigation and optimization of transverse non-linear beam dynamics in the high-energy storage ring HESR
 
- _Notes_
-
+_Notes_

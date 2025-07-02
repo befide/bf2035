@@ -30,32 +30,24 @@ keywords:
 # Untersuchung von Bunch-Bunch-Wechselwirkungen und des Einflusses der geometrischen Impedanz bei der Erzeugung kohärenter THz-Strahlung
 
 > [!info] Metadata
+>
 > - **Authors**: ["Vitali Judin"]
 > - **Year**: 2013
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

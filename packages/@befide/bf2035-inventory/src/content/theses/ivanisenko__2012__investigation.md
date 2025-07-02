@@ -30,32 +30,24 @@ keywords:
 # Investigation of slice emittance using an energy-chirped electron beam in a dispersive section for photo injector characterization at PITZ
 
 > [!info] Metadata
+>
 > - **Authors**: ["Yevgeniy Ivanisenko"]
 > - **Year**: 2012
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

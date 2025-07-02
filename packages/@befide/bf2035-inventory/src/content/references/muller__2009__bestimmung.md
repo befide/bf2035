@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Bestimmung von photo-neutron-wirkungsquerschnitten in kernen der seltenen erden für den astrophysikalischen p-prozess mit bremsstrahlung am s-DALINAC 
+# Bestimmung von photo-neutron-wirkungsquerschnitten in kernen der seltenen erden für den astrophysikalischen p-prozess mit bremsstrahlung am s-DALINAC
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Konzeption, Aufbau und Inbetriebnahme eines neuen Vorbeschleunigersystems an ELSA 
+# Konzeption, Aufbau und Inbetriebnahme eines neuen Vorbeschleunigersystems an ELSA
 
- _Notes_
-
+_Notes_

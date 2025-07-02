@@ -30,32 +30,24 @@ keywords:
 # Laser ion acceleration from a double-layer metal foil.
 
 > [!info] Metadata
+>
 > - **Authors**: ["Zsolt Lécz"]
 > - **Year**: 2013
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

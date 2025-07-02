@@ -32,7 +32,6 @@ related:
   - []
 ---
 
-# Feasibility Study on Longitudinal Phase-Space Measurements at GSI UNILAC using Charged-Particle Detectors 
+# Feasibility Study on Longitudinal Phase-Space Measurements at GSI UNILAC using Charged-Particle Detectors
 
- _Notes_
-
+_Notes_

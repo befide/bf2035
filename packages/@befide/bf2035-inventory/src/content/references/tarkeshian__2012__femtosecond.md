@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Femtosecond resolved diagnostics for electron beam and XUV seed temporal overlap at sFLASH 
+# Femtosecond resolved diagnostics for electron beam and XUV seed temporal overlap at sFLASH
 
- _Notes_
-
+_Notes_

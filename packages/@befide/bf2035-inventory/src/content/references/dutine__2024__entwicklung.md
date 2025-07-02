@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Entwicklung und test einer strahlpositionsmessung für den mehrfach rezirkulierenden ERL-betrieb des S-DALINAC 
+# Entwicklung und test einer strahlpositionsmessung für den mehrfach rezirkulierenden ERL-betrieb des S-DALINAC
 
- _Notes_
-
+_Notes_

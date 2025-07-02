@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Erzeugung und Untersuchung gepulster polarisierter Elektronenstrahlen am S-DALINAC 
+# Erzeugung und Untersuchung gepulster polarisierter Elektronenstrahlen am S-DALINAC
 
- _Notes_
-
+_Notes_

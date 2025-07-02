@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Lifetime measurement in the mass region A<code>126</code>100 with the PreSPEC-AGATA setup 
+# Lifetime measurement in the mass region A<code>126</code>100 with the PreSPEC-AGATA setup
 
- _Notes_
-
+_Notes_

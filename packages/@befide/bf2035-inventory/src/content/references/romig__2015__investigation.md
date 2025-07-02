@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Investigation of nuclear structure with relative self-absorption measurements 
+# Investigation of nuclear structure with relative self-absorption measurements
 
- _Notes_
-
+_Notes_

@@ -30,32 +30,24 @@ keywords:
 # Study of Plasma-Based Acceleration for High Energy Physics and Other Applications
 
 > [!info] Metadata
+>
 > - **Authors**: ["Steffen Hillenbrand"]
 > - **Year**: 2013
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# The low-lying photonresponse of the even-even chromium isotopes 
+# The low-lying photonresponse of the even-even chromium isotopes
 
- _Notes_
-
+_Notes_

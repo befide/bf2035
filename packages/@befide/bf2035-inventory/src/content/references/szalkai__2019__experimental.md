@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Experimental investigations for development of an innovative SiC sensor for spectrometry of neutrons under harsh environmental conditions 
+# Experimental investigations for development of an innovative SiC sensor for spectrometry of neutrons under harsh environmental conditions
 
- _Notes_
-
+_Notes_

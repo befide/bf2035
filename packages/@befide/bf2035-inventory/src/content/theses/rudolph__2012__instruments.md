@@ -30,32 +30,24 @@ keywords:
 # Instruments and techniques for analysing the time-resolved transverse phase space distribution of high-brightness electron beams
 
 > [!info] Metadata
+>
 > - **Authors**: ["Jenniffa Rudolph"]
 > - **Year**: 2012
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

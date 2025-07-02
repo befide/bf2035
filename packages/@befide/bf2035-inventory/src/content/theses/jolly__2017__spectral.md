@@ -30,32 +30,24 @@ keywords:
 # Spectral phase manipulation of optical pump pulses for mJ-Level narrowband terahertz generation in PPLN
 
 > [!info] Metadata
+>
 > - **Authors**: ["Spencer Windhorst Jolly"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

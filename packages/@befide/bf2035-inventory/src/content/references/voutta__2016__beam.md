@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Beam heat load investigations with a cold vacuum chamber for diagnostics in a synchrotron light source 
+# Beam heat load investigations with a cold vacuum chamber for diagnostics in a synchrotron light source
 
- _Notes_
-
+_Notes_

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Effiziente Simulation magnetischer Bauteile 
+# Effiziente Simulation magnetischer Bauteile
 
- _Notes_
-
+_Notes_

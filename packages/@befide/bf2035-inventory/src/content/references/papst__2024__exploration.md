@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Exploration of nuclear-structure effects on averaged decay quantities in the quasicontinuum 
+# Exploration of nuclear-structure effects on averaged decay quantities in the quasicontinuum
 
- _Notes_
-
+_Notes_

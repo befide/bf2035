@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Design of a position sensitive resonant schottky detector for the rare-RI ring in RIKEN 
+# Design of a position sensitive resonant schottky detector for the rare-RI ring in RIKEN
 
- _Notes_
-
+_Notes_

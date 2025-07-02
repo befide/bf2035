@@ -36,32 +36,25 @@ keywords:
 # Compact radio-frequency quadrupoles for industrial and medical applications
 
 > [!info] Metadata
+>
 > - **Authors**: ["Hermann Winrich Pommerenke"]
 > - **Year**: 2020
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > This thesis involves the development of two radio-frequency quadrupole particle accelerators (RFQ) operating at 750 MHz. The first part covers radio-frequency (RF) design studies of the proton PIXE-RFQ. RF measurement results and tuning procedure are presented, showing very good agreement with simulations. The second part reports the development of the Carbon-RFQ for cancer therapy. The Carbon-RFQ features trapezoidal vanes whose fields are described using a novel semi-analytic approach. Dipole modes were detuned by a novel cavity length adjustment technique.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

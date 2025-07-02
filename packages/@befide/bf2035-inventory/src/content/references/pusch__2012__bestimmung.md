@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Bestimmung von Intensität und Position des extrahierten Elektronenstrahls an ELSA mittels Hochfrequenzresonatoren 
+# Bestimmung von Intensität und Position des extrahierten Elektronenstrahls an ELSA mittels Hochfrequenzresonatoren
 
- _Notes_
-
+_Notes_

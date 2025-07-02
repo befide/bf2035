@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Erzeugung intensiver spinpolarisierter Elektronenstrahlen an der Beschleunigeranlage ELSA 
+# Erzeugung intensiver spinpolarisierter Elektronenstrahlen an der Beschleunigeranlage ELSA
 
- _Notes_
-
+_Notes_

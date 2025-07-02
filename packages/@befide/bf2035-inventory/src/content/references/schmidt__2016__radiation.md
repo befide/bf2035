@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Radiation pressure acceleration and laser induced focusing 
+# Radiation pressure acceleration and laser induced focusing
 
- _Notes_
-
+_Notes_

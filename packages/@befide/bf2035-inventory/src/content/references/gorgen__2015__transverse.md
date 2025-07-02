@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Transverse beam transfer functions of relativistic ion bunches 
+# Transverse beam transfer functions of relativistic ion bunches
 
- _Notes_
-
+_Notes_

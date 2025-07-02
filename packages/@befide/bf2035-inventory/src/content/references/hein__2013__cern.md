@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# CERN Linac4 - the space charge challenge 
+# CERN Linac4 - the space charge challenge
 
- _Notes_
-
+_Notes_

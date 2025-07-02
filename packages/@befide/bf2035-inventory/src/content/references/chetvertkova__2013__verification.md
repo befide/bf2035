@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Verification of Monte Carlo transport codes by activation experiments 
+# Verification of Monte Carlo transport codes by activation experiments
 
- _Notes_
-
+_Notes_

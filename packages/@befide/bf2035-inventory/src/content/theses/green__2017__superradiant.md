@@ -30,32 +30,24 @@ keywords:
 # Superradiant Terahertz Sources and Their Applications in Accelerator Diagnostics and Ultra-Fast Science
 
 > [!info] Metadata
+>
 > - **Authors**: ["Bert Green"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

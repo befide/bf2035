@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Investigation of possibilities to measure the deuteron electric dipole moment at storage rings 
+# Investigation of possibilities to measure the deuteron electric dipole moment at storage rings
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Development of a CMRC cooled 10 kA current lead for HTS applications 
+# Development of a CMRC cooled 10 kA current lead for HTS applications
 
- _Notes_
-
+_Notes_

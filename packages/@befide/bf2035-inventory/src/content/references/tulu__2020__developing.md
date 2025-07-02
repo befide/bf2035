@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Developing an electron multipacting-free cathode unit of the superconducting radio frequency photoinjector 
+# Developing an electron multipacting-free cathode unit of the superconducting radio frequency photoinjector
 
- _Notes_
-
+_Notes_

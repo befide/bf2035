@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Simulation and measurement of the dynamics of ultra-short electron bunch profiles for the generation of coherent THz radiation 
+# Simulation and measurement of the dynamics of ultra-short electron bunch profiles for the generation of coherent THz radiation
 
- _Notes_
-
+_Notes_

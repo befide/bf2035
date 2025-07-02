@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# A robust fibre laser system for electro-optic electron bunch profile measurements at FLASH 
+# A robust fibre laser system for electro-optic electron bunch profile measurements at FLASH
 
- _Notes_
-
+_Notes_

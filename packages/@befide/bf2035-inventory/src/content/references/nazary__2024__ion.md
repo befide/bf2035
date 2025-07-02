@@ -17,7 +17,6 @@ related:
   - []
 ---
 
-# Error parsing entry 
+# Error parsing entry
 
- _Notes_
-
+_Notes_

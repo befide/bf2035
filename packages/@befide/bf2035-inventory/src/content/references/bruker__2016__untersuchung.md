@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Untersuchung der Rückgewinnungseffizienz eines Kühlerelektronenstrahls in longitudinalem Magnetfeld 
+# Untersuchung der Rückgewinnungseffizienz eines Kühlerelektronenstrahls in longitudinalem Magnetfeld
 
- _Notes_
-
+_Notes_

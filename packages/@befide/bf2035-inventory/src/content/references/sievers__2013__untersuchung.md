@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Untersuchung von Piezoaktoren zur Verbesserung der Frequenzabstimmung und Aufbau eines Quenchortungssytems für die Beschleunigungsstrukturen des S-DALINAC 
+# Untersuchung von Piezoaktoren zur Verbesserung der Frequenzabstimmung und Aufbau eines Quenchortungssytems für die Beschleunigungsstrukturen des S-DALINAC
 
- _Notes_
-
+_Notes_

@@ -31,32 +31,25 @@ keywords:
 # Space charge modeling at the integer resonance for the CERN PS and SPS
 
 > [!info] Metadata
+>
 > - **Authors**: ["Malte Titze"]
 > - **Year**: 2020
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > Die elektromagnetische Wechselwirkung der Teilchen untereinander, wie sie typischerweise in einem Strahl hoher Intensität in den CERN Beschleunigern auftritt, kann in Langzeitsimulationen nicht vernachlässigt werden. Simulationen sind insbesondere notwendig, um diese Beschleuniger zu optimieren und die zugrundeliegende kohärente und inkohärente Dynamik besser zu verstehen. Die Auswirkungen der unumgänglichen Vereinfachungen in der Modellierung der komplizierten Dynamik müssen deshalb untersucht werden. Wir gehen diese Aufgabe an, indem wir sechs verschiedene Strahlführungsmodelle am CERN Proton Synchrotron (PS) und am Super Proton Synchrotron (SPS) untersuchen, die wir dynamisch in der Nähe von horizontalen Integer-Resonanzen operieren. Die sechs Modelle, welche insgesamt in den beiden bewährten Programmpaketen MAD-X und PyOrbit implementiert sind, werden mit den jeweiligen Messungen an beiden Maschinen verglichen, wobei der Schwerpunkt hier auf dem PS liegt. In long-term tracking simulations of high-intensity beams which are typical in the CERN accelerators, the electromagnetic interaction between the individual particles can not be neglected. Simulations are required to optimize the performance of the accelerators, and to better understand the involved coherent and incoherent dynamics. The impact due to the unavoidable simplifications when modeling the complex dynamics must therefore be studied. We approach this task by examining six different tracking models, applied to the CERN Proton Synchrotron (PS) and the Super Proton Synchrotron (SPS), both of which were dynamically operated near horizontal integer resonances. The six models, which are overall implemented in the well-known program packages MAD-X and PyOrbit, are compared to beam-based measurements on both machines, with the PS as the main emphasis.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

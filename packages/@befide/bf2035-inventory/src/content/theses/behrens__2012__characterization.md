@@ -30,32 +30,24 @@ keywords:
 # Characterization and control of femtosecond electron and x-ray beams at free-electron lasers
 
 > [!info] Metadata
+>
 > - **Authors**: ["Christopher Behrens"]
 > - **Year**: 2012
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

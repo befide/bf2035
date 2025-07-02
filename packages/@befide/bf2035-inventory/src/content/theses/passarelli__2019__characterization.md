@@ -30,32 +30,24 @@ keywords:
 # Characterization of impedance and wakefields of accelerator devices in the short bunch limit and beam dynamics effects for the CLIC Damping Rings
 
 > [!info] Metadata
+>
 > - **Authors**: ["Andrea Passarelli"]
 > - **Year**: 2019
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

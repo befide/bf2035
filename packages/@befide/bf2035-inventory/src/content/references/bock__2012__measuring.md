@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Measuring the electron bunch timing with femtosecond resolution at FLASH 
+# Measuring the electron bunch timing with femtosecond resolution at FLASH
 
- _Notes_
-
+_Notes_

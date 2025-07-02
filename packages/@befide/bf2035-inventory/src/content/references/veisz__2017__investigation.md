@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Investigation of parametric instabilities in femtosecond laser-produced plasmas 
+# Investigation of parametric instabilities in femtosecond laser-produced plasmas
 
- _Notes_
-
+_Notes_

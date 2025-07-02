@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Beam dynamics and limits for high brightness, high average current superconducting radiofrequency (SRF) photoinjectors 
+# Beam dynamics and limits for high brightness, high average current superconducting radiofrequency (SRF) photoinjectors
 
- _Notes_
-
+_Notes_

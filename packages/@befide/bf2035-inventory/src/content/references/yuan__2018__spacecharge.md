@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Space-charge driven transverse beam instabilities in synchrotrons 
+# Space-charge driven transverse beam instabilities in synchrotrons
 
- _Notes_
-
+_Notes_

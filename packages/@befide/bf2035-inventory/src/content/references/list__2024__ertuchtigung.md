@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Ertüchtigung von supraleitenden crossbar H-mode Hochfrequenzkavitäten mit hohem kopplungsfaktor 
+# Ertüchtigung von supraleitenden crossbar H-mode Hochfrequenzkavitäten mit hohem kopplungsfaktor
 
- _Notes_
-
+_Notes_

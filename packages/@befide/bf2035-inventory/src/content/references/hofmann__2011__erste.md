@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Erste Untersuchungen mit einzelnen Elektronenpulsen am ANKA-Speicherring 
+# Erste Untersuchungen mit einzelnen Elektronenpulsen am ANKA-Speicherring
 
- _Notes_
-
+_Notes_

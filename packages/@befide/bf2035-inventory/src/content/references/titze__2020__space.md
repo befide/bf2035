@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Space charge modeling at the integer resonance for the CERN PS and SPS 
+# Space charge modeling at the integer resonance for the CERN PS and SPS
 
- _Notes_
-
+_Notes_

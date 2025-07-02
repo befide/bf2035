@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Design and implementation of a high-contrast, millijoule-level ultrafast optical parametric amplifier for high-intensity lasers 
+# Design and implementation of a high-contrast, millijoule-level ultrafast optical parametric amplifier for high-intensity lasers
 
- _Notes_
-
+_Notes_

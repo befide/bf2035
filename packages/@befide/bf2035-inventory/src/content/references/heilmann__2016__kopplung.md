@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Kopplung von 4-Rod-RFQ und IH-DTL für das FRANZ-Projekt 
+# Kopplung von 4-Rod-RFQ und IH-DTL für das FRANZ-Projekt
 
- _Notes_
-
+_Notes_

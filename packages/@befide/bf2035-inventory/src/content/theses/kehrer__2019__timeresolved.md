@@ -32,32 +32,24 @@ keywords:
 # Time-resolved studies of the micro-bunching instability at KARA
 
 > [!info] Metadata
+>
 > - **Authors**: ["Benjamin Kehrer"]
 > - **Year**: 2019
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

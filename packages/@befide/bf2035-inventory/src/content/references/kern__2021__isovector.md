@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Isovector one-quadrupole-phonon excitations of heavy vibrational nuclei 
+# Isovector one-quadrupole-phonon excitations of heavy vibrational nuclei
 
- _Notes_
-
+_Notes_

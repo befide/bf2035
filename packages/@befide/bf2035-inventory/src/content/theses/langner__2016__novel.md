@@ -30,32 +30,24 @@ keywords:
 # A novel method and error analysis for beam optics measurements and corrections at the large hadron collider
 
 > [!info] Metadata
+>
 > - **Authors**: ["Andy Sven Langner"]
 > - **Year**: 2016
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

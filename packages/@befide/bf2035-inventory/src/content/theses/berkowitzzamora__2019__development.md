@@ -30,32 +30,24 @@ keywords:
 # Development of a cryogenic refrigerator for a compact superconducting cyclotron in a hospital environment
 
 > [!info] Metadata
+>
 > - **Authors**: ["Daniel Berkowitz Zamora"]
 > - **Year**: 2019
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

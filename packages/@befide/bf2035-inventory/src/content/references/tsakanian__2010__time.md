@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Time domain numerical calculations of the short electron bunch wakefields in resistive structures 
+# Time domain numerical calculations of the short electron bunch wakefields in resistive structures
 
- _Notes_
-
+_Notes_

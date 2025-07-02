@@ -30,32 +30,24 @@ keywords:
 # Phase space linearization and external injection of electron bunches into laser-driven plasma wakefields at REGAE
 
 > [!info] Metadata
+>
 > - **Authors**: ["Benno Zeitler"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

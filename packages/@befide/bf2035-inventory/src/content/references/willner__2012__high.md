@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# A high repetition rate XUV seeding source for FLASH2 
+# A high repetition rate XUV seeding source for FLASH2
 
- _Notes_
-
+_Notes_

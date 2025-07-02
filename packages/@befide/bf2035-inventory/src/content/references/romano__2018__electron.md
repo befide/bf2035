@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Electron cloud formation in CERN particle accelerators and its impact on the beam dynamics 
+# Electron cloud formation in CERN particle accelerators and its impact on the beam dynamics
 
- _Notes_
-
+_Notes_

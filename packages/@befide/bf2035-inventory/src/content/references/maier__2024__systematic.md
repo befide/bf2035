@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Systematic Studies of the Micro-Bunching Instability with an Additional Corrugated Structure Impedance at KARA 
+# Systematic Studies of the Micro-Bunching Instability with an Additional Corrugated Structure Impedance at KARA
 
- _Notes_
-
+_Notes_

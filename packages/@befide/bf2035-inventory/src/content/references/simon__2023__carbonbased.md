@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Carbon-Based Materials for High-Power Accelerator Components Exposed to Extreme Radiation Conditions 
+# Carbon-Based Materials for High-Power Accelerator Components Exposed to Extreme Radiation Conditions
 
- _Notes_
-
+_Notes_

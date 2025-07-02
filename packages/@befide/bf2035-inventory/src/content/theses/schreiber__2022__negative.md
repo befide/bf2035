@@ -31,32 +31,24 @@ keywords:
 # Negative momentum compaction operation and its effect on the beam dynamics at the accelerator test facility KARA
 
 > [!info] Metadata
+>
 > - **Authors**: ["Patrick Schreiber"]
 > - **Year**: 2022
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

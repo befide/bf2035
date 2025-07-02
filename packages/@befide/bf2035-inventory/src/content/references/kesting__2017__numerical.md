@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Numerical noise in particle-in-cell tracking: generation and propagation 
+# Numerical noise in particle-in-cell tracking: generation and propagation
 
- _Notes_
-
+_Notes_

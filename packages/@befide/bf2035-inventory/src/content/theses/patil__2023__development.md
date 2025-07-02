@@ -37,32 +37,25 @@ keywords:
 # Development and Integration of High Throughput Detector Systems for Photon-Based Diagnostics at Karlsruhe Research Accelerator
 
 > [!info] Metadata
+>
 > - **Authors**: ["Meghana Mahaveer Patil"]
 > - **Year**: 2023
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > The Karlsruhe Research Accelerator (KARA), is a light source that generates intense THz radiation. It is realised by reducing the electron bunch size to a few picoseconds. This in turn results in fluctuations in the radiation emitted due to the formation of microstructures in the longitudinal phase space of the electron bunch. This phenomenon is also called as microbunching instability. There are longitudinal and transverse bunch diagnostics installed at KARA to study the microbunching instability extensively. A line camera called KALYPSO has been used as a detector for these diagnostics. This thesis discusses the design and integration of the detector, TCAD simulations performed for the study of LGAD, characterization of TI-LGAD sensor and finally integration at the experimental setup, measurements and results.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

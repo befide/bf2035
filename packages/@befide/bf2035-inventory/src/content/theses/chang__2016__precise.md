@@ -32,32 +32,24 @@ keywords:
 # Precise determination of the electron beam energy with Compton backscattered laser photons at ANKA
 
 > [!info] Metadata
+>
 > - **Authors**: ["Cheng Chang"]
 > - **Year**: 2016
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

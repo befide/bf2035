@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Development of a compact test facility for SRF photoelectron injectors 
+# Development of a compact test facility for SRF photoelectron injectors
 
- _Notes_
-
+_Notes_

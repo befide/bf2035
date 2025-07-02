@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Intensitäts- und Energieerhöhung an ELSA 
+# Intensitäts- und Energieerhöhung an ELSA
 
- _Notes_
-
+_Notes_

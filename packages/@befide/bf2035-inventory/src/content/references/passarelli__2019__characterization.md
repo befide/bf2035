@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Characterization of impedance and wakefields of accelerator devices in the short bunch limit and beam dynamics effects for the CLIC Damping Rings 
+# Characterization of impedance and wakefields of accelerator devices in the short bunch limit and beam dynamics effects for the CLIC Damping Rings
 
- _Notes_
-
+_Notes_

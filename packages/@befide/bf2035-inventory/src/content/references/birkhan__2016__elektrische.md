@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Elektrische dipol-polarisierbarkeit und spin-M1-stärke aus 48ca(p,p')-daten unter 0? 
+# Elektrische dipol-polarisierbarkeit und spin-M1-stärke aus 48ca(p,p')-daten unter 0?
 
- _Notes_
-
+_Notes_

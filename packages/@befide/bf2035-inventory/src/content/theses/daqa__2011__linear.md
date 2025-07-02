@@ -30,32 +30,24 @@ keywords:
 # Linear Betatron coupling studies with space charge effects in the SIS18
 
 > [!info] Metadata
+>
 > - **Authors**: ["Wafa Daqa"]
 > - **Year**: 2011
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

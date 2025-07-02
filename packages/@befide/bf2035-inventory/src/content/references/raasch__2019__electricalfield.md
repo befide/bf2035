@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Electrical-Field Sensitive Yba2cu3o(7-X) Detectors for Real-Time Monitoring of Picosecond Thz Pulses 
+# Electrical-Field Sensitive Yba2cu3o(7-X) Detectors for Real-Time Monitoring of Picosecond Thz Pulses
 
- _Notes_
-
+_Notes_

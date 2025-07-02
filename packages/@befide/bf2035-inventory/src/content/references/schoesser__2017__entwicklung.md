@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Entwicklung und Implementierung einer EPICS-basierten Beschleuniger-Steuerungsschnittstelle und automatisierten Strahloptimierung am S-DALINAC 
+# Entwicklung und Implementierung einer EPICS-basierten Beschleuniger-Steuerungsschnittstelle und automatisierten Strahloptimierung am S-DALINAC
 
- _Notes_
-
+_Notes_

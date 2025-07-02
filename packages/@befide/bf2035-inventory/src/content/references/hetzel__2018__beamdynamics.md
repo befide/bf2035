@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Beam-dynamics calculations including magnetic field measurements for the high-energy storage ring (HESR) at FAIR 
+# Beam-dynamics calculations including magnetic field measurements for the high-energy storage ring (HESR) at FAIR
 
- _Notes_
-
+_Notes_

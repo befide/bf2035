@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# A novel method and error analysis for beam optics measurements and corrections at the large hadron collider 
+# A novel method and error analysis for beam optics measurements and corrections at the large hadron collider
 
- _Notes_
-
+_Notes_

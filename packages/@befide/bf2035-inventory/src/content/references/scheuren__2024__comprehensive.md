@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Comprehensive characterization of laser-driven neutron sources and a pathway towards miniaturization 
+# Comprehensive characterization of laser-driven neutron sources and a pathway towards miniaturization
 
- _Notes_
-
+_Notes_

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Development of a cryogenic refrigerator for a compact superconducting cyclotron in a hospital environment 
+# Development of a cryogenic refrigerator for a compact superconducting cyclotron in a hospital environment
 
- _Notes_
-
+_Notes_

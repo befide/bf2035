@@ -36,32 +36,25 @@ keywords:
 # Methods for the design and analysis of higher-order mode couplers applied to superconducting accelerating structures
 
 > [!info] Metadata
+>
 > - **Authors**: ["Kai Papke"]
 > - **Year**: 2020
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > Higher-order modes (HOMs) may affect beam stability and refrigeration requirements of superconducting proton linacs such as the SPL which is being studied at CERN. One option being considered to limit these effects is the use of coaxial HOM couplers. In this work, potentially dangerous modes are analyzed and corresponding damping requirements derived. The design process of coaxial HOM couplers is examined under new aspects. Several prototypes are elaborated and compared in terms of mode damping, thermal loads, structural deformations, mechanical tolerances, and multipacting.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

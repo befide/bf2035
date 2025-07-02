@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Development and Integration of High Throughput Detector Systems for Photon-Based Diagnostics at Karlsruhe Research Accelerator 
+# Development and Integration of High Throughput Detector Systems for Photon-Based Diagnostics at Karlsruhe Research Accelerator
 
- _Notes_
-
+_Notes_

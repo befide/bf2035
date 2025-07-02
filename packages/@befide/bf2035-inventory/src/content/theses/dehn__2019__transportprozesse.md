@@ -30,32 +30,24 @@ keywords:
 # Transportprozesse in Photokathoden und ihr Beitrag zum longitudinalen Halo von Elektronenbeschleunigern
 
 > [!info] Metadata
+>
 > - **Authors**: ["Monika Dehn"]
 > - **Year**: 2019
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

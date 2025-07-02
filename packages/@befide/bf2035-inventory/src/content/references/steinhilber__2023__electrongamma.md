@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# The electron-gamma coincidence set-up at the S-DALINAC 
+# The electron-gamma coincidence set-up at the S-DALINAC
 
- _Notes_
-
+_Notes_

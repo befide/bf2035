@@ -30,32 +30,24 @@ keywords:
 # Development and Testing of Self‒Powered Detectors for Nuclear Measurements in Fusion Reactors
 
 > [!info] Metadata
+>
 > - **Authors**: ["Prasoon Raj"]
 > - **Year**: 2019
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

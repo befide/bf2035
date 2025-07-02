@@ -30,32 +30,24 @@ keywords:
 # Electromagnetic Design, Implementation and Test of a Superconducting Undulator with a Transverse Gradient Field Amplitude
 
 > [!info] Metadata
+>
 > - **Authors**: ["Veronica Afonso-Rodrigues"]
 > - **Year**: 2015
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

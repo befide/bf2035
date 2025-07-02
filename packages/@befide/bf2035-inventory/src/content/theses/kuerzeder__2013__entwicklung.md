@@ -31,32 +31,24 @@ keywords:
 # Entwicklung, Aufbau und Test eines neuen Kryostatmoduls für den S-DALINAC
 
 > [!info] Metadata
+>
 > - **Authors**: ["Thorsten Kürzeder"]
 > - **Year**: 2013
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

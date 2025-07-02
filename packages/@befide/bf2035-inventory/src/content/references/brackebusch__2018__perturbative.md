@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Perturbative methods for the computation of resonant cavity eigenmodes subject to geometric variations 
+# Perturbative methods for the computation of resonant cavity eigenmodes subject to geometric variations
 
- _Notes_
-
+_Notes_

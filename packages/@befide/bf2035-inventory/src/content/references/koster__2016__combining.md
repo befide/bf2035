@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Combining rotating-coil measurements of large-aperture accelerator magnets. 
+# Combining rotating-coil measurements of large-aperture accelerator magnets.
 
- _Notes_
-
+_Notes_

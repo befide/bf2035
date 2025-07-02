@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Accelerating cavity and higher order mode coupler design for the future circular collider 
+# Accelerating cavity and higher order mode coupler design for the future circular collider
 
- _Notes_
-
+_Notes_

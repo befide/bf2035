@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Design and construction of a test stand for photocathode research and experiments. 
+# Design and construction of a test stand for photocathode research and experiments.
 
- _Notes_
-
+_Notes_

@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Spatial characterisation of a 36-fold segmented AGATA detector via a novel scanning system 
+# Spatial characterisation of a 36-fold segmented AGATA detector via a novel scanning system
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Transverse Resonance Island Buckets at BESSY II. A new bunch separation scheme 
+# Transverse Resonance Island Buckets at BESSY II. A new bunch separation scheme
 
- _Notes_
-
+_Notes_

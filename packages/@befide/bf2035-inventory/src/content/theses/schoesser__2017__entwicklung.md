@@ -31,32 +31,24 @@ keywords:
 # Entwicklung und Implementierung einer EPICS-basierten Beschleuniger-Steuerungsschnittstelle und automatisierten Strahloptimierung am S-DALINAC
 
 > [!info] Metadata
+>
 > - **Authors**: ["Thomas Schösser"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Sub-Picosecond Dynamics During Relativistic Laser-Plasma Interaction 
+# Sub-Picosecond Dynamics During Relativistic Laser-Plasma Interaction
 
- _Notes_
-
+_Notes_

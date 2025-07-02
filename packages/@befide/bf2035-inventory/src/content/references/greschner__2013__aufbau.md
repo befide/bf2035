@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Aufbau und Inbetriebnahme einer Photoneutronenquelle 
+# Aufbau und Inbetriebnahme einer Photoneutronenquelle
 
- _Notes_
-
+_Notes_

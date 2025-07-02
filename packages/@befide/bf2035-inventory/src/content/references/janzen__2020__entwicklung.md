@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Entwicklung eines neuen Messverfahrens zur Durchflussmessung in der Kryotechnik 
+# Entwicklung eines neuen Messverfahrens zur Durchflussmessung in der Kryotechnik
 
- _Notes_
-
+_Notes_

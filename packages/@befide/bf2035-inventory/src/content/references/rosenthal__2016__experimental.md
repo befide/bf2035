@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Experimental benchmarking of spin tracking algorithms for electric dipole moment searches at the cooler synchrotron COSY 
+# Experimental benchmarking of spin tracking algorithms for electric dipole moment searches at the cooler synchrotron COSY
 
- _Notes_
-
+_Notes_

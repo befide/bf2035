@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Untersuchung von Bunch-Bunch-Wechselwirkungen und des Einflusses der geometrischen Impedanz bei der Erzeugung kohärenter THz-Strahlung 
+# Untersuchung von Bunch-Bunch-Wechselwirkungen und des Einflusses der geometrischen Impedanz bei der Erzeugung kohärenter THz-Strahlung
 
- _Notes_
-
+_Notes_

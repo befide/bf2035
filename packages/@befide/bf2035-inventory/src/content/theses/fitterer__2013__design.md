@@ -31,32 +31,24 @@ keywords:
 # Design Study of the Large Hadron Electron Collider and a Rapid Cycling Synchrotron as Alternative to the PS Booster Upgrade at {CERN}
 
 > [!info] Metadata
+>
 > - **Authors**: ["Miriam Fitterer"]
 > - **Year**: 2013
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

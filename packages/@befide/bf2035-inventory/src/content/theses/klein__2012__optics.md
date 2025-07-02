@@ -31,32 +31,24 @@ keywords:
 # Optics calculations and simulations of longitudinal beam dynamics for the low-alpha mode at ANKA
 
 > [!info] Metadata
+>
 > - **Authors**: ["Marit Klein"]
 > - **Year**: 2012
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

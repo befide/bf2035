@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Entwicklung von Fertigungsverfahren für einen kryogenischen Undulator sowie deren Validierung durch magnetische Messungen an einem Prototypen 
+# Entwicklung von Fertigungsverfahren für einen kryogenischen Undulator sowie deren Validierung durch magnetische Messungen an einem Prototypen
 
- _Notes_
-
+_Notes_

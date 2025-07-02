@@ -37,32 +37,25 @@ keywords:
 # Investigation and development of a transverse deflecting structure
 
 > [!info] Metadata
+>
 > - **Authors**: ["Gowrishankar Thalagavadi Hallilingaiah"]
 > - **Year**: 2022
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > The thesis described the development of a beam separator device for the ELBE accelerator in Dresden, Germany, facilitating simultaneous operation of multiple secondary user stations. After reviewing deflecting structures, an RF cavity was chosen as the optimal solution. Extensive electromagnetic and multiphysics analysis were conducted to optimize the cavity design. A copper deflecting cavity was manufactured and underwent rigorous high-power testing, successfully meeting the design requirements. The cavity is now ready for installation in the ELBE beamline.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

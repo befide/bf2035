@@ -31,32 +31,24 @@ keywords:
 # Micro-Bunching Control at Electron Storage Rings with Reinforcement Learning
 
 > [!info] Metadata
+>
 > - **Authors**: ["Tobias Boltz"]
 > - **Year**: 2021
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

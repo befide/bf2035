@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Control System for the FRANZ Facility 
+# Control System for the FRANZ Facility
 
- _Notes_
-
+_Notes_

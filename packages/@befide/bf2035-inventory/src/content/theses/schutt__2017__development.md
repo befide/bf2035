@@ -32,32 +32,25 @@ keywords:
 # Development of a 325 MHz ladder RFQ
 
 > [!info] Metadata
+>
 > - **Authors**: ["Maximilian Schütt"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > Zur effizienten Beschleunigung von Ionen wird meist nach deren Erzeugung in einer Ionenquelle ein Radio Frequenz Quadrupol verwendet. Die vorliegende Dissertation befasst sich mit Entwicklung, Bau und Messung des Prototyps eines neuartigen Leiter-RFQs, der bei 325 MHz betrieben wird. Der Leiter-RFQ verfügt über ein neuartiges mechanisches Design und versucht die Vorteile der beiden vorrangig im Betrieb befindlichen RFQ Typen, des 4-Rod und 4-Vane RFQs, zu verbinden. Die physikalischen Parameter sind der Spezifikation des RFQs für den geplanten Protonenlinac (p-Linac) am FAIR-Projekt an der GSI Darmstadt entnommen. Darüber hinaus wird der aktuelle Planungs- und Simulationsstand eines modulierten Prototyps mit der vollen Länge von ca. 3,5 m zur Durchführung von Strahltests dargestellt.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

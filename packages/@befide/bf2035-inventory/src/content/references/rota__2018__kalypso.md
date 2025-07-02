@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# KALYPSO, a novel detector system for high-repetition rate and real-time beam diagnostics 
+# KALYPSO, a novel detector system for high-repetition rate and real-time beam diagnostics
 
- _Notes_
-
+_Notes_

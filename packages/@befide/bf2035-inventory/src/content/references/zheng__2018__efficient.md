@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Efficient algorithms for the fast computation of space charge effects caused by charged particles in particle accelerators 
+# Efficient algorithms for the fast computation of space charge effects caused by charged particles in particle accelerators
 
- _Notes_
-
+_Notes_

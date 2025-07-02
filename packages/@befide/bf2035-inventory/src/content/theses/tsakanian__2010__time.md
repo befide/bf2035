@@ -30,32 +30,24 @@ keywords:
 # Time domain numerical calculations of the short electron bunch wakefields in resistive structures
 
 > [!info] Metadata
+>
 > - **Authors**: ["Andranik Tsakanian"]
 > - **Year**: 2010
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

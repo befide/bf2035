@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Electro-optical bunch length measurements at the ANKA storage ring 
+# Electro-optical bunch length measurements at the ANKA storage ring
 
- _Notes_
-
+_Notes_

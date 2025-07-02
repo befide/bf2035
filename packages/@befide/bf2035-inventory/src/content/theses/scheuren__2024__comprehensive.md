@@ -35,32 +35,24 @@ keywords:
 # Comprehensive characterization of laser-driven neutron sources and a pathway towards miniaturization
 
 > [!info] Metadata
+>
 > - **Authors**: ["Stefan Scheuren"]
 > - **Year**: 2024
-> - **Journal**: 
+> - **Journal**:
 > - **DOI**: 10.15120/GSI-2025-00330
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

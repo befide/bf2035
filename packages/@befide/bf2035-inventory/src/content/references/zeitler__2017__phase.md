@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Phase space linearization and external injection of electron bunches into laser-driven plasma wakefields at REGAE 
+# Phase space linearization and external injection of electron bunches into laser-driven plasma wakefields at REGAE
 
- _Notes_
-
+_Notes_

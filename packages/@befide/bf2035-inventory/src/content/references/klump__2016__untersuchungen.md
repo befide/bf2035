@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Untersuchungen an niederenergetischen, intensiven und hochbrillanten Protonenstrahlen 
+# Untersuchungen an niederenergetischen, intensiven und hochbrillanten Protonenstrahlen
 
- _Notes_
-
+_Notes_

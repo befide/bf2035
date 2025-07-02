@@ -31,32 +31,24 @@ keywords:
 # Entwurf eines Møllerpolarimeters und Entwicklung einer aktiven Phasenstabilisierung für den Injektor des S-DALINAC
 
 > [!info] Metadata
+>
 > - **Authors**: ["Thore Bahlo"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

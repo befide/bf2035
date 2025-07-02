@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Gesamtkonzept für den MESA-Teilchenbeschleuniger unter besonderer Berücksichtigung von Strahloptik und Kryogenik 
+# Gesamtkonzept für den MESA-Teilchenbeschleuniger unter besonderer Berücksichtigung von Strahloptik und Kryogenik
 
- _Notes_
-
+_Notes_

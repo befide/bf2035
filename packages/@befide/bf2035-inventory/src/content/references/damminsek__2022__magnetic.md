@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Magnetic characterization studies of a superconducting transverse gradient undulator for a compact LWFA-based free-electron laser 
+# Magnetic characterization studies of a superconducting transverse gradient undulator for a compact LWFA-based free-electron laser
 
- _Notes_
-
+_Notes_

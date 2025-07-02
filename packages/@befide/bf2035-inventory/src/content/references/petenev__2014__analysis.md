@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Analysis of injection and recovery schemes for ERL based light source 
+# Analysis of injection and recovery schemes for ERL based light source
 
- _Notes_
-
+_Notes_

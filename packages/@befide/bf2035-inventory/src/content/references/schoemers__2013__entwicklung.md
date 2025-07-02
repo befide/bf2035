@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Entwicklung einer dynamischen Intensitätsregelung für das Heidelberger Ionenstrahl-Therapiesynchrotron 
+# Entwicklung einer dynamischen Intensitätsregelung für das Heidelberger Ionenstrahl-Therapiesynchrotron
 
- _Notes_
-
+_Notes_

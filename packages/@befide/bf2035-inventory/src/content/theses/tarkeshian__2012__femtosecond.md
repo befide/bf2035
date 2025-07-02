@@ -31,32 +31,24 @@ keywords:
 # Femtosecond resolved diagnostics for electron beam and XUV seed temporal overlap at sFLASH
 
 > [!info] Metadata
+>
 > - **Authors**: ["Roxana Tarkeshian"]
 > - **Year**: 2012
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Photocathodes for high brightness, high average current photoelectron injectors 
+# Photocathodes for high brightness, high average current photoelectron injectors
 
- _Notes_
-
+_Notes_

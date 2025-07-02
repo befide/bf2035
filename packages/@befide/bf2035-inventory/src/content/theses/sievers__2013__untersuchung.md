@@ -31,32 +31,24 @@ keywords:
 # Untersuchung von Piezoaktoren zur Verbesserung der Frequenzabstimmung und Aufbau eines Quenchortungssytems für die Beschleunigungsstrukturen des S-DALINAC
 
 > [!info] Metadata
+>
 > - **Authors**: ["Sven Thorsten Sievers"]
 > - **Year**: 2013
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

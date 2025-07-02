@@ -30,32 +30,24 @@ keywords:
 # Space-charge driven transverse beam instabilities in synchrotrons
 
 > [!info] Metadata
+>
 > - **Authors**: ["Yaoshuo Yuan"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Design, Aufbau und Inbetriebnahme eines Bestrahlungsplatzes mit aktiver dreidimensionaler Aufbereitung des Protonenstrahls 
+# Design, Aufbau und Inbetriebnahme eines Bestrahlungsplatzes mit aktiver dreidimensionaler Aufbereitung des Protonenstrahls
 
- _Notes_
-
+_Notes_

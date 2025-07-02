@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Experimental Investigation and Modelling of Incidents in Liquid Helium Cryostats 
+# Experimental Investigation and Modelling of Incidents in Liquid Helium Cryostats
 
- _Notes_
-
+_Notes_

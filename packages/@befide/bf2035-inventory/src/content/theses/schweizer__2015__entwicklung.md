@@ -30,32 +30,24 @@ keywords:
 # Entwicklung einer effizienten Hochstrom-Ionenquelle für das FRANZ-Projekt zur Produktion intensiver, hochbrillanter Protonenstrahlen
 
 > [!info] Metadata
+>
 > - **Authors**: ["Waldemar Schweizer"]
 > - **Year**: 2015
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

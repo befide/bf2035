@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Simulation of the interaction of positively charged beams and electron clouds 
+# Simulation of the interaction of positively charged beams and electron clouds
 
- _Notes_
-
+_Notes_

@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Controlled manipulation of atoms in rydberg quantum states for application in experiments with antihydrogen 
+# Controlled manipulation of atoms in rydberg quantum states for application in experiments with antihydrogen
 
- _Notes_
-
+_Notes_

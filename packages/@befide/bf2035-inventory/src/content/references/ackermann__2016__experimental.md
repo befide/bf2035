@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Experimental and Numerical Investigations on Seeding Options for the Multi-Beam Line Free-Electron Laser Facility Flash 
+# Experimental and Numerical Investigations on Seeding Options for the Multi-Beam Line Free-Electron Laser Facility Flash
 
- _Notes_
-
+_Notes_

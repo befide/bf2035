@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Investigation of transient processes at the DELTA electron storage ring using a digital bunch-by-bunch feedback system 
+# Investigation of transient processes at the DELTA electron storage ring using a digital bunch-by-bunch feedback system
 
- _Notes_
-
+_Notes_

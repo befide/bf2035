@@ -30,32 +30,24 @@ keywords:
 # Perturbative methods for the computation of resonant cavity eigenmodes subject to geometric variations
 
 > [!info] Metadata
+>
 > - **Authors**: ["Korinna Brackebusch"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

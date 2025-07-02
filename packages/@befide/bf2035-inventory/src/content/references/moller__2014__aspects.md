@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Aspects of nuclear collectivity studied in projectile coulomb excitation experiments 
+# Aspects of nuclear collectivity studied in projectile coulomb excitation experiments
 
- _Notes_
-
+_Notes_

@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Entwurf eines Møllerpolarimeters und Entwicklung einer aktiven Phasenstabilisierung für den Injektor des S-DALINAC 
+# Entwurf eines Møllerpolarimeters und Entwicklung einer aktiven Phasenstabilisierung für den Injektor des S-DALINAC
 
- _Notes_
-
+_Notes_

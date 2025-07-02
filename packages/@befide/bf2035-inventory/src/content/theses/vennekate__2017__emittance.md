@@ -32,32 +32,25 @@ keywords:
 # Emittance compensation for SRF photoinjectors
 
 > [!info] Metadata
+>
 > - **Authors**: ["Hannes Vennekate"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > The advantages of contemporary particle injectors are high bunch charges and good beam quality in the case of normal conducting RF guns and increased repetition rates in the one of DC injectors. The technological edge of the concept of superconducting radio frequency injectors is to combine the strengths of both these sides. As many future accelerator concepts, such as energy recovery linacs, high power free electron lasers and certain collider designs, demand particle sources with high bunch charges and high repetition rates combined, applying the superconductivity of the accelerator modules to the injector itself is the next logical step. However, emittance compensation — the cornerstone for high beam quality — in case of a superconducting injector is much more challenging than in the normal conducting one. The use of simple electromagnets generating a solenoid field around the gun’s resonator interferes with its superconducting state. Hence, it requires novel and sophisticated techniques to maintain the high energy gain inside the gun cavity, while at the same time alleviating the detrimental fast transverse emittance growth of the bunch. In the case of the ELBE accelerator at the Helmholtz-Zentrum Dresden-Rossendorf, a superconducting electron accelerator provides beam for several independent beamlines in continuous wave mode. The applications include IR to THz free electron lasers, neutron and positron generation, to Thompson backscattering with an inhouse TW laser, and hence, call for a flexible CW injector. Therefore, the development of a 3.5 cell superconducting electron gun was initiated in 1997. The focus of this thesis lies on three approaches of transverse emittance compensation for this photoinjector: RF focusing, the installation of a superconducting solenoid close to the cavity’s exit, and the introduction of a transverse electrical mode of the RF field in the resonator. All three methods are described in theory, examined by numerical simulation, and experimentally reviewed in the particular case of the ELBE SRF Gun II at HZDR and a copy of its niobium resonator at Thomas Jefferson National Laboratory, Newport News, VA, USA.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

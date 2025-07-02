@@ -30,32 +30,24 @@ keywords:
 # Transverse beam transfer functions of relativistic ion bunches
 
 > [!info] Metadata
+>
 > - **Authors**: ["Paul A. Görgen"]
 > - **Year**: 2015
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

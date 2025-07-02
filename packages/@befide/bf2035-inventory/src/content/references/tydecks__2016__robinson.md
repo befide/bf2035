@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# A robinson wiggler for the metrology light source 
+# A robinson wiggler for the metrology light source
 
- _Notes_
-
+_Notes_

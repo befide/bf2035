@@ -31,7 +31,6 @@ related:
   - []
 ---
 
-# Shell structure in the vicinity of the doubly magic 100Sn via coulomb excitation at PreSPEC 
+# Shell structure in the vicinity of the doubly magic 100Sn via coulomb excitation at PreSPEC
 
- _Notes_
-
+_Notes_

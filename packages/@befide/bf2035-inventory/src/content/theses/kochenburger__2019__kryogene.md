@@ -31,32 +31,25 @@ keywords:
 # Kryogene Gemischkältekreisläufe für Hochtemperatursupraleiter-Anwendungen
 
 > [!info] Metadata
+>
 > - **Authors**: ["Thomas Kochenburger"]
 > - **Year**: 2019
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > Die Arbeit befasst sich mit der Entwicklung von Kühlprozessen für Hochtemperatursupraleiter (HTS) auf Basis kryogener Gemischkältekreisläufe (CMRCs). Diese ermöglichen eine effiziente, kostengünstige und zuverlässige Kühlung im geschlossenen Kreislauf bei nahezu unbegrenzter Skalierbarkeit. Die Kühltemperaturen von CMRCs müssen für die HTS-Kühlung deutlich abgesenkt werden, was bisher mit einem starken Effizienzeinbruch verbunden war. Zudem sollten aus Sicherheitsgründen unbrennbare Kältemittelgemische statt der üblicherweise verwendeten Stickstoff-Kohlenwasserstoffgemischen eingesetzt werden. Hierfür wurde ein zweistufiger Gemischkältekaskadenprozess konzipiert, simuliert und teilweise experimentell umgesetzt. In der Prozesssimulation kam eine Peng-Robinson-Zustandsgleichung zum Einsatz, die für die Berechnung der Kältemittelgemische neu parametrisiert wurde. Fehlende Phasengleichgewichtsdaten für Systeme mit R1234yf wurden in eigenen Experimenten ermittelt. Die Gemischzusammensetzungen und Betriebsdrücke der Kältekreisläufe wurden durch Energieeffizienzoptimierung in der Simulation definiert. In einem neu aufgebauten Prüfstand konnte die 1. Stufe des Prozesses experimentell realisiert werden, wobei erste Ergebnisse gut mit den Simulationen übereinstimmen.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

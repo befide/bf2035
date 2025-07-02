@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Expected damage to accelerator equipment due to the impact of the full LHC beam 
+# Expected damage to accelerator equipment due to the impact of the full LHC beam
 
- _Notes_
-
+_Notes_

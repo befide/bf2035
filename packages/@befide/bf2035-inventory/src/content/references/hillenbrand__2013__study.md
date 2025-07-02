@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Study of Plasma-Based Acceleration for High Energy Physics and Other Applications 
+# Study of Plasma-Based Acceleration for High Energy Physics and Other Applications
 
- _Notes_
-
+_Notes_

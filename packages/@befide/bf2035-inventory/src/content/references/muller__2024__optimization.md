@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Optimization of superconducting crossbar H-mode cavity preparation 
+# Optimization of superconducting crossbar H-mode cavity preparation
 
- _Notes_
-
+_Notes_

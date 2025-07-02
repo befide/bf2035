@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Laser cooling of intense relativistic ion beams 
+# Laser cooling of intense relativistic ion beams
 
- _Notes_
-
+_Notes_

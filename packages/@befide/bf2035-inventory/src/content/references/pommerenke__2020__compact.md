@@ -35,7 +35,6 @@ related:
   - []
 ---
 
-# Compact radio-frequency quadrupoles for industrial and medical applications 
+# Compact radio-frequency quadrupoles for industrial and medical applications
 
- _Notes_
-
+_Notes_

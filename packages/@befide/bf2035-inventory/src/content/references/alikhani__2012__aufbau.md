@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Aufbau und Inbetriebnahme des DAGATA-Polarimeters 
+# Aufbau und Inbetriebnahme des DAGATA-Polarimeters
 
- _Notes_
-
+_Notes_

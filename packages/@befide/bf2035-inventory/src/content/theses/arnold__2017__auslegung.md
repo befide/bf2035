@@ -31,32 +31,24 @@ keywords:
 # Auslegung, Planung und Aufbau einer dritten Rezirkulation mit ERL-Modus für den S-DALINAC
 
 > [!info] Metadata
+>
 > - **Authors**: ["Michaela Arnold"]
 > - **Year**: 2017
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

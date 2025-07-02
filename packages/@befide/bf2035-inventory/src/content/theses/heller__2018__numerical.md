@@ -30,32 +30,24 @@ keywords:
 # Numerical simulation of electromagnetic fields in complex multi-cavity superconducting radio frequency resonators
 
 > [!info] Metadata
+>
 > - **Authors**: ["Johann Heller"]
 > - **Year**: 2018
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

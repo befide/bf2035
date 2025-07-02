@@ -31,32 +31,24 @@ keywords:
 # Experimental and Numerical Investigations on Seeding Options for the Multi-Beam Line Free-Electron Laser Facility Flash
 
 > [!info] Metadata
+>
 > - **Authors**: ["Sven Ackermann"]
 > - **Year**: 2016
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

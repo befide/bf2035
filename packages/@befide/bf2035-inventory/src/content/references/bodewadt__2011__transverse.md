@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Transverse beam diagnostics for the XUV seeding experiment at FLASH 
+# Transverse beam diagnostics for the XUV seeding experiment at FLASH
 
- _Notes_
-
+_Notes_

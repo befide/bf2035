@@ -37,7 +37,6 @@ related:
   - []
 ---
 
-# Injector Optimization at the Superconducting Darmstadt Linear Electron Accelerator S-DALINAC 
+# Injector Optimization at the Superconducting Darmstadt Linear Electron Accelerator S-DALINAC
 
- _Notes_
-
+_Notes_

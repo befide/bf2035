@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Entwicklung eines supraleitenden Beschleunigermoduls für den rezirkulierenden Betrieb am Mainz Energy-Recovering Superconducting Accelerator (MESA) 
+# Entwicklung eines supraleitenden Beschleunigermoduls für den rezirkulierenden Betrieb am Mainz Energy-Recovering Superconducting Accelerator (MESA)
 
- _Notes_
-
+_Notes_

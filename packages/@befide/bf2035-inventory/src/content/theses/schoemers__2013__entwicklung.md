@@ -31,32 +31,25 @@ keywords:
 # Entwicklung einer dynamischen Intensitätsregelung für das Heidelberger Ionenstrahl-Therapiesynchrotron
 
 > [!info] Metadata
+>
 > - **Authors**: ["Christian Schömers"]
 > - **Year**: 2013
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
 > Das Heidelberger Ionenstrahl Therapiezentrum (HIT) ist die erste klinische Anlage in Europa, an der die Strahlentherapie zur Tumorbekämpfung mit schwereren Ionen als Protonen möglich ist. Seit November 2009 wurden mehr als 1500 Patienten bei HIT behandelt. Dabei kommt das beim GSI Helmholtzzentrum für Schwerionenforschung GmbH in Darmstadt entwickelte Rasterscan-Verfahren zum Einsatz. In der Bestrahlungsplanung wird der Tumor in Schichten gleicher Ionen-Energie und jede Schicht in einzelne Rasterpunkte eingeteilt. Für jeden Rasterpunkt wird eine individuelle Teilchenzahl appliziert, die am Ende zu der gewünschten Dosisverteilung führt. Dabei kann sich die benötigte Teilchenbelegung der einzelnen Rasterpunkte auch innerhalb einer Schicht um mehr als zwei Größenordnungen unterscheiden. Ein auf wenige Millimeter Durchmesser fokussierter Teilchenstrahl kann in allen Raumrichtungen variiert werden, so dass selbst für unregelmäßig geformte Tumoren eine hochgenaue Dosiskonformität erreicht wird. Messkammern, die in der Ionen-Flugbahn kurz vor dem Patienten installiert sind, überwachen kontinuierlich Position, Form und Intensität des Strahls und ermöglichen so die Rasterpunkt-abhängige Dosisabgabe. Zur Bereitstellung des Teilchenstrahls ist eine komplexe Beschleunigeranlage nötig, die eine große Bibliothek an möglichen Strahlparametern erzeugen kann. Das Herzstück der Anlage ist ein Synchrotron, in dem die Ionen auf die gewünschte Energie beschleunigt und anschließend über mehrere Sekunden extrahiert werden. Diese langsame Extraktion ist nötig, um dem Bestrahlungssystem genug Zeit für die korrekte, punktgenaue Dosisabgabe zu geben. Die zeitliche Struktur der beim Patienten ankommenden Strahlintensität wird Spill genannt. Der verwendete Extraktionsmechanismus ist die transversale RF-Knockout Extraktion, die auf dem Prinzip der langsamen Resonanzextraktion beruht. Die im Synchrotron umlaufenden Teilchen werden dabei transversal angeregt, bis nach und nach ihre Schwingungsamplitude so groß ist, dass sie in den Extraktionskanal gelangen. Das für diese Anregung verantwortliche Gerät ist der RF-KO-Exciter. Er ist so eingestellt, dass ein möglichst konstanter Teilchenstrom das Synchrotron verlässt. Bereits beim Befüllen des Synchrotrons variiert jedoch die injizierte Teilchenzahl und deren Verteilung im Phasenraum, so dass die voreingestellte Amplitudenfunktion des RF-KO-Exciters keinen idealen Spill liefern kann. Es kommt unweigerlich zu Schwankungen der Intensität am Strahlziel. Die erreichbare Leistungsfähigkeit der Therapieanlage hängt jedoch in hohem Maße von der Spillqualität ab. Je besser diese ist, umso schneller kann die individuelle Bestrahlung erfolgen und um so mehr Patienten können in gleicher Zeit behandelt werden. Die vorliegende Arbeit beschäftigt sich mit der Verbesserung der Spillqualität am Bestrahlungsplatz. Dazu wird ein Regelkreis zwischen den Strahl-detektierenden Messkammern und dem die Extraktion steuernden RF-KO-Exciter geschlossen. Ionisationskammern, die auch zur Dosisbestimmung verwendet werden, messen die aktuelle Intensität. Das Therapiekontrollsystem, das den gesamten Bestrahlungsprozess steuert, gibt den Sollwert vor und leitet alle Informationen zur Reglereinrichtung. Dort wird in Abhängigkeit der Abweichung aus gewünschter und tatsächlich vorhandener Intensität sowie dem Regelalgorithmus ein Korrektursignal errechnet und dem RF-KO-Exciter zugeführt. Eine der Herausforderungen bestand dabei im Auffinden der geeigneten Regelparameter, die entsprechend der Strahlparameter Energie und Intensität gewählt werden müssen. In einem ersten Schritt kann so der extrahierte Teilchenstrahl auf dem jeweils geforderten, konstanten Niveau gehalten werden. Diese Stufe wird seit April 2013 vollständig im Routinebetrieb der Therapieanlage verwendet. Der zweite Schritt besteht in der Anpassung der Extraktionsrate an den individuellen Bestrahlungsplan. So können die Rasterpunkte, die eine hohe Dosis benötigen, mit einer höheren Intensität bestrahlt werden, was die Bestrahlungszeit deutlich reduziert. Die Vollendung dieser Stufe ist bis Ende 2013 vorgesehen. Im Rahmen dieser Arbeit wurden zwei Testsysteme sowie die Implementierung in den Routinebetrieb des Therapiebeschleunigers einer solchen Intensitäts- oder Spillregelung realisiert. Dies beinhaltet den Aufbau der Systeme, die Bereitstellung von Soll- und Istwert sowie die Auslegung und Einstellung des Regelkreises. Der erste Testaufbau für ein Strahlziel des Beschleunigers diente generellen Studien zur Machbarkeit einer solchen Regelung. Die dabei gesammelten Erfahrungen über nötige Erweiterungen führten zur zweiten Generation einer Testumgebung auf Basis eines Echtzeit-Ethernet-Systems. Dieses ermöglichte bereits die Regelung an allen Strahlzielen der HIT-Anlage sowie die Verwendung von unterschiedlichen Regelalgorithmen. Mit den Systemen wurden Messungen zur Charakterisierung der Spillregelung im Parameterraum des Beschleunigers durchgeführt, um so ihre Möglichkeiten und Grenzen zu untersuchen. Erkenntnisse aus dieser Testphase flossen direkt in die Implementierung des für den Patientenbetrieb eingesetzten Systems ein, für das ein hohes Maß an Betriebs-Stabilität erforderlich ist. Es wurde in das Beschleuniger-Kontrollsystem unter Berücksichtigung des Sicherheitskonzeptes der Anlage integriert. Die reine Bestrahlungszeit wird durch die Realisierung der ersten Stufe um bis zu 25% reduziert, nach Vollendung der zweiten Stufe wird sie um weitere bis zu 50% verringert. Strahlzeiten für Nachjustierungen der Spillqualität werden ebenfalls zum Teil eingespart. Insgesamt konnte durch die Spillregelung die Effizienz der Anlage deutlich gesteigert werden.
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

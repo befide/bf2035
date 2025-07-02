@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Few-cycle laser pulses for compact plasma accelerators 
+# Few-cycle laser pulses for compact plasma accelerators
 
- _Notes_
-
+_Notes_

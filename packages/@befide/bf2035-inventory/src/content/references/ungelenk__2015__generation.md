@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Generation and Detection Schemes for Laser-Induced Coherent Terahertz Radiation at the Electron Storage Ring Delta 
+# Generation and Detection Schemes for Laser-Induced Coherent Terahertz Radiation at the Electron Storage Ring Delta
 
- _Notes_
-
+_Notes_

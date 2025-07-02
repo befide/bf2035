@@ -30,32 +30,24 @@ keywords:
 # Simulation and First Experimental Tests of an Electron Beam Transport System for a Laser Wakefield Accelerator
 
 > [!info] Metadata
+>
 > - **Authors**: ["Christina Widmann"]
 > - **Year**: 2016
-> - **Journal**: 
-> - **DOI**: 
+> - **Journal**:
+> - **DOI**:
 
 > [!abstract] Abstract
-> 
 
 > [!quote] Key Quotes
-> 
 
 > [!note] Notes
-> 
 
 > [!example] Examples
-> 
 
 > [!success] Strengths
-> 
 
 > [!failure] Weaknesses
-> 
 
 > [!question] Questions
-> 
 
 > [!tip] Applications
-> 
-

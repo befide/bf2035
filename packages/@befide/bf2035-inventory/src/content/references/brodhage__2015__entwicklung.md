@@ -29,7 +29,6 @@ related:
   - []
 ---
 
-# Entwicklung und Aufbau der ersten gekoppelten CH-Struktur für den neuen Protoneninjektor an der Facility for Antiproton and Ion Research 
+# Entwicklung und Aufbau der ersten gekoppelten CH-Struktur für den neuen Protoneninjektor an der Facility for Antiproton and Ion Research
 
- _Notes_
-
+_Notes_

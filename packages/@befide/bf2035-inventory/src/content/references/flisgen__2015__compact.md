@@ -30,7 +30,6 @@ related:
   - []
 ---
 
-# Compact state-space models for complex superconducting radio-frequency structures based on model order reduction and concatenation methods 
+# Compact state-space models for complex superconducting radio-frequency structures based on model order reduction and concatenation methods
 
- _Notes_
-
+_Notes_
