@@ -111,25 +111,14 @@ export class TreeTable extends BaseMixin {
 
 
 
-  let _allEntries
+  this._allEntries = []
   let _entriesMap = {}
   const _ancestorsMap = {}
   let _allEntriesTree
   
-  let _columns = []
-  let _sortBy = function (d) {
-    return d
-  }
-  let _order = ascending
-  const _beginSlice = 0
-  let _endSlice
-  let _showSections = true
-  let _section = function () {
-    return ""
-  } // all in one section
-  _chart._mandatoryAttributes(["dimension"])
+  
 
-  _chart._doRender = function () {
+  _doRender () {
     _chart.selectAll("ul").remove()
 
     renderRoot()
@@ -137,7 +126,7 @@ export class TreeTable extends BaseMixin {
     return _chart
   }
 
-  _chart._doColumnValueFormat = function (v, d) {
+  _doColumnValueFormat = function (v, d) {
     return typeof v === "function"
       ? v(d) // v as function
       : typeof v === "string"
@@ -145,12 +134,12 @@ export class TreeTable extends BaseMixin {
         : v.format(d) // v is Object, use fn (element 2)
   }
 
-  _chart._doColumnHeaderFormat = function (d) {
+  _doColumnHeaderFormat = function (d) {
     // if 'function', convert to string representation
     // show a string capitalized
     // if an object then display its label string as-is.
     return typeof d === "function"
-      ? _chart._doColumnHeaderFnToString(d)
+      ? _doColumnHeaderFnToString(d)
       : typeof d === "string"
         ? _chart._doColumnHeaderCapitalize(d)
         : String(d.label)
