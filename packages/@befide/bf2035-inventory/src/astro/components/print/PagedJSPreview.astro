@@ -11,12 +11,10 @@
       keyboardEvent.shiftKey &&
       keyboardEvent.code == "KeyP"
     ) {
-      const previewer = new Previewer({})
-
-      const paged = new Previewer({})
-      const flow = paged
+      const paged = new Previewer()
+      paged
         .preview(document.getElementById("#content"))
-        .then((flow: any) => {
+        .then((flow: unknown) => {
           console.log(flow)
 
           // previewer.preview(

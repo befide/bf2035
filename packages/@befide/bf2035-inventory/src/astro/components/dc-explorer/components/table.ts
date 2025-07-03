@@ -77,9 +77,9 @@ export function createTableChart(
 
     tableHeaderTHs.append("span").text((d: TableConfigEntry) => d.label) // Accessor function for header titles
 
-    const sortableHeaders = tableHeaderTHs.filter(
-      (d: TableConfigEntry) => d.sortAccessor !== undefined
-    )
+    const sortableHeaders = select(
+      chartElementIdSelector + " .table-header"
+    ).selectAll("th.sortable")
 
     sortableHeaders.append("span").classed("sort-state", true).text(" ")
     sortableHeaders.on("click", tableHeaderCallback)
@@ -87,7 +87,6 @@ export function createTableChart(
     // tableHeaderTHs.append("span").classed("resize-handle", true)
 
     function tableHeaderCallback(this: any, d: any) {
-      console.log(d)
       // Highlight column header being sorted and show bootstrap glyphicon
 
       // sort_state = select(this).attr("class"d.sort_state === "ascending" ? "descending" : "ascending"

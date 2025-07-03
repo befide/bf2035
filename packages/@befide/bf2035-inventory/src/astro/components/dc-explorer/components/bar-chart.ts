@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { type Axis, format, scaleLinear, select } from "d3"
 import { barChart } from "dc"
 import { baselineHeight, charts, getChartWidth, margins } from "."

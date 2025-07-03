@@ -4,6 +4,7 @@ export interface TreeNode<Datum extends NestableDomainObjectSchema> {
   id: string
   parent__id: string | null
   depth: number
+  isSelected: boolean
   childIndex: number | null
   children: TreeNode<Datum>[]
   data: Datum
@@ -17,6 +18,7 @@ export function getRoots<Datum extends NestableDomainObjectSchema>(
   const flatTreeNodes: TreeNode<Datum>[] = items.map((item) => ({
     id: item.id,
     parent__id: item.parent__id,
+    isSelected: true,
     data: item,
     childIndex: null,
     children: [],

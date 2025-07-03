@@ -23,6 +23,7 @@ export default defineConfig([
   // Base configs
   js.configs.recommended,
   tseslint.configs.recommended,
+  // importPlugin.flatConfigs.tseslint,
 
   // Prettier config
   {
@@ -58,6 +59,13 @@ export default defineConfig([
 
   // Ignore patterns
   {
-    ignores: ["dist/**", "**/*.d.ts", ".github/"],
+    ignores: [
+      ".astro/**",
+      "dist/**",
+      "scripts/**",
+      "**/*.d.ts",
+      ".github/",
+      "node_modules/**",
+    ],
   },
 ])

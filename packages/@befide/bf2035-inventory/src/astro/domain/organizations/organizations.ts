@@ -57,7 +57,7 @@ export const organizationsForAPI = async (locale: string) => {
   )
 }
 export const communityForAPI = async (locale: string) => {
-  const organizations = await allCommunityTopLevelOrganizations()
+  const organizations = await allCommunityOrganizations()
 
   return await Promise.all(
     organizations

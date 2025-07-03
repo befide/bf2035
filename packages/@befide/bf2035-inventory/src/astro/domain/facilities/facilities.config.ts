@@ -9,8 +9,6 @@ import {
   ReviewSchema,
 } from "@content/config.common.ts"
 
-const INPUT_FILE = "facilities.csv"
-
 export const FacilityZodSchema = NestableDomainObjectZodSchema.extend({
   partOf__id: z.string().nullable(),
   successorOf__id: z.string().nullable(),

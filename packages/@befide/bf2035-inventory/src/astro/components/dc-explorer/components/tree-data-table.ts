@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import treeDataTable from "@components/dc-explorer/dc/dc-tree-data-table"
 
 export const treeDataTableTileId = (collection: string, dimension: string) => {
@@ -13,7 +14,7 @@ export function createTreeDataTableChart(
   tableHeaderConfig: any,
   cfDimension: any
 ) {
-  const tileElementIdSelector = "#" + treeDataTableTileId(collection, dimension)
+  // const tileElementIdSelector = "#" + treeDataTableTileId(collection, dimension)
   const chartElementIdSelector = "#" + treeDataTableId(collection, dimension)
 
   const treeDataTableChart = treeDataTable(chartElementIdSelector)
@@ -23,7 +24,6 @@ export function createTreeDataTableChart(
     .allEntries(cfDimension.filter().bottom(Infinity))
     .dimension(cfDimension)
     .showSections(false)
-    // .section("parent__id")
     .size(Infinity)
     .columns(tableHeaderConfig)
 

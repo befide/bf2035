@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // CSL item types as per the specification
 export const CSL_TYPES = [
   "article",

@@ -9,12 +9,12 @@ import DCExplorerTreeDataTable from "@components/dc-explorer/components/DCExplor
   <div class="dc-explorer__filters">
     <DCExplorerCount collection="community" dimension="count" />
 
-    <DCExplorerRowChart
+    <!-- <DCExplorerRowChart
       collection="community"
       dimension="befideOrganizationCategories"
       title={Astro.locals.t("dc-explorer.tiles.title.categories")}
       dimensionIsArray={true}
-    />
+    /> -->
   </div>
   <div class="dc-explorer__items">
     <DCExplorerTreeDataTable collection="community" dimension="id" />

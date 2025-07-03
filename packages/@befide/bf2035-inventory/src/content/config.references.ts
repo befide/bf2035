@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import fs from "node:fs"
 import path from "node:path"
 
@@ -100,7 +101,6 @@ export const defineReferencesCollection = defineCollection({
               splittedExtraLine[1] !== "none"
             ) {
               dataItem.fulltextLink = splittedExtraLine[1]
-            } else {
             }
           })
 

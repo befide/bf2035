@@ -6,27 +6,27 @@ import { DomainObjectZodSchema } from "@/content/config.common"
 
 const INPUT_FILEPATH = path.join("src", "data", "zotero", "kfb_theses.json")
 
-const UNIVERSITY_IDS = [
-  "hu-berlin",
-  "kit",
-  "rwth-aachen",
-  "tu-berlin",
-  "tu-darmstadt",
-  "tu-dortmund",
-  "tu-dresden",
-  "uni-bonn",
-  "uni-duesseldorf",
-  "uni-erlangen",
-  "uni-frankfurt",
-  "uni-goettingen",
-  "uni-hamburg",
-  "uni-jena",
-  "uni-kassel",
-  "uni-mainz",
-  "uni-rostock",
-  "uni-siegen",
-  "uni-wuppertal",
-]
+// const UNIVERSITY_IDS = [
+//   "hu-berlin",
+//   "kit",
+//   "rwth-aachen",
+//   "tu-berlin",
+//   "tu-darmstadt",
+//   "tu-dortmund",
+//   "tu-dresden",
+//   "uni-bonn",
+//   "uni-duesseldorf",
+//   "uni-erlangen",
+//   "uni-frankfurt",
+//   "uni-goettingen",
+//   "uni-hamburg",
+//   "uni-jena",
+//   "uni-kassel",
+//   "uni-mainz",
+//   "uni-rostock",
+//   "uni-siegen",
+//   "uni-wuppertal",
+// ]
 
 export const ThesisZodSchema = DomainObjectZodSchema.extend({
   id: z.string(),
@@ -67,6 +67,7 @@ export const defineThesesCollection = defineCollection({
   loader: async () => {
     const dataRaw = JSON.parse(fs.readFileSync(INPUT_FILEPATH).toString())
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return dataRaw.flat().map((item: any) => {
       const dataItem: ThesisSchema = {
         citationKey: item.data.citationKey,

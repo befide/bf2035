@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { glob } from "astro/loaders"
 
 import { defineCollection, z } from "astro:content"

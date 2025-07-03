@@ -3,13 +3,6 @@ export * from "./facilities"
 export * from "./organizations"
 export * from "./theses"
 
-export const getValue = (obj: any, path: string) => {
-  if (!obj) return
-
-  const keys = path.split(".")
-  return keys.reduce((currentObj, key) => currentObj[key], obj)
-}
-
 const translations: Record<string, Record<string, string>> = {
   ":male": {
     en: "male",

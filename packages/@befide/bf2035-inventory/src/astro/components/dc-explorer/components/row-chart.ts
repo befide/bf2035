@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { select } from "d3"
 import { rowChart } from "dc"
 import { baselineHeight, charts, getChartWidth, margins } from "."
@@ -49,12 +50,12 @@ export function createRowChart(
 
   // chart.xAxis().ticks(5).tickSizeInner(-10)
   chart.on("renderlet", () => {
-    const rects = chart.selectAll("g.row rect")
-    rects.nodes().forEach((d) => {
-      // select(d)
-      //   .attr("height", 2)
-      //   .attr("transform", "translate(0," + baselineHeight * 0.25 + ")")
-    })
+    // const rects = chart.selectAll("g.row rect")
+    // rects.nodes().forEach((d) => {
+    //   // select(d)
+    //   //   .attr("height", 2)
+    //   //   .attr("transform", "translate(0," + baselineHeight * 0.25 + ")")
+    // })
 
     tileElement.classed("filtered", chart.hasFilter())
   })
