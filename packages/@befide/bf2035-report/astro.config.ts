@@ -110,10 +110,10 @@ export default defineConfig({
       ],
     }),
     // tailwind(),
-    vue({
-      appEntrypoint: '/src/_app.ts',
-      reactivityTransform: true,
-    }),
+    // vue({
+    //   appEntrypoint: '/src/_app.ts',
+    //   reactivityTransform: true,
+    // }),
     mdx({
       gfm: true,
     }),
