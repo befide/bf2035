@@ -1,6 +1,6 @@
-import { z } from "astro:content"
-import path from "node:path"
-import fs from "node:fs"
+import { z } from "zod"
+import path from "path"
+import fs from "fs"
 
 const __dirname = import.meta.dirname
 export const DATA_PATH = path.join(__dirname, "..", "data", "grist")
@@ -8,7 +8,7 @@ export const DATA_PATH = path.join(__dirname, "..", "data", "grist")
 export const Locales = z.string()
 
 export const DomainObjectZodSchema = z.object({
-  id: z.string(),
+  id: z.string().describe("Unique identifier for this entry."),
 })
 // export type DomainObjectSchema = z.infer<typeof DomainObjectZodSchema>;
 export type DomainObjectSchema = {
@@ -16,7 +16,10 @@ export type DomainObjectSchema = {
 }
 
 export const NestableDomainObjectZodSchema = DomainObjectZodSchema.extend({
-  parent__id: z.string().nullable(),
+  parent__id: z
+    .string()
+    .nullable()
+    .describe("Identifier of the parent entry, if any."),
 })
 export type NestableDomainObjectSchema = DomainObjectSchema & {
   id: string

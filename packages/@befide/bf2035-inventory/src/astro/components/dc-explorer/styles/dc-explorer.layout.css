@@ -45,7 +45,6 @@
 
     overflow-y: scroll;
 
-    height: calc(100vh - 10rem);
-    background-color: red;
+    /* height: calc(100vh - 5rem); */
   }
 }

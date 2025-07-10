@@ -1,0 +1,82 @@
+---
+import { Organization } from "@/astro/domain"
+import type { OrganizationSchema } from "@/astro/domain/organizations/organizations.config"
+
+interface Props {
+  organization: OrganizationSchema
+}
+let { organization } = Astro.props
+const organizationObject = new Organization(organization)
+const organizationObjectDto = await organizationObject.getDto("en")
+---
+
+<a
+  class="link-card border-border md rounded-sm border"
+  href={"/en/profiles/" + organizationObjectDto.id || " "}
+>
+  <div class="link-card__head">
+    <h2>{organizationObjectDto.label__short}</h2>
+    <p>{organizationObjectDto.label__fullName}</p>
+    <p>
+      {organizationObjectDto.location__city || ""}, {
+        organizationObjectDto.location__country
+      }
+    </p>
+  </div>
+  <div class="link-card__body">
+    <section>
+      <h3 class="property-group-header">Organization</h3>
+      <dl class="property-group">
+        <div class="property-group-entry">
+          <dt>Research staff</dt>
+          <dd>{organizationObjectDto.people_count}</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>Working groups</dt>
+          <dd>2</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>Research topics</dt>
+          <dd>xxx, yyy</dd>
+        </div>
+      </dl>
+    </section>
+    <section>
+      <h3 class="property-group-header">Facilities</h3>
+
+      <dl class="property-group">
+        <div class="property-group-entry">
+          <dt>Facilities for Accelerator Research</dt>
+          <dd>5</dd>
+        </div>
+      </dl>
+      <h3 class="property-group-header">Teaching</h3>
+      <dl class="property-group">
+        <div class="property-group-entry">
+          <dt>degree programmes</dt>
+          <dd>Bachelor</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>Teaching events</dt>
+          <dd>5</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>SWS</dt>
+          <dd>50</dd>
+        </div>
+        <div class="property-group-entry">
+          <dt>Doctoral Theses</dt>
+          <dd>2</dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+</a>
+
+<style>
+  .link-card {
+    text-decoration: none;
+    border: 1px dotted gray;
+    color: black;
+  }
+</style>

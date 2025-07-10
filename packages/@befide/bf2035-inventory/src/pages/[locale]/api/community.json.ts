@@ -15,7 +15,6 @@ export const GET: APIRoute = async ({ props }) => {
   const { locale } = props as Props
 
   const community = await communityForAPI(locale)
-  console.log(community)
 
   try {
     return new Response(JSON.stringify(community, null, 2))

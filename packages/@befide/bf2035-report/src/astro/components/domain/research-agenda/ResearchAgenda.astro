@@ -1,50 +1,50 @@
 ---
-import { type HierarchyNode } from 'd3-hierarchy';
+import { type HierarchyNode } from 'd3-hierarchy'
 
-import { JSDOM } from 'jsdom';
-import { hsl, rgb } from 'd3-color';
-import { scaleOrdinal } from 'd3-scale';
-import { cluster, stratify } from 'd3-hierarchy';
-import { select } from 'd3-selection';
-import { ribbon } from 'd3-chord';
+import { JSDOM } from 'jsdom'
+import { hsl, rgb } from 'd3-color'
+import { scaleOrdinal } from 'd3-scale'
+import { cluster, stratify } from 'd3-hierarchy'
+import { select } from 'd3-selection'
+import { ribbon } from 'd3-chord'
 
-import { arc } from 'd3-shape';
+import { arc } from 'd3-shape'
 
-import _data from './research-agenda.json';
+import _data from './research-agenda.json'
 
-const dTheta = 0.0;
+const dTheta = 0.0
 export interface ResearchAgendaItem {
-  additionalUserGroups?: string[];
-  ancestors?: string[];
-  description?: string;
-  facilityName?: string;
-  facilityVersion?: string;
-  group?: string;
-  id: string;
-  isBmbfFis?: boolean;
-  isInGermany?: boolean;
-  label: string;
-  lifeCycleStage?: string;
-  links: string[];
-  name: string;
-  nameIsAcronymFor?: string;
-  parent?: string;
-  path: string;
-  usedInResearchAgenda: boolean;
-  userGroup?: string;
+  additionalUserGroups?: string[]
+  ancestors?: string[]
+  description?: string
+  facilityName?: string
+  facilityVersion?: string
+  group?: string
+  id: string
+  isBmbfFis?: boolean
+  isInGermany?: boolean
+  label: string
+  lifeCycleStage?: string
+  links: string[]
+  name: string
+  nameIsAcronymFor?: string
+  parent?: string
+  path: string
+  usedInResearchAgenda: boolean
+  userGroup?: string
 }
 
 export interface Props {
-  filter: string;
+  filter: string
 }
-let { filter = 'agenda/facilities' } = Astro.props;
+let { filter = 'agenda/facilities' } = Astro.props
 
 function updateFilter() {
-  const activeElements = new Set<string>();
+  const activeElements = new Set<string>()
 
   clusterLayout.leaves().forEach((d) => {
-    if (d.data.path.includes(filter)) activeElements.add(d.data.path);
-  });
+    if (d.data.path.includes(filter)) activeElements.add(d.data.path)
+  })
 
   // links.forEach((link) => {
   //   if (link.source.data.path.includes(filter)) {
@@ -58,7 +58,7 @@ function updateFilter() {
     )
     .attr('fill', (d) =>
       filter === '' || activeElements.has(d.data.path) ? color(d) : '#f0f0f0'
-    );
+    )
 
   // nodeElements
   //   .selectAll("tspan")
@@ -84,20 +84,20 @@ function updateFilter() {
 
 // const item = researchAgenda.find((item) => item.name === filter)
 
-const baselineHeight = 14;
-const radius = 8 * baselineHeight;
-const height = (12 * 4 - 1) * baselineHeight;
-const width = (12 * 4 - 1) * baselineHeight;
+const baselineHeight = 14
+const radius = 8 * baselineHeight
+const height = (12 * 4 - 1) * baselineHeight
+const width = (12 * 4 - 1) * baselineHeight
 
-const red = hsl(rgb('#c53228'));
-const blue = hsl(rgb('#2174a8'));
-const green = hsl(rgb('#009900'));
+const red = hsl(rgb('#c53228'))
+const blue = hsl(rgb('#2174a8'))
+const green = hsl(rgb('#009900'))
 
 function color(d: HierarchyNode<ResearchAgendaItem>) {
   return scaleOrdinal(
     ['topics', 'facilities', 'objectives'],
     [red.toString(), blue.toString(), green.toString()]
-  )(d.data.ancestors[2]);
+  )(d.data.ancestors[2])
 }
 
 function nameFixer(label = '') {
@@ -110,22 +110,22 @@ function nameFixer(label = '') {
     .replace('photon-science', 'Photonen')
     .replace('neutron-science', 'Neutronen')
     .replace('Teilchen-Plasma-Beschleuniger', 'Teilchen-Plasma')
-    .replace('Laser-Plasma-Beschleuniger', 'Laser-Plasma');
+    .replace('Laser-Plasma-Beschleuniger', 'Laser-Plasma')
 }
-export type ResearchAgenda = ResearchAgendaItem[];
+export type ResearchAgenda = ResearchAgendaItem[]
 let researchAgenda: ResearchAgendaItem[] = Object.values(_data).map((d) => ({
   ...d,
   path: d.path.replaceAll('.', '/'),
   ancestors: d.path.split('.').reverse(),
   name: nameFixer(d.name),
   group: nameFixer(d.group),
-}));
+}))
 
-const itemsById = new Map<string, any>(researchAgenda.map((d) => [d.id, d]));
+const itemsById = new Map<string, any>(researchAgenda.map((d) => [d.id, d]))
 
 researchAgenda.forEach((d) => {
-  d.links = d.links.map((id, i) => itemsById.get(id)?.path);
-});
+  d.links = d.links.map((id, i) => itemsById.get(id)?.path)
+})
 
 // add missing parent nodes
 // for (let i = 0; i < researchAgenda.length; i++) {
@@ -153,15 +153,15 @@ researchAgenda.forEach((d) => {
 const stratified: HierarchyNode<ResearchAgendaItem> =
   stratify<ResearchAgendaItem>().path((d: ResearchAgendaItem) =>
     d.path.replaceAll('.', '/')
-  )(researchAgenda);
+  )(researchAgenda)
 
 const clusterLayout = cluster<ResearchAgendaItem>()
   .size([2 * Math.PI, radius])
   .separation((a, b) => {
-    if (a.data.ancestors[2] !== b.data.ancestors[2]) return 3;
-    if (a.data.ancestors[1] !== b.data.ancestors[1]) return 2;
-    return 1;
-  })(stratified);
+    if (a.data.ancestors[2] !== b.data.ancestors[2]) return 3
+    if (a.data.ancestors[1] !== b.data.ancestors[1]) return 2
+    return 1
+  })(stratified)
 
 const links = clusterLayout.leaves().flatMap((leaf) =>
   leaf.data.links.map((link) => ({
@@ -169,23 +169,23 @@ const links = clusterLayout.leaves().flatMap((leaf) =>
     target: link,
     id: leaf.data.path + '-' + link,
   }))
-);
+)
 
 const clusterLayoutLeavesByPath = new Map<string, any>(
   clusterLayout.leaves().map((d) => [d.data.path, d])
-);
+)
 
-const { document } = new JSDOM().window;
-const svg = select(document.body).append('svg');
+const { document } = new JSDOM().window
+const svg = select(document.body).append('svg')
 
 svg
   .attr('xmlns', 'http://www.w3.org/2000/svg')
   .attr('width', width)
   .attr('height', height)
-  .attr('viewBox', [-width / 2, -height / 2, width, height].join(' '));
+  .attr('viewBox', [-width / 2, -height / 2, width, height].join(' '))
 
 function gradientId(link: { id: string }) {
-  return `gradient-${link.id}`;
+  return `gradient-${link.id}`
 }
 
 const gradientElements = svg
@@ -214,7 +214,7 @@ const gradientElements = svg
     'y2',
     ({ target }) =>
       radius * Math.sin(clusterLayoutLeavesByPath.get(target)?.x - Math.PI / 2)
-  );
+  )
 
 gradientElements
   .append('stop')
@@ -224,7 +224,7 @@ gradientElements
     ({ source }) =>
       clusterLayoutLeavesByPath.get(source) &&
       color(clusterLayoutLeavesByPath.get(source))
-  );
+  )
 gradientElements
   .append('stop')
   .attr('offset', '100%')
@@ -233,15 +233,15 @@ gradientElements
     ({ target }) =>
       clusterLayoutLeavesByPath.get(target) &&
       color(clusterLayoutLeavesByPath.get(target))
-  );
+  )
 
-const defsElement = svg.append('defs');
-const nodesElement = svg.append('g').classed('nodes', true);
-const linksElement = svg.append('g').classed('links', true);
-const legendElement = svg.append('g').classed('legend', true);
-legendElement.append('g').classed('ring', true);
-legendElement.append('g').classed('chords', true);
-legendElement.append('g').classed('labels', true);
+const defsElement = svg.append('defs')
+const nodesElement = svg.append('g').classed('nodes', true)
+const linksElement = svg.append('g').classed('links', true)
+const legendElement = svg.append('g').classed('legend', true)
+legendElement.append('g').classed('ring', true)
+legendElement.append('g').classed('chords', true)
+legendElement.append('g').classed('labels', true)
 
 const nodeElements = nodesElement
   .selectAll('g')
@@ -251,14 +251,14 @@ const nodeElements = nodesElement
   .attr(
     'transform',
     (d) => `rotate(${(d.x * 180) / Math.PI - 90}) translate(${d.y},0)`
-  );
+  )
 
 const nodeElementsText = nodeElements
   .append('text')
   .attr('x', (d) => (d.x < Math.PI ? baselineHeight / 2 : -baselineHeight / 2))
   .attr('text-anchor', ({ x }) => (x < Math.PI ? 'start' : 'end'))
   .attr('transform', ({ x }) => (x >= Math.PI ? 'rotate(180)' : null))
-  .attr('fill', color);
+  .attr('fill', color)
 
 nodeElementsText
   .append('tspan')
@@ -268,8 +268,8 @@ nodeElementsText
     filter =
       d.x <= Math.PI
         ? d.data.ancestors.slice(1).reverse().join('.')
-        : d.data.ancestors.slice(0).reverse().join('.');
-  });
+        : d.data.ancestors.slice(0).reverse().join('.')
+  })
 nodeElementsText
   .append('tspan')
   .text((d) =>
@@ -281,8 +281,8 @@ nodeElementsText
     filter =
       d.x > Math.PI
         ? d.data.ancestors.slice(1).reverse().join('.')
-        : d.data.ancestors.slice(0).reverse().join('.');
-  });
+        : d.data.ancestors.slice(0).reverse().join('.')
+  })
 
 const linkElements = linksElement
 
@@ -291,7 +291,7 @@ const linkElements = linksElement
   .join('path')
   // .style('stroke', (d) => 'black')
   .style('stroke', (d) => {
-    return `url(#${gradientId(d)})`;
+    return `url(#${gradientId(d)})`
   })
   .classed('link', true)
 
@@ -307,20 +307,20 @@ const linkElements = linksElement
         endAngle: clusterLayoutLeavesByPath.get(target)?.x + dTheta,
         radius: clusterLayoutLeavesByPath.get(source)?.y,
       },
-    });
-  });
+    })
+  })
 
 const objectiveNodes = clusterLayout
   .leaves()
-  .filter((d) => d.data.path?.startsWith('agenda/objectives'));
+  .filter((d) => d.data.path?.startsWith('agenda/objectives'))
 
 const facilityNodes = clusterLayout
   .leaves()
-  .filter((d) => d.data.path?.startsWith('agenda/facilities'));
+  .filter((d) => d.data.path?.startsWith('agenda/facilities'))
 
 const topicsNodes = clusterLayout
   .leaves()
-  .filter((d) => d.data.path?.startsWith('agenda/topics'));
+  .filter((d) => d.data.path?.startsWith('agenda/topics'))
 
 const legendData = [
   {
@@ -350,7 +350,7 @@ const legendData = [
     innerRadius: radius - baselineHeight,
     outerRadius: radius + baselineHeight,
   },
-];
+]
 
 svg
   .select('g.legend g.ring')
@@ -369,7 +369,7 @@ svg
     outerRadius: radius + (level - 1 + height) * baselineHeight,
   }))
   .attr('stroke', 'white')
-  .attr('d', arc());
+  .attr('d', arc())
 
 svg
   .select('g.legend g.labels')
@@ -381,9 +381,9 @@ svg
   .append('textPath')
   .attr('fill', 'white')
   .attr('href', ({ name }) => `#${name}`)
-  .text(({ name }) => name);
+  .text(({ name }) => name)
 
-updateFilter();
+updateFilter()
 // console.log(document.body.innerHTML)
 ---
 

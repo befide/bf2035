@@ -10,6 +10,7 @@
     "build:download-references-from-zotero": "node ./scripts/download-references-from-zotero.js",
     "build:download-theses-from-zotero": "node ./scripts/download-theses-from-zotero.js",
     "build:generate-pwa-assets": "pwa-assets-generator  --preset='minimal'  public/favicon.svg",
+    "build:zod2md": "zod2md --entry ./src/astro/domain/organizations/OrganizationalUnitZodSchema.ts --title 'OrganizationalUnit' --output src/content/models/OrganizationalUnit.md",
     "dev": "astro dev",
     "lint": "pnpm lint:*",
     "lint:astro": "astro check --root ./src",
@@ -117,6 +118,8 @@
     "vite-plugin-pwa": "catalog:",
     "workbox-window": "catalog:",
     "yaml": "catalog:",
+    "zod": "3.25.71",
+    "zod2md": "0.1.9",
     "zotero-api-client": "catalog:"
   }
 }

@@ -3,6 +3,7 @@
 @layer my-overrides {
   .content-panel {
     padding: 0rem var(--sl-content-pad-x);
+    margin-bottom: 1rem;
   }
   .content-panel + .content-panel {
     border-top: none;

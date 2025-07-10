@@ -65,6 +65,9 @@ export default defineConfig({
       ? []
       : [astroD2({ inline: true })]),
     starlight({
+      markdown: {
+        headingLinks: false,
+      },
       plugins: [
         starlightAutoSidebar(),
         starlightThemeObsidian({}),

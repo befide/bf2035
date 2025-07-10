@@ -14,15 +14,9 @@
     table-layout: fixed;
   }
 
-  tbody tr {
+  tr {
     position: relative;
-    height: 1rem;
-    border: none !important;
-  }
-  thead tr {
-    position: relative;
-    height: 1rem;
-    border: none !important;
+    height: auto;
   }
 
   tr:after {
@@ -33,6 +27,7 @@
     display: block;
     width: 100%;
     height: 1px;
+
     background-image: linear-gradient(
       90deg,
       #ffffff 25%,
@@ -49,21 +44,16 @@
   th,
   td {
     text-align: left;
-    vertical-align: middle;
-    padding: 0 0.5rem;
-
+    vertical-align: baseline;
+    padding: 0;
+    padding-right: 0.25rem;
     white-space: nowrap;
+    line-height: 1rem;
   }
-
-  div.truncable {
-    overflow: hidden;
-  }
-
   th {
-    vertical-align: bottom;
-    padding-bottom: 0.25rem;
-  }
-  thead {
+    text-transform: uppercase;
+    font-size: var(--text-2xs);
+    color: gray;
   }
 
   [data-gender-icon] {

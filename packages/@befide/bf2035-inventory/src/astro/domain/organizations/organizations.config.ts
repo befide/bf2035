@@ -119,3 +119,22 @@ export const defineOrganizationCollection = defineCollection({
 })
 
 export type OrganizationSchema = z.infer<typeof OrganizationZodSchema>
+
+import fastCartesian from "fast-cartesian"
+
+const product = fastCartesian([
+  [...careerLevels],
+  [...disciplinaryProfessions],
+  [...genders],
+])
+
+console.log(
+  product
+    .map((d) => d.join("."))
+
+    .map((d) => ({
+      name: "uniquePeopleCount." + d,
+      required: false,
+      type: "number",
+    }))
+)

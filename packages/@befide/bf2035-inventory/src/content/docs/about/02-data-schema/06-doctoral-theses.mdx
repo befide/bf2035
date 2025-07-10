@@ -65,3 +65,38 @@ It is based on the schema used for the 2019 relaunch of KfB's website beschleuni
   list of ids of `taxonomy` items of type `AcceleratorResearchTopic`
 - **hasAffiliation[]**<br />
   list of `organizations` ids
+
+## Why not BibTex or BibLatex?
+
+### BibTex
+
+> @phdthesis. A PhD thesis. Required fields: author, title, school, year. Optional fields: type, address, month, note.
+
+```bibtex
+@phdthesis{mythesis,
+  title        = {An Analysis of Example},
+  author       = {John Smith},
+  year         = 2022,
+  month        = {June},
+  address      = {Example City, CA},
+  note         = {Available at \url{<https://example.com/thesis.pdf}}>,
+  school       = {University of Example},
+  type         = {PhD thesis}
+}
+```
+
+### BibLaTex
+
+BibLaTex offers the entry types "thesis" as well as the subtype "phdthesis".
+
+According to the _The biblatex Package_, the @thesis entry type is defined as:
+
+> A thesis written for an educational institution to satisfy the requirements for a degree. Use the `type` field to specify the type of thesis.
+>
+> Required fields: `author`, `title`, `type`, `institution`, `year/date`
+>
+> Optional fields: `subtitle`, `titleaddon`, `language`, `note`, `location`, `month`, `isbn`, `eid`, `chapter`, `pages`, `pagetotal`, `addendum`, `pubstate`, `doi`, `eprint`, `eprintclass`, `eprinttype`, `url`, `urldate`
+
+In addition to that, there is an entry type `@phdthesis`, defined as:
+
+> Similar to @thesis except that the `type` field is optional and defaults to the localised term ‘PhD thesis’. You may still use the `type` field to override that.

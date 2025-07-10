@@ -1,0 +1,95 @@
+---
+interface Entry {
+  name: string
+  required: boolean
+  description: string
+  type: string
+}
+
+interface Props {
+  entries: Entry[]
+  ident?: boolean
+}
+
+const { entries, ident = true } = Astro.props
+---
+
+<table class="schema-table" data-ident={ident}>
+  <thead
+    ><tr
+      ><th class="name">Property name</th><th class="required">Required</th>
+      <th class="type">Type</th><th class="description">Description</th></tr
+    ></thead
+  ><tbody>
+    {
+      entries.map(({ name, required, description, type }) => (
+        <tr>
+          <td class="name" data-depth={ident && name.split(".").length}>
+            <strong>
+              <code dir="auto">{ident ? name.split(".").pop() : name}</code>
+            </strong>{" "}
+          </td>
+          <td class="required">{required ? "*" : ""}</td>
+          <td class="type">
+            <code dir="auto">{type}</code>
+          </td>
+          <td class="description">{description}</td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+
+<style>
+  @layer my-overrides {
+    table.schema-table {
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    code {
+      white-space: wrap;
+      font-size: var(--text-2xs);
+      line-height: 1rem;
+    }
+    .name {
+      height: auto;
+      width: 15em;
+      overflow: hidden;
+    }
+
+    [data-ident="false"] .name {
+      width: 50em;
+    }
+
+    thead {
+      height: 1rem;
+    }
+    .required {
+      width: 5em;
+      text-align: center;
+    }
+    .type {
+      width: 25%;
+    }
+    .name[data-depth="1"] {
+      padding-left: 0;
+    }
+    .name[data-depth="2"] {
+      padding-left: 0.5rem;
+    }
+    .name[data-depth="3"] {
+      padding-left: 1rem;
+    }
+    .name[data-depth="4"] {
+      padding-left: 1.5rem;
+    }
+    .name[data-depth="5"] {
+      padding-left: 2rem;
+    }
+
+    .description {
+      width: 50%;
+    }
+  }
+</style>

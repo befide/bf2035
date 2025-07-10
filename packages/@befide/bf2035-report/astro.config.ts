@@ -3,9 +3,10 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import vue from '@astrojs/vue';
 import AutoImport from 'astro-auto-import';
-
+import manifest from './webmanifest.json';
 import AstroPWA from '@vite-pwa/astro';
 import { purgecss } from '@zokki/astro-purgecss';
+import type { ManifestOptions } from 'vite-plugin-pwa';
 
 import rehypeAddClasses from 'rehype-add-classes';
 import rehypeCitation from 'rehype-citation';
@@ -104,8 +105,10 @@ export default defineConfig({
         './src/astro/components/domain/FacilityList.astro',
         './src/astro/components/domain/OrganisationList.astro',
         './src/astro/components/domain/Universities.astro',
+        './src/astro/components/domain/StrategySummary.astro',
         './src/astro/components/domain/community-map/CommunityMap.astro',
         './src/astro/components/domain/research-agenda/ResearchAgenda.astro',
+        './src/astro/components/domain/research-agenda/ResearchAgendaTopic.astro',
         './src/astro/components/ui/BibRef.astro',
       ],
     }),
@@ -117,32 +120,24 @@ export default defineConfig({
     mdx({
       gfm: true,
     }),
-    pagefind(), // sitemap({}),
-
     AstroPWA({
-      mode: 'development',
-      base: '/',
-
-      scope: '/',
-      includeAssets: ['favicon.svg'],
-      registerType: 'autoUpdate',
-      manifest: {
-        name: 'Beschleunigerforschung 2035',
-        short_name: 'BF2035',
-        theme_color: '#ffffff',
-        lang: 'de',
-      },
-      pwaAssets: {
-        config: true,
-      },
       workbox: {
-        navigateFallback: '/',
-        globPatterns: ['**/*.{css,js,html,svg,png,ico,txt}'],
+        skipWaiting: true,
+        clientsClaim: true,
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
+        navigateFallback: '/404',
+        ignoreURLParametersMatching: [/./],
+        globPatterns: [
+          '**/*.{html,js,css,png,svg,json,ttf,pf_fragment,pf_index,pf_meta,pagefind,wasm}',
+        ],
       },
-      devOptions: {
-        enabled: false,
-        navigateFallbackAllowlist: [/^\//],
+      experimental: {
+        directoryAndTrailingSlashHandler: true,
       },
+      mode: 'production',
+      registerType: 'autoUpdate',
+      manifest: manifest as Partial<ManifestOptions>,
+      showMaximumFileSizeToCacheInBytesWarning: false,
     }),
     purgecss(),
   ],

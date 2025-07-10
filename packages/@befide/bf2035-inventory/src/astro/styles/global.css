@@ -1,5 +1,6 @@
 @import "./baseline.css";
 @import "./my-overrides.config.css";
+
 @import "./my-overrides.card.css";
 
 @import "./my-overrides.content-panel.css";
@@ -9,10 +10,5 @@
 @import "./my-overrides.grid-gallery.css";
 
 @import "./my-overrides.tree.css";
-@import "./my-overrides.card.css";
 
 @import "./print.css";
-
-@view-transition {
-  navigation: auto;
-}
