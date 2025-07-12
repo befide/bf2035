@@ -6,26 +6,24 @@
   }
 }
 
-
 .spread {
   display: flex;
   flex-direction: row;
   box-shadow: 0 0 10px 1px inset black;
- 
 }
 
 .spread__page {
-  background-size cover;
-  background-repeat no-repeat;
-  background-position left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 // .spread__page.left {
-//   box-shadow -1px 0 5px gray;
+// box-shadow -1px 0 5px gray;
 // }
 
 // .spread__page.right {
-//   box-shadow -1px 0 5px gray;
+// box-shadow -1px 0 5px gray;
 // }
 
 // [data-print-preview="false"]
@@ -33,140 +31,88 @@
 // display none
 [data-print-preview='true'] {
   // .spread__page.left {
-  //   box-shadow -2px 0 15px gray;
+  // box-shadow -2px 0 15px gray;
   // }
 
   // .spread__page.right {
-  //   box-shadow 2px 0 5px gray;
+  // box-shadow 2px 0 5px gray;
   // }
 
   // .spread__page {
-  //   padding-right 5rem;
-  //   padding-left 5rem;
+  // padding-right 5rem;
+  // padding-left 5rem;
   // }
-
-
   .spread__page {
-    padding-bottom var(--page__margin__bottom);
-    width var(--page__width);
-    height var(--page__height);
-    
+    padding-bottom: var(--page__margin__bottom);
+    width: var(--page__width);
+    height: var(--page__height);
   }
 
   .spread__page.left {
-    padding-right var(--page__margin__inside);
-    padding-left var(--page__margin__outside);
+    padding-right: var(--page__margin__inside);
+    padding-left: var(--page__margin__outside);
   }
 
   .spread__page.right {
-    padding-right var(--page__margin__outside);
-    padding-left var(--page__margin__inside);
+    padding-right: var(--page__margin__outside);
+    padding-left: var(--page__margin__inside);
   }
 
   .spread__page-grid {
-    position relative;
-    z-index 1;
+    position: relative;
+    z-index: 1;
   }
 
   .spread__page-grid {
-    z-index 1000;
-    position relative;
-    display grid;
-    margin-top var(--page__margin__top);
-    width var(--page__grid__width);
-    height var(--page__grid__height);
-    grid-column-gap calc(var(--grid__column-gap-in-baselines) * 1rem);
-    grid-row-gap calc(var(--grid__row-gap-in-baselines) * 1rem);
-    grid-template-columns repeat(var(--grid__column-count), calc(var(--grid__row-height-in-baselines) * 1rem));
-    grid-template-rows repeat(var(--grid__row-count), calc(var(--grid__column-width-in-baselines) * 1rem));
+    z-index: 1000;
+    position: relative;
+    display: grid;
+    margin-top: var(--page__margin__top);
+    width: var(--page__grid__width);
+    height: var(--page__grid__height);
+    grid-column-gap: calc(var(--grid__column-gap-in-baselines) * 1rem);
+    grid-row-gap: calc(var(--grid__row-gap-in-baselines) * 1rem);
+    grid-template-columns: repeat(var(--grid__column-count), calc(var(--grid__row-height-in-baselines) * 1rem));
+    grid-template-rows: repeat(var(--grid__row-count), calc(var(--grid__column-width-in-baselines) * 1rem));
   }
 
   // .spread {
-  //   width var(--spread--width);
-  //   height var(--spread--height);
+  // width var(--spread--width);
+  // height var(--spread--height);
   // }
-
   .spread__page {
-    position relative;
+    position: relative;
   }
 
   .spread__page.left {
-    background-position left;
+    background-position: left;
 
     .spread__page__background {
-      left 0;
-      object-position left bottom;
+      left: 0;
+      object-position: left bottom;
     }
   }
 
   .spread__page.right {
-    background-position right;
+    background-position: right;
 
     .spread__page__background {
-      right 0;
-      object-position right bottom;
+      right: 0;
+      object-position: right bottom;
     }
   }
-
 
   .spread {
     section h1 {
-      display none;
+      display: none;
     }
 
     p.empty {
-      grid-area 1 / 1 / 1 / 1;
+      grid-area: 1 / 1 / 1 / 1;
     }
 
     .spread__page.left .spread--right, .spread__page.right .spread--left {
-      display none !important;
+      display: none !important;
     }
   }
 }
-
-
- 
-.cover, .part
-
-  
-  .spread__header
-    grid-area: 1 / 4 / 11 / 13
-    text-align right
-
-
-  .spread__supertitle, .spread__subtitle, .spread__title
-    right 0rem
-
-
-    span
-      margin-right calc(-1 * var(--page__margin__outside) - 1 * var(--bleed))
-      margin-left 0
-      padding-right calc(1 * var(--page__margin__outside) - 1 * var(--bleed))
-      padding-left 1rem;
-      padding-top: 2px;
-      padding-bottom: 2px; 
-      border-right: 0
-      box-shadow 0px 0 2px 0px rgba(0, 0, 0, 0.5)
-      
-  .spread__sectionNumber {
-    display: none;
-  }
-
-  .spread__title {
-    top 4rem;
-    color white;
-    line-height 3rem;
-    font-size 1rem;
-    height: 3rem
-  }
-
-  .spread__supertitle, .spread__subtitle {
-    font-size .1rem;
-    line-height 3rem;
-  }
-  .spread__supertitle {
-    top 0rem;
-  }
-  .spread__subtitle {
-    top 8rem;
-   }

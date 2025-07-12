@@ -1,76 +1,55 @@
 ---
-export type ResearchAgenda = ResearchAgendaItem[];
+import type { ResearchAgenda } from './research-agenda'
+import _data from './research-agenda.json'
 
-export interface ResearchAgendaItem {
-  id: string;
-  path: string;
-  name: string;
-  group?: string;
-  label: string;
-  description?: string;
-  'links:agenda-topics'?: string[];
-  'links:agenda-facilities'?: string[];
-  usedInResearchAgenda: boolean;
-  links: string[];
-  'links:agenda-objectives'?: string[];
-  collection?: string;
-  nameIsAcronymFor?: string;
-  userGroup?: string;
-  facilityName?: string;
-  lifeCycleStage?: string;
-  isInGermany?: boolean;
-  additionalUserGroups?: string[];
-  facilityVersion?: string;
-  isBmbfFis?: boolean;
-}
-
-import { Image } from 'astro:assets';
-import type { ImageMetadata } from 'astro';
-import _data from './research-agenda.json';
-
-let data: ResearchAgenda = Object.values(_data);
+let data: ResearchAgenda = Object.values(_data)
 
 export interface Props {
-  name: string;
+  filter: string
 }
 
-const { name } = Astro.props;
+const { filter } = Astro.props
 
-const item = data.find((item) => item.name === name);
+const item = data.find((item) => item.path === filter)
 ---
 
 <figure class="objective">
-  <div class="img-container">
-    <Image src={import(`./svg/agenda.objectives.${name}.svg`)} alt="..." />
+  <div class="container">
+    <object
+      data={'/svg/research-agenda/' + filter + '.svg'}
+      type="image/svg+xml"></object>
   </div>
   <figcaption>
     <p class="md">
-      <strong>{item.label}: </strong>{item.description}
+      <strong>{item?.label}: </strong>{item?.description}
     </p>
   </figcaption>
 </figure>
 
-<style lang="stylus" is:global>
-figure.objective
-  display flex
-  flex-direction row
-  width 23rem
-  height 11rem
-  margin-top 1rem
-  position relative
-  
-  .img-container
-    flex 1
-    position relative
-    
-    img
-      position absolute
-      width 11rem
-      height 11rem
-      top 0
-      left 0
+<style>
+  figure {
+    display: flex;
+    flex-direction: row;
+    width: 23rem;
+    height: 11rem;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
 
-  figcaption
-    flex 1 
-    
+  .container {
+    flex: 0 0 7rem;
+    position: relative;
+  }
+
+  object {
+    position: absolute;
+    width: 19rem;
+    height: 19rem;
+    top: -4rem;
+    left: -7rem;
+  }
+
+  figcaption {
+    flex: 0 0 15rem;
+  }
 </style>

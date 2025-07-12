@@ -1,16 +1,16 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import PartLayout from './Part.astro';
-import SectionLayout from './Section.astro';
+import type { CollectionEntry } from 'astro:content'
+
+import SectionLayout from './SectionLayout.astro'
 
 export interface Props {
-  sections: CollectionEntry<'sections'>[];
-  lang?: string;
-  author?: string;
-  description?: string;
+  sections: CollectionEntry<'sections'>[]
+  lang?: string
+  author?: string
+  description?: string
 }
 
-const { sections } = Astro.props;
+const { sections } = Astro.props
 ---
 
 <div class="book-sections">
@@ -19,7 +19,7 @@ const { sections } = Astro.props;
       <section class="book-section">
         {(section.data.sectionType === 'part' ||
           section.data.sectionType === 'cover') && (
-          <PartLayout section={section} />
+          <SectionLayout section={section} />
         )}
         {!(
           section.data.sectionType === 'part' ||

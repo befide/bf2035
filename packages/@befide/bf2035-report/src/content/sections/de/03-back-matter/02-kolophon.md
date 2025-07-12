@@ -10,6 +10,8 @@ sectionType: left
 
 ## DOI
 
+10.5281/zenodo.15856779
+
 ## Zonodo
 
 ## Redaktionsausschuss
@@ -27,7 +29,7 @@ Dieser Bericht richtet sich in erster Linie an die deutsche Öffentlichkeit (ein
 ## Release
 
 Dies ist die Version 1.0.0 des Berichts,
-veröffentlicht am 1. @ Juni @@ 2019.
+veröffentlicht am 1. @ November @@ 2025.
 
 ## Erstellungshistorie
 

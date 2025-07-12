@@ -1,7 +1,7 @@
 ---
 // import { pwaInfo } from 'virtual:pwa-info';
 import { Head } from 'astro-capo'
-
+import { ClientRouter } from 'astro:transitions'
 import { SITE } from '../../config'
 
 import '../styles/index.styl'
@@ -57,8 +57,9 @@ const canonicalURL = Astro.site
         <script src="/src/pwa.ts" />
       )
     }
-    <body>
-      <slot />
-    </body>
+    <ClientRouter />
   </Head>
+  <body>
+    <slot />
+  </body>
 </html>

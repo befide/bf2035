@@ -8,7 +8,7 @@ sectionNumber: C.4.d
 
 <div class="spread--left spread-area--research-agenda-topic">
 
-![](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.topics.magnet-technology.svg)
+<ResearchAgenda filter="agenda.topics.magnet-technology" />
 
 </div>
 

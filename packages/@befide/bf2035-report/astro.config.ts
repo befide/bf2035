@@ -21,7 +21,6 @@ import tailwindcss from '@tailwindcss/vite';
 import { dirname, resolve } from 'node:path';
 
 import { fileURLToPath } from 'url';
-import pagefind from 'astro-pagefind';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -108,6 +107,8 @@ export default defineConfig({
         './src/astro/components/domain/StrategySummary.astro',
         './src/astro/components/domain/community-map/CommunityMap.astro',
         './src/astro/components/domain/research-agenda/ResearchAgenda.astro',
+        './src/astro/components/domain/research-agenda/ResearchAgendaFacility.astro',
+        './src/astro/components/domain/research-agenda/ResearchAgendaObjective.astro',
         './src/astro/components/domain/research-agenda/ResearchAgendaTopic.astro',
         './src/astro/components/ui/BibRef.astro',
       ],

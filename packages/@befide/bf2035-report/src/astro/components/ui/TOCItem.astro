@@ -1,12 +1,12 @@
 ---
-import { getPath } from '@utils/getSections';
-import type { SectionTreeNode } from '@utils/getSections';
+import { getPath } from '@utils/getSections'
+import type { SectionTreeNode } from '@utils/getSections'
 
 export type Props = {
-  node: SectionTreeNode;
-};
+  node: SectionTreeNode
+}
 
-const { node: tocItem } = Astro.props;
+const { node: tocItem } = Astro.props
 ---
 
 <li class={`toc-item depth-${tocItem.depth}`} data-path={tocItem?.data?.slug}>
@@ -82,18 +82,24 @@ const { node: tocItem } = Astro.props;
   .depth-4 .section-title, [id*='frontmatter'].depth-2 .section-title
       $regular()
       text-transform none
+  .toc-items.depth-1
+    display flex
+    flex-direction: column;
 
+  
+    
   [id*='mainmatter'].toc-items.depth-3
     display flex
     flex-direction column
   [id*='mainmatter'].toc-items.depth-4
     flex-direction column
 
+
   .toc-items.depth-2[data-path="de/01-front-matter/"] .depth-2 .section-title
     text-transform none
     $regular()
 
-  .toc-items.depth-2[data-path="de/02-body-matter/"]
+  .toc-items.depth-2[data-path="de/02-body-matter"]
     display flex
     flex-direction row
     width 100%

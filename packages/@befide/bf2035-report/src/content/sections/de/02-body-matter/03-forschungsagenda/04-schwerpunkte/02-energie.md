@@ -7,7 +7,7 @@ sectionNumber: C.4.a
 
 <div class="spread--left spread-area--research-agenda-topic">
 
-![](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.topics.energy-supply.svg)
+<ResearchAgenda filter="agenda.topics.energy-supply" />
 
 </div>
 

@@ -1,0 +1,120 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content'
+
+import { getImage, Image } from 'astro:assets'
+
+import BibRef from '@components/ui/BibRef.astro'
+import BibList from '@components/ui/BibList.astro'
+import TOC from '@components/ui/TOC.astro'
+
+export interface Props {
+  section: CollectionEntry<'sections'>
+}
+
+const { section } = Astro.props
+
+const {
+  title,
+  sectionNumber,
+  supertitle,
+  subtitle,
+  sectionType = 'spread',
+  sectionClass = '',
+  backgroundImageSrc,
+} = section.data
+const { Content } = await render(section)
+
+const optimizedBackground =
+  backgroundImageSrc &&
+  (process.env.NODE_ENV === 'production'
+    ? await getImage({
+        src: backgroundImageSrc.src,
+        format: 'webp',
+        width: 4960,
+        height: 3508,
+      })
+    : backgroundImageSrc)
+---
+
+<div class={'spread ' + sectionType + ' ' + sectionClass}>
+  {
+    sectionType !== 'right' && (
+      <div
+        class="spread__page left"
+        style={
+          optimizedBackground
+            ? `background-image: url(${optimizedBackground.src})`
+            : ``
+        }
+      >
+        <div class="spread__page-grid debug-overlay">
+          {(sectionType === 'spread' || sectionType === 'left') && (
+            <header class="spread__header">
+              {supertitle && (
+                <div class="spread__supertitle">
+                  <span>
+                    {sectionNumber}: {supertitle}
+                  </span>
+                </div>
+              )}
+              {title && (
+                <h1 class="spread__title">
+                  <span>{title}</span>
+                </h1>
+              )}
+              {subtitle && (
+                <div class="spread__subtitle">
+                  <span>{subtitle}</span>
+                </div>
+              )}
+            </header>
+          )}
+          <p class="empty">&nbsp;</p>
+          <Content components={{ Image, BibRef, BibList, TOC }} />
+        </div>
+      </div>
+    )
+  }
+  {
+    sectionType !== 'left' && (
+      <div
+        class="spread__page right"
+        style={
+          optimizedBackground
+            ? `background-image: url(${optimizedBackground.src})`
+            : ``
+        }
+      >
+        <div class="spread__page-grid debug-overlay">
+          {sectionType !== 'spread' && (
+            <header class="spread__header">
+              {false && sectionNumber && (
+                <div class="spread__sectionNumber">
+                  <span set:html={sectionNumber} />
+                </div>
+              )}
+
+              {supertitle && (
+                <div class="spread__supertitle">
+                  <span set:html={supertitle} />
+                </div>
+              )}
+              {title && (
+                <h1 class="spread__title">
+                  <span set:html={title} />
+                </h1>
+              )}
+              {subtitle && (
+                <div class="spread__subtitle">
+                  <span set:html={subtitle} />
+                </div>
+              )}
+            </header>
+          )}
+          <p class="empty">&nbsp;</p>
+          <Content components={{ Image, BibRef, BibList, TOC }} />
+        </div>
+      </div>
+    )
+  }
+</div>

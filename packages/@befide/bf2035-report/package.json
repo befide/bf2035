@@ -25,11 +25,12 @@
     "sync": "astro sync"
   },
   "dependencies": {
-    "puppeteer-core": "24.12.0",
+    "puppeteer-core": "24.12.1",
     "astro-auto-import": "0.4.4",
     "@astrojs/mdx": "catalog:",
     "@astrojs/sitemap": "catalog:",
     "@fontsource/barlow-semi-condensed": "catalog:",
+    "@fontsource/barlow-condensed": "catalog:",
     "@nanostores/persistent": "catalog:",
     "astro": "catalog:",
     "astro-icon": "catalog:",

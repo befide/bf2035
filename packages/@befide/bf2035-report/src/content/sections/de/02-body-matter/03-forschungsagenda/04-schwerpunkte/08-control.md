@@ -7,9 +7,7 @@ sectionType: right
 
 <div class="spread--right spread-area--research-agenda-topic">
 
-![](@befide/bf2035-report/src/astro/assets/svg/agenda/agenda.topics.measurement-and-control.svg)
-
-#
+<ResearchAgenda filter="agenda.topics.measurement-and-control" />
 
 </div>
 
