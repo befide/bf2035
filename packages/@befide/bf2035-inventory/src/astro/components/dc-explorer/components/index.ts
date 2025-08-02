@@ -6,6 +6,7 @@ export * from "./bar-chart"
 export * from "./row-chart"
 export * from "./table"
 export * from "./tree-data-table"
+export * from "./tree-data-sections"
 
 export const charts = new Map<string, any>()
 export const baselineHeight = 28

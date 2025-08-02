@@ -1,7 +1,7 @@
 ---
 import DCExplorerCount from "@components/dc-explorer/components/DCExplorerCount.astro"
 import DCExplorer from "@components/dc-explorer/components/DCExplorer.astro"
-import DCExplorerTreeDataTable from "@components/dc-explorer/components/DCExplorerTreeDataTable.astro"
+import DCExplorerTreeDataSections from "./components/DCExplorerTreeDataSections.astro"
 
 interface Props {
   collection: string
@@ -10,11 +10,11 @@ interface Props {
 const { collection } = Astro.props
 ---
 
-<DCExplorer>
+<DCExplorer {collection}>
   <div class="dc-explorer__filters">
     <DCExplorerCount {collection} dimension="count" />
   </div>
   <div class="dc-explorer__items">
-    <DCExplorerTreeDataTable {collection} dimension="id" />
+    <DCExplorerTreeDataSections {collection} dimension="id" />
   </div>
 </DCExplorer>

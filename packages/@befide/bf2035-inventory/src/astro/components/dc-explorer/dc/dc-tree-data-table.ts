@@ -8,6 +8,7 @@ const treeNode = (
   items: TreeNode<NestableDomainObjectSchema>[],
   selectedItems: TreeNode<NestableDomainObjectSchema>[]
 ) => {
+  console.log("treeNode")
   const selectedItemIds = selectedItems
     ? selectedItems.map((d) => d.id)
     : items.map((d) => d.id)
@@ -421,25 +422,28 @@ export default function (parent, chartGroup?) {
    * @returns {Boolean|dc.dataTable}
    */
 
-  _chart.allEntries = function (allEntries: any) {
+  _chart.allEntries = function (allEntries: NestableDomainObjectSchema[]) {
     if (!arguments.length) {
       return _allEntries
     }
-    _allEntries = allEntries
-    _entriesMap = allEntries.reduce(function (map, obj) {
-      map[obj.id] = obj
-      return map
-    }, {})
 
-    _allEntriesTree = treeNode(_allEntries)
-    _allEntriesTree.each(
-      (node) =>
-        (_ancestorsMap[node.data.data.id] = node
-          .ancestors()
-          .map((d) => d.data.data.id))
-    )
+    if (allEntries.length > 0) {
+      _allEntries = allEntries
+      _entriesMap = allEntries.reduce(function (map, obj) {
+        map[obj.id] = obj
+        return map
+      }, {})
 
-    return _chart
+      _allEntriesTree = treeNode(_allEntries)
+      _allEntriesTree.each(
+        (node) =>
+          (_ancestorsMap[node.data.data.id] = node
+            .ancestors()
+            .map((d) => d.data.data.id))
+      )
+
+      return _chart
+    }
   }
 
   return _chart.anchor(parent, chartGroup)

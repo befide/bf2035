@@ -13,6 +13,7 @@ export const DomainObjectZodSchema = z.object({
 // export type DomainObjectSchema = z.infer<typeof DomainObjectZodSchema>;
 export type DomainObjectSchema = {
   id: string
+  isSelected?: boolean
 }
 
 export const NestableDomainObjectZodSchema = DomainObjectZodSchema.extend({

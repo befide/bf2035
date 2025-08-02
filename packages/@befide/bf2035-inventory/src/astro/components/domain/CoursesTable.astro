@@ -3,6 +3,7 @@ import { getCourses } from "@/astro/domain/courses/courses"
 import { getEntry } from "astro:content"
 import type { CollectionEntry } from "astro:content"
 import Badge from "../Badge.astro"
+import { getLocalizedValue } from "@/astro/domain/content"
 
 interface Props {
   universityId?: string
@@ -11,13 +12,9 @@ interface Props {
 let { universityId } = Astro.props
 
 const isBachelorCourse = (course: CollectionEntry<"courses">) =>
-  course.data.addressesProgrammeOfStudyLevels?.find(
-    (d) => d.id.indexOf("bachelor") > -1
-  )
+  course.data.studyLevels__taxonomyId?.find((d) => d.indexOf("bachelor") > -1)
 const isMasterCourse = (course: CollectionEntry<"courses">) =>
-  course.data.addressesProgrammeOfStudyLevels?.find(
-    (d) => d.id.indexOf("master") > -1
-  )
+  course.data.studyLevels__taxonomyId?.find((d) => d.indexOf("master") > -1)
 
 const university =
   universityId && (await getEntry("organizations", universityId))
@@ -27,8 +24,11 @@ const courses = await getCourses(universityId)
 const masterCourses = courses.filter(isMasterCourse)
 const bachelorCourses = courses.filter(isBachelorCourse)
 const getUniversity = async (course: CollectionEntry<"courses">) => {
-  if (!course.data.offeredByUniversity) return null
-  const university = await getEntry(course.data.offeredByUniversity)
+  if (!course.data.university__organizationsId) return null
+  const university = await getEntry(
+    "organizations",
+    course.data.university__organizationsId
+  )
   return university
 }
 ---
@@ -61,12 +61,16 @@ const getUniversity = async (course: CollectionEntry<"courses">) => {
                 {(await getUniversity(course))?.data.label.short.en}
               </td>
             )}
-            <td>{course.data.semester}</td>
-            <td>{course.data.language}</td>
+            <td>{course.data.semesters}</td>
+            <td>{course.data.languages}</td>
             <td>
-              {course.data.isInstanceOfTeachingEvent &&
-                (await getEntry(course.data.isInstanceOfTeachingEvent)).data
-                  .term.en}
+              {course.data.teachingEvent__taxonomyId &&
+                (
+                  await getEntry(
+                    "taxonomyItems",
+                    course.data.teachingEvent__taxonomyId
+                  )
+                )?.data.term.en}
             </td>
             <td>
               {" "}
@@ -90,9 +94,11 @@ const getUniversity = async (course: CollectionEntry<"courses">) => {
               </div>
             </td>
             <td>
-              <span class="course__title">{course.data.label.fullName.en}</span>
+              <span class="course__title">
+                {getLocalizedValue(course.data.title, Astro.locale)}
+              </span>
             </td>
-            <td>{course.data.sws}</td>
+            <td>{course.data.weeklySemesterHours}</td>
           </tr>
         ))
       }

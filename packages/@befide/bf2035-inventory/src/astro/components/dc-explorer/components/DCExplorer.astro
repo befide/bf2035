@@ -28,11 +28,13 @@ const locale = Astro.currentLocale
     getValue,
     getLocale,
     createTreeDataTableChart,
+    createTreeDataSectionsChart,
   } from "."
   import { getCollectionIndex } from "@nanostore/index"
   import {
     tableConfigMap,
     treeTableConfigMap,
+    treeSectionsConfigMap,
   } from "@components/dc-explorer/config"
   import type { NestableDomainObjectSchema } from "@content/config.common"
 
@@ -44,10 +46,14 @@ const locale = Astro.currentLocale
 
       const collection = this.dataset.collection
 
+      console.log({ collection })
+
       const $idx = getCollectionIndex(collection)
 
       $idx?.listen(() => {
         const idx = $idx.get()
+
+        console.log({ idx })
 
         if (idx) {
           const filters = document.getElementsByClassName(
@@ -107,13 +113,25 @@ const locale = Astro.currentLocale
             } else if (dcTileType === "tree-data-table") {
               const idDimension = idx.dimension(
                 (nestableDomainObject: NestableDomainObjectSchema) =>
-                  nestableDomainObject.id
+                  nestableDomainObject
               )
 
               createTreeDataTableChart(
                 dcCollection,
                 dcDimension,
-                treeTableConfigMap(dcCollection, locale),
+                treeTableConfigMap(dcCollection),
+                idDimension
+              )
+            } else if (dcTileType === "tree-data-sections") {
+              const idDimension = idx.dimension(
+                (nestableDomainObject: NestableDomainObjectSchema) =>
+                  nestableDomainObject
+              )
+
+              createTreeDataSectionsChart(
+                dcCollection,
+                dcDimension,
+                treeSectionsConfigMap(dcCollection),
                 idDimension
               )
             }

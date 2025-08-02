@@ -4,10 +4,11 @@ import { getLocalizedValue, getTaxonomyReferencesTerm } from "../content"
 import type { OrganizationSchema } from "@/astro/domain"
 
 import { sum } from "d3-array"
+import { getRoots } from "../content.tree"
 
 export type OrganizationDto = Pick<
   OrganizationSchema,
-  "uniquePeopleCountRecursiveSum"
+  "uniquePeopleCount" | "uniquePeopleCountRecursiveSum"
 > & {
   id: string
   parent__id: string | null
@@ -41,17 +42,28 @@ export class Organization {
     )
   }
 
-  async getFacilities() {
+  async getFacilities(options: {
+    isUserFacility?: boolean
+    lifeCycleCategory?: number
+  }) {
     return await getCollection(
       "facilities",
-      ({ data }) => data.host__organizationsId === this._data.id
+      ({ data }) =>
+        data.host__organizationsId === this._data.id &&
+        (!options ||
+          ((options.lifeCycleCategory === -1 ||
+            !data.lifeCycle?.currentStatus__taxonomyId ||
+            data.lifeCycle?.currentStatus__taxonomyId.indexOf(
+              "/" + options.lifeCycleCategory
+            ) > -1) &&
+            options.isUserFacility === undefined) ||
+          !data.lifeCycle?.currentStatus__taxonomyId ||
+          data.lifeCycle?.currentStatus__taxonomyId.indexOf(
+            "/" + options.lifeCycleCategory
+          ) > -1)
     )
   }
-  async getUserFacilities() {
-    return (await this.getFacilities()).filter(
-      ({ data }) => data.isUserFacility
-    )
-  }
+
   async getTeachingEvents() {
     return await getCollection(
       "courses",
@@ -59,12 +71,30 @@ export class Organization {
     )
   }
 
+  async getTreeRoots() {
+    const organizations = (
+      await getCollection(
+        "organizations",
+        ({ data }) =>
+          (data.isPartOfCommunity && this._data.id === undefined) ||
+          data.topLevel__id === this._data.id ||
+          data.id === this._data.id ||
+          data.id === ":"
+      )
+    ).map((d) => d.data)
+
+    const organizationRoots = getRoots<OrganizationSchema>(organizations)
+    return organizationRoots
+  }
+
   async getDto(locale: string): Promise<OrganizationDto> {
     const i18n = await getEntry("i18n", locale)
 
     const theses_count = (await this.getTheses()).length
-    const facilities_count = (await this.getFacilities()).length
-    const userFacilities_count = (await this.getUserFacilities()).length
+    const facilities_count = (await this.getFacilities({})).length
+    const userFacilities_count = (
+      await this.getFacilities({ isUserFacility: true })
+    ).length
     const teachingEvents = (await this.getTeachingEvents()).map((d) => d.data)
     const weeklySemesterHours_count = sum(
       teachingEvents.map((d) => d.weeklySemesterHours)
@@ -72,6 +102,8 @@ export class Organization {
 
     return {
       id: this._data.id,
+      uniquePeopleCountRecursiveSum: this._data.uniquePeopleCountRecursiveSum,
+      uniquePeopleCount: this._data.uniquePeopleCount,
       instanceOfs__term: await getTaxonomyReferencesTerm(
         this._data.instanceOfs__taxonomyId,
         locale

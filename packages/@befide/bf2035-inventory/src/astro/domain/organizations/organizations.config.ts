@@ -10,22 +10,6 @@ import {
   ReviewSchema,
 } from "@content/config.common"
 
-export const genders = ["female", "male", "nonbinary"]
-export const careerLevels = [
-  "professor",
-  "seniorResearcher",
-  "postDoc",
-  "phdStudent",
-  "masterStudent",
-  "bachelorStudent",
-]
-export const disciplinaryProfessions = ["physicist", "engineer", "other"]
-export const peopleCountDiscriminators = [
-  ...careerLevels,
-  ...disciplinaryProfessions,
-  ...genders,
-]
-
 const peopleCountGender = z.object({
   male: z.number().optional().nullable(),
   female: z.number().optional().nullable(),
@@ -121,20 +105,15 @@ export const defineOrganizationCollection = defineCollection({
 export type OrganizationSchema = z.infer<typeof OrganizationZodSchema>
 
 import fastCartesian from "fast-cartesian"
+import {
+  careerLevels,
+  disciplinaryProfessions,
+  genders,
+  peopleCountDiscriminators,
+} from "."
 
 const product = fastCartesian([
   [...careerLevels],
   [...disciplinaryProfessions],
   [...genders],
 ])
-
-console.log(
-  product
-    .map((d) => d.join("."))
-
-    .map((d) => ({
-      name: "uniquePeopleCount." + d,
-      required: false,
-      type: "number",
-    }))
-)

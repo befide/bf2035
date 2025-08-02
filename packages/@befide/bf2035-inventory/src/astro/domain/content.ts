@@ -48,7 +48,10 @@ export async function getReferences(collection: CollectionKey, ids: string[]) {
   ).filter((item: unknown) => !!item)
 }
 
-export const getTaxonomyReferencesTerm = async (ids: string[], locale = "en") =>
+export const getTaxonomyReferencesTerm = async (
+  ids: string[] = [],
+  locale = "en"
+) =>
   (
     (await Promise.all(
       ids.map(async (d) => await getEntry("taxonomyItems", d))

@@ -2,7 +2,7 @@ import { csv2json } from "csv42"
 import fs from "fs"
 import path from "path"
 import YAML from "yaml"
-import { getRoots } from "@utils/content.tree.ts"
+import { getRoots } from "../src/astro/domain/content.tree.ts"
 
 export const genders = ["female", "male", "nonbinary"]
 const careerLevels = [
@@ -212,7 +212,7 @@ const doTaxonomy = async () =>
       slug: d.id,
       taxonomyURI: d.taxonomyURI,
       id: d.id,
-      parent__id: d.parent__id,
+      parent__id: !d.parent__id ? null : d.id.split("/").slice(0, -1).join("/"),
       term: d.term,
       definition: d.definition,
       abbreviations: {

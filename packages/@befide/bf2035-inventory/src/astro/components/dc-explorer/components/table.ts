@@ -87,7 +87,6 @@ export function createTableChart(
     // tableHeaderTHs.append("span").classed("resize-handle", true)
 
     function tableHeaderCallback(this: any, d: any) {
-      console.log(d)
       // Highlight column header being sorted and show bootstrap glyphicon
 
       // sort_state = select(this).attr("class"d.sort_state === "ascending" ? "descending" : "ascending"

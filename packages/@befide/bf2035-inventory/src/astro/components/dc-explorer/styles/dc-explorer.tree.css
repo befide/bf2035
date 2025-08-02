@@ -1,3 +1,9 @@
+.forest {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .tree-node__row {
   display: flex;
   flex-direction: row;
@@ -27,19 +33,26 @@
   flex: 0 0 calc(70ch - 0rem);
 }
 .tree-node[depth="1"] .tree-node__row > .tree-node__cell:nth-child(1) {
-  flex: 0 0 calc(70ch - 1rem);
+  flex: 0 0 calc(70ch - 0.5rem);
 }
 .tree-node[depth="2"] .tree-node__row > .tree-node__cell:nth-child(1) {
-  flex: 0 0 calc(70ch - 1.5rem);
+  flex: 0 0 calc(70ch - 1rem);
 }
 .tree-node[depth="3"] .tree-node__row > .tree-node__cell:nth-child(1) {
-  flex: 0 0 calc(70ch - 2rem);
+  flex: 0 0 calc(70ch - 1.5rem);
 }
 .tree-node[depth="4"] .tree-node__row > .tree-node__cell:nth-child(1) {
+  flex: 0 0 calc(70ch - 2rem);
+}
+.tree-node[depth="5"] .tree-node__row > .tree-node__cell:nth-child(1) {
   flex: 0 0 calc(70ch - 2.5rem);
 }
-.tree-node__cell:nth-child(2) {
-  flex: 0 0 30ch;
+.tree-node[depth="6"] .tree-node__row > .tree-node__cell:nth-child(1) {
+  flex: 0 0 calc(70ch - 3rem);
+}
+/* .tree-node__cell:nth-child(2) {
+  flex: 1 0 30ch;
+  
 }
 .tree-node__cell:nth-child(3) {
   flex: 0 0 8ch;
@@ -49,7 +62,7 @@
 }
 .tree-node__cell:nth-child(4) {
   flex: 0 0 12ch;
-}
+} */
 
 .tree summary {
   cursor: pointer;

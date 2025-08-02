@@ -5,18 +5,18 @@ import {
   careerLevels,
   genders,
   disciplinaryProfessions,
-  type OrganizationSchema,
+  
 } from '@/astro/domain/organizations/organizations.config';
-import { flattenTreeNodes, getRoots } from '@/astro/domain/content.tree';
-import { getCollection } from 'astro:content';
+import { flattenTreeNodes } from '@/astro/domain/content.tree';
+
 import { getValue } from '@/astro/domain/content';
-import { OrganizationDto } from '@/astro/domain';
+import { Organization } from '@/astro/domain';
 
 
 interface Props {
-  organizationObjectDto: OrganizationDto
+  organization: Organization
 }
-let { organizationObjectDto } = Astro.props;
+let { organization } = Astro.props;
 
 
 const product = fastCartesian([
@@ -25,19 +25,21 @@ const product = fastCartesian([
   [...genders]
 ]);
 
-const organizations = await getCollection(
-  'organizations', ({ data }) => (
-    data.isPartOfCommunity &&
-    organizationId === undefined ||
-    data.topLevel__id === organizationId ||
-    data.id === organizationId ||
-    data.id === ':'
-  ))
 
-const organizationRoots = getRoots<OrganizationSchema>(organizations.map(d => d.data));
-const list = flattenTreeNodes(organizationRoots)
+const list = flattenTreeNodes(await organization.getTreeRoots())
 
 ---
+
+list: {JSON.stringify(organization)}
+<ul>
+{
+  list.map(i => (
+    <li>{i}</li>
+  ))
+}
+
+
+</ul>
 
 <table class="tree-table">
   <thead>

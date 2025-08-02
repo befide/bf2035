@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import crossfilter from "crossfilter2"
 import { format, formatSpecifier, precisionFixed, select } from "d3"
 import { numberDisplay } from "dc"
 
@@ -35,11 +36,11 @@ export const countChartId = (collection: string, dimension: string) => {
   return "dc-explorer__chart--count-" + collection + "-" + dimension
 }
 
-export function createCountChart(
+export function createCountChart<T, U>(
   collection: string,
   dimension: string,
-  cf: any,
-  cfDimension: any
+  cf: crossfilter.Crossfilter<T>,
+  cfDimension: crossfilter.Dimension<T, U>
 ) {
   const tileElementIdSelector = "#" + countChartTileId(collection, dimension)
   const tileElement = select(tileElementIdSelector)
@@ -53,15 +54,15 @@ export function createCountChart(
     .html({
       some: templates["en"]["dataCountTemplate__some"].replace(
         /%total-count/,
-        cf.size()
+        cf.size().toString()
       ),
       one: templates["en"]["dataCountTemplate__one"].replace(
         /%total-count/,
-        cf.size()
+        cf.size().toString()
       ),
       none: templates["en"]["dataCountTemplate__none"].replace(
         /%total-count/,
-        cf.size()
+        cf.size().toString()
       ),
     })
     .formatNumber(numberFormat)

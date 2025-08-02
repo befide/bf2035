@@ -50,6 +50,7 @@
     "@types/d3-scale": "catalog:",
     "@types/d3-scale-chromatic": "catalog:",
     "@types/d3-selection": "catalog:",
+    "@types/dc": "catalog:",
     "@types/jsdom": "catalog:",
     "@vite-pwa/assets-generator": "catalog:",
     "@vite-pwa/astro": "catalog:",

@@ -1,13 +1,12 @@
 ---
 import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro"
-import type { InferGetStaticPropsType } from "astro"
 
 import {
   allCommunityTopLevelOrganizations,
   Organization,
   OrganizationSchema,
 } from "@domain/organizations"
-import { getFacilities } from "@domain/facilities"
+
 import ProfileOrganizationTreeTable from "@components/domain/ProfileOrganizationTreeTable.astro"
 import ProfileFacilityTreeTable from "@components/domain/ProfileFacilityTreeTable.astro"
 import CoursesTable from "@components/domain/CoursesTable.astro"
@@ -35,43 +34,41 @@ let { organization } = Astro.props
 const organizationObject = new Organization(organization)
 const organizationObjectDto = await organizationObject.getDto("en")
 
-// const userFacilitiesInDesign = (
-//   await getFacilities({
-//     hostId: organization.data.id,
-//     lifeCycleCategory: 2,
-//   })
-// ).map((d) => d.data)
-// const userFacilitiesInConstruction = (
-//   await getFacilities({
-//     hostId: organization.id,
-//     isUserFacility: true,
-//     lifeCycleCategory: 2,
-//   })
-// ).map((d) => d.data)
-// const userFacilitiesInOperation = (
-//   await getFacilities({
-//     hostId: organization.id,
-//     isUserFacility: true,
-//     lifeCycleCategory: 3,
-//   })
-// ).map((d) => d.data)
-// const testFacilities = (
-//   await getFacilities({
-//     hostId: organization.id,
-//     // isUserFacility: false,
-//     lifeCycleCategory: 1,
-//   })
-// ).map((d) => d.data)
+const userFacilitiesInDesign = (
+  await organizationObject.getFacilities({ lifeCycleCategory: 2 })
+).map((d) => d.data)
+const userFacilitiesInConstruction = (
+  await organizationObject.getFacilities({
+    isUserFacility: true,
+    lifeCycleCategory: 2,
+  })
+).map((d) => d.data)
+const userFacilitiesInOperation = (
+  await organizationObject.getFacilities({
+    isUserFacility: true,
+    lifeCycleCategory: 3,
+  })
+).map((d) => d.data)
+const testFacilities = (
+  await organizationObject.getFacilities({
+    // isUserFacility: false,
+    lifeCycleCategory: 1,
+  })
+).map((d) => d.data)
 ---
 
-<StarlightPage frontmatter={{ title: organizationObjectDto.label__fullName }}>
+<StarlightPage
+  frontmatter={{
+    title: organizationObjectDto.label__fullName.toString() || "",
+  }}
+>
   <article>
     <section>
       <h2>Staff per working Groups</h2>
 
       {
         organization && (
-          <ProfileOrganizationTreeTable organization={organizationObjectDto} />
+          <ProfileOrganizationTreeTable organization={organizationObject} />
         )
       }
     </section>

@@ -164,6 +164,10 @@ export default defineConfig({
           //   },
           // ],
         },
+        {
+          label: "Profiles",
+          autogenerate: { directory: "/en//data/profiles" },
+        },
       ],
     }),
     // purgecss(),

@@ -1,5 +1,6 @@
 export { tableConfigMap } from "./config.tables"
 export { treeTableConfigMap } from "./config.tree-tables"
+export { treeSectionsConfigMap } from "./config.tree-sections"
 
 export function numberFormat(value: number | null) {
   return (

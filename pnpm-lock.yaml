@@ -513,6 +513,9 @@ importers:
       '@types/d3-selection':
         specifier: 'catalog:'
         version: 3.0.11
+      '@types/dc':
+        specifier: 'catalog:'
+        version: 4.2.5
       '@types/jsdom':
         specifier: 'catalog:'
         version: 21.1.7
