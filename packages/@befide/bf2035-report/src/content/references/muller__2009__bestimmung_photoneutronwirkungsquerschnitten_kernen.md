@@ -10,8 +10,8 @@ cslItem:
   ISBN: 978-3-86853-083-4
   issued:
     date-parts:
-      - - "2009"
-  keyword: "#university/tu-darmstadt;#facility/s-dalinac"
+      - - '2009'
+  keyword: '#university/tu-darmstadt;#facility/s-dalinac'
   language: en
   publisher: Dr. Hut / Technische Universität Darmstadt
   title: >-
@@ -20,8 +20,8 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/36613/
 tags:
-  - "#university/tu-darmstadt"
-  - "#facility/s-dalinac"
+  - '#university/tu-darmstadt'
+  - '#facility/s-dalinac'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

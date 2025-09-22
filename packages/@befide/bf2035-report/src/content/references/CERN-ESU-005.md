@@ -8,9 +8,9 @@ cslItem:
   event-place: Geneva
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 9
-  keyword: "#bf2035/application/science/high-energy-physics"
+  keyword: '#bf2035/application/science/high-energy-physics'
   language: en
   number: CERN-ESU-005
   publisher: CERN

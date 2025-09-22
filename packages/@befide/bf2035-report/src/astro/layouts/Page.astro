@@ -1,12 +1,12 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro'
+import BaseLayout from '@layouts/BaseLayout.astro';
 
 export interface Props {
-  lang?: string
-  title?: string
+  lang?: string;
+  title?: string;
 }
 
-const { lang = 'de', title = 'NO TITLE' } = Astro.props
+const { lang = 'de', title = 'NO TITLE' } = Astro.props;
 ---
 
 <BaseLayout {title} {lang}>

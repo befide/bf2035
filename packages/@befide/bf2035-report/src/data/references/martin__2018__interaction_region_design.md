@@ -10,16 +10,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2018"
-  keyword: "#gender/male;#university/hu-berlin"
+      - - '2018'
+  keyword: '#gender/male;#university/hu-berlin'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: Interaction Region Design for a 100 TeV Proton-Proton Collider
   type: thesis
   URL: https://doi.org/10.18452/19416
 tags:
-  - "#gender/male"
-  - "#university/hu-berlin"
+  - '#gender/male'
+  - '#university/hu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

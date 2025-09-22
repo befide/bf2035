@@ -78,7 +78,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
   keyword: >-
     #university/btu-cottbus-senftenberg;#gender/male;#facility/flash;#facility/euxfel;#components/beam-halo-monitors
   language: en
@@ -89,11 +89,11 @@ cslItem:
   type: thesis
   URL: https://opus4.kobv.de/opus4-btu/frontdoor/index/index/year/2015/docId/3475
 tags:
-  - "#university/btu-cottbus-senftenberg"
-  - "#gender/male"
-  - "#facility/flash"
-  - "#facility/euxfel"
-  - "#components/beam-halo-monitors"
+  - '#university/btu-cottbus-senftenberg'
+  - '#gender/male'
+  - '#facility/flash'
+  - '#facility/euxfel'
+  - '#components/beam-halo-monitors'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

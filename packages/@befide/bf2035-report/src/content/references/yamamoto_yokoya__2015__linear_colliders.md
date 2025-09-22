@@ -4,7 +4,7 @@ cslItem:
   id: yamamoto_yokoya__2015__linear_colliders
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 3
         - 4
   author:
@@ -22,7 +22,7 @@ cslItem:
   ISBN: 978-981-4651-48-6 978-981-4651-49-3
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 4
   keyword: >-
     #bf2035/accelerator-type/collider/linear-collider;#bf2035/application/science/high-energy-physics

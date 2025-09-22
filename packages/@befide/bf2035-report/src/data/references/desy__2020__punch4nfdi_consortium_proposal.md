@@ -4,7 +4,7 @@ cslItem:
   id: desy__2020__punch4nfdi_consortium_proposal
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 5
   author:
@@ -12,10 +12,10 @@ cslItem:
   citation-key: desy__2020__punch4nfdi_consortium_proposal
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 9
         - 30
-  keyword: "#bf2035/stakeholder/nfdi"
+  keyword: '#bf2035/stakeholder/nfdi'
   language: en
   note: https://doi.org/10.5281/zenodo.5722895
   title: PUNCH4NFDI Consortium Proposal

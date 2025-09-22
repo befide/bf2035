@@ -25,7 +25,7 @@ cslItem:
     - family: Chattopadhyay
       given: S
     - family: Hao
-      given: "Y"
+      given: 'Y'
     - family: Holder
       given: S
     - family: Holzbauer
@@ -36,8 +36,8 @@ cslItem:
   genre: White Paper
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/issue/teaching;#bf2035/issue/participation"
+      - - '2022'
+  keyword: '#bf2035/issue/teaching;#bf2035/issue/participation'
   language: en
   note: |-
     Read_Status: To Read

@@ -92,7 +92,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
+      - - '2016'
   keyword: Dipolpolarisierbarkeit;Protonenstreuung;#university/tu-darmstadt
   language: en
   publisher: Technische Universität Darmstadt
@@ -104,7 +104,7 @@ cslItem:
 tags:
   - Dipolpolarisierbarkeit
   - Protonenstreuung
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

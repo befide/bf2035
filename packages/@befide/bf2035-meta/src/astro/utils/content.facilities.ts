@@ -1,12 +1,12 @@
-import type { Facility } from "@/content/config.facilities";
-import { getCollection } from "astro:content";
+import type { Facility } from "@/content/config.facilities"
+import { getCollection } from "astro:content"
 
-import { getRoots } from "./content.tree";
+import { getRoots } from "./content.tree"
 
 export const getFacilities = async (options: {
-  hostId?: string;
-  isUserFacility?: boolean;
-  lifeCycleCategory?: number;
+  hostId?: string
+  isUserFacility?: boolean
+  lifeCycleCategory?: number
 }) =>
   await getCollection("facilities", ({ data }) => {
     return (
@@ -16,11 +16,11 @@ export const getFacilities = async (options: {
       (options.lifeCycleCategory === undefined ||
         !data.lifeCycle?.currentStatus ||
         data.lifeCycle?.currentStatus?.id.indexOf(
-          "/" + options.lifeCycleCategory,
+          "/" + options.lifeCycleCategory
         ) > -1)
-    );
-  });
+    )
+  })
 
 export const getFacilityRoots = (items: Facility[]) => {
-  return getRoots<Facility>(items);
-};
+  return getRoots<Facility>(items)
+}

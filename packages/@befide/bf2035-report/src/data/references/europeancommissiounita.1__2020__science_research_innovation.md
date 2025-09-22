@@ -9,8 +9,8 @@ cslItem:
   ISBN: 978-92-76-17772-2
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#bf2035/issue/excellence;#bf2035/issue/commercialisation/innovation"
+      - - '2020'
+  keyword: '#bf2035/issue/excellence;#bf2035/issue/commercialisation/innovation'
   language: en
   source: Zotero
   title: Science, Research and Innovation Performance of the EU 2020

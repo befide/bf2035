@@ -9,7 +9,7 @@ cslItem:
     accelerators are a disruptive technology developing hand-in-hand...
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 3
   author:
@@ -18,7 +18,7 @@ cslItem:
   genre: CORDIS Project Fact Sheet
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
   keyword: >-
     #bf2035/funding/eu/horizon-2020;#bf2035/accelerating-technique/plasma-based-acceleration
   language: en

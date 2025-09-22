@@ -10,7 +10,7 @@ cslItem:
     jeweils aktuell gültige Fassung der Vereinssatzung.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 10
   author:
@@ -26,10 +26,10 @@ cslItem:
   DOI: 10.5281/zenodo.5735196
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 11
         - 17
-  keyword: ""
+  keyword: ''
   language: deu
   title: Nationale Forschungsdateninfrastruktur (NFDI) e. V. - Satzungsvorstellung
   type: speech

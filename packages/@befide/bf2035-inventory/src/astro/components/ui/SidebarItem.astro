@@ -1,0 +1,31 @@
+---
+import { getPath } from "@domain/sections"
+import type { SectionTreeNode } from "@domain/sections"
+
+export type Props = {
+  node: SectionTreeNode
+}
+
+const { node } = Astro.props
+---
+
+<li class={`sidebar-item depth-${node.depth}`} data-path={node.data?.id}>
+  {
+    !node.data?.data?.excludeFromToc && (
+      <a href={"/" + node?.data?.id}>
+        <span class="section-number">
+          {node.data && node.data?.data.sectionNumber}
+        </span>
+        <span class="section-title">{node.data && node.data?.data.title}</span>
+      </a>
+    )
+  }
+  <ul
+    class={`sidebar-items depth-${node.depth + 1}`}
+    data-path={node?.data?.id}
+  >
+    {node.children?.map((child) => <Astro.self node={child} />)}
+  </ul>
+</li>
+
+<style></style>

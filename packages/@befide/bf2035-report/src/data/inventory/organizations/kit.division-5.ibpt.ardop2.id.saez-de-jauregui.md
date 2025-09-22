@@ -1,20 +1,20 @@
 ---
 id: kit.division-5.ibpt.ardop2.id.saez-de-jauregui
 befideInventoryOrganizationalLevelCategory: 5 - work group level
-befideOrganizationCategories: ["university"]
+befideOrganizationCategories: ['university']
 homepage__de: https://www.ibpt.kit.edu/d2_DRD.php
 homepage__en: https://www.ibpt.kit.edu/d2_DRD.php
 label__de: Team Saez de Jauregui
 label__en: Team Saez de Jauregui
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
-  city: 
-  country: 
-  lat: 
-  lng: 
+  city:
+  country:
+  lat:
+  lng:
 peopleCount:
   uniqueProfessors: 0
   uniqueSeniorResearchers: 0

@@ -32,16 +32,16 @@ cslItem:
   ISBN: 978-3-8439-3987-4
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#university/kit;#gender/male"
+      - - '2019'
+  keyword: '#university/kit;#gender/male'
   language: de
   publisher: Karlsruher Institut für Technologie / Verlag Dr. Hut
   title: Kryogene gemischkältekreisläufe für hochtemperatursupraleiter-anwendungen
   type: thesis
   URL: https://www.dr.hut-verlag.de/978-3-8439-3987-4.html
 tags:
-  - "#university/kit"
-  - "#gender/male"
+  - '#university/kit'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

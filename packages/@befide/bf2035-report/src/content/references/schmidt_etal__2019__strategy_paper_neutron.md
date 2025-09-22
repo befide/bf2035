@@ -15,11 +15,11 @@ cslItem:
   genre: Strategiepapier
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#bf2035/stakeholder/kfn;#bf2035/application/science/neutron-science"
+      - - '2019'
+  keyword: '#bf2035/stakeholder/kfn;#bf2035/application/science/neutron-science'
   language: en
   source: Zotero
-  title: "Strategy Paper on Neutron Research in Germany: 2020–2045"
+  title: 'Strategy Paper on Neutron Research in Germany: 2020–2045'
   type: report
 tags:
   - bf2035:stakeholder/kfn

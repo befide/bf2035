@@ -9,17 +9,17 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#university/kit;#gender/male"
+      - - '2022'
+  keyword: '#university/kit;#gender/male'
   language: en
-  number-of-pages: "179"
+  number-of-pages: '179'
   publisher: Karlsruher Institut für Technologie
   title: Development of a CMRC cooled 10 kA current lead for HTS applications
   type: thesis
   URL: https://doi.org/10.5445/IR/1000144514
 tags:
-  - "#university/kit"
-  - "#gender/male"
+  - '#university/kit'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

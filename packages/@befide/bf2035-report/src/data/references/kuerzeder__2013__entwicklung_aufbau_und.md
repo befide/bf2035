@@ -9,17 +9,17 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#facility/s-dalinac;#gender/male;#university/tu-darmstadt"
+      - - '2013'
+  keyword: '#facility/s-dalinac;#gender/male;#university/tu-darmstadt'
   language: de
   publisher: Technische Universität Darmstadt
   title: Entwicklung, Aufbau und Test eines neuen Kryostatmoduls für den S-DALINAC
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/3353/
 tags:
-  - "#facility/s-dalinac"
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#facility/s-dalinac'
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

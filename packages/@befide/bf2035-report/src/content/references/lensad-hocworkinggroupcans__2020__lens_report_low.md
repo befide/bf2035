@@ -8,14 +8,14 @@ cslItem:
   genre: LENS Report
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 11
   keyword: >-
     #bf2035/accelerator-based-facility/hbs;#bf2035/accelerator-based-facility/nova-era;#bf2035/accelerator-based-facility-type/neutron-source/compact-accelerator-based-neutron-source;#bf2035/application/science/neutron-science
   language: en
-  page: "77"
+  page: '77'
   publisher: LENS
-  title: "LENS Report: Low Energy Accelerator-driven Neutron Sources"
+  title: 'LENS Report: Low Energy Accelerator-driven Neutron Sources'
   type: report
 tags:
   - bf2035:accelerator-based-facility/hbs

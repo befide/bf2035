@@ -36,7 +36,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
+      - - '2016'
         - 6
   keyword: >-
     gamma-ray spectroscopy;Nuclear physics;proton inelastic
@@ -50,7 +50,7 @@ tags:
   - gamma-ray spectroscopy
   - Nuclear physics
   - proton inelastic scattering
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

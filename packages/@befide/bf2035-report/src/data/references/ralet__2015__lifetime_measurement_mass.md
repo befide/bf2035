@@ -42,7 +42,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
   keyword: AGATA;lifetime measurement;DAQ;PreSPEC;#university/tu-darmstadt
   language: en
   publisher: Technische Universität Darmstadt
@@ -56,7 +56,7 @@ tags:
   - lifetime measurement
   - DAQ
   - PreSPEC
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

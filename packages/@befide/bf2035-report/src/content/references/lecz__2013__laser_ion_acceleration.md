@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#gender/male;#university/tu-darmstadt"
+      - - '2013'
+  keyword: '#gender/male;#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: Laser ion acceleration from a double-layer metal foil.
   type: thesis
   URL: https://tuprints.ulb.TU-Darmstadt.de/3335/
 tags:
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

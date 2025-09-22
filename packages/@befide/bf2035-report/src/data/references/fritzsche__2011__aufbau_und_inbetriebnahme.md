@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2011"
-  keyword: "#facility/s-dalinac;#university/tu-darmstadt"
+      - - '2011'
+  keyword: '#facility/s-dalinac;#university/tu-darmstadt'
   language: de
   publisher: Technische Universität Darmstadt
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/2801/
 tags:
-  - "#facility/s-dalinac"
-  - "#university/tu-darmstadt"
+  - '#facility/s-dalinac'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

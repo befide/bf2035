@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#university/kit;#gender/female;#facility/ps"
+      - - '2013'
+  keyword: '#university/kit;#gender/female;#facility/ps'
   language: en
   publisher: Karlsruher Institut für Technologie
   title: >-
@@ -19,9 +19,9 @@ cslItem:
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000035142
 tags:
-  - "#university/kit"
-  - "#gender/female"
-  - "#facility/ps"
+  - '#university/kit'
+  - '#gender/female'
+  - '#facility/ps'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

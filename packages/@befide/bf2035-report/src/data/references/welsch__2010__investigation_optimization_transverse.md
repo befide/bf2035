@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2010"
-  keyword: "#gender/male;#university/uni-bonn"
+      - - '2010'
+  keyword: '#gender/male;#university/uni-bonn'
   language: en
   publisher: Universität Bonn
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: http://hss.ulb.uni-bonn.de/2010/2082/2082.htm
 tags:
-  - "#gender/male"
-  - "#university/uni-bonn"
+  - '#gender/male'
+  - '#university/uni-bonn'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

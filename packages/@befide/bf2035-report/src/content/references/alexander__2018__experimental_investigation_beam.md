@@ -84,18 +84,18 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2018"
-  keyword: "#gender/male;#university/uni-mainz;#facility/mesa;#degree/dr.rer.nat."
+      - - '2018'
+  keyword: '#gender/male;#university/uni-mainz;#facility/mesa;#degree/dr.rer.nat.'
   language: en
   publisher: Johannes Gutenberg-Universität Mainz
   title: Experimental investigation of the beam dynamics of the MESA photoinjector
   type: thesis
   URL: https://openscience.ub.uni-mainz.de/handle/20.500.12030/1178
 tags:
-  - "#gender/male"
-  - "#university/uni-mainz"
-  - "#facility/mesa"
-  - "#degree/dr.rer.nat."
+  - '#gender/male'
+  - '#university/uni-mainz'
+  - '#facility/mesa'
+  - '#degree/dr.rer.nat.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

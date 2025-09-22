@@ -1,20 +1,20 @@
 ---
 id: uni-hamburg.min
 befideInventoryOrganizationalLevelCategory: 2 - intermediate level
-befideOrganizationCategories: ["university"]
+befideOrganizationCategories: ['university']
 homepage__de: https://www.physik.uni-hamburg.de/iexp.html
 homepage__en: https://www.physik.uni-hamburg.de/iexp.html
 label__de: MIN Fakultät
 label__en: MIN Faculty
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: false
 location:
-  city: 
-  country: 
-  lat: 
-  lng: 
+  city:
+  country:
+  lat:
+  lng:
 peopleCount:
   uniqueProfessors: 0
   uniqueSeniorResearchers: 0

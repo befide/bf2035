@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#university/tu-darmstadt;#gender/male;#facility/s-dalinac"
+      - - '2017'
+  keyword: '#university/tu-darmstadt;#gender/male;#facility/s-dalinac'
   language: de
   publisher: Technische Universität Darmstadt
   title: >-
@@ -21,9 +21,9 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/6849/
 tags:
-  - "#university/tu-darmstadt"
-  - "#gender/male"
-  - "#facility/s-dalinac"
+  - '#university/tu-darmstadt'
+  - '#gender/male'
+  - '#facility/s-dalinac'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

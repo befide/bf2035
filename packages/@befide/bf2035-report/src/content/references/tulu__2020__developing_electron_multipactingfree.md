@@ -13,7 +13,7 @@ cslItem:
     new design of the photocathode channel.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 12
         - 10
   author:
@@ -24,8 +24,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#university/uni-rostock;#degree/dr.ing."
+      - - '2020'
+  keyword: '#university/uni-rostock;#degree/dr.ing.'
   language: en
   publisher: Universität Rostock
   source: DOI.org (Datacite)
@@ -35,8 +35,8 @@ cslItem:
   type: thesis
   URL: http://rosdok.uni-rostock.de/resolve/id/rosdok_disshab_0000002436
 tags:
-  - "#university/uni-rostock"
-  - "#degree/dr.ing."
+  - '#university/uni-rostock'
+  - '#degree/dr.ing.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

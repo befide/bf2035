@@ -1,31 +1,31 @@
-import type { TaxonomyItem } from "@/content/config.taxonomyItems";
-import { getCollection } from "astro:content";
+import type { TaxonomyItem } from "@/content/config.taxonomyItems"
+import { getCollection } from "astro:content"
 
-import { getRoots } from "./content.tree";
-import { getValue } from "./index";
+import { getRoots } from "./content.tree"
+import { getValue } from "./index"
 
 export const taxonomyItemRoots = async (
   isDomainSpecific: boolean | null,
-  lang = "en",
+  lang = "en"
 ) => {
-  console.log({ isDomainSpecific });
+  console.log({ isDomainSpecific })
   let items = (
     await getCollection(
       "taxonomyItems",
       ({ data }) =>
-        isDomainSpecific === null || data.isDomainSpecific === isDomainSpecific,
+        isDomainSpecific === null || data.isDomainSpecific === isDomainSpecific
     )
   )
     .map((d) => d.data)
     .sort((a, b) =>
       getValue(a, "term." + lang).localeCompare(
         getValue(b, "term." + lang),
-        lang,
-      ),
-    );
+        lang
+      )
+    )
 
-  return getTaxonomyItemRoots(items);
-};
+  return getTaxonomyItemRoots(items)
+}
 
 // export const genericTaxonomyItemRoots = async () => {
 //   let items = (await (getCollection(
@@ -36,5 +36,5 @@ export const taxonomyItemRoots = async (
 //   // return flattenTreeNodes(roots)
 // }
 export const getTaxonomyItemRoots = (items: TaxonomyItem[]) => {
-  return getRoots<TaxonomyItem>(items);
-};
+  return getRoots<TaxonomyItem>(items)
+}

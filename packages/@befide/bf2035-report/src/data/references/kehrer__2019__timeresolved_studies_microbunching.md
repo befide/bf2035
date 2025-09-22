@@ -9,17 +9,17 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#gender/male;#facility/elbe;#university/kara"
+      - - '2019'
+  keyword: '#gender/male;#facility/elbe;#university/kara'
   language: en
   publisher: Karlsruher Institut für Technologie
   title: Time-resolved studies of the micro-bunching instability at KARA
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000098584
 tags:
-  - "#gender/male"
-  - "#facility/elbe"
-  - "#university/kara"
+  - '#gender/male'
+  - '#facility/elbe'
+  - '#university/kara'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

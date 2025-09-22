@@ -9,17 +9,17 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2011"
-  keyword: "#university/uni-hamburg;#gender/male;#facility/flash"
+      - - '2011'
+  keyword: '#university/uni-hamburg;#gender/male;#facility/flash'
   language: en
   publisher: Universität Hamburg
   title: Transverse beam diagnostics for the XUV seeding experiment at FLASH
   type: thesis
   URL: https://bib-pubdb1.desy.de/record/96487
 tags:
-  - "#university/uni-hamburg"
-  - "#gender/male"
-  - "#facility/flash"
+  - '#university/uni-hamburg'
+  - '#gender/male'
+  - '#facility/flash'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2012"
-  keyword: "#university/uni-hamburg;#facility/flash"
+      - - '2012'
+  keyword: '#university/uni-hamburg;#facility/flash'
   language: en
   publisher: Universität Hamburg
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://bib-pubdb1.desy.de/record/94541
 tags:
-  - "#university/uni-hamburg"
-  - "#facility/flash"
+  - '#university/uni-hamburg'
+  - '#facility/flash'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

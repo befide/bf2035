@@ -4,11 +4,11 @@ cslItem:
   id: stoddart__2022__how_particle_accelerators
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 11
         - 17
   citation-key: stoddart__2022__how_particle_accelerators
-  collection-title: "2"
+  collection-title: '2'
   dimensions: 38 min
   director:
     - family: Stoddart
@@ -16,13 +16,13 @@ cslItem:
   DOI: 10.1146/knowable-032822-1
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 3
         - 29
-  keyword: "#bf2035/accelerator-technology/history"
+  keyword: '#bf2035/accelerator-technology/history'
   language: en
-  note: "year: 2022"
-  number: "5"
+  note: 'year: 2022'
+  number: '5'
   title: How particle accelerators came to be
   type: broadcast
   URL: >-

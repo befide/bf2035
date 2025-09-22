@@ -4,7 +4,7 @@ cslItem:
   id: garoby_etal__2017__european_spallation_source
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 1
         - 31
   author:
@@ -31,7 +31,7 @@ cslItem:
     - family: Kittelmann
       given: I
     - family: Levinsen
-      given: "Y"
+      given: 'Y'
     - family: Lindroos
       given: M
     - family: Martins
@@ -71,7 +71,7 @@ cslItem:
     - family: McGinnis
       given: D
     - family: Gazis
-      given: "N"
+      given: 'N'
     - family: Weisend II
       given: J
     - family: Anthony
@@ -125,13 +125,13 @@ cslItem:
     - family: Batkov
       given: K
     - family: Lee
-      given: "Y"
+      given: 'Y'
     - family: Zanini
       given: L
     - family: Kickulies
       given: M
     - family: Bessler
-      given: "Y"
+      given: 'Y'
     - family: Ringnér
       given: J
     - family: Jurns
@@ -161,22 +161,22 @@ cslItem:
   container-title-short: Phys. Scr.
   DOI: 10.1088/1402-4896/aa9bff
   ISSN: 0031-8949, 1402-4896
-  issue: "1"
+  issue: '1'
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
         - 12
         - 29
   keyword: >-
     #bf2035/accelerator-based-facility/ess;#bf2035/accelerator-based-facility-type/neutron-source/spallation-neutron-source;#bf2035/application/science/neutron-science
   language: en
   note: 75 citations (Crossref) [2023-01-31]
-  page: "014001"
+  page: '014001'
   source: DOI.org (Crossref)
   title: The European Spallation Source Design
   type: article-journal
   URL: https://iopscience.iop.org/article/10.1088/1402-4896/aa9bff
-  volume: "93"
+  volume: '93'
 tags:
   - bf2035:accelerator-based-facility/ess
   - >-

@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2010"
-  keyword: "#university/uni-bonn;#facility/elsa"
+      - - '2010'
+  keyword: '#university/uni-bonn;#facility/elsa'
   language: de
   publisher: Universität Bonn
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: http://www-elsa.physik.uni-bonn.de/Publikationen/texte/eberhardt_dr.pdf
 tags:
-  - "#university/uni-bonn"
-  - "#facility/elsa"
+  - '#university/uni-bonn'
+  - '#facility/elsa'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

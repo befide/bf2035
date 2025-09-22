@@ -16,11 +16,11 @@ cslItem:
   citation-key: kirchner_etal__2015__gutachten_transmutation
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 8
         - 12
-  keyword: "#bf2035/application"
-  page: "158"
+  keyword: '#bf2035/application'
+  page: '158'
   publisher: Zentrum für Naturwissenschaft und Friedensforschung (ZNF) und Öko-Institut
   title: Gutachten "Transmutation"
   type: report

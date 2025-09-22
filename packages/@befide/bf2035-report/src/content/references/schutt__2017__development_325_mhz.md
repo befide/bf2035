@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#gender/male;#university/uni-frankfurt"
+      - - '2017'
+  keyword: '#gender/male;#university/uni-frankfurt'
   language: en
   publisher: Goethe-Universität Frankfurt am Main
   title: Development of a 325 MHz ladder RFQ
   type: thesis
   URL: https://hds.hebis.de/ubffm/Record/HEB42682637X
 tags:
-  - "#gender/male"
-  - "#university/uni-frankfurt"
+  - '#gender/male'
+  - '#university/uni-frankfurt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

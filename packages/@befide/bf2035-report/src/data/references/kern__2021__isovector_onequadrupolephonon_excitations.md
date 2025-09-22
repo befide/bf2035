@@ -53,16 +53,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#university/tu-darmstadt"
+      - - '2021'
+  keyword: '#university/tu-darmstadt'
   language: en
-  number-of-pages: "195"
+  number-of-pages: '195'
   publisher: Technische Universität Darmstadt
   title: Isovector one-quadrupole-phonon excitations of heavy vibrational nuclei
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/126963/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -4,7 +4,7 @@ cslItem:
   id: leaps__2022__european_strategy_acceleratorbased
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 17
   author:
@@ -12,8 +12,8 @@ cslItem:
   citation-key: leaps__2022__european_strategy_acceleratorbased
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/application/science/photon-science"
+      - - '2022'
+  keyword: '#bf2035/application/science/photon-science'
   language: en
   note: |-
     Read_Status: To Read

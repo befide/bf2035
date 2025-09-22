@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#gender/male;#university/hu-berlin"
+      - - '2016'
+  keyword: '#gender/male;#university/hu-berlin'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: A robinson wiggler for the metrology light source
   type: thesis
   URL: http://doi.org/10.18452/17639
 tags:
-  - "#gender/male"
-  - "#university/hu-berlin"
+  - '#gender/male'
+  - '#university/hu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

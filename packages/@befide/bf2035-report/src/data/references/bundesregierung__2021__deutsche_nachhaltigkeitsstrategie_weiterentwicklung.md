@@ -7,8 +7,8 @@ cslItem:
   citation-key: bundesregierung__2021__deutsche_nachhaltigkeitsstrategie_weiterentwicklung
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#bf2035/stakeholder/german-government"
+      - - '2021'
+  keyword: '#bf2035/stakeholder/german-government'
   language: en
   publisher: Die Bundesregierung
   source: Zotero

@@ -8,10 +8,10 @@ cslItem:
   citation-key: freudenreich__2019__helmholtz_doctoral_guidelines
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 4
         - 30
-  keyword: "#bf2035/issue/teaching"
+  keyword: '#bf2035/issue/teaching'
   language: en
   source: Zotero
   title: Helmholtz Doctoral Guidelines

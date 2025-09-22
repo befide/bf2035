@@ -8,8 +8,8 @@ cslItem:
   citation-key: zimmermann__2021__accelerator_physics_technology
   issued:
     date-parts:
-      - - "2021"
-  keyword: ""
+      - - '2021'
+  keyword: ''
   language: en
   note: |-
     Read_Status: To Read

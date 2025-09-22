@@ -1,12 +1,12 @@
 ---
-import { getPath } from '@utils/getSections'
-import type { SectionTreeNode } from '@utils/getSections'
+import { getPath } from '@utils/getSections';
+import type { SectionTreeNode } from '@utils/getSections';
 
 export type Props = {
-  node: SectionTreeNode
-}
+  node: SectionTreeNode;
+};
 
-const { node: tocItem } = Astro.props
+const { node: tocItem } = Astro.props;
 ---
 
 <li class={`toc-item depth-${tocItem.depth}`} data-path={tocItem?.data?.slug}>

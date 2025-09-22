@@ -6,7 +6,7 @@ cslItem:
     allianzderwissenschaftsorganisationen__2020__10punkteplan_zur_wissenschaftskommunikation
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 7
         - 2
   author:
@@ -15,8 +15,8 @@ cslItem:
     allianzderwissenschaftsorganisationen__2020__10punkteplan_zur_wissenschaftskommunikation
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#bf2035/issue/participation"
+      - - '2020'
+  keyword: '#bf2035/issue/participation'
   language: en
   title: 10-Punkte-Plan zur Wissenschaftskommunikation
   type: document

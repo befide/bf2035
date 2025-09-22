@@ -9,10 +9,10 @@ cslItem:
   ISBN: 978-91-527-3846-7
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/application/science/neutron-science"
+      - - '2022'
+  keyword: '#bf2035/application/science/neutron-science'
   language: en
-  number-of-pages: "50"
+  number-of-pages: '50'
   publisher: The European Spallation Source ERIC
   publisher-place: Lund
   source: LIBRIS ISBN

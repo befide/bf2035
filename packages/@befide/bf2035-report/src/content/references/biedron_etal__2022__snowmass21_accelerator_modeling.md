@@ -62,10 +62,10 @@ cslItem:
   citation-key: biedron_etal__2022__snowmass21_accelerator_modeling
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 3
         - 15
-  keyword: ""
+  keyword: ''
   source: ResearchGate
   title: Snowmass21 Accelerator Modeling Community White Paper
   type: book

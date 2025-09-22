@@ -4,7 +4,7 @@ cslItem:
   id: europeanresearchcouncil__2024__european_research_council
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 13
   author:
@@ -13,8 +13,8 @@ cslItem:
   genre: Homepage
   issued:
     date-parts:
-      - - "2024"
-  keyword: ""
+      - - '2024'
+  keyword: ''
   language: en
   title: European Research Council
   type: webpage

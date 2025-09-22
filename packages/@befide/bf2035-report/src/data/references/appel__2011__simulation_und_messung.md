@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2011"
-  keyword: "#university/tu-darmstadt;#facility/sis18"
+      - - '2011'
+  keyword: '#university/tu-darmstadt;#facility/sis18'
   language: de
   publisher: Technische Universität Darmstadt
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.TU-Darmstadt.de/2594/
 tags:
-  - "#university/tu-darmstadt"
-  - "#facility/sis18"
+  - '#university/tu-darmstadt'
+  - '#facility/sis18'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -4,7 +4,7 @@ cslItem:
   id: ethelmendez__2012__evaluating_research_excellence
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 11
   author:
@@ -13,12 +13,12 @@ cslItem:
   event-place: CA
   issued:
     date-parts:
-      - - "2012"
-  keyword: "#bf2035/issue/excellence"
+      - - '2012'
+  keyword: '#bf2035/issue/excellence'
   language: en
   publisher: International Development Research Centre
   publisher-place: CA
-  title: "Evaluating Research Excellence: Main Debates"
+  title: 'Evaluating Research Excellence: Main Debates'
   type: report
   URL: https://idrc-crdi.ca/sites/default/files/2021-04/Brief-Final-English.pdf
 tags:

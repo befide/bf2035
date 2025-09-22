@@ -29,8 +29,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#university/tu-darmstadt;#facility/s-dalinac"
+      - - '2020'
+  keyword: '#university/tu-darmstadt;#facility/s-dalinac'
   language: en
   publisher: Technische Universität Darmstadt
   title: >-
@@ -39,8 +39,8 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/121777/
 tags:
-  - "#university/tu-darmstadt"
-  - "#facility/s-dalinac"
+  - '#university/tu-darmstadt'
+  - '#facility/s-dalinac'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

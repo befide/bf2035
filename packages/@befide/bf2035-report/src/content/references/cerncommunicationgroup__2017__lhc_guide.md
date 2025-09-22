@@ -15,8 +15,8 @@ cslItem:
   genre: CERN-Brochure
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#bf2035/accelerator-based-facility/lhc;#bf2035/issue/green-transformation"
+      - - '2017'
+  keyword: '#bf2035/accelerator-based-facility/lhc;#bf2035/issue/green-transformation'
   number: CERN-Brochure-2017-002-Eng
   publisher: CERN
   publisher-place: Geneva

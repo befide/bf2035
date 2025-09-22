@@ -40,8 +40,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#university/tu-darmstadt"
+      - - '2021'
+  keyword: '#university/tu-darmstadt'
   language: en
   page: xii, 171 Seiten
   publisher: Technische Universität Darmstadt
@@ -51,7 +51,7 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/128030/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

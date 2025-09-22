@@ -13,7 +13,7 @@ cslItem:
     Bürgerinnen und Bürger aktiv einbinden.
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 7
         - 2
   author:
@@ -22,11 +22,11 @@ cslItem:
   genre: Positionspapier
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 11
         - 9
-  keyword: "#bf2035/issue/participation"
-  note: "Last Modified: 2023-06-29T15:09:30"
+  keyword: '#bf2035/issue/participation'
+  note: 'Last Modified: 2023-06-29T15:09:30'
   title: Partizipation in der Forschung
   type: report
   URL: >-

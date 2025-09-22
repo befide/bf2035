@@ -4,7 +4,7 @@ cslItem:
   id: particletherapyco-operativegroup__2020__particle_therapy_facilities
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 2
         - 21
   author:
@@ -13,9 +13,9 @@ cslItem:
   container-title: www.ptcog.ch
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 2
-  keyword: "#bf2035/application/health"
+  keyword: '#bf2035/application/health'
   language: en
   title: Particle therapy facilities in clinical operation
   type: webpage

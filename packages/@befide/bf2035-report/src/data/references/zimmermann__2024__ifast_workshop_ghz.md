@@ -10,7 +10,7 @@ cslItem:
     and pions.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 26
   author:
@@ -20,10 +20,10 @@ cslItem:
   DOI: 10.5281/zenodo.10615611
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 2
         - 4
-  keyword: "#bf2035/accelerator-based-facility-type/muon-collider"
+  keyword: '#bf2035/accelerator-based-facility-type/muon-collider'
   language: en
   publisher: Zenodo
   source: Zenodo

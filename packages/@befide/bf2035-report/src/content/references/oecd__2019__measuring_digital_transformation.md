@@ -4,7 +4,7 @@ cslItem:
   id: oecd__2019__measuring_digital_transformation
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 12
   author:
@@ -14,14 +14,14 @@ cslItem:
   ISBN: 978-92-64-31198-5 978-92-64-31204-3 978-92-64-31199-2 978-92-64-31205-0
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 3
         - 11
-  keyword: "#bf2035/issue/digital-transformation"
+  keyword: '#bf2035/issue/digital-transformation'
   language: en
   publisher: OECD
   source: DOI.org (Crossref)
-  title: "Measuring the Digital Transformation: A Roadmap for the Future"
+  title: 'Measuring the Digital Transformation: A Roadmap for the Future'
   title-short: Measuring the Digital Transformation
   type: book
   URL: >-

@@ -4,7 +4,7 @@ cslItem:
   id: amicicollaboration__2022__amici_accelerator_magnet
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 11
         - 23
   author:
@@ -12,10 +12,10 @@ cslItem:
   citation-key: amicicollaboration__2022__amici_accelerator_magnet
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 1
         - 31
-  keyword: ""
+  keyword: ''
   language: en
   note: |-
     Read_Status: To Read

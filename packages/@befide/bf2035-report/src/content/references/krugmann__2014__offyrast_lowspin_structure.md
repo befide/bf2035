@@ -45,16 +45,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 6
-  keyword: "#university/tu-darmstadt"
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: Off-yrast low-spin structure of deformed nuclei at mass number a≈150
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/69904/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

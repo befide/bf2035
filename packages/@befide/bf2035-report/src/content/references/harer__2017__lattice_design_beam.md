@@ -9,11 +9,11 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
   keyword: >-
     #university/kit;#gender/male;#facility/fcc-ee;#research-method/lattice-design
   language: en
-  number-of-pages: "168"
+  number-of-pages: '168'
   publisher: Karlsruher Institut für Technologie
   title: >-
     Lattice design and beam optics calculations for the new large-scale
@@ -21,10 +21,10 @@ cslItem:
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000071240
 tags:
-  - "#university/kit"
-  - "#gender/male"
-  - "#facility/fcc-ee"
-  - "#research-method/lattice-design"
+  - '#university/kit'
+  - '#gender/male'
+  - '#facility/fcc-ee'
+  - '#research-method/lattice-design'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

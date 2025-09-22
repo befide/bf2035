@@ -9,8 +9,8 @@ cslItem:
   genre: Database
   issued:
     date-parts:
-      - - "2024"
-  keyword: "#bf2035/pub-type/database"
+      - - '2024'
+  keyword: '#bf2035/pub-type/database'
   language: en
   title: Accelerator Knowledge Portal
   type: webpage

@@ -22,10 +22,10 @@ cslItem:
   ISBN: 978-0-19-087199-4
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 20
-  keyword: "#bf2035/issue/green-transformation"
+  keyword: '#bf2035/issue/green-transformation'
   language: en
   source: ResearchGate
   title: Energy-efficient particle accelerators for research

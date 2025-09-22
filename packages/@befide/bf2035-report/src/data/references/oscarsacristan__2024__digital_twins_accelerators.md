@@ -4,7 +4,7 @@ cslItem:
   id: oscarsacristan__2024__digital_twins_accelerators
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 9
   author:
@@ -14,10 +14,10 @@ cslItem:
   event-title: Mechanical & materials engineering for particle accelerators and detectors
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 8
-  keyword: "#bf2035/issue/digital-transformation/digital-twin"
+  keyword: '#bf2035/issue/digital-transformation/digital-twin'
   language: en
   publisher-place: Sint-Michielsgest, Netherlands
   title: Digital Twins for Accelerators and Detectors

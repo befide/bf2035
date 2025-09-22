@@ -7,13 +7,13 @@ cslItem:
     - literal: BMBF
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
   keyword: >-
     #bf2035/funding/bmbf/erum;#bf2035/stakeholder/funder/bmbf;#bf2035/issue/verbundforschung
   language: en
   original-date:
     date-parts:
-      - - "2017"
+      - - '2017'
   publisher: BMBF
   title: >-
     Erforschung von Universum und Materie -- ErUM. Rahmenprogramm des

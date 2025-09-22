@@ -1,9 +1,9 @@
-import { z } from 'astro:content'
+import { z } from "astro:content"
 
 const badgeBaseSchema = z.object({
   variant: z
-    .enum(['note', 'danger', 'success', 'caution', 'tip', 'default'])
-    .default('default'),
+    .enum(["note", "danger", "success", "caution", "tip", "default"])
+    .default("default"),
   class: z.string().optional(),
 })
 
@@ -18,7 +18,7 @@ const i18nBadgeSchema = badgeBaseSchema.extend({
 
 export const BadgeComponentSchema = badgeSchema
   .extend({
-    size: z.enum(['small', 'medium', 'large']).default('small'),
+    size: z.enum(["small", "medium", "large"]).default("small"),
   })
   .passthrough()
 
@@ -28,8 +28,8 @@ export const BadgeConfigSchema = () =>
   z
     .union([z.string(), badgeSchema])
     .transform((badge) => {
-      if (typeof badge === 'string') {
-        return { variant: 'default' as const, text: badge }
+      if (typeof badge === "string") {
+        return { variant: "default" as const, text: badge }
       }
       return badge
     })

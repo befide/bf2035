@@ -10,13 +10,13 @@ cslItem:
   citation-key: dosch_bohnet__2021__nationale_strategie_zur
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#bf2035/stakeholder/research-institution/helmholtz-association"
+      - - '2021'
+  keyword: '#bf2035/stakeholder/research-institution/helmholtz-association'
   language: en
   note: |-
     Read_Status: To Read
     Read_Status_Date: 2024-03-17T21:59:39.484Z
-  page: "33"
+  page: '33'
   publisher: Helmholtz Gemeinschaft
   title: >-
     Nationale Strategie zur Weiterentwicklung beschleunigerbasierter 

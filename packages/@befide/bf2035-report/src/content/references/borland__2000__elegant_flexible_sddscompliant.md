@@ -4,7 +4,7 @@ cslItem:
   id: borland__2000__elegant_flexible_sddscompliant
   accessed:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 1
         - 1
   author:
@@ -14,15 +14,15 @@ cslItem:
   DOI: 10.2172/761286
   issued:
     date-parts:
-      - - "2000"
+      - - '2000'
         - 8
         - 18
-  keyword: "#bf2035/issue/digital-transformation/software"
+  keyword: '#bf2035/issue/digital-transformation/software'
   language: en
   number: LS-287, 761286
   page: LS-287, 761286
   source: DOI.org (Crossref)
-  title: "ELEGANT: A flexible SDDS-compliant code for accelerator simulation"
+  title: 'ELEGANT: A flexible SDDS-compliant code for accelerator simulation'
   title-short: ELEGANT
   type: report
   URL: http://www.osti.gov/servlets/purl/761286/

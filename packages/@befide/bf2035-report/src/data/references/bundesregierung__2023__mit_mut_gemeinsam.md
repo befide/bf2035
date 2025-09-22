@@ -4,22 +4,22 @@ cslItem:
   id: bundesregierung__2023__mit_mut_gemeinsam
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 10
         - 18
   author:
     - family: Bundesregierung
-      given: ""
+      given: ''
   citation-key: bundesregierung__2023__mit_mut_gemeinsam
   event-place: Berlin
   genre: Beschlusspapier der Bundesregierung
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 10
-  keyword: ""
+  keyword: ''
   language: en
-  page: "13"
+  page: '13'
   publisher: Die Bundesregierung
   publisher-place: Berlin
   title: >-

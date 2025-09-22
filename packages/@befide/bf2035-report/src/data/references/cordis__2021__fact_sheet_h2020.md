@@ -9,7 +9,7 @@ cslItem:
     instruments.Cancer is a central health problem for our society...
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 3
   author:
@@ -18,8 +18,8 @@ cslItem:
   genre: CORDIS Project Fact Sheet
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#bf2035/funding/eu/horizon-2020;#bf2035/application/health"
+      - - '2021'
+  keyword: '#bf2035/funding/eu/horizon-2020;#bf2035/application/health'
   language: en
   title: >-
     Fact Sheet H2020: Heavy Ion Therapy Research Integration plus (HITRIplus

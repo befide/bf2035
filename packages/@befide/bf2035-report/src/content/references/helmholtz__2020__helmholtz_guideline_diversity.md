@@ -4,7 +4,7 @@ cslItem:
   id: helmholtz__2020__helmholtz_guideline_diversity
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 1
         - 31
   author:
@@ -12,10 +12,10 @@ cslItem:
   citation-key: helmholtz__2020__helmholtz_guideline_diversity
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 6
         - 16
-  keyword: "#bf2035/issue/teaching;#bf2035/issue/diversity"
+  keyword: '#bf2035/issue/teaching;#bf2035/issue/diversity'
   language: en
   note: |-
     Read_Status: To Read

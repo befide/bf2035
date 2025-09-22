@@ -9,7 +9,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
   keyword: >-
     Hochfrequenzregelung;control algorithm;EPICS;generator driven resonator;rf
     control;#university/tu-darmstadt;#gender/male;#facility/s-dalinac
@@ -27,9 +27,9 @@ tags:
   - EPICS
   - generator driven resonator
   - rf control
-  - "#university/tu-darmstadt"
-  - "#gender/male"
-  - "#facility/s-dalinac"
+  - '#university/tu-darmstadt'
+  - '#gender/male'
+  - '#facility/s-dalinac'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

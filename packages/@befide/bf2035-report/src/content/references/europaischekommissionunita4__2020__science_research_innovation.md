@@ -4,7 +4,7 @@ cslItem:
   id: europaischekommissionunita4__2020__science_research_innovation
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 9
         - 10
   author:
@@ -14,8 +14,8 @@ cslItem:
   event-place: LU
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#bf2035/issue/excellence;#bf2035/issue/commercialisation/innovation"
+      - - '2020'
+  keyword: '#bf2035/issue/excellence;#bf2035/issue/commercialisation/innovation'
   language: en
   publisher: Publications Office
   publisher-place: LU

@@ -24,7 +24,7 @@ cslItem:
     high-technology European industry and for the whole European society.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -33,10 +33,10 @@ cslItem:
   DOI: 10.5281/zenodo.7085311
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 7
         - 22
-  keyword: "#bf2035/funding/eu/horizon-2020;#bf2035/pub-type/strategies-and-roadmaps"
+  keyword: '#bf2035/funding/eu/horizon-2020;#bf2035/pub-type/strategies-and-roadmaps'
   language: en
   license: Creative Commons Attribution 4.0 International, Open Access
   source: DOI.org (Datacite)

@@ -4,7 +4,7 @@ cslItem:
   id: thefcccollaboration_etal__2019__fcc_physics_opportunities
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 3
         - 5
   author:
@@ -1774,7 +1774,7 @@ cslItem:
       given: S. A.
     - family: Nisati
       given: A.
-    - family: "No"
+    - family: 'No'
       given: J. M.
     - family: Nonis
       given: M.
@@ -2741,15 +2741,15 @@ cslItem:
   container-title-short: Eur. Phys. J. C
   DOI: 10.1140/epjc/s10052-019-6904-3
   ISSN: 1434-6044, 1434-6052
-  issue: "6"
+  issue: '6'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 6
   keyword: >-
     #bf2035/accelerator-based-facility-type/particle-collider/circular-particle-collider;#bf2035/accelerator-based-facility/fcc;#bf2035/stakeholder/research-institution/cern;#bf2035/application/science/high-energy-physics
   language: en
-  page: "474"
+  page: '474'
   source: DOI.org (Crossref)
   title: >-
     FCC Physics Opportunities: Future Circular Collider Conceptual Design Report
@@ -2757,7 +2757,7 @@ cslItem:
   title-short: FCC Physics Opportunities
   type: article-journal
   URL: 10.1140/epjc/s10052-019-6904-3
-  volume: "79"
+  volume: '79'
 tags:
   - >-
     bf2035:accelerator-based-facility-type/particle-collider/circular-particle-collider

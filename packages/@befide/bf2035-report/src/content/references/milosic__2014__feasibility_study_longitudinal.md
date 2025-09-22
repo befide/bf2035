@@ -82,10 +82,10 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 12
         - 23
-  keyword: "#gender/male;#university/tu-darmstadt"
+  keyword: '#gender/male;#university/tu-darmstadt'
   language: en
   note: >-
     university-catalog-url:
@@ -101,8 +101,8 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/4321/
 tags:
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

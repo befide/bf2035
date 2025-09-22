@@ -35,7 +35,7 @@ cslItem:
     available for further beam operation at the S-DALINAC.
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 3
   author:
@@ -47,15 +47,15 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#university/tu-darmstadt;#gender/male;#facility/s-dalinac"
+      - - '2022'
+  keyword: '#university/tu-darmstadt;#gender/male;#facility/s-dalinac'
   language: en
   note: >-
     fulltext-url:
     https://tuprints.ulb.tu-darmstadt.de/20632/1/Dissertation_Weih_genehmigt_v1.pdf
 
     university-catalog-url: https://tuprints.ulb.tu-darmstadt.de/20632/
-  number-of-pages: "109"
+  number-of-pages: '109'
   publisher: Technische Universität Darmstadt
   publisher-place: Darmstadt
   title: >-
@@ -64,9 +64,9 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/20632/
 tags:
-  - "#university/tu-darmstadt"
-  - "#gender/male"
-  - "#facility/s-dalinac"
+  - '#university/tu-darmstadt'
+  - '#gender/male'
+  - '#facility/s-dalinac'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

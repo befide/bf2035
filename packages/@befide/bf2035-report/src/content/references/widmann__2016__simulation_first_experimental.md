@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#university/kit"
+      - - '2016'
+  keyword: '#university/kit'
   language: en
   publisher: Karlsruher Institut für Technologie
   title: >-
@@ -19,7 +19,7 @@ cslItem:
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000055008
 tags:
-  - "#university/kit"
+  - '#university/kit'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

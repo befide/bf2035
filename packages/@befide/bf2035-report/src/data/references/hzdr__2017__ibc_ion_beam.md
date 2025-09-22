@@ -4,7 +4,7 @@ cslItem:
   id: hzdr__2017__ibc_ion_beam
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 5
         - 6
   author:
@@ -12,7 +12,7 @@ cslItem:
   citation-key: hzdr__2017__ibc_ion_beam
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
         - 1
   keyword: >-
     #bf2035/stakeholder/research-institution/helmholtz-association/hzdr;#bf2035/application/ion-beam-analysis

@@ -43,7 +43,7 @@ cslItem:
   ISBN: 978-3-95806-280-1
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
   keyword: >-
     #bf2035/accelerator-based-facility/nova-era;#bf2035/accelerator-based-facility-type/neutron-source/compact-accelerator-based-neutron-source;#bf2035/application/science/neutron-science
   language: en-US
@@ -56,7 +56,7 @@ cslItem:
     Activities)
   type: book
   URL: https://juser.fz-juelich.de/record/840576
-  volume: "7"
+  volume: '7'
 tags:
   - bf2035:accelerator-based-facility/nova-era
   - >-

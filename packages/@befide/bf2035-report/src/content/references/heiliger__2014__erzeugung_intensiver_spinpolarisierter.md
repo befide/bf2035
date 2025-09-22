@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2014"
-  keyword: "#gender/male;#university/uni-bonn;#facility/elsa"
+      - - '2014'
+  keyword: '#gender/male;#university/uni-bonn;#facility/elsa'
   language: de
   publisher: Universität Bonn
   title: >-
@@ -19,9 +19,9 @@ cslItem:
   type: thesis
   URL: http://nbn-resolving.de/urn:nbn:de:hbz:5n-37259
 tags:
-  - "#gender/male"
-  - "#university/uni-bonn"
-  - "#facility/elsa"
+  - '#gender/male'
+  - '#university/uni-bonn'
+  - '#facility/elsa'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

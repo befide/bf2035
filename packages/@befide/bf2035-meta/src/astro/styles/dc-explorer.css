@@ -11,24 +11,17 @@
     margin-right: -1rem;
     margin-bottom: 1rem;
     margin-left: –1rem;
-
   }
-  
-  
+
   #dc-explorer__tile--count {
-    
   }
 
   #dc-explorer__tile--university {
-    
   }
   #dc-explorer__tile--degree {
-   
   }
   #dc-explorer__tile--gender {
-    
   }
- 
 }
 
 .dc-explorer__tiles {
@@ -36,19 +29,15 @@
 }
 
 @media (min-width: 501px) {
-  
   .dc-explorer__tiles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-
   }
-  
-  
+
   #dc-explorer__tile--count {
     grid-column: 1/1;
     grid-row: 1/1;
-    
   }
 
   #dc-explorer__tile--university {
@@ -62,7 +51,6 @@
   #dc-explorer__tile--degree {
     grid-column: 1/1;
     grid-row: 2/2;
-
   }
   #dc-explorer__tile--gender {
     grid-column: 1/1;
@@ -72,9 +60,6 @@
     grid-column: 1/1;
     grid-row: 4/4;
   }
-
-
-
 }
 
 .dc-explorer .bib-item__author {
@@ -130,8 +115,6 @@
   display: flex;
 }
 
-
-
 .dc-explorer__tile {
   display: flex;
   flex-direction: column;
@@ -177,13 +160,13 @@
   background: #eee;
 }
 
-.dc-explorer__tile .dc-explorer__reset  {
+.dc-explorer__tile .dc-explorer__reset {
   opacity: 0;
   transition: opacity;
   transition-duration: 200ms;
 }
 
-.dc-explorer__tile.filtered .dc-explorer__reset  {
+.dc-explorer__tile.filtered .dc-explorer__reset {
   opacity: 1;
   transition: opacity;
   transition-duration: 200ms;
@@ -202,7 +185,6 @@
   font-size: var(--sl-text-2xs);
 }
 
-
 .dc-explorer__chart rect {
   cursor: pointer;
 }
@@ -219,11 +201,11 @@
 
 .dc-explorer__chart--bar .stack rect {
   fill: var(--interaction__color--neutral--dark, #808080);
-	 stroke: var(--interaction__color--spot);
-	 stroke-width: 0;
+  stroke: var(--interaction__color--spot);
+  stroke-width: 0;
 }
- .dc-explorer__chart--bar .stack rect.deselected {
-	 fill: var(--interaction__color--neutral--dark, #808080); 
+.dc-explorer__chart--bar .stack rect.deselected {
+  fill: var(--interaction__color--neutral--dark, #808080);
 }
 
 .dc-explorer__chart g.row rect {
@@ -251,7 +233,8 @@
   stroke: var(--interaction__color--spot);
 }
 
-.dc-explorer__chart g.row, .dc-explorer__chart g.row text {
+.dc-explorer__chart g.row,
+.dc-explorer__chart g.row text {
   cursor: pointer;
 }
 
@@ -262,12 +245,11 @@
 .dc-explorer__chart--row g.axis {
   display: none;
 }
-.dc-explorer__chart--bar  g.axis.y {
-display: none !important;
+.dc-explorer__chart--bar g.axis.y {
+  display: none !important;
 }
 
-
-.dc-explorer__chart .deselected+text {
+.dc-explorer__chart .deselected + text {
   opacity: 0.8;
 }
 

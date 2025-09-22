@@ -7,8 +7,8 @@ cslItem:
   citation-key: esfri__2016__roadmap_2016_strategy
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps"
+      - - '2016'
+  keyword: '#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps'
   language: en-US
   title: Roadmap 2016. Strategy Report on Research Infrastructures
   type: report

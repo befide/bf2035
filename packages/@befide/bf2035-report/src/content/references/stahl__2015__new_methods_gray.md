@@ -30,7 +30,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 7
   keyword: >-
     AGATA;DSAM;GRETA;lifetime measurement;multipole mixing ratio;radioactive ion
@@ -49,7 +49,7 @@ tags:
   - lifetime measurement
   - multipole mixing ratio
   - radioactive ion beam
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

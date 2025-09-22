@@ -237,9 +237,9 @@ cslItem:
   event-place: Geneva
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 10
-  keyword: "#bf2035/application/science/high-energy-physics"
+  keyword: '#bf2035/application/science/high-energy-physics'
   language: en
   number: arXiv:1910.11775
   publisher: CERN

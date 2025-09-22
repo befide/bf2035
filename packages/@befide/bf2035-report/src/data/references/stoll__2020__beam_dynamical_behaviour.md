@@ -40,8 +40,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#gender/male;#university/uni-mainz;#facility/mesa"
+      - - '2020'
+  keyword: '#gender/male;#university/uni-mainz;#facility/mesa'
   language: en
   publisher: Johannes Gutenberg-Universität Mainz
   publisher-place: Mainz
@@ -50,9 +50,9 @@ cslItem:
     operation
   type: thesis
 tags:
-  - "#gender/male"
-  - "#university/uni-mainz"
-  - "#facility/mesa"
+  - '#gender/male'
+  - '#university/uni-mainz'
+  - '#facility/mesa'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

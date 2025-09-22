@@ -9,15 +9,15 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2010"
-  keyword: "#university/uni-hamburg"
+      - - '2010'
+  keyword: '#university/uni-hamburg'
   language: en
   publisher: Universität Hamburg
   title: Measuring the electron beam energy in a magnetic bunch compressor
   type: thesis
   URL: https://bib-pubdb1.desy.de/record/92282
 tags:
-  - "#university/uni-hamburg"
+  - '#university/uni-hamburg'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

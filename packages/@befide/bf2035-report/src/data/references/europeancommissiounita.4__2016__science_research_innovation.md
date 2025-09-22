@@ -11,10 +11,10 @@ cslItem:
   ISBN: 978-92-79-49557-1 978-92-79-49558-8
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#bf2035/issue/excellence;#bf2035/issue/commercialisation/innovation"
+      - - '2016'
+  keyword: '#bf2035/issue/excellence;#bf2035/issue/commercialisation/innovation'
   language: en
-  number-of-pages: "330"
+  number-of-pages: '330'
   publisher: Publications Office of the European Union
   publisher-place: Luxembourg
   source: K10plus ISBN

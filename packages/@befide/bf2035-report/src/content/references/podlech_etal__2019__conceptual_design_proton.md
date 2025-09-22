@@ -26,7 +26,7 @@ cslItem:
     modern high power proton accelerator with high reliability and availability.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 2
   author:
@@ -86,10 +86,10 @@ cslItem:
     - family: Eugene (Ed.)
       given: Tan
   DOI: 10.18429/JACOW-IPAC2019-MOPTS027
-  ISBN: "9783954502080"
+  ISBN: '9783954502080'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
   keyword: >-
     #bf2035/accelerator-based-facility/hbs;#bf2035/accelerator-based-facility-type/neutron-source/compact-accelerator-based-neutron-source;#bf2035/accelerator-type/linac;#bf2035/application/science/neutron-science
   language: en

@@ -31,15 +31,15 @@ cslItem:
   ISBN: 978-3-8439-0198-7
   issued:
     date-parts:
-      - - "2011"
-  keyword: "#university/tu-darmstadt"
+      - - '2011'
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: Untersuchung der pygmy dipol resonanz in 60ni
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/55943/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

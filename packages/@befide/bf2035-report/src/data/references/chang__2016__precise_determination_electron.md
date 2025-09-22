@@ -9,7 +9,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
+      - - '2016'
   keyword: >-
     #university/kit;#gender/male;#facility/anka;#components/electron-beam-energy-monitor
   language: en
@@ -20,10 +20,10 @@ cslItem:
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000051914
 tags:
-  - "#university/kit"
-  - "#gender/male"
-  - "#facility/anka"
-  - "#components/electron-beam-energy-monitor"
+  - '#university/kit'
+  - '#gender/male'
+  - '#facility/anka'
+  - '#components/electron-beam-energy-monitor'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

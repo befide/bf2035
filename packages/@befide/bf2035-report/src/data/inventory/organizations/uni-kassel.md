@@ -1,18 +1,18 @@
 ---
 id: uni-kassel
 befideInventoryOrganizationalLevelCategory: 1 - top level
-befideOrganizationCategories: ["university"]
+befideOrganizationCategories: ['university']
 homepage__de: http://www.uni-kassel.de/uni/
 homepage__en: http://www.uni-kassel.de/uni/
 label__de: Universität Kassel
 label__en: University of Kassel
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
   city: Kassel
-  country: 
+  country:
   lat: 51.31667
   lng: 9.5
 peopleCount:
@@ -22,7 +22,7 @@ peopleCount:
   uniquePhdStudents: 0
   uniqueWorkingStudents_MSC: 0
   uniqueWorkingStudents_BSC: 0
-reviewedBy: 
-parentPath: 
+reviewedBy:
+parentPath:
 localName: uni-kassel
 ---

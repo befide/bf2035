@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#university/hu-berlin"
+      - - '2019'
+  keyword: '#university/hu-berlin'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: >-
@@ -19,7 +19,7 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.18452/19962
 tags:
-  - "#university/hu-berlin"
+  - '#university/hu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

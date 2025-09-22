@@ -7,7 +7,7 @@ cslItem:
     including their main parameters.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 26
   author:
@@ -18,10 +18,10 @@ cslItem:
   DOI: 10.5281/ZENODO.8316362
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 9
         - 4
-  keyword: ""
+  keyword: ''
   license: Open Access
   publisher: Zenodo
   source: DOI.org (Datacite)

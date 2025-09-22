@@ -38,15 +38,15 @@ cslItem:
   DOI: 10.3389/fphy.2022.920520
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 6
         - 1
-  keyword: ""
-  page: "920520"
+  keyword: ''
+  page: '920520'
   source: ResearchGate
   title: Challenges of Future Accelerators for Particle Physics Research
   type: article-journal
-  volume: "10"
+  volume: '10'
 tags: []
 rendered:
   bibliography: |-

@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#university/uni-frankfurt"
+      - - '2013'
+  keyword: '#university/uni-frankfurt'
   language: en
   note: >-
     fulltext-url:
@@ -21,7 +21,7 @@ cslItem:
   URL: >-
     https://publikationen.ub.uni-frankfurt.de/frontdoor/index/index/year/2013/docId/27848
 tags:
-  - "#university/uni-frankfurt"
+  - '#university/uni-frankfurt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

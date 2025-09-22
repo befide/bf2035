@@ -4,7 +4,7 @@ cslItem:
   id: shiltsev__2020__particle_beams_physics
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 4
         - 27
   author:
@@ -15,13 +15,13 @@ cslItem:
   container-title-short: Physics Today
   DOI: 10.1063/PT.3.4452
   ISSN: 0031-9228
-  issue: "4"
+  issue: '4'
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 4
         - 1
-  keyword: "#bf2035/application/science"
+  keyword: '#bf2035/application/science'
   language: en
   note: >-
     http://web.archive.org/web/20200427073743/https://physicstoday.scitation.org/doi/10.1063/PT.3.4452
@@ -30,7 +30,7 @@ cslItem:
   title: Particle beams behind physics discoveries
   type: article-journal
   URL: 10.1063/PT.3.4452
-  volume: "73"
+  volume: '73'
 tags:
   - bf2035:application/science
 rendered:

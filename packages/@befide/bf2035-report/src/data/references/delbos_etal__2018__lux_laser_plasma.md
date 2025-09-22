@@ -4,7 +4,7 @@ cslItem:
   id: delbos_etal__2018__lux_laser_plasma
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 9
         - 26
   author:
@@ -46,10 +46,10 @@ cslItem:
     Nuclear Instruments and Methods in Physics Research Section A: Accelerators,
     Spectrometers, Detectors and Associated Equipment
   DOI: 10.1016/j.nima.2018.01.082
-  ISSN: "01689002"
+  ISSN: '01689002'
   issued:
     date-parts:
-      - - "2018"
+      - - '2018'
         - 11
   keyword: >-
     #bf2035/research-topic/plasma-acceleration;#bf2035/application/science/photon-science;#bf2035/accelerating-technique/plasma-based-acceleration/plasma-based_laser-driven_acceleration
@@ -59,7 +59,7 @@ cslItem:
   title: Lux – A laser–plasma driven undulator beamline
   type: article-journal
   URL: https://linkinghub.elsevier.com/retrieve/pii/S0168900218301153
-  volume: "909"
+  volume: '909'
 tags:
   - bf2035:research-topic/plasma-acceleration
   - bf2035:application/science/photon-science

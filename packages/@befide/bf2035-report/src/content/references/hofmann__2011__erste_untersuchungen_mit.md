@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2011"
-  keyword: "#university/kit;#gender/male"
+      - - '2011'
+  keyword: '#university/kit;#gender/male'
   language: de
   publisher: Karlsruher Institut für Technologie
   title: Erste Untersuchungen mit einzelnen Elektronenpulsen am ANKA-Speicherring
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000025363
 tags:
-  - "#university/kit"
-  - "#gender/male"
+  - '#university/kit'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -13,10 +13,16 @@ interface Props {
 
 let { universityId } = Astro.props
 
-const theses = universityId ? await allThesesForUniversity(universityId) : await allTheses()
+const theses = universityId
+  ? await allThesesForUniversity(universityId)
+  : await allTheses()
 
-const engineeringDegreeCount = theses.filter((d) => d.data.thesisType.indexOf("Dr. Ing.") > -1).length
-const naturalScienceDegreeCount = theses.filter((d) => d.data.thesisType.indexOf("Dr. rer. nat.") > -1).length
+const engineeringDegreeCount = theses.filter(
+  (d) => d.data.thesisType.indexOf("Dr. Ing.") > -1
+).length
+const naturalScienceDegreeCount = theses.filter(
+  (d) => d.data.thesisType.indexOf("Dr. rer. nat.") > -1
+).length
 
 const getUniversity = async (thesis: CollectionEntry<"theses">) => {
   if (!thesis.data.universityRef) return null
@@ -27,8 +33,11 @@ const getUniversity = async (thesis: CollectionEntry<"theses">) => {
 
 <section>
   <p>
-    There are {theses.length} doctoral theses being published since 2010 listed in our database, of which
-    {naturalScienceDegreeCount} lead to a science degree and {engineeringDegreeCount} to an engineering degree.
+    There are {theses.length} doctoral theses being published since 2010 listed in
+    our database, of which
+    {naturalScienceDegreeCount} lead to a science degree and {
+      engineeringDegreeCount
+    } to an engineering degree.
   </p>
   <ThesesExplorer />
 
@@ -47,7 +56,11 @@ const getUniversity = async (thesis: CollectionEntry<"theses">) => {
       {
         theses.map(async (thesis) => (
           <tr>
-            {!universityId && <td class="nowrap">{(await getUniversity(thesis))?.data.label.short.en}</td>}
+            {!universityId && (
+              <td class="nowrap">
+                {(await getUniversity(thesis))?.data.label.short.en}
+              </td>
+            )}
             <td>
               <div>{thesis.data.year}</div>
             </td>
@@ -57,22 +70,38 @@ const getUniversity = async (thesis: CollectionEntry<"theses">) => {
             </td>
             <td>
               <span class="reference__author">
-                <span class="reference__author-given-name">{thesis.data.author.givenName}</span>
-                <span class="reference__author-family-name">{thesis.data.author.familyName}</span>
+                <span class="reference__author-given-name">
+                  {thesis.data.author.givenName}
+                </span>
+                <span class="reference__author-family-name">
+                  {thesis.data.author.familyName}
+                </span>
               </span>
               <span class="reference__title">{thesis.data.title}</span>
               <ul class="reference__links">
                 {thesis.data.doi && (
                   <li class="reference__link">
                     <a href={encodeURI("https://doi.org/" + thesis.data.doi)}>
-                      <Badge prefix="doi" text={thesis.data.doi} size="medium" />
+                      <Badge
+                        prefix="doi"
+                        text={thesis.data.doi}
+                        size="medium"
+                      />
                     </a>
                   </li>
                 )}
                 {thesis.data.urn && (
                   <li class="reference__link">
-                    <a href={encodeURI("https://nbn-resolving.de/" + thesis.data.urn)}>
-                      <Badge prefix="URN" text={thesis.data.urn} size="medium" />
+                    <a
+                      href={encodeURI(
+                        "https://nbn-resolving.de/" + thesis.data.urn
+                      )}
+                    >
+                      <Badge
+                        prefix="URN"
+                        text={thesis.data.urn}
+                        size="medium"
+                      />
                     </a>
                   </li>
                 )}
@@ -85,7 +114,11 @@ const getUniversity = async (thesis: CollectionEntry<"theses">) => {
                 )}
               </ul>
             </td>
-            <td class="nowrap">{thesis.data.thesisType.replace(")", "").replace("Doctoral thesis (", "")}</td>
+            <td class="nowrap">
+              {thesis.data.thesisType
+                .replace(")", "")
+                .replace("Doctoral thesis (", "")}
+            </td>
           </tr>
         ))
       }

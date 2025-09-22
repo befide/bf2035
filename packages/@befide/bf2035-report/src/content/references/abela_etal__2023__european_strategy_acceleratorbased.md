@@ -5,7 +5,7 @@ cslItem:
   abstract: "The League of European Accelerator-based Photon Sources (LEAPS), comprising 19 large-scale user facilities in 10 member\_and associated states, has put forward for the first time a European strategy for a transformative way of cooperation, thereby mobilizing the members’ substantial expertise in photon science and technology, in infrastructure management and service to users and stakeholders. This European Strategy for Accelerator-based Photon Sources—ESAPS 2022—is a coherent pan-European plan addressing the future challenges and needs of the new era in research and innovation, designed to put Europe in a global leadership position in important future key technologies. In ESAPS2022, ambitious facility upgrades and technology development plans as well as a new strategic challenge-driven use of these facilities are discussed."
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 12
   author:
@@ -24,20 +24,20 @@ cslItem:
   container-title-short: Eur. Phys. J.  Plus
   DOI: 10.1140/epjp/s13360-023-03947-w
   ISSN: 2190-5444
-  issue: "4"
+  issue: '4'
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 4
         - 25
-  keyword: "#bf2035/stakeholder/leaps"
+  keyword: '#bf2035/stakeholder/leaps'
   language: en
-  page: "355"
+  page: '355'
   source: Springer Link
   title: The European strategy for accelerator-based photon science
   type: article-journal
   URL: https://doi.org/10.1140/epjp/s13360-023-03947-w
-  volume: "138"
+  volume: '138'
 tags:
   - bf2035:stakeholder/leaps
 rendered:

@@ -26,18 +26,18 @@ cslItem:
   citation-key: behnke_etal__2013__ilc_tdr_volume
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
   keyword: >-
     #bf2035/accelerator-type/collider/linear-collider;#bf2035/application/science/high-energy-physics
   language: en
   note: >-
     http://web.archive.org/web/20200302182730/https://inspirehep.net/record/1240093
-  number-of-volumes: "5"
+  number-of-volumes: '5'
   publisher: ILC
-  title: "The ILC TDR - Volume 1: Executive Summary"
+  title: 'The ILC TDR - Volume 1: Executive Summary'
   type: book
   URL: https://inspirehep.net/record/1240093
-  volume: "1"
+  volume: '1'
 tags:
   - bf2035:accelerator-type/collider/linear-collider
   - bf2035:application/science/high-energy-physics

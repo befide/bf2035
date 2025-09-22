@@ -1,0 +1,21 @@
+---
+import { getReferences, ReferenceSchema } from "@domain/references"
+import BibItem from "./BibItem.astro"
+
+export interface Props {
+  title?: string
+  tag?: string
+}
+const { tag = "", title } = Astro.props
+
+const references = await getReferences(tag)
+---
+
+{title && <h3 class="md">{title}</h3>}
+<ul class="md bib-list">
+  {
+    references.map((reference: ReferenceSchema) => (
+      <BibItem id={reference.id} withTags={true} />
+    ))
+  }
+</ul>

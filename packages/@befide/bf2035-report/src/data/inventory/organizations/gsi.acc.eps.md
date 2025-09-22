@@ -1,20 +1,20 @@
 ---
 id: gsi.acc.eps
-befideInventoryOrganizationalLevelCategory: 
-befideOrganizationCategories: ["hgf"]
-homepage__de: 
-homepage__en: 
+befideInventoryOrganizationalLevelCategory:
+befideOrganizationCategories: ['hgf']
+homepage__de:
+homepage__en:
 label__de: Abteilung Elektrische Energiesysteme
 label__en: Department Electric power systems
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
-  city: 
-  country: 
-  lat: 
-  lng: 
+  city:
+  country:
+  lat:
+  lng:
 peopleCount:
   uniqueProfessors: 0
   uniqueSeniorResearchers: 0

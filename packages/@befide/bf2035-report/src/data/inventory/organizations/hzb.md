@@ -1,18 +1,18 @@
 ---
 id: hzb
 befideInventoryOrganizationalLevelCategory: 1 - top level
-befideOrganizationCategories: ["hgf"]
+befideOrganizationCategories: ['hgf']
 homepage__de: https://www.helmholtz-berlin.de/
 homepage__en: https://www.helmholtz-berlin.de/
 label__de: Helmholtz-Zentrum Berlin für Materialien und Energie
 label__en: Helmholtz-Zentrum Berlin
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
   city: Berlin
-  country: 
+  country:
   lat: 52.52437
   lng: 13.41053
 peopleCount:
@@ -23,6 +23,6 @@ peopleCount:
   uniqueWorkingStudents_MSC: 0
   uniqueWorkingStudents_BSC: 0
 reviewedBy: jankowiak.andreas
-parentPath: 
+parentPath:
 localName: hzb
 ---

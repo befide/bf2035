@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2012"
-  keyword: "#university/uni-hamburg;#gender/male"
+      - - '2012'
+  keyword: '#university/uni-hamburg;#gender/male'
   language: en
   publisher: Universität Hamburg
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://bib-pubdb1.desy.de/record/139966
 tags:
-  - "#university/uni-hamburg"
-  - "#gender/male"
+  - '#university/uni-hamburg'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

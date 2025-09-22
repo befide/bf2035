@@ -1,18 +1,18 @@
 ---
 id: hzg
 befideInventoryOrganizationalLevelCategory: 1 - top level
-befideOrganizationCategories: [""]
+befideOrganizationCategories: ['']
 homepage__de: https://www.hereon.de/
 homepage__en: https://www.hereon.de/
 label__de: Helmholtz-Zentrum Hereon
 label__en: Helmholtz-Zentrum Hereon
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
   city: Geesthacht
-  country: 
+  country:
   lat: 53.43575
   lng: 10.3779
 peopleCount:
@@ -22,7 +22,7 @@ peopleCount:
   uniquePhdStudents: 0
   uniqueWorkingStudents_MSC: 0
   uniqueWorkingStudents_BSC: 0
-reviewedBy: 
-parentPath: 
+reviewedBy:
+parentPath:
 localName: hzg
 ---

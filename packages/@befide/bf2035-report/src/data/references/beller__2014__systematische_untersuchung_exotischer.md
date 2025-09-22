@@ -32,8 +32,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2014"
-  keyword: "#university/tu-darmstadt"
+      - - '2014'
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: >-
@@ -42,7 +42,7 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/65057/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

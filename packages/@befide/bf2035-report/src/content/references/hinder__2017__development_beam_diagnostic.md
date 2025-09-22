@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#gender/male;#university/rwth-aachen"
+      - - '2017'
+  keyword: '#gender/male;#university/rwth-aachen'
   language: en
   publisher: Rheinisch-Westfälische Technische Hochschule Aachen
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://publications.rwth-aachen.de/record/720190
 tags:
-  - "#gender/male"
-  - "#university/rwth-aachen"
+  - '#gender/male'
+  - '#university/rwth-aachen'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

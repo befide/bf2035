@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2015"
-  keyword: "#gender/male;#university/tu-darmstadt"
+      - - '2015'
+  keyword: '#gender/male;#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: Transverse beam transfer functions of relativistic ion bunches
   type: thesis
   URL: https://tuprints.ulb.TU-Darmstadt.de/5023/
 tags:
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

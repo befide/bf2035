@@ -4,7 +4,7 @@ cslItem:
   id: ledroit__2021__target_induced_halo
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 12
         - 11
   author:
@@ -18,8 +18,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#gender/male;#university/uni-mainz;#facility/mesa;#degree/dr.rer.nat."
+      - - '2021'
+  keyword: '#gender/male;#university/uni-mainz;#facility/mesa;#degree/dr.rer.nat.'
   language: en
   license: CC-BY-SA, Creative Commons Attribution Share Alike 4.0 International
   publisher: Johannes Gutenberg-Universität Mainz
@@ -28,10 +28,10 @@ cslItem:
   type: thesis
   URL: https://openscience.ub.uni-mainz.de/handle/20.500.12030/5817
 tags:
-  - "#gender/male"
-  - "#university/uni-mainz"
-  - "#facility/mesa"
-  - "#degree/dr.rer.nat."
+  - '#gender/male'
+  - '#university/uni-mainz'
+  - '#facility/mesa'
+  - '#degree/dr.rer.nat.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

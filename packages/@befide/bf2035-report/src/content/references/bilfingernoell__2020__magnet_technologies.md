@@ -4,7 +4,7 @@ cslItem:
   id: bilfingernoell__2020__magnet_technologies
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 9
         - 8
   author:
@@ -14,10 +14,10 @@ cslItem:
   genre: marketing flyer
   issued:
     date-parts:
-      - - "2020"
-  keyword: ""
+      - - '2020'
+  keyword: ''
   language: en
-  page: "4"
+  page: '4'
   publisher: Bilfinger Noell
   publisher-place: Würtburg
   title: Magnet Technologies

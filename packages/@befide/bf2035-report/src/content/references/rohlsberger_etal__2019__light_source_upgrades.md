@@ -4,7 +4,7 @@ cslItem:
   id: rohlsberger_etal__2019__light_source_upgrades
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 19
   author:
@@ -23,10 +23,10 @@ cslItem:
   container-title-short: Synchrotron Radiation News
   DOI: 10.1080/08940886.2019.1559605
   ISSN: 0894-0886, 1931-7344
-  issue: "1"
+  issue: '1'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 1
         - 2
   keyword: >-
@@ -35,11 +35,11 @@ cslItem:
   note: 6 citations (Crossref/DOI) [2024-03-19]
   page: 27-31
   source: DOI.org (Crossref)
-  title: "Light Source Upgrades at DESY: PETRA IV and FLASH2020+"
+  title: 'Light Source Upgrades at DESY: PETRA IV and FLASH2020+'
   title-short: Light Source Upgrades at DESY
   type: article-journal
   URL: https://www.tandfonline.com/doi/full/10.1080/08940886.2019.1559605
-  volume: "32"
+  volume: '32'
 tags:
   - bf2035:accelerator-based-facility/petra__petra4
   - bf2035:accelerator-based-facility/flash__flash2020plus

@@ -10,15 +10,15 @@ cslItem:
   ISBN: 978-3-8440-0802-9
   issued:
     date-parts:
-      - - "2012"
-  keyword: "#university/tu-darmstadt"
+      - - '2012'
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Shaker / Technische Universität Darmstadt
   title: Characterization of gamma-ray detectors with tagged photons
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/57527/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -63,7 +63,7 @@ cslItem:
     origin of the beam loss, offering room for further exploration.
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 3
   author:
@@ -75,8 +75,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2023"
-  keyword: "#gender/male;#university/tu-darmstadt"
+      - - '2023'
+  keyword: '#gender/male;#university/tu-darmstadt'
   language: en
   license: Creative Commons Attribution Share Alike 4.0 International
   note: >-
@@ -84,7 +84,7 @@ cslItem:
 
     fulltext-url:
     https://tuprints.ulb.tu-darmstadt.de/23275/1/Dissertation_Tobias_Eggert.pdf
-  number-of-pages: "162"
+  number-of-pages: '162'
   publisher: Technische Universität Darmstadt
   publisher-place: Darmstadt
   title: >-
@@ -93,8 +93,8 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/23275/
 tags:
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -4,7 +4,7 @@ cslItem:
   id: romaniuk__2022__aries_crowns_two
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -16,7 +16,7 @@ cslItem:
   ISSN: 2300-1933
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 4
         - 27
   keyword: >-

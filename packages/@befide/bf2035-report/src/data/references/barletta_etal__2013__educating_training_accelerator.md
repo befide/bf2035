@@ -13,11 +13,11 @@ cslItem:
     number of interested physicists and engineers.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 4
   archive: INSPIRE
-  archive_location: "1122264"
+  archive_location: '1122264'
   author:
     - family: Barletta
       given: William
@@ -36,9 +36,9 @@ cslItem:
   ISBN: 978-981-4449-94-6 978-981-4449-95-3
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
         - 4
-  keyword: "#bf2035/issue/teaching"
+  keyword: '#bf2035/issue/teaching'
   language: en
   page: 313-331
   publisher: WORLD SCIENTIFIC
@@ -46,7 +46,7 @@ cslItem:
   title: Educating and Training Accelerator Scientists and Technologists for Tomorrow
   type: chapter
   URL: http://www.worldscientific.com/doi/abs/10.1142/9789814449953_0012
-  volume: "5"
+  volume: '5'
 tags:
   - bf2035:issue/teaching
 rendered:

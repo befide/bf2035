@@ -9,7 +9,7 @@ cslItem:
     scientific disciplines. Beyond scientific...
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 3
   author:
@@ -17,8 +17,8 @@ cslItem:
   citation-key: cordis__2021__fact_sheet_h2020a
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#bf2035/funding/eu/horizon-2020"
+      - - '2021'
+  keyword: '#bf2035/funding/eu/horizon-2020'
   language: en
   title: >-
     Fact Sheet H2020: Innovation Fostering in Accelerator Science and Technology

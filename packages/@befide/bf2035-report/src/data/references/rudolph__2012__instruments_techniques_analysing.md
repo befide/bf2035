@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2012"
-  keyword: "#university/uni-rostock;#degree/dr.ing."
+      - - '2012'
+  keyword: '#university/uni-rostock;#degree/dr.ing.'
   language: en
   publisher: Universität Rostock
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.18453/rosdok_id00001106
 tags:
-  - "#university/uni-rostock"
-  - "#degree/dr.ing."
+  - '#university/uni-rostock'
+  - '#degree/dr.ing.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

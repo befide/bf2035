@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#gender/male;#university/hu-berlin"
+      - - '2020'
+  keyword: '#gender/male;#university/hu-berlin'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: Space charge modeling at the integer resonance for the CERN PS and SPS
   type: thesis
   URL: https://doi.org/10.18452/21423
 tags:
-  - "#gender/male"
-  - "#university/hu-berlin"
+  - '#gender/male'
+  - '#university/hu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

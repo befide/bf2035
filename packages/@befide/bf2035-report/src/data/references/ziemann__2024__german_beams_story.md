@@ -10,7 +10,7 @@ cslItem:
     facilities in Germany.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 6
   author:
@@ -19,10 +19,10 @@ cslItem:
   citation-key: ziemann__2024__german_beams_story
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
         - 6
-  keyword: ""
+  keyword: ''
   language: en
   title: German Beams. The Story of Particle Accelerators in Germany
   type: article

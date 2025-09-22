@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2018"
-  keyword: "#university/tu-darmstadt"
+      - - '2018'
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: >-
@@ -19,7 +19,7 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/8071/1/2018-08-20_Romano_Annalisa.pdf
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

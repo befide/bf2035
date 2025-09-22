@@ -4,7 +4,7 @@ cslItem:
   id: rota_etal__2019__kalypso_linear_array
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 3
         - 2
   author:
@@ -50,12 +50,12 @@ cslItem:
     Nuclear Instruments and Methods in Physics Research Section A: Accelerators,
     Spectrometers, Detectors and Associated Equipment
   DOI: 10.1016/j.nima.2018.10.093
-  ISSN: "01689002"
+  ISSN: '01689002'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 8
-  keyword: "#bf2035/accelerator-technology/instrumentation-and-diagnostics"
+  keyword: '#bf2035/accelerator-technology/instrumentation-and-diagnostics'
   language: en-US
   page: 10-13
   source: DOI.org (Crossref)
@@ -65,7 +65,7 @@ cslItem:
   title-short: KALYPSO
   type: article-journal
   URL: https://linkinghub.elsevier.com/retrieve/pii/S0168900218314074
-  volume: "936"
+  volume: '936'
 tags:
   - bf2035:accelerator-technology/instrumentation-and-diagnostics
 rendered:

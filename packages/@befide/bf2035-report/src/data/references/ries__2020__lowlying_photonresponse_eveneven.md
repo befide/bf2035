@@ -26,16 +26,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 7
-  keyword: "#university/tu-darmstadt"
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: The low-lying photonresponse of the even-even chromium isotopes
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/121582/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

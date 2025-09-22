@@ -5,7 +5,7 @@ cslItem:
   abstract: "The FAIR principles advocate for the widespread reuse of research outputs across diverse fields of science and innovation. By fostering transparency, enhancing reproducibility, and enabling the reuse of data, software, and analysis, these principles facilitate new avenues for research and innovation, including transdisciplinary and interdisciplinary endeavors.\n\nThe\_ESFRI-EOSC Task Force has embarked on a concerted effort to address the issue of Quality-Assessed FAIR-Data (QAFAIRD) productivity. Key aspects of this initiative include evaluating the current level of FAIR data productivity in Research Infrastructures (RIs) and clusters, striving for ideal FAIR data productivity and quality control, identifying bottlenecks hindering FAIR data productivity, and determining the necessary EOSC services to enhance FAIR data productivity. Additionally, the group examines the impact of AI tools and solutions on FAIR data management, as well as the potential influence of AI-based research protocols on research conducted by RIs, clusters, and the broader scientific community."
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 15
   author:
@@ -41,13 +41,13 @@ cslItem:
   DOI: 10.5281/ZENODO.10980285
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 4
         - 16
-  keyword: "#bf2035/stakeholder/esfri;#bf2035/issue/digital-transformation/fair"
+  keyword: '#bf2035/stakeholder/esfri;#bf2035/issue/digital-transformation/fair'
   language: en
   license: Creative Commons Attribution 4.0 International
-  note: "Pinned_Collections: ZWBCNZYC"
+  note: 'Pinned_Collections: ZWBCNZYC'
   publisher: Zenodo
   source: DOI.org (Datacite)
   title: >-

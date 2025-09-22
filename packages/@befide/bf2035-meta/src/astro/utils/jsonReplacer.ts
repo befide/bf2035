@@ -1,12 +1,12 @@
 export function circularReplacer() {
-  const seen = new WeakSet();
+  const seen = new WeakSet()
   return (_: any, value: any) => {
     if (typeof value === "object" && value !== null) {
       if (seen.has(value)) {
-        return;
+        return
       }
-      seen.add(value);
+      seen.add(value)
     }
-    return value;
-  };
+    return value
+  }
 }

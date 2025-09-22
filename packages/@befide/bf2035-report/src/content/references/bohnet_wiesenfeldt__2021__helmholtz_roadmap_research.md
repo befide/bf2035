@@ -4,7 +4,7 @@ cslItem:
   id: bohnet_wiesenfeldt__2021__helmholtz_roadmap_research
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 2
   author:
@@ -17,11 +17,11 @@ cslItem:
   genre: Roadmap
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 8
-  keyword: "#bf2035/pub-type/strategies-and-roadmaps"
+  keyword: '#bf2035/pub-type/strategies-and-roadmaps'
   language: en
-  note: "remark:"
+  note: 'remark:'
   publisher: Hermann von Helmholtz-Gemeinschaft Deutscher Forschungszentren e.V.
   publisher-place: Bonn
   title: Helmholtz Roadmap Research Infrastructures 2021

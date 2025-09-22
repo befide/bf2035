@@ -22,9 +22,9 @@ cslItem:
   ISBN: 978-3-8439-1124-5
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
         - 6
-  keyword: "#university/tu-darmstadt"
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Dr. Hut / Technische Universität Darmstadt
   title: >-
@@ -33,7 +33,7 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/63030/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

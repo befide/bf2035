@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#gender/male;#university/uni-bonn"
+      - - '2017'
+  keyword: '#gender/male;#university/uni-bonn'
   language: de
   publisher: Universität Bonn
   title: Spindynamik in Elektronensynchrotronen
   type: thesis
   URL: http://nbn-resolving.de/urn:nbn:de:hbz:5n-48314
 tags:
-  - "#gender/male"
-  - "#university/uni-bonn"
+  - '#gender/male'
+  - '#university/uni-bonn'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

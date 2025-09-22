@@ -7,8 +7,8 @@ cslItem:
     - literal: KfB
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/stakeholder/kfb"
+      - - '2022'
+  keyword: '#bf2035/stakeholder/kfb'
   language: en
   title: Dissertationsdatenbank zur Beschleunigerforschung
   type: webpage

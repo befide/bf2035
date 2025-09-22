@@ -14,7 +14,7 @@ cslItem:
     discussing scientific and technical readiness of concepts, and providing a
     timeline for implementation.
   archive: INSPIRE
-  archive_location: "2054187"
+  archive_location: '2054187'
   author:
     - family: Emma
       given: Claudio
@@ -42,8 +42,8 @@ cslItem:
   citation-key: emma_etal__2022__snowmass_2021_accelerator
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/issue/teaching"
+      - - '2022'
+  keyword: '#bf2035/issue/teaching'
   note: |-
     4 citations (INSPIRE 2024/3/22)
     3 citations w/o self (INSPIRE 2024/3/22)

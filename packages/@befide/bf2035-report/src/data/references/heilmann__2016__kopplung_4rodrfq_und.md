@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#gender/male;#university/uni-frankfurt"
+      - - '2016'
+  keyword: '#gender/male;#university/uni-frankfurt'
   language: de
   publisher: Goethe-Universität Frankfurt am Main
   title: Kopplung von 4-Rod-RFQ und IH-DTL für das FRANZ-Projekt
   type: thesis
   URL: https://hds.hebis.de/ubffm/Record/HEB385973306
 tags:
-  - "#gender/male"
-  - "#university/uni-frankfurt"
+  - '#gender/male'
+  - '#university/uni-frankfurt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

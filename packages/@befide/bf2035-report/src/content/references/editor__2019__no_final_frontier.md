@@ -4,7 +4,7 @@ cslItem:
   id: editor__2019__no_final_frontier
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 6
         - 10
   citation-key: editor__2019__no_final_frontier
@@ -14,19 +14,19 @@ cslItem:
   editor:
     - literal: Editor
   ISSN: 2522-5820
-  issue: "4"
+  issue: '4'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 4
-  keyword: "#bf2035/application/science/high-energy-physics"
+  keyword: '#bf2035/application/science/high-energy-physics'
   language: en-US
   page: 231-231
   source: DOI.org (Crossref)
   title: No final frontier
   type: article-journal
   URL: http://www.nature.com/articles/s42254-019-0052-4
-  volume: "1"
+  volume: '1'
 tags:
   - bf2035:application/science/high-energy-physics
 rendered:

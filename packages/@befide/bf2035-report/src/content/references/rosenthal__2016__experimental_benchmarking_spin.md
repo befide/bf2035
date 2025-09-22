@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#gender/male;#university/rwth-aachen;#facility/cosy"
+      - - '2016'
+  keyword: '#gender/male;#university/rwth-aachen;#facility/cosy'
   language: en
   publisher: Rheinisch-Westfälische Technische Hochschule Aachen
   title: >-
@@ -19,9 +19,9 @@ cslItem:
   type: thesis
   URL: https://publications.rwth-aachen.de/record/671012
 tags:
-  - "#gender/male"
-  - "#university/rwth-aachen"
-  - "#facility/cosy"
+  - '#gender/male'
+  - '#university/rwth-aachen'
+  - '#facility/cosy'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

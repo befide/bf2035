@@ -4,7 +4,7 @@ cslItem:
   id: cern__2023__cern_summer_student
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
         - 29
   author:
@@ -12,7 +12,7 @@ cslItem:
   citation-key: cern__2023__cern_summer_student
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
   keyword: >-
     #bf2035/stakeholder/research-institution/cern;#bf2035/issue/teaching/summer-schools
   language: en

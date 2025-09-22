@@ -1,18 +1,18 @@
 ---
 id: tu-darmstadt
 befideInventoryOrganizationalLevelCategory: 1 - top level
-befideOrganizationCategories: ["university"]
+befideOrganizationCategories: ['university']
 homepage__de: http://www.tu-darmstadt.de/
 homepage__en: http://www.tu-darmstadt.de/
 label__de: Technische Universität Darmstadt
 label__en: Technical University of Darmstadt
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: false
 location:
   city: Darmstadt
-  country: 
+  country:
   lat: 49.87167
   lng: 8.65027
 peopleCount:
@@ -22,7 +22,7 @@ peopleCount:
   uniquePhdStudents: 0
   uniqueWorkingStudents_MSC: 0
   uniqueWorkingStudents_BSC: 0
-reviewedBy: 
-parentPath: 
+reviewedBy:
+parentPath:
 localName: tu-darmstadt
 ---

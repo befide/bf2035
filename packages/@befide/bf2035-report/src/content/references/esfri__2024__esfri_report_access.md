@@ -33,7 +33,7 @@ cslItem:
     tentatively listed and are summarised hereafter.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 10
   author:
@@ -42,10 +42,10 @@ cslItem:
   DOI: 10.5281/zenodo.10555986
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 1
         - 23
-  keyword: "#bf2035/stakeholder/esfri;#bf2035/issue/open-science/fair-principles"
+  keyword: '#bf2035/stakeholder/esfri;#bf2035/issue/open-science/fair-principles'
   language: eng
   publisher: ESFRI
   source: Zenodo

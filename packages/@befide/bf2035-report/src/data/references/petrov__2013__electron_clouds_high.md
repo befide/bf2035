@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#gender/male;#university/tu-darmstadt"
+      - - '2013'
+  keyword: '#gender/male;#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: Electron clouds in high energy hadron accelerators.
   type: thesis
   URL: https://tuprints.ulb.TU-Darmstadt.de/3589/
 tags:
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

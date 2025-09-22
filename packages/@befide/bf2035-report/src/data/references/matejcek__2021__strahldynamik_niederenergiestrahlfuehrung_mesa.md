@@ -52,8 +52,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#gender/male;#university/uni-mainz;#facility/mesa;#degree/dr.rer.nat."
+      - - '2021'
+  keyword: '#gender/male;#university/uni-mainz;#facility/mesa;#degree/dr.rer.nat.'
   language: de
   note: >-
     fulltext-url:
@@ -61,7 +61,7 @@ cslItem:
 
     univertsity-catalog-url:
     https://openscience.ub.uni-mainz.de/handle/20.500.12030/5658
-  number-of-pages: "154"
+  number-of-pages: '154'
   publisher: Johannes Gutenberg-Universität Mainz
   publisher-place: Mainz
   title: >-
@@ -70,10 +70,10 @@ cslItem:
   type: thesis
   URL: https://openscience.ub.uni-mainz.de/handle/20.500.12030/5658
 tags:
-  - "#gender/male"
-  - "#university/uni-mainz"
-  - "#facility/mesa"
-  - "#degree/dr.rer.nat."
+  - '#gender/male'
+  - '#university/uni-mainz'
+  - '#facility/mesa'
+  - '#degree/dr.rer.nat.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

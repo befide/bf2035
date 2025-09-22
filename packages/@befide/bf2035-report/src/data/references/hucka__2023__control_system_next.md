@@ -43,7 +43,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
   keyword: >-
     #university/tu-darmstadt;#gender/male;#facility/fair/super-frs;#degree/dr.rer.nat.
   language: en
@@ -51,7 +51,7 @@ cslItem:
     fulltext-url:https://tuprints.ulb.tu-darmstadt.de/23299/5/Dissertation_Hucka_v1_published.pdf
 
     university-catalog-url: https://tuprints.ulb.tu-darmstadt.de/23299/
-  number-of-pages: "245"
+  number-of-pages: '245'
   publisher: Technische Universität Darmstadt
   publisher-place: Darmstadt
   title: >-
@@ -60,10 +60,10 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/23299/
 tags:
-  - "#university/tu-darmstadt"
-  - "#gender/male"
-  - "#facility/fair/super-frs"
-  - "#degree/dr.rer.nat."
+  - '#university/tu-darmstadt'
+  - '#gender/male'
+  - '#facility/fair/super-frs'
+  - '#degree/dr.rer.nat.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

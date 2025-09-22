@@ -4,7 +4,7 @@ cslItem:
   id: gsi-fair_hgs-hire__2024__international_summer_student
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
         - 29
   author:
@@ -13,7 +13,7 @@ cslItem:
   citation-key: gsi-fair_hgs-hire__2024__international_summer_student
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
   keyword: >-
     #bf2035/stakeholder/research-institution/helmholtz-association/gsi;#bf2035/issue/teaching/summer-schools
   language: en

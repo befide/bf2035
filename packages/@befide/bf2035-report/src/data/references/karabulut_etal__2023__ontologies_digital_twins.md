@@ -21,7 +21,7 @@ cslItem:
     directions on the usage of ontologies and knowledge graphs in DTs.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 5
   author:
@@ -37,12 +37,12 @@ cslItem:
   DOI: 10.1016/j.future.2023.12.013
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 8
         - 29
-  keyword: "#bf2035/issue/digital-transformation/digital-twin"
+  keyword: '#bf2035/issue/digital-transformation/digital-twin'
   language: en
-  title: "Ontologies in digital twins: a systematic literature review"
+  title: 'Ontologies in digital twins: a systematic literature review'
   title-short: Ontologies in digital twins
   type: report
   URL: https://arxiv.org/abs/2308.15168v1

@@ -12,8 +12,8 @@ cslItem:
   citation-key: enders_etal__2021__entwicklung_interdisziplinaeren_englischsprachigen
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#bf2035/issue/teaching"
+      - - '2021'
+  keyword: '#bf2035/issue/teaching'
   language: de
   publisher: unpublished
   title: >-

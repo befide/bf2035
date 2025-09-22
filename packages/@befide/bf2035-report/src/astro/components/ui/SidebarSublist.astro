@@ -1,14 +1,14 @@
 ---
-import { flattenSidebar } from '@utils/navigation'
-import type { SidebarEntry } from '@utils/routing/types'
-import Icon from './Icon.astro'
+import { flattenSidebar } from '@utils/navigation';
+import type { SidebarEntry } from '@utils/routing/types';
+import Icon from './Icon.astro';
 
 interface Props {
-  sublist: SidebarEntry[]
-  nested?: boolean
+  sublist: SidebarEntry[];
+  nested?: boolean;
 }
 
-const { sublist, nested } = Astro.props
+const { sublist, nested } = Astro.props;
 ---
 
 <ul class:list={{ 'top-level': !nested }}>

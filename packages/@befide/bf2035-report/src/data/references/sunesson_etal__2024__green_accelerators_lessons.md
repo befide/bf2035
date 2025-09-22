@@ -17,12 +17,12 @@ cslItem:
   DOI: 10.22323/1.449.0621
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 1
         - 30
   keyword: >-
     #bf2035/accelerator-based-facility/ess;#bf2035/accelerator-based-facility-type/neutron-source/spallation-neutron-source;#bf2035/application/science/neutron-science;#bf2035/issue/green-transformation
-  page: "621"
+  page: '621'
   source: ResearchGate
   title: Green Accelerators? Lessons learned from ESS.
   title-short: Green Accelerators?

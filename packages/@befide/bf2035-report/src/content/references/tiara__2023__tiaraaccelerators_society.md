@@ -4,7 +4,7 @@ cslItem:
   id: tiara__2023__tiaraaccelerators_society
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -12,10 +12,10 @@ cslItem:
   citation-key: tiara__2023__tiaraaccelerators_society
   issued:
     date-parts:
-      - - "2023"
-  keyword: "#bf2035/pub-type/strategies-and-roadmaps"
+      - - '2023'
+  keyword: '#bf2035/pub-type/strategies-and-roadmaps'
   language: en
-  note: "orig-date: 2013"
+  note: 'orig-date: 2013'
   title: TIARA.Accelerators for Society
   type: webpage
   URL: http://www.accelerators-for-society.org/

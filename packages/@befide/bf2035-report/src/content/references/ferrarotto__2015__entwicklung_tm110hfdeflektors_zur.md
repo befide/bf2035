@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2015"
-  keyword: "#gender/male;#university/tu-dortmund"
+      - - '2015'
+  keyword: '#gender/male;#university/tu-dortmund'
   language: de
   publisher: Technische Universität Dortmund
   title: >-
@@ -20,8 +20,8 @@ cslItem:
   type: thesis
   URL: https://eldorado.tu-dortmund.de/handle/2003/34464
 tags:
-  - "#gender/male"
-  - "#university/tu-dortmund"
+  - '#gender/male'
+  - '#university/tu-dortmund'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

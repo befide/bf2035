@@ -1,16 +1,16 @@
 ---
-import type { CollectionEntry } from 'astro:content'
+import type { CollectionEntry } from 'astro:content';
 
-import SectionLayout from './SectionLayout.astro'
+import SectionLayout from './SectionLayout.astro';
 
 export interface Props {
-  sections: CollectionEntry<'sections'>[]
-  lang?: string
-  author?: string
-  description?: string
+  sections: CollectionEntry<'sections'>[];
+  lang?: string;
+  author?: string;
+  description?: string;
 }
 
-const { sections } = Astro.props
+const { sections } = Astro.props;
 ---
 
 <div class="book-sections">

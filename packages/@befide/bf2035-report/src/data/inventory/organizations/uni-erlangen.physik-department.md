@@ -1,21 +1,21 @@
 ---
 id: uni-erlangen.physik-department
 befideInventoryOrganizationalLevelCategory: 3 - work group cluster level
-befideOrganizationCategories: ["university"]
-homepage__de: 
-homepage__en: 
+befideOrganizationCategories: ['university']
+homepage__de:
+homepage__en:
 label__de: Department Physik
 label__en: Department of Physics
 
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
-  city: 
-  country: 
-  lat: 
-  lng: 
+  city:
+  country:
+  lat:
+  lng:
 peopleCount:
   uniqueProfessors: 0
   uniqueSeniorResearchers: 0

@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#gender/male;#university/uni-frankfurt"
+      - - '2013'
+  keyword: '#gender/male;#university/uni-frankfurt'
   language: de
   publisher: Goethe-Universität Frankfurt am Main
   title: Feldkorrekturregelung für dynamische Prozesse in normalleitenden Magneten
   type: thesis
   URL: https://hds.hebis.de/ubffm/Record/HEB396752888
 tags:
-  - "#gender/male"
-  - "#university/uni-frankfurt"
+  - '#gender/male'
+  - '#university/uni-frankfurt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

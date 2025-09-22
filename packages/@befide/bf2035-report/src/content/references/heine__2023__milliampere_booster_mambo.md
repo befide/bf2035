@@ -4,7 +4,7 @@ cslItem:
   id: heine__2023__milliampere_booster_mambo
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 12
         - 11
   author:
@@ -15,8 +15,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2023"
-  keyword: "#gender/male;#university/uni-mainz;#facility/mesa;#degree/dr.rer.nat."
+      - - '2023'
+  keyword: '#gender/male;#university/uni-mainz;#facility/mesa;#degree/dr.rer.nat.'
   language: en
   publisher: Johannes Gutenberg-Universität Mainz
   source: DOI.org (Datacite)
@@ -24,10 +24,10 @@ cslItem:
   type: thesis
   URL: https://openscience.ub.uni-mainz.de/handle/20.500.12030/9086
 tags:
-  - "#gender/male"
-  - "#university/uni-mainz"
-  - "#facility/mesa"
-  - "#degree/dr.rer.nat."
+  - '#gender/male'
+  - '#university/uni-mainz'
+  - '#facility/mesa'
+  - '#degree/dr.rer.nat.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

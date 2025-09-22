@@ -13,7 +13,7 @@ cslItem:
   citation-key: gorg_etal__2020__neutronen_fur_forschung
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 4
   keyword: >-
     #bf2035/accelerator-based-facility/ess;#bf2035/accelerator-based-facility-type/neutron-source/spallation-neutron-source;#bf2035/application/science/neutron-science

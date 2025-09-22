@@ -5,7 +5,7 @@ cslItem:
   abstract: ePaper
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 10
         - 13
   author:
@@ -14,10 +14,10 @@ cslItem:
   event-place: Berlin
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 6
         - 3
-  keyword: "#bf2035/stakeholder/research-institution/helmholtz-association"
+  keyword: '#bf2035/stakeholder/research-institution/helmholtz-association'
   language: de
   number: x
   publisher: Helmholtz

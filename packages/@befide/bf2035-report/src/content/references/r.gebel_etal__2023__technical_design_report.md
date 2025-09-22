@@ -17,12 +17,12 @@ cslItem:
   ISBN: 978-3-95806-709-7
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
   keyword: >-
     #bf2035/accelerator-based-facility/hbs;#bf2035/accelerator-based-facility-type/neutron-source/compact-accelerator-based-neutron-source;#bf2035/accelerator-type/linac;#bf2035/application/science/neutron-science
   language: en
-  note: "OCLC: 1439047491"
-  number-of-pages: "151"
+  note: 'OCLC: 1439047491'
+  number-of-pages: '151'
   publisher: Forschungszentrum Jülich GmbH, Zentralbibliothek, Verlag
   publisher-place: Jülich
   source: Open WorldCat

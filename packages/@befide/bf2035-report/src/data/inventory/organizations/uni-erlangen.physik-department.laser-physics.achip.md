@@ -1,20 +1,20 @@
 ---
 id: uni-erlangen.physik-department.laser-physics.achip
 befideInventoryOrganizationalLevelCategory: 5 - work group level
-befideOrganizationCategories: ["university"]
-homepage__de: 
-homepage__en: 
+befideOrganizationCategories: ['university']
+homepage__de:
+homepage__en:
 label__de: Accelerator on a Chip International Program
 label__en: Accelerator on a Chip International Program
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
-  city: 
-  country: 
-  lat: 
-  lng: 
+  city:
+  country:
+  lat:
+  lng:
 peopleCount:
   uniqueProfessors: 0
   uniqueSeniorResearchers: 0

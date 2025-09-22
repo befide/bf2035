@@ -1,0 +1,64 @@
+---
+title: Inventory
+---
+
+import CardGrid from "@components/ui/CardContainer.astro"
+import LinkCard from "@components/ui/LinkCard.astro"
+import Card from "@components/ui/Card.astro"
+
+## About
+
+<CardGrid>
+  <LinkCard title="Introduction" icon="seti:db" href="/about/00-introduction"></LinkCard>
+
+  <LinkCard title="Review Process" icon="seti:db"  href="/about/01-review-process">
+  </LinkCard>
+   <LinkCard
+   title="Data schema" icon="list-format"
+    href="/about/02-data-schema"
+  ></LinkCard>
+</CardGrid>
+
+## Data
+
+<CardGrid>
+  <Card title="Taxonomy" icon="seti:db" href="/data/taxonomy">
+      * [Domain Taxonomy](/data/01-taxonomy/01-domain-taxonomy/)
+      * [Generic Taxonomy](/data/01-taxonomy/02-generic-taxonomy/)
+
+  </Card>
+  <Card title="Facilities" >
+      * [Facilities](/data/03-facilities)
+
+  </Card>
+
+  <Card title="Organization">
+      * [Reseach institutions and universities](/data/02-organization/formal-organizations)
+      * [Reseach groups](/data/02-organization/research-groups)
+      * [People](/data/02-organization/people)
+
+  </Card>
+    <Card    title="Teaching"  >
+        * [Courses](/data/04-teaching/courses)
+        * [Dissertations](/data/04-teaching/theses)
+
+    </Card>
+
+</CardGrid>
+
+## Facilities
+
+<CardGrid>
+  <LinkCard
+    title="Facilities"
+    icon="seti:db"
+    href="/data/facilities"
+  ></LinkCard>
+</CardGrid>
+
+## Teaching
+
+<CardGrid>
+  <LinkCard title="Courses" icon="seti:db" href="/data/courses"></LinkCard>
+  <LinkCard title="Theses" icon="seti:db" href="/data/theses"></LinkCard>
+</CardGrid>

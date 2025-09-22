@@ -32,8 +32,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#gender/male;#university/tu-darmstadt"
+      - - '2017'
+  keyword: '#gender/male;#university/tu-darmstadt'
   language: en
   note: >-
     fulltext-url:
@@ -45,8 +45,8 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/5903/
 tags:
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

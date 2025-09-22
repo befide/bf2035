@@ -107,7 +107,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
+      - - '2016'
   keyword: >-
     #gender/male;#university/uni-mainz;#facility/cosy;#organisation/him;#facility/fair
   language: de
@@ -119,7 +119,7 @@ cslItem:
 
     fulltext-url:
     https://openscience.ub.uni-mainz.de/bitstream/20.500.12030/4579/1/100000835.pdf
-  number-of-pages: "121"
+  number-of-pages: '121'
   publisher: Johannes Gutenberg-Universität Mainz
   publisher-place: Mainz
   title: >-
@@ -128,11 +128,11 @@ cslItem:
   type: thesis
   URL: https://openscience.ub.uni-mainz.de/handle/20.500.12030/4579
 tags:
-  - "#gender/male"
-  - "#university/uni-mainz"
-  - "#facility/cosy"
-  - "#organisation/him"
-  - "#facility/fair"
+  - '#gender/male'
+  - '#university/uni-mainz'
+  - '#facility/cosy'
+  - '#organisation/him'
+  - '#facility/fair'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

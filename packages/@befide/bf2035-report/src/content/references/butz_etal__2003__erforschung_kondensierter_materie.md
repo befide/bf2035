@@ -13,9 +13,9 @@ cslItem:
   event-place: Göttingen
   issued:
     date-parts:
-      - - "2003"
+      - - '2003'
         - 1
-  keyword: "#bf2035/stakeholder/kfsi"
+  keyword: '#bf2035/stakeholder/kfsi'
   language: en
   publisher: Komitee für Forschung mit Nuklearen Sonden und Ionenstrahlen
   publisher-place: Göttingen

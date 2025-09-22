@@ -26,11 +26,11 @@ cslItem:
   citation-key: einfeld_etal__1996__lattice_design_reach
   issued:
     date-parts:
-      - - "1996"
+      - - '1996'
   keyword: >-
     #bf2035/accelerator-based-facility-type/photon-source/synchrotron-light-source/4th-generation
   language: en
-  page: "3"
+  page: '3'
   source: Zotero
   title: >-
     A Lattice Design to Reach the Theoretical Minimum Emittance for a Storage

@@ -4,16 +4,16 @@ cslItem:
   id: aicheler_toge__2012__multitev_linear_collider
   author:
     - family: Aicheler
-      given: ""
+      given: ''
       suffix: >-
         M, Burrows, P, Draper, M, Garvey, T, Lebrun, P, Peach, K, Phinney, N,
         Schmickler, H, Schulte, D
     - family: Toge
-      given: "N"
+      given: 'N'
   citation-key: aicheler_toge__2012__multitev_linear_collider
   issued:
     date-parts:
-      - - "2012"
+      - - '2012'
         - 7
   keyword: >-
     #bf2035/accelerator-type/collider/linear-collider;#bf2035/application/science/high-energy-physics

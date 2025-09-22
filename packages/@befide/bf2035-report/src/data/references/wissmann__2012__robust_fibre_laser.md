@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2012"
-  keyword: "#facility/flash;#gender/male;#university/uni-hamburg"
+      - - '2012'
+  keyword: '#facility/flash;#gender/male;#university/uni-hamburg'
   language: en
   publisher: Universität Hamburg
   title: >-
@@ -19,9 +19,9 @@ cslItem:
   type: thesis
   URL: https://bib-pubdb1.desy.de/record/140140
 tags:
-  - "#facility/flash"
-  - "#gender/male"
-  - "#university/uni-hamburg"
+  - '#facility/flash'
+  - '#gender/male'
+  - '#university/uni-hamburg'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

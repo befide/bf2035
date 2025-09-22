@@ -1,7 +1,7 @@
 ---
-import type { TreeNode } from '@utils/content.tree'
-import { getValue2 } from '@utils/content'
-import type { TaxonomyItem } from '@/content/config.taxonomyItems'
+import type { TreeNode } from "@utils/content.tree"
+import { getValue2 } from "@utils/content"
+import type { TaxonomyItem } from "@/content/config.taxonomyItems"
 interface Props {
   node: TreeNode<TaxonomyItem>
 }
@@ -16,18 +16,18 @@ const { lang } = Astro.locals.starlightRoute
       data-children={node.children.length}
       open
       class:list={[
-        'tree-nav__item',
+        "tree-nav__item",
         // ...(node.children.length ? 'is-expandable' : 'is-leaf'),
       ]}
     >
       <summary>
         <div class="tree-nav__item-title">
-          <span class="term">{getValue2(node, 'data.term.' + lang)}</span>
+          <span class="term">{getValue2(node, "data.term." + lang)}</span>
           <span class="children-count">{node.children.length}</span>
         </div>
 
         <div class="tree-nav__item-body">
-          {getValue2(node, 'data.definition.' + lang)}
+          {getValue2(node, "data.definition." + lang)}
         </div>
       </summary>
 
@@ -43,16 +43,16 @@ const { lang } = Astro.locals.starlightRoute
       data-depth={node.depth}
       data-children={node.children.length}
       class:list={[
-        'tree-nav__item',
+        "tree-nav__item",
         // ...(node.children.length ? 'is-expandable' : 'is-leaf'),
       ]}
     >
       <div class="tree-nav__item-title">
-        <span class="term">{getValue2(node, 'data.term.' + lang)}</span>
+        <span class="term">{getValue2(node, "data.term." + lang)}</span>
       </div>
       <div class="tree-nav__item-body">
         <div class="definition">
-          {getValue2(node, 'data.definition.' + lang)}
+          {getValue2(node, "data.definition." + lang)}
         </div>
       </div>
     </div>
@@ -82,16 +82,16 @@ const { lang } = Astro.locals.starlightRoute
     margin-left: 0rem;
     padding-left: 0.5rem;
   }
-  .sl-markdown-content .tree-nav__item[data-depth='0'] > *{
+  .sl-markdown-content .tree-nav__item[data-depth="0"] > * {
     margin-bottom: 2rem !important;
   }
-  .sl-markdown-content .tree-nav__item[data-depth='1'] > * {
+  .sl-markdown-content .tree-nav__item[data-depth="1"] > * {
     margin-left: 1.5rem;
   }
-  .sl-markdown-content .tree-nav__item[data-depth='2'] > *  {
+  .sl-markdown-content .tree-nav__item[data-depth="2"] > * {
     margin-left: 3rem;
   }
-  .sl-markdown-content .tree-nav__item[data-depth='3'] > * {
+  .sl-markdown-content .tree-nav__item[data-depth="3"] > * {
     margin-left: 4.5rem;
   }
   .sl-markdown-content .term {
@@ -101,7 +101,7 @@ const { lang } = Astro.locals.starlightRoute
   .sl-markdown-content summary:not(:where(.not-content *))::before {
     --sl-details-marker-size: 1.5rem;
     background-color: currentColor;
-    content: '';
+    content: "";
     display: inline-block;
     height: var(--sl-details-marker-size);
     width: var(--sl-details-marker-size);
@@ -141,9 +141,9 @@ const { lang } = Astro.locals.starlightRoute
     flex: 1;
   }
   .children-count::before {
-    content: '(';
+    content: "(";
   }
   .children-count::after {
-    content: ')';
+    content: ")";
   }
 </style>

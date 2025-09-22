@@ -38,16 +38,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2018"
+      - - '2018'
         - 2
-  keyword: "#university/tu-darmstadt"
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: Gamma-ray spectroscopy of 92,94Se isomeric decay
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/95312/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

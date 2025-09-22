@@ -4,7 +4,7 @@ cslItem:
   id: erc__2024__dashboard_erc_funded
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 11
   author:
@@ -13,8 +13,8 @@ cslItem:
   genre: Project Repository
   issued:
     date-parts:
-      - - "2024"
-  keyword: ""
+      - - '2024'
+  keyword: ''
   language: en
   title: Dashboard of ERC funded projects and evaluated proposals
   type: webpage

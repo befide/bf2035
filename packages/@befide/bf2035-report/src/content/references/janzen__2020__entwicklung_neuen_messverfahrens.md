@@ -10,8 +10,8 @@ cslItem:
   ISBN: 978-3-8439-4680-3
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#university/kit;#gender/male"
+      - - '2020'
+  keyword: '#university/kit;#gender/male'
   language: de
   publisher: Karlsruher Institut für Technologie / Verlag Dr. Hut
   title: >-
@@ -20,8 +20,8 @@ cslItem:
   type: thesis
   URL: https://www.dr.hut-verlag.de/9783843946803.html
 tags:
-  - "#university/kit"
-  - "#gender/male"
+  - '#university/kit'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

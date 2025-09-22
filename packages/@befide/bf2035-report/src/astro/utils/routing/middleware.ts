@@ -9,31 +9,34 @@ import type { StarlightRouteData } from './types';
  * @param routeData Initial route data object to attach.
  */
 export async function attachRouteDataAndRunMiddleware(
-	context: APIContext,
-	routeData: StarlightRouteData
+  context: APIContext,
+  routeData: StarlightRouteData,
 ) {
-	context.locals.starlightRoute = klona(routeData);
-	const runner = new MiddlewareRunner(context, routeMiddleware);
-	await runner.run();
+  context.locals.starlightRoute = klona(routeData);
+  const runner = new MiddlewareRunner(context, routeMiddleware);
+  await runner.run();
 }
 
-type MiddlewareHandler<T> = (context: T, next: () => Promise<void>) => void | Promise<void>;
+type MiddlewareHandler<T> = (
+  context: T,
+  next: () => Promise<void>,
+) => void | Promise<void>;
 
 /**
  * A middleware function wrapper that only allows a single execution of the wrapped function.
  * Subsequent calls to `run()` are no-ops.
  */
 class MiddlewareRunnerStep<T> {
-	#callback: MiddlewareHandler<T> | null;
-	constructor(callback: MiddlewareHandler<T>) {
-		this.#callback = callback;
-	}
-	async run(context: T, next: () => Promise<void>): Promise<void> {
-		if (this.#callback) {
-			await this.#callback(context, next);
-			this.#callback = null;
-		}
-	}
+  #callback: MiddlewareHandler<T> | null;
+  constructor(callback: MiddlewareHandler<T>) {
+    this.#callback = callback;
+  }
+  async run(context: T, next: () => Promise<void>): Promise<void> {
+    if (this.#callback) {
+      await this.#callback(context, next);
+      this.#callback = null;
+    }
+  }
 }
 
 /**
@@ -54,28 +57,33 @@ class MiddlewareRunnerStep<T> {
  * console.log(context); // { value: 30 }
  */
 class MiddlewareRunner<T> {
-	#context: T;
-	#steps: Array<MiddlewareRunnerStep<T>>;
+  #context: T;
+  #steps: Array<MiddlewareRunnerStep<T>>;
 
-	constructor(
-		/** Context object passed as the first argument to each middleware function. */
-		context: T,
-		/** Array of middleware functions to run in sequence. */
-		stack: Array<MiddlewareHandler<T>> = []
-	) {
-		this.#context = context;
-		this.#steps = stack.map((callback) => new MiddlewareRunnerStep(callback));
-	}
+  constructor(
+    /** Context object passed as the first argument to each middleware function. */
+    context: T,
+    /** Array of middleware functions to run in sequence. */
+    stack: Array<MiddlewareHandler<T>> = [],
+  ) {
+    this.#context = context;
+    this.#steps = stack.map((callback) => new MiddlewareRunnerStep(callback));
+  }
 
-	async #stepThrough(steps: Array<MiddlewareRunnerStep<T>>) {
-		let currentStep: MiddlewareRunnerStep<T>;
-		while (steps.length > 0) {
-			[currentStep, ...steps] = steps as [MiddlewareRunnerStep<T>, ...MiddlewareRunnerStep<T>[]];
-			await currentStep.run(this.#context, async () => this.#stepThrough(steps));
-		}
-	}
+  async #stepThrough(steps: Array<MiddlewareRunnerStep<T>>) {
+    let currentStep: MiddlewareRunnerStep<T>;
+    while (steps.length > 0) {
+      [currentStep, ...steps] = steps as [
+        MiddlewareRunnerStep<T>,
+        ...MiddlewareRunnerStep<T>[],
+      ];
+      await currentStep.run(this.#context, async () =>
+        this.#stepThrough(steps),
+      );
+    }
+  }
 
-	async run() {
-		await this.#stepThrough(this.#steps);
-	}
+  async run() {
+    await this.#stepThrough(this.#steps);
+  }
 }

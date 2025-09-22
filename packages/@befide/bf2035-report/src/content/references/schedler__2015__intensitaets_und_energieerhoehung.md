@@ -9,17 +9,17 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2015"
-  keyword: "#gender/male;#university/uni-bonn;#facility/elsa"
+      - - '2015'
+  keyword: '#gender/male;#university/uni-bonn;#facility/elsa'
   language: de
   publisher: Universität Bonn
   title: Intensitäts- und Energieerhöhung an ELSA
   type: thesis
   URL: http://nbn-resolving.de/urn:nbn:de:hbz:5n-42070
 tags:
-  - "#gender/male"
-  - "#university/uni-bonn"
-  - "#facility/elsa"
+  - '#gender/male'
+  - '#university/uni-bonn'
+  - '#facility/elsa'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

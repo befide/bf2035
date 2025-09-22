@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#gender/male;#university/hu-berlin;#facility/bessy2"
+      - - '2021'
+  keyword: '#gender/male;#university/hu-berlin;#facility/bessy2'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: >-
@@ -19,9 +19,9 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.18452/23851
 tags:
-  - "#gender/male"
-  - "#university/hu-berlin"
-  - "#facility/bessy2"
+  - '#gender/male'
+  - '#university/hu-berlin'
+  - '#facility/bessy2'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

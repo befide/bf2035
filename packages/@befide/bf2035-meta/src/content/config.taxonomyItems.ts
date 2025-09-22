@@ -1,20 +1,20 @@
-import { defineCollection, reference, z } from "astro:content";
-import { file } from "astro/loaders";
-import path from "node:path";
-import { csv2json } from "csv42";
+import { defineCollection, reference, z } from "astro:content"
+import { file } from "astro/loaders"
+import path from "node:path"
+import { csv2json } from "csv42"
 import {
   LocalizedString,
   NullableLocalizedString,
   ReviewSchema,
-} from "./config.common";
+} from "./config.common"
 
 const INPUT_FILE_PATH = path.join(
   import.meta.dirname,
   "..",
   "data",
   "grist",
-  "taxonomy-items.csv",
-);
+  "taxonomy-items.csv"
+)
 
 export const TaxonomyItemSchema = z.object({
   id: z.string(),
@@ -24,9 +24,9 @@ export const TaxonomyItemSchema = z.object({
   definition: NullableLocalizedString,
   synonyms: NullableLocalizedString,
   review: ReviewSchema,
-});
+})
 
-export type TaxonomyItem = z.infer<typeof TaxonomyItemSchema>;
+export type TaxonomyItem = z.infer<typeof TaxonomyItemSchema>
 
 export const defineTaxonomyItemsCollection = defineCollection({
   loader: file(INPUT_FILE_PATH, {
@@ -36,4 +36,4 @@ export const defineTaxonomyItemsCollection = defineCollection({
       }),
   }),
   schema: TaxonomyItemSchema,
-});
+})

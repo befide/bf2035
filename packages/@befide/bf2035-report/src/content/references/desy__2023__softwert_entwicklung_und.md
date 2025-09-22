@@ -4,7 +4,7 @@ cslItem:
   id: desy__2023__softwert_entwicklung_und
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 20
   author:
@@ -13,9 +13,9 @@ cslItem:
   event-place: Hamburg
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
-  keyword: "#bf2035/issue/digital-transformation"
+  keyword: '#bf2035/issue/digital-transformation'
   language: de
   note: |-
     Read_Status: To Read

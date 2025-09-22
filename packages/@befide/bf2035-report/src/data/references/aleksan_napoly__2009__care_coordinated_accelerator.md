@@ -37,8 +37,8 @@ cslItem:
   citation-key: aleksan_napoly__2009__care_coordinated_accelerator
   issued:
     date-parts:
-      - - "2009"
-  keyword: ""
+      - - '2009'
+  keyword: ''
   language: en
   source: ResearchGate
   title: >-

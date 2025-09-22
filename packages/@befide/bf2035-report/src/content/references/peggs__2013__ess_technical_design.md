@@ -8,7 +8,7 @@ cslItem:
       given: S.
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
         - 4
   keyword: >-
     #bf2035/accelerator-based-facility/ess;#bf2035/accelerator-based-facility-type/neutron-source/spallation-neutron-source;#bf2035/application/science/neutron-science

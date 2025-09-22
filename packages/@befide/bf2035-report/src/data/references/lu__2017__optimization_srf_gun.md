@@ -9,15 +9,15 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#university/tu-dresden"
+      - - '2017'
+  keyword: '#university/tu-dresden'
   language: en
   publisher: Technische Universität Dresden
   title: Optimization of an SRF gun for high bunch charge applications at ELBE
   type: thesis
   URL: https://nbn-resolving.org/urn:nbn:de:bsz:14-qucosa-223386
 tags:
-  - "#university/tu-dresden"
+  - '#university/tu-dresden'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

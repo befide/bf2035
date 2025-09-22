@@ -29,15 +29,15 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#university/tu-darmstadt"
+      - - '2019'
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: Type-II shell evolution in 98zr
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/111967/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

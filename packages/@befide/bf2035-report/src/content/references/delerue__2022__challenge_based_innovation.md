@@ -15,7 +15,7 @@ cslItem:
     experts.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -24,13 +24,13 @@ cslItem:
   DOI: 10.5281/ZENODO.6631759
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 6
         - 10
-  keyword: "#bf2035/pub-type/strategies-and-roadmaps"
+  keyword: '#bf2035/pub-type/strategies-and-roadmaps'
   language: en
   license: Creative Commons Attribution 4.0 International, Open Access
-  publisher: "[object Object]"
+  publisher: '[object Object]'
   source: DOI.org (Datacite)
   title: Challenge Based Innovation "Accelerators for the Environment"
   type: article-journal

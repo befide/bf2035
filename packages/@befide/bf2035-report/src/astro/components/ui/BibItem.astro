@@ -34,7 +34,7 @@ const iconDictionary = new Map<string, string>([
 ]);
 
 const icons = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/astro/assets/bib-icons/*.{jpeg,jpg,png,gif}'
+  '/src/astro/assets/bib-icons/*.{jpeg,jpg,png,gif}',
 );
 
 const iconPath = defaultAsset; //iconDictionary.get(item.data.cslItem.type) || defaultAsset;
@@ -42,7 +42,7 @@ const icon = icons[iconPath];
 
 if (!icon)
   throw new Error(
-    `"${iconPath}" does not exist in glob: "/src/assets/bib-icons/*.{jpeg,jpg,png,gif}". See ImageComponent.astro to debug.`
+    `"${iconPath}" does not exist in glob: "/src/assets/bib-icons/*.{jpeg,jpg,png,gif}". See ImageComponent.astro to debug.`,
   );
 ---
 

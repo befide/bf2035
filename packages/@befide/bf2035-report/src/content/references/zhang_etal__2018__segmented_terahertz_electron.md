@@ -9,7 +9,7 @@ cslItem:
     strengths, field gradients, laser ...
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 5
   author:
@@ -38,22 +38,22 @@ cslItem:
   citation-key: zhang_etal__2018__segmented_terahertz_electron
   container-title: Nature photonics
   DOI: 10.1038/s41566-018-0138-z
-  issue: "6"
+  issue: '6'
   issued:
     date-parts:
-      - - "2018"
+      - - '2018'
         - 4
         - 2
   keyword: >-
     #bf2035/accelerating-technique/cavity-based/cavity-based_terahertz-driven_acceleration
   language: en
-  page: "336"
-  PMID: "29881446"
+  page: '336'
+  PMID: '29881446'
   source: pmc.ncbi.nlm.nih.gov
   title: Segmented Terahertz Electron Accelerator and Manipulator (STEAM)
   type: article-journal
   URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC5985934/
-  volume: "12"
+  volume: '12'
 tags:
   - >-
     bf2035:accelerating-technique/cavity-based/cavity-based_terahertz-driven_acceleration

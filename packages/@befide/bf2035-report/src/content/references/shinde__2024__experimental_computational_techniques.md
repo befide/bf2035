@@ -20,10 +20,10 @@ cslItem:
   citation-key: shinde__2024__experimental_computational_techniques
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 4
         - 1
-  keyword: ""
+  keyword: ''
   language: en
   source: ResearchGate
   title: Experimental and computational techniques in accelerator physics

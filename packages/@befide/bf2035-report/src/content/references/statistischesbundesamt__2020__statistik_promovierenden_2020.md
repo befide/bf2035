@@ -8,13 +8,13 @@ cslItem:
   event-place: Wiesbaden
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 9
         - 14
-  keyword: "#bf2035/issue/diversity"
+  keyword: '#bf2035/issue/diversity'
   language: en
-  number: "5213501209004"
-  page: "63"
+  number: '5213501209004'
+  page: '63'
   publisher: Statistisches Bundesamt
   publisher-place: Wiesbaden
   source: Zotero

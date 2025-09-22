@@ -9,7 +9,7 @@ cslItem:
     in higher education, and
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 27
   author:
@@ -27,13 +27,13 @@ cslItem:
   container-title: Education for Information
   DOI: 10.3233/EFI-190272
   ISSN: 0167-8329
-  issue: "3"
+  issue: '3'
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 1
         - 1
-  keyword: "#bf2035/issue/open-science"
+  keyword: '#bf2035/issue/open-science'
   note: >-
     TLDR: It is argued that offering students opportunities via open educational
     practices raises their awareness of future open science goals and teaches
@@ -47,7 +47,7 @@ cslItem:
   title-short: Open science practices in higher education
   type: article-journal
   URL: https://content.iospress.com/articles/education-for-information/efi190272
-  volume: "36"
+  volume: '36'
 tags:
   - bf2035:issue/open-science
 rendered:

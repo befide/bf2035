@@ -1,12 +1,12 @@
 ---
-import { createResearchAgenda } from './research-agenda'
+import { createResearchAgenda } from './research-agenda';
 
 export interface Props {
-  filter: string
+  filter: string;
 }
-let { filter = 'agenda/facilities' } = Astro.props
+let { filter = 'agenda/facilities' } = Astro.props;
 
-const svg = createResearchAgenda(filter)
+const svg = createResearchAgenda(filter);
 ---
 
 <figure class="research-agenda">

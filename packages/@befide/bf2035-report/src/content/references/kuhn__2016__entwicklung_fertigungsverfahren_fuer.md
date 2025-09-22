@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#university/tu-berlin"
+      - - '2016'
+  keyword: '#university/tu-berlin'
   language: de
   publisher: Technische Universität Berlin
   title: >-
@@ -19,7 +19,7 @@ cslItem:
   type: thesis
   URL: https://depositonce.tu-berlin.de/handle/11303/5471
 tags:
-  - "#university/tu-berlin"
+  - '#university/tu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

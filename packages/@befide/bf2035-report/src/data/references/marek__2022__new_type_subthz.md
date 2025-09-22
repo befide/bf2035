@@ -28,10 +28,10 @@ cslItem:
   genre: Doctoral dissertation (Dr. Ing.)
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#university/kit;#gender/male;#degree/dr.ing."
+      - - '2022'
+  keyword: '#university/kit;#gender/male;#degree/dr.ing.'
   language: en
-  number-of-pages: "282"
+  number-of-pages: '282'
   publisher: Karlsruher Institut für Technologie (KIT)
   title: >-
     New type of sub-THz oscillator and amplifier systems based on helical-type
@@ -39,9 +39,9 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.5445/IR/1000150852
 tags:
-  - "#university/kit"
-  - "#gender/male"
-  - "#degree/dr.ing."
+  - '#university/kit'
+  - '#gender/male'
+  - '#degree/dr.ing.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -7,10 +7,10 @@ cslItem:
   citation-key: unitednationsgeneralassembly__2015__res_70_1
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 10
         - 21
-  keyword: "#bf2035/stakeholder/united-nations;#bf2035/issue/green-transformation"
+  keyword: '#bf2035/stakeholder/united-nations;#bf2035/issue/green-transformation'
   language: en
   source: Zotero
   title: >-

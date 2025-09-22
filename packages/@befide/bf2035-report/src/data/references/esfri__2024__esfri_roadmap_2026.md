@@ -8,10 +8,10 @@ cslItem:
   genre: Roadmap
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 8
-  keyword: "#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps"
+  keyword: '#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps'
   publisher: ESFRI
   title: ESFRI Roadmap 2026. Public Guide
   type: report

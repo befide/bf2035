@@ -1,20 +1,20 @@
 ---
 id: uni-hamburg.min.physik.experimental-physik.ag-hillert.srfc
 befideInventoryOrganizationalLevelCategory: 5 - work group level
-befideOrganizationCategories: ["university"]
-homepage__de: 
-homepage__en: 
+befideOrganizationCategories: ['university']
+homepage__de:
+homepage__en:
 label__de: Supraleitende Hochfrequenz- Resonatoren
 label__en: Superconducting Radio-Frequency Cavities
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
-  city: 
-  country: 
-  lat: 
-  lng: 
+  city:
+  country:
+  lat:
+  lng:
 peopleCount:
   uniqueProfessors: 0
   uniqueSeniorResearchers: 0

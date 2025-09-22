@@ -53,8 +53,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#university/tu-darmstadt"
+      - - '2022'
+  keyword: '#university/tu-darmstadt'
   language: en
   page: xiv, 147 Seiten
   publisher: Technische Universität Darmstadt
@@ -64,7 +64,7 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/131408/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

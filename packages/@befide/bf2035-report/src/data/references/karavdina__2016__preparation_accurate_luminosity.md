@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#university/uni-mainz;#facility/fair/panda;#gender/female"
+      - - '2016'
+  keyword: '#university/uni-mainz;#facility/fair/panda;#gender/female'
   language: en
   publisher: Johannes Gutenberg-Universität Mainz
   title: >-
@@ -20,9 +20,9 @@ cslItem:
   type: thesis
   URL: https://openscience.ub.uni-mainz.de/handle/20.500.12030/4200
 tags:
-  - "#university/uni-mainz"
-  - "#facility/fair/panda"
-  - "#gender/female"
+  - '#university/uni-mainz'
+  - '#facility/fair/panda'
+  - '#gender/female'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

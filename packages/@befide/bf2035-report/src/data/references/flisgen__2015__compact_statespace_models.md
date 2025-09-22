@@ -86,12 +86,12 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
   keyword: >-
     #gender/male;#university/uni-rostock;#accelerating-techniques/srf-structures;#degree/dr.ing.;#research-method/numerical-methods
   language: en
-  note: "degree: Dr.-Ing."
-  number-of-pages: "166"
+  note: 'degree: Dr.-Ing.'
+  number-of-pages: '166'
   publisher: Universität Rostock
   title: >-
     Compact state-space models for complex superconducting radio-frequency
@@ -99,11 +99,11 @@ cslItem:
   type: thesis
   URL: http://cds.cern.ch/search?p=CERN-ACC- 2015-0145
 tags:
-  - "#gender/male"
-  - "#university/uni-rostock"
-  - "#accelerating-techniques/srf-structures"
-  - "#degree/dr.ing."
-  - "#research-method/numerical-methods"
+  - '#gender/male'
+  - '#university/uni-rostock'
+  - '#accelerating-techniques/srf-structures'
+  - '#degree/dr.ing.'
+  - '#research-method/numerical-methods'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

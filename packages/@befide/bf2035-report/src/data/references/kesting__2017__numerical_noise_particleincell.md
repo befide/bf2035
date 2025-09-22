@@ -9,15 +9,15 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#gender/male;#university/uni-frankfurt"
+      - - '2017'
+  keyword: '#gender/male;#university/uni-frankfurt'
   language: en
   publisher: Goethe-Universität Frankfurt am Main
   title: Numerical noise in particle-in-cell tracking – generation and propagation
   type: thesis
 tags:
-  - "#gender/male"
-  - "#university/uni-frankfurt"
+  - '#gender/male'
+  - '#university/uni-frankfurt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

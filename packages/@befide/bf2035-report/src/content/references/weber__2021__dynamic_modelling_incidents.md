@@ -9,10 +9,10 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#university/kit"
+      - - '2021'
+  keyword: '#university/kit'
   language: en
-  number-of-pages: "144"
+  number-of-pages: '144'
   publisher: Karlsruher Institut für Technologie
   title: >-
     Dynamic modelling of incidents for the protection of helium cryostats
@@ -20,7 +20,7 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.5445/IR/1000132285
 tags:
-  - "#university/kit"
+  - '#university/kit'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

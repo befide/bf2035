@@ -42,9 +42,9 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 7
-  keyword: "#university/tu-darmstadt;#gender/male;#facility/s-dalinac/dhips"
+  keyword: '#university/tu-darmstadt;#gender/male;#facility/s-dalinac/dhips'
   language: en
   page: xx, 176 Seiten
   publisher: Technische Universität Darmstadt
@@ -54,9 +54,9 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/146889/
 tags:
-  - "#university/tu-darmstadt"
-  - "#gender/male"
-  - "#facility/s-dalinac/dhips"
+  - '#university/tu-darmstadt'
+  - '#gender/male'
+  - '#facility/s-dalinac/dhips'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

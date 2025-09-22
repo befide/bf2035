@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#gender/male;#university/uni-mainz;#facility/mesa"
+      - - '2020'
+  keyword: '#gender/male;#university/uni-mainz;#facility/mesa'
   language: de
   publisher: Johannes Gutenberg-Universität Mainz
   title: >-
@@ -20,9 +20,9 @@ cslItem:
   type: thesis
   URL: https://openscience.ub.uni-mainz.de/handle/20.500.12030/4917
 tags:
-  - "#gender/male"
-  - "#university/uni-mainz"
-  - "#facility/mesa"
+  - '#gender/male'
+  - '#university/uni-mainz'
+  - '#facility/mesa'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

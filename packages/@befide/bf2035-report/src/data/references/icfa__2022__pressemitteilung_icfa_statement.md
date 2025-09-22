@@ -7,7 +7,7 @@ cslItem:
   citation-key: icfa__2022__pressemitteilung_icfa_statement
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 4
         - 10
   keyword: >-

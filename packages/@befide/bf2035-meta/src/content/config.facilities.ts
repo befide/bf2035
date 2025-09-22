@@ -1,15 +1,15 @@
-const INPUT_FILE = "facilities.csv";
+const INPUT_FILE = "facilities.csv"
 
-import { csv2json } from "csv42";
+import { csv2json } from "csv42"
 
-import { defineCollection, reference, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content"
 
 import {
   LocalizedString,
   NullableLocalizedString,
   readInputFile,
   ReviewSchema,
-} from "./config.common";
+} from "./config.common"
 
 export const FacilitySchema = z.object({
   id: z.string(),
@@ -52,23 +52,23 @@ export const FacilitySchema = z.object({
     .nullable(),
 
   primaryBeamParticles: z.preprocess((input) => {
-    return typeof input === "string" ? input.split(/\s?,\s?/) : input;
+    return typeof input === "string" ? input.split(/\s?,\s?/) : input
   }, z.array(z.string()).nullable()),
   secondaryBeamParticles: z.preprocess((input) => {
-    return typeof input === "string" ? input.split(/\s?,\s?/) : input;
+    return typeof input === "string" ? input.split(/\s?,\s?/) : input
   }, z.array(z.string()).nullable()),
 
   primaryApplications: z.preprocess(
     (input) => {
-      return typeof input === "string" ? input.split(/\s?,\s?/) : input;
+      return typeof input === "string" ? input.split(/\s?,\s?/) : input
     },
-    z.array(reference("taxonomyItems")).nullable(),
+    z.array(reference("taxonomyItems")).nullable()
   ),
   secondaryApplications: z.preprocess(
     (input) => {
-      return typeof input === "string" ? input.split(/\s?,\s?/) : input;
+      return typeof input === "string" ? input.split(/\s?,\s?/) : input
     },
-    z.array(reference("taxonomyItems")).nullable(),
+    z.array(reference("taxonomyItems")).nullable()
   ),
   parameters: z.object({
     length__m: z.number().optional().nullable(),
@@ -83,20 +83,20 @@ export const FacilitySchema = z.object({
   links: z.object({
     homepage: NullableLocalizedString,
     references: z.preprocess((input) => {
-      return typeof input === "string" ? input.split(/\s?,\s?/) : input;
+      return typeof input === "string" ? input.split(/\s?,\s?/) : input
     }, z.array(z.string()).nullable()),
   }),
   review: ReviewSchema,
-});
+})
 
 export const defineFacilityCollection = defineCollection({
   loader: async () => {
-    const input = readInputFile(INPUT_FILE).toString();
+    const input = readInputFile(INPUT_FILE).toString()
     return csv2json<Facility>(input, {
       nested: true,
-    });
+    })
   },
   schema: FacilitySchema,
-});
+})
 
-export type Facility = z.infer<typeof FacilitySchema>;
+export type Facility = z.infer<typeof FacilitySchema>

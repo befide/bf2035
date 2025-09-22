@@ -13,7 +13,7 @@ cslItem:
     complex accelerators
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -22,10 +22,10 @@ cslItem:
   DOI: 10.5281/ZENODO.7994429
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 6
         - 1
-  keyword: "#bf2035/issue/digital-transformation"
+  keyword: '#bf2035/issue/digital-transformation'
   language: en
   license: Creative Commons Attribution 4.0 International, Open Access
   source: DOI.org (Datacite)

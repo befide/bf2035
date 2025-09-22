@@ -4,14 +4,14 @@ cslItem:
   id: komiteefurbeschleunigerphysik__2014__satzung_komitees_fur
   author:
     - family: Komitee für Beschleunigerphysik
-      given: ""
+      given: ''
   citation-key: komiteefurbeschleunigerphysik__2014__satzung_komitees_fur
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 4
         - 1
-  keyword: ""
+  keyword: ''
   language: en
   title: Satzung des Komitees für Beschleunigerphysik (Fassung vom 01. April 2014)
   type: document

@@ -1,17 +1,17 @@
-import { getCollection } from "astro:content";
+import { getCollection } from "astro:content"
 
-import { getRoots, type TreeNode } from "./content.tree";
+import { getRoots, type TreeNode } from "./content.tree"
 import {
   type Organization,
   peopleCountDiscriminators,
-} from "@/content/config.organizations";
-import { getValue } from "./index";
+} from "@/content/config.organizations"
+import { getValue } from "./index"
 
 export const allOrganizations = async () =>
-  (await getCollection("organizations")).map(({ data }) => data);
+  (await getCollection("organizations")).map(({ data }) => data)
 
 export const allOrganizationsForTopLevelOrganization = async (
-  topLevelOrganizationId: string,
+  topLevelOrganizationId: string
 ) => {
   return await getCollection(
     "organizations",
@@ -19,9 +19,9 @@ export const allOrganizationsForTopLevelOrganization = async (
       topLevelOrganizationId === undefined ||
       data.hasTopLevelOrganization?.id === topLevelOrganizationId ||
       id === topLevelOrganizationId ||
-      id === ":",
-  );
-};
+      id === ":"
+  )
+}
 
 export const allCommunityTopLevelOrganizations = async () =>
   await getCollection(
@@ -29,20 +29,20 @@ export const allCommunityTopLevelOrganizations = async () =>
     (entry) =>
       entry.data.isPartOfCommunity &&
       !entry.data.hasTopLevelOrganization &&
-      entry.data.befideOrganizationCategories.indexOf("committee") !== 0,
-  );
+      entry.data.befideOrganizationCategories.indexOf("committee") !== 0
+  )
 export const getOrganizationCategories = async () =>
   Array.from(
     new Set(
       (await allCommunityTopLevelOrganizations()).flatMap(
-        (entry) => entry.data.befideOrganizationCategories,
-      ),
-    ),
-  );
+        (entry) => entry.data.befideOrganizationCategories
+      )
+    )
+  )
 
 export const getOrganizationRoots = (items: Organization[]) => {
-  return getRoots<Organization>(items);
-};
+  return getRoots<Organization>(items)
+}
 
 export function rollupUniquePeopleCountSum(node: TreeNode<Organization>) {
   if (node.children.length === 0) {
@@ -52,16 +52,16 @@ export function rollupUniquePeopleCountSum(node: TreeNode<Organization>) {
         peopleCountDiscriminators.map((d) => [
           d,
           getValue(node.data.uniquePeopleCountSum, d),
-        ]),
+        ])
       ),
-    };
+    }
   } else {
-    node.children.forEach((child) => rollupUniquePeopleCountSum(child));
+    node.children.forEach((child) => rollupUniquePeopleCountSum(child))
     node.data.uniquePeopleCountRecursiveSum = {
       total: node.children.reduce(
         (sum, child) =>
           sum + getValue(child.data.uniquePeopleCountRecursiveSum, "total"),
-        getValue(node.data.uniquePeopleCountSum, "total"),
+        getValue(node.data.uniquePeopleCountSum, "total")
       ),
       ...Object.fromEntries(
         peopleCountDiscriminators.map((d) => [
@@ -69,10 +69,10 @@ export function rollupUniquePeopleCountSum(node: TreeNode<Organization>) {
           node.children.reduce(
             (sum, child) =>
               sum + getValue(child.data.uniquePeopleCountRecursiveSum, d),
-            getValue(node.data.uniquePeopleCountSum, d),
+            getValue(node.data.uniquePeopleCountSum, d)
           ),
-        ]),
+        ])
       ),
-    };
+    }
   }
 }

@@ -7,7 +7,7 @@ cslItem:
     programs (Horizon Europe, H2020 and older), projects, results, publications
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 11
   author:
@@ -17,9 +17,9 @@ cslItem:
   genre: Database
   issued:
     date-parts:
-      - - "2024"
-  keyword: ""
-  note: "orig-date: 1994"
+      - - '2024'
+  keyword: ''
+  note: 'orig-date: 1994'
   publisher: European Commission
   title: CORDIS - EU research results
   type: webpage

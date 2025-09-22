@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#gender/male;#university/tu-darmstadt"
+      - - '2016'
+  keyword: '#gender/male;#university/tu-darmstadt'
   language: de
   publisher: Technische Universität Darmstadt
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/5328/
 tags:
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

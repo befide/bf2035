@@ -22,24 +22,30 @@ export type StarlightCollection = (typeof collectionNames)[number];
  * these helper functions should be updated to reflect that in one place.
  */
 
-export function getCollectionPath(collection: StarlightCollection, srcDir: URL) {
-	return new URL(`content/${collection}/`, srcDir).pathname;
+export function getCollectionPath(
+  collection: StarlightCollection,
+  srcDir: URL,
+) {
+  return new URL(`content/${collection}/`, srcDir).pathname;
 }
 
-export function resolveCollectionPath(collection: StarlightCollection, srcDir: URL) {
-	return resolve(fileURLToPath(srcDir), `content/${collection}`);
+export function resolveCollectionPath(
+  collection: StarlightCollection,
+  srcDir: URL,
+) {
+  return resolve(fileURLToPath(srcDir), `content/${collection}`);
 }
 
 export function getCollectionPathFromRoot(
-	collection: StarlightCollection,
-	{ root, srcDir }: { root: URL | string; srcDir: URL | string }
+  collection: StarlightCollection,
+  { root, srcDir }: { root: URL | string; srcDir: URL | string },
 ) {
-	return (
-		(typeof srcDir === 'string' ? srcDir : srcDir.pathname).replace(
-			typeof root === 'string' ? root : root.pathname,
-			''
-		) +
-		'content/' +
-		collection
-	);
+  return (
+    (typeof srcDir === 'string' ? srcDir : srcDir.pathname).replace(
+      typeof root === 'string' ? root : root.pathname,
+      '',
+    ) +
+    'content/' +
+    collection
+  );
 }

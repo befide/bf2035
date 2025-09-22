@@ -4,7 +4,7 @@ cslItem:
   id: gutberlet_etal__2020__sustainable_neutrons_today
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 2
   author:
@@ -50,7 +50,7 @@ cslItem:
   issue: 2-4
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 10
         - 1
   keyword: >-
@@ -62,7 +62,7 @@ cslItem:
     Sustainable Neutrons for Today and Tomorrow—the Jülich High Brilliance
     Neutron Source Project
   type: article-journal
-  volume: "31"
+  volume: '31'
 tags:
   - bf2035:accelerator-based-facility/hbs
   - >-

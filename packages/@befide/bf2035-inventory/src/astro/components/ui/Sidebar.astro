@@ -1,0 +1,17 @@
+---
+import { getSectionsTreeRoot } from "@domain/sections"
+import LayoutFooter from "./LayoutFooter.astro"
+import MobileMenuFooter from "./MobileMenuFooter.astro"
+import SidebarItem from "./SidebarItem.astro"
+import Navigation from "./Navigation.astro"
+
+const root = await getSectionsTreeRoot()
+---
+
+<Navigation />
+<SidebarItem node={root} />
+<LayoutFooter />
+
+<div class="md:sl-hidden">
+  <MobileMenuFooter />
+</div>

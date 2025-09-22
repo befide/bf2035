@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#university/uni-hamburg;#gender/male;#facility/flash"
+      - - '2016'
+  keyword: '#university/uni-hamburg;#gender/male;#facility/flash'
   language: en
   publisher: Universität Hamburg
   title: >-
@@ -19,9 +19,9 @@ cslItem:
   type: thesis
   URL: https://ediss.sub.uni-hamburg.de/volltexte/2017/8296/
 tags:
-  - "#university/uni-hamburg"
-  - "#gender/male"
-  - "#facility/flash"
+  - '#university/uni-hamburg'
+  - '#gender/male'
+  - '#facility/flash'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

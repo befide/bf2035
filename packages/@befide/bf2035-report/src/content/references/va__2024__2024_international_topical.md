@@ -8,8 +8,8 @@ cslItem:
   citation-key: va__2024__2024_international_topical
   issued:
     date-parts:
-      - - "2024"
-  keyword: ""
+      - - '2024'
+  keyword: ''
   language: en
   source: Zotero
   title: 2024 International Topical Meeting on Nuclear Applications of Accelerators

@@ -20,7 +20,7 @@ cslItem:
     operation schemes of the ring.
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 8
         - 30
   author:
@@ -46,7 +46,7 @@ cslItem:
   DOI: 10.5445/IR/1000149546
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
   keyword: >-
     #bf2035/accelerator-based-facility/cstart;#bf2035/stakeholder/research-institution/helmholtz-association/kit
   language: en

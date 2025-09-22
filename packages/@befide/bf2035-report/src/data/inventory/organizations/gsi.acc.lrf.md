@@ -1,20 +1,20 @@
 ---
 id: gsi.acc.lrf
-befideInventoryOrganizationalLevelCategory: 
-befideOrganizationCategories: ["hgf"]
+befideInventoryOrganizationalLevelCategory:
+befideOrganizationCategories: ['hgf']
 homepage__de: https://www.gsi.de/work/beschleunigerbetrieb/abteilungen/ope/mitarbeiter
 homepage__en: https://www.gsi.de/work/beschleunigerbetrieb/abteilungen/ope/mitarbeiter
 label__de: Abteilung UNILAC RF
 label__en: Department UNILAC RF
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
-  city: 
-  country: 
-  lat: 
-  lng: 
+  city:
+  country:
+  lat:
+  lng:
 peopleCount:
   uniqueProfessors: 0
   uniqueSeniorResearchers: 0

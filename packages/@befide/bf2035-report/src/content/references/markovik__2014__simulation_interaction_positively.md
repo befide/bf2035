@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2014"
-  keyword: "#gender/male;#university/uni-rostock;#degree/dr.ing."
+      - - '2014'
+  keyword: '#gender/male;#university/uni-rostock;#degree/dr.ing.'
   language: en
   publisher: Universität Rostock
   title: >-
@@ -19,9 +19,9 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.18453/rosdok_id00001279
 tags:
-  - "#gender/male"
-  - "#university/uni-rostock"
-  - "#degree/dr.ing."
+  - '#gender/male'
+  - '#university/uni-rostock'
+  - '#degree/dr.ing.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

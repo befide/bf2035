@@ -4,7 +4,7 @@ cslItem:
   id: davidschlyer_etal____radiosotope_cyclotron_training
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 3
   author:

@@ -36,14 +36,14 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
         - 7
-  keyword: "#university/tu-darmstadt;#gender/male"
+  keyword: '#university/tu-darmstadt;#gender/male'
   language: en
   note: |-
     university-catalog-url: https://tuprints.ulb.tu-darmstadt.de/6300/
     fulltext-url: https://tuprints.ulb.tu-darmstadt.de/6300/1/PhDThesis_V2.pdf
-  number-of-pages: "129"
+  number-of-pages: '129'
   publisher: Technische Universität Darmstadt
   publisher-place: Darmstadt
   title: >-
@@ -52,8 +52,8 @@ cslItem:
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/6300/
 tags:
-  - "#university/tu-darmstadt"
-  - "#gender/male"
+  - '#university/tu-darmstadt'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

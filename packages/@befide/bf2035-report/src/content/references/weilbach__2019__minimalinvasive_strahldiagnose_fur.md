@@ -110,20 +110,20 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#gender/male;#university/uni-mainz;#facility/mesa"
+      - - '2019'
+  keyword: '#gender/male;#university/uni-mainz;#facility/mesa'
   language: en
   note: affiliation2:him
-  number-of-pages: "121"
+  number-of-pages: '121'
   publisher: Johannes Gutenberg-Universität Mainz
   source: DOI.org (Datacite)
   title: Minimal-invasive strahldiagnose für hoch intensive Elektronenstrahlen
   type: thesis
   URL: https://openscience.ub.uni-mainz.de/handle/20.500.12030/962
 tags:
-  - "#gender/male"
-  - "#university/uni-mainz"
-  - "#facility/mesa"
+  - '#gender/male'
+  - '#university/uni-mainz'
+  - '#facility/mesa'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

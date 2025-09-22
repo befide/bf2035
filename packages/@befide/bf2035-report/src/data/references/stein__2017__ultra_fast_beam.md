@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#gender/male;#university/uni-hamburg"
+      - - '2017'
+  keyword: '#gender/male;#university/uni-hamburg'
   language: en
   publisher: Universität Hamburg
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: http://cds.cern.ch/record/2644713
 tags:
-  - "#gender/male"
-  - "#university/uni-hamburg"
+  - '#gender/male'
+  - '#university/uni-hamburg'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

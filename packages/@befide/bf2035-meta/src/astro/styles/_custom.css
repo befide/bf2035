@@ -9,7 +9,6 @@
   --color-kfb-gray: #757575;
 }
 
-
 /* Dark mode colors. */
 :root {
   --sl-color-accent-low: #122634;
@@ -26,7 +25,7 @@
 }
 
 /* Light mode colors. */
-:root[data-theme='light'] {
+:root[data-theme="light"] {
   --sl-color-accent-low: #c7dae8;
   --sl-color-accent: #005380;
   --sl-color-accent-high: #14354c;
@@ -232,7 +231,8 @@ ul.reference__links {
 .reference__link {
   display: inline;
 }
-.reference__creator__family-name, .reference__author-family-name {
+.reference__creator__family-name,
+.reference__author-family-name {
   font-weight: bold;
 }
 
@@ -248,14 +248,14 @@ ul.reference__links {
 }
 li.reference__creator {
   display: inline;
-   white-space-collapse: collapse;
-
+  white-space-collapse: collapse;
 }
 .reference__creator::after {
   content: ",";
 }
 
 @layer my-overrides {
-footer .pagination-links {
-  display: none;
-}}
+  footer .pagination-links {
+    display: none;
+  }
+}

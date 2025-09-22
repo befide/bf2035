@@ -1,18 +1,18 @@
 ---
 id: fz-juelich
 befideInventoryOrganizationalLevelCategory: 1 - top level
-befideOrganizationCategories: ["hgf"]
+befideOrganizationCategories: ['hgf']
 homepage__de: https://www.fz-juelich.de
 homepage__en: https://www.fz-juelich.de
 label__de: Forschungszentrum Jülich
 label__en: Jülich Research Centre
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
   city: Jülich
-  country: 
+  country:
   lat: 50.92149
   lng: 6.36267
 peopleCount:
@@ -22,7 +22,7 @@ peopleCount:
   uniquePhdStudents: 0
   uniqueWorkingStudents_MSC: 0
   uniqueWorkingStudents_BSC: 0
-reviewedBy: 
-parentPath: 
+reviewedBy:
+parentPath:
 localName: fz-juelich
 ---

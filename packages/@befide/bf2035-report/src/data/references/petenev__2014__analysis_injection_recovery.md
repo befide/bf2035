@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2014"
-  keyword: "#gender/male;#university/hu-berlin"
+      - - '2014'
+  keyword: '#gender/male;#university/hu-berlin'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: Analysis of injection and recovery schemes for ERL based light source
   type: thesis
   URL: https://doi.org/10.18452/17014
 tags:
-  - "#gender/male"
-  - "#university/hu-berlin"
+  - '#gender/male'
+  - '#university/hu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

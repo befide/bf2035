@@ -6,7 +6,7 @@ cslItem:
     bmbfreferatgrundsatzfragenvoninnovationundtransfer;koordinierung__2022__bundesbericht_forschung_und
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 29
   author:
@@ -17,8 +17,8 @@ cslItem:
     bmbfreferatgrundsatzfragenvoninnovationundtransfer;koordinierung__2022__bundesbericht_forschung_und
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/stakeholder/funder/bmbf;#bf2035/issue/commercialisation/innovation"
+      - - '2022'
+  keyword: '#bf2035/stakeholder/funder/bmbf;#bf2035/issue/commercialisation/innovation'
   language: en
   publisher: BMBF
   title: >-

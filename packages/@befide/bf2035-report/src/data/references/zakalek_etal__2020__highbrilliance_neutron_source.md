@@ -7,7 +7,7 @@ cslItem:
                 The High-Brilliance Neutron Source (HBS) project aims to design a scalable compact accelerator driven neutron source (CANS) which is competitive and cost-efficient. The concept allows one to optimize the whole facility including accelerator, target, moderators and neutron optics to the demands of individual neutron instruments. Particle type, energy, timing, and pulse structure of the accelerator are fully defined by the requirements of a given neutron instrument. In the following, we present the current status of the HBS project.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 2
   author:
@@ -42,14 +42,14 @@ cslItem:
     - family: Brückel
       given: Th
   citation-key: zakalek_etal__2020__highbrilliance_neutron_source
-  container-title: "Journal of Physics: Conference Series"
+  container-title: 'Journal of Physics: Conference Series'
   container-title-short: J. Phys. Conf. Ser.
   DOI: 10.1088/1742-6596/1401/1/012010
   ISSN: 1742-6588, 1742-6596
-  issue: "1"
+  issue: '1'
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 1
         - 1
   keyword: >-
@@ -61,12 +61,12 @@ cslItem:
     cost-efficient and allows one to optimize the whole facility including
     accelerator, target, moderators and neutron optics to the demands of
     individual neutron instruments.
-  page: "12010"
+  page: '12010'
   source: DOI.org (Crossref)
   title: High-brilliance neutron source project
   type: article-journal
   URL: https://iopscience.iop.org/article/10.1088/1742-6596/1401/1/012010
-  volume: "1401"
+  volume: '1401'
 tags:
   - >-
     bf2035:accelerator-based-facility-type/neutron-source/compact-accelerator-based-neutron-source

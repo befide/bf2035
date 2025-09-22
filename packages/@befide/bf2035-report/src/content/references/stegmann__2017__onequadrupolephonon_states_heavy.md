@@ -33,8 +33,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#university/tu-darmstadt"
+      - - '2017'
+  keyword: '#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: >-
@@ -43,7 +43,7 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/90059/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

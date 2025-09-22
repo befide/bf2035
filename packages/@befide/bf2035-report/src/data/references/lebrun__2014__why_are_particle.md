@@ -12,7 +12,7 @@ cslItem:
     Circular Colliders
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 10
         - 9
   keyword: >-

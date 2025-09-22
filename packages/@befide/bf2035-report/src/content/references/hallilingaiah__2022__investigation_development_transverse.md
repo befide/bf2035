@@ -13,7 +13,7 @@ cslItem:
     ready for installation in the ELBE beamline.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 12
         - 10
   author:
@@ -24,8 +24,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#university/uni-rostock;#facility/elbe;#degree/dr.ing."
+      - - '2022'
+  keyword: '#university/uni-rostock;#facility/elbe;#degree/dr.ing.'
   language: en
   publisher: Universität Rostock
   source: DOI.org (Datacite)
@@ -33,9 +33,9 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.18453/rosdok_id00004375
 tags:
-  - "#university/uni-rostock"
-  - "#facility/elbe"
-  - "#degree/dr.ing."
+  - '#university/uni-rostock'
+  - '#facility/elbe'
+  - '#degree/dr.ing.'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

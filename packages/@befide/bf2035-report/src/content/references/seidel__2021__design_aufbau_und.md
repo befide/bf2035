@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#university/hu-berlin"
+      - - '2021'
+  keyword: '#university/hu-berlin'
   language: de
   publisher: Humboldt-Universität zu Berlin
   title: >-
@@ -19,7 +19,7 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.18452/24138
 tags:
-  - "#university/hu-berlin"
+  - '#university/hu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

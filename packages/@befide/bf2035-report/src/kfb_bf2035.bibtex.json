@@ -116,70 +116,18 @@
       "name": "_input",
       "collections": [],
       "items": [
-        2290,
-        2294,
-        3771,
-        3785,
-        3797,
-        3799,
-        3801,
-        3803,
-        3804,
-        3808,
-        3887,
-        3891,
-        3903,
-        3904,
-        3905,
-        3911,
-        5907,
-        5997,
-        6616,
-        6878,
-        8151,
-        9345,
-        9347,
-        9348,
-        9350,
-        9351,
-        9359,
-        9360,
-        9365,
-        9366,
-        9367,
-        9368,
-        9401,
-        9418,
-        9441,
-        9449,
-        9483,
-        9552,
-        9611,
-        9617,
-        9674,
-        9678,
-        9681,
-        9685,
-        9688,
-        9693,
-        9696,
-        9706,
-        9721,
-        10111,
-        10238,
-        10300
+        2290, 2294, 3771, 3785, 3797, 3799, 3801, 3803, 3804, 3808, 3887, 3891,
+        3903, 3904, 3905, 3911, 5907, 5997, 6616, 6878, 8151, 9345, 9347, 9348,
+        9350, 9351, 9359, 9360, 9365, 9366, 9367, 9368, 9401, 9418, 9441, 9449,
+        9483, 9552, 9611, 9617, 9674, 9678, 9681, 9685, 9688, 9693, 9696, 9706,
+        9721, 10111, 10238, 10300
       ]
     },
     "TP7YX94G": {
       "key": "TP7YX94G",
       "parent": "",
       "name": "_used",
-      "collections": [
-        "PDJK9XX6",
-        "9TYH3AUS",
-        "EUSGLXHE",
-        "B9G357EA"
-      ],
+      "collections": ["PDJK9XX6", "9TYH3AUS", "EUSGLXHE", "B9G357EA"],
       "items": []
     },
     "PDJK9XX6": {
@@ -198,21 +146,14 @@
         "9SDF26L3",
         "WC64JZJC"
       ],
-      "items": [
-        3911
-      ]
+      "items": [3911]
     },
     "CW8DKMJ7": {
       "key": "CW8DKMJ7",
       "parent": "PDJK9XX6",
       "name": "A. Stakeholder Databases",
       "collections": [],
-      "items": [
-        9745,
-        9747,
-        9749,
-        10178
-      ]
+      "items": [9745, 9747, 9749, 10178]
     },
     "ZWBCNZYC": {
       "key": "ZWBCNZYC",
@@ -220,23 +161,8 @@
       "name": "A. Stakeholder strategies",
       "collections": [],
       "items": [
-        2129,
-        2130,
-        2265,
-        2266,
-        2267,
-        5372,
-        5629,
-        5635,
-        5637,
-        5832,
-        5834,
-        9727,
-        9728,
-        10110,
-        10152,
-        10154,
-        10180
+        2129, 2130, 2265, 2266, 2267, 5372, 5629, 5635, 5637, 5832, 5834, 9727,
+        9728, 10110, 10152, 10154, 10180
       ]
     },
     "CXNGSTAH": {
@@ -244,18 +170,7 @@
       "parent": "PDJK9XX6",
       "name": "A.1. BF in Deutschland",
       "collections": [],
-      "items": [
-        2159,
-        2267,
-        2270,
-        2272,
-        3773,
-        3774,
-        3775,
-        3779,
-        3784,
-        5799
-      ]
+      "items": [2159, 2267, 2270, 2272, 3773, 3774, 3775, 3779, 3784, 5799]
     },
     "FLNBG9AY": {
       "key": "FLNBG9AY",
@@ -268,132 +183,70 @@
         "T8IVXSZV",
         "KVKJVDFL"
       ],
-      "items": [
-        10237,
-        10238,
-        10239,
-        10253,
-        10297
-      ]
+      "items": [10237, 10238, 10239, 10253, 10297]
     },
     "MNL37NPL": {
       "key": "MNL37NPL",
       "parent": "FLNBG9AY",
       "name": "Collider",
       "collections": [],
-      "items": [
-        2207,
-        2219,
-        2248,
-        10242,
-        10243
-      ]
+      "items": [2207, 2219, 2248, 10242, 10243]
     },
     "4SITRTVW": {
       "key": "4SITRTVW",
       "parent": "FLNBG9AY",
       "name": "ERL",
       "collections": [],
-      "items": [
-        5913,
-        5987
-      ]
+      "items": [5913, 5987]
     },
     "F9F9SFJI": {
       "key": "F9F9SFJI",
       "parent": "FLNBG9AY",
       "name": "neutron sources",
-      "collections": [
-        "EDIH5ZM5",
-        "87VH2RP7"
-      ],
-      "items": [
-        2341,
-        6026,
-        9492,
-        6024
-      ]
+      "collections": ["EDIH5ZM5", "87VH2RP7"],
+      "items": [2341, 6026, 9492, 6024]
     },
     "EDIH5ZM5": {
       "key": "EDIH5ZM5",
       "parent": "F9F9SFJI",
       "name": "Compact accelerator-based neutron source",
       "collections": [],
-      "items": [
-        2224,
-        3929,
-        9488,
-        9536,
-        9537,
-        9539,
-        9542,
-        9554,
-        9557,
-        9578
-      ]
+      "items": [2224, 3929, 9488, 9536, 9537, 9539, 9542, 9554, 9557, 9578]
     },
     "87VH2RP7": {
       "key": "87VH2RP7",
       "parent": "F9F9SFJI",
       "name": "Spallation neutron sources",
       "collections": [],
-      "items": [
-        2307,
-        3937,
-        9335,
-        9519,
-        9522
-      ]
+      "items": [2307, 3937, 9335, 9519, 9522]
     },
     "T8IVXSZV": {
       "key": "T8IVXSZV",
       "parent": "FLNBG9AY",
       "name": "photon-sources",
-      "collections": [
-        "TBES545E",
-        "N3NPSQBJ"
-      ],
-      "items": [
-        2146,
-        5836,
-        5896,
-        5950,
-        5992
-      ]
+      "collections": ["TBES545E", "N3NPSQBJ"],
+      "items": [2146, 5836, 5896, 5950, 5992]
     },
     "TBES545E": {
       "key": "TBES545E",
       "parent": "T8IVXSZV",
       "name": "FEL",
       "collections": [],
-      "items": [
-        3815,
-        3907,
-        3932,
-        5944
-      ]
+      "items": [3815, 3907, 3932, 5944]
     },
     "N3NPSQBJ": {
       "key": "N3NPSQBJ",
       "parent": "T8IVXSZV",
       "name": "synchrotrons",
       "collections": [],
-      "items": [
-        2262,
-        2263,
-        2264,
-        3934
-      ]
+      "items": [2262, 2263, 2264, 3934]
     },
     "KVKJVDFL": {
       "key": "KVKJVDFL",
       "parent": "FLNBG9AY",
       "name": "radioisotope-cyclotrons",
       "collections": [],
-      "items": [
-        10247,
-        10249
-      ]
+      "items": [10247, 10249]
     },
     "H95NTXKN": {
       "key": "H95NTXKN",
@@ -401,18 +254,7 @@
       "name": "A.2. BF in der Anwendung",
       "collections": [],
       "items": [
-        2196,
-        2201,
-        2209,
-        2211,
-        2257,
-        2372,
-        2443,
-        3759,
-        3882,
-        3930,
-        5916,
-        5997,
+        2196, 2201, 2209, 2211, 2257, 2372, 2443, 3759, 3882, 3930, 5916, 5997,
         6971
       ]
     },
@@ -422,24 +264,8 @@
       "name": "A.2.1. Teilchenphysik",
       "collections": [],
       "items": [
-        2187,
-        2191,
-        2192,
-        2207,
-        2219,
-        2221,
-        2222,
-        2223,
-        2235,
-        3753,
-        3823,
-        3824,
-        3831,
-        3835,
-        5572,
-        5871,
-        9324,
-        9328
+        2187, 2191, 2192, 2207, 2219, 2221, 2222, 2223, 2235, 3753, 3823, 3824,
+        3831, 3835, 5572, 5871, 9324, 9328
       ]
     },
     "GGRX39NP": {
@@ -447,19 +273,14 @@
       "parent": "PDJK9XX6",
       "name": "A.2.2. Hadronenphysik",
       "collections": [],
-      "items": [
-        3812
-      ]
+      "items": [3812]
     },
     "EVGSVVNR": {
       "key": "EVGSVVNR",
       "parent": "PDJK9XX6",
       "name": "A.2.5 Nukleare Sonden und Ionenstrahlen",
       "collections": [],
-      "items": [
-        5371,
-        5373
-      ]
+      "items": [5371, 5373]
     },
     "9SDF26L3": {
       "key": "9SDF26L3",
@@ -473,9 +294,7 @@
       "parent": "PDJK9XX6",
       "name": "Mond",
       "collections": [],
-      "items": [
-        5924
-      ]
+      "items": [5924]
     },
     "9TYH3AUS": {
       "key": "9TYH3AUS",
@@ -488,30 +307,14 @@
         "2LH6JDMY",
         "RNXGIY6E"
       ],
-      "items": [
-        5635,
-        5637,
-        5639,
-        5641
-      ]
+      "items": [5635, 5637, 5639, 5641]
     },
     "8QDN6RGB": {
       "key": "8QDN6RGB",
       "parent": "9TYH3AUS",
       "name": "B.1 Zusammenarbeit intensivieren",
-      "collections": [
-        "MMJLE9XY"
-      ],
-      "items": [
-        2265,
-        2302,
-        2336,
-        3819,
-        3821,
-        3920,
-        5623,
-        5629
-      ]
+      "collections": ["MMJLE9XY"],
+      "items": [2265, 2302, 2336, 3819, 3821, 3920, 5623, 5629]
     },
     "MMJLE9XY": {
       "key": "MMJLE9XY",
@@ -525,17 +328,7 @@
       "parent": "9TYH3AUS",
       "name": "B.2 Exzellenz und Eigenständigkeit",
       "collections": [],
-      "items": [
-        3767,
-        3768,
-        5750,
-        5751,
-        5752,
-        5756,
-        5978,
-        6978,
-        6992
-      ]
+      "items": [3767, 3768, 5750, 5751, 5752, 5756, 5978, 6978, 6992]
     },
     "KFB55SS8": {
       "key": "KFB55SS8",
@@ -543,17 +336,7 @@
       "name": "B.3 Talententwicklung vorantreiben",
       "collections": [],
       "items": [
-        5798,
-        5951,
-        5952,
-        5957,
-        6038,
-        6519,
-        6846,
-        6849,
-        6851,
-        6868,
-        9322
+        5798, 5951, 5952, 5957, 6038, 6519, 6846, 6849, 6851, 6868, 9322
       ]
     },
     "2LH6JDMY": {
@@ -561,26 +344,14 @@
       "parent": "9TYH3AUS",
       "name": "B.4 Industrieanbindung bidirektional stärken",
       "collections": [],
-      "items": [
-        2372,
-        2443,
-        5372,
-        5693,
-        6937,
-        7013,
-        7017,
-        9363
-      ]
+      "items": [2372, 2443, 5372, 5693, 6937, 7013, 7017, 9363]
     },
     "RNXGIY6E": {
       "key": "RNXGIY6E",
       "parent": "9TYH3AUS",
       "name": "B.5 Partizipation",
       "collections": [],
-      "items": [
-        5500,
-        5504
-      ]
+      "items": [5500, 5504]
     },
     "EUSGLXHE": {
       "key": "EUSGLXHE",
@@ -593,52 +364,28 @@
         "F3IP4PDR",
         "HQGH7874"
       ],
-      "items": [
-        3891,
-        6878
-      ]
+      "items": [3891, 6878]
     },
     "94AAERI6": {
       "key": "94AAERI6",
       "parent": "EUSGLXHE",
       "name": "C.3 Testanlagen",
       "collections": [],
-      "items": [
-        3845
-      ]
+      "items": [3845]
     },
     "GNRTFGXD": {
       "key": "GNRTFGXD",
       "parent": "EUSGLXHE",
       "name": "C.4.1 Digitalisierung",
-      "collections": [
-        "XZ9CDZN3",
-        "RIMW92FA",
-        "69C3ASTT",
-        "M45KLLTX"
-      ],
-      "items": [
-        2266,
-        2298,
-        3926,
-        5657,
-        5920,
-        9327,
-        9721,
-        10104,
-        10133,
-        10194
-      ]
+      "collections": ["XZ9CDZN3", "RIMW92FA", "69C3ASTT", "M45KLLTX"],
+      "items": [2266, 2298, 3926, 5657, 5920, 9327, 9721, 10104, 10133, 10194]
     },
     "XZ9CDZN3": {
       "key": "XZ9CDZN3",
       "parent": "GNRTFGXD",
       "name": "digital-twins",
       "collections": [],
-      "items": [
-        9600,
-        10102
-      ]
+      "items": [9600, 10102]
     },
     "RIMW92FA": {
       "key": "RIMW92FA",
@@ -652,9 +399,7 @@
       "parent": "GNRTFGXD",
       "name": "nfdi",
       "collections": [],
-      "items": [
-        10104
-      ]
+      "items": [10104]
     },
     "M45KLLTX": {
       "key": "M45KLLTX",
@@ -668,35 +413,21 @@
       "parent": "EUSGLXHE",
       "name": "C.4.2 Energiewende",
       "collections": [],
-      "items": [
-        2440,
-        2441,
-        5922,
-        5926,
-        9335,
-        9609,
-        9620
-      ]
+      "items": [2440, 2441, 5922, 5926, 9335, 9609, 9620]
     },
     "F3IP4PDR": {
       "key": "F3IP4PDR",
       "parent": "EUSGLXHE",
       "name": "C.4.3 Ultrakompakt",
       "collections": [],
-      "items": [
-        3849,
-        6007
-      ]
+      "items": [3849, 6007]
     },
     "HQGH7874": {
       "key": "HQGH7874",
       "parent": "EUSGLXHE",
       "name": "C.4.4 Magnettechnologie",
       "collections": [],
-      "items": [
-        2308,
-        3917
-      ]
+      "items": [2308, 3917]
     },
     "B9G357EA": {
       "key": "B9G357EA",
@@ -713,38 +444,21 @@
         "CJWM5W25",
         "9ZB4SZ6E"
       ],
-      "items": [
-        9341
-      ]
+      "items": [9341]
     },
     "GKV5GY5L": {
       "key": "GKV5GY5L",
       "parent": "B9G357EA",
       "name": "04-teaching",
       "collections": [],
-      "items": [
-        2303,
-        5892,
-        6011,
-        6875
-      ]
+      "items": [2303, 5892, 6011, 6875]
     },
     "2RTVU4ZZ": {
       "key": "2RTVU4ZZ",
       "parent": "B9G357EA",
       "name": "annual-reports",
       "collections": [],
-      "items": [
-        3915,
-        5902,
-        5904,
-        6884,
-        6886,
-        6888,
-        6893,
-        6896,
-        6898
-      ]
+      "items": [3915, 5902, 5904, 6884, 6886, 6888, 6893, 6896, 6898]
     },
     "GS49SBT4": {
       "key": "GS49SBT4",
@@ -752,18 +466,7 @@
       "name": "community-size-and-structure",
       "collections": [],
       "items": [
-        5717,
-        6865,
-        6996,
-        8142,
-        8149,
-        9323,
-        9329,
-        9330,
-        9331,
-        9332,
-        9333,
-        9334,
+        5717, 6865, 6996, 8142, 8149, 9323, 9329, 9330, 9331, 9332, 9333, 9334,
         9353
       ]
     },
@@ -773,25 +476,8 @@
       "name": "excellence",
       "collections": [],
       "items": [
-        5654,
-        5659,
-        5665,
-        5667,
-        5668,
-        5674,
-        5696,
-        5697,
-        5740,
-        5752,
-        6943,
-        6947,
-        6949,
-        6950,
-        6952,
-        6953,
-        6969,
-        6984,
-        9394
+        5654, 5659, 5665, 5667, 5668, 5674, 5696, 5697, 5740, 5752, 6943, 6947,
+        6949, 6950, 6952, 6953, 6969, 6984, 9394
       ]
     },
     "59A6DF5Z": {
@@ -805,37 +491,22 @@
       "key": "6PRXLAIM",
       "parent": "B9G357EA",
       "name": "projects",
-      "collections": [
-        "B5CAXGEL",
-        "Q5NLZRYP"
-      ],
-      "items": [
-        9749
-      ]
+      "collections": ["B5CAXGEL", "Q5NLZRYP"],
+      "items": [9749]
     },
     "B5CAXGEL": {
       "key": "B5CAXGEL",
       "parent": "6PRXLAIM",
       "name": "eu",
       "collections": [],
-      "items": [
-        10168,
-        10237,
-        10238,
-        10239,
-        10240,
-        10241,
-        10242
-      ]
+      "items": [10168, 10237, 10238, 10239, 10240, 10241, 10242]
     },
     "Q5NLZRYP": {
       "key": "Q5NLZRYP",
       "parent": "6PRXLAIM",
       "name": "germany",
       "collections": [],
-      "items": [
-        10325
-      ]
+      "items": [10325]
     },
     "B4WP7PU2": {
       "key": "B4WP7PU2",
@@ -843,22 +514,8 @@
       "name": "related-strategies",
       "collections": [],
       "items": [
-        2209,
-        3882,
-        5918,
-        5930,
-        5937,
-        5939,
-        5941,
-        5942,
-        5944,
-        5950,
-        6011,
-        6511,
-        6521,
-        9325,
-        9376,
-        9546
+        2209, 3882, 5918, 5930, 5937, 5939, 5941, 5942, 5944, 5950, 6011, 6511,
+        6521, 9325, 9376, 9546
       ]
     },
     "CJWM5W25": {
@@ -866,9 +523,7 @@
       "parent": "B9G357EA",
       "name": "research-agenda",
       "collections": [],
-      "items": [
-        9342
-      ]
+      "items": [9342]
     },
     "9ZB4SZ6E": {
       "key": "9ZB4SZ6E",
@@ -876,18 +531,7 @@
       "name": "swot-industry",
       "collections": [],
       "items": [
-        6836,
-        6932,
-        6933,
-        6935,
-        6939,
-        6950,
-        6999,
-        7031,
-        7033,
-        8035,
-        8036,
-        8037,
+        6836, 6932, 6933, 6935, 6939, 6950, 6999, 7031, 7033, 8035, 8036, 8037,
         8039
       ]
     },
@@ -896,47 +540,28 @@
       "parent": "",
       "name": "_used-meta",
       "collections": [],
-      "items": [
-        2265,
-        2266,
-        2267,
-        5372,
-        5391,
-        5457,
-        9371
-      ]
+      "items": [2265, 2266, 2267, 5372, 5391, 5457, 9371]
     },
     "6PS9QZ47": {
       "key": "6PS9QZ47",
       "parent": "",
       "name": "association-statutes",
       "collections": [],
-      "items": [
-        7006
-      ]
+      "items": [7006]
     },
     "PVNZ5YYM": {
       "key": "PVNZ5YYM",
       "parent": "",
       "name": "cas",
       "collections": [],
-      "items": [
-        6838,
-        6840,
-        6841,
-        8127
-      ]
+      "items": [6838, 6840, 6841, 8127]
     },
     "KGXKWK9R": {
       "key": "KGXKWK9R",
       "parent": "",
       "name": "einführungen",
       "collections": [],
-      "items": [
-        2202,
-        2218,
-        2288
-      ]
+      "items": [2202, 2218, 2288]
     },
     "HT522VV8": {
       "key": "HT522VV8",
@@ -952,22 +577,8 @@
         "AM6M9P5Q"
       ],
       "items": [
-        2124,
-        2196,
-        2200,
-        2201,
-        2209,
-        2226,
-        2227,
-        2257,
-        2320,
-        2341,
-        2342,
-        2352,
-        2353,
-        2354,
-        2355,
-        3759
+        2124, 2196, 2200, 2201, 2209, 2226, 2227, 2257, 2320, 2341, 2342, 2352,
+        2353, 2354, 2355, 3759
       ]
     },
     "G47E3M7X": {
@@ -975,61 +586,35 @@
       "parent": "HT522VV8",
       "name": "ams",
       "collections": [],
-      "items": [
-        2340,
-        2370,
-        2371
-      ]
+      "items": [2340, 2370, 2371]
     },
     "M7QQGSZ5": {
       "key": "M7QQGSZ5",
       "parent": "HT522VV8",
       "name": "industry",
       "collections": [],
-      "items": [
-        2164,
-        2443
-      ]
+      "items": [2164, 2443]
     },
     "A9C2UETT": {
       "key": "A9C2UETT",
       "parent": "HT522VV8",
       "name": "medicine",
       "collections": [],
-      "items": [
-        2199,
-        2208,
-        2210,
-        2211,
-        2212,
-        2213
-      ]
+      "items": [2199, 2208, 2210, 2211, 2212, 2213]
     },
     "U4PXHRFC": {
       "key": "U4PXHRFC",
       "parent": "HT522VV8",
       "name": "neutron-science",
       "collections": [],
-      "items": [
-        2224,
-        2307,
-        2341,
-        6024,
-        6026
-      ]
+      "items": [2224, 2307, 2341, 6024, 6026]
     },
     "P69D5WSA": {
       "key": "P69D5WSA",
       "parent": "HT522VV8",
       "name": "nuclear-physics",
       "collections": [],
-      "items": [
-        2133,
-        2160,
-        2365,
-        2368,
-        2422
-      ]
+      "items": [2133, 2160, 2365, 2368, 2422]
     },
     "AYUD7YJV": {
       "key": "AYUD7YJV",
@@ -1037,20 +622,8 @@
       "name": "particle-physics",
       "collections": [],
       "items": [
-        2165,
-        2166,
-        2167,
-        2168,
-        2185,
-        2191,
-        2192,
-        2193,
-        2194,
-        2295,
-        2339,
-        2357,
-        5455,
-        5871
+        2165, 2166, 2167, 2168, 2185, 2191, 2192, 2193, 2194, 2295, 2339, 2357,
+        5455, 5871
       ]
     },
     "AM6M9P5Q": {
@@ -1058,10 +631,7 @@
       "parent": "HT522VV8",
       "name": "photon-science",
       "collections": [],
-      "items": [
-        2146,
-        2306
-      ]
+      "items": [2146, 2306]
     },
     "9LMA7M95": {
       "key": "9LMA7M95",
@@ -1089,12 +659,7 @@
         "96EU578A",
         "S8BMRKXK"
       ],
-      "items": [
-        2162,
-        2327,
-        2338,
-        2347
-      ]
+      "items": [2162, 2327, 2338, 2347]
     },
     "LF5PSI2V": {
       "key": "LF5PSI2V",
@@ -1108,47 +673,35 @@
       "parent": "9LMA7M95",
       "name": "awake",
       "collections": [],
-      "items": [
-        6020
-      ]
+      "items": [6020]
     },
     "GFTSJJSB": {
       "key": "GFTSJJSB",
       "parent": "9LMA7M95",
       "name": "bessy",
       "collections": [],
-      "items": [
-        3934,
-        10294
-      ]
+      "items": [3934, 10294]
     },
     "CAGZPHJ8": {
       "key": "CAGZPHJ8",
       "parent": "9LMA7M95",
       "name": "clic",
       "collections": [],
-      "items": [
-        2189
-      ]
+      "items": [2189]
     },
     "9WCYRZ9F": {
       "key": "9WCYRZ9F",
       "parent": "9LMA7M95",
       "name": "cSTART",
       "collections": [],
-      "items": [
-        2145,
-        3874
-      ]
+      "items": [2145, 3874]
     },
     "SU2FAP3E": {
       "key": "SU2FAP3E",
       "parent": "9LMA7M95",
       "name": "delta",
       "collections": [],
-      "items": [
-        2328
-      ]
+      "items": [2328]
     },
     "G2FGQSVN": {
       "key": "G2FGQSVN",
@@ -1162,9 +715,7 @@
       "parent": "9LMA7M95",
       "name": "eupraxia",
       "collections": [],
-      "items": [
-        9548
-      ]
+      "items": [9548]
     },
     "SMHHXUJI": {
       "key": "SMHHXUJI",
@@ -1172,22 +723,8 @@
       "name": "fair-facility",
       "collections": [],
       "items": [
-        2085,
-        2086,
-        2133,
-        2136,
-        2139,
-        2161,
-        2163,
-        2331,
-        2332,
-        2427,
-        2428,
-        2429,
-        3811,
-        6058,
-        6060,
-        6061
+        2085, 2086, 2133, 2136, 2139, 2161, 2163, 2331, 2332, 2427, 2428, 2429,
+        3811, 6058, 6060, 6061
       ]
     },
     "B6PZ27FB": {
@@ -1195,152 +732,86 @@
       "parent": "9LMA7M95",
       "name": "fcc",
       "collections": [],
-      "items": [
-        2184,
-        2221,
-        2222,
-        2223
-      ]
+      "items": [2184, 2221, 2222, 2223]
     },
     "5WPCLDBQ": {
       "key": "5WPCLDBQ",
       "parent": "9LMA7M95",
       "name": "flash",
       "collections": [],
-      "items": [
-        2337
-      ]
+      "items": [2337]
     },
     "GYKKNSRE": {
       "key": "GYKKNSRE",
       "parent": "9LMA7M95",
       "name": "ilc",
       "collections": [],
-      "items": [
-        2186,
-        2198,
-        2203,
-        2204,
-        2205,
-        2206,
-        2207
-      ]
+      "items": [2186, 2198, 2203, 2204, 2205, 2206, 2207]
     },
     "H3GFUSDA": {
       "key": "H3GFUSDA",
       "parent": "9LMA7M95",
       "name": "jusparc",
       "collections": [],
-      "items": [
-        10260
-      ]
+      "items": [10260]
     },
     "VBGRY2HL": {
       "key": "VBGRY2HL",
       "parent": "9LMA7M95",
       "name": "kara",
       "collections": [],
-      "items": [
-        2132,
-        2144,
-        2150,
-        2329,
-        2364
-      ]
+      "items": [2132, 2144, 2150, 2329, 2364]
     },
     "NMMQSXGA": {
       "key": "NMMQSXGA",
       "parent": "9LMA7M95",
       "name": "lhc",
       "collections": [],
-      "items": [
-        2190,
-        2280,
-        2281,
-        2316,
-        2440,
-        6018,
-        6029
-      ]
+      "items": [2190, 2280, 2281, 2316, 2440, 6018, 6029]
     },
     "HRGJP684": {
       "key": "HRGJP684",
       "parent": "9LMA7M95",
       "name": "lux",
       "collections": [],
-      "items": [
-        3849
-      ]
+      "items": [3849]
     },
     "56SLNYXV": {
       "key": "56SLNYXV",
       "parent": "9LMA7M95",
       "name": "Mesa",
       "collections": [],
-      "items": [
-        3844
-      ]
+      "items": [3844]
     },
     "JQS5U395": {
       "key": "JQS5U395",
       "parent": "9LMA7M95",
       "name": "petra",
       "collections": [],
-      "items": [
-        2319,
-        2348,
-        2349,
-        5990,
-        5992
-      ]
+      "items": [2319, 2348, 2349, 5990, 5992]
     },
     "96EU578A": {
       "key": "96EU578A",
       "parent": "9LMA7M95",
       "name": "plasmed",
       "collections": [],
-      "items": [
-        3851
-      ]
+      "items": [3851]
     },
     "S8BMRKXK": {
       "key": "S8BMRKXK",
       "parent": "9LMA7M95",
       "name": "s-dalinac",
       "collections": [],
-      "items": [
-        2225,
-        6013
-      ]
+      "items": [2225, 6013]
     },
     "CXCB8QVS": {
       "key": "CXCB8QVS",
       "parent": "",
       "name": "history",
-      "collections": [
-        "GY8XD93G"
-      ],
+      "collections": ["GY8XD93G"],
       "items": [
-        2127,
-        2141,
-        2146,
-        2177,
-        2178,
-        2179,
-        2258,
-        2259,
-        2260,
-        2261,
-        2309,
-        2317,
-        2344,
-        2346,
-        2367,
-        2432,
-        2433,
-        2435,
-        2436,
-        5989
+        2127, 2141, 2146, 2177, 2178, 2179, 2258, 2259, 2260, 2261, 2309, 2317,
+        2344, 2346, 2367, 2432, 2433, 2435, 2436, 5989
       ]
     },
     "GY8XD93G": {
@@ -1354,18 +825,8 @@
       "key": "YNDTZCNT",
       "parent": "",
       "name": "kfb-input",
-      "collections": [
-        "FCUT5V3Q"
-      ],
-      "items": [
-        2087,
-        2088,
-        2091,
-        2423,
-        3773,
-        3774,
-        3775
-      ]
+      "collections": ["FCUT5V3Q"],
+      "items": [2087, 2088, 2091, 2423, 3773, 3774, 3775]
     },
     "FCUT5V3Q": {
       "key": "FCUT5V3Q",
@@ -1373,20 +834,8 @@
       "name": "kfb-strategie-workshop",
       "collections": [],
       "items": [
-        2157,
-        2214,
-        2215,
-        2216,
-        2217,
-        2236,
-        2237,
-        2238,
-        2239,
-        2240,
-        2241,
-        2242,
-        2243,
-        2274
+        2157, 2214, 2215, 2216, 2217, 2236, 2237, 2238, 2239, 2240, 2241, 2242,
+        2243, 2274
       ]
     },
     "Q9T38WKQ": {
@@ -1400,36 +849,21 @@
         "GPX8RBVH",
         "KE7XD8PS"
       ],
-      "items": [
-        10225,
-        10228,
-        10233,
-        10234,
-        10319
-      ]
+      "items": [10225, 10228, 10233, 10234, 10319]
     },
     "BCHKDYWX": {
       "key": "BCHKDYWX",
       "parent": "Q9T38WKQ",
       "name": "befideSH",
       "collections": [],
-      "items": [
-        10188,
-        10226
-      ]
+      "items": [10188, 10226]
     },
     "YSEC8WZM": {
       "key": "YSEC8WZM",
       "parent": "Q9T38WKQ",
       "name": "bfo",
       "collections": [],
-      "items": [
-        10103,
-        10131,
-        10185,
-        10191,
-        10194
-      ]
+      "items": [10103, 10131, 10185, 10191, 10194]
     },
     "GZ6ZMRUG": {
       "key": "GZ6ZMRUG",
@@ -1437,17 +871,7 @@
       "name": "inventory",
       "collections": [],
       "items": [
-        9618,
-        9619,
-        9635,
-        9652,
-        9656,
-        9720,
-        9741,
-        9753,
-        10101,
-        10108,
-        10133
+        9618, 9619, 9635, 9652, 9656, 9720, 9741, 9753, 10101, 10108, 10133
       ]
     },
     "GPX8RBVH": {
@@ -1455,59 +879,28 @@
       "parent": "Q9T38WKQ",
       "name": "physh",
       "collections": [],
-      "items": [
-        9452,
-        10174,
-        10200,
-        10201,
-        10204,
-        10210,
-        10212,
-        10218
-      ]
+      "items": [9452, 10174, 10200, 10201, 10204, 10210, 10212, 10218]
     },
     "KE7XD8PS": {
       "key": "KE7XD8PS",
       "parent": "Q9T38WKQ",
       "name": "techniques of accelerator reserach",
       "collections": [],
-      "items": [
-        2301,
-        3791,
-        3793,
-        3795,
-        9325,
-        9518
-      ]
+      "items": [2301, 3791, 3793, 3795, 9325, 9518]
     },
     "WRGHHJPZ": {
       "key": "WRGHHJPZ",
       "parent": "",
       "name": "people",
       "collections": [],
-      "items": [
-        2270,
-        2272,
-        2303,
-        2304,
-        2314,
-        5563
-      ]
+      "items": [2270, 2272, 2303, 2304, 2314, 5563]
     },
     "3BG2B2XU": {
       "key": "3BG2B2XU",
       "parent": "",
       "name": "pof",
       "collections": [],
-      "items": [
-        8131,
-        8132,
-        8133,
-        8136,
-        8137,
-        8138,
-        8141
-      ]
+      "items": [8131, 8132, 8133, 8136, 8137, 8138, 8141]
     },
     "RHPVAKEC": {
       "key": "RHPVAKEC",
@@ -1515,25 +908,8 @@
       "name": "policies",
       "collections": [],
       "items": [
-        2080,
-        2081,
-        2082,
-        2083,
-        2084,
-        2159,
-        2245,
-        2246,
-        2247,
-        2265,
-        2266,
-        2267,
-        2278,
-        2336,
-        2455,
-        2456,
-        3777,
-        3779,
-        5372
+        2080, 2081, 2082, 2083, 2084, 2159, 2245, 2246, 2247, 2265, 2266, 2267,
+        2278, 2336, 2455, 2456, 3777, 3779, 5372
       ]
     },
     "4GWA9WN4": {
@@ -1541,27 +917,14 @@
       "parent": "",
       "name": "progress",
       "collections": [],
-      "items": [
-        2201,
-        2275,
-        2276,
-        2292,
-        3761
-      ]
+      "items": [2201, 2275, 2276, 2292, 3761]
     },
     "XNVHTZXA": {
       "key": "XNVHTZXA",
       "parent": "",
       "name": "strategy-examples",
       "collections": [],
-      "items": [
-        2092,
-        2093,
-        2094,
-        2131,
-        2244,
-        2295
-      ]
+      "items": [2092, 2093, 2094, 2131, 2244, 2295]
     },
     "DGU7CZX9": {
       "key": "DGU7CZX9",
@@ -1581,21 +944,14 @@
       "parent": "DGU7CZX9",
       "name": "goals",
       "collections": [],
-      "items": [
-        2412,
-        2419,
-        6976,
-        6990
-      ]
+      "items": [2412, 2419, 6976, 6990]
     },
     "2JK2BX6H": {
       "key": "2JK2BX6H",
       "parent": "DGU7CZX9",
       "name": "kleines-fach",
       "collections": [],
-      "items": [
-        2195
-      ]
+      "items": [2195]
     },
     "XKLMPL5J": {
       "key": "XKLMPL5J",
@@ -1603,42 +959,9 @@
       "name": "participation",
       "collections": [],
       "items": [
-        2333,
-        2375,
-        2376,
-        2377,
-        2378,
-        2379,
-        2380,
-        2381,
-        2382,
-        2383,
-        2384,
-        2385,
-        2386,
-        2387,
-        2388,
-        2389,
-        2390,
-        2391,
-        2392,
-        2393,
-        2394,
-        2396,
-        2397,
-        2398,
-        2399,
-        2400,
-        2401,
-        2402,
-        2403,
-        2404,
-        2405,
-        2413,
-        2414,
-        2415,
-        2416,
-        2417
+        2333, 2375, 2376, 2377, 2378, 2379, 2380, 2381, 2382, 2383, 2384, 2385,
+        2386, 2387, 2388, 2389, 2390, 2391, 2392, 2393, 2394, 2396, 2397, 2398,
+        2399, 2400, 2401, 2402, 2403, 2404, 2405, 2413, 2414, 2415, 2416, 2417
       ]
     },
     "FMHETBMZ": {
@@ -1654,80 +977,44 @@
         "RTJNHI62",
         "JHY8CFDN"
       ],
-      "items": [
-        2434
-      ]
+      "items": [2434]
     },
     "A9G5QU38": {
       "key": "A9G5QU38",
       "parent": "FMHETBMZ",
       "name": "dla",
       "collections": [],
-      "items": [
-        2137,
-        2142,
-        2169,
-        2170,
-        2171,
-        2252,
-        2345,
-        6045,
-        6057
-      ]
+      "items": [2137, 2142, 2169, 2170, 2171, 2252, 2345, 6045, 6057]
     },
     "XYVY8HJN": {
       "key": "XYVY8HJN",
       "parent": "FMHETBMZ",
       "name": "dlsr",
       "collections": [],
-      "items": [
-        2156,
-        2258
-      ]
+      "items": [2156, 2258]
     },
     "DJCAWP7Q": {
       "key": "DJCAWP7Q",
       "parent": "FMHETBMZ",
       "name": "energy-efficiency",
       "collections": [],
-      "items": [
-        2441
-      ]
+      "items": [2441]
     },
     "ZGCNF4GB": {
       "key": "ZGCNF4GB",
       "parent": "FMHETBMZ",
       "name": "magnets",
       "collections": [],
-      "items": [
-        2296,
-        2297,
-        2311
-      ]
+      "items": [2296, 2297, 2311]
     },
     "SAQ4Z9XW": {
       "key": "SAQ4Z9XW",
       "parent": "FMHETBMZ",
       "name": "plasma-acceleration",
-      "collections": [
-        "VJK4MLE3",
-        "RWBEJUP9"
-      ],
+      "collections": ["VJK4MLE3", "RWBEJUP9"],
       "items": [
-        2143,
-        2173,
-        2180,
-        2181,
-        2183,
-        2188,
-        2244,
-        2256,
-        2430,
-        6016,
-        6017,
-        6040,
-        6517,
-        9356
+        2143, 2173, 2180, 2181, 2183, 2188, 2244, 2256, 2430, 6016, 6017, 6040,
+        6517, 9356
       ]
     },
     "VJK4MLE3": {
@@ -1735,42 +1022,28 @@
       "parent": "SAQ4Z9XW",
       "name": "laser-plasma",
       "collections": [],
-      "items": [
-        2174,
-        2182
-      ]
+      "items": [2174, 2182]
     },
     "RWBEJUP9": {
       "key": "RWBEJUP9",
       "parent": "SAQ4Z9XW",
       "name": "particle-plasma",
       "collections": [],
-      "items": [
-        2147,
-        2300
-      ]
+      "items": [2147, 2300]
     },
     "RTJNHI62": {
       "key": "RTJNHI62",
       "parent": "FMHETBMZ",
       "name": "superconductivity",
       "collections": [],
-      "items": [
-        2437,
-        2438,
-        2439,
-        5837
-      ]
+      "items": [2437, 2438, 2439, 5837]
     },
     "JHY8CFDN": {
       "key": "JHY8CFDN",
       "parent": "FMHETBMZ",
       "name": "technology",
       "collections": [],
-      "items": [
-        2230,
-        2249
-      ]
+      "items": [2230, 2249]
     },
     "SCAHQ5ES": {
       "key": "SCAHQ5ES",
@@ -1791,9 +1064,7 @@
       "charset": "",
       "filename": "lhc-project-report-751.pdf",
       "tags": [],
-      "collections": [
-        "NMMQSXGA"
-      ],
+      "collections": ["NMMQSXGA"],
       "relations": {},
       "dateAdded": "2022-03-16T07:17:10Z",
       "dateModified": "2024-03-19T00:58:36Z",
@@ -1815,9 +1086,7 @@
       "charset": "",
       "filename": "MOP07C.PDF",
       "tags": [],
-      "collections": [
-        "NMMQSXGA"
-      ],
+      "collections": ["NMMQSXGA"],
       "relations": {},
       "dateAdded": "2022-03-16T08:05:35Z",
       "dateModified": "2024-03-19T00:58:36Z",
@@ -1839,9 +1108,7 @@
       "charset": "",
       "filename": "FCCIS-P1-WP5-D5.1_Communication-strategy_V0100.pdf",
       "tags": [],
-      "collections": [
-        "I45CUZNP"
-      ],
+      "collections": ["I45CUZNP"],
       "relations": {},
       "dateAdded": "2022-11-16T03:10:13Z",
       "dateModified": "2024-03-19T00:58:35Z",
@@ -1863,9 +1130,7 @@
       "charset": "",
       "filename": "KfB_Strategie_2030.pdf",
       "tags": [],
-      "collections": [
-        "I45CUZNP"
-      ],
+      "collections": ["I45CUZNP"],
       "relations": {},
       "dateAdded": "2022-11-16T03:18:27Z",
       "dateModified": "2024-03-19T00:58:35Z",
@@ -1887,13 +1152,9 @@
       "charset": "",
       "filename": "Kurztexte_KfB_Strategie_2030.pdf",
       "tags": [],
-      "collections": [
-        "I45CUZNP"
-      ],
+      "collections": ["I45CUZNP"],
       "relations": {
-        "dc:relation": [
-          "http://zotero.org/groups/2427654/items/S3Y6DT7S"
-        ]
+        "dc:relation": ["http://zotero.org/groups/2427654/items/S3Y6DT7S"]
       },
       "dateAdded": "2022-11-16T03:18:27Z",
       "dateModified": "2024-03-19T00:58:36Z",
@@ -1915,9 +1176,7 @@
       "charset": "",
       "filename": "MT program POFIV V3 dirk-rathje.pptx",
       "tags": [],
-      "collections": [
-        "I45CUZNP"
-      ],
+      "collections": ["I45CUZNP"],
       "relations": {},
       "dateAdded": "2022-11-16T03:18:28Z",
       "dateModified": "2024-03-19T00:58:36Z",
@@ -1939,9 +1198,7 @@
       "charset": "",
       "filename": "PoF_IV_Proposal_RF_Matter_Overview_Vol._I_short.pdf",
       "tags": [],
-      "collections": [
-        "3BG2B2XU"
-      ],
+      "collections": ["3BG2B2XU"],
       "relations": {},
       "dateAdded": "2024-06-23T14:05:48Z",
       "dateModified": "2024-06-23T14:05:48Z",
@@ -1963,9 +1220,7 @@
       "charset": "",
       "filename": "TimelinesAcceleratorProjects.pdf",
       "tags": [],
-      "collections": [
-        "3BG2B2XU"
-      ],
+      "collections": ["3BG2B2XU"],
       "relations": {},
       "dateAdded": "2024-06-23T14:05:50Z",
       "dateModified": "2024-06-23T14:05:50Z",
@@ -1991,9 +1246,7 @@
           "tag": "#bf2035/stakeholder/research-institution/helmholtz-association/kit"
         }
       ],
-      "collections": [
-        "3BG2B2XU"
-      ],
+      "collections": ["3BG2B2XU"],
       "relations": {},
       "dateAdded": "2024-06-23T14:05:50Z",
       "dateModified": "2024-09-10T17:21:14Z",
@@ -2015,9 +1268,7 @@
       "charset": "",
       "filename": "PFI-IV-2021-2030.pdf",
       "tags": [],
-      "collections": [
-        "3BG2B2XU"
-      ],
+      "collections": ["3BG2B2XU"],
       "relations": {},
       "dateAdded": "2024-06-23T14:06:08Z",
       "dateModified": "2024-06-23T14:06:08Z",
@@ -2039,9 +1290,7 @@
       "charset": "",
       "filename": "KHuK-HGF-IBohnet-201210.pdf",
       "tags": [],
-      "collections": [
-        "3BG2B2XU"
-      ],
+      "collections": ["3BG2B2XU"],
       "relations": {},
       "dateAdded": "2024-06-23T14:09:00Z",
       "dateModified": "2024-06-23T14:09:00Z",
@@ -2063,9 +1312,7 @@
       "charset": "",
       "filename": "KfB_Strategie_Talententwicklung.pptx",
       "tags": [],
-      "collections": [
-        "I45CUZNP"
-      ],
+      "collections": ["I45CUZNP"],
       "relations": {},
       "dateAdded": "2024-06-23T14:22:49Z",
       "dateModified": "2024-06-23T14:22:49Z",
@@ -2089,9 +1336,7 @@
       "charset": "",
       "filename": "Particle Generators Accelerators.pdf",
       "tags": [],
-      "collections": [
-        "I45CUZNP"
-      ],
+      "collections": ["I45CUZNP"],
       "relations": {},
       "dateAdded": "2024-09-17T08:50:31Z",
       "dateModified": "2024-09-17T08:50:32Z",
@@ -2113,9 +1358,7 @@
       "charset": "",
       "filename": "desidoc.pdf",
       "tags": [],
-      "collections": [
-        "I45CUZNP"
-      ],
+      "collections": ["I45CUZNP"],
       "relations": {},
       "dateAdded": "2024-09-18T22:09:56Z",
       "dateModified": "2024-09-18T22:09:56Z",
@@ -2139,9 +1382,7 @@
       "charset": "",
       "filename": "RobertRyne_USPAS_Lectures.pdf",
       "tags": [],
-      "collections": [
-        "KE7XD8PS"
-      ],
+      "collections": ["KE7XD8PS"],
       "relations": {},
       "dateAdded": "2024-09-23T09:11:10Z",
       "dateModified": "2024-10-02T09:06:43Z",
@@ -5244,9 +4485,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/4UB43TCJ"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/4UB43TCJ"]
       },
       "dateAdded": "2022-08-25T06:03:59Z",
       "dateModified": "2024-04-02T05:00:06Z",
@@ -5258,9 +4497,7 @@
           "title": "Pre_2020_High-luminosity large hadron collider (HL-LHC): Technical design report.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/WBBB56E9"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/WBBB56E9"]
           },
           "dateAdded": "2022-08-25T06:15:01Z",
           "dateModified": "2024-03-17T07:33:12Z",
@@ -6025,9 +5262,7 @@
           "title": "adolphsen_barone_etal__2013__ilca.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/GKZHIER2"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/GKZHIER2"]
           },
           "dateAdded": "2020-03-02T18:25:40Z",
           "dateModified": "2022-06-18T04:37:18Z",
@@ -6341,9 +5576,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/GYB3ABDH"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/GYB3ABDH"]
       },
       "dateAdded": "2020-06-18T13:27:16Z",
       "dateModified": "2024-09-10T17:44:42Z",
@@ -6407,9 +5640,7 @@
           "title": "Pre_2019_Towards an Advanced Linear International Collider.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/JKWDYLVK"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/JKWDYLVK"]
           },
           "dateAdded": "2020-01-23T20:03:50Z",
           "dateModified": "2024-03-17T07:33:13Z",
@@ -6631,9 +5862,7 @@
           "title": "Pre_2020_10-Punkte-Plan zur Wissenschaftskommunikation.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/KQ4BPGSE"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/KQ4BPGSE"]
           },
           "dateAdded": "2023-07-02T09:38:14Z",
           "dateModified": "2024-03-19T00:51:49Z",
@@ -7160,9 +6389,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/PEFJEEKX"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/PEFJEEKX"]
       },
       "dateAdded": "2022-02-16T08:31:42Z",
       "dateModified": "2024-05-04T16:35:11Z",
@@ -7338,9 +6565,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/IQPRLJ8L"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/IQPRLJ8L"]
       },
       "dateAdded": "2024-10-10T13:24:52Z",
       "dateModified": "2024-10-29T05:03:38Z",
@@ -7707,9 +6932,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/EUD62BSP"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/EUD62BSP"]
       },
       "dateAdded": "2020-03-05T07:57:02Z",
       "dateModified": "2024-09-09T16:46:51Z",
@@ -7721,9 +6944,7 @@
           "title": "arnold_birkhan_etal__2020__first.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/LJUQNV63"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/LJUQNV63"]
           },
           "dateAdded": "2020-03-05T07:57:12Z",
           "dateModified": "2024-03-24T18:09:48Z",
@@ -9181,9 +8402,7 @@
           "title": "Pre__Strategies in Education, Outreach, and Inclusion to Enhance the Us Workforce in Accelerator Science and Engineering.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/6J6L3B9D"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/6J6L3B9D"]
           },
           "dateAdded": "2023-11-17T22:05:24Z",
           "dateModified": "2024-03-19T00:51:51Z",
@@ -9445,9 +8664,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/HUY7R9FV"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/HUY7R9FV"]
       },
       "dateAdded": "2020-06-22T08:46:41Z",
       "dateModified": "2024-11-08T07:41:45Z",
@@ -9524,9 +8741,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/96IZUMPH"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/96IZUMPH"]
       },
       "dateAdded": "2024-03-22T09:05:51Z",
       "dateModified": "2024-06-04T19:21:30Z",
@@ -11269,9 +10484,7 @@
           "title": "PDF",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/GRK8K57B"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/GRK8K57B"]
           },
           "dateAdded": "2022-05-04T04:45:19Z",
           "dateModified": "2024-10-29T05:19:29Z",
@@ -12132,9 +11345,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/Q2SD3CKI"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/Q2SD3CKI"]
       },
       "dateAdded": "2022-08-04T13:14:19Z",
       "dateModified": "2024-11-08T06:45:18Z",
@@ -12146,9 +11357,7 @@
           "title": "Book_2020_Accelerator Engineering and Technology.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/AFTJXEL9"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/AFTJXEL9"]
           },
           "dateAdded": "2022-08-04T13:14:27Z",
           "dateModified": "2024-11-08T06:45:18Z",
@@ -12186,9 +11395,7 @@
       ],
       "tags": [],
       "relations": {
-        "owl:sameAs": [
-          "http://zotero.org/groups/2661540/items/VR8HLYUJ"
-        ]
+        "owl:sameAs": ["http://zotero.org/groups/2661540/items/VR8HLYUJ"]
       },
       "dateAdded": "2023-01-29T09:52:28Z",
       "dateModified": "2024-03-19T12:47:27Z",
@@ -12200,9 +11407,7 @@
           "title": "Pre_2000_ELEGANT.pdf",
           "tags": [],
           "relations": {
-            "owl:sameAs": [
-              "http://zotero.org/groups/2661540/items/XT926WBY"
-            ]
+            "owl:sameAs": ["http://zotero.org/groups/2661540/items/XT926WBY"]
           },
           "dateAdded": "2023-01-29T09:52:28Z",
           "dateModified": "2024-03-19T00:51:53Z",
@@ -12308,9 +11513,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/ZJTEGZU3"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/ZJTEGZU3"]
       },
       "dateAdded": "2024-06-11T16:06:15Z",
       "dateModified": "2024-09-10T16:28:12Z",
@@ -12507,9 +11710,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/DN9ZYSHQ"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/DN9ZYSHQ"]
       },
       "dateAdded": "2020-06-30T07:57:25Z",
       "dateModified": "2024-09-17T08:35:26Z",
@@ -12769,9 +11970,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/8ME7NXXW"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/8ME7NXXW"]
       },
       "dateAdded": "2022-08-04T12:57:03Z",
       "dateModified": "2024-11-08T06:45:52Z",
@@ -12783,9 +11982,7 @@
           "title": "brugger_burkhardt_etal__2020__interactions.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/8GUQUWSS"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/8GUQUWSS"]
           },
           "dateAdded": "2022-08-04T12:57:06Z",
           "dateModified": "2024-11-08T06:45:52Z",
@@ -12994,9 +12191,7 @@
         }
       ],
       "relations": {
-        "owl:sameAs": [
-          "http://zotero.org/groups/5708775/items/ZRL7CK54"
-        ]
+        "owl:sameAs": ["http://zotero.org/groups/5708775/items/ZRL7CK54"]
       },
       "dateAdded": "2024-10-14T02:20:05Z",
       "dateModified": "2024-10-24T08:49:42Z",
@@ -13041,9 +12236,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/YDF5T6S8"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/YDF5T6S8"]
       },
       "dateAdded": "2022-02-17T11:49:45Z",
       "dateModified": "2024-03-19T00:58:07Z",
@@ -13586,9 +12779,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/SMBQI6CQ"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/SMBQI6CQ"]
       },
       "dateAdded": "2024-11-04T16:49:07Z",
       "dateModified": "2024-11-04T16:53:00Z",
@@ -13600,9 +12791,7 @@
           "title": "PDF",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/GAC4HENJ"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/GAC4HENJ"]
           },
           "dateAdded": "2024-11-04T16:52:32Z",
           "dateModified": "2024-11-04T16:53:00Z",
@@ -14403,9 +13592,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/NEWW6JKL"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/NEWW6JKL"]
       },
       "dateAdded": "2020-05-07T04:32:06Z",
       "dateModified": "2024-06-04T18:37:26Z",
@@ -14417,9 +13604,7 @@
           "title": "PAN_2014_Particle accelerators in modern world.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/CI8VZ97S"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/CI8VZ97S"]
           },
           "dateAdded": "2020-05-07T04:34:13Z",
           "dateModified": "2024-06-04T18:37:26Z",
@@ -15481,9 +14666,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/PBK8JCZP"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/PBK8JCZP"]
       },
       "dateAdded": "2024-11-03T18:33:07Z",
       "dateModified": "2024-11-04T15:05:17Z",
@@ -15495,9 +14678,7 @@
           "title": "Snapshot",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/DPCWXJH4"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/DPCWXJH4"]
           },
           "dateAdded": "2024-11-03T18:34:46Z",
           "dateModified": "2024-11-03T18:35:18Z",
@@ -16216,9 +15397,7 @@
           "title": "dornbusch_heimer__2017__evaluation.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/4QQBQWXX"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/4QQBQWXX"]
           },
           "dateAdded": "2020-03-08T09:26:13Z",
           "dateModified": "2024-06-20T05:52:15Z",
@@ -16352,9 +15531,7 @@
           "title": "Pre_2021_Helmholtz Photon Science Roadmap 2021.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/PVFL2IWT"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/PVFL2IWT"]
           },
           "dateAdded": "2022-11-24T13:23:05Z",
           "dateModified": "2024-03-19T00:52:01Z",
@@ -16479,9 +15656,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/TTFX3R9S"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/TTFX3R9S"]
       },
       "dateAdded": "2020-07-15T13:03:04Z",
       "dateModified": "2024-11-08T07:22:58Z",
@@ -18213,9 +17388,7 @@
           "title": "Pre_2005_Europäische Charta for Forscher.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/8CQ2LHPV"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/8CQ2LHPV"]
           },
           "dateAdded": "2024-03-17T22:09:18Z",
           "dateModified": "2024-03-19T00:51:59Z",
@@ -18513,9 +17686,7 @@
           "title": "Pre_2016_Science, research and innovation performance of the EU.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/FC8XT74J"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/FC8XT74J"]
           },
           "dateAdded": "2024-01-04T09:20:35Z",
           "dateModified": "2024-03-18T03:56:31Z",
@@ -19958,9 +19129,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/YDQ635H7"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/YDQ635H7"]
       },
       "dateAdded": "2020-07-03T09:45:32Z",
       "dateModified": "2024-10-02T09:15:04Z",
@@ -20270,9 +19439,7 @@
           "title": "Pre_2019_Helmholtz Doctoral Guidelines.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/DVYVM6HB"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/DVYVM6HB"]
           },
           "dateAdded": "2024-01-31T06:54:39Z",
           "dateModified": "2024-03-19T00:52:00Z",
@@ -20334,9 +19501,7 @@
           "title": "Pre_2023_Erfassung und Analyse bibliometrischer Indikatoren.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/39R7FF3P"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/39R7FF3P"]
           },
           "dateAdded": "2024-03-18T03:50:09Z",
           "dateModified": "2024-03-18T03:56:23Z",
@@ -22256,9 +21421,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/DYT9JMRU"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/DYT9JMRU"]
       },
       "dateAdded": "2020-06-14T15:09:33Z",
       "dateModified": "2024-09-10T17:20:35Z",
@@ -22957,9 +22120,7 @@
           "title": "Pre_2020_Helmholtz Guideline on Diversity and Inclusion.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/MYPB5GQ9"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/MYPB5GQ9"]
           },
           "dateAdded": "2024-01-31T06:52:39Z",
           "dateModified": "2024-03-19T00:52:01Z",
@@ -23010,9 +22171,7 @@
           "title": "PDF",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/NVI93XUF"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/NVI93XUF"]
           },
           "dateAdded": "2023-10-13T07:12:34Z",
           "dateModified": "2024-10-29T05:11:55Z",
@@ -23063,9 +22222,7 @@
           "title": "Pre_2018_Guidelines for the Postdoc Phase within the Helmholtz Association.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/7BRG98I5"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/7BRG98I5"]
           },
           "dateAdded": "2024-01-31T06:54:00Z",
           "dateModified": "2024-03-19T00:51:48Z",
@@ -23155,9 +22312,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/HFKRH5ER"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/HFKRH5ER"]
       },
       "dateAdded": "2022-08-04T12:56:42Z",
       "dateModified": "2024-11-08T06:45:53Z",
@@ -23825,9 +22980,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/J9MP4E8J"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/J9MP4E8J"]
       },
       "dateAdded": "2022-08-04T12:57:11Z",
       "dateModified": "2024-11-08T06:45:45Z",
@@ -23839,9 +22992,7 @@
           "title": "holzer_goddard_etal__2020__design.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/JXC4QAL5"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/JXC4QAL5"]
           },
           "dateAdded": "2022-08-04T12:57:16Z",
           "dateModified": "2024-11-08T06:45:45Z",
@@ -24051,9 +23202,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/6F8L7DQG"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/6F8L7DQG"]
       },
       "dateAdded": "2022-08-04T13:14:43Z",
       "dateModified": "2024-11-08T06:51:03Z",
@@ -24065,9 +23214,7 @@
           "title": "hubner_ivanov_etal__2020__largest.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/J6PHRW9L"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/J6PHRW9L"]
           },
           "dateAdded": "2022-08-04T13:14:47Z",
           "dateModified": "2024-11-08T06:51:03Z",
@@ -25659,9 +24806,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/KVQQJNNS"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/KVQQJNNS"]
       },
       "dateAdded": "2022-08-04T13:14:59Z",
       "dateModified": "2024-11-08T06:45:58Z",
@@ -25673,9 +24818,7 @@
           "title": "joshi_caldwell_etal__2020__outlook.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/5KIYMV9R"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/5KIYMV9R"]
           },
           "dateAdded": "2022-08-04T13:15:01Z",
           "dateModified": "2024-11-08T06:45:58Z",
@@ -25843,9 +24986,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/JEBMYP8S"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/JEBMYP8S"]
       },
       "dateAdded": "2024-10-06T16:17:42Z",
       "dateModified": "2024-11-08T09:41:36Z",
@@ -26739,9 +25880,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/FCUPC2IY"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/FCUPC2IY"]
       },
       "dateAdded": "2021-08-04T17:49:25Z",
       "dateModified": "2024-11-08T07:22:52Z",
@@ -27090,9 +26229,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/XJ3LXRTC"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/XJ3LXRTC"]
       },
       "dateAdded": "2020-06-19T06:00:36Z",
       "dateModified": "2024-03-18T04:18:41Z",
@@ -27418,9 +26555,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/8L5AMQS3"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/8L5AMQS3"]
       },
       "dateAdded": "2022-08-04T13:14:36Z",
       "dateModified": "2024-11-08T06:45:27Z",
@@ -27432,9 +26567,7 @@
           "title": "Book_2020_Accelerator Operations.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/PITUIKZG"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/PITUIKZG"]
           },
           "dateAdded": "2022-08-04T13:14:44Z",
           "dateModified": "2024-11-08T06:45:27Z",
@@ -27902,9 +27035,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/MI6T5XLX"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/MI6T5XLX"]
       },
       "dateAdded": "2024-09-19T19:08:58Z",
       "dateModified": "2024-11-08T06:56:31Z",
@@ -27953,9 +27084,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/3AKUQB75"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/3AKUQB75"]
       },
       "dateAdded": "2024-03-24T17:56:09Z",
       "dateModified": "2024-11-08T09:17:03Z",
@@ -29308,9 +28437,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/T4ARWWQS"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/T4ARWWQS"]
       },
       "dateAdded": "2022-08-04T12:56:52Z",
       "dateModified": "2024-11-08T06:45:48Z",
@@ -29322,9 +28449,7 @@
           "title": "metral_rumolo_etal__2020__impedance.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/TAGAZZF4"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/TAGAZZF4"]
           },
           "dateAdded": "2022-08-04T12:56:58Z",
           "dateModified": "2024-11-08T06:45:48Z",
@@ -29493,9 +28618,7 @@
           "title": "S_2016_Assessing the effects of the German Excellence Initiative with bibliometric methods.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/N2A483LE"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/N2A483LE"]
           },
           "dateAdded": "2024-01-04T09:16:18Z",
           "dateModified": "2024-03-18T03:56:33Z",
@@ -29540,9 +28663,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/47KT4TWN"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/47KT4TWN"]
       },
       "dateAdded": "2024-06-11T16:10:08Z",
       "dateModified": "2024-06-20T05:50:05Z",
@@ -29593,9 +28714,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/2Y5UESUH"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/2Y5UESUH"]
       },
       "dateAdded": "2020-06-19T06:12:30Z",
       "dateModified": "2024-03-19T00:58:23Z",
@@ -29862,9 +28981,7 @@
         }
       ],
       "relations": {
-        "dc:relation": [
-          "http://zotero.org/groups/2427654/items/2D9QH5N4"
-        ]
+        "dc:relation": ["http://zotero.org/groups/2427654/items/2D9QH5N4"]
       },
       "dateAdded": "2020-04-27T08:21:04Z",
       "dateModified": "2024-03-19T00:58:23Z",
@@ -31099,9 +30216,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/HQ7A77ZM"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/HQ7A77ZM"]
       },
       "dateAdded": "2020-06-14T15:09:30Z",
       "dateModified": "2024-03-24T18:20:09Z",
@@ -32145,9 +31260,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/IYEHEY32"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/IYEHEY32"]
       },
       "dateAdded": "2020-06-30T08:00:29Z",
       "dateModified": "2024-10-02T08:50:02Z",
@@ -33309,9 +32422,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/Z6GNLUX4"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/Z6GNLUX4"]
       },
       "dateAdded": "2024-10-06T04:08:19Z",
       "dateModified": "2024-11-08T09:41:44Z",
@@ -33637,9 +32748,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/6G9GQBCK"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/6G9GQBCK"]
       },
       "dateAdded": "2022-08-10T01:00:39Z",
       "dateModified": "2024-09-10T12:11:45Z",
@@ -33965,9 +33074,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/NFMCCHLF"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/NFMCCHLF"]
       },
       "dateAdded": "2020-06-21T17:08:27Z",
       "dateModified": "2024-03-19T00:58:27Z",
@@ -34828,9 +33935,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/NNI8GWR8"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/NNI8GWR8"]
       },
       "dateAdded": "2020-06-12T07:32:13Z",
       "dateModified": "2024-03-31T11:07:41Z",
@@ -35178,9 +34283,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/C7J8BL5Z"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/C7J8BL5Z"]
       },
       "dateAdded": "2021-01-21T07:21:12Z",
       "dateModified": "2024-03-18T04:18:49Z",
@@ -35902,9 +35005,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/6YUHJSKU"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/6YUHJSKU"]
       },
       "dateAdded": "2020-06-19T06:07:47Z",
       "dateModified": "2024-03-19T00:58:28Z",
@@ -36037,9 +35138,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/VL7NELKS"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/VL7NELKS"]
       },
       "dateAdded": "2022-08-04T12:57:22Z",
       "dateModified": "2024-11-08T06:45:43Z",
@@ -36051,9 +35150,7 @@
           "title": "seeman_schulte_etal__2020__design.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/MMP4PJPG"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/MMP4PJPG"]
           },
           "dateAdded": "2022-08-04T12:57:24Z",
           "dateModified": "2024-11-08T06:45:43Z",
@@ -36593,9 +35690,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/YJ8I78HC"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/YJ8I78HC"]
       },
       "dateAdded": "2024-06-26T13:08:03Z",
       "dateModified": "2024-10-12T02:59:15Z",
@@ -36624,9 +35719,7 @@
           "title": "Shinde - 2024 - Experimental and Computational Techniques in Accelerator Physics.pdf",
           "tags": [],
           "relations": {
-            "dc:replaces": [
-              "http://zotero.org/groups/2427654/items/NGAZ4CCM"
-            ]
+            "dc:replaces": ["http://zotero.org/groups/2427654/items/NGAZ4CCM"]
           },
           "dateAdded": "2024-06-26T13:08:10Z",
           "dateModified": "2024-10-02T09:00:27Z",
@@ -37622,9 +36715,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/PTDK779W"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/PTDK779W"]
       },
       "dateAdded": "2020-07-15T13:00:10Z",
       "dateModified": "2024-03-19T00:58:31Z",
@@ -38016,9 +37107,7 @@
         }
       ],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/WEN8IKZF"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/WEN8IKZF"]
       },
       "dateAdded": "2024-06-26T12:27:42Z",
       "dateModified": "2024-11-08T07:18:57Z",
@@ -39116,9 +38205,7 @@
           "title": "Pre_2019_Supporting note for briefing book 2020: Towards an update of the European Strategy for Particle Physics.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/AXVFP9EX"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/AXVFP9EX"]
           },
           "dateAdded": "2020-06-10T06:53:09Z",
           "dateModified": "2024-03-17T07:33:15Z",
@@ -39490,9 +38577,7 @@
           "title": "Pre_2022_Accelerator R&D Roadmap.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/H6AKIVMZ"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/H6AKIVMZ"]
           },
           "dateAdded": "2023-06-27T09:09:38Z",
           "dateModified": "2024-03-19T00:51:55Z",
@@ -39532,9 +38617,7 @@
       ],
       "tags": [],
       "relations": {
-        "dc:replaces": [
-          "http://zotero.org/groups/2427654/items/C35CVYVZ"
-        ]
+        "dc:replaces": ["http://zotero.org/groups/2427654/items/C35CVYVZ"]
       },
       "dateAdded": "2024-03-19T01:10:40Z",
       "dateModified": "2024-03-19T01:12:53Z",
@@ -69154,9 +68237,7 @@
           "title": "Pre_2021_2021-06-04 PW ERL Applications.pdf.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/6XBRKGYU"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/6XBRKGYU"]
           },
           "dateAdded": "2024-03-17T10:32:57Z",
           "dateModified": "2024-03-19T00:51:48Z",
@@ -69961,9 +69042,7 @@
           "title": "Pre__Accelerator physics and technology challenges for the XXIst century.pdf",
           "tags": [],
           "relations": {
-            "dc:relation": [
-              "http://zotero.org/groups/2427654/items/JFPBEIWZ"
-            ]
+            "dc:relation": ["http://zotero.org/groups/2427654/items/JFPBEIWZ"]
           },
           "dateAdded": "2022-11-16T03:11:02Z",
           "dateModified": "2024-03-19T00:52:12Z",

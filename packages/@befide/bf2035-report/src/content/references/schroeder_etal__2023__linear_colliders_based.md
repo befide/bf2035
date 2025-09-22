@@ -68,15 +68,15 @@ cslItem:
   DOI: 10.1088/1748-0221/18/06/T06001
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 6
         - 1
-  keyword: ""
+  keyword: ''
   page: T06001
   source: ResearchGate
   title: Linear colliders based on laser-plasma accelerators
   type: article-journal
-  volume: "18"
+  volume: '18'
 tags: []
 rendered:
   bibliography: |-

@@ -8,7 +8,7 @@ cslItem:
   citation-key: hutton__2021__report_erl_roadmap
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 7
         - 9
   keyword: >-

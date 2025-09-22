@@ -1,12 +1,12 @@
-import { CONTINUE, visit } from "unist-util-visit";
-import type { Plugin } from "unified";
-import type { Element, Root } from "hast";
+import { CONTINUE, visit } from "unist-util-visit"
+import type { Plugin } from "unified"
+import type { Element, Root } from "hast"
 
 const visitor = (node: any) => {
-  const dataLanguageMermaid = "mermaid";
-  const typeElement = "element";
-  const tagNamePre = "pre";
-  const classMermaid = dataLanguageMermaid;
+  const dataLanguageMermaid = "mermaid"
+  const typeElement = "element"
+  const tagNamePre = "pre"
+  const classMermaid = dataLanguageMermaid
 
   const isPreElement = (node: any) =>
     typeof node.type !== undefined &&
@@ -14,21 +14,21 @@ const visitor = (node: any) => {
     node.tagName !== undefined &&
     node.tagName === tagNamePre &&
     node.properties !== undefined &&
-    node.properties.dataLanguage === dataLanguageMermaid;
+    node.properties.dataLanguage === dataLanguageMermaid
 
   if (!isPreElement(node)) {
-    return CONTINUE;
+    return CONTINUE
   }
 
-  const element = node as Element;
-  const properties = element.properties;
-  const className = properties.className as Array<string>;
-  properties.className = [...className, classMermaid];
+  const element = node as Element
+  const properties = element.properties
+  const className = properties.className as Array<string>
+  properties.className = [...className, classMermaid]
 
-  return CONTINUE;
-};
+  return CONTINUE
+}
 
 const addMermaidClass: Plugin<void[], Root> = () => (ast: Root) =>
-  visit(ast, visitor);
+  visit(ast, visitor)
 
-export default addMermaidClass;
+export default addMermaidClass

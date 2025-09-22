@@ -62,7 +62,7 @@ cslItem:
   ISBN: 978-91-980173-0-4
   issued:
     date-parts:
-      - - "2012"
+      - - '2012'
         - 2
         - 6
   keyword: >-

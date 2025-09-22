@@ -44,8 +44,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2023"
-  keyword: "#university/tu-darmstadt"
+      - - '2023'
+  keyword: '#university/tu-darmstadt'
   language: en
   page: ix, 147 Seiten
   publisher: Technische Universität Darmstadt
@@ -53,7 +53,7 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/139055/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

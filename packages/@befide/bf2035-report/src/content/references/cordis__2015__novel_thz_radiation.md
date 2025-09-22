@@ -9,7 +9,7 @@ cslItem:
     probe the molecular and atomic properties of matter, and...
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 3
   author:
@@ -18,7 +18,7 @@ cslItem:
   genre: CORDIS Project Fact Sheet
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
   keyword: >-
     #bf2035/funding/eu/horizon-2020;#bf2035/accelerating-technique/cavity-based/cavity-based_terahertz-driven_acceleration/
   language: en

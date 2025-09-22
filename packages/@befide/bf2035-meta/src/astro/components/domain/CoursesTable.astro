@@ -11,11 +11,16 @@ interface Props {
 let { universityId } = Astro.props
 
 const isBachelorCourse = (course: CollectionEntry<"courses">) =>
-  course.data.addressesProgrammeOfStudyLevels?.find((d) => d.id.indexOf("bachelor") > -1)
+  course.data.addressesProgrammeOfStudyLevels?.find(
+    (d) => d.id.indexOf("bachelor") > -1
+  )
 const isMasterCourse = (course: CollectionEntry<"courses">) =>
-  course.data.addressesProgrammeOfStudyLevels?.find((d) => d.id.indexOf("master") > -1)
+  course.data.addressesProgrammeOfStudyLevels?.find(
+    (d) => d.id.indexOf("master") > -1
+  )
 
-const university = universityId && (await getEntry("organizations", universityId))
+const university =
+  universityId && (await getEntry("organizations", universityId))
 const universityLabel = university && university.data.label.short.en
 
 const courses = await getCourses(universityId)
@@ -30,7 +35,8 @@ const getUniversity = async (course: CollectionEntry<"courses">) => {
 
 <section>
   <p>
-    Per academic year, {universityLabel} offers {courses.length} courses related to accelerator research of which
+    Per academic year, {universityLabel} offers {courses.length} courses related
+    to accelerator research of which
     {!bachelorCourses.length && <span>all addresses bachelor students.</span>}
     anf
     {!masterCourses.length && <span>all addresses master students.</span>}
@@ -50,18 +56,37 @@ const getUniversity = async (course: CollectionEntry<"courses">) => {
       {
         courses.map(async (course) => (
           <tr>
-            {!universityId && <td class="nowrap">{(await getUniversity(course))?.data.label.short.en}</td>}
+            {!universityId && (
+              <td class="nowrap">
+                {(await getUniversity(course))?.data.label.short.en}
+              </td>
+            )}
             <td>{course.data.semester}</td>
             <td>{course.data.language}</td>
             <td>
               {course.data.isInstanceOfTeachingEvent &&
-                (await getEntry(course.data.isInstanceOfTeachingEvent)).data.term.en}
+                (await getEntry(course.data.isInstanceOfTeachingEvent)).data
+                  .term.en}
             </td>
             <td>
               {" "}
               <div class="course__badges">
-                {isBachelorCourse(course) && <Badge alt="Bachelor Program" prefix="" text="Bachelor" size="small" />}
-                {isMasterCourse(course) && <Badge alt="Bachelor Program" prefix="" text="Master" size="small" />}
+                {isBachelorCourse(course) && (
+                  <Badge
+                    alt="Bachelor Program"
+                    prefix=""
+                    text="Bachelor"
+                    size="small"
+                  />
+                )}
+                {isMasterCourse(course) && (
+                  <Badge
+                    alt="Bachelor Program"
+                    prefix=""
+                    text="Master"
+                    size="small"
+                  />
+                )}
               </div>
             </td>
             <td>

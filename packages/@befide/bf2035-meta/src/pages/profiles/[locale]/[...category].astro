@@ -13,13 +13,18 @@ import fastCartesian from "fast-cartesian"
 import OrganizationCard from "@/astro/components/domain/OrganizationCard.astro"
 
 export async function getStaticPaths(): Promise<any> {
-  const organizationCategories = [...(await getOrganizationCategories()), undefined]
+  const organizationCategories = [
+    ...(await getOrganizationCategories()),
+    undefined,
+  ]
   const locales = ["en", "de"]
 
-  return fastCartesian([organizationCategories, locales]).map(([category, locale]) => ({
-    params: { category, locale },
-    props: { category },
-  }))
+  return fastCartesian([organizationCategories, locales]).map(
+    ([category, locale]) => ({
+      params: { category, locale },
+      props: { category },
+    })
+  )
 }
 const { category } = Astro.props
 const organizations = (await allCommunityTopLevelOrganizations()).filter(
@@ -29,8 +34,9 @@ const organizations = (await allCommunityTopLevelOrganizations()).filter(
 
 <StarlightPage frontmatter={{ title: "Profiles Index" }}>
   <p>
-    This page lists all scientific institutions in Germany or, in the case of significant German
-    funding, abroad, where accelerator research is carried out.
+    This page lists all scientific institutions in Germany or, in the case of
+    significant German funding, abroad, where accelerator research is carried
+    out.
   </p>
   <div id="organization-category-filter-holder">
     <ul>
@@ -50,7 +56,11 @@ const organizations = (await allCommunityTopLevelOrganizations()).filter(
   </div>
   <div id="list-holder">
     <div class="card-grid">
-      {organizations.map((organization) => <OrganizationCard organization={organization.data} />)}
+      {
+        organizations.map((organization) => (
+          <OrganizationCard organization={organization.data} />
+        ))
+      }
     </div>
   </div>
 </StarlightPage>

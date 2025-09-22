@@ -4,7 +4,7 @@ cslItem:
   id: boltz__2021__microbunching_control_electron
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 11
         - 3
   author:
@@ -16,21 +16,21 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#university/kit;#gender/male"
+      - - '2021'
+  keyword: '#university/kit;#gender/male'
   language: en
   note: |-
     university-catalog-url: https://publikationen.bibliothek.kit.edu/1000140271
     fulltext-url: https://d-nb.info/1247109976/34
-  number-of-pages: "152"
+  number-of-pages: '152'
   publisher: Karlsruhe Institute of Technology
   publisher-place: Karlsruhe
   title: Micro-Bunching Control at Electron Storage Rings with Reinforcement Learning
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000140271
 tags:
-  - "#university/kit"
-  - "#gender/male"
+  - '#university/kit'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

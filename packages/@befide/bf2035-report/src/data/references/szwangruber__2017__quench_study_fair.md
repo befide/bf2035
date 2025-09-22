@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#university/tu-darmstadt;#gender/male"
+      - - '2017'
+  keyword: '#university/tu-darmstadt;#gender/male'
   language: en
   publisher: Technische Universität Darmstadt
   title: Quench study for FAIR magnets
   type: thesis
   URL: https://tuprints.ulb.TU-Darmstadt.de/id/eprint/7207
 tags:
-  - "#university/tu-darmstadt"
-  - "#gender/male"
+  - '#university/tu-darmstadt'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

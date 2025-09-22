@@ -4,7 +4,7 @@ cslItem:
   id: doeacceleratorbeamphysicsroadmapworkshop__2023__accelerator_beam_physics
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 22
   author:
@@ -12,9 +12,9 @@ cslItem:
   citation-key: doeacceleratorbeamphysicsroadmapworkshop__2023__accelerator_beam_physics
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 2
-  keyword: "#bf2035/stakeholder/funder/doe"
+  keyword: '#bf2035/stakeholder/funder/doe'
   title: Accelerator Beam Physics Research Roadmap
   type: report
   URL: https://science.osti.gov/hep/-/media/hep/pdf/2022/ABP_Roadmap_2023_final.pdf

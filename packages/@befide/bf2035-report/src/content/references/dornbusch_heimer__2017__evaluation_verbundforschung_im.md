@@ -10,10 +10,10 @@ cslItem:
   citation-key: dornbusch_heimer__2017__evaluation_verbundforschung_im
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#bf2035/issue/verbundforschung"
+      - - '2017'
+  keyword: '#bf2035/issue/verbundforschung'
   language: en
-  page: "62"
+  page: '62'
   publisher: Fraunhofer
   title: >-
     Evaluation der Verbundforschung im Bereich der „Naturwissenschaftlichen

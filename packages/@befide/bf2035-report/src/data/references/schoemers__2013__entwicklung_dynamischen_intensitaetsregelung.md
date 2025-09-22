@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#gender/male;#university/uni-frankfurt"
+      - - '2013'
+  keyword: '#gender/male;#university/uni-frankfurt'
   language: de
   publisher: Goethe-Universität Frankfurt am Main
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: http://publikationen.ub.uni-frankfurt.de/frontdoor/index/index/docId/32653
 tags:
-  - "#gender/male"
-  - "#university/uni-frankfurt"
+  - '#gender/male'
+  - '#university/uni-frankfurt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

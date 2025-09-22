@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2018"
-  keyword: "#gender/male;#university/tu-darmstadt"
+      - - '2018'
+  keyword: '#gender/male;#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: Space-charge driven transverse beam instabilities in synchrotrons
   type: thesis
   URL: http://tuprints.ulb.TU-Darmstadt.de/8215/
 tags:
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

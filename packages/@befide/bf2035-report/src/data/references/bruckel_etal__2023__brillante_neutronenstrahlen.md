@@ -11,16 +11,16 @@ cslItem:
   citation-key: bruckel_etal__2023__brillante_neutronenstrahlen
   container-title: Physik Journal
   ISSN: 1617-9439
-  issue: "5"
+  issue: '5'
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
   keyword: >-
     #bf2035/accelerator-based-facility/hbs;#bf2035/accelerator-based-facility-type/neutron-source/compact-accelerator-based-neutron-source;#bf2035/application/science/neutron-science
   language: en
   title: Brillante Neutronenstrahlen
   type: article-magazine
-  volume: "2023"
+  volume: '2023'
 tags:
   - bf2035:accelerator-based-facility/hbs
   - >-

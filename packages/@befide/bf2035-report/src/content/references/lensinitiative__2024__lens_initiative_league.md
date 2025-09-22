@@ -4,7 +4,7 @@ cslItem:
   id: lensinitiative__2024__lens_initiative_league
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 24
   author:
@@ -12,8 +12,8 @@ cslItem:
   citation-key: lensinitiative__2024__lens_initiative_league
   issued:
     date-parts:
-      - - "2024"
-  keyword: "#bf2035/stakeholder/lens;#bf2035/application/science/neutron-science"
+      - - '2024'
+  keyword: '#bf2035/stakeholder/lens;#bf2035/application/science/neutron-science'
   language: en
   title: LENS Initiative – League of advanced European Neutron Sources
   type: webpage

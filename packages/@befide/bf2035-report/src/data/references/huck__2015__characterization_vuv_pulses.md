@@ -34,8 +34,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2015"
-  keyword: "#university/tu-dortmund"
+      - - '2015'
+  keyword: '#university/tu-dortmund'
   language: en
   note: >-
     university-catalog-url: https://eldorado.tu-dortmund.de/handle/2003/33920
@@ -49,7 +49,7 @@ cslItem:
   type: thesis
   URL: https://eldorado.tu-dortmund.de/handle/2003/33920
 tags:
-  - "#university/tu-dortmund"
+  - '#university/tu-dortmund'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

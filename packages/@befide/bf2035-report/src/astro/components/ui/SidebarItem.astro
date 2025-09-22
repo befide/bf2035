@@ -1,12 +1,12 @@
 ---
-import { getPath } from '@utils/getSections'
-import type { SectionTreeNode } from '@utils/getSections'
+import { getPath } from '@utils/getSections';
+import type { SectionTreeNode } from '@utils/getSections';
 
 export type Props = {
-  node: SectionTreeNode
-}
+  node: SectionTreeNode;
+};
 
-const { node } = Astro.props
+const { node } = Astro.props;
 ---
 
 <li class={`sidebar-item depth-${node.depth}`} data-path={node.data?.id}>

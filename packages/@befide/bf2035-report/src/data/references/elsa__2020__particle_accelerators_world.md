@@ -4,7 +4,7 @@ cslItem:
   id: elsa__2020__particle_accelerators_world
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 6
         - 19
   author:
@@ -12,8 +12,8 @@ cslItem:
   citation-key: elsa__2020__particle_accelerators_world
   issued:
     date-parts:
-      - - "2020"
-  keyword: ""
+      - - '2020'
+  keyword: ''
   language: en
   title: Particle accelerators around the world
   type: webpage

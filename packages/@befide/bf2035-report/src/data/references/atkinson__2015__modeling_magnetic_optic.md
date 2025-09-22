@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2015"
-  keyword: "#gender/male;#university/hu-berlin"
+      - - '2015'
+  keyword: '#gender/male;#university/hu-berlin'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.18452/17300
 tags:
-  - "#gender/male"
-  - "#university/hu-berlin"
+  - '#gender/male'
+  - '#university/hu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -8,7 +8,7 @@ cslItem:
      European Open Science Cloud. Open Access. Open Data. Open Science
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 11
   author:
@@ -16,7 +16,7 @@ cslItem:
   citation-key: openaire____openaire
   container-title: OpenAIRE
   genre: Homepage
-  keyword: ""
+  keyword: ''
   language: en
   title: OpenAIRE
   type: webpage

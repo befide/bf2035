@@ -17,10 +17,10 @@ cslItem:
   genre: General-purpose open repository
   issued:
     date-parts:
-      - - "2024"
-  keyword: "#bf2035/issue/digital-transformation/fair"
+      - - '2024'
+  keyword: '#bf2035/issue/digital-transformation/fair'
   language: en
-  note: "orig-date: 2013"
+  note: 'orig-date: 2013'
   title: Zenodo-Homepage
   type: webpage
   URL: https://www.zenodo.org/

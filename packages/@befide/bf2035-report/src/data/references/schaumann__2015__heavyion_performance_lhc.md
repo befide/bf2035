@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2015"
-  keyword: "#university/rwth-aachen;#facility/lhc"
+      - - '2015'
+  keyword: '#university/rwth-aachen;#facility/lhc'
   language: en
   publisher: Rheinisch-Westfälische Technische Hochschule Aachen
   title: Heavy-ion performance of the LHC and future colliders
   type: thesis
   URL: http://cds.cern.ch/record/2065692?ln=en
 tags:
-  - "#university/rwth-aachen"
-  - "#facility/lhc"
+  - '#university/rwth-aachen'
+  - '#facility/lhc'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

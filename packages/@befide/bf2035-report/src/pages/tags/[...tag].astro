@@ -19,6 +19,4 @@ const { section } = Astro.props;
 const { title, sectionType, language = 'de' } = section.data;
 ---
 
-<Page lang={language || 'de'} {title}>
-  
-</Page>
+<Page lang={language || 'de'} {title} />

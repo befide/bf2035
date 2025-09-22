@@ -9,7 +9,7 @@ cslItem:
     ability to deliver a sufficient dose of radiation to...
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 3
   author:
@@ -18,8 +18,8 @@ cslItem:
   genre: CORDIS Project Description
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/funding/eu/horizon-2020;#bf2035/application/health"
+      - - '2022'
+  keyword: '#bf2035/funding/eu/horizon-2020;#bf2035/application/health'
   language: en
   title: >-
     Fact Sheet HORIZON: Very High Energy Electrons Beam for Radiotherapy |

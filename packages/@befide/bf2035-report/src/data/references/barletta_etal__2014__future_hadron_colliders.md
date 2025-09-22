@@ -4,7 +4,7 @@ cslItem:
   id: barletta_etal__2014__future_hadron_colliders
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 6
         - 18
   author:
@@ -30,21 +30,21 @@ cslItem:
     Nuclear Instruments and Methods in Physics Research Section A: Accelerators,
     Spectrometers, Detectors and Associated Equipment
   DOI: 10.1016/j.nima.2014.07.010
-  ISSN: "01689002"
+  ISSN: '01689002'
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 11
-  keyword: "#bf2035/accelerator-based-facility-type/particle-collider"
+  keyword: '#bf2035/accelerator-based-facility-type/particle-collider'
   language: en-US
   note: 27 citations (Crossref) [2022-06-18]
   page: 352-368
   source: DOI.org (Crossref)
-  title: "Future hadron colliders: From physics perspectives to technology R&D"
+  title: 'Future hadron colliders: From physics perspectives to technology R&D'
   title-short: Future hadron colliders
   type: article-journal
   URL: https://linkinghub.elsevier.com/retrieve/pii/S0168900214008523
-  volume: "764"
+  volume: '764'
 tags:
   - bf2035:accelerator-based-facility-type/particle-collider
 rendered:

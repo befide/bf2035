@@ -7,10 +7,10 @@ cslItem:
   citation-key: americanphysicalsociety__2022__physical_review_search
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 7
         - 13
-  keyword: "#bf2035/issue/excellence"
+  keyword: '#bf2035/issue/excellence'
   title: Physical Review Search
   type: dataset
   URL: https://journals.aps.org/search/results?journal=prstab&journal=prab

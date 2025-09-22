@@ -37,8 +37,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2020"
-  keyword: "#university/tu-darmstadt"
+      - - '2020'
+  keyword: '#university/tu-darmstadt'
   language: en
   page: xi, 149 Seiten
   publisher: Technische Universität Darmstadt
@@ -48,7 +48,7 @@ cslItem:
   type: thesis
   URL: http://tubiblio.ulb.tu-darmstadt.de/124367/
 tags:
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

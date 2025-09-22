@@ -95,7 +95,7 @@ const xAxis = (g: any) =>
       axisBottom(x)
         .tickValues([1925, 1925, 1950, 1975, 2000, 2025])
         .tickSize(0)
-        .tickFormat(format('.0f'))
+        .tickFormat(format('.0f')),
     )
     .call((g: any) => g.selectAll('.domain').remove());
 
@@ -108,8 +108,8 @@ const yAxis =
               .tickSize(width)
               .ticks(5)
               .tickFormat(
-                (chartMeta && chartMeta.numberFormat) || format(',.0f')
-              )
+                (chartMeta && chartMeta.numberFormat) || format(',.0f'),
+              ),
           )
           .call((g: any) => g.selectAll('.domain').remove())
           .call((g: any) => {
@@ -159,7 +159,7 @@ svg
 svg
   .append('style')
   .text(
-    "@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');"
+    "@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');",
   );
 
 const title = svg
@@ -199,9 +199,9 @@ svg
       .y((d) => y(d[1]))
       .curve(chartMeta.curveGenerator || curveCardinal.tension(1))(
       data.map(({ year, value, value_sum }) =>
-        chartMeta.cumulate ? [year, value_sum] : [year, value]
-      )
-    )
+        chartMeta.cumulate ? [year, value_sum] : [year, value],
+      ),
+    ),
   );
 svg.append('g').attr('class', 'x-axis').call(xAxis);
 svg.append('g').attr('class', 'y-axis').call(yAxis);

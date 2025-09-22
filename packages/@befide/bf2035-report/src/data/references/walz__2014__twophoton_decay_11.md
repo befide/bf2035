@@ -30,7 +30,7 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2014"
+      - - '2014'
         - 7
   keyword: mixed-symmetry states;proton scattering;#university/tu-darmstadt
   language: en
@@ -43,7 +43,7 @@ cslItem:
 tags:
   - mixed-symmetry states
   - proton scattering
-  - "#university/tu-darmstadt"
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

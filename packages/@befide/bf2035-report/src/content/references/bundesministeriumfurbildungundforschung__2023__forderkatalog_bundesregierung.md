@@ -11,7 +11,7 @@ cslItem:
     Verfügung.
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 1
         - 22
   author:
@@ -19,13 +19,13 @@ cslItem:
   citation-key: bundesministeriumfurbildungundforschung__2023__forderkatalog_bundesregierung
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 1
         - 22
-  keyword: "#bf2035/stakeholder/german-government"
+  keyword: '#bf2035/stakeholder/german-government'
   original-date:
     date-parts:
-      - - "2008"
+      - - '2008'
   title: Förderkatalog der Bundesregierung
   type: webpage
   URL: >-

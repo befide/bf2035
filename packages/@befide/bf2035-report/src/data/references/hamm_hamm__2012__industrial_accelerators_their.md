@@ -11,10 +11,10 @@ cslItem:
   DOI: 10.1142/7745
   issued:
     date-parts:
-      - - "2012"
-  keyword: "#bf2035/application/industry;#bf2035/issue/commercialisation"
+      - - '2012'
+  keyword: '#bf2035/application/industry;#bf2035/issue/commercialisation'
   language: en-US
-  number-of-pages: "436"
+  number-of-pages: '436'
   publisher: WORLD SCIENTIFIC
   title: Industrial accelerators and their applications
   type: book

@@ -14,7 +14,7 @@ cslItem:
     graph currently under development.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 30
   author:
@@ -31,14 +31,14 @@ cslItem:
   citation-key: gesese_etal__2024__nfdi4dso_bfo_compliant
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 8
         - 16
-  keyword: "#bf2035/stakeholder/nfdi"
+  keyword: '#bf2035/stakeholder/nfdi'
   number: arXiv:2408.08698
   publisher: arXiv
   source: arXiv.org
-  title: "NFDI4DSO: Towards a BFO Compliant Ontology for Data Science"
+  title: 'NFDI4DSO: Towards a BFO Compliant Ontology for Data Science'
   title-short: NFDI4DSO
   type: article
   URL: http://arxiv.org/abs/2408.08698

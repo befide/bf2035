@@ -4,7 +4,7 @@ cslItem:
   id: janhrusak_etal__2021__roadmap_2021_strategy
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 2
         - 23
   author:
@@ -15,11 +15,11 @@ cslItem:
   collection-title: Strategy Report on Research Infrastructures
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 11
-  keyword: "#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps"
+  keyword: '#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps'
   language: en
-  page: "243"
+  page: '243'
   publisher: ESFRI
   title: Roadmap 2021. strategy report on research infrastructures
   type: report

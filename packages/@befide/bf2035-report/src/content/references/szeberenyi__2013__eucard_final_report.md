@@ -4,7 +4,7 @@ cslItem:
   id: szeberenyi__2013__eucard_final_report
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   citation-key: szeberenyi__2013__eucard_final_report
@@ -14,11 +14,11 @@ cslItem:
   event-place: Geneva
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
         - 11
         - 1
-  keyword: "#bf2035/funding/eu/fp7;#bf2035/pub-type/strategies-and-roadmaps"
-  page: "115"
+  keyword: '#bf2035/funding/eu/fp7;#bf2035/pub-type/strategies-and-roadmaps'
+  page: '115'
   publisher: CERN
   publisher-place: Geneva
   title: EuCARD. Final Report

@@ -16,7 +16,7 @@ cslItem:
     the technology and concerns over safety and regulation.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -25,10 +25,10 @@ cslItem:
   DOI: 10.5281/ZENODO.8348103
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 9
         - 14
-  keyword: ""
+  keyword: ''
   language: en
   license: Creative Commons Attribution 4.0 International, Open Access
   source: Zenodo

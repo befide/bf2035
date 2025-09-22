@@ -5,7 +5,7 @@ cslItem:
   abstract: Accelerator Database - IAEA's Accelerator Knowledge Portal
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 3
   author:
@@ -13,7 +13,7 @@ cslItem:
   citation-key: internationalatomicenergyagency__2006__cyclotrons_used_radionuclide
   issued:
     date-parts:
-      - - "2006"
+      - - '2006'
   keyword: >-
     #bf2035/accelerator-based-facility-type/medical-facility/radioisotope-cyclotron;#bf2035/application/health
   language: en

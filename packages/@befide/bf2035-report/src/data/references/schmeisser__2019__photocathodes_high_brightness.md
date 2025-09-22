@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#gender/male;#university/hu-berlin"
+      - - '2019'
+  keyword: '#gender/male;#university/hu-berlin'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: http://edoc.hu-berlin.de/18452/21633
 tags:
-  - "#gender/male"
-  - "#university/hu-berlin"
+  - '#gender/male'
+  - '#university/hu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -4,7 +4,7 @@ cslItem:
   id: williams__2021__industrial_societal_applications
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 3
         - 17
   author:
@@ -14,10 +14,10 @@ cslItem:
   event-title: ECFA LDG Symposium on Energy Recovery Linacs
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 6
         - 4
-  keyword: ""
+  keyword: ''
   language: en
   title: Industrial / Societal Applications of Energy Recovery Linacs
   type: speech

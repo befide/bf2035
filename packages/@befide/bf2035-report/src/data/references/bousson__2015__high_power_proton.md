@@ -21,7 +21,7 @@ cslItem:
     overview and technological challenges
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 26
   author:
@@ -31,10 +31,10 @@ cslItem:
   DOI: 10.5281/ZENODO.10046755
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
         - 3
         - 13
-  keyword: "#bf2035/accelerator-type/linac/high-power-proton-linac"
+  keyword: '#bf2035/accelerator-type/linac/high-power-proton-linac'
   language: en
   license: >-
     Creative Commons Attribution 4.0 International, Creative Commons Attribution

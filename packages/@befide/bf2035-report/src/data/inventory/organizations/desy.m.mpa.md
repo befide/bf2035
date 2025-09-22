@@ -1,20 +1,20 @@
 ---
 id: desy.m.mpa
 befideInventoryOrganizationalLevelCategory: 5 - work group level
-befideOrganizationCategories: ["hgf"]
+befideOrganizationCategories: ['hgf']
 homepage__de: https://mpl.desy.de/
 homepage__en: https://mpl.desy.de/
 label__de: Plasmabeschleuniger
-label__en: 
-description__de: 
-description__en: 
-label__short: 
+label__en:
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
-  city: 
-  country: 
-  lat: 
-  lng: 
+  city:
+  country:
+  lat:
+  lng:
 peopleCount:
   uniqueProfessors: 0
   uniqueSeniorResearchers: 0

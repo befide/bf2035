@@ -4,7 +4,7 @@ cslItem:
   id: aries__2022__aries_mooc
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
         - 22
   author:
@@ -12,8 +12,8 @@ cslItem:
   citation-key: aries__2022__aries_mooc
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#bf2035/issue/teaching"
+      - - '2022'
+  keyword: '#bf2035/issue/teaching'
   language: en
   title: ARIES MOOC
   title-short: >-

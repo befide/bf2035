@@ -1,9 +1,9 @@
-import fs from "node:fs";
-import path from "node:path";
+import fs from "node:fs"
+import path from "node:path"
 
-import { defineCollection, reference, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content"
 
-const INPUT_FILEPATH = path.join("src", "data", "zotero", "kfb_theses.json");
+const INPUT_FILEPATH = path.join("src", "data", "zotero", "kfb_theses.json")
 
 const universityIds = [
   ":hu-berlin",
@@ -25,7 +25,7 @@ const universityIds = [
   ":uni-rostock",
   ":uni-siegen",
   ":uni-wuppertal",
-];
+]
 
 export const ThesesSchema = z.object({
   id: z.string(),
@@ -52,13 +52,13 @@ export const ThesesSchema = z.object({
   universityRef: reference("organizations").optional().nullable(),
   organizationRefs: z.array(reference("organizations").optional().nullable()),
   facilityRefs: z.array(reference("facilities").optional().nullable()),
-});
+})
 
-export type Theses = z.infer<typeof ThesesSchema>;
+export type Theses = z.infer<typeof ThesesSchema>
 
 export const defineThesesCollection = defineCollection({
   loader: async () => {
-    const dataRaw = JSON.parse(fs.readFileSync(INPUT_FILEPATH).toString());
+    const dataRaw = JSON.parse(fs.readFileSync(INPUT_FILEPATH).toString())
 
     return dataRaw.flat().map((item: any) => {
       // console.log('\n\n');
@@ -80,37 +80,37 @@ export const defineThesesCollection = defineCollection({
         tags: item.data.tags.map(({ tag }: { tag: string }) => tag),
         organizationRefs: [],
         facilityRefs: [],
-      };
+      }
 
       if (item.data.url?.startsWith("https://doi.org/")) {
-        dataItem.doi = item.data.url.replace("https://doi.org/", "");
+        dataItem.doi = item.data.url.replace("https://doi.org/", "")
       }
       if (item.data.url?.startsWith("https://nbn-resolving.de/")) {
-        dataItem.urn = item.data.url.replace("https://nbn-resolving.de/", "");
+        dataItem.urn = item.data.url.replace("https://nbn-resolving.de/", "")
       }
 
       if (item.data.extra)
         item.data.extra.split("\n").forEach((extraLine: string) => {
-          const splittedExtraLine = extraLine.split(/: /);
+          const splittedExtraLine = extraLine.split(/: /)
           if (
             splittedExtraLine.length == 2 &&
             splittedExtraLine[0] &&
             splittedExtraLine[0].toLowerCase() === "doi"
           ) {
-            dataItem.doi = splittedExtraLine[1];
+            dataItem.doi = splittedExtraLine[1]
           } else if (
             splittedExtraLine.length == 2 &&
             splittedExtraLine[0] &&
             splittedExtraLine[0].toLowerCase() === "isbn"
           ) {
-            dataItem.isbn = splittedExtraLine[1];
+            dataItem.isbn = splittedExtraLine[1]
           } else if (
             splittedExtraLine.length == 2 &&
             splittedExtraLine[0] &&
             splittedExtraLine[0].toLowerCase() === "fulltext-url" &&
             splittedExtraLine[1] !== "none"
           ) {
-            dataItem.fulltextLink = splittedExtraLine[1];
+            dataItem.fulltextLink = splittedExtraLine[1]
           } else {
             // console.log({
             //   message: 'extra line not parsed',
@@ -118,36 +118,36 @@ export const defineThesesCollection = defineCollection({
             //   // id: item.key
             // });
           }
-        });
+        })
 
       dataItem.tags.forEach(async (tag = "") => {
         if (tag?.startsWith("#academic-degree/doctoral-degree/:dr.rer.nat.")) {
           dataItem.isARef = {
             collection: "taxonomyItems",
             id: "/academic-degree/doctoral-degree/:dr.rer.nat.",
-          };
+          }
         } else if (
           tag?.startsWith("#academic-degree/doctoral-degree/:dr.ing.")
         ) {
           dataItem.isARef = {
             collection: "taxonomyItems",
             id: "/academic-degree/doctoral-degree/:dr.ing.",
-          };
+          }
         }
 
         if (tag?.startsWith("#befide/organization/")) {
-          const organizationId = tag.replace("#befide/organization/", "");
+          const organizationId = tag.replace("#befide/organization/", "")
 
           dataItem.organizationRefs.push({
             collection: "organizations",
             id: organizationId,
-          });
+          })
 
           if (universityIds.indexOf(organizationId) > -1) {
             dataItem.universityRef = {
               collection: "organizations",
               id: organizationId,
-            };
+            }
           }
 
           // const university = await getEntry("organizations", tag.replace("#befide/organization/", ""))
@@ -158,20 +158,20 @@ export const defineThesesCollection = defineCollection({
           // }
         }
         if (tag?.startsWith("#person/gender/")) {
-          dataItem.author.gender = tag.replace("#person/gender/", "");
+          dataItem.author.gender = tag.replace("#person/gender/", "")
         }
         if (tag?.startsWith("#befide/facility/")) {
           dataItem.facilityRefs.push({
             id: tag.replace("#befide/facility/", ""),
             collection: "facilities",
-          });
+          })
         }
-      });
+      })
 
       // console.log(dataItem)
 
-      return dataItem;
-    });
+      return dataItem
+    })
   },
   schema: ThesesSchema,
-});
+})

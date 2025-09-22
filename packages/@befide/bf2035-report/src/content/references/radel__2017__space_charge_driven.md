@@ -9,15 +9,15 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#university/hu-berlin"
+      - - '2017'
+  keyword: '#university/hu-berlin'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: On space charge driven microbunching instability in bERLinPro
   type: thesis
   URL: https://doi.org/10.18452/17714
 tags:
-  - "#university/hu-berlin"
+  - '#university/hu-berlin'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -23,10 +23,10 @@ cslItem:
   DOI: 10.48550/arXiv.2203.07423
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 3
         - 14
-  keyword: "#bf2035/issue/green-transformation"
+  keyword: '#bf2035/issue/green-transformation'
   language: en
   source: ResearchGate
   title: Sustainability considerations for accelerator and collider facilities

@@ -1,20 +1,20 @@
 ---
 id: uni-düsseldorf.mnf.physik
 befideInventoryOrganizationalLevelCategory: 2 - intermediate level
-befideOrganizationCategories: ["university"]
-homepage__de: 
-homepage__en: 
+befideOrganizationCategories: ['university']
+homepage__de:
+homepage__en:
 label__de: Fach Physik
 label__en: Physics Department
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: false
 location:
-  city: 
-  country: 
-  lat: 
-  lng: 
+  city:
+  country:
+  lat:
+  lng:
 peopleCount:
   uniqueProfessors: 0
   uniqueSeniorResearchers: 0

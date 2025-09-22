@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#university/kit;#gender/male"
+      - - '2013'
+  keyword: '#university/kit;#gender/male'
   language: de
   publisher: Karlsruher Institut für Technologie
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000039528
 tags:
-  - "#university/kit"
-  - "#gender/male"
+  - '#university/kit'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

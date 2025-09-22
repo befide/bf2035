@@ -1,3 +1,3 @@
-import { atom } from "nanostores";
+import { atom } from "nanostores"
 
-export const hiddenCategories = atom<string[]>([]);
+export const hiddenCategories = atom<string[]>([])

@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#gender/male;#university/tu-darmstadt"
+      - - '2016'
+  keyword: '#gender/male;#university/tu-darmstadt'
   language: en
   publisher: Technische Universität Darmstadt
   title: Radiation pressure acceleration and laser induced focusing
   type: thesis
   URL: https://tuprints.ulb.TU-Darmstadt.de/5665/
 tags:
-  - "#gender/male"
-  - "#university/tu-darmstadt"
+  - '#gender/male'
+  - '#university/tu-darmstadt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

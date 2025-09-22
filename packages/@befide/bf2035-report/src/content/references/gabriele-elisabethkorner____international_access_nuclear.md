@@ -4,14 +4,14 @@ cslItem:
   id: gabriele-elisabethkorner____international_access_nuclear
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 3
   author:
     - literal: Gabriele-Elisabeth Körner
   citation-key: gabriele-elisabethkorner____international_access_nuclear
   genre: Handbook
-  keyword: "#bf2035/data;#bf2035/accelerator-type/cyclotrons"
+  keyword: '#bf2035/data;#bf2035/accelerator-type/cyclotrons'
   language: en
   note: |-
     Read_Status: To Read

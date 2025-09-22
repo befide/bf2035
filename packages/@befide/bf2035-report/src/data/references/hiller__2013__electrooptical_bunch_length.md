@@ -9,15 +9,15 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#university/kit"
+      - - '2013'
+  keyword: '#university/kit'
   language: en
   publisher: Karlsruher Institut für Technologie
   title: Electro-optical bunch length measurements at the ANKA storage ring
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000041159
 tags:
-  - "#university/kit"
+  - '#university/kit'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -1,9 +1,9 @@
-import fs from "node:fs";
-import path from "node:path";
+import fs from "node:fs"
+import path from "node:path"
 
-import { defineCollection, reference, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content"
 
-const INPUT_FILEPATH = path.join("src", "data", "zotero", "kfb_bf2035.json");
+const INPUT_FILEPATH = path.join("src", "data", "zotero", "kfb_bf2035.json")
 
 export const ReferenceSchema = z.object({
   id: z.string(),
@@ -13,7 +13,7 @@ export const ReferenceSchema = z.object({
       lastName: z.string().optional(),
       firstName: z.string().optional(),
       name: z.string().optional(),
-    }),
+    })
   ),
   itemType: z.string(),
   year: z.number().optional(),
@@ -30,17 +30,23 @@ export const ReferenceSchema = z.object({
 
   organizationRefs: z.array(reference("organizations").optional().nullable()),
   facilityRefs: z.array(reference("facilities").optional().nullable()),
-});
+})
 
-export type Reference = z.infer<typeof ReferenceSchema>;
+export type Reference = z.infer<typeof ReferenceSchema>
 
 export const defineReferencesCollection = defineCollection({
   loader: async () => {
-    const dataRaw = JSON.parse(fs.readFileSync(INPUT_FILEPATH).toString());
+    const dataRaw = JSON.parse(fs.readFileSync(INPUT_FILEPATH).toString())
 
     return dataRaw
       .flat()
-      .filter((item: any) => item.data.itemType !== "attachment" && item.data.tags.map(({ tag }: { tag: string }) => tag).indexOf("_used") > -1)
+      .filter(
+        (item: any) =>
+          item.data.itemType !== "attachment" &&
+          item.data.tags
+            .map(({ tag }: { tag: string }) => tag)
+            .indexOf("_used") > -1
+      )
       .map((item: any) => {
         // console.log('\n\n');
         // console.log(JSON.stringify({ item }, null, 2));
@@ -58,44 +64,44 @@ export const defineReferencesCollection = defineCollection({
           tags: item.data.tags.map(({ tag }: { tag: string }) => tag),
           organizationRefs: [],
           facilityRefs: [],
-        };
+        }
 
         if (item.data.url?.startsWith("https://doi.org/")) {
-          dataItem.doi = item.data.url.replace("https://doi.org/", "");
+          dataItem.doi = item.data.url.replace("https://doi.org/", "")
         }
         if (item.data.url?.startsWith("https://nbn-resolving.de/")) {
-          dataItem.urn = item.data.url.replace("https://nbn-resolving.de/", "");
+          dataItem.urn = item.data.url.replace("https://nbn-resolving.de/", "")
         }
 
         if (item.data.extra)
           item.data.extra.split("\n").forEach((extraLine: string) => {
-            const splittedExtraLine = extraLine.split(/: /);
-            
+            const splittedExtraLine = extraLine.split(/: /)
+
             if (
               splittedExtraLine.length == 2 &&
               splittedExtraLine[0] &&
               splittedExtraLine[0].toLowerCase() === "doi"
             ) {
-              dataItem.doi = splittedExtraLine[1];
+              dataItem.doi = splittedExtraLine[1]
             } else if (
               splittedExtraLine.length == 2 &&
               splittedExtraLine[0] &&
               splittedExtraLine[0].toLowerCase() === "isbn"
             ) {
-              dataItem.isbn = splittedExtraLine[1];
+              dataItem.isbn = splittedExtraLine[1]
             } else if (
               splittedExtraLine.length == 2 &&
               splittedExtraLine[0] &&
               splittedExtraLine[0].toLowerCase() === "citation key"
             ) {
-              dataItem.citationKey = splittedExtraLine[1];
+              dataItem.citationKey = splittedExtraLine[1]
             } else if (
               splittedExtraLine.length == 2 &&
               splittedExtraLine[0] &&
               splittedExtraLine[0].toLowerCase() === "fulltext-url" &&
               splittedExtraLine[1] !== "none"
             ) {
-              dataItem.fulltextLink = splittedExtraLine[1];
+              dataItem.fulltextLink = splittedExtraLine[1]
             } else {
               // console.log({
               //   message: 'extra line not parsed',
@@ -103,7 +109,7 @@ export const defineReferencesCollection = defineCollection({
               //   // id: item.key
               // });
             }
-          });
+          })
 
         dataItem.tags.forEach(async (tag = "") => {
           // if (tag?.startsWith("#academic-degree/doctoral-degree/:dr.rer.nat.")) {
@@ -121,12 +127,12 @@ export const defineReferencesCollection = defineCollection({
           // }
 
           if (tag?.startsWith("#befide/organization/")) {
-            const organizationId = tag.replace("#befide/organization/", "");
+            const organizationId = tag.replace("#befide/organization/", "")
 
             dataItem.organizationRefs.push({
               collection: "organizations",
               id: organizationId,
-            });
+            })
 
             // const university = await getEntry("organizations", tag.replace("#befide/organization/", ""))
 
@@ -140,14 +146,14 @@ export const defineReferencesCollection = defineCollection({
             dataItem.facilityRefs.push({
               id: tag.replace("#befide/facility/", ""),
               collection: "facilities",
-            });
+            })
           }
-        });
+        })
 
         // console.log(dataItem)
 
-        return dataItem;
-      });
+        return dataItem
+      })
   },
   schema: ReferenceSchema,
-});
+})

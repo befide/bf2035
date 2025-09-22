@@ -9,17 +9,17 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#gender/male;#university/hu-berlin;#facility/bessy2"
+      - - '2022'
+  keyword: '#gender/male;#university/hu-berlin;#facility/bessy2'
   language: en
   publisher: Humboldt-Universität zu Berlin
   title: Two-Dimensional Bunch-Resolved Optical Diagnostics at BESSY II
   type: thesis
   URL: https://doi.org/10.18452/24232
 tags:
-  - "#gender/male"
-  - "#university/hu-berlin"
-  - "#facility/bessy2"
+  - '#gender/male'
+  - '#university/hu-berlin'
+  - '#facility/bessy2'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

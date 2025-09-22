@@ -4,7 +4,7 @@ cslItem:
   id: esfri__2024__esfri_landscape_analysis
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 10
   author:
@@ -12,11 +12,11 @@ cslItem:
   citation-key: esfri__2024__esfri_landscape_analysis
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 5
-  keyword: "#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps"
+  keyword: '#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps'
   language: en
-  page: "141"
+  page: '141'
   publisher: ESFRI
   title: ESFRI Landscape Analysis 2024
   type: report

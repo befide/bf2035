@@ -8,10 +8,10 @@ cslItem:
   citation-key: erdman__2019__challenges_opportunities_digital
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 4
         - 29
-  keyword: "#bf2035/issue/digital-transformation"
+  keyword: '#bf2035/issue/digital-transformation'
   language: en
   title: >-
     Challenges and Opportunities of Digital Transformation in Fundamental

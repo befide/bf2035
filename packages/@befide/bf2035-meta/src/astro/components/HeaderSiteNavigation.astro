@@ -1,6 +1,6 @@
 ---
-const { dir, pagination } = Astro.locals.starlightRoute;
-const { prev, next } = pagination;
+const { dir, pagination } = Astro.locals.starlightRoute
+const { prev, next } = pagination
 ---
 
 <div class="header__pagination-links print:hidden" dir={dir}>
@@ -51,39 +51,39 @@ const { prev, next } = pagination;
 <script is:inline>
   function controlKeydown(event) {
     if (event.defaultPrevented) {
-      return;
+      return
     }
     if (event.ctrlKey && event.altKey) {
       if (event.code === "ArrowLeft") {
-        document.querySelector(".header__pagination-link--prev")?.click();
+        document.querySelector(".header__pagination-link--prev")?.click()
       }
       if (event.code === "ArrowRight") {
-        document.querySelector(".header__pagination-link--next")?.click();
+        document.querySelector(".header__pagination-link--next")?.click()
       }
     }
 
-    event.preventDefault();
+    event.preventDefault()
   }
-  (() => {
-    const links = document.querySelectorAll("a.header__pagination-link");
+  ;(() => {
+    const links = document.querySelectorAll("a.header__pagination-link")
     window.addEventListener(
       "keydown",
       function (event) {
-        controlKeydown(event);
+        controlKeydown(event)
       },
       true
-    );
+    )
     links.forEach((link) => {
-      const shortcut = link?.querySelector("kbd");
-      if (!link || !(shortcut instanceof HTMLElement)) return;
+      const shortcut = link?.querySelector("kbd")
+      if (!link || !(shortcut instanceof HTMLElement)) return
       // const platformKey = shortcut.querySelector("kbd");
       // if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
       //   platformKey.textContent = "⌥⌘";
       //   link.setAttribute("aria-keyshortcuts", "Meta+K");
       // }
-      shortcut.style.display = "";
-    });
-  })();
+      shortcut.style.display = ""
+    })
+  })()
 </script>
 
 <style>

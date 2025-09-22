@@ -4,7 +4,7 @@ cslItem:
   id: icfa__2022__homepage_international_committee
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 8
         - 20
   author:
@@ -12,8 +12,8 @@ cslItem:
   citation-key: icfa__2022__homepage_international_committee
   issued:
     date-parts:
-      - - "2022"
-  keyword: ""
+      - - '2022'
+  keyword: ''
   language: en
   title: Homepage of the International Committee for Future Accelerators
   type: webpage

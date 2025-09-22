@@ -4,7 +4,7 @@ cslItem:
   id: andersen_carlile__2016__proposal_next_generation
   accessed:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 2
         - 16
   author:
@@ -13,22 +13,22 @@ cslItem:
     - family: Carlile
       given: C.J.
   citation-key: andersen_carlile__2016__proposal_next_generation
-  container-title: "Journal of Physics: Conference Series"
-  container-title-short: "J. Phys.: Conf. Ser."
+  container-title: 'Journal of Physics: Conference Series'
+  container-title-short: 'J. Phys.: Conf. Ser.'
   DOI: 10/f9sfwh
   ISSN: 1742-6588, 1742-6596
   issued:
     date-parts:
-      - - "2016"
+      - - '2016'
         - 9
-  keyword: "#bf2035/application/science/neutron-science"
+  keyword: '#bf2035/application/science/neutron-science'
   language: en
-  page: "12030"
+  page: '12030'
   source: DOI.org (Crossref)
   title: A Proposal for a Next Generation European Neutron Source
   type: article-journal
   URL: https://iopscience.iop.org/article/10.1088/1742-6596/746/1/012030
-  volume: "746"
+  volume: '746'
 tags:
   - bf2035:application/science/neutron-science
 rendered:

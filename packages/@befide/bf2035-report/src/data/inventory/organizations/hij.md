@@ -1,18 +1,18 @@
 ---
 id: hij
 befideInventoryOrganizationalLevelCategory: 1 - top level
-befideOrganizationCategories: [""]
+befideOrganizationCategories: ['']
 homepage__de: https://www.hi-jena.de/en/
 homepage__en: https://www.hi-jena.de/en/
 label__de: Helmholtz-Institut Jena
 label__en: Helmholtz Institute Jena
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: true
 location:
   city: Jena
-  country: 
+  country:
   lat: 50.934556
   lng: 11.580699
 peopleCount:
@@ -22,7 +22,7 @@ peopleCount:
   uniquePhdStudents: 0
   uniqueWorkingStudents_MSC: 0
   uniqueWorkingStudents_BSC: 0
-reviewedBy: 
-parentPath: 
+reviewedBy:
+parentPath:
 localName: hij
 ---

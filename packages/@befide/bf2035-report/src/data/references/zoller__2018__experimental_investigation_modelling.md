@@ -9,10 +9,10 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2018"
-  keyword: "#university/kit"
+      - - '2018'
+  keyword: '#university/kit'
   language: en
-  number-of-pages: "123"
+  number-of-pages: '123'
   publisher: Karlsruhe Institute of Technology
   title: >-
     Experimental investigation and modelling of incidents in liquid helium
@@ -20,7 +20,7 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.5445/IR/1000082999
 tags:
-  - "#university/kit"
+  - '#university/kit'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -16,7 +16,7 @@ cslItem:
     design tailored to meet the needs of heterogeneous research domains.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 6
   author:
@@ -34,10 +34,10 @@ cslItem:
   DOI: 10.48550/arXiv.2410.01821
   issued:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 9
         - 16
-  keyword: "#bf2035/stakeholder/nfdi;#bf2035/issue/ontology;#bf2035/issue/ontology/bfo"
+  keyword: '#bf2035/stakeholder/nfdi;#bf2035/issue/ontology;#bf2035/issue/ontology/bfo'
   language: en
   number: arXiv:2410.01821
   publisher: arXiv
@@ -48,7 +48,7 @@ cslItem:
   title-short: NFDIcore 2.0
   type: article
   URL: http://arxiv.org/abs/2410.01821
-  version: "1"
+  version: '1'
 tags:
   - bf2035:stakeholder/nfdi
   - bf2035:issue/ontology

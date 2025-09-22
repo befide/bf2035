@@ -4,7 +4,7 @@ cslItem:
   id: fernandez-tornero_etal__2013__crystal_structure_14subunit
   accessed:
     date-parts:
-      - - "2021"
+      - - '2021'
         - 1
         - 21
   author:
@@ -31,12 +31,12 @@ cslItem:
   container-title-short: Nature
   DOI: 10.1038/nature12636
   ISSN: 0028-0836, 1476-4687
-  issue: "7473"
+  issue: '7473'
   issued:
     date-parts:
-      - - "2013"
+      - - '2013'
         - 10
-  keyword: "#bf2035/application/science/photon-science"
+  keyword: '#bf2035/application/science/photon-science'
   language: en
   note: >-
     TLDR: The crystal structure of Pol I from Saccharomyces cerevisiae at 3.0 Å
@@ -48,7 +48,7 @@ cslItem:
   title: Crystal structure of the 14-subunit RNA polymerase I
   type: article-journal
   URL: http://www.nature.com/articles/nature12636
-  volume: "502"
+  volume: '502'
 tags:
   - bf2035:application/science/photon-science
 rendered:

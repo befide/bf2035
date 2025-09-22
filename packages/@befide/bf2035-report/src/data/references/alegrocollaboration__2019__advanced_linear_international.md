@@ -21,7 +21,7 @@ cslItem:
     European Strategy for Particle Physics.
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 1
         - 23
   author:
@@ -29,7 +29,7 @@ cslItem:
   citation-key: alegrocollaboration__2019__advanced_linear_international
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 1
         - 30
   keyword: >-
@@ -38,7 +38,7 @@ cslItem:
   note: |-
     Read_Status: To Read
     Read_Status_Date: 2024-03-17T07:32:19.889Z
-  page: "83"
+  page: '83'
   publisher: ALEGRO
   source: arXiv.org
   title: Towards an Advanced Linear International Collider

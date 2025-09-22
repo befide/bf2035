@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#university/uni-mainz;#gender/female"
+      - - '2019'
+  keyword: '#university/uni-mainz;#gender/female'
   language: de
   publisher: Johannes Gutenberg-Universität Mainz
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://openscience.ub.uni-mainz.de/handle/20.500.12030/1204
 tags:
-  - "#university/uni-mainz"
-  - "#gender/female"
+  - '#university/uni-mainz'
+  - '#gender/female'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

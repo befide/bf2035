@@ -1,18 +1,18 @@
 ---
 id: desy
 befideInventoryOrganizationalLevelCategory: 1 - top level
-befideOrganizationCategories: ["hgf"]
+befideOrganizationCategories: ['hgf']
 homepage__de: http://www.desy.de/index_eng.html
 homepage__en: http://www.desy.de/index_eng.html
 label__de: Deutsches Elektronen-Synchrotron DESY
 label__en: Deutsches Elektronen-Synchrotron DESY
-description__de: 
-description__en: 
-label__short: 
+description__de:
+description__en:
+label__short:
 isPartOfCommunity: false
 location:
   city: Hamburg
-  country: 
+  country:
   lat: 53.55073
   lng: 9.99302
 peopleCount:
@@ -23,6 +23,6 @@ peopleCount:
   uniqueWorkingStudents_MSC: 0
   uniqueWorkingStudents_BSC: 0
 reviewedBy: leemans.wim
-parentPath: 
+parentPath:
 localName: desy
 ---

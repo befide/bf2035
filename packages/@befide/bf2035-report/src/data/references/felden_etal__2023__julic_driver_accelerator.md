@@ -24,7 +24,7 @@ cslItem:
     history of JULIC and the activities for its future perspectives.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 2
   author:
@@ -54,11 +54,11 @@ cslItem:
     - family: Pengzhan (Ed.)
       given: Li
   DOI: 10.18429/JACOW-CYCLOTRONS2022-THPO005
-  ISBN: "9783954502127"
+  ISBN: '9783954502127'
   ISSN: 2673-5482
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
   keyword: >-
     #bf2035/accelerator-based-facility/hbs;#bf2035/accelerator-based-facility-type/neutron-source/compact-accelerator-based-neutron-source;#bf2035/accelerator-type/linac;#bf2035/application/science/neutron-science
   language: en

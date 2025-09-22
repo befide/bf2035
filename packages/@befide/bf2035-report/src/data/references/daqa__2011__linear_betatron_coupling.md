@@ -9,14 +9,14 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2011"
-  keyword: "#university/uni-frankfurt"
+      - - '2011'
+  keyword: '#university/uni-frankfurt'
   language: en
   publisher: Goethe-Universität Frankfurt am Main
   title: Linear Betatron coupling studies with space charge effects in the SIS18
   type: thesis
 tags:
-  - "#university/uni-frankfurt"
+  - '#university/uni-frankfurt'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#gender/male;#university/tu-dresden"
+      - - '2017'
+  keyword: '#gender/male;#university/tu-dresden'
   language: en
   publisher: Technische Universität Dresden
   title: Emittance compensation for SRF photoinjectors
   type: thesis
   URL: https://nbn-resolving.org/urn:nbn:de:bsz:14-qucosa-229164
 tags:
-  - "#gender/male"
-  - "#university/tu-dresden"
+  - '#gender/male'
+  - '#university/tu-dresden'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

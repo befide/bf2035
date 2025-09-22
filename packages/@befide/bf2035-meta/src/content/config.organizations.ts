@@ -1,19 +1,22 @@
-const INPUT_FILENAME = "organizations.csv";
+const INPUT_FILENAME = "organizations.csv"
 
-import { csv2json } from "csv42";
+import { csv2json } from "csv42"
 
-import { defineCollection, reference, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content"
 
 import {
   LocalizedString,
   NullableLocalizedString,
   readInputFile,
   ReviewSchema,
-} from "./config.common";
+} from "./config.common"
 
-import { getOrganizationRoots, rollupUniquePeopleCountSum } from "@utils/content.organizations"
+import {
+  getOrganizationRoots,
+  rollupUniquePeopleCountSum,
+} from "@utils/content.organizations"
 
-export const genders = ["female", "male", "nonbinary"];
+export const genders = ["female", "male", "nonbinary"]
 export const careerLevels = [
   "professor",
   "seniorResearcher",
@@ -21,24 +24,24 @@ export const careerLevels = [
   "phdStudent",
   "masterStudent",
   "bachelorStudent",
-];
-export const disciplinaryProfessions = ["physicist", "engineer", "other"];
+]
+export const disciplinaryProfessions = ["physicist", "engineer", "other"]
 export const peopleCountDiscriminators = [
   ...careerLevels,
   ...disciplinaryProfessions,
   ...genders,
-];
+]
 
 const peopleCountGender = z.object({
   male: z.number().optional().nullable(),
   female: z.number().optional().nullable(),
   other: z.number().optional().nullable(),
-});
+})
 const peopleCountDiscipline = z.object({
   physicist: peopleCountGender,
   engineer: peopleCountGender,
   other: peopleCountGender,
-});
+})
 const peopleCountAcademicCareerLevel = z.object({
   professor: peopleCountDiscipline,
   seniorResearcher: peopleCountDiscipline,
@@ -46,7 +49,7 @@ const peopleCountAcademicCareerLevel = z.object({
   phdStudent: peopleCountDiscipline,
   masterStudent: peopleCountDiscipline,
   bachelorStudent: peopleCountDiscipline,
-});
+})
 
 // export const BefideOrganizationMetaOrganizationalLevel = z.enum([
 // 	'00 Community',
@@ -69,7 +72,7 @@ export const BefideOrganizationMetaBefideOrganizationCategories = z.enum([
   "funder",
   "root",
   "consortium",
-]);
+])
 
 export const OrganizationSchema = z.object({
   id: z.string(),
@@ -77,7 +80,7 @@ export const OrganizationSchema = z.object({
   hasParent: reference("organizations").optional().nullable(),
   hasTopLevelOrganization: reference("organizations").optional().nullable(),
   befideOrganizationCategories: z.preprocess((input) => {
-    return typeof input === "string" ? input.split(/\s?,\s?/) : input;
+    return typeof input === "string" ? input.split(/\s?,\s?/) : input
   }, z.array(BefideOrganizationMetaBefideOrganizationCategories)),
 
   isPartOfCommunity: z.boolean(),
@@ -109,35 +112,35 @@ export const OrganizationSchema = z.object({
   uniquePeopleCountSum: z.object({
     total: z.preprocess((v) => v || 0, z.number()),
     ...peopleCountDiscriminators.reduce((obj: any, value) => {
-      obj[value] = z.preprocess((v) => v || 0, z.number());
-      return obj;
+      obj[value] = z.preprocess((v) => v || 0, z.number())
+      return obj
     }, {}),
   }),
   uniquePeopleCountRecursiveSum: z
     .object({
       ...peopleCountDiscriminators.reduce((obj: any, value) => {
-        obj[value] = z.preprocess((v) => v || 0, z.number());
-        return obj;
+        obj[value] = z.preprocess((v) => v || 0, z.number())
+        return obj
       }, {}),
     })
     .optional(),
   review: ReviewSchema,
-});
+})
 
 export const defineOrganizationCollection = defineCollection({
   loader: () => {
-    const input = readInputFile(INPUT_FILENAME).toString();
+    const input = readInputFile(INPUT_FILENAME).toString()
     const organizations = csv2json<Organization>(input, {
       nested: true,
-    });
+    })
 
-    const roots = getOrganizationRoots(organizations);
-    const communityRoot = roots.find((root) => root.id === ":");
-    if (communityRoot) rollupUniquePeopleCountSum(communityRoot);
+    const roots = getOrganizationRoots(organizations)
+    const communityRoot = roots.find((root) => root.id === ":")
+    if (communityRoot) rollupUniquePeopleCountSum(communityRoot)
 
-    return organizations;
+    return organizations
   },
   schema: OrganizationSchema,
-});
+})
 
-export type Organization = z.infer<typeof OrganizationSchema>;
+export type Organization = z.infer<typeof OrganizationSchema>

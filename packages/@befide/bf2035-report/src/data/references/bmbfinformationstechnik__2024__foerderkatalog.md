@@ -4,7 +4,7 @@ cslItem:
   id: bmbfinformationstechnik__2024__foerderkatalog
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 8
   author:
@@ -12,8 +12,8 @@ cslItem:
   citation-key: bmbfinformationstechnik__2024__foerderkatalog
   issued:
     date-parts:
-      - - "2024"
-  keyword: "#bf2035/issue/verbundforschung"
+      - - '2024'
+  keyword: '#bf2035/issue/verbundforschung'
   language: de
   title: Förderkatalog
   type: dataset

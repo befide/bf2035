@@ -4,7 +4,7 @@ cslItem:
   id: ziemann__2024__beams_story_particle
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 12
         - 9
   author:
@@ -17,14 +17,14 @@ cslItem:
   ISBN: 978-3-031-51851-5 978-3-031-51852-2
   issued:
     date-parts:
-      - - "2024"
-  keyword: ""
+      - - '2024'
+  keyword: ''
   language: en
   license: https://www.springernature.com/gp/researchers/text-and-data-mining
   publisher: Springer Nature Switzerland
   publisher-place: Cham
   source: DOI.org (Crossref)
-  title: "Beams: the story of particle accelerators and the science they discover"
+  title: 'Beams: the story of particle accelerators and the science they discover'
   title-short: Beams
   type: book
   URL: https://link.springer.com/10.1007/978-3-031-51852-2

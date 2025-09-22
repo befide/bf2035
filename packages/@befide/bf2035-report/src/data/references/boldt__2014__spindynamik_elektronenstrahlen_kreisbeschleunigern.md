@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2014"
-  keyword: "#gender/male;#university/uni-bonn"
+      - - '2014'
+  keyword: '#gender/male;#university/uni-bonn'
   language: de
   publisher: Universität Bonn
   title: Spindynamik von Elektronenstrahlen in Kreisbeschleunigern
   type: thesis
   URL: http://nbn-resolving.de/urn:nbn:de:hbz:5n-36455
 tags:
-  - "#gender/male"
-  - "#university/uni-bonn"
+  - '#gender/male'
+  - '#university/uni-bonn'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

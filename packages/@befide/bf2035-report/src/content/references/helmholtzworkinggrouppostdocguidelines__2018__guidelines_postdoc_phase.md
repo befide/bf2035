@@ -4,7 +4,7 @@ cslItem:
   id: helmholtzworkinggrouppostdocguidelines__2018__guidelines_postdoc_phase
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 1
         - 31
   author:
@@ -12,10 +12,10 @@ cslItem:
   citation-key: helmholtzworkinggrouppostdocguidelines__2018__guidelines_postdoc_phase
   issued:
     date-parts:
-      - - "2018"
+      - - '2018'
         - 4
         - 16
-  keyword: "#bf2035/issue/teaching;#bf2035/issue/careers"
+  keyword: '#bf2035/issue/teaching;#bf2035/issue/careers'
   language: en
   note: |-
     Read_Status: To Read

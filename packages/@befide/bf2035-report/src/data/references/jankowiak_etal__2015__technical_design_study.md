@@ -4,7 +4,7 @@ cslItem:
   id: jankowiak_etal__2015__technical_design_study
   accessed:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 1
         - 31
   author:
@@ -21,7 +21,7 @@ cslItem:
   genre: Technical Design Study
   issued:
     date-parts:
-      - - "2015"
+      - - '2015'
   keyword: >-
     #bf2035/accelerator-based-facility/bessy2__vsr;#bf2035/stakeholder/research-institution/helmholtz-association/hzb
   language: en

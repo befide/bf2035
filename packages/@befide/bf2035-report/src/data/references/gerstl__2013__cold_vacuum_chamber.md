@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2013"
-  keyword: "#university/kit;#gender/male"
+      - - '2013'
+  keyword: '#university/kit;#gender/male'
   language: en
   publisher: Karlsruher Institut für Technologie
   title: A COLD vacuum chamber for beam heat load DIAGnostics (COLDDIAG)
   type: thesis
   URL: https://publikationen.bibliothek.kit.edu/1000038354
 tags:
-  - "#university/kit"
-  - "#gender/male"
+  - '#university/kit'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

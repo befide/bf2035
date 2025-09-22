@@ -17,7 +17,7 @@ cslItem:
     vision for the future neutron landscape in Europe.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 2
   author:
@@ -54,21 +54,21 @@ cslItem:
   container-title-short: Eur. Phys. J. Plus
   DOI: 10.1140/epjp/i2016-16019-5
   ISSN: 2190-5444
-  issue: "1"
+  issue: '1'
   issued:
     date-parts:
-      - - "2016"
+      - - '2016'
         - 1
         - 29
   keyword: >-
     #bf2035/accelerator-based-facility/hbs;#bf2035/accelerator-based-facility-type/neutron-source/compact-accelerator-based-neutron-source;#bf2035/application/science/neutron-science
   language: en
-  page: "19"
+  page: '19'
   source: Springer Link
   title: The Jülich High-Brilliance Neutron Source Project
   type: article-journal
   URL: https://doi.org/10.1140/epjp/i2016-16019-5
-  volume: "131"
+  volume: '131'
 tags:
   - bf2035:accelerator-based-facility/hbs
   - >-

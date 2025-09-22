@@ -23,7 +23,7 @@ cslItem:
     a focal point of the insights presented in this document.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 10
         - 29
   author:
@@ -33,10 +33,10 @@ cslItem:
   DOI: 10.5281/ZENODO.8383568
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 9
         - 13
-  keyword: "#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps"
+  keyword: '#bf2035/stakeholder/esfri;#bf2035/pub-type/strategies-and-roadmaps'
   language: en
   license: Creative Commons Attribution 4.0 International, Open Access
   publisher: Zenodo

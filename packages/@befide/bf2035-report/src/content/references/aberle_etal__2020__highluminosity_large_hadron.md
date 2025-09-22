@@ -1049,14 +1049,14 @@ cslItem:
   event-place: Geneva
   issued:
     date-parts:
-      - - "2020"
+      - - '2020'
   keyword: >-
     #bf2035/accelerator-based-facility-type/particle-collider/circular-particle-collider;#bf2035/accelerator-based-facility/lhc;#bf2035/accelerator-based-facility/lhc__hl-lhc;#bf2035/application/science/high-energy-physics
   language: en
-  page: "378"
+  page: '378'
   publisher: CERN
   publisher-place: Geneva
-  title: "High-luminosity large hadron collider (HL-LHC): Technical design report"
+  title: 'High-luminosity large hadron collider (HL-LHC): Technical design report'
   type: report
   URL: https://cds.cern.ch/record/2749422
 tags:

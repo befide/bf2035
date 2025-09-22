@@ -9,8 +9,8 @@ cslItem:
   genre: Status Report
   issued:
     date-parts:
-      - - "2015"
-  keyword: "#bf2035/accelerator-based-facility/myrrha;#bf2035/application/transmutation"
+      - - '2015'
+  keyword: '#bf2035/accelerator-based-facility/myrrha;#bf2035/application/transmutation'
   language: en
   publisher: International Atomic Energy Agency
   publisher-place: Vienna

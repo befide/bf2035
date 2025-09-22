@@ -9,17 +9,17 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2019"
-  keyword: "#university/tu-darmstadt;#gender/male;#facility/s-dalinac"
+      - - '2019'
+  keyword: '#university/tu-darmstadt;#gender/male;#facility/s-dalinac'
   language: en
   publisher: Technische Universität Darmstadt
   title: Development of an SRF reduced-beta cavity for the injector of the s-dalinac
   type: thesis
   URL: https://tuprints.ulb.tu-darmstadt.de/8791/
 tags:
-  - "#university/tu-darmstadt"
-  - "#gender/male"
-  - "#facility/s-dalinac"
+  - '#university/tu-darmstadt'
+  - '#gender/male'
+  - '#facility/s-dalinac'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

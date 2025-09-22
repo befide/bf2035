@@ -7,7 +7,7 @@ cslItem:
     - literal: BMBF
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
         - 4
   keyword: >-
     #bf2035/funding/bmbf/erum;#bf2035/stakeholder/funder/bmbf;#bf2035/issue/technology-transfer

@@ -7,7 +7,7 @@ cslItem:
   citation-key: eucard2__2017__eucard2_applications_particle
   issued:
     date-parts:
-      - - "2017"
+      - - '2017'
         - 6
   keyword: >-
     #bf2035/application/industry;#bf2035/application/science;#bf2035/application/health;#bf2035/application/security

@@ -7,9 +7,9 @@ cslItem:
   citation-key: bmbf__2022__daten_und_fakten
   issued:
     date-parts:
-      - - "2022"
+      - - '2022'
         - 6
-  keyword: "#bf2035/stakeholder/funder/bmbf"
+  keyword: '#bf2035/stakeholder/funder/bmbf'
   language: en
   publisher: BMBF
   source: Zotero

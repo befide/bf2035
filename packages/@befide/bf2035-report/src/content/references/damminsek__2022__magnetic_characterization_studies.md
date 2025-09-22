@@ -9,8 +9,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2022"
-  keyword: "#university/kit;#gender/male"
+      - - '2022'
+  keyword: '#university/kit;#gender/male'
   language: en
   publisher: Karlsruher Institut für Technologie
   title: >-
@@ -19,8 +19,8 @@ cslItem:
   type: thesis
   URL: https://doi.org/10.5445/IR/1000153441
 tags:
-  - "#university/kit"
-  - "#gender/male"
+  - '#university/kit'
+  - '#gender/male'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

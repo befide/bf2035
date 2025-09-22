@@ -5,13 +5,13 @@ cslItem:
   author:
     - literal: Iaea
   citation-key: iaea__2021__compact_accelerator_based
-  collection-number: "1981"
+  collection-number: '1981'
   collection-title: TECDOC series
   event-place: Vienna
   ISBN: 978-92-0-127022-1
   issued:
     date-parts:
-      - - "2021"
+      - - '2021'
   keyword: >-
     #bf2035/accelerator-based-facility-type/neutron-source/compact-accelerator-based-neutron-source;#bf2035/application/science/neutron-science
   language: en

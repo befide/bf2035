@@ -4,7 +4,7 @@ cslItem:
   id: thefcccollaboration_etal__2019__fcchh_hadron_collider
   accessed:
     date-parts:
-      - - "2020"
+      - - '2020'
         - 3
         - 5
   author:
@@ -1774,7 +1774,7 @@ cslItem:
       given: S. A.
     - family: Nisati
       given: A.
-    - family: "No"
+    - family: 'No'
       given: J. M.
     - family: Nonis
       given: M.
@@ -2741,10 +2741,10 @@ cslItem:
   container-title-short: Eur. Phys. J. Spec. Top.
   DOI: 10.1140/epjst/e2019-900087-0
   ISSN: 1951-6355, 1951-6401
-  issue: "4"
+  issue: '4'
   issued:
     date-parts:
-      - - "2019"
+      - - '2019'
         - 7
   keyword: >-
     #bf2035/accelerator-based-facility-type/particle-collider/circular-particle-collider;#bf2035/accelerator-based-facility/fcc;#bf2035/stakeholder/research-institution/cern;#bf2035/application/science/high-energy-physics
@@ -2757,7 +2757,7 @@ cslItem:
   title-short: FCC-hh
   type: article-journal
   URL: 10.1140/epjst/e2019-900087-0
-  volume: "228"
+  volume: '228'
 tags:
   - >-
     bf2035:accelerator-based-facility-type/particle-collider/circular-particle-collider

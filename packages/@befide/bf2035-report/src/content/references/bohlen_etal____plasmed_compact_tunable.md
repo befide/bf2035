@@ -25,7 +25,7 @@ cslItem:
   keyword: >-
     #bf2035/accelerator-based-facility-type/photon-source;#bf2035/research-topic/plasma-acceleration;#bf2035/accelerating-technique/plasma-based-acceleration/plasma-based_laser-driven_acceleration
   language: en
-  title: "Plasmed X: Compact Tunable X-Ray Source"
+  title: 'Plasmed X: Compact Tunable X-Ray Source'
   type: speech
 tags:
   - bf2035:accelerator-based-facility-type/photon-source

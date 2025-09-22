@@ -49,8 +49,8 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2021"
-  keyword: "#gender/male;#university/uni-mainz;#facility/mesa"
+      - - '2021'
+  keyword: '#gender/male;#university/uni-mainz;#facility/mesa'
   language: de
   note: |-
     item-url: http://doi.org/10.25358/openscience-5886
@@ -64,9 +64,9 @@ cslItem:
   URL: >-
     https://openscience.ub.uni-mainz.de/bitstream/20.500.12030/5895/1/heil_philipp-kohärente_smit-20210504093102072.pdf
 tags:
-  - "#gender/male"
-  - "#university/uni-mainz"
-  - "#facility/mesa"
+  - '#gender/male'
+  - '#university/uni-mainz'
+  - '#facility/mesa'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

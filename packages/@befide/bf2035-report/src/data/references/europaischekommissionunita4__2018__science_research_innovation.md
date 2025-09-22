@@ -10,8 +10,8 @@ cslItem:
   ISBN: 978-92-79-69745-6
   issued:
     date-parts:
-      - - "2018"
-  keyword: "#bf2035/issue/excellence"
+      - - '2018'
+  keyword: '#bf2035/issue/excellence'
   language: en
   publisher: Publications Office
   publisher-place: Luxembourg

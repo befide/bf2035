@@ -9,16 +9,16 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2016"
-  keyword: "#university/uni-frankfurt;#facility/franz"
+      - - '2016'
+  keyword: '#university/uni-frankfurt;#facility/franz'
   language: en
   publisher: Goethe-Universität Frankfurt am Main
   title: Control system for the FRANZ facility
   type: thesis
   URL: https://hds.hebis.de/ubffm/Record/HEB371842166
 tags:
-  - "#university/uni-frankfurt"
-  - "#facility/franz"
+  - '#university/uni-frankfurt'
+  - '#facility/franz'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

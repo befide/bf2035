@@ -9,7 +9,7 @@ cslItem:
     Mass Spectrometry (AMS) technique, representing...
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 11
         - 3
   author:
@@ -18,7 +18,7 @@ cslItem:
   genre: CORDIS Project Fact Sheet
   issued:
     date-parts:
-      - - "2023"
+      - - '2023'
   keyword: >-
     #bf2035/funding/eu/horizon-europe;#bf2035/accelerator-based-facility-type/mass-spectroscope
   language: en

@@ -4,7 +4,7 @@ cslItem:
   id: cernacceleratorschool__2024__cern_accelerator_school
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 4
         - 27
   author:
@@ -13,8 +13,8 @@ cslItem:
   genre: Homepage
   issued:
     date-parts:
-      - - "2024"
-  keyword: "#bf2035/stakeholder/research-institution/cern;#bf2035/issue/teaching"
+      - - '2024'
+  keyword: '#bf2035/stakeholder/research-institution/cern;#bf2035/issue/teaching'
   language: en
   title: CERN Accelerator School
   type: webpage

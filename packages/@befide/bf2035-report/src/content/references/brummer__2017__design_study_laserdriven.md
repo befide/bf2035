@@ -9,15 +9,15 @@ cslItem:
   genre: Doctoral dissertation
   issued:
     date-parts:
-      - - "2017"
-  keyword: "#university/uni-hamburg"
+      - - '2017'
+  keyword: '#university/uni-hamburg'
   language: en
   publisher: Universität Hamburg
   title: Design study of a laser-driven x-ray source for medical fluorescence imaging
   type: thesis
   URL: https://bib-pubdb1.desy.de/record/402600
 tags:
-  - "#university/uni-hamburg"
+  - '#university/uni-hamburg'
 rendered:
   bibliography: |-
     <span class="csl-bib-body">

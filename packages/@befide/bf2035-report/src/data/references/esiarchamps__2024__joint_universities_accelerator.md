@@ -8,7 +8,7 @@ cslItem:
     preparing a doctoral thesis.
   accessed:
     date-parts:
-      - - "2024"
+      - - '2024'
         - 6
         - 2
   author:
@@ -17,8 +17,8 @@ cslItem:
   container-title: ESI Archamps
   issued:
     date-parts:
-      - - "2024"
-  keyword: "#bf2035/issue/teaching"
+      - - '2024'
+  keyword: '#bf2035/issue/teaching'
   language: en
   title: Joint Universities Accelerator School
   type: webpage

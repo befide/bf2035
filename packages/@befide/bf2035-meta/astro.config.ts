@@ -21,7 +21,7 @@ import tailwindcss from "@tailwindcss/vite"
 // https://astro.build/config
 export default defineConfig({
   devToolbar: {
-    enabled: false
+    enabled: false,
   },
   experimental: {
     contentIntellisense: true,
@@ -58,7 +58,9 @@ export default defineConfig({
     ],
   },
   integrations: [
-    ...(false && process.env.NODE_ENV === "production" ? [] : [astroD2({ inline: true })]),
+    ...(false && process.env.NODE_ENV === "production"
+      ? []
+      : [astroD2({ inline: true })]),
     starlight({
       // defaultLocale: "en",
       // locales: {
@@ -110,20 +112,27 @@ export default defineConfig({
                 { label: "Introduction", link: "/project/02-methodology/" },
                 {
                   label: "Analysis",
-                  autogenerate: { directory: "/project/02-methodology/01-analysis/" },
+                  autogenerate: {
+                    directory: "/project/02-methodology/01-analysis/",
+                  },
                 },
                 {
                   label: "Content Planning",
-                  autogenerate: { directory: "/project/02-methodology/02-content-plannning/" },
+                  autogenerate: {
+                    directory: "/project/02-methodology/02-content-plannning/",
+                  },
                 },
                 {
                   label: "Content Creation",
-                  autogenerate: { directory: "/project/02-methodology/03-content-creation/" },
+                  autogenerate: {
+                    directory: "/project/02-methodology/03-content-creation/",
+                  },
                 },
                 {
                   label: "Approval and Engagement",
                   autogenerate: {
-                    directory: "/project/02-methodology/04-approval-and-engagement/",
+                    directory:
+                      "/project/02-methodology/04-approval-and-engagement/",
                   },
                 },
               ],

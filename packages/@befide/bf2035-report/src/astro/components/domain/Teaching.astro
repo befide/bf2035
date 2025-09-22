@@ -1,27 +1,27 @@
 ---
-import { rollups, sum } from 'd3-array'
+import { rollups, sum } from 'd3-array';
 
-import _teachings from './teaching.json'
+import _teachings from './teaching.json';
 
-export type Teachings = Teaching[]
+export type Teachings = Teaching[];
 
 export interface Teaching {
-  Name: string
-  targetAudience: string
-  type: string
-  lecture__sws: number
-  exercises__sws: number
-  lab__sws: number
-  seminar__sws: number
-  sws: number
-  WiSe: string
-  SoSe: string
-  'link:university': string
-  university: string
-  'link:professors': string
-  url: string
+  Name: string;
+  targetAudience: string;
+  type: string;
+  lecture__sws: number;
+  exercises__sws: number;
+  lab__sws: number;
+  seminar__sws: number;
+  sws: number;
+  WiSe: string;
+  SoSe: string;
+  'link:university': string;
+  university: string;
+  'link:professors': string;
+  url: string;
 }
-const teachings: Teachings = Object.values(_teachings)
+const teachings: Teachings = Object.values(_teachings);
 
 const teachingsByUniversities = rollups(
   teachings,
@@ -29,32 +29,32 @@ const teachingsByUniversities = rollups(
     entries: v,
     sws: sum(
       v,
-      (d) => d.lecture__sws + d.lab__sws + d.exercises__sws + d.seminar__sws
+      (d) => d.lecture__sws + d.lab__sws + d.exercises__sws + d.seminar__sws,
     ),
     lecture__sws: sum(v, (d) => d.lecture__sws),
     exercises__sws: sum(v, (d) => d.lab__sws + d.exercises__sws),
     seminar__sws: sum(v, (d) => d.seminar__sws),
   }),
-  (d) => d['link:university']
-)
+  (d) => d['link:university'],
+);
 
 function fachbereich(university: string) {
-  const dir = new Map<string, string[]>()
-  dir.set('HU Berlin', ['Physik'])
-  dir.set('KIT', ['Physik'])
-  dir.set('RWTH Aachen', ['Physik'])
-  dir.set('TU Darmstadt', ['Physik', 'E-Technik'])
-  dir.set('TU Dortmund', ['Physik'])
-  dir.set('TU Dresden', ['Physik'])
-  dir.set('Uni Bonn', ['Physik'])
-  dir.set('Uni Frankfurt', ['Physik'])
-  dir.set('Uni Hamburg', ['Physik'])
-  dir.set('Uni Hamburg', ['Physik'])
-  dir.set('Uni Jena', ['Physik'])
-  dir.set('Uni Mainz', ['Physik'])
-  dir.set('Uni Rostock', ['E-Technik'])
-  dir.set('Uni Siegen', ['Physik'])
-  return dir.get(university) || []
+  const dir = new Map<string, string[]>();
+  dir.set('HU Berlin', ['Physik']);
+  dir.set('KIT', ['Physik']);
+  dir.set('RWTH Aachen', ['Physik']);
+  dir.set('TU Darmstadt', ['Physik', 'E-Technik']);
+  dir.set('TU Dortmund', ['Physik']);
+  dir.set('TU Dresden', ['Physik']);
+  dir.set('Uni Bonn', ['Physik']);
+  dir.set('Uni Frankfurt', ['Physik']);
+  dir.set('Uni Hamburg', ['Physik']);
+  dir.set('Uni Hamburg', ['Physik']);
+  dir.set('Uni Jena', ['Physik']);
+  dir.set('Uni Mainz', ['Physik']);
+  dir.set('Uni Rostock', ['E-Technik']);
+  dir.set('Uni Siegen', ['Physik']);
+  return dir.get(university) || [];
 }
 ---
 
