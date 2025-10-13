@@ -1,124 +1,110 @@
 ---
-import Base from './Base.astro';
+import Base from './Base.astro'
 
-import Header from '@components/ui/LayoutHeader.astro';
-import Footer from '@components/ui/LayoutFooter.astro';
-import MobileMenuToggle from '@components/ui/MobileMenuToggle.astro';
-import Sidebar from '@components/ui/Sidebar.astro';
+import Header from '@components/ui/LayoutHeader.astro'
+import Footer from '@components/ui/LayoutFooter.astro'
+import MobileMenuToggle from '@components/ui/MobileMenuToggle.astro'
+import Sidebar from '@components/ui/Sidebar.astro'
+import SettingsDebugToggle from '../components/ui/SettingsDebugToggle.astro'
+import SettingsFitSpreadToggle from '../components/ui/SettingsFitSpreadToggle.astro'
+import SettingsPrintPreviewToggle from '../components/ui/SettingsPrintPreviewToggle.astro'
+import Navigation from '../components/ui/Navigation.astro'
 
-const { lang, title } = Astro.props;
+const { lang, title } = Astro.props
 ---
 
 <Base {lang} {title}>
   <div id="layout" class="layout">
-    <header id="nav" class="layout__header">
+    <header id="nav" class="layout__header bg-gray-200">
       <Header />
     </header>
-    <main id="main" class="layout__main" data-pagefind-body>
-      <div class="content-wrapper">
-        <slot />
-      </div>
+    <main id="main" class="layout__main p-4">
+      <slot />
     </main>
-    <Footer />
+    <aside class="toolbox">
+      <Navigation />
+      <hr />
+      <div class="toolbox-item">
+        <SettingsPrintPreviewToggle />
+      </div>
+      <!-- <SettingsThemeToggle /> -->
+      <div class="toolbox-item">
+        <SettingsDebugToggle />
+      </div>
+      <div class="toolbox-item">
+        <SettingsFitSpreadToggle />
+      </div>
+    </aside>
+    <footer class="layout__footer bg-gray-200">
+      <Footer />
+    </footer>
   </div>
-  <script>
-    function render() {
-      import('pagedjs').then((pagedjs) => {
-        const previewer = new pagedjs.Previewer();
-
-        const inputNode = document.getElementById('main');
-
-        if (inputNode != null) {
-          const clone = inputNode;
-
-          const fragment = document.createDocumentFragment();
-          fragment.appendChild(clone);
-
-          //   document.body.setAttribute("data-pagedjs-mode", props.mode);
-
-          previewer.preview(fragment, null).then((flow: any) => {
-            console.log(flow);
-          });
-        }
-      });
-    }
-    document.addEventListener('keydown', function (e) {
-      if (e.ctrlKey && e.code === 'KeyP') {
-        render();
-      }
-    });
-  </script>
 </Base>
+<script>
+  function render() {
+    import('pagedjs').then((pagedjs) => {
+      const previewer = new pagedjs.Previewer()
 
-<style>
-  .page {
-    flex-direction: column;
-    min-height: 100vh;
+      const inputNode = document.getElementById('main')
+
+      if (inputNode != null) {
+        const clone = inputNode
+
+        const fragment = document.createDocumentFragment()
+        fragment.appendChild(clone)
+
+        //   document.body.setAttribute("data-pagedjs-mode", props.mode);
+
+        previewer.preview(fragment, null).then((flow: any) => {
+          console.log(flow)
+        })
+      }
+    })
   }
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.code === 'KeyP') {
+      render()
+    }
+  })
+</script>
 
-  .header {
-    z-index: var(--sl-z-index-navbar);
+<style is:global>
+  .toolbox {
     position: fixed;
-    inset-inline-start: 0;
-    inset-block-start: 0;
-    width: 100%;
-    height: var(--sl-nav-height);
-    border-bottom: 1px solid var(--sl-color-hairline-shade);
-    padding: var(--sl-nav-pad-y) var(--sl-nav-pad-x);
-    padding-inline-end: var(--sl-nav-pad-x);
-    background-color: var(--sl-color-bg-nav);
-  }
+    right: -6rem;
+    top: 10rem;
+    width: 8rem;
+    z-index: 10000;
+    overflow: hidden;
 
-  :global([data-has-sidebar]) .header {
-    padding-inline-end: calc(
-      var(--sl-nav-gap) + var(--sl-nav-pad-x) + var(--sl-menu-button-size)
-    );
-  }
-
-  .sidebar-pane {
-    visibility: var(--sl-sidebar-visibility, hidden);
-    position: fixed;
-    z-index: var(--sl-z-index-menu);
-    inset-block: var(--sl-nav-height) 0;
-    inset-inline-start: 0;
-    width: 100%;
-    background-color: var(--sl-color-black);
-    overflow-y: auto;
-  }
-
-  :global([aria-expanded='true']) ~ .sidebar-pane {
-    --sl-sidebar-visibility: visible;
-  }
-
-  .sidebar-content {
-    height: 100%;
-    min-height: max-content;
-    padding: 1rem var(--sl-sidebar-pad-x) 0;
+    transition: 0.1s;
+    display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
+  }
+  .toolbox:hover {
+    right: -0rem;
+    transition: 0.1s;
+  }
+  .toolbox .toolbox-item {
+    flex: 1 1 100%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: var(--text-xs);
+    white-space: nowrap;
+
+    margin-right: -80px;
+
+    top: 10rem;
+  }
+  .toolbox:hover .toolbox-item {
+    margin-right: 0px;
   }
 
-  @media (min-width: 50rem) {
-    .sidebar-content::after {
-      content: '';
-      padding-bottom: 1px;
-    }
-  }
-
-  .main-frame {
-    padding-top: calc(var(--sl-nav-height) + var(--sl-mobile-toc-height));
-    padding-inline-start: var(--sl-content-inline-start);
-  }
-
-  @media (min-width: 50rem) {
-    :global([data-has-sidebar]) .header {
-      padding-inline-end: var(--sl-nav-pad-x);
-    }
-    .sidebar-pane {
-      --sl-sidebar-visibility: visible;
-      width: var(--sl-sidebar-width);
-      background-color: var(--sl-color-bg-sidebar);
-      border-inline-end: 1px solid var(--sl-color-hairline-shade);
-    }
+  .layout__footer {
+    padding: 1rem;
   }
 </style>

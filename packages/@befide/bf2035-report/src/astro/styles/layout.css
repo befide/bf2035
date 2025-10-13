@@ -1,0 +1,52 @@
+:root {
+  --grid__column-count: 12;
+  --grid__column-gap-in-baselines: 1;
+  --grid__column-width-in-baselines: 3;
+  --grid__row-count: 17;
+  --grid__row-gap-in-baselines: 1;
+  --grid__row-height-in-baselines: 3;
+  --page__grid__height: 67rem;
+  --page__grid__width: 47rem;
+  --page__width: 794px;
+  --page__height: 1123px;
+
+  --page__margin__inside: calc(-0.5 * calc(794px - 47rem));
+  --page__margin__outside: calc(-0.5 * calc(794px - 47rem));
+
+  --page__margin__bottom: 9rem;
+  --page__margin__top: calc(-0.5 * calc(1123px - 67rem));
+  /*--page__margin__x: $PRINT__PAGE__MARGIN__OUTSIDE;
+  --page__margin__y: $PRINT__PAGE__MARGIN__TOP; */
+  --bleed: 0;
+  --bleeding--page--width: 210mm;
+  --bleeding--page--height: 297mm;
+}
+
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid:
+    'header' 3rem
+    'main' 100%
+    'footer' 3rem
+    / 1fr;
+  gap: 0rem;
+}
+
+.layout__header {
+  grid-area: header;
+}
+.layout__main {
+  grid-area: main;
+}
+.layout__footer {
+  grid-area: footer;
+}
+
+[data-fit-spread='true'] {
+  .layout__main {
+    transform: scale(var(--fit-spread-scale));
+    transform-origin: 0 0;
+  }
+}

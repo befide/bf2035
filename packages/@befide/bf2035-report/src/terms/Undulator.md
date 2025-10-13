@@ -1,5 +1,0 @@
----
-shortTitle:
-longTitle:
-definition:
----

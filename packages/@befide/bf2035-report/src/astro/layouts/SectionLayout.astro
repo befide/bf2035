@@ -1,17 +1,17 @@
 ---
-import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { render, type CollectionEntry } from 'astro:content'
 
-import { getImage, Image } from 'astro:assets';
+import { getImage, Image } from 'astro:assets'
 
-import BibRef from '@components/ui/BibRef.astro';
-import BibList from '@components/ui/BibList.astro';
-import TOC from '@components/ui/TOC.astro';
+import BibList from '@components/ui/BibList.astro'
+import BibRef from '@components/ui/BibRef.astro'
+import TOC from '@components/ui/TOC.astro'
 
 export interface Props {
-  section: CollectionEntry<'sections'>;
+  section: CollectionEntry<'sections'>
 }
 
-const { section } = Astro.props;
+const { section } = Astro.props
 
 const {
   title,
@@ -21,8 +21,8 @@ const {
   sectionType = 'spread',
   sectionClass = '',
   backgroundImageSrc,
-} = section.data;
-const { Content } = await render(section);
+} = section.data
+const { Content } = await render(section)
 
 const optimizedBackground =
   backgroundImageSrc &&
@@ -33,10 +33,10 @@ const optimizedBackground =
         width: 4960,
         height: 3508,
       })
-    : backgroundImageSrc);
+    : backgroundImageSrc)
 ---
 
-<div class={'spread ' + sectionType + ' ' + sectionClass}>
+<div class={'spread  ' + sectionType + ' ' + sectionClass}>
   {
     sectionType !== 'right' && (
       <div
@@ -47,7 +47,7 @@ const optimizedBackground =
             : ``
         }
       >
-        <div class="spread__page-grid debug-overlay">
+        <div class="page-grid format debug-overlay">
           {(sectionType === 'spread' || sectionType === 'left') && (
             <header class="spread__header">
               {supertitle && (
@@ -69,8 +69,6 @@ const optimizedBackground =
               )}
             </header>
           )}
-          <p class="empty">&nbsp;</p>
-          <Content components={{ Image, BibRef, BibList, TOC }} />
         </div>
       </div>
     )
@@ -85,7 +83,7 @@ const optimizedBackground =
             : ``
         }
       >
-        <div class="spread__page-grid debug-overlay">
+        <div class="page-grid format debug-overlay">
           {sectionType !== 'spread' && (
             <header class="spread__header">
               {false && sectionNumber && (

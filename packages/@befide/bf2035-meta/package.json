@@ -59,7 +59,6 @@
     "jsdom": "catalog:",
     "nanostores": "catalog:",
     "pagefind": "catalog:",
-    "playwright": "catalog:",
     "postcss": "catalog:",
     "postcss-import": "catalog:",
     "postcss-preset-env": "catalog:",

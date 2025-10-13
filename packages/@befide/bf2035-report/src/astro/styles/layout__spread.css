@@ -1,0 +1,83 @@
+.spread {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@media screen {
+  [data-print-preview='true'] .spread {
+    box-shadow: 0 0 10px 1px inset #000;
+  }
+}
+@media screen {
+  [data-print-preview='true'] .spread {
+    box-shadow: 0 0 10px 1px inset #000;
+  }
+}
+.spread__page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+[data-print-preview='true'] .spread__page {
+  padding-bottom: var(--page__margin__bottom);
+  width: var(--page__width);
+  height: var(--page__height);
+}
+[data-print-preview='true'] .spread__page.left {
+  padding-right: var(--page__margin__inside);
+  padding-left: var(--page__margin__outside);
+}
+[data-print-preview='true'] .spread__page.right {
+  padding-right: var(--page__margin__outside);
+  padding-left: var(--page__margin__inside);
+}
+[data-print-preview='true'] .page-grid {
+  position: relative;
+  z-index: 1;
+}
+[data-print-preview='true'] .page-grid {
+  z-index: 1000;
+  position: relative;
+  display: grid;
+  margin-top: var(--page__margin__top);
+  width: var(--page__grid__width);
+  height: var(--page__grid__height);
+  grid-column-gap: calc(var(--grid__column-gap-in-baselines) * 1rem);
+  grid-row-gap: calc(var(--grid__row-gap-in-baselines) * 1rem);
+  grid-template-columns: repeat(
+    var(--grid__column-count),
+    calc(var(--grid__row-height-in-baselines) * 1rem)
+  );
+  grid-template-rows: repeat(
+    var(--grid__row-count),
+    calc(var(--grid__column-width-in-baselines) * 1rem)
+  );
+}
+[data-print-preview='true'] .spread__page {
+  position: relative;
+}
+[data-print-preview='true'] .spread__page.left {
+  background-position: left;
+}
+[data-print-preview='true'] .spread__page.left .spread__page__background {
+  left: 0;
+  object-position: left bottom;
+}
+[data-print-preview='true'] .spread__page.right {
+  background-position: right;
+}
+[data-print-preview='true'] .spread__page.right .spread__page__background {
+  right: 0;
+  object-position: right bottom;
+}
+[data-print-preview='true'] .spread section h1 {
+  display: none;
+}
+[data-print-preview='true'] .spread p.empty {
+  grid-area: 1/1/1/1;
+}
+[data-print-preview='true'] .spread .spread__page.left .spread--right,
+[data-print-preview='true'] .spread .spread__page.right .spread--left {
+  display: none !important;
+}

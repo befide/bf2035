@@ -1,0 +1,61 @@
+@layer base {
+  .format {
+    p {
+      font-size: var(--text-base);
+      margin-top: 0 !important;
+      /*max-width: 70ch;*/
+      @apply baseline-1/1;
+    }
+
+    p + p {
+      text-indent: 0.25rem;
+    }
+    ol,
+    ul {
+      font-size: var(--text-base);
+      @apply baseline-1/1;
+    }
+    ol {
+      list-style: decimal-leading-zero;
+    }
+
+    li::marker,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+    p.description {
+      font-size: var(--text-xl);
+      padding-bottom: 1rem;
+      @apply baseline-2/2;
+    }
+
+    h1 {
+      font-size: var(--text-xl);
+
+      max-width: 70ch;
+      @apply baseline-3/1;
+    }
+    h2 {
+      font-size: var(--text-lg);
+      @apply baseline-3/1;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: var(--text-base);
+      font-weight: bold;
+      @apply baseline-1/2;
+    }
+    h4 {
+      text-transform: none;
+      font-size: var(--text-base);
+      font-weight: bold;
+      @apply baseline-1/1;
+    }
+
+    ol li {
+      page-break-inside: avoid;
+    }
+  }
+}

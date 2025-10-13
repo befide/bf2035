@@ -1,28 +1,21 @@
 ---
-import { getReferences } from '@utils/getReferences';
-import BibItem from './BibItem.astro';
+import { getReferences } from '@lib/references'
+import BibItem from './BibItem.astro'
 
 export interface Props {
-  title?: string;
-  tag?: string;
+  title?: string
+  tag?: string
 }
-const { tag = '', title } = Astro.props;
+const { tag = '', title } = Astro.props
 
-const references = await getReferences(tag);
+const references = await getReferences()
 ---
 
 {title && <h3 class="md">{title}</h3>}
-<ul class="md bib-list">
-  {references.map((reference) => <BibItem id={reference.id} withTags={true} />)}
-</ul>
-
-<style lang="stylus">
-
-
-.md.bib-list {
-  $baselined-typography(body-sm);
-}
-
-
-
-</style>
+<olx class="md bib-list">
+  {
+    references
+      .slice(0, 10)
+      .map((reference) => <BibItem item={reference} withTags={true} />)
+  }
+</olx>

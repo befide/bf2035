@@ -1,1 +1,0 @@
-Bei der Grundlagenforschung handelt es sich um experimentelle oder theoretische Arbeiten, die primär der Erlangung neuen Wissens über die grundlegenden Ursachen von Phänomenen und beobachtbaren Fakten dienen, ohne dabei eine bestimmte Anwendung oder Nutzung im Blick zu haben. Grundlagenforschung wird im Wesentlichen an Hochschulen und Forschungseinrichtungen durchgeführt.

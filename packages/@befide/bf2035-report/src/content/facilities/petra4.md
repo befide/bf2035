@@ -1,4 +1,0 @@
----
-organisation:
-acronym-for:
----

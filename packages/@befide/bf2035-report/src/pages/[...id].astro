@@ -1,34 +1,45 @@
 ---
-import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
-import BaseLayout from '@layouts/BaseLayout.astro';
-import SectionLayout from '@layouts/SectionLayout.astro';
+import { getCollection } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
+import BaseLayout from '@layouts/BaseLayout.astro'
+
+import SectionPageLeft from '@/astro/layouts/SectionPageLeft.astro'
+import SectionPageRight from '@/astro/layouts/SectionPageRight.astro'
 
 export async function getStaticPaths() {
-  const sections = await getCollection('sections');
+  const sections = await getCollection('sections')
 
   const paths = sections.map((section: CollectionEntry<'sections'>) => ({
     params: { id: section.id },
     props: { section },
-  }));
+  }))
 
-  return paths;
+  return paths
 }
 
-const { section } = Astro.props;
+const { section } = Astro.props
 
-const { title, sectionType, language = 'de' } = section.data;
+const { title, sectionType } = section.data
 ---
 
-<BaseLayout lang={language || 'en'} {title}>
+<BaseLayout lang={'de'} {title}>
   {
-    (sectionType === 'part' || sectionType === 'cover') && (
-      <SectionLayout section={section} />
+    (sectionType === 'part' ||
+      sectionType === 'cover' ||
+      sectionType === 'spread') && (
+      <div class="spread">
+        <SectionPageLeft section={section} />
+        <SectionPageRight section={section} />
+      </div>
     )
   }
   {
-    !(sectionType === 'part' || sectionType === 'cover') && (
-      <SectionLayout section={section} />
+    sectionType === 'left' && (
+      <>
+        <div class="spread" />
+        <SectionPageLeft section={section} />
+      </>
     )
   }
+  {sectionType === 'right' && <SectionPageRight section={section} />}
 </BaseLayout>

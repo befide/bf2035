@@ -8,8 +8,8 @@ import AstroPWA from '@vite-pwa/astro';
 import { purgecss } from '@zokki/astro-purgecss';
 import type { ManifestOptions } from 'vite-plugin-pwa';
 
-import rehypeAddClasses from 'rehype-add-classes';
-import rehypeCitation from 'rehype-citation';
+// import rehypeAddClasses from 'rehype-add-classes';
+// import rehypeCitation from 'rehype-citation';
 // import rehypeFigure from "rehype-figure"
 import rehypeRewrite from 'rehype-rewrite';
 // import remarkNumberedFootnotes from 'remark-numbered-footnote-labels';
@@ -32,13 +32,6 @@ process.env.NODE_ENV === 'production'
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
-    css: {
-      preprocessorOptions: {
-        stylus: {
-          imports: [resolve(__dirname, 'src/astro/styles/mixins/index.styl')],
-        },
-      },
-    },
   },
   output: 'static',
   // site,
@@ -71,12 +64,12 @@ export default defineConfig({
       //   },
       // ],
 
-      [
-        rehypeAddClasses,
-        {
-          'img,figure,table,section,h1,h2,h3,h4,p,ol,ul,li,blockquote': 'md',
-        },
-      ],
+      // [
+      //   rehypeAddClasses,
+      //   {
+      //     'img,figure,table,section,h1,h2,h3,h4,p,ol,ul,li,blockquote': 'md',
+      //   },
+      // ],
       [
         rehypeRewrite,
         {
@@ -109,15 +102,14 @@ export default defineConfig({
         './src/astro/components/domain/research-agenda/ResearchAgenda.astro',
         './src/astro/components/domain/research-agenda/ResearchAgendaFacility.astro',
         './src/astro/components/domain/research-agenda/ResearchAgendaObjective.astro',
+        './src/astro/components/domain/research-agenda/ResearchAgendaUserGroup.astro',
         './src/astro/components/domain/research-agenda/ResearchAgendaTopic.astro',
         './src/astro/components/ui/BibRef.astro',
+        './src/astro/layouts/SectionPageLeft.astro',
+        './src/astro/layouts/SectionPageRight.astro',
       ],
     }),
-    // tailwind(),
-    // vue({
-    //   appEntrypoint: '/src/_app.ts',
-    //   reactivityTransform: true,
-    // }),
+
     mdx({
       gfm: true,
     }),
@@ -140,7 +132,7 @@ export default defineConfig({
       manifest: manifest as Partial<ManifestOptions>,
       showMaximumFileSizeToCacheInBytesWarning: false,
     }),
-    purgecss(),
+    purgecss({ logAllFiles: true }),
   ],
   devToolbar: { enabled: false },
 });

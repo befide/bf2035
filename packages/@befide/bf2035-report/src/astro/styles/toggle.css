@@ -1,0 +1,46 @@
+.toolbox-item {
+  display: flex;
+  flex-direction: row;
+
+  font-size: var(--text-xs);
+  line-height: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+
+  transition: 0.1s;
+}
+.toolbox-item:hover .label {
+  background-color: #ddd;
+  transition: 0.1s;
+}
+.toolbox-item .label {
+  background-color: #eee;
+  transition: 0.1s;
+  flex: 1 0 5rem;
+}
+
+label.toolbox-item input {
+  display: inline-block;
+  flex: 0;
+  font-family: var(--ui__font-family);
+  visibility: hidden;
+}
+label.toolbox-item .label {
+  flex: 1;
+  /* padding: calc(0.5 * var(--ui__baseline-height)); */
+  white-space: nowrap;
+}
+label.toolbox-item .state {
+  flex: 1;
+  /* padding: calc(0.5 * var(--ui__baseline-height)); */
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+}
+label.toolbox-item input[role='switch']:not(:checked) ~ .state span.on {
+  visibility: hidden;
+}
+label.toolbox-item input[role='switch']:checked ~ .state span.off {
+  visibility: hidden;
+}

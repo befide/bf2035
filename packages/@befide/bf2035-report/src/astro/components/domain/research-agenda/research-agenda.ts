@@ -35,7 +35,8 @@ export interface ResearchAgendaItem {
 }
 export type ResearchAgenda = ResearchAgendaItem[];
 
-export const createResearchAgenda = (filter = 'agenda.facilities') => {
+export const createResearchAgenda = (filterParam = 'agenda.facilities') => {
+  let filter = filterParam;
   const dTheta = 0.0;
 
   const activeElements = new Set<string>();
@@ -396,46 +397,46 @@ export const createResearchAgenda = (filter = 'agenda.facilities') => {
     .attr('href', ({ name }) => `#${name}`)
     .text(({ name }) => name);
 
-  // updateFilter(nodeElements);
+  // // updateFilter(nodeElements);
 
   return document.body.innerHTML;
 };
 
-function updateFilter(nodeElements: any) {
-  // links.forEach((link) => {
-  //   if (link.source.data.path.includes(filter)) {
-  //     activeElements.add(link.id);
-  //     activeElements.add(link.target.data.id);
-  //   }
-  // });
-  nodeElements
-    .attr('fill-opacity', (d) =>
-      filter === '' || activeElements.has(d.data.path) ? 1 : 0.1,
-    )
-    .attr('fill', (d) =>
-      filter === '' || activeElements.has(d.data.path) ? color(d) : '#f0f0f0',
-    );
+// function updateFilter(nodeElements: any) {
+//   // links.forEach((link) => {
+//   //   if (link.source.data.path.includes(filter)) {
+//   //     activeElements.add(link.id);
+//   //     activeElements.add(link.target.data.id);
+//   //   }
+//   // });
+//   nodeElements
+//     .attr('fill-opacity', (d) =>
+//       filter === '' || activeElements.has(d.data.path) ? 1 : 0.1,
+//     )
+//     .attr('fill', (d) =>
+//       filter === '' || activeElements.has(d.data.path) ? color(d) : '#f0f0f0',
+//     );
 
-  // nodeElements
-  //   .selectAll("tspan")
-  //   .attr("filter", (d) =>
-  //     filter !== "" && d.data.path.includes(filter)
-  //       ? "url(#glow)"
-  //       : "",
-  //   );
+//   // nodeElements
+//   //   .selectAll("tspan")
+//   //   .attr("filter", (d) =>
+//   //     filter !== "" && d.data.path.includes(filter)
+//   //       ? "url(#glow)"
+//   //       : "",
+//   //   );
 
-  linkElements
-    .attr('stroke-width', ({ path = '' }) =>
-      filter === '' || activeElements.has(path) ? 3 : 3,
-    )
-    .attr('stroke-opacity', ({ id = '' }) =>
-      filter === '' || activeElements.has(id) ? 0.3 : 0.0,
-    )
-    .style('stroke', ({ id = '' }) =>
-      filter === '' || activeElements.has(id)
-        ? `url(#${gradientId({ id })})`
-        : '#999999',
-    );
-}
+//   linkElements
+//     .attr('stroke-width', ({ path = '' }) =>
+//       filter === '' || activeElements.has(path) ? 3 : 3,
+//     )
+//     .attr('stroke-opacity', ({ id = '' }) =>
+//       filter === '' || activeElements.has(id) ? 0.3 : 0.0,
+//     )
+//     .style('stroke', ({ id = '' }) =>
+//       filter === '' || activeElements.has(id)
+//         ? `url(#${gradientId({ id })})`
+//         : '#999999',
+//     );
+// }
 
-// const item = researchAgenda.find((item) => item.name === filter)
+// // const item = researchAgenda.find((item) => item.name === filter)

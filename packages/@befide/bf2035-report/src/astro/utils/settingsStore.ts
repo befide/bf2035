@@ -19,11 +19,12 @@ export const settings = persistentMap<SettingsValue>('settings:', {
 function setFitSpreadScale() {
   const windowSize = { height: window.innerHeight, width: window.innerWidth };
   const boundingRect = { width: 1588, height: 1123 };
-  const scale = Math.min(
-    (windowSize.height - 100) / boundingRect.height,
-    windowSize.width / boundingRect.width,
-  );
-
+  const scale =
+    Math.min(
+      (windowSize.height - 100) / boundingRect.height,
+      windowSize.width / boundingRect.width,
+    ) / 2;
+  console.log({ scale });
   document.documentElement.style.setProperty('--fit-spread-scale', scale + '');
 }
 

@@ -1,16 +1,12 @@
 ---
-import TOCItem from '@ui/TOCItem.astro';
-import { getSectionsTreeRoot } from '@utils/getSections';
+import TOCItem from '@ui/TOCItem.astro'
+import { getSectionsTreeRoot } from '@lib/sections/'
 
-const root = await getSectionsTreeRoot();
+const root = await getSectionsTreeRoot()
+
+console.log({ root })
 ---
 
-<ul class="toc-items">
+<ul class="toc">
   <TOCItem node={root} />
 </ul>
-
-<style is:global>
-  ul.toc-items {
-    margin-left: 0rem;
-  }
-</style>

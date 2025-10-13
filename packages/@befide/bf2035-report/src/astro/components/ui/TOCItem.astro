@@ -1,115 +1,85 @@
 ---
-import { getPath } from '@utils/getSections';
-import type { SectionTreeNode } from '@utils/getSections';
+import type { SectionTreeNode } from '@lib/sections'
 
 export type Props = {
-  node: SectionTreeNode;
-};
+  node: SectionTreeNode
+}
 
-const { node: tocItem } = Astro.props;
+const { node: tocItem } = Astro.props
 ---
 
-<li class={`toc-item depth-${tocItem.depth}`} data-path={tocItem?.data?.slug}>
+<li data-depth={tocItem.depth} data-path={tocItem?.id}>
   {
-    !tocItem.data?.data?.excludeFromToc && (
+    !tocItem.data.data.excludeFromTour && (
       <a href={'/' + tocItem?.data?.id}>
         <span class="section-number">
           {tocItem.data && tocItem.data?.data.sectionNumber}
         </span>
         <span class="section-title">
-          {tocItem.data && tocItem.data?.data.title}
+          {tocItem.data && tocItem.data?.data.title} {tocItem.depth}
         </span>
       </a>
     )
   }
-  <ul
-    class={`toc-items depth-${tocItem.depth + 1}`}
-    data-path={tocItem?.data?.id}
-  >
-    {tocItem.children?.map((child) => <Astro.self node={child} />)}
-  </ul>
+  {
+    tocItem.children?.length && (
+      <ul data-path={tocItem?.data?.id}>
+        {tocItem.children?.map((child) => (
+          <Astro.self node={child} />
+        ))}
+      </ul>
+    )
+  }
 </li>
 
-<style lang="stylus" is:global>
-  li.toc-item:before  
-    content: " "
-    display none;
-  // li a
-  //   padding-left: 1rem;
-  //   // display: inline-block;   
-  //   // position: relative;
-  
-  
-  li  > a
-    display: flex;   
-    // flex-direction row
-    gap 1rem
-    // max-width: 16rem
-    
-    
-    span 
-      display inline-block
-      $baselined-typography(body-sm);
-
-
-  .section-number 
+<style>
+  li > a {
+    display: flex;
+    gap: 1rem;
+  }
+  li > a span {
+    display: inline-block;
+  }
+  .section-number {
     flex: 0 0 3rem;
-    // flex-direction row
     text-align: right;
-    
-  .depth-2 span
-    $baselined-typography(body-xl);
-    
-  .depth-3 span
-    $baselined-typography(body-xl);
-  .depth-4 span
-    $baselined-typography(body-lg);
-  
-  [id*='mainmatter'].toc-item.depth-2
+  }
+  .section-title {
+    flex: 1 0 5rem;
+  }
+
+  [data-depth='2'] .section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  [data-depth='3'] .section-title {
+    text-transform: none;
+    font-weight: normal;
+    font-weight: bold;
+  }
+  [data-depth='4'] .section-title,
+  [data-path*='frontmatter'][data-depth='2'] .section-title {
+    text-transform: none;
+    font-weight: normal;
+  }
+
+  [data-path*='body-matter'][data-depth='2'] {
     margin-bottom: 1rem;
-    
-  .section-title
-    flex: 1 0 5rem
-    
-  .depth-2 .section-title
-    $bold()
-    text-transform uppercase
-  
-  .depth-3 .section-title
-    $bold()
-    text-transform none
-  
-  .depth-4 .section-title, [id*='frontmatter'].depth-2 .section-title
-      $regular()
-      text-transform none
-  .toc-items.depth-1
-    display flex
+  }
+  [data-path*='body-matter'][data-depth='3'] {
+    display: flex;
     flex-direction: column;
-
-  
-    
-  [id*='mainmatter'].toc-items.depth-3
-    display flex
-    flex-direction column
-  [id*='mainmatter'].toc-items.depth-4
-    flex-direction column
-
-
-  .toc-items.depth-2[data-path="de/01-front-matter/"] .depth-2 .section-title
-    text-transform none
-    $regular()
-
-  .toc-items.depth-2[data-path="de/02-body-matter"]
-    display flex
-    flex-direction row
-    width 100%
-    margin-top 4rem
-    margin-bottom 4rem
-    
-    gap 1rem
-
-    li
-      flex 0 0 15rem
-
-
+  }
+  [data-path*='body-matter'][data-depth='4'] {
+    flex-direction: column;
+  }
+  [data-depth='4'][data-path='de/02-body-matter'] {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+  }
+  [data-depth='2'][data-path='de/02-body-matter'] li {
+    flex: 0 0 15rem;
+  }
 </style>

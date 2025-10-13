@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "astro build",
+    "build:download-references-from-zotero": "node ./scripts/download-references-from-zotero.js",
     "build:generate-pwa-assets": "pwa-assets-generator  --preset='minimal-2023'",
     "build:pdf": "pnpm run build:pdf:1:puppeteer && pnpm run build:pdf:2:shrink-filesize-4-screen && pnpm run build:pdf:4:copy2web",
     "build:pdf:1:puppeteer": "node ./scripts/create-pdf.mjs",
@@ -25,14 +26,16 @@
     "sync": "astro sync"
   },
   "dependencies": {
-    "puppeteer-core": "catalog:",
-    "astro-auto-import": "catalog:",
+    "astro-command-palette": "0.1.3",
     "@astrojs/mdx": "catalog:",
     "@astrojs/sitemap": "catalog:",
-    "@fontsource/barlow-semi-condensed": "catalog:",
+    "@astrojs/vue": "5.1.1",
     "@fontsource/barlow-condensed": "catalog:",
+    "@fontsource/barlow-semi-condensed": "catalog:",
     "@nanostores/persistent": "catalog:",
+    "@tailwindcss/vite": "catalog:",
     "astro": "catalog:",
+    "astro-auto-import": "catalog:",
     "astro-icon": "catalog:",
     "astro-pagefind": "catalog:",
     "d3": "catalog:",
@@ -40,6 +43,7 @@
     "nanostores": "catalog:",
     "pagedjs": "catalog:",
     "pagefind": "catalog:",
+    "puppeteer-core": "catalog:",
     "rehype-add-classes": "catalog:",
     "rehype-citation": "catalog:",
     "rehype-figure": "catalog:",
@@ -53,9 +57,9 @@
     "remark-sectionize": "catalog:",
     "remove-markdown": "catalog:",
     "unified": "catalog:",
+    "vue": "3.5.21",
     "workbox-window": "catalog:",
-    "@astrojs/vue": "5.1.1",
-    "vue": "3.5.21"
+    "zotero-api-client": "catalog:"
   },
   "devDependencies": {
     "@astrojs/check": "catalog:",
@@ -82,6 +86,7 @@
     "eslint-plugin-n": "catalog:",
     "eslint-plugin-prettier": "catalog:",
     "eslint-plugin-promise": "catalog:",
+    "flowbite-typography": "1.0.5",
     "organize-imports-cli": "catalog:",
     "postcss": "catalog:",
     "postcss-preset-env": "catalog:",
@@ -93,7 +98,6 @@
     "sharp": "catalog:",
     "sharp-ico": "catalog:",
     "stylelint": "catalog:",
-    "stylus": "catalog:",
     "typescript": "catalog:",
     "typescript-eslint-parser-for-extra-files": "catalog:"
   }

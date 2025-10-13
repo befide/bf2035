@@ -1,73 +1,118 @@
 ---
-import { getPath, getPrevNext } from '@utils/getSections';
+import { getPath, getPrevNext } from '@utils/getSections'
 
-const { id } = Astro.params;
+const { id } = Astro.params
 
-const { prev, next, home } = await getPrevNext(id);
+const { prev, next, home } = await getPrevNext(id)
 ---
 
-<nav class="linear-navigation">
-  {
-    home && (
-      <a id="navigation__home" href={getPath(home)} class="home">
-        <span class="visually-hidden">Home</span>
-      </a>
-    )
-  }
-  {
-    prev && (
-      <a id="navigation__prev" href={getPath(prev)} class="prev">
-        <span class="visually-hidden">zurück</span>
-      </a>
-    )
-  }
-  {
-    next && (
-      <a id="navigation__next" class="next" href={getPath(next)}>
-        <span class="visually-hidden">vor</span>
-      </a>
-    )
-  }
-</nav>
+{
+  home && (
+    <a id="navigation__home" href={getPath(home)} class="home toolbox-item">
+      <span class="icon" />
+      <span class="label visually-hidden">Home</span>
+    </a>
+  )
+}
+{
+  prev && (
+    <a id="navigation__prev" href={getPath(prev)} class="prev toolbox-item">
+      <span class="icon" />
+      <span class="label visually-hidden">zurück</span>
+    </a>
+  )
+}
+{
+  next && (
+    <a id="navigation__next" class="next toolbox-item" href={getPath(next)}>
+      <span class="icon" />
+      <span class="label visually-hidden">vor</span>
+    </a>
+  )
+}
+
 <script is:inline>
   document.addEventListener('keydown', function (e) {
     if (e.ctrlKey && e.code === 'KeyN') {
-      document.getElementById('navigation__next')?.click();
+      document.getElementById('navigation__next')?.click()
     }
-  });
+  })
   document.addEventListener('keydown', function (e) {
     if (e.ctrlKey && e.shiftKey && e.code === 'KeyH') {
-      document.getElementById('navigation__home')?.click();
+      document.getElementById('navigation__home')?.click()
     }
-  });
+  })
   document.addEventListener('keydown', function (e) {
     if (e.ctrlKey && e.shiftKey && e.code === 'KeyN') {
-      document.getElementById('navigation__prev')?.click();
+      document.getElementById('navigation__prev')?.click()
     }
-  });
+  })
 </script>
 
-<style>
-  .linear-navigation {
-    display: flex;
-  }
-  .linear-navigation a {
+<style is:global>
+  .toolbox-item .icon {
+    content: ' ';
     display: inline-block;
-    padding: var(--ui__baseline-height);
-    width: calc(2 * var(--ui__baseline-height));
-    background-size: calc(1 * var(--ui__baseline-height));
-    background-position: center;
+    flex: 0 0 1rem;
+    height: 1rem;
+    background-position: center center;
+    background-size: 0.75rem;
+
     background-repeat: no-repeat;
   }
+  .toolbox-item .label {
+    flex: 1 0 6rem;
+    padding: 0 0.25rem;
+  }
 
-  .home {
+  .home .icon {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhvbWUiPjxwYXRoIGQ9Im0zIDkgOS03IDkgN3YxMWEyIDIgMCAwIDEtMiAySDVhMiAyIDAgMCAxLTItMnoiLz48cG9seWxpbmUgcG9pbnRzPSI5IDIyIDkgMTIgMTUgMTIgMTUgMjIiLz48L3N2Zz4=');
   }
-
-  .prev {
+  .prev .icon {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tbGVmdCI+PHBhdGggZD0ibTE1IDE4LTYtNiA2LTYiLz48L3N2Zz4=');
   }
-  .next {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tcmlnaHQiPjxwYXRoIGQ9Im05IDE4IDYtNi02LTYiLz48L3N2Zz4=');
+  .next .icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tcmlnaHQtaWNvbiBsdWNpZGUtY2hldnJvbi1yaWdodCI+PHBhdGggZD0ibTkgMTggNi02LTYtNiIvPjwvc3ZnPg==');
+  }
+  .toolbox-item--print-layout .icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxheW91dC1kYXNoYm9hcmQtaWNvbiBsdWNpZGUtbGF5b3V0LWRhc2hib2FyZCI+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iOSIgeD0iMyIgeT0iMyIgcng9IjEiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSI1IiB4PSIxNCIgeT0iMyIgcng9IjEiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSI5IiB4PSIxNCIgeT0iMTIiIHJ4PSIxIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iNSIgeD0iMyIgeT0iMTYiIHJ4PSIxIi8+PC9zdmc+');
+  }
+  .toolbox-item--debug .icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBhbmVsLXRvcC1ib3R0b20tZGFzaGVkLWljb24gbHVjaWRlLXBhbmVsLXRvcC1ib3R0b20tZGFzaGVkIj48cGF0aCBkPSJNMTQgMTVoMSIvPjxwYXRoIGQ9Ik0xNCA5aDEiLz48cGF0aCBkPSJNMTkgMTVoMiIvPjxwYXRoIGQ9Ik0xOSA5aDIiLz48cGF0aCBkPSJNMyAxNWgyIi8+PHBhdGggZD0iTTMgOWgyIi8+PHBhdGggZD0iTTkgMTVoMSIvPjxwYXRoIGQ9Ik05IDloMSIvPjxyZWN0IHg9IjMiIHk9IjMiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjIiLz48L3N2Zz4=');
+  }
+  .toolbox-item--fit .icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZ1bGxzY3JlZW4taWNvbiBsdWNpZGUtZnVsbHNjcmVlbiI+PHBhdGggZD0iTTMgN1Y1YTIgMiAwIDAgMSAyLTJoMiIvPjxwYXRoIGQ9Ik0xNyAzaDJhMiAyIDAgMCAxIDIgMnYyIi8+PHBhdGggZD0iTTIxIDE3djJhMiAyIDAgMCAxLTIgMmgtMiIvPjxwYXRoIGQ9Ik03IDIxSDVhMiAyIDAgMCAxLTItMnYtMiIvPjxyZWN0IHdpZHRoPSIxMCIgaGVpZ2h0PSI4IiB4PSI3IiB5PSI4IiByeD0iMSIvPjwvc3ZnPg==');
+  }
+  [data-print-preview='false'] .toolbox-item--print-layout .icon {
+    opacity: 0.1;
+    transition: 0.5s;
+  }
+  [data-print-preview='true'] .toolbox-item--print-layout .icon {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  [data-debug='false'] .toolbox-item--debug .icon {
+    opacity: 0.1;
+    transition: 0.5s;
+  }
+  [data-pdebug='true'] .toolbox-item--debug .icon {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  [data-debug='false'] .toolbox-item--debug .icon {
+    opacity: 0.1;
+    transition: 0.5s;
+  }
+  [data-pdebug='true'] .toolbox-item--debug .icon {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  [data-fit-spread='false'] .toolbox-item--fit .icon {
+    opacity: 0.1;
+    transition: 0.5s;
+  }
+  [data-fit-spread='true'] .toolbox-item--fit .icon {
+    opacity: 1;
+    transition: 0.5s;
   }
 </style>

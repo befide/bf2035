@@ -1,24 +1,34 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"],
+  "include": ["./astro.config.ts", "./src/**/*.ts", "./src/**/*.astro"],
+  "exclude": ["./scripts/download-grist.ts"],
   "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "dist",
-    "paths": {
-      "@assets/*": ["src/astro/assets/*"],
-      "@layouts/*": ["src/astro/layouts/*"],
-      "@utils/*": ["src/astro/utils/*"],
-      "@schemas/*": ["src/astro/schemas/*"],
-      "@components/*": ["src/astro/components/*"],
-      "@ui/*": ["src/astro/components/ui/*"],
-      "@styles/*": ["src/astro/styles/*"]
-    },
-    "types": ["vite-plugin-pwa/client", "vite-plugin-pwa/info"],
+    "types": [
+      "astro/client",
+      "vite-plugin-pwa/vanillajs",
+      "vite-plugin-pwa/info"
+    ],
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
       }
-    ]
+    ],
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@ui/*": ["./src/astro/components/ui/*"],
+      "@components/*": ["./src/astro/components/*"],
+      "@styles/*": ["./src/app/styles/*"],
+      "@utils/*": ["./src/astro/utils/*"],
+      "@layouts/*": ["./src/astro/layouts/*"],
+      "@lib/*": ["./src/astro/lib/*"],
+      "@content/*": ["./src/content/*"],
+      "@assets/*": ["./src/astro/assets/*"],
+      "@astro/*": ["./src/astro/*"],
+      "@domain/*": ["./src/lib/domain/*"],
+      "@nanostores/*": ["./src/lib/nanostores/*"]
+    }
   }
 }

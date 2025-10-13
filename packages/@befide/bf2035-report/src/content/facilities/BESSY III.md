@@ -1,6 +1,0 @@
----
-organisation:
-shortTitle:
-longTitle:
-definition:
----

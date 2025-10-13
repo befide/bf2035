@@ -1,31 +1,35 @@
-<label class="toggle">
-  <span class="label-text">Print preview</span>
-  <input id="toggle__print_preview" type="checkbox" role="switch" />
-  <span class="state">
-    <span class="on" aria-hidden="true">On</span>
-    <span class="off" aria-hidden="true">Off</span>
-  </span>
+<label class="toolbox-item toolbox-item--print-layout">
+  <div class="icon">
+    <input id="toggle__print_preview" type="checkbox" role="switch" />
+  </div>
+  <div class="label">
+    Print layout
+    <span class="state">
+      <span class="on" aria-hidden="true">On</span>
+      <span class="off" aria-hidden="true">Off</span>
+    </span>
+  </div>
 </label>
 
 <script>
   import {
     updateDocumentSettings,
     togglePrintPreview,
-  } from '@utils/settingsStore.js';
+  } from '@utils/settingsStore.js'
 
-  updateDocumentSettings.printPreview();
+  updateDocumentSettings.printPreview()
   document.addEventListener(
     'astro:after-swap',
-    updateDocumentSettings.printPreview,
-  );
+    updateDocumentSettings.printPreview
+  )
 
   document
     .getElementById('toggle__print_preview')
-    ?.addEventListener('click', togglePrintPreview);
+    ?.addEventListener('click', togglePrintPreview)
 
   document.addEventListener('keydown', function (e) {
     if (e.ctrlKey && e.shiftKey && e.code === 'KeyP') {
-      document.getElementById('toggle__print_preview')?.click();
+      document.getElementById('toggle__print_preview')?.click()
     }
-  });
+  })
 </script>
